@@ -1,0 +1,482 @@
+36
+Serial #
+
+42-65338
+42-65339
+42-65340
+42-65341
+42-65342
+42-65343
+42-65344
+42-65345
+42-65346
+42-65347
+42-65348
+42-65349
+42-65350
+42-65351
+42-65352
+42-65352
+42-65352
+42-65353
+42-65354
+42-65355
+42-65356
+42-65357
+42-65357
+42-65358
+42-65359
+42-65360
+42-65361
+42-65361
+42-65361
+42-65362
+42-65363
+42-65363
+42-65364
+42-65364
+42-65365
+42-65365
+42-65365
+42-65365
+42-65365
+42-65365
+42-65366
+42-65367
+42-65367
+42-65367
+42-65368
+42-65369
+42-65369
+42-65370
+42-65370
+42-65370
+42-65371
+42-65371
+42-65372
+42-65373
+42-65374
+42-65375
+42-65376
+42-65377
+42-65378
+42-65379
+42-65380
+42-65381
+42-65382
+42-65383
+42-65384
+
+Name
+
+RED HOT RIDER
+
+BALL OF FIRE
+
+PRETTY BABY
+
+HOT TO GO
+HOT TO GO
+
+SHADY LADY
+SHADY LADY
+
+CITY OF JEWETT CITY
+THE KICK-A-POO-JOY II
+
+PURPLE SHAFT
+
+TIAN LONG (SKY DRAGON)
+
+CITY OF AKRON
+LADY JANE
+
+CITY OF ROSWELL
+
+SKYSCRAPPER
+
+CITY OF SANTA FE
+CITY OF WILMINGTON
+
+HELL'S BELLE
+ONE WEAKNESS
+
+CITY OF LAS VEGAS
+ROUND TRIP TICKET
+
+BLACKJACK
+BATTLIN BITCH II
+CITY OF MIAMI
+
+BLACK SHEEP
+
+CITY OF JACKSON
+CITY OF MIAMI BEACH (2)
+
+OLE SMOKER II
+
+CITY OF OMAHA
+
+YONKEE DOLL-AH
+
+THE B-29 SUPERFORTRESS
+
+Identification
+
+ASQ
+LTRI
+
+VSQ 15
+
+Z SQ 25
+
+BLK SQ M 31 (1)
+ASQ 44 (2)
+VSQ 52
+
+T SQ 21(2)
+ZSQ14
+
+L TRI
+
+ASQ 16
+
+CIRCE 15
+BLK SQ O (1)
+
+BLKSTRPGRN
+SQUARE H
+TRI U
+SQUARE H
+
+SQUARE H
+
+BLKSTRP
+SQUARE H
+
+BLK SQ P 47
+BLK SQ P 47
+BLKSTRPBLU
+BLK SQ P 52 (1)
+BLK SQ K 56
+BLK SQ K 56
+BLK SQ P 30 (1)
+BLK SQ P 30 (1)
+BLK SQ P 41
+BLK SQ P 41
+BLK SQ P 41
+BLK SQ P 41
+BLK SQ P 55
+BLK SQ P 55
+BLK SQ P
+
+BLK SQ P 02
+BLK SQ P 02
+BLK SQ P 02
+BLK SQ P 04 (1)
+BLKSTRPRED
+BLK SQ P 34
+BLK SQ K 55
+BLK SQ K 55
+BLKSTRPBLU
+BLK SQ K 28
+BLK SQ K 28
+
+BLK SQ P 42 (1)
+
+L TRI
+
+Delv
+
+2/16/1945
+21911945
+2/8/1945
+21911945
+2/10/1945
+
+2/10/1945
+2/14/1945
+2/13/1945
+2/10/1945
+2/12/1945
+2/12/1945
+2/12/1945
+2/13/1945
+2/13/1945
+2/13/1945
+2/13/1945
+2/15/1945
+211711945
+2/19/1945
+2/20/1945
+2/20/1945
+2/20/1945
+211711945
+2/20/1945
+2/20/1945
+2/17/1945
+2N1711945
+2/17/1945
+212311945
+212511945
+212511945
+212711945
+212711945
+
+2/21/1945
+2/26/1945
+
+2/26/1945
+
+2/21/1945
+2/21/1945
+2/21/1945
+212711945
+212711945
+2/2411945
+212711945
+212711945
+2/26/1945
+2/27/1945
+2/26/1945
+212711945
+2/2711945
+2/28/1945
+212711945
+2/28/1945
+
+2/15/1945
+
+Assign
+
+497BG
+6BG
+499BG
+500BG
+19BG
+497BG
+499BG
+498BG
+500BG
+6BG
+497BG
+504BG
+29BG
+4105BU
+19BG
+98BG
+462BG
+98BG
+233BU
+98BG
+4141BU
+19BG
+98BG
+234BU
+236BU
+234BU
+39BG
+39BG
+19BG
+39BG
+330BG
+330BG
+39BG
+39BG
+39BG
+39BG
+39BG
+39BG
+39BG
+39BG
+39BG
+39BG
+39BG
+39BG
+39BG
+19BG
+39BG
+330BG
+330BG
+19BG
+330BG
+330BG
+235BU
+39BG
+235BU
+247BU
+231BU
+236BU
+236BU
+235BU
+235BU
+6BG
+233BU
+
+428BU
+
+Off Inv
+
+5110/1954
+5110/1954
+11/17/1953
+5110/1954
+5/16/1945
+91511945
+4I1411945
+91411945
+7IN4I1953
+41811945
+6/1/1945
+51511954
+4ITIN945
+51511954
+10/1/1954
+10/1/1954
+
+10/5/1950
+10/27/1950
+5115/1950
+8/19/1954
+1/31/1953
+
+8/19/1954
+8/19/1954
+8/19/1954
+
+5I16/1954
+512311945
+11/17/1953
+11/17/1953
+6/1/1945
+6/1/1945
+
+10/27/1945
+
+6/00/45
+6/00/45
+4110/1945
+42/1951
+
+7IN4I1954
+5/10/1954
+5/10/1954
+11/12/1953
+6/19/1945
+5/10/1954
+41111947
+8/19/1954
+8/5/1945
+8/19/1954
+8/19/1954
+51511954
+51511954
+5/10/1945
+
+7INSIN954
+
+Circumstances
+
+Reclaimed Davis-Monthan
+Reclaimed Davis-Monthan
+Reclaimed Hill
+
+Reclaimed Davis-Monthan
+Crashed at Iwo from Nagoya
+Circumstances Unknown
+
+Shot down Tokyo Arsenal
+Missing-circumstances unknown
+Reclaimed Robins
+
+Exploded 2 miles off Tinian
+Shot down, crashed Omine Mt, Nara
+Reclaimed Tinker
+
+Rammed at Nagoya
+
+Reclaimed Davis-Monthan
+Reclaimed Davis-Monthan
+Reclaimed Davis-Monthan
+Survived war
+
+Engine fire, 10 mi W of Takamatsu
+Reclaimed Kelly
+
+Salvaged at Spokane
+
+Reclaimed Pyote
+
+Surveyed at Kadena
+
+Transfer to 19BG
+
+Reclaimed Pyote
+
+Reclaimed Pyote
+
+Reclaimed Pyote
+
+Survived war
+
+Survived War
+
+Salvaged at Davis-Monthan
+Crashed near Tokyo
+
+Reclaimed Hill
+
+Reclaimed Hill
+
+Lost prop-abandoned Sofu-Gan Island
+Lost prop-abandoned Sofu-Gan Island
+Reclaimed
+
+Reclaimed
+
+Reclaimed
+
+Unknown
+
+Unknown
+
+Unknown
+
+Crashed, engine fire
+
+Renamed
+
+Scrapped Iwo Jima
+
+Scrapped Iwo Jima
+
+Ditched training mission — lost prop
+Crashed, burned off runway at Kadena
+Survived war
+
+Survived war
+
+Survived war
+
+Salvaged at Davis-Monthan
+Reclaimed Davis-Monthan
+Reclaimed Davis-Monthan
+Reclaimed Robins
+
+Collision with 499BG aircraft
+Reclaimed Davis-Monthan
+Reclaimed Goodfellow
+Reclaimed Pyote
+
+Surveyed at Pyote
+
+Reclaimed Pyote
+
+Reclaimed Pyote
+
+Reclaimed Davis-Monthan
+Reclaimed Davis-Monthan
+Surveyed at Davis-Monthan
+Reclaimed
+
+Salvaged at Davis-Monthan

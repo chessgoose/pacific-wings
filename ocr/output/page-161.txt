@@ -1,0 +1,539 @@
+MSN
+
+50
+50
+50
+50
+50
+50
+50
+50
+51
+51
+51
+51
+51
+52
+53
+54
+55
+55
+55
+56
+56
+56
+56
+56
+56
+
+56
+57
+57
+57
+57
+57
+57
+57
+57
+57
+58
+58
+58
+58
+58
+58
+53
+53
+53
+53
+53
+53
+53
+53
+53
+53
+59
+59
+59
+59
+59
+59
+59
+59
+59
+59
+59
+59
+59
+
+Date
+
+March 31
+March 31
+March 31
+March 31
+March 31
+March 31
+March 31
+March 31
+April 1/2
+April 1/2
+April 1/2
+April 1/2
+April 1/2
+April 1/2
+April 2/3
+April 3/4
+April 3/4
+April 3/4
+April 3/4
+April 3/4
+April 3/4
+April 3/4
+April 3/4
+April 3/4
+April 3/4
+April 3/4
+April 3/4
+April 3/4
+April 3/4
+April 3/4
+April 3/4
+April 3/4
+April 3/4
+April 3/4
+April 3/4
+April 3/4
+April 7
+April 7
+April 7
+April 7
+April 7
+April 7
+April 7
+April 7
+April 7
+April 7
+April 7
+April 7
+April 7
+April 7
+April 7
+April 7
+April 7
+April 7
+April 7
+April 7
+April 7
+April 7
+April 7
+April 7
+April 7
+April 7
+April 7
+April 7
+April 7
+
+VI.
+
+Target
+
+Tachiari Machine Works
+Tachiari Machine Works
+Tachiari Machine Works
+Tachiari Machine Works
+Tachiari Machine Works
+Omura Airfield
+Omura Airfield
+Omura Airfield
+Nakajima Aircraft Engine Plant
+Nakajima Aircraft Engine Plant
+Nakajima Aircraft Engine Plant
+Nakajima Aircraft Engine Plant
+Nakajima Aircraft Engine Plant
+Mining Mission 3
+Mine Field Jig- Mission 4
+Mine Field Item — Mission 5
+Aircraft Engine Factory
+Aircraft Engine Factory
+Aircraft Engine Factory
+Nakajima Aircraft Plant
+Secondary Target
+Nakajima Aircraft Plant
+Nakajima Aircraft Plant
+Secondary Targets
+Nakajima Aircraft Plant
+Nakajima Aircraft Plant
+Secondary Target
+Tachikawa Aircraft Mfg Factory
+Secondary — Urban Area
+Last Resort Target
+Aircraft Frame Plant
+Secondary — Urban Area
+Aircraft Frame Plant
+Secondary Target
+Kawasaki Aircraft Factory
+Kawasaki Aircraft Factory
+Nakajima Aircraft Factory
+Target of Opportunity
+Nakajima Aircraft Factory
+Nakajima Aircraft Factory
+Nakajima Aircraft Factory
+Nakajima Aircraft Factory
+Mitsubishi Aircraft Engine Plant
+Mitsubishi Aircraft Engine Plant
+Mitsubishi Aircraft Engine Plant
+Mitsubishi Aircraft Works
+Mitsubishi Aircraft Works
+Last Resort Target
+Last Resort Target
+Last Resort Target
+Last Resort Target
+Last Resort Target
+Mitsubishi Aircraft Engine Plant
+Secondary Target
+Mitsubishi Aircraft Engine Plant
+Mitsubishi Aircraft Engine Plant
+Mitsubishi Aircraft Engine Plant
+Secondary Target
+Secondary Target
+Mitsubishi Aircraft Works
+Mitsubishi Aircraft Works
+Last Resort Target
+Last Resort Target
+Last Resort Target
+Last Resort Target
+
+The XXI Bomber Command
+
+Location
+
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Tokyo
+Tokyo
+Tokyo
+Tokyo
+Tokyo
+Kure
+Hiroshima
+Hiroshima
+Shizuoka
+Shizuoka
+Shizuoka
+Koizama
+Unknown
+Koizama
+Koizama
+Koizama
+Koizama
+Koizama
+Tokyo Urban
+Tachikawa
+Tachikawa
+Tachikawa
+Tachikawa
+Tachikawa
+Tachikawa
+Tachikawa
+Tachikawa
+Tachikawa
+Tokyo
+Tokyo
+Tokyo
+Tokyo
+Tokyo
+Tokyo
+Nagoya
+Nagoya
+Nagoya
+Nagoya
+Nagoya
+Hamamatsu
+Ujiyamada
+Akazaki
+Kushimoto
+Owase
+Nagoya
+Nagoya
+Nagoya
+Nagoya
+Nagoya
+Ujiyamada
+Unknown
+Nagoya
+Nagoya
+Hamamatsu
+Ujiyamada
+Akazaki
+Kushimoto
+
+Wings
+
+314BW
+
+73BW
+
+313BW
+313BW
+313BW
+314W
+
+313BW
+
+73BW
+
+73BW
+
+313BW
+
+MISSION
+
+313BW
+
+Grps
+
+WING
+497BG
+498BG
+499BG
+500BG
+
+19BG
+29BG
+
+497BG
+498BG
+499BG
+500BG
+9BG
+
+504BG
+505BG
+
+19BG
+29BG
+
+WING
+6BG
+9BG
+9BG
+504BG
+505BG
+505BG
+
+WING
+WING
+497BG
+497BG
+498BG
+498BG
+499BG
+500BG
+
+WING
+497BG
+498BG
+499BG
+500BG
+
+6BG
+
+9BG
+
+504BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+
+WINGS
+
+6BG
+9BG
+WINGS
+WINGS
+504BG
+505BG
+505BG
+505BG
+505BG
+505BG
+
+not avail
+not avail
+34
+
+12
+
+22
+
+124
+
+26
+
+31
+
+not avail
+not avail
+6
+
+10
+
+9
+
+49
+
+25
+
+24
+
+78
+
+in above
+not avail
+28
+
+in above
+ll
+
+ll
+
+in above
+115
+
+in above
+in above
+26
+
+in above
+29
+
+in above
+not avail
+not avail
+lll
+
+in above
+35
+
+32
+
+not avail
+not avail
+132
+
+30
+
+39
+
+31
+
+32
+
+in above
+in above
+in above
+in above
+in above
+194
+
+in above
+63
+
+not avail
+39
+
+194
+
+in above
+not avail
+32
+
+in above
+in above
+in above
+in above
+
+Bombed
+
+105
+29
+27
+not avail
+24
+32
+10
+22
+115
+25
+29
+27
+34
+
+61
+33
+1
+
+17
+7
+13
+14
+14
+30
+101
+2
+29
+31
+not avail
+9
+98
+30
+31
+28
+21
+1
+
+1
+
+1
+
+1
+
+1
+153
+29
+55
+30
+31
+153
+29
+not avail
+21
+1
+
+1
+1
+1
+
+147
+
+Lost
+
+P
+
+NBoooocoeoocooconornroonrocoorcoroocoooooocoo°oceo°ocorKFwKenNI COCCCOCOCOFrOF
+
+oNOOC SO
+
+ooooo
+
+irates Log

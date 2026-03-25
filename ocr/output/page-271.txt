@@ -1,0 +1,64 @@
+APPENDIX: SERIAL KEY MATRIX
+
+The researcher often finds himself delving into docu-
+ments written during operational phases of a unit’s history.
+The tendency of people keeping records in a war environment
+was to identify aircraft by the last three digits of the plane’s
+serial number. This form of shorthand worked very well in the
+close-knit setting of a Bomb Group flight line.
+
+However, later, the historian
+microfilmed copies of those same records has no idea if air-
+craft “267” was actually 42-6267, 44-86267 or several planes
+in between.
+
+To help resolve this identity problem, this appendix pro-
+vides a serial key matrix to identify the full serial numbers
+from the three digits so often found in historical documents.
+The best explanation is a demonstration.
+
+Imagine that you find a reference to aircraft 267, report-
+ing that it was lost in combat. Find the portion of the serial
+matrix listing the numbers 250-299. Run down the left col-
+umn to the number 267. The digits to the right of 267 tell us
+that 267 must be one of the following:
+
+decades reading
+
+42-6267
+42-65267
+44-27267
+44-62267
+44-86267
+
+Checking these five serial numbers against the Master
+List, you will find that 42-6267 was reclaimed at Pyote AAF
+12/21/49; 42-65267 ditched returning from a photo mission
+1/22/45; 44-27267 was salvaged at Davis-Montham AFB
+7114154; 44-62267 was reclaimed at McClellan AFB 5/7/54;
+and 44-86267 was reclaimed at Robins AFB 7/5/54. Of the
+five planes whose serial numbers end in 267, only one — num-
+ber 42-65267 — could possibly be the plane reported lost in
+combat.
+
+In the event that there were two or more planes lost in
+combat, try checking the “off inventory” date and the group
+to which the planes were assigned for further resolution.
+
+000-049
+SN42-940XX SN44-620XX SN44-700XX SN-840XX
+000 94000 62000 70000 84000
+001 94001 62001 70001 84001
+002 94002 62002 70002 84002
+003 94003 62003 70003 84003
+004 94004 62004 70004 84004
+005 94005 62005 70005 84005
+006 94006 62006 70006 84006
+007 94007 62007 70007 84007
+008 94008 62008 70008 84008
+009 94009 62009 70009 84009
+010 94010 62010 70010 84010
+oll 94011 62011 70011 84011
+012 94012 62012 70012 84012
+
+257

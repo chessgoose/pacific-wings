@@ -1,0 +1,111 @@
+I. Master List 11
+
+Assignment
+
+The “Assign” (Assignments) column notes the organiza-
+tional unit to which the aircraft was assigned during its com-
+bat period. Some planes were transferred from one unit to an-
+other; in those cases, the Assignments column includes an
+entry for each assignment.
+
+Off Inventory
+
+There are numerous ways an aircraft can be removed
+from inventory: combat losses, crashes and scrapping are the
+primary means. In the vast majority of these cases the dates
+of removal can be definitively established by USAF/USAAF
+records, such as examination of Aircraft Record Cards, Con-
+solidated Mission Summary reports and other historical doc-
+uments found in the Bomb Wing Histories, and Missing Air
+Crew Summary Reports (MACR).
+
+Aircraft Record Cards are forms used by the Army Air
+Forces to track the movement and assignment of aircraft.
+Working with their elaborate codes can be a difficult and
+daunting task.
+
+Bomb Wing Histories are available on microfilm from
+
+the Air Force Historical Research Center at Maxwell Air Force
+Base, Alabama. They contain a plethora of details on day-to-
+day operations. There is a drawback to this type of informa-
+tion: It is only as good as the Historical Officer wanted it to
+be. Sometimes a wing history contains frame upon frame upon
+frame of personnel data and a minimal amount of informa-
+tion on operations. Two months later the situation could be
+the reverse as a new Historical Officer takes over.
+
+On the other hand, the reports dealing with operations
+mandated by wing, such as the Consolidated Mission Re-
+ports, present hard facts, uncolored by personality or inter-
+pretation.
+
+The MACR is also straightforward, recording date, ser-
+ial number, group, an alpha code giving the cause of loss, air-
+craft commander, number of survivors if any, and a MACR
+file number.
+
+Circumstances
+
+This column contains a brief description as to why the
+aircraft was removed from inventory. This information comes
+from the documents described above or a variety of other
+sources, such as Japanese records (very reliable), squadron and
+personal histories, and other publications.
+
+Serial # Name Identification Delv Assign Off Inv Circumstances
+
+41-002 5/11/1948 — Scrapped
+
+41-003 2/14/1943, Crashed
+
+41-18335 THE FLYING GUINEA PIG Unknown
+
+41-36954 SPIRIT OF LINCOLN Unknown
+
+41-36955 40BG Unknown
+
+41-36956 40BG 1/19/1944 — Wright Field, Ohio
+
+41-36957 Unknown
+
+41-36958 444BG Unknown
+
+41-36959 | AMARILLO’S FLYING SOLENOID 9120/1943 468BG 11/6/1943 Smoky Hill Kansas
+
+41-36960 Unknown
+
+41-36961 9120/1943 468BG 10/24/1943 Crashed on takeoff
+
+41-36962 212411944 Great Bend Kansas
+
+41-36963 HOBO QUEEN SOLYLWRUD 41611944 462BG Unknown
+
+41-36964
+
+41-36965 1/2/1945
+
+41-36966 91/16/1943 40BG 8/21/1944 Crashed, structural failure
+41-36967 9/11/1943 462BG 1/29/1944 Out of fuel, crashed, surveyed
+42-6205 9/11/1943 40BG 12/31/1949 Reclaimed Pyote
+
+42-6206 912311943 444BG 912411949 Reclaimed Hill
+
+42-6207 9/23/1943  468BG 8/9/1944 Class 26 Alamogordo
+
+42-6208 PIONEER 2BLURUDSTRP 912311943 468BG 12/21/1949 Reclaimed Pyote
+
+42-6209 SOLGRNRUD 9130/1943 462BG 512211945 Class 26 Tinian
+
+42-6210 10/27/1943 462BG TIAIN944 Surveyed Clovis, structural failure
+42-6211 SOLBLURUD 10/26/1943 462BG 5/23/1944 Surveyed, crash, fire on takeoff
+42-6212 DIAM # 11/17/1943 444BG 91/18/1944 Crashed 3 miles west of Hsian, out of fuel
+42-6213 SOLYLWRUD 12/16/1943 462BG 12/29/1949 Reclaimed Pyote
+
+42-6214 12/18/1943 40BG 10/17/1946 — Reclaimed Clovis
+
+42-6215 DEACON’S DISCIPLES DIAM # 10/27/1943 444BG 11/9/1944 Abandoned Dudhkindi, engine failure
+42-6216 11/16/1943 468BG 10/8/1944 Class 26 at Clovis NM
+42-6217 PEPPER 2WHTRUDSTRP 11/28/1943 468BG 12/21/1949 — Reclaimed Pyote
+
+42-6218 12/6/1943 40BG 5/31/1946 Reclaimed Amarillo

@@ -1,0 +1,218 @@
+216
+
+Target #
+
+58
+62
+63
+66
+67
+68
+69
+70
+71
+72
+73
+75
+
+191
+193
+194
+195
+196
+196
+197
+197
+198
+199
+
+THE B-29 SUPERFORTRESS
+
+Target
+
+Tokyo Special Chrome Steel Works
+Hodagaya Substation
+
+Kamagawa Steam Power Plant
+
+Takeshina Freight Yards
+
+Yokohama Station, Junction, Overpass
+Higashi Yokohame RR Yards
+
+Yokohama Dockyard Of Mitsubishi Heavy Industr
+Asano Dockyard
+
+Uraga Dockyard #3
+
+Ford Motor Company
+
+Tokuyama Naval Fueling Station (code name: Indices)
+Furakawa Electric Co., Plant No 1
+
+Nirada Firecracker Co
+
+Niigata Sulphuric Acid Company
+
+Totsuka Air Base
+
+Ogura Oil Company
+
+Japan American Oil Company
+
+Eastern Petroleum Refinery
+
+Oriental Oil Company
+
+Kanagawa Gasoline Tanks
+
+Lighthouse Bureau Oil Tanks
+
+Matsukata Oil Storage
+
+Shimonoseki-Maeda Power Plant
+
+Asahi Substatiion
+
+Nippon Electric Power Transforming Station
+Kawasaki Substation #1
+
+Railroad Transformer Station
+
+Tokyo Elec Power Generating Sta, Tsurumi Plant
+Kawasahe Elec Pwr Plant For Govt Railroad
+Tsurumi Shunting Yards
+
+Mitsubishi Oil Refinery
+
+Mitsubishi Oil Company & Chiyoda Oil Tanks
+Tsurumi Steel And Shipbuilding Company
+Hayama Petroleum Refinery
+
+Petroleum Center
+
+Nippon Super Fuel Co
+
+Asahi Petroleum Co
+
+Kawasaki Naval Wireless Sta
+
+Shibaura Engineering Works
+
+Asahi Glass Company
+
+Cooperative Auto Works
+
+Fuji Elec Works
+
+Showa Fertilizer
+
+Yokohame Rubber Company
+
+Unidentified Arms Plant
+
+Aikoku Petroleum Refinery
+
+Senkari Reservoir Dam
+
+Sannomiya Railroad Station
+
+Kokura Steel Works
+
+Kokura Arsenal
+
+Kamizaki Heavy Industry
+
+Mitsubishi Heavy Industry
+
+Kanazawa Heavy Industry
+
+Kokura Railroad Shops
+
+Kokura Steam Power Plant #2
+
+Mitsubishi Coal Depot
+
+Mitsubishi Aircraft Engine Works (code name: Memphis)
+Mitsubishi Aircraft Works, Nagoya (code name: Hesitation)
+Nagoya #1 Steam Power Plant
+
+Kureha Textile Mill
+
+Nagoya Arsenal, Chigusa Factory
+
+Atsuta Factory, Nagoya Arsenal
+
+Nagoya Arenal, Atsuda Plant
+
+Aichi Aircraft Works, Atsuta Plant
+
+Aichi Aircraft Works, Mizuho Branch
+
+Location
+
+Kawasaki
+Yokohama
+Yokohama
+Yokohama
+Yokohama
+Yokohama
+Yokohama
+Yokohama
+Yokohama
+Yokohama
+Tokuyama
+Yokohama
+Yokohama
+Kawasaki
+Totsuka
+Yokohama
+Yokohama
+Yokohama
+Yokohama
+Yokohama
+Yokohama
+Yokohama
+Shimonoseki
+Yokohama
+Yokohama
+Kawasaki
+Kawasaki
+Kawasaki
+Kawasaki
+Tsurumi
+Kawasaki
+Yokohama
+Yokohama
+Kawasaki
+Kawasaki
+Yokohama
+Kawasaki
+Kawasaki
+Yokohama
+Yokohama
+Kawasaki
+Kawasaki
+Kawasaki
+Unknown
+Kawasaki
+Kawasaki
+Sendai
+Kobe
+Kokura
+Kokura
+
+Kobe
+
+Kokura
+Kokura
+Kawasaki
+Nagoya
+Nagoya
+Nagoya
+Nagoya
+Nagoya
+Nagoya
+Nagoya
+Nagoya
+Nagoya

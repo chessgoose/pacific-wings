@@ -1,0 +1,71 @@
+212 THE B-29 SUPERFORTRESS
+
+Target Target # Location
+Taka Shima Colliery 842 Taka Shima
+Takada Aluminum Mfg Co 1709 Sakai
+Takahagi Airport 1415 Tokyo
+Takamatsu Urban Area Takamatsu
+Takasaki Railroad Yards 1051 Takasaki
+Take Hara Electrolytic Coper Refinery 1936 Takehars
+Takeda Drug Co 1628 Osaka
+Takeshiba Pier 885 Tokyo
+Takeshina Freight Yards 66 Yokohama
+Tama River Bridges & Tokado/Keihin Elec Lines 1367 Kawasaki
+Tama River Bridges & Tokado/Keihin Elec Lines 1369 Kawasaki
+Tanaka Piston Ring Co 1721 Osaka
+Tankiji Markey and Warehouse 1448 Tokyo
+‘Tatara Machinery Works 1873 Fukuoka
+Tategame Shipyard 544 Nagasaki
+Tateyama Naval Air Station 371 Airports
+Tatigami Shipyard 544 Nagasaki
+Tatigami Urban Arera Nagasaki
+Teikoku Mining Co/Hibi Refinery 1922 Hibi
+Three Powder Magazine 315 Yokohama
+Titanium Industry Co 1879 Ube
+Tkinogawa Army Arsenal 209 Tokyo
+
+Toa Oil Company; Shimotsu Refinery Shimotsu
+Toba Dockyard 1216 Tobata
+Tobata Foundry Company 30 Tobata
+Tobata Steam Power Plant 1594 Unknown
+Tobato Port 33 Tobata
+Tochigi Shipbuilding Yard 558 Wakamatsu
+Togami Electric Works 1259 Saga
+
+Togi Fertilizer Co 1713 Behu
+Toho Gas Works 1821 Nagoya
+Toho Gas Works Synthetic Oil Plant 456 Nagoya
+Toho Heavy Industry 1738 Yokkaichi
+Toho Steel Foundry Co 1348 Tokyo
+Tokada Aluminum Mfg Company 1710 Sakai
+Tokai Electrical Co Nagoya #1 Plant 1823 Nagoya
+Tokai Electrical Co Nagoya #2 Plant 1824 Nagoya
+Tokai Electrical Co Nagoya #3 Plant 1825 Nagoya
+Tokai Electrode Co 1539 Tanoura
+Tokai Steel Works 555 Wakamatsu
+Tokorazawa Airport 1406 Tokyo
+Tokoshu Light Metals-Atsuta Plant 1818 Nagoya
+Tokoyama Naval Arsenal Tokuyama
+Tokushima Urban Area Tokushima
+Tokushu Light Metals Atsuta Plant 1818 Nagoya
+Tokushu Light Metals Inasawa Plant 1820 Inasawa
+Tokushu Light Metals Ogaki Plant 1819 Ogaki
+Tokuyama Coal Yard (code name: Rotative) 674 Tokuyama
+Tokuyama Naval Fueling Station 673 Tokuyama
+Tokuyama Naval Fueling Station (code name: Indices) 73 Tokuyama
+Tokuyama Sheet Iron Co 1881 O Shima
+Tokuyama Soda Co 675 Tokuyama
+Tokuyama Urban Area Tokuyama
+Tokyo (code name: San Antonio) Tokyo
+Tokyo Armory 214 Tokyo
+Tokyo Army Arsenal & Engineering School 352 Tokyo
+Tokyo Arsenal (code name: Perdition) 3600 Tokyo
+Tokyo Central Station 367 Tokyo
+Tokyo Elec Power Generating Sta, Tsurumi Plant 110 Kawasaki
+Tokyo Electric Power Station 470 Kawasaki
+Tokyo Electric Wire & Mfg Company 494 Kawasaki
+Tokyo Gas & Electric Engineering, S. Tokyo 321 Tokyo
+Tokyo Gas Company 907 Tokyo
+Tokyo Gas Company, Omari Branch 1398 Tokyo
+
+Tokyo Gas Company, Sunamachi Branch 907 Tokyo

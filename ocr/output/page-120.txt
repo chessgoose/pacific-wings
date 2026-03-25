@@ -1,0 +1,100 @@
+106
+
+THE B-29 SUPERFORTRESS
+
+44-61832 F-13A-50-BN Boeing Renton 44-61947 F-13A-55-BN Boeing Renton 44-62296 F-13A-70-BN Boeing Renton
+44-61843 F-13A-50-BN Boeing Renton 44-61948 F-13A-55-BN Boeing Renton 45-21742 F-13A-90-BW Boeing Wichita
+44-61847 F-13A-50-BN Boeing Renton 44-61951 F-13A-55-BN Boeing Renton 45-21761 F-13A-95-BW Boeing Wichita
+44-61854 F-13A-50-BN Boeing Renton 44-61960  F-13A-55-BN Boeing Renton 45-21762 F-13A-95-BW Boeing Wichita
+44-61855 F-13A-50-BN Boeing Renton 44-61961 F-13A-55-BN Boeing Renton 45-21763 F-13A-95-BW Boeing Wichita
+44-61857 F-13A-50-BN Boeing Renton 44-61981 F-13A-55-BN Boeing Renton 45-21766 F-13A-95-BW Boeing Wichita
+44-61860 F-13A-50-BN Boeing Renton 44-61986 F-13A-55-BN Boeing Renton 45-21768 F-13A-95-BW Boeing Wichita
+44-61862 F-13A-50-BN Boeing Renton 44-61989 F-13A-55-BN Boeing Renton 45-21773 F-13A-95-BW Boeing Wichita
+44-61866 F-13A-50-BN Boeing Renton 44-61991 F-13A-55-BN Boeing Renton 45-21775 F-13A-95-BW Boeing Wichita
+44-61924 F-13A-55-BN Boeing Renton 44-61999 F-13A-55-BN Boeing Renton 45-21777 F-13A-95-BW Boeing Wichita
+44-61929 F-13A-55-BN Boeing Renton 44-62000 F-13A-55-BN Boeing Renton 45-21790 F-13A-95-BW Boeing Wichita
+44-61930 F-13A-55-BN Boeing Renton 44-62282 F-13A-70-BN Boeing Renton 45-21812 F-13-95-BW Boeing Wichita
+44-61931 F-13A-55-BN Boeing Renton 44-62284 F-13A-70-BN Boeing Renton 45-21846 F-13-95-BW Boeing Wichita
+44-61933 F-13A-55-BN Boeing Renton 44-62285 F-13A-70-BN Boeing Renton 45-21847 F-13-95-BW Boeing Wichita
+44-61934 F-13A-55-BN Boeing Renton 44-62287 F-13A-70-BN Boeing Renton 45-21848 F-13-95-BW Boeing Wichita
+44-61939 F-13A-55-BN Boeing Renton 44-62288 F-13A-70-BN Boeing Renton 45-21856 F-13-95-BW Boeing Wichita
+44-61945 F-13A-55-BN Boeing Renton 44-62289 F-13A-70-BN Boeing Renton 45-21859 F-13-95-BW Boeing Wichita
+44-61946 F-13A-55-BN Boeing Renton 44-62290 F-13A-70-BN Boeing Renton
+
+KB-29M HOsE AND REEL TANKER CONFIGURATION
+
+A few years after the end of World War I], the Strategic
+Air Command was seeking a way to upgrade its operational
+envelope. The solution to the problem lay in the aerial refu-
+eling of its bomber fleet.
+
+Boeing reopened a plant in Wichita, Kansas, and im-
+mediately started modifying B-29s to a tanker configuration
+using a hose system developed by Flight Refueling, Limited,
+in Great Britain. Eventually ninety-two airplanes were con-
+verted to this configuration and designated KB-29M. A 2300
+gallon jettisonable fuel tank was installled in each bomb bay,
+resulting in a fuel capacity of over 12,000 gallons.
+
+On the other end of the hose, seventy-two B-29s were
+
+44-27268 KB-29M-35-MO 44-69841 KB-29M-65-BW
+44-27280 KB-29M-35-MO 44-69853 KB-29M-65-BW
+44-27282 KB-29M-35-MO 44-69860 KB-29M-65-BW
+44-27325 KB-29M-35-MO 44-69875 KB-29M-65-BW
+44-27329 | KB-29M-40-MO 44-69951 | KB-29M-70-BW
+44-27330 KB-29M-40-MO 44-69953  KB-29M-70-BW
+44-27333 | KB-29M-40-MO 44-69957 KB-29M-70-BW
+44-27338 | KB-29M-40-MO 44-69958 KB-29M-70-BW
+44-27340 | KB-29M-40-MO 44-69960 KB-29M-70-BW
+44-69681 KB-29M-55-BW 44-69962 KB-29M-70-BW
+44-69685 KB-29M-55-BW 44-69981 KB-29M-70-BW
+44-69699 KB-29M-55-BW 44-70019 KB-29M-75-BW
+44-69704 KB-29M-55-BW 44-70024 KB-29M-75-BW
+44-69709 _KB-29M-60-BW 44-70044 KB-29M-75-BW
+44-69710 | KB-29M-60-BW 44-70047 KB-29M-75-BW
+44-69729 KB-29M-60-BW 44-70081 KB-29M-75-BW
+44-69731 | KB-29M-60-BW 44-70144 KB-29M-80-BW
+44-69732 KB-29M-60-BW 44-84144 KB-29M-75-BA
+44-69798 KB-29M-60-BW 44-86270 KB-29M-40-MO
+44-69806 KB-29M-65-BW 44-86277 KB-29M-45-MO
+44-69807 KB-29M-65-BW 44-86389 KB-29M-55-MO
+44-69809 KB-29M-65-BW 44-86418 KB-29M-55-MO
+44-69815 KB-29M-65-BW 44-86420 KB-29M-55-MO
+
+modified into receivers for the hose refueling system and re-
+designated B-29MR. The advantages of the increased range
+were, however, offset by a loss in bomb-carrying capacity,
+since the modifications reduced the effective bomb load by
+half. The system required the permanent installation of an aft
+bomb bay tank as a receiving vessel for the incoming fuel.
+Fuel in the aft bomb bay tank was then transferred to opera-
+tional tanks using the plane’s internal fuel transfer system.
+
+While workable, the system was slow and complicated,
+and the non-rigid hose presented some aerodynamic prob-
+lems.
+
+44-87601 KB-29M-80-BW 45-21700 KB-29M-90-BW
+44-87610 KB-29M-80-BW 45-21701 KB-29M-90-BW
+44-87611 KB-29M-80-BW 45-21702 _KB-29M-90-BW
+44-87622 KB-29M-80-BW 45-21703 KB-29M-90-BW
+44-87680 KB-29M-85-BW 45-21704 | KB-29M-90-BW
+44-87725 KB-29M-86-BW 45-21705 | _KB-29M-90-BW
+44-87742 KB-29M-90-BW 45-21706 KB-29M-90-BW
+44-87747 KB-29M-90-BW 45-21713 KB-29M-90-BW
+44-87758 KB-29M-90-BW 45-21716 KB-29M-90-BW
+44-87770 KB-29M-90-BW 45-21731 KB-29M-90-BW
+44-87776 KB-29M-90-BW 45-21734 KB-29M-90-BW
+44-87777 KB-29M-90-BW 45-21738 KB-29M-90-BW
+44-87778 KB-29M-86-BW 45-21741 KB-29M-90-BW
+44-87779 | KB-29M-90-BW 45-21764 | KB-29M-90-BW
+44-87780 KB-29M-90-BW 45-21765 KB-29M-90-BW
+44-87781 KB-29M-90-BW 45-21769 KB-29M-90-BW
+44-87782 KB-29M-90-BW 45-21778 | _KB-29M-90-BW
+44-87783 KB-29M-90-BW 45-21785 KB-29M-90-BW
+45-21693 KB-29M-90-BW 45-21788 KB-29M-90-BW
+45-21695 | KB-29M-90-BW 45-21792 KB-29M-90-BW
+45-21696 KB-29M-90-BW 45-21864 KB-29M-90-BW
+45-21697 KB-29M-90-BW 45-21865 KB-29M-90-BW
+45-21699 | KB-29M-90-BW

@@ -1,0 +1,70 @@
+180 THE B-29 SUPERFORTRESS
+
+235 June 28/29 Sasebo Urban Area Sasebo not avail 38 0
+241 July 1/2 Urban Area Kumamoto not avail 36 0
+248 July 3/4 Urban Area Kochi 32 0
+
+252 July 6/7 Urban Area Akashi not avail not avail
+
+258 July 9/10 Urban Area Sakai not avail 26 0
+264 July 12/13 Urban Area Ichinomiya not avail 30 0
+272 July 16/17 Urban Area Oita 29 31 0
+278 July 19/20 Hitachi Urban Area Hitachi not avail 33 1
+286 July 24 Armory & Kuwana — Factory Osaka not avail 35 0
+293 July 25/26 Urban Area Matsuyama not avail 31 0
+299 July 28/29 Urban Area Ichinomiya 30 4l 0
+307 August 1/2 Urban & Industrial Areas Toyame not avail 4l 0
+314 August 5/6 Urban & Industrial Areas Nishinomiya not avail 30 0
+317 August 7 Toyokawa Naval Arsenal Toyokawa 15 10 0
+319 August 7/8 Ubrban & Industrial Area Yawata not avail 26 0
+326 August 14 Army Arsenal Osaka not avail 38 0
+500thBG/73rdBW
+
+MSN Date Target Location Number Up Bombed Lost
+6 November 11 Submarine Base Truk 9 8 0
+7 November 24 Docks & Urban Area — Secondary Tokyo not avail 16 0
+8 November 27 Docks Area — Secondary Tokyo in above 15 1
+9 Nov 29/30 Light Industrial & Dock Area Tokyo not avail 6 1
+10 December 3 Musashino — Nakajima AC Eng Tokyo not avail 19 1
+ll December 8 Airfields Iwo Jima not avail 18 0
+12 December 13 Mitsubishi Aircraft Engine Plant Nagoya not avail 21 1
+13 December 18 Mitsubishi Aircraft Factory Nagoya not avail 14 1
+14 December 22 Mitsubishi Aircraft Engine Plant Nagoya not avail 6 0
+15 December 24 Airfields Iwo Jima not avail 9 0
+16 December 27 Nakajima AC Engine Plant Tokyo not avail 5 0
+17 Jan 3, 1945 Urban Area Nagoya not avail 19 2
+18 January 9 Target of Opportunity Tokyo Area not avail 10 1
+19 January 14 Mitsubishi Aircraft Factory Nagoya not avail 8 0
+20 January 19 Kawasaki Aircraft Factory Akashi not avail 16 0
+22 January 23 Mitsubishi Aircraft Engine Plant Nagoya not avail 13 1
+24 January 27 Docks, urban area — secondary Tokyo not avail 10 0
+26 February 4 Matsuzaka Kobe not avail 15 0
+29 February 10 Nakajima AircraftAssy Plant Ota not avail 18 1
+34 February 15 Mitsubishi Aircraft Engine Factory Nagoya not avail 7 0
+37 February 19 Industrial Area Tokyo not avail 17 2
+38 February 25 Urban area & Docks Tokyo not avail 27 0
+39 March 4 Secondary Target Tokyo Urban not avail 19 0
+40 March 9/10 Urban Area Tokyo 42 31 1
+41 March 11/12 Urban Area Nagoya 39 36
+
+42 March 13/14 Urban Area Osaka 32 32 0
+43 March 16/17 Urban Area Kobe 39 37 1
+44 March 18/19 Urban Area Nagoya 32 29 0
+45 March 24/25 Mitsubishi Aircraft Engine Plant Nagoya not avail 25 0
+46 March 27 Oita Airfield Kyushu 39 30 0
+50 March 31 Tachiari Machine Works Kyushu not avail 24 0
+51 April 1/2 Nakajima Aircraft Engine Plant Tokyo not avail 34 1
+57 April 3/4 Kawasaki Aircraft Factory Tachikawa not avail 30 1
+58 April 7 Nakajima Aircraft Factory Tokyo not avail 9 1
+60 April 8 Kanoya Airfield Kyushu in above 3 1
+61 April 8 Kagoshima Kyushu not avail 28
+
+63 April 12 Nakajima Aircraft Factory Tokyo not avail 29 0
+67 April 13/14 Tokyo Arsenal Tokyo not avail 28 0
+69 April 15/16 Urban Area Tokyo 34 30 1
+70 April 17 Izumi Airfield Kyushu not avail ll 0
+79 April 18 Izumi Airfield Kyushu not avail ll 0
+82 April 21 Oita Airfield Kyushu not avail 9 0
+85 April 21 Usa Airfield Kyushu 9 9 0
+91 April22 Izumi Airfield Kyushu not avail 10 0
+96 April 24 Hitachi Aircraft Factory Tachikawa ul 9 0

@@ -1,0 +1,539 @@
+188
+
+95
+
+96
+
+101
+
+102
+102
+102
+110
+
+122
+126
+139
+139
+150
+150
+150
+153
+154
+161
+
+161
+
+162
+162
+168
+168
+174
+181
+
+183
+187
+188
+190
+190
+190
+190
+194
+194
+201
+201
+202
+202
+204
+204
+204
+205
+205
+213
+213
+213
+214
+214
+214
+221
+221
+221
+222
+222
+222
+233
+233
+233
+239
+239
+239
+244
+244
+246
+246
+246
+253
+259
+
+April22
+April 24
+April 26
+April 26
+April 26
+April 26
+April 27
+April 29
+April 30
+May 3/4
+May 3/4
+May 5
+May 5/6
+May 5/6
+May 7
+May 7
+May 10
+May 10
+May 10
+May 10
+May 11
+May 11
+May 14
+May 23/24
+May 25/26
+June 1
+June 5
+June 7/8
+June 7/8
+June 7/8
+June 7/8
+June 9/10
+June 9/10
+June 11/12
+June 11/12
+June 13/14
+June 13/14
+June 15/16
+June 15/16
+June 15/16
+June 17/18
+June 17/18
+June 19/20
+June 19/20
+June 19/20
+June 21/22
+June 21/22
+June 21/22
+June 23/24
+June 23/24
+June 23/24
+June 25/26
+June 25/26
+June 25/26
+June 27/28
+June 27/28
+June 27/28
+June 29/30
+June 29/30
+June 29/30
+July 1/2
+July 1/2
+July 3/4
+July 3/4
+July 3/4
+July 6/7
+July 9/10
+
+Kanoya Airfield
+Hitachi Aircraft Factory
+Matsuyama Airfield
+Nittagahara Airfield
+Targets of Opportunity
+Targets of Opportunity
+Kokubu Airfield
+Kokubu Airfield
+Tachikawa Air Arsenal
+Mine Field Able
+Mine Field Mike
+Mine Field Able
+Mine Field King
+Mine Field Tare
+Oita Airfield
+Usa Airfield
+Miyazaki Airfield
+Target of Opportunity
+Kanoya Airfield
+Target of Opportunity
+Saeki Airfield
+Target of Opportunity
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Mine Field Mike
+Mine Field Love
+Mine Field Charlie
+Mine Field Mike
+Mine Field Mike
+Mine Field Love
+Mine Field Mike
+Mine Field Zebra
+Mine Field Love
+Mine Field Uncle
+Mine Field Mike
+Mine Field Nan
+Mine Field Charlie
+Mine Field Mike
+Mine Field Able
+Mine Field Mike
+Mine Field Uncle
+Mine Field Zebra
+Mine Field X-Ray
+Mine Field Nan
+Mime Field Able
+Mine Field Charlie
+Mine Field Yoke
+Mine Field Uncle
+Mine Field Mike
+Mine Field Love
+Mine Field Zebra
+Mine Field X-Ray
+Mine Field Able
+Mine Field Uncle
+Mine Field Mike
+Mine Field Zebra
+Mine Field Uncle
+Mine Field Love
+Mine Field Nan
+Mine Field William
+Mine Field Zebra
+Mine Field Mike
+Urban Area
+Urban Area
+
+THE B-29 SUPERFORTRESS
+
+Kyushu
+Tachikawa
+Kyushu
+Kyushu
+Kaimon Dake AF
+Miyazaki A/F
+Kyushu
+Kyushu
+Hamamatsu
+Kobe/Osaka
+Shimonoseki
+Kobe-Osaka
+Tokuyama
+Nagoya
+Kyushu
+Kyushu
+Kyushu
+Tanoga Naval
+Kyushu
+Kyushu
+Kyushu
+shimo Kawaguchi
+Nagoya
+Tokyo
+
+Tokyo
+
+Osaka
+
+Kobe
+Shimonoseki
+Shimonoseki
+Fukuoka Bay
+Shimonoseki
+Shimonoseki
+Shimonoseki
+Shimonoseki
+Tsuruga
+Shimonoseki
+Niigata
+Shimonoseki
+Fushiki
+Fukuoka
+Shimonoseki
+Kobe/Osaka
+Shimonoseki
+Niigata
+Miazuru/Miyazu
+Senzaki
+Fushiki
+Kobe/Osaka
+Fukuoka
+Sakai
+
+Niigata
+Shimonoseki
+Shimonoseki
+Tsuruga Bay
+Hagi
+Kobe/Osaka
+Niigata
+Yawata
+Maizyuru
+Miyahoura
+Shimonoseki City
+Fushiki, Nanao
+Funakoshi
+Maizuru
+Shimonoseki
+Kofu
+Wakayama
+
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+313BW
+
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+505BG
+
+5
+
+10
+
+not avail
+18
+
+in above
+in above
+12
+
+22
+
+not avail
+
+22
+
+in above
+11
+in above
+not avail
+not avail
+not avail
+31
+not avail
+10
+10
+
+not avail
+not avail
+
+5
+
+10
+
+not avail
+18
+
+1
+
+1
+
+8
+
+22
+
+7
+
+19
+
+4
+
+in above
+in above
+in above
+10
+
+ll
+
+FNARKTCN
+
+not avail
+35
+
+not avail
+33
+
+not avail
+9
+
+7
+
+4
+
+6
+
+19
+
+7
+
+15
+
+ll
+
+17
+
+12
+
+13
+
+9
+
+8
+
+18
+
+7
+
+10
+
+8
+
+10
+
+9
+
+Ww W
+WO
+
+a NooCDCCCOFNOODOCOCCOCCCCCCCCCO
+
+oO
+
+oooocooooocococcoccCcCcCCCCCCS
+
+ooooocoooococoeoeceoecec°oco

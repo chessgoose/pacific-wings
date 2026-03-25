@@ -1,0 +1,445 @@
+78
+
+Serial #
+
+44-86290
+44-86291
+44-86292
+44-86293
+44-86294
+44-86295
+44-86295
+44-86296
+44-86297
+44-86298
+44-86299
+44-86300
+44-86301
+44-86302
+44-86303
+44-86303
+44-86304
+44-86305
+44-86306
+44-86307
+44-86308
+44-86309
+44-86310
+44-86311
+44-86312
+44-86313
+44-86314
+44-86315
+44-86316
+44-86316
+44-86317
+44-86318
+44-86319
+44-86320
+44-86320
+44-86321
+44-86322
+44-86323
+44-86324
+44-86325
+44-86326
+44-86327
+44-86328
+44-86329
+44-86330
+44-86330
+44-86330
+44-86331
+44-86332
+44-86333
+44-86335
+44-86335
+44-86335
+44-86336
+44-86337
+44-86338
+44-86339
+44-86339
+44-86340
+44-86341
+44-86342
+44-86343
+44-86343
+44-86343
+44-86343
+
+Name
+
+PHIPPENS PIPPENS
+
+ENOLA GAY
+
+EARLY BIRD
+
+SPACE MISTRESS
+SPACE MISTRESS
+
+FOUR-A-BREAST
+
+(BULL BUTTING BOMB)
+
+APE SHIP
+APE SHIP
+
+MISS TAMPA X
+T.D.Y. WIDOW
+
+T.D.Y. WIDOW (WIFE)
+
+BIG BLOW
+
+WOLF PACK
+
+THE B-29 SUPERFORTRESS
+
+Identification
+
+SQUARE H
+CIRCLE ARROW
+CIRC R 82
+
+CIRCLE R
+SQUARE Y
+SQUARE H
+
+CIRCLE R
+CIRCLE R
+SQUARE P
+CIRCLE R
+
+CIRCLE R
+
+L TRI
+
+YLW BANDS
+CIRCLE R
+
+YLW BANDS
+TRIANGLE O
+
+BLK SQ M
+
+BLKSTRPGRN
+SQUARE H
+TRIANGLE O
+SQUARE Y
+
+BLK SQ M
+
+BLKSTRPGRN
+
+SQUARE A
+BLK SQ M
+SQUARE H
+BLKSTRPGRN
+
+SQUARE H
+SQUARE H
+BLKSTRRED
+BLKSTRP
+
+SQUARE A
+SQUARE H
+SQUARE H
+BLKSTRP
+CIRCLE R
+TRIANGLE C
+SQUARE H
+SQUARE H
+SQUARE Y
+SQUARE H
+SQUARE A
+
+SQUARE Y
+CIRC X 56
+CIRC X 56
+CIRC X
+
+Delv
+
+513111945
+3/28/1945
+
+6/1/1945
+6/4/1945
+6/4/1945
+6/4/1945
+6/5/1945
+6/5/1945
+6/6/1945
+6/8/1945
+
+6/8/1945
+6/8/1945
+6/8/1945
+
+6/8/1945
+
+6/11/1945
+6/13/1945
+6/13/1945
+6/11/1945
+6/12/1945
+
+6/18/1945
+
+6/12/1945
+6/12/1945
+6/14/1945
+6/13/1945
+6/18/1945
+6/19/1945
+
+6/19/1945
+6/20/1945
+6/19/1945
+6/18/1945
+6/21/1945
+
+TISIN945
+6/23/1945
+
+6/25/1945
+6/25/1945
+6/25/1945
+6/26/1945
+6/27/1945
+
+6/28/1945
+6/28/1945
+6/26/1945
+6/26/1945
+6/24/1945
+
+Assign
+
+98BG
+509CG
+509CG
+4141BU
+28BG
+307BG
+98BG
+4141BU
+28BG
+28BG
+307BW
+28BG
+
+28BG
+6BG
+
+2ARS
+28BG
+
+4141BU
+4105BU
+2ARS
+97BW
+4105BU
+4141BU
+4141BU
+19BG
+310BW
+
+19BG
+98BG
+97BG
+307BG
+XXIBC
+4141BU
+19BG
+44BW
+4141BU
+19BG
+73BW
+301BW
+19BG
+98BG
+19BG
+XXIBC
+98BG
+98BG
+19BG
+19BG
+611BSEX
+301BG
+98BG
+98BG
+19BG
+98BW
+509BW
+98BG
+98BG
+307BG
+98BG
+301BW
+XXIBC
+307BG
+9BG
+505BG
+9BG
+
+Off Inv
+
+TINAN954
+712111953
+
+10/12/1953
+8/16/1954
+8/16/1954
+10/12/1953
+10/12/1953
+9114/1953
+TIN4IN954
+10/12/1953
+6/8/1948
+10/17/1950
+912511954
+912511954
+10/12/1953
+6/14/1950
+10/12/1953
+8/7/1947
+51511954
+21911955
+11/12/1953
+8/19/1954
+10/12/1953
+7IN5IN946
+3/30/1954
+7ISIN945
+10/12/1954
+10/12/1954
+8/8/1954
+
+8/22/1954
+912711945
+11/23/1949
+912711945
+10/12/1953
+TIN4IN954
+10/12/1953
+7INSIN954
+70/1945
+712411951
+10/4/1950
+TINSIN945
+12/18/1950
+12/18/1950
+12/18/1950
+TN4N954
+8/8/1954
+9126/1949
+TIN4IN954
+7TIN4IN954
+7N4N954
+712911954
+7TIN4IN954
+41711948
+10/24/1954
+10/24/1954
+11/16/1954
+8/19/1954
+10/12/1953
+9113/1952
+9114/1952
+94/1952
+
+Circumstances
+
+Salvaged at Davis-Monthan
+Reclaimed Hill
+Unknown
+
+Reclaimed Tinker
+Reclaimed Davis-Monthan
+Reclaimed Davis-Monthan
+Reclaimed Pyote
+Reclaimed
+
+Reclaimed Tinker
+Reclaimed McClellan
+Reclaimed Tinker
+
+Surveyed
+
+Surveyed
+
+Reclaimed
+
+Reclaimed McClellan
+Reclaimed Tinker
+
+Surveyed
+
+Reclaimed Pyote
+
+Salvaged at Eglin
+
+Salvaged Prestwick
+Reclaimed Dow
+
+Reclaimed Robins
+Reclaimed Kelly
+
+Reclaimed Pyote
+
+Salvaged
+
+Reclaimed Davis-Monthan
+Surveyed at Pueblo
+Reclaimed McClellan
+Reclaimed McClellan
+Reclaimed Tinker
+Reclaimed McClellan
+Reclaimed Mountain Home
+Reclaimed
+
+Salvaged
+
+Reclaimed
+
+Reclaimed Pyote
+
+Salvaged at Davis-Monthan
+Reclaimed Pyote
+Reclaimed Mountain Home
+Surveyed
+
+Surveyed 6/1/51 wing on fire fm Kwakson
+Surveyed, major accident 9/15/50
+Crashed on takeoff
+Surveyed
+
+Surveyed
+
+Surveyed
+
+Salvaged at Davis-Monthan
+Reclaimed Tinker
+
+Crashed Talihina, Oklahoma
+Salvaged at Davis-Monthan
+Salvaged at Davis-Monthan
+Salvaged at Davis-Monthan
+Reclaimed Mountain Home
+Salvaged at Davis-Monthan
+Surveyed
+
+Reclaimed Kadena
+Reclaimed Kadena
+Reclaimed Davis-Monthan
+Reclaimed Kelly
+
+Reclaimed Pyote
+
+Flak, exploded Suho
+Salvaged at Kadena
+Surveyed at Kadena
+Unknown

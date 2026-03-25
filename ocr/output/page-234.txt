@@ -1,0 +1,94 @@
+220 THE B-29 SUPERFORTRESS
+
+Target # Target Location
+737 Army Food Depot Ujina Island
+740 East Hiroshima Rail Road Station Hiroshima
+748 Army Division Headquarters Hiroshima
+785 Kanegafuchi Soda Industry Kobe
+
+789 Nakajima Aircraft Company-Ota Parts Plant Ota
+
+791 Showa Aircraft Tokyo
+
+792 Tachikawa Aircraft Plant (code name: Modeller) Tachikawa
+793 Fukuda Light Aeroplane Co Amagasaki
+794 Hikari Arsenal (code name: Thunderhead) Tokuyama
+794 Hiro Arsenal Hiro
+
+796 Saka Steam Power Plant Sakai
+
+798 Kure Railroad Station Kure
+
+799 Mitsubishi Aircraft, Oimochi Plant Tokyo
+
+803 Matsuo Engine Works Nagasaki
+829 Mitsubishi Electrical Mfg Co Nagasaki
+834 Sasebo Aircraft Factory Sasebo
+
+844 Sasebo Coal Yard Sasebo
+
+845 Sasebo Outfitting Wharf Sasebo
+
+859 Spinning And Weaving Mill Nagasaki
+860 Koyagi Shima Shipyard, Matsu Iron Works Nagasaki
+802 Mitsubishi Aircraft Works Unknown
+810a Eitoku Industrial/Aircraft Factory Tsudo
+
+810a Furukawa Copper Ore Dressing Plant Tsudo
+
+810b Eitoku Plant Honzan
+810b Furukawa Smelter (code name: Treadle) Kyushu
+810c Electric Instrument Plant Moto
+
+810c Furukawa Machine Shops Mato
+
+811 Electro-Chemical Industry Kiyotaki
+811 Furuawa Copper Refinery Kiyotaki
+812 Hitachi Copper Refineery Sakagawa
+814 Sumitomo Copper Smelter Mino Is
+815 Sumitomo Copper Refinery Niihawa
+818 Ube Nitrogen Fertilizer Co Ube
+
+819 Nissan Chemical Industry Co, Onoda Plant Onoda
+
+820 Japan Powder Mfg Co Asa Plant Asa
+
+822 Onada Cement Co Onada
+
+822 Ube Cement Co Ube
+
+825 Hitachi Mfg Co Kasado Plant Kudamatsu
+826 Electro-Chemical Industry, Aomi Plant Tokyo
+
+827 Ube Steam Power Plant #1 Ube
+
+828 Hayashi Commercial Company Engine Works Nagasaki
+828 Matsuo Engine Works Unknown
+832 Megami Point Oil Storage Nagasaki
+835 Nagasaki Wharves Nagasaki
+836 Fiji Spinning Mills Nagasaki
+838 Isahaya Railroad Junctions Isahaya
+
+842 Taka Shima Colliery Taka Shima
+843 Ha Shima Colliery Ha Shima
+845 Sasebo Provisions Wharf Sasebo
+
+847 Nagasaki Steam Power Plant Nagasaki
+849 Omura Naval Air Station (code name: Vamoose) Omura
+
+851 Nagasaki Spinning Mill Nagasaki
+860 Kawanami Industry Co Shipyard Koyagi Shima
+861 Nichiman Aluminum Company Higashi-Iwase
+862 Higashi-Iwase Harbor Higashi-Iwase
+866 Nippon Soda Company, Aluminum Plant Takaoka
+867 Fujikura Electric Cable Works Fushiki
+867 Fushiki Harbor Fushiki
+870 Nanao Harbor Nanao
+
+871 Kanazawa Railroad Shops Matsuto-Machi
+873 Komaki Hydro Electric Plant Sho River
+874 Kanidera Hydro Electric Plant Jintsu River
+875 Soyama Hydro Electric Plant Sho River
+876 Yanagawara Hydro-Electric Plant Kurobe River
+
+877 Kurobe #2 Hydro Electric Plant Kurobe River

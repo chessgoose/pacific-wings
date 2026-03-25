@@ -1,0 +1,514 @@
+156
+
+MSN
+
+178
+178
+178
+178
+178
+178
+178
+178
+178
+178
+178
+178
+178
+178
+179
+179
+179
+179
+180
+180
+180
+180
+181
+181
+181
+181
+181
+181
+181
+181
+181
+181
+181
+181
+181
+181
+181
+181
+181
+181
+181
+181
+181
+181
+181
+181
+181
+181
+182
+182
+182
+182
+182
+183
+183
+183
+183
+183
+183
+183
+183
+183
+183
+183
+183
+
+Date
+
+May 19
+
+May 19
+
+May 19
+
+May 19
+
+May 19
+
+May 19
+
+May 19
+
+May 19
+
+May 19
+
+May 19
+
+May 19
+
+May 19
+
+May 19
+
+May 19
+
+May 20/21
+May 20/21
+May 20/21
+May 20/21
+May 22/23
+May 22/23
+May 22/23
+May 22/23
+May 23/24
+May 23/24
+May 23/24
+May 23/24
+May 23/24
+May 23/24
+May 23/24
+May 23/24
+May 23/24
+May 23/24
+May 23/24
+May 23/24
+May 23/24
+May 23/24
+May 23/24
+May 23/24
+May 23/24
+May 23/24
+May 23/24
+May 23/24
+May 23/24
+May 23/24
+May 23/24
+May 23/24
+May 23/24
+May 23/24
+May 24/25
+May 24/25
+May 24/25
+May 24/25
+May 24/25
+May 25/26
+May 25/26
+May 25/26
+May 25/26
+May 25/26
+May 25/26
+May 25/26
+May 25/26
+May 25/26
+May 25/26
+May 25/26
+May 25/26
+
+Target
+
+Target of Opportunity
+Target of Opportunity
+Tachikawa Arsenal
+City of Hamamatsu
+Target of Opportunity
+Target of Opportunity
+Target of Opportunity
+Target of Opportunity
+City of Hamamatsu
+City of Hamamatsu
+City of Hamamatsu
+Target of Opportunity
+Target of Opportunity
+City of Hamamatsu
+Mining-Mission 13
+Mine field Mike
+Mine Field Love
+Mine Field Zebra
+Mining Mission 14
+Mine Field Mike
+Mine Field Mike
+Mine Field Love
+Urban Area
+Urban Area
+Urban Area
+Target of Opportunity
+Urban Area
+Urban Area
+Urban Area
+Target of Opportunity
+South Tokyo Urban
+Target of Opportunity
+South Tokyo Urban
+South Tokyo Urban
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Target of Opportunity
+Urban Area
+South Tokyo Urban
+South Tokyo Urban
+South Tokyo Urban
+South Tokyo Urban
+South Tokyo Urban
+Mining Mission 15
+Secondary Targets
+Mine Field Uncle
+Mine field Nan
+Mine Field Mike
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Target of Opportunity
+Target of Opportunity
+Urban Area
+Target of Opportunity
+Target of Opportunity
+Target of Opportunity
+
+THE B-29 SUPERFORTRESS
+
+Location Wings
+
+Shizuoka
+Hachijo Jima
+Hamamatsu
+Hamamatsu 314BW
+Shizuoka
+Tatesama
+Shimada Airfield
+Tokyo
+Hamamatsu
+Hamamatsu
+Hamamatsu
+Shizuiko Urban
+Shimoda A/F
+Hamamatsu
+Shimonoseki 313BW
+Shimonoseki
+Shimonoseki
+Maizura Bay
+Shimonoseki 313BW
+Shimonoseki
+Shimonoseki
+Shimonoseki
+Tokyo
+
+Tokyo
+
+Tokyo
+
+Sagara
+
+Tokyo
+
+Tokyo
+
+Tokyo
+Shizuoka
+Tokyo
+Shizuoka
+Tokyo
+
+Tokyo
+
+Tokyo
+
+South Tokyo
+Tokyo
+
+Tokyo
+
+Tokyo
+
+Tokyo
+
+Tokyo
+Hamamatsu
+Tokyo
+
+Tokyo
+
+Tokyo
+
+Tokyo
+
+Tokyo
+
+Tokyo
+Fushiki/Niigata
+Fushiki/Niigata
+Niigata
+
+Fushiki
+Shimonoseki
+Tokyo
+
+Tokyo
+
+Tokyo
+
+Tokyo
+
+Tokyo
+
+Tokyo
+Hamamatsu
+Tateyama Hoto
+Tokyo
+Hamamatsu
+Shizuoka
+Hachijo Jima
+
+MISSION
+58BW
+
+73BW
+
+313BW
+
+314BW
+
+313BW
+
+MISSION
+58BW
+
+73BW
+
+Grps
+
+WING
+WING
+6BG
+
+WING
+WING
+WING
+WING
+19BG
+29BG
+39BG
+39BG
+39BG
+330BG
+9BG
+9BG
+9BG
+9BG
+9BG
+9BG
+9BG
+9BG
+
+40BG
+40BG
+444BG
+462BG
+468BG
+468BG
+
+WING
+497BG
+498BG
+499BG
+500BG
+
+6BG
+504BG
+505BG
+
+WING
+29BG
+WING
+19BG
+29BG
+39BG
+330BG
+9BG
+9BG
+9BG
+9BG
+9BG
+
+40BG
+
+444BG
+462BG
+468BG
+468BG
+468BG
+
+WING
+WING
+WING
+
+in above
+in above
+in above
+in above
+not avail
+not avail
+22
+
+in above
+in above
+22
+
+32
+
+23
+
+5
+
+4
+
+32
+
+9
+
+9
+
+14
+
+558
+
+127
+
+32
+
+in above
+
+in above
+170
+
+in above
+4l
+
+44
+
+Not avail
+not avail
+103
+
+35
+
+31
+
+not avail
+160
+
+in above
+not avail
+not avail
+43
+
+not avail
+38
+
+35
+
+30
+
+in above
+ll
+
+10
+
+9
+
+498
+
+133
+
+33
+
+34
+
+31
+
+35
+
+in above
+in above
+144
+
+in above
+in above
+in above
+
+Bombed
+
+7
+464
+119
+30
+33
+
+Lost
+
+ooooow o
+
+ooo
+
+NWWNOSHRNHONDOMMROOSOMADBWOOSOMOSOSY
+
+on
+
+mhoeeoo™™OON
+
+=
+
+oooR OC OF FUN

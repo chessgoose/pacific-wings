@@ -1,0 +1,80 @@
+222 THE B-29 SUPERFORTRESS
+
+Target # Target Location
+1147 Okuma Iron Works, Nunoike Plant Nagoya
+1153 Japan Porcelain Company Nagoya
+1155 Uji Hydro Electric Plant Uji River
+1159 Umekoje Freight Yards Kyoto
+
+1160 Maibara Railroad Yards Maibara
+1169 Uji Powder Factory Uji
+
+1171 Nippon Insulator Company Nagoya
+1176 Japan Light Metals Aluminum Plant Shimizu
+1177 Japan Light Metals Aluminum Plant Kamabara
+1181 Numazu Railroad Yards Numazu
+1191 Hatsudoki Engine Works Osaka
+
+1191 Hitachi Engine Works
+
+1195 Sumitomo Metal Industry Amagasaki
+1197 Kubota Iron & Machinery Works Amagasaki
+1198 Toyo Bearing Mfg Co Takarazuka
+1229 Yatsuyama Mine Unknown
+1243 Miike Dyestuffs Omuta
+1244 Oriental High Tension Company, Plant A Tokyo
+1245 Oriental High Tension Company, Plant B Tokyo
+1246 Aeronautical Experimental Laboratory Tokyo
+1249 Omuta Plant, Kyushu Power Company Omuta
+1254 Miike Harbor Omuta
+1260 Mitsui Zinc Distilling Plant Omuta
+1261 Mitsui Electrolytic Zinc Refinery Unknown
+1262 Mitsui Coal Liquidification Plant Omuta
+1267 Miike Coal Yards Miike
+
+1268 Mitani Railroad Workshops Mitani
+1273 Omuta Mill Kanegafuchi Spinning Company Omuta
+1275 Manda Mine Omuta
+1203 Nippon Oil Refinery & Tank Farm Amagasaki
+1206 Osaka Railroad Station Osaka
+1209 Suita Railroad Yars And Shops Suita
+
+1213 Akano Military Aviation School & Field Uji Yamada
+1214 33rd Infantry Regiment And Arsenal Hisai - Tsu
+1215 Kobe Steel Works Toba
+
+1216 Toba Dockyard Tobata
+1217 Kameyama Rr Junction Kameyama
+1218 Matsuzaka Junction And Round House Matsuzaka
+1219 Japan Musical Instrument Co Propeller Plant Hamamatsu
+1224 Toyohashi Army Base And Arsenal Toyohashi
+1227 Suzuki Loom Works Hamamatsu
+1230 Imperial Government Railways Shops Hamamatsu
+1236 Tachiari Air Field (code name: Fearless) Tachiari
+1237 Najima Seaplane Base Fukuoka
+1238 Watanabe Iron Works Plant No 2 Fukuoka
+1239 Kyushu Ordnance Plant Zasshonoguma
+1241 Miyata Motor Works Zasshonoguma
+1242 Sangyo Cement Co
+
+1246 Electro-Chemical Industry Co
+
+1247 Kurume Military Zone Kurume
+1248 Kumamoto Military Zone Kumamoto
+1249 Omuta #1 Steam Power Plant Omuta
+1255 Hakate Harbor Fukuoka
+1257 Kobokuro Machinery Works Nogata
+1259 Togami Electric Works Saga
+
+1261 Mitsui Electrolytic Zinc Refinery Omuta
+1263 Bridgestone Tire Company Kurume
+1264 Nippon Rubber Company Kurume
+1266 Tsuchiya Tabi Co Kurume
+1268 Mitsui Rr Workshops Omuta
+1269 Kurume Railroad Station Kurume
+1270 Hakata Railroad Yards And Station Fukuoka
+1271 Kineshima Mine Saga
+
+1274 Dainoura Mine Nogata
+
+1275 Tagawa Mines Nogata

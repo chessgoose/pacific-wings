@@ -1,0 +1,64 @@
+194
+
+THE B-29 SUPERFORTRESS
+
+16thBG/315thBW
+
+MSN Date Target Location Number Up Bombed Lost
+232 June 26/27 Utsube Oil Refinery Yokkaichi 15 15 0
+238 June 29/30 Nippon Oil Refinery Kadamatsu 18 16 0
+245 July 2/3 Maruzan Oil Refirnery Shimotsu 19 19 0
+255 July 6/7 Maruzen Oil Refinery Shimotsu 31 30 0
+261 July 9/10 Utsube Oil refinery Yokkaichi 30 33 0
+267 July 12/13 Petroleum Oil Center Kawasaki 28 28
+
+270 July 15/16 Kudamatsu Oil Refinery Kudamatsu 30 30 0
+281 July 19/20 Amagasaki — Nihon Oil Refinery Amagasaki 30 not avail not avail
+283 July 23/24 Coal Liquidification Plant Ube 30 not avail 0
+291 July 25/26 Oil Refinery Kawasaki 32
+
+303 July 28/29 Shimotsu Maruzen Refinery 21 not avail
+
+310 August 1/2 Mitsubishi Havana Oil Refinery Kawasaki 36 not avail
+
+315 August 5/6 Ube Coal Liquidification Co. Ube 30 not avail 0
+322 August 8/9 Nippon Oil Refinery Amagasaki 29 not avail 0
+328 August 14 Nippon Oil Refinery Tsuchisaki 38 not avail 0
+331stBG/315thBW
+
+MSN Date Target Location Number Up Bombed Lost
+310 August 1/2 Mitsubishi Havana Oil Refinery Kawasaki not avail
+
+315 August 5/6 Ube Coal Liquidification Co. Ube not avail not avail
+
+322 August 8/9 Nippon Oil Refinery Amagasaki not avail not avail
+
+328 August 14 Nippon Oil Refinery Tsuchisaki not avail not avail
+501stBG/315thBW
+
+MSN Date Target Location Number Up Bombed Lost
+232 June 26/27 Utsube Oil Refinery Yokkaichi 19 17 0
+238 June 29/30 Nippon Oil Refinery Kadamatsu 18 16 0
+245 July 2/3 Maruzan Oil Refirnery Shimotsu 21 20 0
+255 July 6/7 Maruzen Oil Refinery Shimotsu 28 28 0
+261 July 9/10 Utsube Oil refinery Yokkaichi 34 28 0
+267 July 12/13 Petroleum Oil Center Kawasaki 34 25
+
+270 July 15/16 Kudamatsu Oil Refinery Kudamatsu 39 27 0
+281 July 19/20 Amagasaki — Nihon Oil Refinery Amagasaki not avail 29 0
+283 July 23/24 Coal Liquidification Plant Ube 29 23 0
+291 July 25/26 Oil Refinery Kawasaki not avail 29 0
+303 July 28/29 Shimotsu Maruzen Refinery not avail 25 0
+310 August 1/2 Mitsubishi Havana Oil Refinery Kawasaki not avail 34 0
+315 August 5/6 Ube Coal Liquidification Co. Ube not avail 23 0
+322 August 8/9 Nippon Oil Refinery Amagasaki not avail 23 0
+328 August 14 Nippon Oil Refinery Tsuchisaki not avail 31 0
+502ndBG/315thBW
+
+MSN Date Target Location Number Up Bombed Lost
+310 August 1/2 Mitsubishi Havana Oil Refinery Kawasaki not avail
+
+315 August 5/6 Ube Coal Liquidification Co. Ube not avail not avail 0
+322 August 8/9 Nippon Oil Refinery Amagasaki not avail not avail
+
+328 August 14 Nippon Oil Refinery Tsuchisaki not avail not avail 0

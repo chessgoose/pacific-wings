@@ -1,0 +1,77 @@
+232 THE B-29 SUPERFORTRESS
+
+MSN Date Target Location Wings Grps No. Up Bombed Lost
+43 March 16/17 Urban Area Kobe 504BG 24 23 1
+43 March 16/17 Urban Area Kobe 505BG 36 32 0
+43 March 16/17 Urban Area Kobe 314BW WING 52 47 0
+43 March 16/17 Urban Area Kobe 19BG 26 24 0
+43 March 16/17 Urban Area Kobe 29BG 26 23 0
+44 March 18/19 Urban Area Nagoya MISSION WINGS 312 290 2
+44 March 18/19 Urban Area Nagoya 73BW WING 142 128 1
+44 March 18/19 Urban Area Nagoya 497BG 39 37 0
+44 March 18/19 Urban Area Nagoya 498BG 38 34 0
+44 March 18/19 Urban Area Nagoya 499BG 31 28 0
+44 March 18/19 Urban Area Nagoya 500BG 32 29 0
+44 March 18/19 Urban Area Nagoya 313BW WING 121 114 1
+44 March 18/19 Urban Area Nagoya 6BG 34 32 0
+44 March 18/19 Urban Area Nagoya 9BG 31 30 0
+44 March 18/19 Urban Area Nagoya 504BG 23 21 0
+44 March 18/19 Urban Area Nagoya 505BG 33 31 1
+44 March 18/19 Urban Area Nagoya 314BW WING 49 48 0
+44 March 18/19 Urban Area Nagoya 19BG 26 25 0
+44 March 18/19 Urban Area Nagoya 29BG 23 23 0
+68 April 15/16 Urban Area Kawasaki MISSION WINGS 219 197 12
+68 April 15/16 Urban Area Kawasaki 313BW WING 111 95 6
+68 April 15/16 Urban Area Kawasaki 6BG 24 24 0
+68 April 15/16 Urban Area Kawasaki 9BG 33 26 4
+68 April 15/16 Targets of Opportunity Kawasaki 9BG in above 4 0
+68 April 15/16 Urban Area Kawasaki 504BG 22 20 1
+68 April 15/16 Urban Area Kawasaki 505BG 32 25 1
+68 April 15/16 Urban Area Kawasaki 314BW WING 108 102 6
+68 April 15/16 Urban Area Kawasaki 19BG 33 33 3
+68 April 15/16 Urban Area Kawasaki 29BG 32 30 2
+68 April 15/16 Urban Area Kawasaki 39BG 23 23 1
+68 April 15/16 Urban Area Kawasaki 330BG 20 20 0
+69 April 15/16 Tokyo Urban Area Tokyo 73BW WING 120 109 1
+69 April 15/16 Urban Area Tokyo 497BG 28 23 0
+69 April 15/16 Urban Area Tokyo 498BG 33 30 0
+69 April 15/16 Urban Area Tokyo 499BG not avail 26 1
+69 April 15/16 Urban Area Tokyo 500BG 34 30 1
+174 May 14 Urban Area Nagoya MISSION XXIBC 524 472 Il
+174 May 14 Urban Area Nagoya 58BW WING 141 124 2
+174 May 14 Urban Area Nagoya 40BG 35 32
+
+174 May 14 Target of Opportunity Unknown 40BG in above 1
+
+174 May 14 Urban Area Nagoya 444BG 32 28
+
+174 May 14 Urban Area Nagoya 462BG 36 33
+
+174 May 14 Urban Area Nagoya 468BG 38 31
+
+174 May 14 Target of Opportunity Neve (sp?) Lake 468BG in above 1
+
+174 May 14 Urban Area Nagoya 73BW WING 162 145 2
+174 May 14 Urban Area Nagoya 497BG 44 36 1
+174 May 14 Urban Area Nagoya 498BG 31 29 0
+174 May 14 Urban Area Nagoya 499BG Not avail 40 1
+174 May 14 Urban Area Nagoya 500BG not avail 41
+
+174 May 14 Urban Area Nagoya 6BG 32 25 0
+174 May 14 Urban Area Nagoya 504BG 17 13 0
+174 May 14 Secondary Target Nagoya 504BG in above 2 0-
+174 May 14 Urban Area Nagoya 505BG not avail 25 2
+174 May 14 North Urban Area Nagoya 314BW WING 144 135 4
+174 May 14 Urban Area Nagoya 19BG not avail 39
+
+174 May 14 Urban Area Nagoya 29BG Not avail 38
+
+174 May 14 Urban Area North Nagoya 39BG 33 32 1
+174 May 14 Urban Area North Nagoya 330BG 32 32 0
+176 May 16/17 South Urban Area Nagoya MISSION WINGS 516 439 3
+176 May 16/17 Urban Area Nagoya 58BW WING 140 122 7
+176 May 16/17 Urban Area Nagoya 40BG 32 29 0
+176 May 16/17 Target of Opportunity Matsuyaka 40BG in above 1 0
+176 May 16/17 Urban Area Nagoya 444BG 32 26 0
+176 May 16/17 Target of Opportunity Koshimoto 444BG in above 1 0
+176 May 16/17 Urban Area Nagoya 462BG 37 33 0

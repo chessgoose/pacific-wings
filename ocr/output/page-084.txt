@@ -1,0 +1,400 @@
+70
+
+Serial #
+
+44-70015
+44-70016
+44-70016
+44-70016
+44-70016
+44-70017
+44-70018
+44-70018
+44-70019
+44-70019
+44-70020
+44-70021
+44-70021
+44-70022
+44-70023
+44-70024
+44-70025
+44-70026
+44-70027
+44-70028
+44-70029
+44-70030
+44-70031
+44-70032
+44-70033
+44-70034
+44-70035
+44-70036
+44-70037
+44-70038
+44-70039
+44-70040
+44-70041
+44-70042
+44-70042
+44-70042
+44-70043
+44-70044
+44-70045
+44-70046
+44-70047
+44-70048
+44-70049
+44-70050
+44-70051
+44-70052
+44-70053
+44-70054
+44-70055
+44-70056
+44-70057
+44-70058
+44-70059
+44-70060
+44-70061
+44-70062
+44-70063
+44-70064
+44-70065
+44-70066
+44-70067
+44-70068
+44-70069
+44-70069
+44-70069
+
+Name
+
+MARIANNA BELLE
+CITY OF QUAKER CITY
+DOPEY
+
+QUAKER CITY
+
+SENTIMENTAL JOURNEY
+
+CITY OF SPOKANE
+THE ERNIE PYLE
+
+WHO’S NEXT
+
+THE LEMON DROP KID
+
+DEARLY BELOVED
+THE RAMP TRAMP
+THE RAMP TRAMP
+
+THE B-29 SUPERFORTRESS
+
+Identification
+
+TRI S 20
+BLK SQ K 40
+
+BLK SQ K 40
+BLK SQ K 40
+BLK SQM
+CIRC E 56
+CIRC E 56
+CIRCLE K
+CIRCLE K
+CIRCLE K
+SQUARE Y
+SQUARE P
+
+BLKSTRP
+BLKSTRPGRN
+TRII 54
+CIRCLE E
+
+SQUARE Y
+
+BLK SQ M 39
+
+CIRC R 59
+CIRC R 59
+CIRC X
+
+Delv
+
+41611945
+
+41611945
+
+41611945
+
+41611945
+
+41611945
+
+41611945
+
+41611945
+
+41611945
+
+41611945
+
+41911945
+
+4110/1945
+4110/1945
+4110/1945
+41911945
+
+41911945
+
+41911945
+
+41911945
+
+4110/1945
+4110/1945
+4110/1945
+A4I1/1945
+4I11/1945
+4I11/1945
+4I11/1945
+4111/1945
+4112/1945
+4113/1945
+4112/1945
+4112/1945
+4112/1945
+4120/1945
+4113/1945
+4112/1945
+4112/1945
+4112/1945
+4113/1945
+4114/1945
+4114/1945
+4114/1945
+4116/1945
+4114/1945
+4114/1945
+4116/1945
+4118/1945
+411711945
+411711945
+411711945
+4118/1945
+411711945
+4118/1945
+4119/1945
+4119/1945
+4120/1945
+4119/1945
+4119/1945
+4128/1945
+4120/1945
+4120/1945
+4118/1945
+412511945
+412111945
+4120/1945
+4120/1945
+
+Assign
+
+40BG
+330BG
+
+330BG
+330BG
+19BG
+504BG
+504BG
+43BG
+43BG
+43BG
+307BG
+306BG
+
+4105BU
+4105BU
+4141BU
+
+235BU
+4105BU
+
+4141BU
+4196BU
+
+4141BU
+19BG
+19BG
+468BG
+22BG
+
+326BU
+581ASL
+326BU
+4141BU
+
+307BG
+236BU
+
+2750ABG
+
+19BG
+
+326BU
+
+6BG
+6BG
+9BG
+
+Off Inv
+
+6/2/1952
+9/15/1954
+9114/1954
+9114/1954
+9114/1954
+51411945
+412411947
+412411947
+9INI1954
+91954
+10/4/1954
+11/16/1954
+
+512511954
+8/8/1954
+11/16/1950
+51511954
+10/12/1954
+51511954
+11/1/1954
+10/14/1953
+11/1/1954
+5ITIN945
+51511954
+11/1/1954
+8/8/1954
+11/1/1954
+8/8/1954
+10/14/1953
+4120/1954
+11/15/1957
+10/14/1953
+7411954
+12/18/1951
+
+8/8/1954
+
+8/16/1954
+9123/1953
+912211954
+8/16/1954
+2/10/1954
+3/23/1954
+12/3/1953
+9/22/1953
+8/8/1954
+
+912411953
+8/8/1954
+
+6/27/1954
+5/8/1945
+
+9/13/1954
+7IN4IN1954
+10/4/1954
+8/18/1954
+11/3/1953
+7INSIN954
+10/4/1954
+
+912411953
+4120/1954
+11/1/1954
+8/8/1954
+8/8/1954
+8/8/1954
+
+Circumstances
+
+Salvaged
+
+Reclaimed Griffis
+Reclaimed Griffis
+Reclaimed Griffis
+Reclaimed Griffis
+
+Shot down Nagoya
+Salvaged
+
+Salvaged
+
+Reclaimed Yokota
+Reclaimed Yokota
+
+Tinker
+
+Reclaimed Davis-Monthan
+Transfer to 307BG
+Reclaimed Davis-Monthan
+Reclaimed Tinker
+Salvaged
+
+Reclaimed Davis-Monthan
+Salvaged Turner
+Reclaimed Davis-Monthan
+Reclaimed Tinker
+Reclaimed Pyote
+Reclaimed Tinker
+Surveyed at Biggs
+Reclaimed Davis-Monthan
+Reclaimed Tinker
+Reclaimed Tinker
+Reclaimed Tinker
+Reclaimed Tinker
+Reclaimed Pyote
+Reclaimed Robins
+Removed form inventory, Alaska
+Reclaimed Pyote
+
+Salvaged at Davis-Monthan
+Circumstances Unknown
+Survived the war
+
+Transfer to 19BG
+Reclaimed Tinker
+Reclaimed Davis-Monthan
+Reclaimed Tinker
+Reclaimed Tinker
+Reclaimed Davis-Monthan
+Reclaimed Randolph
+Reclaimed Clark Field
+Reclaimed Great Falls
+Reclaimed Pyote
+Reclaimed Tinker
+Reclaimed Tinker
+Reclaimed Tinker
+Reclaimed Kadena
+Surveyed at Pyote
+Reclaimed Davis-Monthan
+Salvaged at Davis-Monthan
+Reclaimed Tinker
+Reclaimed Wright-Patterson
+Reclaimed Tinker
+Reclaimed McClellan
+Reclaimed Tinker
+Unknown
+
+Unknown
+
+Reclaimed Tinker
+Reclaimed Robins
+Reclaimed Tinker
+Reclaimed Tinker
+Reclaimed Tinker
+Reclaimed Tinker

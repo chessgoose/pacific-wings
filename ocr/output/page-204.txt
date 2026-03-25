@@ -1,0 +1,81 @@
+190 THE B-29 SUPERFORTRESS
+
+186 May 29 Urban Area Yokohama not avail 39
+
+187 June 1 Urban Area Osaka 36 32 0
+188 June 5 Urban Area Kobe 33 32 0
+189 June 7 Urban Area Osaka 32 31 1
+199 June 10 Kasumiguara Air Base Kasumiguara 33 26 1
+203 June 15 Osaka/Amagasaki Urban Area Osaka/Amagasaki 34 27 0
+206 June 17/18 Urban Area Kagoshima 32 32
+
+212 June 19/20 Urban Area Shizuoka 35 33 1
+216 June 22 Mitsubishi Aircraft Factory Tamashima 33 29 0
+225 June 26 Kawasaki Aircraft Factory Akashi 35 33 0
+231 June 26 Kita-Shioya Aircraft Factory Kagamihara 35 25 2
+231 June 26 Target of Opportunity Matsusaka in above 2
+
+231 June 26 Target of Opportunity Toyohashi in above 1
+
+231 June 26 Target of Opportunity Katada in above 1
+
+231 June 26 Target of Opportunity Kita Shioya in above 1
+
+243 July 1/2 Urban Area Shimonoseki City 34 25
+
+250 July 3/4 Urban Area Tokushima 31 29 0
+254 July 6/7 Urban Area Kofu not avail 30
+
+260 July 9/10 Urban Area Gifu 32 not avail
+
+266 July 12/13 Urban Area Uwajima not avail 26
+
+274 July 16/17 Urban Area Hiratsuka 33 not avail
+
+280 July 19/20 Okazaki Urban Area Okazaki not avail not avail
+
+289 July 24 City of Tsu Tsu not avail 34 0
+295 July 26/27 Urban Area Omuta 32 not avail
+
+302 July 28/29 Urban Area Ogaki 32 29 0
+309 August 1/2 Urban & Industrial Areas Mito 45 43 0
+314 August 5/6 Urban & Industrial Areas Nishinomiya 34 30 0
+317 August 7 Toyokawa Naval Arsenal Toyokawa 12 12 0
+323 August 9/10 Nakajima Aircraft Factory Tokyo Arsenal 40 39 0
+330 August 14 Urban Area Isesake 44 4l 0
+29thBG/314thBW
+
+MSN Date Target Location Number Up Bombed Lost
+40 March 9/10 Urban Area Tokyo 26 22 5
+4l March 11/12 Urban Area Nagoya 21 19 0
+42 March 13/14 Urban Area Osaka 23 22 0
+43 March 16/17 Urban Area Kobe 26 23 0
+44 March 18/19 Urban Area Nagoya 23 23 0
+45 March 24/25 Mitsubishi Aircraft Engine Plant Nagoya 28 26 0
+46 March 27 Omura Airfield Omura 22 22 0
+46 March 27 Target of Opportunity Chichi Jima in above 1 0
+46 March 27 Target of Opportunity Uchinoura in above 1 0
+50 March 31 Omura Airfield Kyushu 22 22 0
+55 April 3/4 Aircraft Engine Factory Shizuoka 24 24 0
+59 April 7 Mitsubishi Aircraft Engine Plant Nagoya 31 28 2
+59 April 7 Target of Opportunity Oitsu in above 1 0
+59 April 7 Target of Opportunity Shingu in above 1 0
+59 April 7 Target of Opportunity Tamaski A/F in above 1 0
+59 April 7 Target of Opportunity Chichi Jima in above 1 0
+59 April 7 Target of Opportunity Nakiri in above 1 0
+65 April 12 Hodagaya Chemicak Works Koriyama 22 22 0
+67 April 13/14 Tokyo Arsenal Tokyo 38 36 1
+68 April 15/16 Urban Area Kawasaki 32 30 2
+75 April 17 Kanoya Airfield Kyushu 12 9 0
+78 April 18 Kanoya Airfield Kyushu not avail not avail
+
+84 April 21 Kanoya Airfield Kyushu 11 10 0
+87 April 21 Kushira Airfield Kyushu 9 8 0
+93 April 22 Miyazaki Airfield Kyushu 11 u
+
+96 April 24 Hitachi Aircraft Factory Tachikawa 11 ll 0
+105 April 26 Kushira Airfield Kyushu 22 13 0
+105 April 26 Target of Opportunity Kokubu A/F in above 5 0
+105 April 26 Target of Opportunity Chiran A/F in above 1 0
+105 April 26 Target of Opportunity Kanoya A/F in above 1 0
+105 April 26 Target of Opportunity Tanaga Shima in above 2 0

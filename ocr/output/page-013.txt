@@ -1,0 +1,69 @@
+PREFACE
+
+Way back in 1982, I asked myself a simple
+question: “I wonder what ever happened to old
+094?” Old 094 was WB-29 44-62094, a plane I
+loved and hated, sweet-talked and threatened,
+gently stroked and hit with hammers, praised
+and cursed to the outer reaches of hell. In short,
+my plane.
+
+That simple question was the seed from
+which this book grew. The examination of un-
+counted frames of microfilm, pages of books,
+phone conversations, and e-mails, not to men-
+tion web surfing, had resulted in a B-29 database
+listing every one of the 3960 B-29s manufac-
+tured.' Those planes with a combat record, I had
+records for each group they served with in World
+War II or Korea (or both). The database con-
+tained some 5,700 records, each with up to 23
+fields of information.
+
+Ancillary databases spun off from the
+
+'There is some controversy as to how many B-29s were built,
+various sources citing 3960, 3962, 3965 and 3970 delivered. In
+an attempt to settle the issue, the author performed an analysis
+using Joe Baugher’s definitive listing of all USAAF serial num-
+bers.
+
+All individual serial numbers for each type — XB-29, YB-29,
+B-29, B-29A and B-29B — were input into a spreadsheet and
+the line record number on the left side of the spreadsheet noted
+for the last serial number of each type. These were: XB-29-BO,
+
+xi
+
+mother database, covering the combat records of
+specific airplanes, rosters of planes by group,
+planes participating on specific missions, names
+of individual B-29s, and more.
+
+Over the years I gained some small notori-
+ety as a person who could answer B-29 questions
+and received a small but steady stream of in-
+quiries. Not being real fast out of the starting
+gate, it finally occurred to me that since I was
+looking up the same data for the third or fourth
+time, I should just print out a hard copy and put
+it in a reference binder. This promptly grew like
+Topsy.
+
+I finally realized that there was no system to
+the way things were put into the binder, so I de-
+cided to really organize it. When I finished I
+paged through the final result and said, para-
+phrasing Mel Brooks’ 2000 Year Old Man, “I
+
+think there is a book here.” And away we went.
+
+3; YB-29-BW, 14; B-29-BW, 1620; B-29-BA, 357; B-29-MO,
+536; B-29A-BN, 1119; B-29B-BA, 311; Total Built, 3960.
+Some of the confusion in the build totals may be caused by
+five serial numbers in the midst of B-29 sequences that were can-
+celled. These serial numbers were: 42-65314; 44-84140; 44-
+84150; 44-84153 (assigned to Christopher XAG-1CH); 44-
+84154 (assigned to Christopher XAG-ICH). (Source:
+http://home.att.net/~jbaugher/usafserials.html. Click USAAS/
+USAAC/USAAF/USAF Aircraft Serials.)

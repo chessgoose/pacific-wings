@@ -1,0 +1,476 @@
+160
+
+MSN
+
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+203
+204
+204
+204
+204
+205
+205
+205
+206
+206
+206
+206
+206
+206
+206
+206
+206
+207
+207
+207
+
+Date
+
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15
+June 15/16
+June 15/16
+June 15/16
+June 15/16
+June 17/18
+June 17/18
+June 17/18
+June 17/18
+June 17/18
+June 17/18
+June 17/18
+June 17/18
+June 17/18
+June 17/18
+June 17/18
+June 17/18
+June 17/18
+June 17/18
+June 17/18
+
+Target
+
+Osaka/Amagasaki Urban Area
+Osaka/Amagasaki Urban Area
+Urban Area
+Target of Opportunity
+Target of Opportunity
+Urban Area
+Target of Opportunity
+Urban Area
+Target of Opportunity
+Urban Area
+Target of Opportunity
+Target of Opportunity
+Target of Opportunity
+Target of Opportunity
+Osaka/Amagasaki Urban Area
+Target of Opportunity
+Osaka/Amagasaki Urban Area
+Osaka/Amagasaki Urban Area
+Osaka/Amagasaki Urban Area
+Osaka/Amagasaki Urban Area
+Osaka/Amagasaki Urban Area
+Target of Opportunity
+Target of Opportunity
+Target of Opportunity
+Target of Opportunity
+Target of Opportunity
+Target of Opportunity
+Target of Opportunity
+Osaka/Amagasaki Urban Area
+Osaka/Amagasaki Urban Area
+Urban Area
+Target of Opportunity
+Target of Opportunity
+Osaka/Amagasaki Urban Area
+Osaka/Amagasaki Urban Area
+Target of Opportunity
+Target of Opportunity
+Target of Opportunity
+Target of Opportunity
+Target of Opportunity
+Target of Opportunity
+Urban Area
+Urban Area
+Target of Opportunity
+Urban Area
+Secondary Target
+Mining Nission 22
+Mine Field Mike
+Mine Field Nan
+Mine Field Charlie
+Mining Mission 23
+Mine Field Mike
+Mine Field Able
+Urban Area
+Urban Area
+Urban Area
+Target of Opportunity
+Target of Opportunity
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Target of Opportunity
+
+THE B-29 SUPERFORTRESS
+
+Location Wings
+Osaka/Amagasaki
+Osaka/Amagasaki
+Osaka
+
+Kimomoto
+
+Kobe
+
+Osaka
+
+Kushimoto
+
+MISSION
+58BW
+
+Amagasaki
+Shirahama
+
+Osaka
+Kushimoto
+Katsaura
+Tokushima
+24:15N; 138:15E
+Osaka/Amagasaki
+Wakayama
+Osaka/Amagasaki
+Osaka/Amagasaki
+Osaka/Amagasaki
+Osaka/Amagasaki
+Osaka/Amagasaki
+Wakayama
+
+Mugi
+
+Tokushima
+Shiono Misaki
+Chichi Jima
+Matsune
+Katsuura
+Osaka/Amagasaki
+Osaka/Amagasaki
+Osaka/Amagasaki
+Uwano
+Kushimoto
+Osaka/Amagasaki
+Osaka/Amagasaki
+Ujiyamada
+Fukido
+Wakayama
+Tokushima
+Shingu
+
+Kochi
+Osaka/Amagasaki
+Osaka/Amagasaki
+Osaka/Amagasaki
+Osaka/Amagasaki
+Osaka/Amagasaki
+See Below
+Shimonoseki
+Fushiki
+
+Fukuoka
+
+See Below
+Shimonoseki
+Kobe/Osaka
+Kagoshima
+Kagoshima
+Kagoshima
+Yamakawa
+Iwakawa A/F
+Kagoshima
+Kagoshima
+Kagoshima
+Kagoshima
+Omuta
+
+Omuta
+
+Nagazu
+
+73BW
+
+314BW
+
+313BW
+
+313BW
+
+73BW
+313BW
+314BW
+
+58BW
+
+Grps
+
+40BG
+
+40BG
+
+40BG
+
+444BG
+444BG
+462BG
+462BG
+468BG
+468BG
+468BG
+468BG
+468BG
+
+WING
+497BG
+498BG
+499BG
+500BG
+
+WING
+WING
+WING
+WING
+WING
+WING
+WING
+19BG
+29BG
+39BG
+39BG
+39BG
+330BG
+
+WING
+WING
+WING
+WING
+WING
+WING
+6BG
+
+9BG
+
+9BG
+
+504BG
+504BG
+WING
+505BG
+505BG
+505BG
+
+505BG
+505BG
+WING
+WING
+
+WING
+WING
+19BG
+29BG
+39BG
+330BG
+
+40BG
+40BG
+
+No. Up
+
+511
+
+138
+
+33
+
+in above
+in above
+35
+
+in above
+30
+
+in above
+40
+
+in above
+in above
+in above
+in above
+
+in above
+in above
+in above
+in above
+in above
+in above
+34
+
+37
+
+31
+
+in above
+in above
+33
+
+94
+
+in above
+in above
+in above
+in above
+in above
+in above
+
+35
+
+137
+
+94
+
+120
+
+in above
+in above
+32
+
+33
+
+27
+
+28
+
+126
+
+32
+
+in above
+
+Bombed
+
+476
+119
+29
+
+1
+
+1
+
+32
+
+1
+
+25
+
+1
+
+33
+
+Lost
+
+oooocoooocoooceooooooocooocoocooOoOlUlrrOOOCOCCoCCoCCOrFrCCOCOCCCOCCOCCOCC COC COCOCOCCOCCOOrnN
+
+Oo
+
+ooo°o

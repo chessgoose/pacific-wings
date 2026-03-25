@@ -1,0 +1,491 @@
+154
+
+MSN
+
+165
+165
+165
+165
+165
+165
+165
+165
+165
+166
+166
+166
+166
+166
+166
+166
+167
+167
+168
+168
+169
+169
+169
+169
+169
+169
+169
+170
+171
+172
+172
+172
+172
+172
+172
+172
+172
+172
+172
+172
+172
+172
+173
+173
+173
+173
+174
+174
+174
+174
+174
+174
+174
+174
+174
+174
+174
+174
+174
+174
+174
+174
+174
+174
+174
+
+Date
+
+May 10
+May 10
+May 10
+May 10
+May 10
+May 10
+May 10
+May 10
+May 10
+May 10
+May 10
+May 10
+May 10
+May 10
+May 10
+May 10
+May 10
+May 10
+May 11
+May 11
+May 11
+May 11
+May 11
+May 11
+May 11
+May 11
+May 11
+May 11
+May 11
+May 11
+May 11
+May 11
+May 11
+May 11
+May 11
+May 11
+May 11
+May 11
+May 11
+May 11
+May 11
+May 11
+May 13/14
+May 13/14
+May 13/14
+May 13/14
+May 14
+May 14
+May 14
+May 14
+May 14
+May 14
+May 14
+May 14
+May 14
+May 14
+May 14
+May 14
+May 14
+May 14
+May 14
+May 14
+May 14
+May 14
+May 14
+
+THE B-29 SUPERFORTRESS
+
+Target
+
+Target of Opportunity
+Target of Opportunity
+Target of Opportunity
+Target of Opportunity
+Target of Opportunity
+Oil Refinery
+Oil Refinery
+Oil Refinery
+Oil Refinery
+Oshima Oil Storage
+Naval Oil Storage
+Target of Opportunity
+Naval Oil Storage
+Target of Opportunity — Ship
+Target of Opportunity
+Naval Oil Storage
+Oita Airfield
+Target of Opportunity
+Saeki Airfield
+Target of Opportunity
+Nittagahara Airfield
+Targets of Opportunity
+Targets of Opportunity
+Targets of Opportunity
+Targets of Opportunity
+Targets of Opportunity
+Targets of Opportunity
+Miyazaki Airfield
+Miyakonojo Airfield
+Kawanishi Aircraft Factory
+Kawanishi Aircraft Factory
+Kawanishi Aircraft Factory
+Target of Opportunity
+Kawanishi Aircraft Factory
+Kawanishi Aircraft Factory
+Kawanishi Aircraft Factory
+Kawanishi Aircraft Factory
+Kawanishi Aircraft Factory
+Kawanishi Aircraft Factory
+Kawanishi Aircraft Factory
+Kawanishi Aircraft Factory
+Kawanishi Aircraft Factory
+Mining Mission 10
+Mine Field Mike
+Mine Field Love
+Mine Field Uncle
+Urban Area
+Urban Area
+Target of Opportunity
+Target of Opportunity
+Urban Area
+Target of Opportunity
+Urban Area
+Urban Area
+Urban Area
+Target of Opportunity
+Urban Area
+Target of Opportunity
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Target of Opportunity
+Target of Opportunity
+
+Location Wings
+Oshima Oil
+Shimuzo
+
+Saeki Airfield
+Uwa Jima
+
+Bofu Airfield
+Otake
+
+Otake
+
+Otake
+
+Otake
+
+Oshima
+
+Oshima
+
+Sukumo Seaplane
+Oshima
+
+32-57N, 132-58E
+Otake Oil Refinery
+Oshima
+
+Kyushu
+
+Miyachi
+
+Kyushu
+
+shimo Kawaguchi
+
+58BW
+
+313BW
+313BW
+Kyushu 313BW
+Hoso Shima NB
+Kochi A/F
+Kubokawa
+Suma
+
+Shibushi
+Tanega Shima
+Kyushu
+
+Kyushu
+
+Kobe
+
+Kobe
+
+Kobe
+Sakimahara
+Kobe
+
+Fukae
+
+Fukae
+
+Fukae
+
+Fukae
+
+Fukae
+
+Kobe
+
+Kobe
+
+Kobe
+
+See Below
+Shimonoseki
+Shimonoseki
+Niigata
+
+Nagoya
+
+Nagoya
+
+Biwa Lake Area
+Unknown
+Nagoya
+Unknown
+Nagoya
+
+Nagoya
+
+Nagoya
+
+Neve (sp?) Lake
+Nagoya
+Kushimoto
+Nagoya
+Nagoya
+Nagoya
+
+Nagoya
+Nagoya
+Nagashima
+Nishii
+
+313BW
+313BW
+MISSION
+58BW
+
+314BW
+
+73BW
+
+313BW
+
+MISSION
+58BW
+
+73BW
+
+313BW
+
+Grps
+
+WING
+WING
+WING
+WING
+WING
+19BG
+29BG
+39BG
+330BG
+
+40BG
+40BG
+444BG
+444BG
+444BG
+462BG
+504BG
+504BG
+505BG
+505BG
+6BG
+6BG
+6BG
+6BG
+6BG
+6BG
+6BG
+9BG
+9BG
+
+444BG
+444BG
+468BG
+
+19BG
+29BG
+39BG
+330BG
+
+497BG
+500BG
+9BG
+9BG
+9BG
+9BG
+
+WING
+WING
+40BG
+
+40BG
+
+444BG
+462BG
+468BG
+468BG
+
+WING
+497BG
+498BG
+499BG
+500BG
+
+WING
+WING
+
+No. Up
+
+in above
+in above
+in above
+in above
+in above
+not avail
+not avail
+
+33
+
+in above
+24
+
+in above
+in above
+
+in above
+in above
+in above
+in above
+in above
+12
+
+ant
+
+102
+
+38
+
+13
+
+in above
+25
+
+40
+
+not avail
+not avail
+
+not avail
+12
+
+3
+
+5
+
+4
+
+524
+
+141
+
+in above
+in above
+
+in above
+162
+
+in above
+44
+
+31
+
+Not avail
+not avail
+79
+
+in above
+in above
+
+Bombed
+
+145
+
+36
+29
+40
+4]
+
+2
+1
+
+Lost
+
+Nrooooooooooceorcooocoorcocooecococooocoocooooooooooooooo ooo o Oo
+
+rForon
+
+ow

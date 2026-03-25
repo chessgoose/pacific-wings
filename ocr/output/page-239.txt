@@ -1,0 +1,262 @@
+Target #
+
+1456
+1457
+1458
+1460
+1461
+1462
+1463
+1464
+1465
+1466
+1467
+1468
+1470
+1470
+1471
+1472
+1472
+1473
+1476
+1477
+1478
+1479
+1484
+1485
+1486
+1487
+1488
+1489
+1490
+1491
+1492
+1493
+1494
+1496
+1496
+1498
+1499
+1594
+1595
+1502
+1505
+1515
+1517
+1518
+1519
+1520
+1520
+1521
+1522
+1536
+1539
+1544
+1544
+1545
+1546
+1547
+1588
+1589
+1590
+1591
+1592
+1592
+1593
+1595
+1596
+
+VII. The XXI Bomber Command
+
+Target
+
+Yokosuka Torpedo And Wireless Schools
+Montenaga Inlet Oil Tanks
+
+Yokosuka Naval Radio
+
+Uraga Dockyard #1
+
+Uraga Dockyard #2
+
+Shingagawa Shipyard
+
+Akabane Powder Storage, Tokyo Arsenal
+Akashi Industrial - Aircraft Factory
+Kashima Naval Air Station
+
+Kasumiguara Naval Air Station
+
+Hitachi Engineering Kaigan Plant
+
+Mito Army Airdrome
+
+Otawa Bay Airport
+
+Shimoshizu Army Airdrome
+
+Yatabe Navy Airdrome
+
+Tsudanuma Airdrome
+
+Tsukuba Navy Airdrome
+
+Tsuchiura Navy Airdraome
+
+Hitachi Engineering Co., Kaigan Plant
+Kisarazu Fleet Fueling Base
+
+Mito Railroad Junction And Station
+Toride Railroad Bridge
+
+Kamioka Lead & Zinc Mines
+
+South Manchurian Wharf & Warehouse
+Yokosuka Old Aircraft Center
+
+Hokada Airdrome
+
+Kioroshi Army Airdrome
+
+Tomobe Navy Airdraome
+
+Tsudanuma Airdrome
+
+Kasumiguara Naval Air Station
+
+Hitachi Copper Smelter
+
+Toshin & Shinko Warehouses
+
+Kanson Point Fortification
+
+Akashi Urban Area
+
+Chichibu Cement Company
+
+Otaki Hydro-Electric Plant
+
+Momoyama Hydro Electric Plant And Substation
+Tobata Steam Power Plant
+
+Steam Power Plant #2
+
+Yomikaki Hydro-Electric Plant
+
+Oi Hydro-Electric Plant
+
+Yatzuzawa Hydro-Electric Plant
+Kagoshima Railroad Repair Shops
+Kagoshima Freight Yards
+
+Ito Aircraft Plant
+
+Onagohata Power Station
+
+Riken Vacuum Tube Plant
+
+Showa Chemical & Fertilizer Plant
+Shinohara Machinery Works
+
+Showa Fertilizer, Kanose Plant
+
+Tokai Electrode Co
+
+Nakajima Aircraft Company
+
+Nakajima Aircraft Plant (code name: Fraction)
+Nakajima Aircraft Company, New Ota Plant (code name: Furious)
+Nakajima Aircraft Company-Maebashi Parts Plant
+Kawasaki Aircraft Plant (code name: Fruitcake)
+Shingo Hydro Plant
+
+Toyomi Hydro Plant
+
+Kanose Hydro Plant
+
+Yasuoka Hydro-Electric Plant
+
+Shinano Hydro Plant
+
+Shingo Hydro Plant
+
+Senju Hydro Plant
+
+Omuta #2 Steam Power Plant
+
+Omuta #3 Steam Power Plant
+
+225
+
+Location
+
+Yokosuka
+Yokosuka
+Yokosuka
+Yokosuka
+Yokosuka
+Tokyo
+Kasumguara
+Choshi City
+Kasumiguara
+Kasumiguara
+Hatachi
+Mito
+
+Otawa Bay
+Shimoshizu
+Kasumiguara
+Kasumiguara
+Kasumiguara
+Kasumiguara
+Sakegawa
+Tokyo
+
+Mito
+
+Mito
+Kamioka
+Kawasaki
+Yokosuka
+Hokada
+Kioroshi
+Kasumiguara
+Tsudanuma
+Kasumiguara
+Sakagawa
+Yokohama
+Uraga
+Chichibu
+Chichibu
+Kiso River
+Kiso River
+Unknown
+Omuta
+
+Kiso River
+Kiso River
+Sagomi River
+Kagoshima
+Kagoshima
+Ito
+
+Hida
+Mohara
+
+Kanose
+Tanoura
+New Ota
+Ota
+
+Koizumi
+Maebashi
+Akashi
+Agano River
+Agano River
+Agano River
+Tenryu River
+Shinano River
+
+Shinano River
+Omuta
+Omuta

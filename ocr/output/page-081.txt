@@ -1,0 +1,503 @@
+Serial #
+
+44-69870
+44-69870
+44-69871
+44-69872
+44-69872
+44-69873
+44-69874
+44-69875
+44-69875
+44-69876
+44-69877
+44-69878
+44-69878
+44-69878
+44-69879
+44-69880
+44-69881
+44-69882
+44-69883
+44-69883
+44-69884
+44-69884
+44-69884
+44-69885
+44-69886
+44-69887
+44-69888
+44-69889
+44-69889
+44-69890
+44-69890
+44-69891
+44-69892
+44-69893
+44-69894
+44-69894
+44-69895
+44-69896
+44-69897
+44-69898
+44-69898
+44-69899
+44-69900
+44-69901
+44-69901
+44-69902
+44-69903
+44-69904
+44-69905
+44-69906
+44-69907
+44-69908
+44-69908
+44-69909
+44-69909
+44-69910
+44-69910
+44-69910
+44-69911
+44-69911
+44-69912
+44-69913
+44-69914
+44-69914
+44-69915
+
+Name
+
+THE CABOOSE
+CITY OF AURORA
+
+CITY OF OAKLAND
+WHITE’S CARGO
+
+LADY JAYNE
+CITY OF COVINGTON
+
+MARIANNA BELLE
+MARIANNA BELLE
+
+CITY OF TYLER (TEXAS)
+LANCER
+
+GENERAL ANDREWS
+THE SLIC CHIC
+
+THE OLD GIRL
+
+THE ANTAGONIZER
+BOEING WICHITA 1000
+
+CITY OF GRUNDY CENTER
+
+ARKANSAS TRAVELER
+MAXIMUM EFFORT #3
+GRUMPY
+
+CITY OF MAYWOOD
+DOUBLE TROUBLE
+
+TABOOMA IV
+
+CITY OF LA GRANGE (IL)
+LOW & LONELY
+DYNA-MITE II
+
+BETTY MARIAN
+
+CITY OF EUGENE
+
+CITY OF SPOKANE
+
+CITY OF RICHMOND CA
+VIVACIOUS LADY
+
+CITY OF EAGLE ROCK
+LORD’S PRAYER
+
+Identification
+
+BLK SQ P 35
+BLK SQ P 35
+BLK SQ M 34
+BLK SQ M 36
+BLK SQ M 36
+BLK SQ M 13
+CIRC X 21
+BLK SQ O 13
+SQUARE A
+BLK SQO
+BLK SQO
+
+Z SQ 46
+ZSQ 49
+
+VsSQ
+VsQ
+
+BLK SQ O
+BLK SQ O
+
+X TRI 11
+CIRC X11
+BLK SQ P 43
+BLK SQ P 43
+CIRC R 36
+
+Z 47 (2)
+BLK SQ O
+Vv?
+
+BLK SQ P 50
+BLK SQ P 46
+
+BLK SQ P 25
+BLK SQ P 25
+BLK SQ O
+BLK SQ O
+BLK SQM
+BLK SQ P 20
+SQUARE H
+BLK SQ P 26
+Vv?
+
+BLK SQ K
+ASQ
+CIRCLE E
+A56
+
+CIRC W 05
+BLK SQ P 10
+BLK SQ P 10
+BLK SQ P
+BLK SQ P
+
+TRI S 46
+BLK SQ P 09
+BLK SQ P 54
+BLK SQ P 54
+SQUARE H
+SQUARE Y
+BLK SQ P 17
+BLK SQ P 17
+BLK SQ P 17
+BLK SQ K 59
+BLK SQ K 59
+A
+
+A
+
+BLK SQ P 05
+BLK SQ P 05
+
+I. Master List
+
+Delv
+
+2/19/1945
+2/19/1945
+2/19/1945
+2/23/1945
+2/23/1945
+2/19/1945
+2/19/1945
+2/19/1945
+2/19/1945
+2/23/1945
+2/19/1945
+2/23/1945
+2/23/1945
+2/23/1945
+2/20/1945
+2/20/1945
+2/23/1945
+212411945
+212411945
+4100/45
+
+212411944
+212411944
+212411944
+212411945
+212411945
+2126/1945
+212411945
+212411945
+
+2/14/1945
+2I14/1945
+
+212411945
+212411945
+2126/1945
+2/26/1945
+212711945
+
+3/5/1945
+3/5/1945
+3/5/1945
+212711945
+3/13/1945
+3/5/1945
+3/5/1945
+31911945
+2/28/1945
+3/12/1945
+3/10/1945
+5/18/1945
+3/10/1945
+
+3/10/1945
+3/10/1945
+3/10/1945
+3/10/1945
+3/10/1945
+3/8/1945
+3/8/1945
+3/8/1945
+3/8/1945
+3/8/1945
+3/8/1945
+31911945
+
+Assign
+
+39BG
+39BG
+19BG
+19BG
+19BG
+19BG
+9BG
+29BG
+301BG
+29BG
+29BG
+500BG
+500BG
+
+499BG
+499BG
+29BG
+29BG
+9BG
+9BG
+39BG
+39BG
+6BG
+500BG
+29BG
+499BG
+39BG
+39BG
+
+39BG
+39BG
+29BG
+29BG
+19BG
+504BG
+98BG
+39BG
+499BG
+330BG
+497BG
+22BG
+497BG
+505BG
+39BG
+39BG
+39BG
+39BG
+
+40BG
+39BG
+39BG
+39BG
+98BG
+307BG
+39BG
+39BG
+39BG
+330BG
+330BG
+497BG
+497BG
+39BG
+39BG
+
+Off Inv
+
+TISINV945
+TISIN945
+411511945
+2/22/1954
+212211954
+6/26/1945
+10/21/1953
+
+5/17/1950
+5/10/1954
+6/29/1954
+912211954
+912211954
+12/2/1944
+51511954
+8/16/1954
+6/19/1945
+411511945
+4100/45
+8/7/1945
+8/8/1954
+8/8/1954
+8/8/1954
+412011954
+3/31/1954
+51511945
+412711945
+512911945
+
+8/8/1954
+8/8/1945
+
+512411945
+6/22/1945
+
+8/16/1954
+4128/1945
+11/30/1951
+5/25/1945
+5/25/1954
+5/25/1954
+51511945
+5/14/1945
+4126/1954
+412611954
+4120/1954
+8/8/1954
+3/16/1954
+10/14/1953
+912411953
+411511945
+
+8/16/1954
+8/16/1954
+8/16/1954
+8/16/1954
+8/16/1954
+51711954
+
+51711954
+
+8/10/1954
+4128/1954
+7IN8/1954
+7IN8/1954
+912211954
+
+67
+
+Circumstances
+
+Engine fire — abandoned over Gifu
+Engine fire — abandoned over Gifu
+Lost Kawasaki, crashed Chiba
+Salvaged at Molesworth
+
+Salvaged at Molesworth
+
+Rammed; exploded at Nagoya
+Reclaimed Pyote
+
+Survived war
+
+Surveyed Azores — crashed, burned 5/14
+Reclaimed Davis-Monthan
+Reclaimed Laurel
+
+Reclaimed Tinker
+
+Reclaimed Tinker
+
+Reclaimed Tinker
+
+Reclaimed Davis-Monthan
+Reclaimed Griffis
+
+Mid-air with 42-65373 at Shizuoko
+Lost Kawasaki
+
+Tail Code Change
+
+Abandoned Iwo Jima from Toyokawa
+Reclaimed Tinker
+
+Reclaimed Tinker
+
+Reclaimed Tinker
+
+Reclaimed Davis-Monthan
+Reclaimed Davis-Monthan
+Crashed, exploded at Utogi
+
+Crashed from Kushira Airfield
+Ditched 120 miles from Tori shima
+Unknown
+
+Reclaimed Tinker
+
+Reclaimed Tinker
+
+Unknown
+
+Shot down Tokyo
+
+Shot down offshore from Mizushima
+Survived war
+
+Reclaimed Davis-Monthan
+Rammed at Miyazaki Airfield, ditched
+Salvaged
+
+Shot down by fighters
+
+Reclaimed Davis-Monthan
+Reclaimed Davis-Monthan
+
+3 & 4 out, wing broke off between them
+Shot up at Nagoya, abandoned Iwo Jima
+Reclaimed Davis-Monthan
+Reclaimed Davis-Monthan
+Reclaimed Robins
+
+Reclaimed Tinker
+
+Reclaimed Dow
+
+Reclaimed Pyote
+
+Reclaimed Tinker
+
+Lost Kawasaki
+
+Unknown
+
+Unknown
+
+Reclaimed Davis-Monthan
+Reclaimed Davis-Monthan
+Reclaimed Davis-Monthan
+Reclaimed Davis-Monthan
+Reclaimed Davis-Monthan
+Reclaimed Davis-Monthan
+Reclaimed Davis-Monthan
+Reclaimed Mountain Home
+Reclaimed Davis-Monthan
+Reclaimed Dow
+
+Reclaimed Dow
+
+Reclaimed Tinker

@@ -1,0 +1,520 @@
+Serial #
+
+42-24605
+42-24606
+42-24607
+42-24608
+42-24609
+42-24609
+42-24610
+42-24611
+42-24612
+42-24613
+42-24614
+42-24615
+42-24616
+42-24617
+42-24618
+42-24619
+42-24620
+42-24620
+42-24621
+42-24622
+42-24623
+42-24624
+42-24625
+42-24625
+42-24626
+42-24627
+42-24628
+42-24629
+42-24630
+42-24631
+42-24632
+42-24633
+42-24634
+42-24635
+42-24636
+42-24637
+42-24638
+42-24639
+42-24640
+42-24640
+42-24641
+42-24642
+42-24643
+42-24644
+42-24645
+42-24646
+42-24647
+42-24648
+42-24649
+42-24650
+42-24651
+42-24652
+42-24653
+42-24654
+42-24655
+42-24656
+42-24657
+42-24658
+42-24659
+42-24660
+42-24661
+42-24662
+42-24663
+42-24663
+42-24664
+
+Name
+
+THE HEAT’S ON
+BATTLIN’ BETTY
+FORBIDDEN FRUIT
+
+LASSIE COME HOME
+LASSIE COME HOME
+BEDROOM EYES
+LITTLE JO
+KLONDIKE KUTEY
+
+JOLTIN’ JOSIE
+CORAL QUEEN
+HALEY’S COMET
+
+SHADY LADY
+SLEEPY TIME GAL
+SLEEPY TIME GAL
+YOKOHAMA YOYO
+LUCKY IRISH
+THUMPER
+PATCHES
+(MAJORETTE)
+LADY MARY ANNA
+JOKER’S WILD
+TEXAS DOLL
+SPECIAL DELIVERY
+DEVIL'S DARLIN’
+
+WAR WEARY
+
+HELLO NATURAL III
+THUNDERHEAD
+
+UNCLE TOM’S CABIN
+THERE’LL ALWAYS BEAXMAS
+
+TORCHY
+
+HASTA LUEGO
+HUMP’S HONEY
+MISS TITTYMOUSE
+JUG HAID II
+YANKEE MADE
+DEVIL'S DELIGHT
+SUPINE SUE
+
+THE WICHITA WITCH
+MISS BEHAVIN’
+ROSALIA ROCKET
+MUSN TOUCH
+WUGGED WASCAL
+
+MILLION DOLLAR BABY
+THE BIG STICK
+
+LADY EVE II
+WILLIE MAE
+RAMBLIN’ ROSCOE
+
+Identification
+
+TsSQ2()
+T SQ 41 (1)
+T SQ 50
+TSQ3(1)
+T SQ 02 (1)
+T SQ 21 (1)
+T SQ 22 (1)
+TSQ4()
+12
+
+T SQ 45 (1)
+TSQ5(1)
+ASQ 8 (1)
+A SQ 22 (1)
+
+ASQ 23 (1)
+FOURBLUSTRP C
+TRIS 21
+
+F
+
+ASQ 26 (1)
+
+ASQ 21 (1)
+
+T SQ 44 (2)
+
+T SQ 24 (1)
+
+T SQ 24 (1)/T 48
+ASQ 42 (1)
+
+ASQ 27 (1)
+
+ASQ 29 (1)
+TSQ9(1)
+
+VSQ6 (1)
+
+V SQ 29 (1)
+
+ASQ 43 (1)
+T SQ 25 (1)
+ZSQ5 (1)
+V SQ 23 (1)
+TSQ8 (1)
+T SQ 27 (1)
+V SQ 22 (1)
+ASQ 48 (1)
+T SQ 47 (1)
+VSQ2 (1)
+V SQ 41 (2)
+Z SQ 21 (1)
+Z SQ 42 (1)
+T SQ 30 (1)
+ASQ 46 (1)
+ZSQ1 (1)
+ZSQ 45 (1)
+V SQ 3 (1)
+VSQ1(1)
+ZSQ 48
+
+V SQ 44 (1)
+ZSQ2 (1)
+T SQ 43 (1)
+T SQ 43 (1)
+Z SQ 23 (1)
+
+Master List
+
+Delv
+
+712511944
+712511944
+712511944
+712511944
+712611944
+712811944
+713111944
+712811944
+713111944
+712811944
+712811944
+713111944
+712911944
+713111944
+713111944
+712911944
+713111944
+51511945
+
+713111944
+713111944
+713111944
+713111944
+713111944
+8/15/1944
+713111944
+8/9/1944
+
+8/9/1944
+
+8/11/1944
+8/12/1944
+8/12/1944
+8/13/1944
+8/13/1944
+8/10/1944
+8/14/1944
+8/14/1944
+8/13/1944
+8/14/1944
+8/14/1944
+8/14/1944
+8/15/1944
+8/15/1944
+8/17/1944
+8/19/1944
+8/20/1944
+
+8/17/1944
+8/19/1944
+8/17/1944
+8/20/1944
+8/18/1944
+8/20/1944
+8/21/1944
+8/20/1944
+8/19/1944
+8/24/1944
+8/21/1944
+8/21/1944
+8/22/1944
+8/22/1944
+8/22/1944
+8/22/1944
+8/22/1944
+8/22/1944
+8/23/1944
+
+Assign
+
+498BG
+498BG
+498BG
+498BG
+498BG
+498BG
+498BG
+498BG
+236BU
+498BG
+498BG
+497BG
+497BG
+499BG
+611EXGP
+497BG
+40BG
+40BG
+6CMG
+497BG
+497BG
+498BG
+498BG
+498BG
+497BG
+497BG
+497BG
+498BG
+4141BU
+232BU
+504BG
+499BG
+505BG
+611EXGP
+29BG
+4141BU
+499BG
+4141BU
+231BU
+206BU
+497BG
+498BG
+500BG
+499BG
+498BG
+498BG
+499BG
+497BG
+498BG
+499BG
+499BG
+500BG
+500BG
+498BG
+497BG
+500BG
+500BG
+499BG
+499BG
+500BG
+499BG
+500BG
+498BG
+498BG
+500BG
+
+Off Inv
+
+12/27/1944
+1/6/1945
+9115/1949
+21411945
+3/21/1945
+3/21/1945
+3/13/1945
+412911945
+9/11/1950
+12/27/1944
+41111945
+4118/1945
+1/27/1945
+412411945
+6/22/1950
+1/27/1945
+51511945
+9/11/1950
+
+11/24/1944
+9/11/1950
+9/11/1950
+9/11/1950
+9111/1950
+1/3/1945
+9/11/1950
+12/18/1944
+21411945
+9/11/1950
+9/11/1950
+9/11/1950
+9/11/1950
+9/11/1950
+6/22/1950
+9/11/1950
+9/11/1950
+12/13/1944
+9/11/1950
+6/22/1950
+6/22/1950
+11/10/1948
+12/27/1944
+9/11/1950
+4113/1945
+11/8/1944
+1/5/1950
+1/13/1945
+9/11/1950
+12/18/1944
+41211945
+9/11/1950
+6/24/1946
+8/25/1950
+12/25/1944
+1/9/1945
+12/3/1944
+1/9/1945
+1/9/1945
+11/27/1944
+1/3/1945
+8/20/1950
+11/27/1944
+9/11/1950
+9/11/1950
+4115/1945
+
+19
+
+Circumstances
+
+Ditched near Pagan Island, out of fuel
+Salvaged after 12/25/44 Jap raid
+Reclaimed Sheppard
+
+Surveyed, crashed Saipan
+
+Salvaged from 1/14/45 damage
+Surveyed after 1/14/45 mission
+
+Per MACR, Historian says survived war
+Abandoned over Miyazaki, crashed in sea
+Reclaimed Pyote
+
+Ditched after takeoff, lost #’s 2 & 4
+Crashed Magicienne Bay on T/O to Tokyo
+Ditched vicinity of Iwo
+
+Shot down Tokyo by JNAF Irving
+Surveyed at Tinker
+
+Reclaimed Davis-Monthan
+Rammed over Tokyo
+
+Reclaimed Pyote
+
+Reclaimed Pyote
+
+Unknown
+
+Rammed over Tokyo
+
+Reclaimed Pyote
+
+Reclaimed Pyote
+
+Reclaimed Pyote
+
+Reclaimed Tinker
+
+Rammed Nagoya
+
+Reclaimed Pyote
+
+Ditched on Weather Strike
+
+Ditched off Saipan returning
+Reclaimed Pyote
+
+Reclaimed Pyote
+
+Reclaimed Pyote
+
+Reclaimed Pyote
+
+Reclaimed AMC
+
+Reclaimed Davis-Monthan
+Reclaimed Pyote
+
+Reclaimed Pyote
+
+Ditched from Nagoya
+
+Reclaimed Pyote
+
+Reclaimed Davis-Monthan
+Unknown
+
+Reclaimed Hickam
+
+Rammed twice over Tokyo
+Reclaimed Tinker
+
+Shot up Tokyo, crashed Chiba
+Ditched from Iwo Jima
+
+Reclaimed McClellan
+
+Ditched from Nagoya, fuel system malf.
+Reclaimed Pyote
+
+Crash landing in Saipan ATC area
+Lost over Tokyo, flak
+
+Reclaimed Tinker
+
+Reclaimed Amarillo
+
+Reclaimed McClellan
+
+Destroyed on Ground — Saipan
+Rammed in #2 engine over Tokyo
+Rammed — abandoned, fire in left wing
+Ditched from Tokyo
+
+Ditched from Tokyo
+
+Destroyed on Ground — Saipan
+Ditched
+
+Reclaimed Pyote
+
+Ditched from Tokyo
+
+Reclaimed Pyote
+
+Reclaimed Pyote
+
+Crash landed Iwo

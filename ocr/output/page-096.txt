@@ -1,0 +1,488 @@
+82
+
+Serial #
+
+44-87619
+44-87620
+44-87620
+44-87621
+44-87622
+44-87623
+44-87624
+44-87625
+44-87626
+44-87627
+44-87628
+44-87629
+44-87630
+44-87631
+44-87632
+44-87633
+44-87634
+44-87635
+44-87636
+44-87637
+44-87638
+44-87639
+44-87640
+44-87641
+44-87642
+44-87642
+44-87643
+44-87644
+44-87645
+44-87646
+44-87647
+44-87648
+44-87649
+44-87649
+44-87650
+44-87651
+44-87652
+44-87653
+44-87653
+44-87654
+44-87655
+44-87656
+44-87657
+44-87657
+44-87657
+44-87658
+44-87659
+44-87660
+44-87661
+44-87661
+44-87661
+44-87661
+44-87661
+44-87661
+44-87661
+44-87661
+44-87662
+44-87662
+44-87663
+44-87664
+44-87665
+44-87666
+44-87667
+44-87668
+44-87669
+
+Name
+
+UP N’ COMIN’
+
+IRON GEORGE
+
+CITY OF ATTLEBORO
+SLIM II
+
+THE KICK-A-POO-JOY III
+
+ANN GARRY V
+
+CITY OF RICHMOND III
+WANGO BANGO
+
+COMMAND DECISION
+MISS LACE
+
+MISS SANDY
+CELESTIAL QUEEN
+AMERICAN BEAUTY III
+KOZA KID
+
+KOZA KID
+NIGHT-MARE!
+NIGHT-MARE!
+
+UGLY
+
+UGLY
+
+AMERICAN BEAUTY
+SKY BLUES
+
+THUNDER BIRD
+
+BAD MEDICINE #2
+PAPA TOM’S CABIN
+
+THE B-29 SUPERFORTRESS
+
+Identification
+
+CIRCLE W
+CIRCLE W
+SQUARE I
+
+SQUARE A
+CIRCLE Z
+
+TRIN9
+
+TRIS
+TRI S 05 (2)
+
+TRI S 48
+TRI U
+
+CIRC X
+BLK SQ M 44 (2)
+TRIU
+
+CIRC X 31 (2)
+BLK SQ P 44 (2)
+BLK SQ P 44 (2)
+TRIU
+
+TRII
+
+CIRC X
+
+BLK SQ P 47
+TRII 35
+
+CIRC X
+
+VSQ
+SQUARE H
+CIRC R 37
+
+Vv
+
+V 11 (3)
+
+BLK SQ M 48
+BLK SQ M 48
+CIRC E
+
+BLK SQM
+TRII
+
+Vv?
+BLKSTRPGRN
+BLKSTRPGRN
+TRI U
+
+TRII 24
+
+TRIS 49
+TRII6
+BLKSTRPGRN
+BLKSTRPBLU
+BLKSTRPGRN
+BLKSTRPBLU
+BLKSTRPGRN
+BLKSTRPBLU
+BLKSTRP
+TRIN
+
+BLK SQO
+BLK SQO
+BLK SQO
+
+A
+
+TRII 56
+
+CIRC W 19 (1)
+TRII 4
+
+Vv?
+
+Delv
+
+5130/1945
+512911945
+512911945
+6/30/1945
+513111945
+5131/1945
+5131/1945
+513111945
+6/1/1945
+6/1/1945
+6/1/1945
+6/1/1945
+6/4/1945
+6/4/1945
+6/4/1945
+6/4/1945
+6/6/1945
+6/6/1945
+6/5/1945
+6/5/1945
+6/5/1945
+6/5/1945
+
+6/6/1945
+6/7/1945
+6/711945
+6/6/1945
+6/12/1945
+6/711945
+6/711945
+6/711945
+6/8/1945
+6/9/1945
+6/9/1945
+6/8/1945
+6/8/1945
+6/8/1945
+6/8/1945
+6/8/1945
+6/9/1945
+6/9/1945
+6/12/1945
+6/9/1945
+6/9/1945
+6/9/1945
+6/11/1945
+6/11/1945
+6/11/1945
+6/12/1945
+6/12/1945
+6/12/1945
+6/12/1945
+6/12/1945
+6/12/1945
+6/12/1945
+
+6/14/1945
+6/14/1945
+6/12/1945
+6/15/1945
+6/19/1945
+6/14/1945
+6/15/1945
+
+6/13/1945
+
+Assign
+
+247BU
+92BG
+98BG
+
+301BW
+90RCN
+
+444BG
+
+40BG
+40BG
+
+40BG
+462BG
+
+9BG
+19BG
+462BG
+9BG
+39BG
+39BG
+462BG
+468BG
+9BG
+39BG
+468BG
+9BG
+499BG
+98BG
+6BG
+499BG
+499BG
+19BG
+19BG
+504BG
+19BG
+468BG
+499BG
+19BG
+19BG
+462BG
+468BG
+40BG
+468BG
+19BG
+19BG
+19BG
+19BG
+19BG
+19BG
+19BG
+444BG
+29BG
+29BG
+29BG
+497BG
+468BG
+505BG
+468BG
+499BG
+
+Off Inv
+
+312511953
+3/28/1948
+712711948
+7IN411954
+91/8/1954
+
+412911954
+91811954
+
+12/1/1953
+
+8/4/1954
+8/5/1954
+2/15/1954
+6/3/1954
+8/8/1954
+11/18/1948
+91811954
+3/22/1945
+5118/1946
+4120/1947
+11/8/1950
+11/1/1951
+11/3/1953
+8/28/1946
+8/28/1946
+8/8/1954
+
+8/8/1954
+
+8/16/1954
+6/8/1948
+912711954
+912711954
+10/2/1948
+8/6/1950
+712011945
+312511954
+312511954
+8/8/1954
+11/3/1953
+8/8/1954
+
+912711954
+
+7411954
+7411954
+7411954
+7411954
+7411954
+7411954
+7IN4IN954
+
+5113/1946
+5113/1946
+5113/1946
+8/8/1945
+
+91911954
+
+312511954
+11/3/1953
+
+8/8/1954
+
+Circumstances
+
+Last reported Randolph 6/1/54
+Reclaimed McClellan
+Salvaged at Spokane
+
+Salvaged at Spokane
+
+Salvaged at Davis-Monthan
+Reclaimed Davis-Monthan
+Salvaged at Smoky Hill
+Reclaimed Davis-Monthan
+Reclaimed Forbes
+
+Last reported Robins 4/54
+Last reported Great Falls 2/54
+Reclaimed Robins
+
+Lost Great Falls
+
+Reclaimed Randolph
+Reclaimed Molesworth
+Reclaimed Tinker
+
+Surveyed at Harmon
+Reclaimed Davis-Monthan
+Reclaimed Wheelus
+
+Sent to Aberdeen Proving Grounds
+Crashed
+
+Surveyed at Hill
+
+Surveyed at Randolph
+Reclaimed Pyote
+
+Transferred to Army
+Transferred to Army
+Reclaimed Tinker
+
+Last reported Kindley 12/31/54
+Reclaimed Tinker
+
+Last reported Tinker 3/26/55
+Reclaimed Griffis
+
+Surveyed at Harmon
+Reclaimed McClellan
+Reclaimed McClellan
+Surveyed at Harmon
+
+Salvaged at Fairfield
+
+Shot down at Hitachi
+Reclaimed Hill
+
+Reclaimed Hill
+
+Reclaimed Tinker
+
+Reclaimed Pyote
+
+Reclaimed Tinker
+
+Survived war
+
+Class 32 Wright-Patterson
+Unknown
+
+Unknown
+
+Last reported Whellus 3/22/54
+Last reported Barksdale 1/11/54
+Reclaimed McClellan
+Reclaimed McClellan
+Reclaimed McClellan
+Reclaimed McClellan
+Reclaimed McClellan
+Reclaimed McClellan
+Reclaimed McClellan
+
+Transferred to Army
+
+Transferred to Army
+
+Transferred to Army
+
+Hit by flak, exploded, abandoned
+Reclaimed Robins
+
+Reclaimed Hill
+
+Reclaimed Pyote
+
+Unknown
+
+Reclaimed Tinker

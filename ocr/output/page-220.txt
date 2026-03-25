@@ -1,0 +1,267 @@
+206
+
+THE B-29 SUPERFORTRESS
+
+Target
+
+Mitsubishi Coal Depot
+
+Mitsubishi Copper Refining
+
+Mitsubishi Copper Smelter/Zinc Refinery
+Mitsubishi Dockyard
+
+Mitsubishi Electrical Mfg Co
+
+Mitsubishi Electrical Mfg Co
+
+Mitsubishi Electrical Mfg Co
+
+Mitsubishi Electrical Mfg Co
+
+Mitsubishi Heavy Industry
+
+Mitsubishi Oil Company & Chiyoda Oil Tanks
+Mitsubishi Oil Refinery
+
+Mitsubishi Oil Storage
+
+Mitsubishi Oil Storage
+
+Mitsubishi Piece Good Wharf
+
+Mitsubishi Steel and Arms Works
+Mitsubishi Steel Rolling Mill
+
+Mitsubishi Warehouse
+
+Mitsui Coal Liquidification Plant
+
+Mitsui Electrolytic Zinc Refinery
+
+Mitsui Rr Workshops
+
+Mitsui Tame Shipyard
+
+Mitsui Zinc Distilling Plant
+
+Mittan Leather Belt Company
+
+Miyakonojo Air Field (code name: Dripper)
+Miyata Engineering Works
+
+Miyata Motor Works
+
+Miyazaki Air Field (code name: Neckcloth)
+Miyazu Steam Power Plant
+
+Mizaguchi Gear Works
+
+Mizaguchi Gear Works
+
+Mizuno Sporting Goods Co
+
+Moen Island Air Fields (code name: Panhandle)
+Moji Central Wharf
+
+Moji Coaling Station
+
+Moji Ordnance Storage
+
+Moji Southern Wharf
+
+Moji Urban Area
+
+Momoyama Hydro Electric Plant and Substation
+Montenaga Inlet Oil Tanks
+
+Mushishino Aircraft Plant
+
+Nagamachi Marshalling Yards
+
+Nagano Government Railroad Shops
+Nagaoka Urban Area (code name: Microscope)
+Nagasaki Spinning Mill
+
+Nagasaki Steam Power Plant
+
+Nagasaki Urban Area
+
+Nagasaki Wharves
+
+Nagasaki Wharves
+
+Nagoya #1 Steam Power Plant
+
+Nagoya #2 Steam Power Plant
+
+Nagoya Arenal, Atsuda Plant
+
+Nagoya Arsenal, Chigusa Factory
+
+Nagoya Freight Yards
+
+Nagoya Harbor Facilities
+
+Nagoya Industrial Area
+
+Nagoya Plant
+
+Nagoya Repair Shops
+
+Nagoya Station
+
+Nagoya Urban Area
+
+Najima Seaplane Base
+
+Najima Steam Power Plant
+
+Nakagama Steel Mfg Company
+
+Nakajima Aircraft Company
+
+Nakajima Aircraft Company (code name: Enkindle)
+Nakajima Aircraft Company
+
+Target #
+
+191
+697
+1297
+543
+829
+1803
+1885
+254
+169
+117
+116
+258a
+258b
+1437
+546
+1795
+1440
+1262
+1261
+1268
+1295
+1260
+1761
+2527
+573
+1241
+2529
+1949
+1631
+1634
+1706
+
+44a
+44c
+49
+
+44b
+
+1499
+1457
+357
+
+1104
+1098
+
+851
+847
+
+1842
+835
+195
+1598
+197
+196
+250a
+251
+
+250b
+250c
+
+1237
+664
+1755
+1544
+357
+
+Location
+
+Kawasaki
+Osaka
+Nao Island
+Nagasaki
+Nagasaki
+Heisaka
+Hiroshima
+Nagoya
+Kobe
+Yokohama
+Kawasaki
+Osaka
+Osaka
+Kawasaki
+Nagasaki
+Nagasaki
+Yokohama
+Omuta
+Omuta
+Omuta
+Tamashima
+Omuta
+Osaka
+Kyushu
+Tokyo
+Zasshonoguma
+Kyushu
+Miyazu
+Amagasaki
+Amagasaki
+Osaka
+Truk
+
+Moji
+
+Moji
+
+Moji
+
+Moji
+
+Moji
+
+Kiso River
+Yokosuka
+Tokyo
+Sendai
+Nagano
+Nagaoka
+Nagasaki
+Nagasaki
+Nagasaki
+Nagasaki
+Nagasaki
+Nagoya
+Nagoya
+Nagoya
+Nagoya
+Nagoya
+Nagoya
+Nagoya
+Nagoya
+Nagoya
+Nagoya
+Nagoya
+Fukuoka
+Fukuoka
+Osaka
+New Ota
+Musashino
+Handa

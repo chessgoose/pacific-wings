@@ -1,0 +1,466 @@
+30
+Serial #
+
+42-63555
+42-63556
+42-63557
+42-63557
+42-63557
+42-63557
+42-63558
+42-63559
+42-63559
+42-63560
+42-63560
+42-63561
+42-63562
+42-63563
+42-63564
+42-63565
+42-63565
+42-63566
+42-63567
+42-63568
+42-63569
+42-63570
+42-63571
+42-63572
+42-63573
+42-63574
+42-63575
+42-63576
+42-63577
+42-63578
+42-63579
+42-63580
+42-63580
+42-63581
+42-63582
+42-63583
+42-63584
+42-63585
+42-63586
+42-63587
+42-63588
+42-63589
+42-63590
+42-63591
+42-63592
+42-63593
+42-63594
+42-63595
+42-63596
+42-63597
+42-63598
+42-63599
+42-63600
+42-63601
+42-63602
+42-63603
+42-63604
+42-63605
+42-63606
+42-63607
+42-63608
+42-63609
+42-63610
+42-63611
+42-63612
+
+Name
+
+DARK EYES
+EARLY BIRD
+MISSOURI BELLE
+MISSOURI BELLE
+SURE THING
+SURE THING
+
+PRINCESS EILEEN III
+PRINCESS EILEEN III
+READY TEDDY
+
+MAXIMUM LOAD
+CHERRY-HORIZONTAL CAT
+CITY OF SAN ANTONIO
+WHERE’S KILROY
+
+FIRE BUG
+
+CITY OF PROVIDENCE
+
+ZERO AVENGER
+THUNDERBIRD
+
+OLD 574
+
+RAGGED BUT RIGHT
+
+ROAD APPLE
+BELLE OF MARTINEZ
+
+ELLIE BARBARA & HER ORP
+
+BUGGER
+
+THE B-29 SUPERFORTRESS
+
+Identification
+
+TRI S$ 29 (1)
+
+X TRI 25
+
+DIAM #
+
+TRIN 35
+
+TRIN 45
+BLKSTRP
+
+L TRI
+
+DIAM #
+
+TRIN 43
+SOLREDRUD Al
+TRI U 04
+
+X TRI 29 (1)
+BLK SQO
+
+BLK SQ M 23 (1)
+BLK SQO
+
+BLK SQ O 46 (1)
+BLK SQ O 46 (1)
+BLK SQ O 43(1)
+BLK SQ M 28 (1)
+BLK SQ O (1)
+BLK SQ M 11 (1)
+BLK SQ O 07(1)
+BLK SQ O (1)
+
+BLK SQ M 30 (1)
+X TRI 41 (1)
+
+BLK SQ O
+FOURYLWSTRP V
+TRIS 28
+
+FA
+
+DIAM B
+
+DIAM L 28
+ASQ
+
+DIAM Y
+DIAM Y
+DIAM Y 45
+
+DIAM B
+
+DIAM B
+DIAM L 21 (1)
+DIAM Y
+DIAM B
+DIAM L 41 (1)
+DIAM L 1 (1)
+DIAM L 47 (1)
+DIAM L 42 (1)
+
+Delv
+
+51511945
+1/9/1945
+
+5110/1945
+
+1/14/1945
+
+5/10/1945
+1/6/1945
+
+51511945
+
+1/11/1945
+1/14/1945
+1/12/1945
+1/11/1945
+1/13/1945
+1/13/1945
+1/14/1945
+1/14/1945
+
+1/18/1945
+1/18/1945
+1/14/1945
+1/18/1945
+1/14/1945
+1/15/1945
+1/22/1945
+1/19/1945
+
+1/17/1945
+2/19/1945
+1/27/1945
+51511945
+
+1/21/1945
+1/26/1945
+1/21/1945
+
+1/23/1945
+
+1/26/1945
+2/6/1945
+1/31/1945
+
+1/26/1945
+1/31/1945
+
+1/27/1945
+1/27/1945
+1/31/1945
+1/31/1945
+2/8/1945
+2/1/1945
+2/8/1945
+1/29/1945
+2/8/1945
+
+2/31/1945
+2/6/1945
+21711945
+2/12/1945
+
+2/12/1945
+
+Assign
+
+40BG
+9BG
+444BG
+444BG
+444BG
+19BG
+6BG
+444BG
+444BG
+462BG
+462BG
+9BG
+29BG
+19BG
+29BG
+29BG
+29BG
+29BG
+19BG
+29BG
+19BG
+29BG
+29BG
+4105BU
+19BG
+9BG
+4141BU
+4141BU
+
+233BU
+29BG
+40BG
+40BG
+4105BU
+242BU
+611EXGP
+
+4141BU
+
+4141BU
+16BG
+4141BU
+
+4141BU
+331BG
+497BG
+4141BU
+4141BU
+4141BU
+4000BU
+501BG
+501BG
+501BG
+4141BU
+16BG
+
+16BG
+
+331BG
+501BG
+16BG
+
+331BG
+331BG
+331BG
+331BG
+
+Off Inv
+
+9/11/1950
+9/11/1950
+5110/1945
+
+512511945
+5/10/1945
+
+51511945
+
+9/11/1950
+5126/1946
+9/11/1950
+6/13/1945
+31911945
+
+6/17/1954
+6/17/1954
+8/25/1950
+6/10/1945
+
+31911945
+
+5111/1945
+6/22/1950
+TI8/1949
+1/4/1951
+
+9/11/1950
+9/11/1950
+
+1/16/1946
+6/22/1950
+51511945
+
+9/11/1950
+6/22/1950
+9/11/1950
+9/11/1950
+
+9/11/1950
+
+9111/1950
+8/23/1950
+9/11/1950
+
+9/11/1950
+9111/1950
+
+9111/1950
+9111/1950
+9111/1950
+3/5/1945
+
+9111/1950
+51911945
+
+8/23/1950
+9111/1950
+72/1945
+
+8/25/1950
+9111/1950
+8/25/1950
+10/3/1950
+
+8/25/1950
+
+Circumstances
+
+Reclaimed Tinker
+Reclaimed Tinker
+
+Group transfer to Tinian
+Unknown
+
+Unknown
+
+Unknown
+
+Shot down, crashed Tokyo
+Group transfer to Tinian
+Unknown
+
+Group transfer to Tinian
+Reclaimed Tinker
+Reclaimed Fairchild
+Reclaimed Tinker
+
+Crashed on takeoff
+Crashed Ubo Mt in weather per Japanese
+Class 26 Sheppard
+
+Class 26 Sheppard
+Reclaimed McClellan
+Ditched from Kure
+Reclaimed
+
+MIA Tokyo, crashed Kawaguchi
+Reclaimed
+
+Crashed on takeoff
+Reclaimed Davis-Monthan
+Reclaimed Chanute
+Reclaimed Hill
+
+Reclaimed Pyote
+Reclaimed Pyote
+Unknown
+
+Surveyed at Pyote
+Reclaimed Davis-Monthan
+Group Transfer to Tinian
+Reclaimed Tinker
+Reclaimed Davis-Monthan
+Reclaimed Pyote
+Reclaimed Pyote
+Unknown
+
+Reclaimed Pyote
+Unknown
+
+Unknown
+
+Reclaimed Pyote
+Reclaimed Robins
+Reclaimed Pyote
+Unknown
+
+Reclaimed Pyote
+Reclaimed Pyote
+Unknown
+
+Reclaimed Pyote
+Reclaimed Pyote
+Reclaimed Pyote
+
+Surveyed at Wright-Patterson
+Reclaimed Tinker
+
+Missing Kobe with 314th Bomb Wing
+Reclaimed Robins
+Reclaimed Pyote
+Abandoned, prop malfunction
+Unknown
+
+Reclaimed
+
+Reclaimed McClellan
+Reclaimed Tinker
+Reclaimed Pyote
+Reclaimed
+
+Reclaimed
+
+Reclaimed McClellan
+Reclaimed

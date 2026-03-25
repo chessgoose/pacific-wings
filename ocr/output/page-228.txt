@@ -1,0 +1,256 @@
+214
+
+THE B-29 SUPERFORTRESS
+
+Target
+
+Tsurumi Army and Navy Stores
+Tsurumi Shunting Yards
+
+Tsurumi Steel and Shipbuilding Company
+Ube Cement Co
+
+Ube Coal Liquidification Company
+Ube Industrial Area
+
+Ube Iron Works
+
+Ube Nitrogen Fertilizer Co
+
+Ube Soda Co
+
+Ube Steam Power Plant #1
+
+Ube Steam Power Plant #2
+
+Ube Urban Area
+
+Ueno Railroad Station
+
+Uibar Oil Company
+
+Uji Hydro Electric Plant
+
+Uji Powder Factory
+
+Ujina Shipbuilding
+
+Ujiyamada Urban Area
+
+Umekoje Freight Yards
+Unidentified
+
+Unidentified
+
+Unidentified
+
+Unidentified
+
+Unidentified Arms Plant
+Unidentified Bldg — Tokyo Arsenal
+Unidentified Bldg — Tokyo Arsenal
+Unidentified Bldg — Tokyo Arsenal
+Unidentified Bldg — Tokyo Arsenal
+Unidentified Bldg — Tokyo Arsenal
+Unidentified Bldg — Tokyo Arsenal
+Uno Harbor
+
+Uraga Dockyard #1
+
+Uraga Dockyard #2
+
+Uraga Dockyard #3
+
+Urawa Airport
+
+Usa Air Field (code name: Blowzy)
+Utsonomiya Air Training School & Arsenal
+Utsonomiya Urban Area
+
+Utsube River Oil Refinery
+Uwajima Urban Area
+
+Wakamatsu Port
+
+Wakamatsu Railroad Shop
+Wakayama Urban Area
+
+Watanabe Aircraft Plant
+
+Watanabe Iron Works Plant No 2
+Watanabe Steel Works
+
+Yahagi Electro-Chemical Plant
+Yahagi Steel Plant
+
+Yamagawara Hydro Electric Plant
+Yamamoto Heavy Industries
+Yamamoto Heavy Industry
+Yamato Steel Works
+
+Yanagawara Hydro-Electric Plant
+Yao Transformer Station
+
+Yasuoka Hydro-Electric Plant
+Yatabe Navy Airdrome
+
+Yatsuyama Mine
+
+Yatzuzawa Hydro-Electric Plant
+Yawata Steel Works
+
+Yawata Urban Area
+
+Yokkaichi Harbor
+
+Yokkaichi Industrial/Oil Refinery
+Yokkaichi Urban Area
+
+Yokohama Central Wholesale Warehouse
+Yokohama Dockyard Of Mitsubishi Heavy Industry
+
+Target #
+
+1337
+112
+122
+822
+1841
+
+1878
+818
+1844
+827
+1626
+
+369
+359
+1155
+1169
+1889
+
+1159
+X13058
+X13069
+X13070
+X13075
+142
+3006
+3007
+3109
+X13004
+X13008
+X13062
+1289
+1460
+1461
+
+71
+
+1414
+1307
+1643
+
+32
+561
+
+662
+1238
+328
+255
+1829
+876
+1779
+1779
+1774
+876
+1631
+1591
+1471
+1229
+1515
+
+1737
+
+1439
+69
+
+Location
+
+Yokohama
+Tsurumi
+Yokohama
+Ube
+
+Ube
+
+Ube
+
+Ube
+
+Ube
+
+Ube
+
+Ube
+
+Ube
+
+Ube
+
+Tokyo
+Tokyo
+
+Uji River
+Uji
+
+Ujina Island
+Ujiyamada
+Kyoto
+Yokohama
+Yokohama
+Kawasaki
+Yokohama
+Kawasaki
+Tokyo
+Tokyo
+Tokyo
+Tokyo
+Tokyo
+Tokyo
+Uno
+Yokosuka
+Yokosuka
+Yokohama
+Tokyo
+Kyushu
+Utsonomiya
+Utsonomiya
+
+Uwajima
+Wakamatsu
+Wakamatsu
+Wakayama
+Zasshonoguma
+Fukuoka
+Tokyo
+Nagoya
+Nagoya
+Kurobe River
+Yokkaichi
+Kuwana
+Osaka
+Kurobe River
+Yao
+
+Tenryu River
+Kasumiguara
+Unknown
+Sagomi River
+Yawata
+Yawata
+Yokkaichi
+Yokkaichi
+Yokkaichi
+Yokohama
+Yokohama

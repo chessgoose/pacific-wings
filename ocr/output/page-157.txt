@@ -1,0 +1,68 @@
+VII. The XXI Bomber Command 143
+
+MSN Date Target Location Wings Grps No. Up Bombed Lost
+20 January 19 Kawasaki Aircraft Factory Akashi 499BG not avail 24 0
+20 January 19 Kawasaki Aircraft Factory Akashi 500BG not avail 16 0
+21 January 21 Airfield Truk 313BW WING 33 30 0
+22 January 23 Mitsubishi Aircraft Engine Plant Nagoya 75 28 2
+22 January 23 Secondary Target Nagoya U.A. WING in above 27 0
+22 January 23 Targets of Opportunity Nagoya Area WING in above 5 0
+22 January 23 Mitsubishi Aircraft Engine Plant Nagoya 497BG 17 11 1
+22 January 23 Secondary Target Nagoya City 498BG 22 16 0
+22 January 23 Mitsubishi Aircraft Engine Plant Nagoya 499BG not avail 20 1
+22 January 23 Mitsubishi Aircraft Engine Plant Nagoya 500BG not avail 13 1
+23 January 24 Airfields Iwo Jima 313BW WING 28 20 0
+24 January 27 Musashi — Nakajima Aircraft Factory Tokyo 73BW 76 0 9
+24 January 27 Secondary Target Tokyo U.A. WING in above 56 0
+24 January 27 Targets of Opportunity WING in above 6 0
+24 January 27 Musashi — Nakajima Aircraft Factory Tokyo 497BG 19 13 5
+24 January 27 Docks & Urban Area—Secondary Tokyo 498BG 21 18 2
+24 January 27 Musashi — Nakajima Aircraft Factory Tokyo 499BG not avail 21 1
+24 January 27 Docks & Urban area — Secondary Tokyo 500BG not avail 10 0
+25 January 29 Airfields Iwo Jima 313BW WING 33 28 0
+26 February 4 Urban Area Kobe Mission 110 69 2
+26 February 4 Urban Area Kobe 73BW 74 37 2
+26 February 4 Secondary Target WING in above 29 0
+26 February 4 Target of Opportunity WING in above 1 0
+26 February 4 Urban Area Kobe 497BG 12 10 0
+26 February 4 Urban Area Kobe 498BG 23 19 1
+26 February 4 Secondary Target Kobe 498BG in above 1 0
+26 February 4 Urban Area Kobe 499BG not avail 22 0
+26 February 4 Matsuzaka Kobe 500BG not avail 15 0
+26 February 4 Urban Area Kobe 313BW not avail 32 1
+26 February 4 Urban Area Kobe 504BG 14 12 0
+26 February 4 Urban Area Kobe 505BG not avail 20 1
+28 February 9 Airfields Truk 313BW 60 60 0
+28 February 9 Moen Island Airfield Truk 6BG 30 30 0
+28 February 9 Moen Island Airfield Truk 9BG 30 29 0
+29 February 10 Nakajima Aircraft Assy Plant Ota MISSION 120 84 12
+29 February 10 Nakajima Aircraft Assy Plant Ota 73BW 85 55 3
+29 February 10 Target of Opportunity Ota WING in above 13 0
+29 February 10 Nakajima Aircraft Assy Plant Ota 497BG 1 9 0
+29 February 10 Nakajima Aircraft Assy Plant Ota 498BG 24 16 2
+29 February 10 Secondary target Ota 498BG in above 6 0
+29 February 10 Nakajima Aircraft Assy Plant Ota 499BG not avail 19 1
+29 February 10 Nakajima Aircraft Assy Plant Ota 500BG not avail 18 1
+29 February 10 Nakajima Aircraft Assy Plant Ota 313BW 35 29 9
+29 February 10 Nakajima Aircraft Assy Plant Ota 504BG 14 ll 1
+29 February 10 Nakajima Aircraft Assy Plant Ota 505BG 21 18 8
+30 February 11 Sea Search 313BW 6BG 9 8 0
+31 February 12 Antiaircraft Iwo Jima 313BW 9BG 21 21 0
+32 February 12 Sea Search 313BW 6BG 10 8 0
+33 February 14 Sea Search 313BW 6BG 6 5 1
+34 February 15 Mitsubishi Aircraft Engine Factory | Nagoya MISSION 117 33 1
+34 February 15 Secondary Target Nagoya WINGS in above 68 0
+34 February 15 Target of Opportunity Nagoya WINGS in above 16 0
+34 February 15 Mitsubishi Aircraft Engine Factory Nagoya 73BW 91 27 0
+34 February 15 Targets of Opportunity Nagoya WING in above 51 0
+34 February 15 Mitsubishi Aircraft Engine Factory Nagoya 497BG 20 6 0
+34 February 15 Target Last Resort Nagoya City 497BG in above ul 0
+34 February 15 Mitsubishi Aircraft Engine Factory Nagoya 498BG 24 10 0
+34 February 15 Mitsubishi Aircraft Engine Factory Nagoya 499BG not avail not avail 1
+34 February 15 Mitsubishi Aircraft Engine Factory Nagoya 500BG not avail 7 0
+34 February 15 Mitsubishi Aircraft Engine Factory Nagoya 313BW 28 4 0
+34 February 15 Mitsubishi Aircraft Engine Factory Nagoya 504BG 13 0 1
+34 February 15 Mitsubishi Aircraft Engine Factory Nagoya 505BG 15 4 0
+34 February 15 Last Resort Target Hachijo Jima 505BG in above Unk 0
+34 February 15 Last Resort Target Hamamatsu 505BG in above Unk 0
+34 February 15 Last Resort Target Maisaka 505BG in above Unk 0

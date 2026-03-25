@@ -1,0 +1,472 @@
+240
+
+MSN
+
+122
+123
+124
+124
+124
+125
+125
+125
+127
+128
+129
+130
+131
+
+132
+133
+134
+135
+136
+136
+136
+137
+138
+138
+140
+141
+
+141
+
+142
+143
+143
+143
+144
+145
+147
+148
+149
+151
+
+152
+153
+154
+155
+155
+156
+157
+158
+159
+159
+160
+160
+160
+160
+160
+160
+160
+161
+
+161
+
+162
+162
+167
+167
+168
+168
+169
+169
+169
+169
+
+Date
+
+April 29
+April 29
+April 29
+April 28
+April 28
+April 29
+April 29
+April29
+April 30
+April 30
+April 30
+April 30
+April 30
+April 30
+April 30
+April 30
+April 30
+April 30
+April 30
+April 30
+May 3
+May 3
+May 3
+May 3/4
+May 4
+May 4
+May 4
+May 4
+May 4
+May 4
+May 4
+May 4
+May 5
+May 5
+May 5
+May 5/6
+May 7
+May 7
+May 7
+May 7
+May 7
+May 8
+May 8
+May 8
+May 8
+May 8
+May 10
+May 10
+May 10
+May 10
+May 10
+May 10
+May 10
+May 10
+May 10
+May 10
+May 10
+May 10
+May 10
+May 11
+May 11
+May 11
+May 11
+May 11
+May 11
+
+Target
+
+Kokubu Airfield
+Kanoya East Airfield
+Kanoya Airfield
+Kanoya Airfield
+Kanoya
+Kushira Airfield
+Kushira Airfield
+Kushira Airfield
+Kanoya Airfield
+Kanoya East Airfield
+Kokubu Airfield
+Oita Airfield
+Tomitaka Airfield
+Saeki Airfield
+Tachiarai Airfield
+Miyazaki Airfield
+Miyakonojo Airfield
+Kanoya Airfield
+Target of Opportunity
+Target of Opportunity
+Kanoya East Airfield
+Kokubu Airfield
+Target of Opportunity
+Oita Airfield
+Omura Airfield
+Target of Opportunity
+Saeki Airfield
+
+Matsuyama Naval Air Station
+
+Target of Opportunity
+Target of Opportunity
+Oita Airfield
+Tachiari A/F
+Kanoya Airfield
+Chiran Airfield
+Ibusuki Airfield
+Kanoya Airfield
+Ibusuki Airfield
+Oita Airfield
+Usa Airfield
+Kanoya Airfield
+Target of Opportunity
+Miyakonojo Airfield
+Oita Airfield
+Matsuyama West Airfield
+Matsuyama West Airfield
+Target of Opportunity
+Usa Airfield
+Target of Opportunity
+Target of Opportunity
+Target of Opportunity
+Target of Opportunity
+Kyushu Airfields
+Target of Opportunity
+Miyazaki Airfield
+Target of Opportunity
+Kanoya Airfield
+Target of Opportunity
+Oita Airfield
+Target of Opportunity
+Saeki Airfield
+Target of Opportunity
+Nittagahara Airfield
+Targets of Opportunity
+Targets of Opportunity
+Targets of Opportunity
+
+THE B-29 SUPERFORTRESS
+
+Location
+
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kokubu Airfield
+Tanega Shima A/F
+Kyushu
+Kyushu
+
+Tanega Shima A/F
+Kyushu
+Kyushu
+Kushikino A/F
+Kyushu
+Kyushu
+Lomuta
+Wakagama
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+
+Omura City
+Kyushu
+Kyushu
+Shikoku
+Shikoku
+Kumamota A/F
+Kyushu
+Matsuyama A/F
+Nakamura
+Nobeoka
+Susaki Docks
+Unknown
+Unknown
+Kyushu
+Tanoga Naval
+Kyushu
+Kyushu
+Kyushu
+Miyachi
+Kyushu
+
+shimo Kawaguchi
+Kyushu
+
+Hoso Shima NB
+Kochi A/F
+Kubokawa
+
+Wings
+
+313BW
+313BW
+314BW
+19BG
+330BG
+314BW
+29BG
+39BG
+314BW
+19BG
+39BG
+29BG
+330BG
+314BW
+314BW
+314BW
+314BW
+314BW
+19BG
+19BG
+314BW
+314BW
+
+314BW
+314BW
+330BG
+314BW
+314BW
+330BG
+330BG
+314BW
+314BW
+314BW
+314BW
+314BW
+313BW
+313BW
+313BW
+313BW
+314BW
+
+313BW
+313BW
+313BW
+313BW
+
+313BW
+6BG
+6BG
+6BG
+6BG
+313BW
+9BG
+313BW
+505BG
+313BW
+505BG
+313BW
+504BG
+313BW
+505BG
+313BW
+6BG
+6BG
+6BG
+
+29BG
+29BG
+29BG
+29BG
+19BG
+
+in above
+in above
+19BG
+19BG
+19BG
+39BG
+330BG
+in above
+39BG
+330BG
+in above
+in above
+29BG
+29BG
+19BG
+19BG
+19BG
+6BG
+6BG
+505BG
+505BG
+504BG
+504BG
+504BG
+9BG
+9BG
+9BG
+9BG
+6BG
+
+in above
+in above
+in above
+in above
+9BG
+
+in above
+505BG
+in above
+505BG
+in above
+504BG
+in above
+505BG
+in above
+6BG
+
+in above
+in above
+in above
+
+Number Up
+
+22
+15
+20
+9
+
+in above
+22
+2
+
+1
+
+1
+
+1
+23
+2
+12
+1
+12
+6
+20
+1
+ll
+1
+ll
+6
+
+1
+
+1
+
+Bombed
+
+22
+14
+18
+0
+0
+16
+0
+0
+10
+
+BON CRS
+
+—
+SOOM ONSCS
+
+Lost
+
+oooccoco
+
+orore
+
+oo
+
+oooocooooornooocornea

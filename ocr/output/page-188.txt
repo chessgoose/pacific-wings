@@ -1,0 +1,67 @@
+174
+
+THE B-29 SUPERFORTRESS
+
+306 August 1/2 Target of Opportunity Shimazu in above 1 0
+316 August 5/6 Urban & Industrial Areas Imabari 34 31 0
+317 August 7 Toyokawa Naval Arsenal Toyokawa 10 9 0
+319 August 7/8 Ubrban & Industrial Area Yawata 10 9 1
+325 August 9/10 Hikari Naval Arsenal Hikari 58 37 0
+462ndBG/58thBW
+
+MSN Date Target Location Number Up Bombed Lost
+146 May 5 Hiro Naval Aircraft Factory Kure 11 10 0
+166 May 10 Naval Oil Storage Oshima 33 32 0
+174 May 14 Urban Area Nagoya 36 33 0
+176 May 16/17 Urban Area Nagoya 37 33 0
+178 May 19 Aircraft Factory Tachikawa 22 20 0
+178 May 19 Target of Opportunity Tokyo in above 1 0
+181 May 23/24 Urban Area Tokyo 30 27 1
+183 May 25/26 Urban Area Tokyo 31 30 1
+186 May 29 Urban Area Yokohama 34 30 0
+186 May 29 Target of Opportunity Hachijo Jima in above 1 0
+187 June 1 Urban Area Osaka 28 26 0
+188 June 5 Urban Area Kobe 31 26 4
+188 June 5 Target of Opportunity Wakayama in above 1 0
+189 June 7 Urban Area Osaka 26 25 0
+189 June 7 Target of Opportunity Shirahama in above 1 0
+191 June 9 Kawanishi Aircraft Factory Naruo 17 16 0
+203 June 15 Urban Area Amagasaki 30 25 0
+203 June 15 Target of Opportunity Shirahama in above 1 0
+207 June 17/18 Urban Area Omuta 22 20 0
+210 June 19/20 Urban Area Toyohashi 33 33 0
+215 June 22 Kure Arsenal Kure 31 27 1
+223 June 26 Sumitomo Light Metal Industry Osaka 35 34 0
+234 June 28/29 Okayama Urban Area Okiyama 34 33 0
+240 July 1/2 Kure Urban Area Kure 40 37 0
+247 July 3/4 Urban Area Takamatsu 32 31 1
+247 July 3/4 Target of Opportunity Nobeoka in above 1 0
+251 July 6/7 Chiba Urban Area Chiba 33 33 0
+257 July 9/10 Urban Area Sendai 33 29 1
+263 July 12 Urban Area Utsonomiya 32 27 0
+271 July 15/16 Urban Area Namazu 26 21 0
+277 July 19/20 Urban Area Fukui 33 32 0
+277 July 19/20 Target of Opportunity Seto in above 1 0
+285 July 24 Kawanishi Aircraft Factory Tokushima 42 39 0
+285 July 24 Target of Opportunity Kurakowa in above 1 0
+285 July 24 Target of Opportunity Tokushima in above 1 0
+298 July 28/29 Urban Area Aomori 33 33 0
+298 July 28/29 Target of Opportunity Taira in above 2 0
+298 July 28/29 Target of Opportunity Morioka in above 1 0
+306 August 1/2 Urban Area Shimoda 46 42 1
+306 August 1/2 Target of Opportunity Hahajima in above 1 0
+312 August 5/6 Urban & Industrial Areas Saga 32 31 0
+317 August 7 Toyokawa Naval Arsenal Toyokawa ib 10 0
+319 August 7/8 Ubrban & Industrial Area Yawata ib 10 1
+321 August 8/9 Urban Area Fukuyama 32 29 0
+325 August 9/10 Hikari Naval Arsenal Hikari 40 35 0
+468thBG/58thBW
+
+MSN Date Target Location Number Up Bombed Lost
+172 May ll Kawanishi Aircraft Factory Kobe 25 23 0
+174 May 14 Urban Area Nagoya 38 31
+
+174 May 14 Target of Opportunity Neve (sp?) Lake in above 1
+
+176 May 16/17 Urban Area Nagoya 39 34 0
+176 May 16/17 Target of Opportunity Yokosuka in above 1 0

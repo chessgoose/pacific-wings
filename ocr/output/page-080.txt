@@ -1,0 +1,482 @@
+66
+
+Serial #
+
+44-69817
+44-69817
+44-69817
+44-69818
+44-69818
+44-69819
+44-69820
+44-69821
+44-69822
+44-69823
+44-69824
+44-69825
+44-69826
+44-69827
+44-69828
+44-69829
+44-69830
+44-69831
+44-69832
+44-69833
+44-69834
+44-69835
+44-69836
+44-69837
+44-69838
+44-69839
+44-69840
+44-69841
+44-69842
+44-69843
+44-69843
+44-69844
+44-69844
+44-69844
+44-69845
+44-69846
+44-69847
+44-69847
+44-69848
+44-69848
+44-69849
+44-69850
+44-69851
+44-69852
+44-69853
+44-69854
+44-69855
+44-69856
+44-69856
+44-69857
+44-69857
+44-69857
+44-69858
+44-69859
+44-69860
+44-69861
+44-69862
+44-69863
+44-69864
+44-69865
+44-69866
+44-69867
+44-69868
+44-69869
+44-69870
+
+Name
+
+CITY OF ROANOKE
+
+READY BETTIE
+HOT TO GO (II)
+STAR DUSTER
+
+DUKE OF ALBUQUERQUE
+
+FOREVER AMBER
+
+CITY OF TYLER
+LANCER
+
+THE SPIRIT OF FDR
+
+BATTLIN’ BETTY
+BATTLIN’ BETTY
+
+WARSAW PIGEON
+
+FILTHY FAY III
+
+LITTLE JEFF
+
+CITY OF BUFFALO
+
+OLE SMOKER
+
+MERRY FORTUNE [8]
+
+WE DOOD IT
+
+MARY FORTUNE [8]
+
+CABOOSE
+
+THE B-29 SUPERFORTRESS
+
+Identification
+
+BLK SQ K 04
+BLK SQ K 04
+BLKSTRPGRN
+BLKSTRPGRN
+BLK SQ M 33 (1)
+
+K TRI
+K TRI
+
+K TRI
+L TRI 66
+
+TRI S 30 (2)
+ZSQ 8 (4)
+
+L TRI 32
+
+VSQ
+X TRI 21 (2)
+K TRI
+SQUARE A
+TRIANGLE O
+
+LTRI 41
+
+L TRI
+
+LTRI
+
+VSQ
+
+BLK SQ M
+VSQ
+
+E TRI 09
+BLK SQ P 43
+BLK SQ P 43
+BLK SQ M 57 (1)
+E TRI 04
+BLK SQ O
+CIRC R 56
+T 15 (3)
+ZSQ
+
+CIRC X 27
+LTRI
+
+BLK SQ O
+
+T SQ 26
+CIRC W
+
+CIRC R 65
+BLK SQ M 53
+BLKSTRPRED
+BLK SQ K 59
+CIRCR
+
+E TRI
+
+BLK SQ M 14
+SQUARE A
+BLK SQ M 35
+A
+
+CIRC R 09
+CIRC R 16
+BLKSTRPGRN
+BLK SQP 01
+ZSQ4l
+
+BLK SQ O
+DIAM
+
+Delv
+
+21911945
+21911945
+2/8/1945
+21711945
+2/14/1945
+21711945
+21711945
+2/14/1945
+21711945
+2/8/1945
+2/8/1945
+2/10/1945
+21911945
+2/8/1945
+2/9/1945
+2/8/1945
+2/9/1945
+2/14/1945
+2/10/1945
+2/8/1945
+2/10/1945
+2/16/1945
+2/10/1945
+2/10/1945
+2/10/1945
+2/10/1945
+2/14/1945
+2/14/1945
+2/10/1945
+
+2/15/1945
+2/13/1945
+2/14/1945
+2/14/1945
+2/13/1945
+2/13/1945
+2/14/1945
+2/13/1945
+2/14/1945
+3/15/1945
+2/16/1945
+2/15/1945
+2/15/1945
+2/15/1945
+2/15/1945
+2/17/1945
+2/17/1945
+
+2/16/1945
+2/17/1945
+2/16/1945
+2/17/1945
+2/17/1945
+2/17/1945
+2/16/1945
+2/16/1945
+2/17/1945
+2/19/1945
+2/19/1945
+2/23/1945
+2/19/1945
+
+Assign
+
+330BG
+330BG
+19BG
+19BG
+19BG
+
+505BG
+505BG
+
+505BG
+505BG
+6BG
+
+40BG
+500BG
+6BG
+6BG
+499BG
+499BG
+9BG
+505BG
+301BG
+97BG
+6BG
+6BG
+6BG
+6BG
+499BG
+19BG
+499BG
+504BG
+39BG
+39BG
+19BG
+504BG
+29BG
+6BG
+498BG
+500BG
+9BG
+6BG
+29BG
+498BG
+505BG
+6BG
+6BG
+19BG
+19BG
+330BG
+6BG
+
+504BG
+19BG
+301BG
+19BG
+497BG
+6BG
+
+19BG
+39BG
+500BG
+29BG
+315BW
+
+Off Inv
+
+6/2/1951
+6/2/1951
+
+7ITIN953
+
+912211954
+412911945
+6/30/1954
+5/10/1954
+211711954
+5/16/1945
+5126/1945
+911511954
+5/18/1953
+11/9/1954
+8/16/1954
+
+912211953
+TIN4I1954
+3/22/1954
+A4IN511945
+5126/1946
+8/8/1954
+TIVAIN954
+AIN4IN945
+6/5/1945
+5/16/1945
+8/16/1954
+5I16/1954
+11/15/1947
+11/15/1947
+TIBAIN94S
+
+61711945
+6/9/1954
+10/11/1954
+10/11/1954
+8/6/1945
+8/6/1945
+10/4/1954
+9114/1954
+6/20/1945
+512311945
+8/8/1954
+8/8/1954
+41111949
+
+10/4/1954
+4112/1945
+
+512911945
+9112/1954
+5/19/1945
+8/16/1954
+6/30/1950
+8/8/1954
+
+10/4/1953
+512211946
+7/28/1948
+7/12/1950
+512911945
+10/4/1953
+8/8/1954
+
+Circumstances
+
+Salvaged
+
+Salvaged
+
+Unknown
+
+Crash landed on approach to Pohang — K3
+Survived war
+
+Reclaimed Tinker
+
+Surveyed at Kirtland
+Reclaimed Fairchild
+Reclaimed McClellan
+Reclaimed Tinker
+
+Lost on Nagoya mission
+Ditched, no fuel, # $ shot out
+Reclaimed Dow
+
+Reclaimed Tinker
+Reclaimed Dow
+
+Reclaimed Davis-Monthan
+Reclaimed Kirtland
+Reclaimed Pyote
+
+Reclaimed Tinker
+
+Salvaged at Wheelus
+Crashed at Yokohama from Kawasaki
+Transferred to Army
+Reclaimed Tinker
+
+Tinker
+
+Surveyed
+
+Salvaged Iwo, Battle damage
+Lost on Nagoya mission
+Reclaimed Davis-Monthan
+Reclaimed Wheelus
+Salvaged overseas
+
+Salvaged overseas
+
+Surveyed Iwo, crash landing
+Unknown
+
+Unknown
+
+Crashed in sea near Kashiwa Island
+Reclaimed Alexandria
+Reclaimed Bergstrom
+Reclaimed Bergstrom
+Ditched from Nishinomiya
+Ditched from Nishinomiya with 498BG
+Reclaimed Tinker
+Reclaimed Hamilton
+Crashed in weather
+
+MIA Tokyo
+
+Reclaimed Tinker
+Reclaimed Tinker
+
+Salvaged at Tinker
+
+Survived war
+
+Reclaimed Tinker
+
+Ditched from Koriyama
+Unknown
+
+Reclaimed Great Falls
+
+Lost on mining mission, Hamamatsu
+Reclaimed Davis-Monthan
+
+Salvaged at Lake Charles
+
+Reclaimed Tinker
+
+Reclaimed Davis-Monthan
+
+Transferred to Army
+
+Salvaged
+
+Attacked by YAK-9, engine fire, abandoned
+Abandoned 50 miles off coast-flak damage
+Reclaimed Davis-Monthan
+
+Reclaimed Tinker
+
+Transferred to 39BG ?

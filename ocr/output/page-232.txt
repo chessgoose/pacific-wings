@@ -1,0 +1,255 @@
+218
+
+Target #
+
+304
+304
+315
+321
+322
+323
+324
+325
+326
+327
+328
+330
+330
+332
+334
+335
+336
+337
+350
+352
+354
+355
+356
+357
+357
+357
+359
+360
+363
+364
+365
+366
+367
+368
+369
+370
+371
+373
+382
+383
+388
+430
+430b
+456
+461
+467
+470
+475
+479
+481
+484
+485
+485
+487
+488
+489
+493
+494
+496
+497
+498
+499
+554
+555
+558
+
+THE B-29 SUPERFORTRESS
+
+Target
+
+Chiran Airfield
+
+Futtsu Point Forts
+
+Three Powder Magazine
+
+Tokyo Gas & Electric Engineering, S. Tokyo
+Kasugade No 1 Steam Power Plant
+
+Kasugade No 2 Steam Power Plant
+Fukuszaki Steam Power Plant
+
+Kizugawa Steam Power Plant
+
+Nippon Electric Factory #2
+
+Mitsubishi Aircraft Shibaura Plant
+
+Watanabe Steel Works
+
+Ishikawajima Dockyard Of Ishikawajima Shipbuild
+Susaki Dock Yard Of Ishikawajima Shipbuilding
+Nakajima Seaplane Works
+
+Nisso Steel Mfg Company
+
+Chosi Army Airdrome
+
+Japan Special Steel Company
+
+Haneda Airport
+
+Tsukishima Electrical Engineering Company
+Tokyo Army Arsenal & Engineering School
+Shibaura Machine Tool Company
+
+Army Provisions Depot
+
+Nakajima Aircraft Ogikubo Plant
+Mushishino Aircraft Plant
+
+Nakajima Aircraft Company (code name: Enkindle)
+Nakajima Aircraft Company, Musashino Plant (code name: Enkindle)
+Uibar Oil Company
+
+Edogawa Petroleum Refinery
+
+Radio Station Joak
+
+Shinagawa Railroad Yards
+
+Shiodome Freight Yards
+
+Steam Engineering & Rolling Stock Company
+Tokyo Central Station
+
+Aeronautical Instruments
+
+Ueno Railroad Station
+
+Oi Railroad Works
+
+Tateyama Naval Air Station
+
+Kisarazu Naval Air Station
+
+Osaka Arsenal
+
+Dai Nippon Celluloid Co
+
+Osaka Machinery Company
+
+Toyoda Machinery Mfg Co
+
+Osaka Iron Works
+
+Toho Gas Works Synthetic Oil Plant
+
+Okuma Iron Works, Ozone Plant
+
+Showa Soda Plant
+
+Tokyo Electric Power Station
+
+Asano Cement Company
+
+Japan Artificial Fertilizer
+
+Tokyo Gas Company, Tsurumi Branch
+Showa Wire Cable Company
+
+Dejima Wharf
+
+Fuji Spinning Mills
+
+Meiji Sugar Factory
+
+Tokyo Shibaura Electric Company Factory #2
+Nippon Electric Wire & Cable Company
+Tokyo Steam Power
+
+Tokyo Electric Wire & Mfg Company
+Tokyo Shibaura Electric Company Factory #1
+Nippon Electric, Factory #1
+
+Kurada Iron Works
+
+Nippon Carbon Company, Factory #1
+Kakusa Kagyo Foundry
+
+Tokai Steel Works
+
+Tochigi Shipbuilding Yard
+
+Location
+
+Futtsu Point
+Fukayama
+Yokohama
+Tokyo
+Osaka
+Osaka
+Osaka
+Osaka
+Tokyo
+Tokyo
+Tokyo
+Tokyo
+Tokyo
+Tokyo
+Tokyo
+Tokyo
+Tokyo
+Tokyo
+Tokyo
+Tokyo
+Tokyo
+Tokyo
+Tokyo
+Tokyo
+Musashino
+Tokyo
+Tokyo
+Tokyo
+Tokyo
+Tokyo
+Tokyo
+Tokyo
+Tokyo
+Tokyo
+Tokyo
+Tokyo
+Airports
+Tokyo
+Osaka
+Sakai
+Osaka
+Nagoya
+Hiroshima
+Nagoya
+Nagoya
+Nagoya
+Kawasaki
+Kawasaki
+Kawasaki
+Kawasaki
+Kawasaki
+Unknown
+Kawasaki
+Kawasaki
+Tokyo
+Kawasaki
+Kawasaki
+Kawasaki
+Tokyo
+Kawasaki
+Yokohama
+Yokohama
+Wakamatsu
+Wakamatsu
+Wakamatsu

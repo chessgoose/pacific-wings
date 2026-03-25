@@ -1,0 +1,445 @@
+58
+Serial #
+
+44-62135
+44-62135
+44-62136
+44-62137
+44-62138
+44-62139
+44-62140
+44-62141
+44-62142
+44-62143
+44-62144
+44-62145
+44-62146
+44-62147
+44-62148
+44-62149
+44-62150
+44-62151
+44-62151
+44-62152
+44-62153
+44-62153
+44-62153
+44-62154
+44-62154
+44-62154
+44-62155
+44-62155
+44-62155
+44-62156
+44-62157
+44-62158
+44-62159
+44-62159
+44-62159
+44-62160
+44-62161
+44-62162
+44-62163
+44-62164
+44-62165
+44-62166
+44-62167
+44-62168
+44-62169
+44-62170
+44-62171
+44-62172
+44-62173
+44-62174
+44-62175
+44-62176
+44-62177
+44-62178
+44-62179
+44-62180
+44-62181
+44-62182
+44-62183
+44-62184
+44-62185
+44-62186
+44-62187
+44-62188
+44-62189
+
+Name
+
+LONESUM POLL CAT
+LONESOME POLECAT
+STATESIDE REJECT
+
+POLAR QUEEN
+
+POLAR QUEEN
+
+FUJIGMO
+
+HOT TO GO
+
+CHIEF MAC’S 10 LITTLE INDIANS
+
+TREMLIN GREMLINS
+
+THE B-29 SUPERFORTRESS
+
+Identification
+
+CIRCLE T
+
+SQUARE H
+SQUARE A
+CIRCLE R
+
+SQUARE P
+
+CIRCLE T
+SQUARE Y
+
+BLKSTRPRED
+
+SQUARE A
+SQUARE A
+
+CIRCLE E
+CIRCLE Z
+
+CIRCLE Z
+BLKSTRPRED
+SQUARE H
+
+BLKSTRP
+
+SQUARE H
+
+CIRCLE Z
+
+SQUARE P
+SQUARE Y
+BLKSTRPGRN
+SQUARE Y
+
+SQUARE H
+
+CIRCLE W
+
+Delv
+
+6/15/1951
+3/16/1954
+8/18/1945
+8/20/1945
+8/20/1945
+8/22/1945
+8/20/1945
+8/21/1945
+8/21/1945
+8/21/1945
+8/21/1945
+8/21/1945
+8/22/1945
+8/23/1945
+8/22/1945
+8/21/1945
+8/21/1945
+8/22/1945
+8/22/1945
+8/24/1950
+8/23/1945
+3/10/1951
+3/28/1954
+
+3/13/1951
+7128/1953
+8/22/1945
+11/20/1950
+8/18/1953
+8/23/1945
+8/23/1945
+8/28/1945
+8/23/1945
+71711950
+11/17/1953
+8/23/1945
+10/31/1945
+8/24/1945
+8/25/1945
+
+8/24/1945
+
+8/27/1945
+8/27/1945
+8/28/1945
+8/28/1945
+9110/1945
+9110/1945
+8/29/1945
+8/29/1945
+8/28/1945
+91111945
+
+8/27/1945
+8/28/1945
+
+8/28/1945
+8/29/1945
+
+8/29/1945
+8/30/1945
+
+9110/1945
+8/30/1945
+8/29/1945
+
+Assign
+
+RAF
+USAF
+320BG
+44BG
+310BW
+4000BU
+320BG
+98BG
+301BG
+28BG
+
+306BW
+
+4121BU
+4141BU
+44BG
+307BG
+308WG
+308WG
+19BG
+2753BU
+RAF
+USAF
+
+RAF
+USAF
+4121BU
+RAF
+USAF
+308WG
+308WG
+301BG
+301BG
+RAF
+USAF
+22BG
+90RCN
+90BG
+375WRS
+
+90RCN
+19BG
+98BG
+
+4141BU
+19BG
+
+4105BU
+98BG
+376BG
+68BG
+4141BU
+90RCN
+308BG
+308BG
+
+306BG
+307BG
+19BG
+307BG
+68BG
+98BG
+68BG
+92BG
+4105BU
+
+Off Inv
+
+3/16/1954
+TINAIN954
+9128/1954
+TIN4IN954
+3/28/1954
+712211946
+TIN4I1954
+8/23/1949
+6/17/1953
+5/11/1953
+
+9113/1954
+21711955
+10/20/1950
+912211953
+6/17/1953
+11/16/1954
+
+12/19/1950
+3/10/1951
+3/28/1954
+5/12/1954
+3/13/1951
+7128/1953
+91811954
+11/20/1950
+8/18/1953
+91811954
+
+12/16/1948
+TIN4IN954
+71711950
+11/17/1953
+TIN4IN954
+TIN4IN954
+5/11/1953
+12/12/1953
+
+6/25/1952
+9/18/1953
+712211952
+8/30/1952
+3/28/1954
+2/28/1953
+TIN4IN954
+3/28/1954
+6/29/1953
+9128/1954
+1/5/1953
+
+3/4/1954
+
+9122/1953
+6/11/1953
+
+TINAIN954
+11/16/1954
+6/10/1952
+1/27/1955
+10/31/1954
+
+TINAIN954
+5/10/1954
+
+Circumstances
+
+Returned to USAF
+
+Salvaged Davis-Monthan
+
+Reclaimed McClellan
+
+Reclaimed McClellan
+
+Assigned Storage Sqdn at Davis-Monthan
+Surveyed at Wright-Patterson
+
+Reclaimed McClellan
+
+Salvaged Scultho
+
+Assigned Storage Sqdn at Davis-Monthan
+Assigned Storage Sqdn at Davis-Monthan
+Unknown
+
+Reclaimed Davis-Monthan
+
+Reclaimed Tinker
+
+Surveyed at Randolph
+
+Reclaimed Pyote
+
+Reclaimed Davis-Monthan
+
+Assigned Storage Sqdn at Davis-Monthan
+Unknown
+
+Unknown — at Eielsen 12/31/54
+Surveyed Kadena, 11/15/50 T/O crash
+Transferred to RAF
+
+Returned to USAF
+
+Reclaimed Davis-Monthan
+
+Transferred to RAF
+
+Returned to USAF
+
+Reclaimed Davis-Monthan
+
+Transferred to RAF
+
+Returned to USAF
+
+Reclaimed Davis-Monthan
+
+At Hickam 12/31/54
+
+Salvaged at Ladd
+
+Salvaged at Davis-Monthan
+
+Transferred to RAF
+
+Returned to USAF
+
+Reclaimed Davis-Monthan
+
+Reclaimed McClellan
+
+Assigned Storage Sqdn at Davis-Monthan
+Assigned Storage Sqdn at Davis-Monthan
+At Tinker 1/7/55
+
+Surveyed
+
+Assigned Storage Sqdn at Davis-Monthan
+Engine fire, exploded
+
+Crashed 4 miles east of Taegu (K-2)
+Assigned Storage Sqdn at Davis-Monthan
+Reclaimed Pyote
+
+Salvaged at Davis-Monthan
+
+Assigned Storage Sqdn at Davis-Monthan
+Assigned Storage Sqdn at Davis-Monthan
+Reclaimed McClellan
+
+Assigned Storage Sqdn at Davis-Monthan
+Assigned Storage Sqdn at Davis-Monthan
+Reclaimed Pyote
+
+Assigned Storage Sqdn at Davis-Monthan
+Unknown
+
+Unknown
+
+Unknown
+
+Reclaimed McClellan
+
+Reclaimed Davis-Monthan
+
+Mig Rocket attack
+
+Assigned AMC
+
+Assigned Storage Sqdn at Davis-Monthan
+Unknown
+
+Unknown
+
+Salvaged at Davis-Monthan
+
+Reclaimed Davis-Monthan

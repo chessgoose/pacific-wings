@@ -1,0 +1,70 @@
+176
+
+THE B-29 SUPERFORTRESS
+
+497thBG/73rdBW
+
+MSN Date Target Location Number Up Bombed Lost
+1 Oct 28, 1944 Submarine Base Truk 9 7 0
+2 October 30 Submarine Base Truk 9 9 0
+3 November 2 Submarine Base Truk 11 9 0
+4 November 5 Airfields Iwo Jima 18 16 0
+5 November 8 Airfields Iwo Jima 7 6 0
+5 November 10 Recon (Aborted — weather) Tokyo 0 n/a 0
+7 November 24 Docks & Urban Area — Secondary Tokyo 28 20 1
+8 November 27 Musashino — Bombed Secondary Tokyo 26 14 0
+9 November 29/30 Industrial Area Tokyo 9 7 0
+10 December 3 Musashino — Nakajima AC Eng Tokyo 24 11 1
+11 December 8 Airfields Iwo Jima 16 12 0
+12 December 13 Mitsubishi Aircraft Engine Plant Nagoya 18 16 0
+13 December 18 Mitsubishi Aircraft Factory Nagoya 18 14 1
+14 December 22 Mitsubishi Aircraft Engine Plant Nagoya 14 7 1
+15 December 24 Navigation mission Iwo Jima 3 n/a 0
+16 December 27 Nakajima AC Engine Plant Tokyo 21 14 0
+17 Jan 3, 1945 Urban Area Nagoya 21 17 1
+18 January 9 Musashino — Nakajima AC EngineTokyo Tokyo 17 10 3
+19 January 14 Mitsubishi Aircraft Factory Nagoya 21 17 2
+20 January 19 Kawasaki Aircraft Factory Akashi 19 13 0
+22 January 23 Mitsubishi Aircraft Engine Plant Nagoya 17 ll 1
+24 January 27 Musashi — Nakajima Aircraft Factory Tokyo 19 13 5
+26 February 4 Urban Area Kobe 12 10 0
+29 February 10 Nakajima AircraftAssy Plant Ota ll 9 0
+34 February 15 Mitsubishi Aircraft Engine Factory Nagoya 20 6 0
+34 February 15 Target Last Resort Nagoya City in above ul 0
+37 February 19 Nakajima Aircraft Engine Factory Tokyo 23 20 1
+38 February 25 Urban Area Tokyo 24 19 2
+39 March 4 Secondary Target Tokyo Docks 34 32 1
+40 March 9/10 Urban Area Tokyo 37 34 0
+4l March 11/12 Urban Area Nagoya 34 34 0
+42 March 13/14 Urban Area Osaka 37 35 0
+43 March 16/17 Urban Area Kobe 38 38 0
+44 March 18/19 Urban Area Nagoya 39 37 0
+45 March 24/25 Mitsubishi Aircraft Engine Plant Nagoya 30 27 1
+46 March 27 Tachiari Airport Kyushu 30 29 0
+50 March 31 Tachiari Machine Works Kyushu 31 29 0
+51 April 1/2 Nakajima Aircraft Engine Plant Tokyo 26 25 1
+57 April 3/4 Aircraft Frame Plant Tachikawa 26 17 1
+57 April 3/4 Secondary — Urban Area Tachikawa in above 7 0
+58 April 7 Nakajima Aircraft Factory Tokyo 35 29 0
+63 April 12 Nakajima Aircraft Factory Tokyo 30 24 0
+67 April 13/14 Tokyo Arsenal Tokyo 30 29 1
+69 April 15/16 Urban Area Tokyo 28 23 0
+71 April 17 Tachiari Airfield Kyushu ll ib 0
+76 April 18 Tachiari Airfield Kyushu 1 10 2
+85 April 21 Usa Airfield Kyushu 22 20 0
+94 April22 Tomitaka Airfield Kyushu ib 8 0
+96 April 24 Hitachi Aircraft Factory Tachikawa ib ul 0
+97 April 26 Usa Airfield Kyushu 22 18 0
+97 April 26 Target of Opportunity Tomitaki A/F in above 1 0
+97 April 26 Target of Opportunity Hi-Saki A/F in above 1 0
+109 April 27 Miyazaki Airfield Kyushu ul 10 0
+120 April 29 Miyazaki Airfield Kyushu 22 19 2
+126 April 30 Tachikawa Air Arsenal Hamamatsu u 9 0
+146 May 5 Hiro Naval Aircraft Factory Kure 33 25 1
+163 May 10 Naval Fueling Station Tokuyama 33 28 0
+172 May 11 Kawanishi Aircraft Factory Kobe 11 7 0
+174 May 14 Urban Area Nagoya 44 36 1
+176 May 16/17 South Nagoya Urban Nagoya 38 35 0
+178 May 19 Tachikawa Arsenal Hamamatsu 22 22 0
+181 May 23/24 South Tokyo Urban Tokyo 4l 35 2
+183 May 25/26 Tokyo Palace Area Tokyo 35 30 1

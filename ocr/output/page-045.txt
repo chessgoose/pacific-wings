@@ -1,0 +1,396 @@
+Serial #
+
+42-63613
+42-63614
+42-63614
+42-63615
+42-63616
+42-63617
+42-63618
+42-63619
+42-63619
+42-63620
+42-63621
+42-63622
+42-63623
+42-63624
+42-63625
+42-63626
+42-63627
+42-63628
+42-63629
+42-63630
+42-63631
+42-63632
+42-63633
+42-63634
+42-63635
+42-63636
+42-63637
+42-63638
+42-63639
+42-63640
+42-63641
+42-63642
+42-63643
+42-63644
+42-63645
+42-63646
+42-63647
+42-63648
+42-63649
+42-63650
+42-63651
+42-63652
+42-63653
+42-63654
+42-63655
+42-63656
+42-63657
+42-63658
+42-63659
+42-63660
+42-63661
+42-63662
+42-63663
+42-63664
+42-63665
+42-63666
+42-63667
+42-63668
+42-63669
+42-63670
+42-63671
+42-63672
+42-63673
+42-63674
+42-63675
+
+Name
+
+ISLAND GIRL
+
+BIG MIKE
+
+THE BOOMERANG
+
+FLEET ADMIRAL NIMITZ
+
+PINK LADY
+
+Identification
+
+DIAM B
+DIAM H
+CIRC W
+DIAM Y
+DIAM H
+DIAM B
+DIAM L
+DIAM H
+K TRI
+DIAM H
+DIAM B 33
+
+DIAMH
+DIAMH
+
+DIAM B
+DIAM Y 31
+DIAM B
+
+DIAM B
+DIAM L 22
+
+DIAM Y
+DIAM Y
+DIAM Y
+
+DIAM B
+
+DIAM B
+
+DIAM B
+DIAM Y
+DIAM B
+DIAM Y
+DIAM B
+DIAM Y
+DIAM B
+DIAM H
+DIAM B
+DIAM L 26
+DIAM B
+
+DIAM B
+DIAM H
+DIAM Y
+DIAM Y
+DIAM Y
+DIAM B
+DIAM B
+DIAM Y
+DIAM Y
+DIAM Y 48
+DIAM Y
+
+DIAM B
+DIAM Y
+DIAM Y
+
+I. Master List
+
+Delv
+
+2/10/1945
+2/12/1945
+2/19/1945
+
+2/19/1945
+2/20/1945
+2126/1945
+
+3/1/1945
+
+2/28/1945
+2/21/1945
+2/21/1945
+2/20/1945
+2125/1945
+2/17/1945
+
+2126/1945
+212411945
+212411945
+2/26/1945
+2/28/1945
+2/26/1945
+2/24/1945
+2/24/1945
+2/28/1945
+212711945
+
+2126/1945
+2/28/1945
+3/211945
+
+2/28/1945
+3/5/1945
+3/9/1945
+3/6/1945
+
+3/18/1945
+
+3/12/1945
+
+3/10/1945
+
+31911945
+
+3/12/1945
+3/17/1945
+
+31711945
+3/14/1945
+
+3/16/1945
+312411945
+3IN7/1945
+3/19/1945
+
+Assign
+
+16BG
+502BG
+505BG
+501BG
+502BG
+16BG
+331BG
+502BG
+505BG
+502BG
+16BG
+4141BU
+502BG
+502BG
+245BU
+16BG
+501BG
+16BG
+235BU
+16BG
+331BG
+
+4141BU
+4141BU
+4141BU
+4141BU
+4141BU
+4141BU
+501BG
+501BG
+501BG
+235BU
+235BU
+16BG
+4141BU
+16BG
+235BU
+4141BU
+16BG
+501BG
+16BG
+501BG
+16BG
+501BG
+16BG
+502BG
+16BG
+331BG
+16BG
+4136BU
+16BG
+502BG
+501BG
+501BG
+501BG
+16BG
+16BG
+501BG
+501BG
+501BG
+501BG
+4000BU
+16BG
+501BG
+501BG
+
+Off Inv
+
+9/11/1950
+8/25/1950
+9114/1951
+
+8/25/1950
+9111/1950
+9111/1950
+
+11/8/1950
+6/21/1945
+6/22/1950
+
+9111/1950
+9111/1950
+9111/1950
+
+9111/1950
+9111/1950
+9111/1950
+9111/1950
+9/11/1950
+9/11/1950
+9111/1950
+6/1/1951
+
+3/31/1951
+8/6/1945
+
+1/4/1951
+
+9111/1950
+9/11/1950
+9/11/1950
+9111/1950
+3/31/1951
+8/25/1950
+
+TIN2NN945
+
+412511949
+4120/1949
+
+9130/1946
+
+51511954
+
+6/23/1954
+51511954
+
+12/4/1953
+12/4/1953
+
+12/4/1953
+12/4/1953
+12/4/1953
+6/23/1954
+
+31
+
+Circumstances
+
+Reclaimed
+Reclaimed
+Unknown
+Reclaimed Pyote
+Reclaimed McClellan
+Reclaimed Hill
+Reclaimed
+Reclaimed
+Unknown
+Reclaimed McClellan
+Reclaimed Tinker
+Reclaimed Pyote
+Reclaimed
+Reclaimed Hill
+Class 01Z McCook
+Reclaimed Davis-Monthan
+Reclaimed
+Reclaimed Tinker
+Reclaimed Pyote
+Reclaimed Tinker
+Reclaimed
+Reclaimed
+Reclaimed Pyote
+Reclaimed Pyote
+Reclaimed Pyote
+Reclaimed Pyote
+Reclaimed Pyote
+Reclaimed Pyote
+Reclaimed Pyote
+Reclaimed Hill
+Reclaimed Tinker
+Surveyed at Biggs
+
+Reclaimed Hill
+Reclaimed Pyote
+Reclaimed Tinker
+Reclaimed
+Reclaimed Pyote
+Reclaimed Tinker
+Reclaimed Tinker
+Reclaimed McClellan
+Reclaimed
+Ditched from Kawasaki
+Unknown
+Reclaimed
+Reclaimed
+Reclaimed
+Reclaimed
+Reclaimed
+Reclaimed Tinker
+Reclaimed
+Reclaimed
+Reclaimed Tinker
+Reclaimed
+Reclaimed
+Reclaimed Pyote
+Reclaimed Tinker
+Reclaimed
+Reclaimed Robins
+Reclaimed Robins
+Reclaimed
+Reclaimed Robins
+Reclaimed Robins
+Reclaimed Robins
+Reclaimed Pyote

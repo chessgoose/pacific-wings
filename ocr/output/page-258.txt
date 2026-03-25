@@ -1,0 +1,125 @@
+244
+
+THE B-29 SUPERFORTRESS
+
+MSN Date Target Location Grps Number Up Bombed Lost
+
+296 July 26/27 Mine Field Uncle Niigata 504BG 8 in above
+
+296 July 26/27 Mine Field Zebra Maizura 504BG 10 in above
+
+296 July 26/27 Mine Field X-Ray Senzaki 504BG 3 in above
+
+304 July 29/30 Mining Mission 41 See Below WING 30 27 0
+
+304 July 29/30 Mine Field Rashin Raishin, Korea 504BG 14 in above 0
+
+304 July 29/30 Mine Field Mike Shimonoseki 504BG 10 in above 0
+
+304 July 29/30 Mine Field Charlie Fukuoka Bay 504BG 6 in above 0
+
+305 August 1/2 Mining Mission 42 See Below WING 45 38 0
+
+305 August 1/2 Mine Field Rashin Raishin, Korea 504BG 9 in above 0
+
+305 August 1/2 Mine Field Seishin Seishin, Korea 504BG 7 in above 0
+
+305 August 1/2 Mine Field Mike Moji Area 504BG 17 in above 0
+
+305 August 1/2 Mine Field George Hamada, 504BG 7 in above 0
+
+305 August 1/2 Mine Field X-Ray Hagi, Oura 504BG 5 in above 0
+
+3u August 5/6 Mining Mission 43 See Below 504BG 30 27 0
+
+311 August 5/6 Mine Field X-Ray Hagi Harbor 504BG 6 in above 0
+
+311 August 5/6 Mine Field Zebra Tsuruga Harbor 504BG 10 in above 0
+
+311 August 5/6 Mine Field Geijitsu Geijitsu,Korea 504BG 5 in above 0
+
+311 August 5/6 Mine Field Rashin Rashin, Korea 504BG 9 in above 0
+
+318 August 7/8 Mining Mission 44 See Below 504BG 27 27 0
+
+318 August 7/8 Mine Field Rashin Raishin, Korea 504BG 8 8 0
+
+318 August 7/8 Mine Field Mike/Love Shimonoseki 504BG 5 5 0
+
+318 August 7/8 Mine Field Zebra Maizuru 504BG 8 8 0
+
+318 August 7/8 Mine Field Yoke Sakai 504BG 6 6 0
+
+324 August 9/10 Mining Mission 45 See Below WING 32 32 0
+
+324 August 9/0 Mine Field Rashin Raishin, Korea 504BG 7 7 0
+
+324 August 9/0 Mine Field Seishin Seishin, Korea 504BG 7 7 0
+
+324 August 9/10 Mine Field Mike Shimonoseki 504BG ll 1 0
+
+324 August 9/10 Mine Field Genzan Genzan, Korea 504BG 7 7 0
+
+331 August 14 Mining Mission 46 See Below WING Al 38 0
+
+331 August 14 Mine Field Nan Nanao Bay 504BG 8 in above 0
+
+331 August 14 Mine Field Mike Shimonoseki 504BG 10 in above 0
+
+331 August 14 Mine Field Zebra Tsuruga Bay 504BG 17 in above 0
+
+331 August 14 Mine Field George Hamada Harbor 504BG 6 in above 0
+“Operation Starvation” Minefield Locations
+
+Minefield Locations
+
+ABLE Kobe/Osaka approaches and harbors
+
+BAKER Aki Nada; main Inland Sea shipping lane between Hazuma Hana and Kajitoro Hana
+
+CHARLIE — Fukuoka Bay and Harbor
+
+DOG North of Shoda Shima
+
+EASY Bisan Seto; south of Shodo Shima
+
+FOX Bingo Nada between Imabari and MiSaki
+
+GEORGE Hamada
+
+HOW Main harbor facilities at Kure Naval Base and the anchorage between Kureko and Nishinomi Shima
+
+ITEM Main shipping channel to Kure through Hashirashima Suido; southern entrance to Kure between Nishinomi and Kurahashi Shima
+
+JIG Entrance to Hiroshima Harbor between Itsuku Shima and Nishinomi Strait; northern approach to Hiroshima and Kure
+
+KING Channel leading to the Port of Tokuyama and anchorages of Port
+
+LOVE Outer eastern approaches to Shimonoseki Strait and Moji area
+
+MIKE Inner Shimonoseki approaches and strait; Moji Harbor; western approaches to Shimonoseki Kaikyo
+
+NAN Fushiki; Nanao Bay
+
+OBOE Tokyo Bay
+
+ROGER Western approach to Sasebo Naval Base and Mura Wan
+
+TARE Nagoya; across the mouth of Ise Wan
+
+UNCLE Niigata; Sakata
+
+WILLIAM  Fungkoshi; Funakawa
+
+X-RAY Senzaki; Hagi; Oura
+
+YOKE Sakai
+
+ZEBRA Maizura Bay; Tsuruga Bay and harbor; Miyazu
+
+RASHIN Korea
+SEISHIN Korea
+MASAN Korea
+FUSAN Korea
+PUSAN Korea
+GEIJITSU Korea

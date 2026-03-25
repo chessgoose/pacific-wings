@@ -1,0 +1,550 @@
+22
+
+Serial #
+
+42-24763
+42-24763
+42-24764
+42-24765
+42-24766
+42-24766
+42-24767
+42-24768
+42-24769
+42-24769
+42-24770
+42-24771
+42-24772
+42-24773
+42-24774
+42-24775
+42-24776
+42-24777
+42-24778
+42-24779
+42-24780
+42-24780
+42-24781
+42-24781
+42-24782
+42-24783
+42-24784
+42-24784
+42-24785
+42-24786
+42-24786
+42-24787
+42-24788
+42-24788
+42-24789
+42-24790
+42-24791
+42-24792
+42-24792
+42-24793
+42-24794
+42-24794
+42-24795
+42-24795
+42-24796
+42-24797
+42-24798
+42-24799
+42-24800
+42-24800
+42-24801
+42-24801
+42-24802
+42-24802
+42-24803
+42-24804
+42-24805
+42-24806
+42-24806
+42-24807
+42-24808
+42-24809
+42-24809
+42-24810
+42-24811
+
+Name
+
+GEISHA GERTIE
+UNCLE TOM’S CABIN II
+PACIFIC PLAYBOYS
+UPPER BERTH
+GEORGIA ANN
+LEADING LADY
+
+ROVER BOYS EXPRESS
+LASSIE II
+
+PASSION WAGON
+
+MISS HAP
+WHITE MISTRESS/HUNTRESS
+
+DRAGON LADY
+
+SATAN’S LADY
+
+29 USN CONSTRUCTION REG
+DOC’S DEADLY DOSE
+
+TWENTY-NINTH USNCB
+STAR DUSTER
+CONNECTICUT YANKEE
+92 NAVAL CONST BATT
+SLICK’S CHICKS
+HOMING DE-VICE
+ASSID TEST
+
+ASSID TEST
+
+THE WOLF PACK
+
+KRO’S KIDS
+
+KRO’S KIDS
+
+BIG TIME OPERATOR, THE
+20TH CENTURY LIMITED
+
+COUNTRY GENTLEMAN
+HOMER’S ROAMERS
+LITTLE PRINCESS
+
+DOTTIE’S DILEMMA
+JACKPOT
+OLE GAS EATER
+
+PHONY EXPRESS
+PHONY EXPRESS
+BLACK CAT
+PURPLE SHAFT
+
+INDIAN MAID
+SATAN’S LADY
+
+INDIAN MAID
+67 SEA BEE
+
+THE B-29 SUPERFORTRESS
+
+Identification
+
+T SQ 34 (1)
+T SQ 34 (1)
+KTRI1
+
+V SQ 1(2)
+Z SQ 22 (1)
+Z SQ 22 (1)
+T SQ 10 (3)
+
+V SQ 27 (2)
+V SQ 27 (2)
+
+Z SQ 26 (2)
+TSQ52
+
+ASQ 14
+
+V SQ 24
+
+ASQ 37
+
+V SQ 26 (2)
+
+L TRI 57 (1)
+TSQ7 (2)
+
+K TRI8
+
+E TRI (1)
+
+E TRI (1)
+
+E TRI (1)
+
+K TRI
+
+E TRI
+VSQ31
+
+L TRI 41/61
+
+K TRI
+
+K TRI
+
+Z SQ 31/25
+SOLGRNRUD
+TRI U 49
+
+K TRI 4
+
+CIRC E 26
+LTRI
+
+X TRI 36 (1)
+E TRI
+
+X TRI 4
+
+ZSQ2 (3)
+TRII
+
+K TRI 10 (1)
+T SQ 10 (4)
+
+K TRI 5 (1)
+FOURYLWSTRP W
+TRI S 32
+
+X TRI 16/31
+
+K TRI
+FOURYLWSTRP ER
+E TRI
+SOLYLWRUD
+TRI U 21
+SOLGRNRUD
+TRI U 43
+
+K TRI 2
+
+K TRI 2
+
+FOURBLUSTRP S
+
+E TRI
+E TRI
+ASQ
+ASQ
+K TRI 03 (1)
+K TRI 03 (1)
+
+K TRI
+
+Delv
+
+10/9/1944
+10/9/1944
+10/7/1944
+10/12/1944
+10/9/1944
+10/9/1944
+10/9/1944
+10/9/1944
+10/10/1944
+10/10/1944
+11/13/1944
+10/14/1944
+10/13/1944
+10/10/1944
+10/13/1944
+10/18/1944
+10/11/1944
+10/10/1944
+10/12/1944
+10/13/1944
+10/13/1944
+10/13/1944
+10/11/1944
+10/11/1944
+10/13/1944
+10/14/1944
+10/16/1944
+10/16/1944
+10/16/1944
+1/28/1945
+5/5/1945
+10/18/1944
+
+10/17/1944
+10/18/1944
+10/17/1944
+10/19/1944
+
+10/19/1944
+10/19/1944
+10/19/1944
+10/17/1944
+51511945
+
+10/25/1944
+10/19/1944
+10/23/1944
+10/19/1944
+10/24/1944
+51511945
+
+10/21/1944
+51511945
+
+10/25/1944
+10/25/1944
+10/20/1944
+10/24/1944
+10/20/1944
+10/26/1944
+10/26/1944
+10/23/1944
+10/23/1944
+10/26/1944
+10/26/1944
+10/27/1944
+10/28/1944
+
+Assign
+
+498BG
+498BG
+505BG
+499BG
+500BG
+500BG
+498BG
+619BU
+499BG
+499BG
+500BG
+498BG
+497BG
+499BG
+497BG
+499BG
+6BG
+498BG
+505BG
+504BG
+504BG
+504BG
+505BG
+504BG
+499BG
+6BG
+505BG
+505BG
+500BG
+462BG
+462BG
+505BG
+504BG
+6BG
+9BG
+504BG
+9BG
+500BG
+468BG
+505BG
+498BG
+505BG
+40BG
+40BG
+9BG
+505BG
+40BG
+504BG
+462BG
+462BG
+462BG
+462BG
+505BG
+505BG
+234BU
+40BG
+4141BU
+504BG
+504BG
+497BG
+497BG
+505BG
+505BG
+4141BU
+505BG
+
+Off Inv
+
+1/14/1945
+1/14/1945
+9119/1950
+9115/1953
+1/3/1945
+1/3/1945
+1/27/1945
+5/10/1954
+1/27/1945
+1/27/1945
+5/10/1954
+5/10/1954
+1/9/1945
+12/18/1944
+TITIN94S
+5/10/1954
+51511954
+212711945
+6/17/1954
+412511945
+9115/1953
+9115/1953
+1/5/1945
+
+6/17/1954
+11/17/1953
+2/10/1945
+2/10/1945
+1/23/1945
+51511945
+6/5/1945
+2/10/1945
+6/26/1945
+6/25/1945
+41711945
+2/10/1945
+12/6/1950
+5/10/1954
+5/10/1954
+51411945
+5/19/1950
+5/19/1950
+51511945
+9/15/1953
+7IGIN945
+3/19/1945
+1/3/1945
+712511949
+51511945
+6/15/1945
+51511945
+5/16/1945
+12/6/1950
+12/6/1950
+1/31/1945
+2/26/1945
+10/21/1953
+11/7/1950
+11/7/1950
+1/14/1945
+2/25/1945
+6/5/1945
+6/5/1945
+10/21/1953
+10/11/1946
+
+Circumstances
+
+Ditched
+
+Ditched off Nagoya
+
+Reclaimed Chanute
+
+Reclaimed Pyote
+
+Rammed; crashed SE of Nagoya
+Rammed; crashed SE of Nagoya
+
+Ditched -out of fuel
+
+Reclaimed Davis-Monthan
+
+Shot down by fighters
+
+Shot down, tried to ditch in lake
+Reclaimed Davis-Monthan
+
+Reclaimed Davis-Monthan
+
+Rammed Tokyo, on fire when last seen
+Hit by bomb from 498BG plane
+Crashed Kochi Park, Kochi
+
+Reclaimed Davis-Monthan
+
+Reclaimed Tinker
+
+Ditched on Weather Strike #238
+
+Class 26 Sheppard
+
+Flak over Tachikawa
+
+Reclaimed Pyote
+
+Reclaimed Pyote
+
+Ditched
+
+Transfer to 505BG
+
+Class 26 Sheppard
+
+Reclaimed Hill
+
+Collided with 42-24815 at Gumma-Ken
+Collided with 42-24815 at Gumma-Ken
+Right wing, #3 engine afire, broke off
+Group Transfer to Tinian
+
+Shot down after bombing Kobe — flak
+Last reported twenty minutes from Saipan
+Shot down Nagoya
+
+Shot down Nagoya
+
+Surveyed; mine load salvo dmg 3/30/45
+Ditched
+
+Reclaimed Robins
+
+Reclaimed Davis-Monthan
+
+Reclaimed Davis-Monthan
+
+Ditched off Iwo insufficient fuel
+Reclaimed
+
+Reclaimed
+
+Group transfer to Tinian
+
+Reclaimed Pyote
+
+Surveyed off end of runway Tinian 6/1/45
+Ditched 150 miles off Japan-flak damage
+Combat loss?
+
+Reclaimed
+
+Group transfer to Tinian
+
+Crashed, burned on takeoff
+
+Group transfer to Tinian
+
+Abandoned, fire #3 engine after takeoff
+Reclaimed
+
+Reclaimed
+
+Class 01Z Clovis
+
+Abandoned Bay of Bengal, photo mission
+Reclaimed Robins
+
+Reclaimed
+
+Reclaimed
+
+Ditched, flak damage
+
+Ditched, mid-air collision with 42-63431
+Hit by flak, crashed in Kobe harbor
+
+Hit by flak, crashed in Kobe harbor
+Reclaimed Robins
+
+Salvaged
