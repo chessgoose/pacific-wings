@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacific Wings 1944-1945 | WWII Flight Tracker</title>
+    <meta name="description"
+        content="A real-time flight tracker for historical WWII aircraft in the Pacific Theater, covering China, Japan, and Korea from 1944 to 1945.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="dark-theme">
+    <div id="app">
+        <!-- Sidebar -->
+        <aside id="sidebar" class="glass-panel">
+            <header>
+                <h1>PACIFIC WINGS</h1>
+                <p class="subtitle">1944-1945 Theater Operations</p>
+            </header>
+
+            <div class="mission-brief">
+                Select a flight to view its historical mission and path across the Pacific front. Use the timeline to
+                witness operations in Japan, China, and Korea.
+            </div>
+
+            <div class="action-buttons" style="margin: 15px 0; display: flex; gap: 8px;">
+                <button id="show-import" class="primary-btn"
+                    style="flex: 1; padding: 10px; background: var(--accent-color); color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600;">Import</button>
+                <button id="clear-all" class="primary-btn"
+                    style="flex: 1; padding: 10px; background: var(--danger-color); color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600;">Clear
+                    All</button>
+            </div>
+
+            <div class="jump-points-container" style="margin-bottom: 20px;">
+                <h3
+                    style="font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 12px; border-bottom: 1px solid var(--panel-border); padding-bottom: 8px;">
+                    Historical Operations</h3>
+                <div id="historical-jumps" class="jump-grid"
+                    style="display: grid; grid-template-columns: 1fr; gap: 8px; margin-bottom: 16px;">
+                    <button class="jump-btn" data-time="1944-06-15T08:00:00Z">Matterhorn (Yawata) - 1944</button>
+                    <button class="jump-btn" data-time="1944-10-10T08:00:00Z">Task Force 38 (Okinawa) - 1944</button>
+                    <button class="jump-btn" data-time="1945-03-09T18:00:00Z">Tokyo Firebombing - 1945</button>
+                    <button class="jump-btn" data-time="1945-08-05T23:10:00Z">Hiroshima Strike - Aug 6</button>
+                    <button class="jump-btn" data-time="1945-08-09T01:55:00Z">Nagasaki Strike - Aug 9</button>
+                </div>
+
+                <div id="custom-jumps-section" class="hidden">
+                    <h3
+                        style="font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 12px; border-bottom: 1px solid var(--panel-border); padding-bottom: 8px;">
+                        My Missions</h3>
+                    <div id="custom-jumps" class="jump-grid"
+                        style="display: grid; grid-template-columns: 1fr; gap: 8px;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="search-container">
+                <input type="text" id="flight-search" placeholder="Search squadron or aircraft...">
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="label">Total Aircraft</span>
+                    <span class="value" id="total-count">0</span>
+                </div>
+                <div class="stat-card">
+                    <span class="label">Major Operations</span>
+                    <span class="value" id="ops-count">12</span>
+                </div>
+            </div>
+
+            <div class="flight-list-container">
+                <h3>Active Flights</h3>
+                <ul id="flight-list">
+                    <!-- Flights will be injected here -->
+                </ul>
+            </div>
+
+            <div id="selected-flight-details" class="details-panel hidden">
+                <button id="close-details" class="close-btn">&times;</button>
+                <div class="details-header">
+                    <h2 id="plane-type">Select Aircraft</h2>
+                    <p id="plane-id">N/A</p>
+                </div>
+                <div class="details-content">
+                    <div class="detail-item">
+                        <span class="label">Squadron</span>
+                        <span class="value" id="plane-squadron">-</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Origin</span>
+                        <span class="value" id="plane-origin">-</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Destination</span>
+                        <span class="value" id="plane-dest">-</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Altitude</span>
+                        <span class="value" id="plane-alt">-</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Speed</span>
+                        <span class="value" id="plane-speed">-</span>
+                    </div>
+                    <div id="plane-description"
+                        style="margin-top: 15px; font-size: 0.8rem; color: var(--text-secondary); border-top: 1px solid var(--panel-border); padding-top: 10px;">
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Map Container -->
+        <main id="map-container">
+            <div id="map"></div>
+
+            <!-- Timeline Controls -->
+            <div id="timeline-container" class="glass-panel">
+                <div class="timeline-header">
+                    <div class="current-date-info">
+                        <span id="current-date">Oct 25, 1944</span>
+                        <span id="current-time">10:45 AM</span>
+                    </div>
+                    <div class="playback-controls">
+                        <button id="prev-day" class="control-btn" title="Previous Day">⏮</button>
+                        <button id="prev-hour" class="control-btn" title="Previous Hour" style="font-size: 0.9rem;">prev
+                            hour</button>
+                        <button id="play-pause" class="control-btn play" title="Play/Pause">▶</button>
+                        <button id="next-hour" class="control-btn" title="Next Hour" style="font-size: 0.9rem;">next
+                            hour</button>
+                        <button id="next-day" class="control-btn" title="Next Day">⏭</button>
+                    </div>
+                    <div class="speed-control">
+                        <label>Speed:</label>
+                        <select id="time-speed">
+                            <option value="1">1x</option>
+                            <option value="2">2x</option>
+                            <option value="5">5x</option>
+                            <option value="10">10x</option>
+                            <option value="30">30x</option>
+                            <option value="60">1h/min</option>
+                            <option value="120">2h/min</option>
+                            <option value="1440">1d/min</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="slider-wrapper">
+                    <input type="range" id="timeline-slider" min="0" max="100000" value="0">
+                </div>
+            </div>
+
+            <!-- Map Overlays -->
+            <div id="map-legend" class="glass-panel">
+                <div class="legend-item"><span class="marker marker-bomber"></span> Bomber</div>
+                <div class="legend-item"><span class="marker marker-fighter"></span> Fighter</div>
+                <div class="legend-item"><span class="marker marker-scout"></span> Recon</div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Import Modal -->
+    <div id="import-modal" class="modal hidden">
+        <div class="modal-content glass-panel">
+            <header>
+                <h2>Import Historical Missions</h2>
+                <span class="close-modal">&times;</span>
+            </header>
+            <p>Paste CSV data below. Header format:
+                <code>squadron, type, description, start_lat, start_lng, end_lat, end_lng, start_time, duration_hours</code>
+            </p>
+            <textarea id="csv-input"
+                placeholder="Example: 794th Wing, Bomber, Mission to Yawata, 30.34, 103.84, 33.88, 130.82, 1944-06-15 08:00, 10"></textarea>
+            <div class="modal-actions">
+                <button id="process-csv" class="primary-btn">Load Flights</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

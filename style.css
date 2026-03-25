@@ -1,0 +1,566 @@
+:root {
+    --bg-color: #1a1c22;
+    --panel-bg: rgba(26, 28, 34, 0.85);
+    --panel-border: rgba(255, 255, 255, 0.1);
+    --accent-color: #3b82f6;
+    --accent-secondary: #60a5fa;
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --danger-color: #ef4444;
+    --success-color: #10b981;
+    --font-main: 'Outfit', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+}
+
+.jump-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--panel-border);
+    color: var(--text-primary);
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s ease;
+}
+
+.jump-btn:hover {
+    background: rgba(59, 130, 246, 0.1);
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.jump-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    max-height: 250px;
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+#app {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.glass-panel {
+    background: var(--panel-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--panel-border);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Sidebar Styling */
+#sidebar {
+    width: 350px;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    border-right: 1px solid var(--panel-border);
+    overflow-y: auto;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: var(--accent-color);
+    margin-bottom: 2px;
+}
+
+header .subtitle {
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.mission-brief {
+    background: rgba(59, 130, 246, 0.1);
+    border-left: 2px solid var(--accent-color);
+    padding: 12px;
+    margin: 20px 0;
+    font-size: 0.85rem;
+    color: var(--text-primary);
+    line-height: 1.4;
+}
+
+.search-container {
+    margin: 20px 0;
+}
+
+#flight-search {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--panel-border);
+    padding: 12px 16px;
+    color: white;
+    font-family: var(--font-main);
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#flight-search:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 2px rgba(255, 204, 0, 0.2);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-card .label {
+    font-size: 0.65rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+}
+
+.stat-card .value {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: white;
+    font-family: var(--font-mono);
+}
+
+.flight-list-container {
+    flex: 1;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.flight-list-container h3 {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--panel-border);
+}
+
+#flight-list {
+    list-style: none;
+}
+
+.flight-item {
+    padding: 12px;
+    margin-bottom: 8px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flight-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.flight-item.selected {
+    border-left: 3px solid var(--accent-color);
+    background: rgba(255, 204, 0, 0.08);
+}
+
+.flight-item-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.flight-callsign {
+    font-family: var(--font-mono);
+    font-weight: 500;
+    color: var(--accent-color);
+}
+
+.flight-type {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+/* Details Panel */
+.details-panel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--bg-color);
+    padding: 24px;
+    border-top: 1px solid var(--panel-border);
+    animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.details-header h2 {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+}
+
+.details-header p {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.detail-item .label {
+    color: var(--text-secondary);
+}
+
+/* Map Container */
+#map-container {
+    flex: 1;
+    position: relative;
+    height: 100%;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    background: #000;
+}
+
+/* Timeline Styling */
+#timeline-container {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 900px;
+    padding: 16px 24px;
+    border-radius: 16px;
+    z-index: 1000;
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.current-date-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#current-date {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+#current-time {
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+}
+
+.playback-controls {
+    display: flex;
+    gap: 16px;
+}
+
+.control-btn {
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.control-btn:hover {
+    color: var(--accent-color);
+}
+
+.speed-control {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.speed-control select {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--panel-border);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.slider-wrapper {
+    width: 100%;
+}
+
+#timeline-slider {
+    width: 100%;
+    height: 6px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    outline: none;
+}
+
+#timeline-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+}
+
+/* Legend */
+#map-legend {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+}
+
+.marker {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.marker-bomber {
+    background-color: var(--danger-color);
+}
+
+.marker-fighter {
+    background-color: var(--accent-color);
+}
+
+.marker-scout {
+    background-color: var(--success-color);
+}
+
+/* Override Leaflet Dark Mode */
+.leaflet-container {
+    background: #000 !important;
+}
+
+/* Filter removed with CartoDB Dark Matter */
+
+.leaflet-bar {
+    border: 1px solid var(--panel-border) !important;
+}
+
+.leaflet-bar a {
+    background: var(--panel-bg) !important;
+    color: white !important;
+    backdrop-filter: blur(10px);
+}
+
+.plane-icon-wrapper {
+    background: none !important;
+    border: none !important;
+}
+
+.plane-marker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.8));
+    transition: transform 0.2s linear;
+}
+
+.plane-marker.bomber svg {
+    width: 32px;
+    height: 32px;
+}
+
+.plane-marker:hover svg {
+    filter: drop-shadow(0 0 8px var(--accent-color));
+    transform: scale(1.2);
+}
+
+.plane-marker.selected svg {
+    filter: drop-shadow(0 0 12px var(--accent-color));
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(59, 130, 246, 0.3);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(59, 130, 246, 0.5);
+}
+
+/* Modal Styling */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    transition: opacity 0.3s ease;
+}
+
+.modal.hidden {
+    display: none !important;
+}
+
+.modal-content {
+    background: var(--bg-color);
+    border: 1px solid var(--panel-border);
+    backdrop-filter: blur(10px);
+    width: 90%;
+    max-width: 700px;
+    padding: 32px;
+    border-radius: 16px;
+    position: relative;
+}
+
+.modal-content h2 {
+    color: var(--accent-color);
+    margin-bottom: 8px;
+}
+
+.modal-content p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+}
+
+#csv-input {
+    width: 100%;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--panel-border);
+    border-radius: 8px;
+    color: white;
+    padding: 12px;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+    resize: none;
+    outline: none;
+}
+
+#csv-input:focus {
+    border-color: var(--accent-color);
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-secondary);
+}
+
+.close-modal:hover {
+    color: white;
+}
+
+.primary-btn {
+    background: var(--accent-color);
+    color: black;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.primary-btn:hover {
+    transform: translateY(-2px);
+}
