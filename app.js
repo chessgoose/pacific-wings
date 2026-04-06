@@ -396,14 +396,15 @@ class PacificWingsApp {
                 // Interpolate position
                 const progress = (this.currentTime - flight.startMs) / flight.duration;
                 const pos = this.interpolatePath(flight.waypoints, progress);
+                const bearing = this.getBearingAtProgress(flight.waypoints, progress);
 
                 if (!this.markers.has(flight.id)) {
                     // Create marker
                     const icon = L.divIcon({
                         className: 'plane-icon-wrapper',
-                        html: `<div class="plane-marker ${flight.type.toLowerCase().includes('b-29') ? 'bomber' : 'fighter'}">
+                        html: `<div class="plane-marker ${flight.type.toLowerCase().includes('b-29') ? 'bomber' : 'fighter'}" style="transform: rotate(${bearing}deg); transition: transform 0.3s ease;">
                                 <svg viewBox="0 0 24 24" width="24" height="24" fill="${this.getMarkerColor(flight.type)}">
-                                    <path d="M21,16L22,13V11L13,5V3H11V5L2,11V13L3,16H11V21H12V16H21Z" />
+                                    <path d="M12,2L14,5V9L21,13V16L14,13V18L16,20V22L12,21L8,22V20L10,18V13L3,16V13L10,9V5L12,2Z" />
                                 </svg>
                                </div>`,
                         iconSize: [24, 24],
@@ -417,8 +418,12 @@ class PacificWingsApp {
                     const marker = this.markers.get(flight.id);
                     marker.setLatLng([pos.lat, pos.lng]);
 
-                    // Rotate based on bearing (simplified)
-                    // In a real app we'd calculate heading between waypoints
+                    // Rotate icon to match bearing
+                    const el = marker.getElement();
+                    if (el) {
+                        const inner = el.querySelector('.plane-marker');
+                        if (inner) inner.style.transform = `rotate(${bearing}deg)`;
+                    }
                 }
             } else {
                 // Remove marker if it exists
@@ -428,6 +433,23 @@ class PacificWingsApp {
                 }
             }
         });
+    }
+
+    calculateBearing(from, to) {
+        const toRad = deg => deg * Math.PI / 180;
+        const toDeg = rad => rad * 180 / Math.PI;
+        const dLng = toRad(to.lng - from.lng);
+        const lat1 = toRad(from.lat);
+        const lat2 = toRad(to.lat);
+        const y = Math.sin(dLng) * Math.cos(lat2);
+        const x = Math.cos(lat1) * Math.sin(lat2) - Math.sin(lat1) * Math.cos(lat2) * Math.cos(dLng);
+        return (toDeg(Math.atan2(y, x)) + 360) % 360;
+    }
+
+    getBearingAtProgress(waypoints, progress) {
+        const segmentCount = waypoints.length - 1;
+        const segmentIndex = Math.min(Math.floor(progress * segmentCount), segmentCount - 1);
+        return this.calculateBearing(waypoints[segmentIndex], waypoints[segmentIndex + 1]);
     }
 
     interpolatePath(waypoints, progress) {
