@@ -1,0 +1,1 @@
+- Create icons for each aircraft type 

@@ -1,0 +1,278 @@
+102
+
+Serial Numbers
+
+44-62329-44-62909
+44-69655-44-69704
+44-69705-44-69804
+44-69805-44-69904
+44-69905-44-70004
+44-70005-—44-70104
+44-70105—44-70154
+44-75027-44-76026
+44-83890-44-83893
+44-83894
+
+44-83895
+44-83896-44-83899
+44-83900
+44-83901-44-83903
+44-83904
+44-83905-44-83907
+44-83908
+44-83909-44-83910
+44-83911
+44-83912-44-83913
+44-83914
+44-83915-44-83916
+44-83917
+44-83918-44-83919
+44-83920
+44-83921-44-83922
+44-93923
+44-83924-44-83925
+44-83926-44-83962
+
+44-83963-44-84028
+44-84029-44-84056
+44-84057-44-84103
+44-84104-44-84149
+
+44-84140
+
+44-84150
+
+44-84153
+
+44-84154
+
+44-84151
+
+44-84152
+
+44-84155
+
+44-84156
+44-86242-44-86276
+44-86277-44-86315
+44-86316-44-86370
+44-86371-44-86425
+44-86426-44-86473
+44-87584-44-87633
+44-87634-44-87683
+44-87684-44-87733
+44-87734-44-87783
+45-21693-45-21742
+45-21743-45-21757
+45-21758-45-21792
+45-21793-45-21812
+45-21813-45-21842
+45-21843—45-21842
+45-21873-45-22392
+45-40911-45-41735
+45-42480-45-43079
+
+Manufactuer
+
+Boeing Wichita
+Boeing Wichita
+Boeing Wichita
+Boeing Wichita
+Boeing Wichita
+Boeing Wichita
+
+Bell Atlanta
+Bell Atlanta
+Bell Atlanta
+Bell Atlanta
+Bell Atlanta
+Bell Atlanta
+Bell Atlanta
+Bell Atlanta
+Bell Atlanta
+Bell Atlanta
+Bell Atlanta
+Bell Atlanta
+Bell Atlanta
+Bell Atlanta
+Bell Atlanta
+Bell Atlanta
+Bell Atlanta
+Bell Atlanta
+Bell Atlanta
+Bell Atlanta
+Bell Atlanta
+Bell Atlanta
+Bell Atlanta
+Bell Atlanta
+Bell Atlanta
+Bell Atlanta
+Bell Atlanta
+Bell Atlanta
+Bell Atlanta
+Bell Atlanta
+
+Bell Atlanta
+
+Bell Atlanta
+
+Bell Atlanta
+
+Bell Atlanta
+
+Martin Omaha
+Martin Omaha
+Martin Omaha
+Martin Omaha
+Martin Omaha
+Boeing Wichita
+Boeing Wichita
+Boeing Wichita
+Boeing Wichita
+Boeing Wichita
+Boeing Wichita
+Boeing Wichita
+Boeing Wichita
+Boeing Wichita
+Boeing Wichita
+
+THE B-29 SUPERFORTRESS
+
+Model
+
+B-29-55-BW
+B-29-60-BW
+B-29-65-BW
+B-29-70-BW
+B-29-75-BW
+B-29-80-BW
+
+B-29B-40-BA
+B-29-40-BA
+B-29B-40-BA
+B-29B-45-BA
+B-29-45-BA
+B-29B-45-BA
+B-29-45-BA
+B-29B-45-BA
+B-29-45-BA
+B-29B-45-BA
+B-29-45-BA
+B-29B-45-BA
+B-29-45-BA
+B-29B-45-BA
+B-29-45-BA
+B-29B-45-BA
+B-29-45-BA
+B-29B-45-BA
+B-29-45-BA
+B-29B-45-BA odd #
+B-29-45-BA even #
+B-29B-50-BW odd#
+B-29-50-BA even #
+B-29B-55-BW odd#
+B-29-55-BA even #
+B-29B-60-BA odd #
+B-29-G0-BA even #
+B-29B-65-BA odd #
+B-29-65-BA even #
+B-29B-65-BA
+Contract Cancelled
+Contract Cancelled
+Contract Cancelled
+Contract Cancelled
+B-29B-65-BA
+B-29-65-BA
+B-29B-65-BA
+
+B-29-100-BW
+
+Contract Cancelled
+Contract Cancelled
+Contract Cancelled
+
+Block Number
+
+Contract Cancelled
+55-BW
+60-BW
+65-BW
+70-BW
+75-BW
+80-BW
+Contract Cancelled
+40-BA
+40-BA
+40-BA
+40-BA
+45-BA
+45-BA
+45-BA
+45-BA
+45-BA
+45-BA
+45-BA
+45-BA
+45-BA
+45-BA
+45-BA
+45-BA
+45-BA
+45-BA
+45-BA
+45-BA
+45-BA
+50-BA
+50-BA
+55-BA
+55-BA
+60-BA
+60-BA
+65-BA
+65-BA
+65-BA
+
+65-BA
+65-BA
+65-BA
+65-BA
+40-MO
+45-MO
+50-MO
+55-MO
+60-MO
+80-BW
+85-BW
+86-BW
+90-BW
+90-BW
+97-BW
+95-BW
+96-BW
+95-BW
+100-BW
+13767-14286
+14287-15111
+15112-15711
+
+Construction Number
+
+11806-12386
+10487-10536
+10537-10636
+10637-10736
+10737-10836
+10837-10936
+10937-10986
+12587-13586
+
+12387-12436
+12437-12486
+12487-12536
+12537-12586
+13587-13636
+13637-13651
+13652-13686
+13687-13706
+13707-13736
+13737-13766

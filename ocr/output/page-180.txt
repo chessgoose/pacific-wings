@@ -1,0 +1,522 @@
+166
+
+MSN
+
+264
+264
+265
+265
+265
+265
+265
+265
+266
+266
+266
+266
+266
+266
+267
+267
+267
+268
+268
+268
+268
+268
+269
+269
+269
+269
+269
+270
+270
+270
+271
+271
+271
+271
+271
+272
+272
+272
+272
+272
+273
+273
+273
+273
+273
+274
+274
+274
+274
+274
+275
+275
+275
+275
+276
+276
+276
+276
+276
+277
+277
+277
+277
+277
+277
+
+Date
+
+July 12/13
+July 12/13
+July 12/13
+July 12/13
+July 12/13
+July 12/13
+July 12/13
+July 12/13
+July 12/13
+July 12/13
+July 12/13
+July 12/13
+July 12/13
+July 12/13
+July 12/13
+July 12/13
+July 12/13
+July 13
+
+July 13
+
+July 13
+
+July 13
+
+July 15/16
+July 15/16
+July 15/16
+July 15/16
+July 15/16
+July 15/16
+July 15/16
+July 15/16
+July 15/16
+July 15/16
+July 15/16
+July 15/16
+July 15/16
+July 15/16
+July 16/17
+July 16/17
+July 16/17
+July 16/17
+July 16/17
+July 16/17
+July 16/17
+July 16/17
+July 16/17
+July 16/17
+July 16/17
+July 16/17
+July 16/17
+July 16/17
+July 16/17
+July 17/18
+July 17/18
+July 17/18
+July 19
+
+July 19
+
+July 19
+
+July 19
+
+July 19
+
+July 19
+
+July 19/20
+July 19/20
+July 19/20
+July 19/20
+July 19/20
+July 19/20
+
+THE B-29 SUPERFORTRESS
+
+Target
+
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Target of Opportunity
+Target of Opportunity
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Target of Opportunity
+Urban Area
+Petroleum Oil Center
+Petroleum Oil Center
+Petroleum Oil Center
+Mining Mission 34
+Mine Field Mike
+Mine Field Seishin
+Mine Field Masan-Reisu
+Mine Field Charlie
+Mining Mission 35
+Mine Field Uncle/Nan
+Mine Field Rashin
+Mine Field Genzen-Konan
+Mine Field Fusan
+Kudamatsu Oil Refinery
+Kudamatsu Oil Refinery
+Kudamatsu Oil Refinery
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Target of Opportunity
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Mining Mission 36
+Mine Field Mike
+Mine Field Seishin
+Mine Field Nan
+Mining Mission 37
+Mine Field Able
+Mine Field Uncle/Nan
+Mine Field Zebra
+Mine Field Genzan — Konan
+Urban Area
+Urban Area
+Urban Area
+Urban Area
+Target of Opportunity
+Urban Area
+
+Location Wings
+Ichinomiya
+Ichinomiya
+Tsuruga
+Tsuruga
+
+Yamada
+
+313BW
+
+Shingu
+Tsuruga
+Tsuruga
+Uwajima
+Uwajima
+Uwajima
+Uwajima
+Sukumo
+
+314BW
+
+Uwajima
+Kawasaki 315BW
+Kawasaki
+Kawasaki
+See Below 313BW
+Shimonoseki
+Korea
+
+Korea
+
+Fukuoka
+
+See Below
+Niigata/Naoetsu
+Rashin, Korea
+Genzen, Korea
+Fusan, E1079Korea
+Kudamatsu
+Kudamatsu
+Kudamatsu
+Namazu
+
+Namazu
+
+Namazu
+
+Namazu
+
+Namazu
+
+Oita 73BW
+Oita
+
+Oita
+
+Oita
+
+Oita
+
+Kuwana
+
+Kuwana
+
+Shingu
+
+Kuwana
+
+Kuwana
+Hiratsuka
+Hiratsuka
+Hiratsuka
+Hiratsuka
+Hiratsuka
+
+See Below
+
+Moji
+
+Seishin, Korea
+Nanao Bay
+
+See Below
+Shimonoseki
+Niigata
+Maizura/Miyama
+Korea
+
+Fukui
+
+Fukui
+
+Fukui
+
+Fukui
+
+Seto
+
+Fukui
+
+315BW
+
+58BW
+
+313BW
+
+314BW
+
+313BW
+
+58BW
+
+Grps
+
+499BG
+500BG
+
+9BG
+9BG
+9BG
+504BG
+505BG
+
+19BG
+29BG
+39BG
+39BG
+330BG
+
+16BG
+501BG
+
+6BG
+6BG
+6BG
+6BG
+6BG
+6BG
+6BG
+6BG
+6BG
+
+16BG
+501BG
+
+40BG
+
+444BG
+462BG
+468BG
+
+497BG
+498BG
+499BG
+500BG
+
+9BG
+9BG
+504BG
+505BG
+
+19BG
+29BG
+39BG
+330BG
+
+6BG
+6BG
+6BG
+6BG
+6BG
+6BG
+6BG
+6BG
+
+40BG
+
+444BG
+462BG
+462BG
+468BG
+
+No. Up
+
+not avail
+not avail
+98
+
+34
+
+in above
+in above
+33
+
+not avail
+130
+
+not avail
+not avail
+33
+
+in above
+33
+
+62
+
+28
+
+34
+
+32
+
+9
+
+6
+
+13
+
+3
+
+28
+
+not avail
+137
+
+33
+
+not avail
+34
+
+not avail
+30
+
+10
+
+6
+
+14
+
+31
+
+10
+
+in above
+
+33
+
+Bombed
+
+30
+not avail
+123
+26
+32
+30
+
+not avail
+not avail
+not avail
+not avail
+26
+
+not avail
+not avail
+not avail
+not avail
+
+32
+
+129*
+
+not avail
+33
+
+33
+
+35
+
+28
+
+not avail
+not avail
+not avail
+29
+
+not avail
+not avail
+not avail
+not avail
+127
+
+Lost
+
+ooooococo
+
+Oo
+
+ooocoocococoooocoooococoeoocoeoecocoeocceocoeocecoe
+
+Oo
+
+rFeooo°eo
+
+ooooco

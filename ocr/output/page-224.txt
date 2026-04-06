@@ -1,0 +1,246 @@
+210
+
+THE B-29 SUPERFORTRESS
+
+Target
+
+Riken Heavy Industry, Kashiwazaki Plant
+Riken Heavy Industry, Nagaoka Plant
+Riken Industrial, Maebashi
+
+Riken Industrial, Takasaki
+
+Riken Metal Company, Ube Plant
+Riken Vacuum Tube Plant
+
+Rikuo Engine Company
+
+Rising Sun Petroleum Oil Storage
+Rising Sun Petroleum Oil Storage
+Rising Sun Petroleum Terminal
+Rolling Stock Company
+
+Rolling Stock Mfg Co
+
+Saeki Air Field (code name: Cockcrow)
+Saga Urban Area
+
+Sagami (Bangu) Rr Bridge
+Saganoseki Copper Works
+
+Saijo Steam Power Plant
+
+Saito Zaki Petroleum Storage
+Saka Steam Power Plant
+
+Sakai Hydro-Electric Plant
+
+Sakai Urban Area
+
+Saku Hydro-Electric Plant
+Sakurada Engineering Works
+Sangyo Cement Co
+
+Sankyo Co
+
+Sannomiya Railroad Station
+Sanyo Steam Power Plant No 3
+Sanyo Steam Power Plants No 1] and 2
+Sanyo Steel Co Shikawa Plant
+Sasasu Transformer Station
+Sasebo Aircraft Factory
+
+Sasebo Coal Yard
+
+Sasebo Fuel & Munition Storage
+Sasebo Mine & Torpedo Storage
+Sasebo Naval Air Station
+
+Sasebo Naval Arsenal
+
+Sasebo Naval Dockyard
+
+Sasebo Oil Storage
+
+Sasebo Outfitting Wharf
+
+Sasebo Provisions Wharf
+
+Sasebo Railroad Station
+
+Sasebo Urban Area
+
+Sayama Airport
+
+Sendai Urban Area
+
+Senju Hydro Plant
+
+Senju Steam Power Plant
+
+Senkari Reservoir Dam
+
+Seto Hydro-Electric Station
+Shannosho Shipyard
+
+Shibaura Engineering Works
+Shibaura Machine Tool Company
+Shibaura Wharf
+
+Shimagawa Mfg Plant
+
+Shimizu Urban Area
+
+Shimonoseki Port
+
+Shimonoseki Straits (code name: Starvation)
+Shimonoseki-Maeda Power Plant
+Shimoshizu Army Airdrome
+Shimotaki Hydro-Electric Plant
+Shimotsu Oil Refinery
+
+Shinagawa Airport
+
+Shinagawa Mfg Plant
+
+Shinagawa Railroad Yards
+Shinano Hydro Plant
+
+Shinetsu Nitrogen Fertilizer, Naoetsu Plant
+
+Target #
+
+1668
+1669
+1646
+1647
+922
+1520
+1341
+17
+260
+910
+1332
+548
+1306
+
+1377
+1328
+1602
+665
+796
+1059
+
+1059
+904
+1242
+1741
+157
+1283
+1286
+1920
+1633
+834
+844
+762
+757
+754
+758
+752
+755
+845
+845
+759
+
+1408
+
+1593
+230
+153
+1144
+927b
+133
+354
+887
+1665
+
+42
+
+99
+1470
+1613
+
+1413
+1665
+364
+
+1592
+1667
+
+Location
+
+Kashiwazaki
+Nagaoka
+Shin-Maebashi
+Takasaki
+Ube
+Mohara
+Tokyo
+Kobe
+Osaka
+Tokyo
+Tokyo
+Osaka
+Kyushu
+Saga
+Hiratsuka
+Saganoseki
+Saijo
+Fukuoka
+Sakai
+Shibukawa
+Sakai
+Shibukawa
+Tokyo
+
+Osaka
+Kobe
+Shikawa
+Shikawa
+Shikawa
+Sasazu
+Sasebo
+Sasebo
+Sasebo
+Sasebo
+Sasebo
+Sasebo
+Sasebo
+Sasebo
+Sasebo
+Sasebo
+Sasebo
+Sasebo
+Tokyo
+Sendai
+Shinano River
+Tokyo
+Sendai
+Shimohara
+Innoshima Is
+Yokohama
+Tokyo
+Tokyo
+
+Shimizu
+Shimonoseki
+Shimonoseki
+Shimonoseki
+Shimoshizu
+Shimotaki
+Shimotsu
+Tokyo
+Fukushima
+Tokyo
+Shinano River
+Naoetsu

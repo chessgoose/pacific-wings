@@ -1,0 +1,436 @@
+76
+Serial #
+
+44-84087
+44-84088
+44-84088
+44-84089
+44-84090
+44-84091
+44-84092
+44-84093
+44-84094
+44-84094
+44-84095
+44-84096
+44-84096
+44-84097
+44-84098
+44-84099
+44-84100
+44-84101
+44-84102
+44-84103
+44-84104
+44-84105
+44-84106
+44-84107
+44-84108
+44-84109
+44-84110
+44-84111
+44-84112
+44-84112
+44-84113
+44-84114
+44-84114
+44-84115
+44-84116
+44-84117
+44-84118
+44-84119
+44-84120
+44-84121
+44-84122
+44-84123
+44-84124
+44-84125
+44-84126
+44-84127
+44-84128
+44-84129
+44-84130
+44-84131
+44-84132
+44-84133
+44-84134
+44-84135
+44-84136
+44-84137
+44-84138
+44-84139
+44-84140
+44-84141
+44-84142
+44-84143
+44-84144
+44-84145
+44-84146
+
+Name
+
+IITYWYBAD
+
+WILLY’S ICE WAGON
+MONSTRO
+
+UNPREDICTABLE
+
+LEGAL EAGLE
+
+THE RED
+
+THE B-29 SUPERFORTRESS
+
+Identification
+DIAM L 00
+TRIANGLE S
+YLW BANDS
+
+BLK SQM
+
+TRIANGLE S
+YLW BANDS
+
+TRIANGLE S
+YLW BANDS
+
+BLK SQM
+TRIANGLE S
+
+BLK SQM
+
+TRIANGLE S
+YLW BANDS
+TRIANGLE S
+TRIANGLE S
+BLK SQ M
+SQUARE I
+
+SQUARE I
+
+SQUARE A
+SQUARE I
+TRIANGLE O
+DIAM L 36
+
+DIAM L 58
+
+DIAM L 16
+TRIANGLE O
+
+TRIANGLE O
+SQUARE I
+
+TRIANGLE C
+
+SQUARE T
+
+CIRCLE R
+SQUARE A
+TRIANGLE C
+
+Delv
+
+713111945
+713111945
+713111945
+8/3/1945
+
+8/8/1945
+
+8/3/1945
+
+8/6/1945
+
+8/6/1945
+
+8/6/1945
+
+8/6/1945
+
+8/9/1945
+
+8/10/1945
+8/10/1945
+8/6/1945
+
+8/6/1945
+
+8/14/1945
+8/14/1945
+8/18/1945
+8/13/1945
+8/6/1945
+
+8/20/1945
+8/18/1945
+8/22/1945
+8/23/1945
+8/28/1945
+8/18/1945
+8/20/1945
+8/18/1945
+8/11/1945
+8/11/1945
+8/27/1945
+8/20/1945
+8/20/1945
+8/20/1945
+8/25/1945
+8/22/1945
+8/24/1945
+8/24/1945
+8/27/1945
+8/23/1945
+8/25/1945
+8/22/1945
+8/27/1945
+8/27/1945
+8/30/1945
+8/29/1945
+8/31/1945
+91411945
+
+8/31/1945
+91411945
+
+8/29/1945
+91611945
+
+8/30/1945
+8/30/1945
+8/31/1945
+91511945
+
+91911945
+9130/1945
+
+9112/1945
+9118/1945
+91911945
+9120/1945
+9121/1945
+
+Assign
+
+331BG
+28BG
+
+4141BU
+19BG
+4141BU
+4141BU
+4141BU
+28BG
+2RESGP
+427BU
+28BG
+ASR
+
+19BG
+4141BU
+28BG
+1TOWSQ
+19BG
+2754ABG
+303BW
+4117BU
+303BW
+
+4141BU
+4127BU
+28BG
+2759ABG
+ASR
+28BG
+2TOWSQ
+112RDC
+28BG
+4117BU
+19BG
+2750ABW
+
+91RCN
+559SR
+
+28BG
+91RCN
+97BG
+4121BAG
+303BW
+331BG
+4121BU
+331BG
+303BW
+331BG
+97BW
+4105BU
+97BW
+91RCN
+4141BU
+509BW
+4121BU
+
+4121BU
+4121BU
+9BG
+301BW
+509BW
+303BW
+
+Off Inv
+
+5/19/1951
+412711954
+412711954
+6/23/1954
+10/17/1950
+6/23/1954
+TIN4I1954
+6/23/1954
+6/23/1954
+911411954
+911411954
+2/21/1954
+2/21/1954
+3/25/1953
+10/21/1953
+6/23/1954
+912711954
+12/15/1954
+11/12/1953
+4120/1954
+TINAIN954
+1/24/1955
+TINAIN954
+10/11/1954
+10/12/1953
+51711954
+11/25/1952
+TINAIN954
+31911954
+31911954
+TNAIN954
+TINNAIN954
+TINAIN954
+12/9/1954
+10/20/1950
+5/12/1954
+10/10/1954
+10/10/1954
+10/4/1954
+712211954
+TIN4IN949
+8/29/1954
+1/31/1951
+8/19/1954
+7IN4I1954
+10/12/1954
+8/19/1954
+3/18/1954
+7IN4I1954
+7IN4I1954
+5120/1954
+51511954
+8/13/1954
+7/18/1954
+10/12/1953
+912211954
+8/19/1954
+10/12/1954
+
+712411951
+8/19/1954
+8/19/1954
+7IN4I1954
+10/5/1954
+7IN4IN954
+
+Circumstances
+
+Salvaged
+
+Reclaimed
+
+Reclaimed
+
+Reclaimed Pyote
+Reclaimed Robins
+Reclaimed Pyote
+
+Salvaged at Davis-Monthan
+Reclaimed Pyote
+Reclaimed Pyote
+Reclaimed Yokota
+Reclaimed Kelly
+
+Reclaimed Robins
+Reclaimed Robins
+Reclaimed Pyote
+Reclaimed Robins
+Reclaimed Pyote
+Reclaimed McClellan
+Reclaimed Biggs
+
+Reclaimed Robins
+Reclaimed Kelly
+
+Salvaged at Davis-Monthan
+Reclaimed Eglin
+
+Reclaimed Davis-Monthan
+Reclaimed Turner
+Reclaimed Pyote
+Reclaimed McClellan
+Surveyed at Randolph
+Reclaimed Eglin
+
+Reclaimed Andersen
+Reclaimed Andersen
+Reclaimed Biggs
+
+Salvaged at Davis-Monthan
+Salvaged at Davis-Monthan
+Reclaimed Tinker
+Reclaimed Robins
+Reclaimed Wright-Patterson
+Reclaimed Turner
+Reclaimed
+
+Reclaimed
+
+Reclaimed Wright-Patterson
+Reclaimed Weaver
+Reclaimed Tinker
+Surveyed at Tinker
+Reclaimed Kelly
+
+Salvaged at Davis-Monthan
+Reclaimed Turner
+Reclaimed Kelly
+
+Reclaimed Kelly
+
+Salvaged at Davis-Monthan
+Reclaimed McClellan
+Reclaimed Tinker
+Reclaimed Davis-Monthan
+Cr near Lockbourbe AFB, engine failure
+Reclaimed Turner
+Reclaimed Pyote
+Reclaimed Tinker
+Reclaimed Kelly
+
+Reclaimed Langley
+Unknown
+
+Surveyed
+
+Reclaimed Kelly
+
+Reclaimed Mountain Home
+Salvaged at Davis-Monthan
+Reclaimed Hill
+
+Salvaged at Davis-Monthan

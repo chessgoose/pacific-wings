@@ -1,0 +1,565 @@
+28
+
+Serial #
+
+42-63476
+42-63476
+42-63477
+42-63478
+42-63479
+42-63480
+42-63480
+42-63481
+42-63481
+42-63481
+42-63481
+42-63482
+42-63483
+42-63484
+42-63485
+42-63486
+42-63486
+42-63487
+42-63488
+42-63488
+42-63489
+42-63489
+42-63490
+42-63490
+42-63491
+42-63492
+42-63492
+42-63493
+42-63494
+42-63495
+42-63496
+42-63496
+42-63496
+42-63497
+42-63498
+42-63498
+42-63498
+42-63498
+42-63499
+42-63499
+42-63500
+42-63500
+42-63501
+42-63502
+42-63502
+42-63503
+42-63503
+42-63504
+42-63505
+42-63505
+42-63506
+42-63507
+42-63508
+42-63509
+42-6351?
+42-63510
+42-63510
+42-63511
+42-63511
+42-63512
+42-63513
+42-63513
+42-63514
+42-63515
+42-63516
+
+Name
+
+SOUTHERN BELLE
+
+DREAM GIRL
+
+DREAM GIRL
+
+(VARGA GIRL)
+
+PAPPY’S PULLMAN II
+(VARGA GIRL)
+HONSHU HURRICANE
+
+HONORABLE TNT WAGON
+HOT PANTS
+
+HELL'S BELLE
+
+NAUGHTY NANCY
+CONSTANT NYMPH
+
+HOLY JOE
+ROUND ROBIN
+
+STAR DUSTER
+LUCKY IRISH II
+STAR DUSTER
+
+FAST COMPANY
+LITTLE MISS
+NAUGHTY NANCY
+NAUGHTY NANCY
+FEVER FROM THE SOUTH
+B-SWEET III
+B-SWEET III
+
+LAZY BABY
+
+LAZY BABY
+
+CORAL QUEEN
+
+38 SEA BEES
+GRAVEL GERTIE
+GRAVEL GERTIE
+
+LONG JOHN SILVER
+LONG JOHN SILVER
+SKY SCRAPPER
+
+SKY SCRAPPER
+FLAG SHIP
+DRAGGIN’ LADY
+DRAGGIN’ LADY
+UNTOUCHABLE
+
+PEACHY
+LONG WINDED
+ANN GARRY III
+
+HEAVENLY BODY
+MAN O’ WAR II
+MAN O’ WAR II
+NIP CLIPPER
+RAMP QUEEN
+RAMP QUEEN
+CAPT CLAY
+
+THE B-29 SUPERFORTRESS
+
+Identification
+
+SOLYLWRUD
+TRI U 24
+VSQ
+
+T SQ 35
+
+SOLREDRUD H1
+TRIU 14
+
+E TRI
+
+E TRI
+
+VSQ 50
+
+V SQ 50
+
+K TRI
+
+VsSQll
+
+K TRI
+
+ASQ 12
+
+ZSQ7 (2)
+
+Z7
+
+Z SQ 30 (1)
+SOLGRNRUD
+
+TRI U 44
+
+ZSQ 11 (2)
+
+ZSQ 11 (2)
+
+Z SQ 45 (2)
+SPEEDWING GRN
+VSQ
+
+A SQ 26 (2)
+V SQ 36
+
+Z SQ 31 (2)
+VSQ12
+
+DIAM# 50
+
+DIAM# 50
+
+TRIN 50 (1)
+ZSQ 32
+FOURREDSTRP B
+TRI S 02 (1)
+FOURREDSTRP B
+TRI S 02 (2)
+
+E TRI
+
+E TRI
+2WHTRUDSTRP
+TRII12
+
+T SQ 12/2 (2)
+SOLGRNRUD
+TRI U 47
+SOLYLWRUD
+
+TRI U 30
+
+E TRI 2
+FOURREDSTRP D
+TRIS 04
+SOLREDRUD
+
+E TRI
+
+K TRI9 (1)
+
+X TRI 38/50
+
+L TRI 37
+
+K TRI
+
+T SQ 38
+
+X TRI 1/17
+
+CIRC X 1
+
+CIRC X 23
+
+K TRI 7(1)
+
+V SQ 5(2)
+
+LTRI
+
+LTRI
+
+LTRI
+
+Delv
+
+11/11/1944
+5I5I1945
+58BW
+11/15/1944
+11/10/1944
+
+51511945
+
+11/13/1944
+11/13/1944
+11/13/1944
+11/13/1944
+11/11/1944
+11/15/1944
+11/13/1944
+11/17/1944
+11/17/1944
+11/17/1944
+11/22/1944
+
+51511945
+11/22/1944
+11/22/1944
+
+11/22/1944
+
+11/22/1944
+11/22/1944
+11/22/1944
+11/24/1944
+11/29/1944
+11/29/1944
+5/10/1945
+
+11/24/1944
+51511945
+11/24/1944
+51511945
+11/30/1944
+11/30/1944
+11/30/1944
+5/11/1945
+11/26/1944
+11/30/1944
+51511945
+
+51511945
+11/28/1944
+11/27/1944
+51511945
+11/30/1945
+11/30/1944
+12/7/1944
+12/5/1944
+
+11/30/1944
+1/29/1945
+12/4/1944
+4100/45
+12/5/1944
+11/30/1944
+1/00/45
+12/4/1944
+12/71/1944
+12/5/1944
+
+Assign
+
+462BG
+462BG
+499BG
+498BG
+462BG
+462BG
+462BG
+504BG
+504BG
+499BG
+499BG
+505BG
+499BG
+505BG
+497BG
+500BG
+500BG
+500BG
+462BG
+462BG
+500BG
+500BG
+500BG
+307BG
+499BG
+499BG
+497BG
+499BG
+500BG
+499BG
+444BG
+444BG
+444BG
+500BG
+40BG
+40BG
+40BG
+40BG
+504BG
+504BG
+468BG
+468BG
+498BG
+462BG
+462BG
+462BG
+462BG
+504BG
+40BG
+40BG
+462BG
+504BG
+505BG
+9BG
+6BG
+505BG
+498BG
+9BG
+9BG
+9BG
+505BG
+499BG
+6BG
+6BG
+6BG
+
+Off Inv
+
+51511945
+9/11/1950
+
+9/11/1950
+212411945
+51511945
+
+9/11/1950
+9/11/1950
+
+31911945
+412511945
+5119/1945
+12/11/1944
+512511945
+512311945
+1/5/1950
+51511945
+
+212111945
+2121/1945
+
+6/17/1954
+412411945
+9111/1950
+312411945
+2/19/1945
+10/30/1946
+5/10/1945
+5/10/1945
+6/1/1945
+512311945
+51511945
+512411945
+51511945
+512411945
+2116/1945
+2116/1945
+5/11/1945
+71311945
+1/27/1945
+51511945
+713111946
+51511945
+6/30/1946
+9111/1950
+51511945
+6/17/1954
+912511944
+9/11/1950
+5126/1945
+512211945
+1/1/1945
+1/29/1945
+5111945
+4100/45
+713111946
+8/8/1945
+1/00/45
+5/25/1945
+5/25/1945
+9/11/1950
+10/17/1946
+
+Circumstances
+
+Group transfer to Tinian
+Reclaimed Tinker
+
+Ditched
+
+Reclaimed Tinker
+
+Ditched
+
+Group transfer to Tinian
+Unknown
+
+Reclaimed Tinker
+
+Reclaimed Tinker
+
+Transferred to 504BG
+
+Transferred to 504BG
+
+Ditched — out of fuel
+
+Crashed 20 miles off coast of Japan
+MIA
+
+Unknown
+
+Crashed Tokyo
+
+Shot down in sea near Tokyo
+Reclaimed Victorville
+
+Group transfer to Tinian
+Unknown
+
+Surveyed from crash landing 2/15/45
+Surveyed from crash landing 2/15/45
+Survived war
+
+Unknown
+
+Class 26 Sheppard
+
+Rammed by fighter
+
+Reclaimed Pyote
+
+Exploded over target
+
+Shot down Tokyo
+
+Reclaimed Victorville
+
+Group transfer to Tinian
+
+Group transfer to Tinian
+
+MIA after collision with 42-65270
+
+Group transfer to Tinian
+
+Abandoned from Tokyo, fire #3 Engine
+Group transfer to Tinian
+
+Abandoned from Tokyo, fire #3 Engine
+Ditched north of Marianas
+
+Ditched north of Marianas
+
+Group transfer to Tinian
+
+Crashed offshore from Kagawa
+
+Shot down leaving Tokyo
+
+Group transfer to Tinian
+
+Reclaimed Lowry
+
+Group transfer to Tinian
+
+Reclaimed Amarillo
+
+Reclaimed Tinker
+
+Group transfer to Tinian
+
+Class 26 Sheppard
+
+#2 engine fire on T/O, hit ground, exploded
+Reclaimed Pyote
+
+Lost Tokyo, crashed Chiba
+
+Abandoned,#2 engine shot out, #4 quit
+Shot down by P-61 after abnd over Iwo
+Xfr to 498BG. To Guam Air Depot 4/10/45
+Surveyed Guam Air Depot 4/1/45 damage
+Tail code change
+
+Reclaimed Lowry
+
+Shot down by flak at Yawata
+
+Transfer to 498BG
+
+Shot down Tokyo
+
+Shot down Tokyo
+
+Reclaimed Tinker
+
+Reclaimed Amarillo

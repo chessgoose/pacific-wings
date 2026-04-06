@@ -1,0 +1,249 @@
+200
+
+THE B-29 SUPERFORTRESS
+
+Target
+
+Diado Electric Steel Minami Plant
+Diado Electric Steel Oc Plant
+
+Diado Electric Steel Tsukiji Plant
+Diado Electric Steel Tsukiji Plant
+
+East Asia Development Co Warehouses
+East Hiroshima Rail Road Station
+Eastern Petroleum Refinery
+
+Edogawa Petroleum Refinery
+
+Eitoku Industrial/Aircraft Factory
+Eitoku Plant
+
+Electric Instrument Plant
+Electro-Chemical Industry
+Electro-Chemical Industry
+Electro-Chemical Industry Co
+Electro-Chemical Industry, Aomi Plant
+Fiji Spinning Mills
+
+Ford Motor Company
+
+Fuji Elec Works
+
+Fuji Spinning Mills
+
+Fuji Steel Works Of Imperial Iron and Steel
+Fujikoshi Steel Products, Higashi-Iwase Plant
+Fujikoshi Steel Products, Toyama Plant
+Fujikura Electric Cable Works
+Fujinagata Shipbuilding Co
+
+Fujinagata Shipbuilding Co
+
+Fukagawa Pier
+
+Fukayama Urban Area
+
+Fukuda Light Aeroplane Co
+
+Fukui Urban Area
+
+Fukuoka Air Station
+
+Fukuoka Urban Area
+
+Fukuoka Wireless Station
+
+Fukushima Railroad Yards
+
+Fukuszaki Steam Power Plant
+Fukuyama Urban Area
+
+Funabashi Naval Transmitting Station
+Furakawa Electric Co., Plant No. 1
+Furakawa Electrical Co
+
+Furakawa Electrical Co
+
+Furuawa Copper Refinery
+
+Furukawa Copper Ore Dressing Plant
+Furukawa Machine Shops
+
+Furukawa Smelter (code name: Treadle)
+Fushiki Harbor
+
+Futase Mines
+
+Futtsu Point Forts
+
+Gifu Urban Area
+
+Goto Railroad Shops
+
+Government Aircraft Parts Plant
+Government Power Station, Tokyo Arsenal
+Government Steam Power Station
+
+Ha Shima Colliery
+
+Haba Shipyard
+
+Hachioji Junctions and Bridge
+Hachioji Urban Area
+
+Haiki Railroad Terminal
+
+Hakata Railroad Yards and Station
+Hakate Harbor
+
+Hako Point Oil Tanks
+
+Hamamatsu Urban Area
+
+Hanao Wake Oil Storage
+
+Haneda Airport
+
+Harima Shipyard
+
+Harley-Davidsen Motorcycle Co
+Hatsudoki Engine Works
+
+Target #
+
+247d
+247a
+247c
+674
+1446
+740
+89
+360
+810a
+810b
+810c
+1100
+811
+1246
+826
+836
+72
+136
+485
+56
+1943
+941
+867
+273a
+273b
+1434
+
+793
+663
+
+1423
+1077
+324
+
+1420
+75
+1739
+1740
+811
+810a
+810c
+810b
+867
+1276
+304
+
+1675
+1671
+
+228
+843
+927a
+1375
+
+939
+1270
+1255
+297
+
+669
+337
+1296
+1340
+1191
+
+Location
+
+Nagoya
+Nagoya
+Nagoya
+Tokuyama
+Yokohama
+Hiroshima
+Yokohama
+Tokyo
+Tsudo
+Honzan
+Moto
+Aomi
+Kiyotaki
+
+Tokyo
+Nagasaki
+Yokohama
+Kawasaki
+Kawasaki
+Kawasaki
+Higashi-Iwase
+Toyama
+Fushiki
+Osaka
+Osaka
+Tokyo
+Akashi
+Amagasaki
+Akashi
+Fukuoka
+Amagasaki
+
+Fukushima
+Osaka
+Aomori
+Funabashi
+yokohama
+Amagasaki
+Osaka
+Kiyotaki
+Tsudo
+Mato
+Kyushu
+Fushiki
+Nogata
+Fukayama
+Fukui
+Yonago
+Sendai
+Gifu
+Tokyo
+
+Ha Shima
+Innoshima Is
+Tokyo
+Hachioji
+Haiki
+Fukuoka
+Fukuoka
+Yokosuka
+Hamamatsu
+O Shima
+Tokyo
+
+Oo
+
+Tokyo
+Osaka

@@ -1,0 +1,71 @@
+224 THE B-29 SUPERFORTRESS
+
+Target # Target Location
+1375 Hachioji Junctions And Bridge Tokyo
+1376 Junction Ofuna
+1377 Sagami (Bangu) Rr Bridge Hiratsuka
+1378 Kanoya Air Field (code name: Checkbook) Kyushu
+1386 Japan Nitrogen Fertilizer Co Minamata
+1387 Nippon Mining Co Tagame
+1390 Hitachi-Solex Aircraft Totsaka
+1391 Ishikawajima Engine Plant Tomioka
+1392 Yokosuka Naval Aircraft Factory Yokosuka
+1393 Aeronautical Experimental Laboratory Tokyo
+1393 Aircraft Engine Plant Tokyo
+1394 Kanagafuchi Spinning Mill Company Tokyo
+1395 Shoda Aircraft Tokyo
+1396 Tsurama Soda Yokohama
+1397 Japan Refining Works Tokyo
+1398 Tokyo Gas Company, Omari Branch Tokyo
+1399 Hodogaya Soda Yokohama
+1400 Hodogaya Soda Tokyo
+1401 Japan Artificial Fertilizer Tokyo
+1402 Yokohama Naval Air Station Yokohama
+1403 Tomioka Seaplane Base Yokohama
+1404 Tachikawa Air Base Tachikawa
+1405 Sunamachi Airport Tokyo
+1406 Tokorazawa Airport Tokyo
+1407 Showa Airport Tokyo
+1408 Sayama Airport Tokyo
+1409 Narashino Army Airdrome Funabashi
+1411 Susaki Airport Tokyo
+1412 Chofu Airport Tokyo
+1413 Shinagawa Airport Tokyo
+1414 Urawa Airport Tokyo
+1415 Takahagi Airport Tokyo
+1416 Matsido Airport Tokyo
+1418 Marunoichi Telephone Exchange Tokyo
+1419 Navy Department Radio Towers Tokyo
+1420 Funabashi Naval Transmitting Station Funabashi
+1423 Fukuoka Wireless Station
+
+1424 Central Meteorlogical Observatory
+
+1425 Iwatsaki Wireless Station Tokyo
+1430 Nippon Electric Wire And Cable Tokyo
+1431 Bridgestone Tire Company Totsuka
+1432 Yokohama Harbor Passenger Wharves Yokohama
+1433 Yokohama Main Pier Yokohama
+1434 Fukagawa Pier Tokyo
+1435 Tsukishima Pier Tokyo
+1436 Tsukishima East Wharf Tokyo
+1437 Mitsubishi Piece Good Wharf Kawasaki
+1438 Kyoritsu Warehouse Yokohama
+1439 Yokohama Central Wholesale Warehouse Yokohama
+1440 Mitsubishi Warehouse Yokohama
+1441 Yokohama Warehouse N. Yokohama
+1442 Yokohama Warehouse S. Yokohama
+1443 National Silk Conditioning House Yokhama
+1444 Yokohama Harbor Timber Basin Yokohama
+1445 Yokohama Harbor Coop Purchasing Warehouse Yokohama
+1446 East Asia Development Co Warehouses Yokohama
+1447 Hiraidzuma Drug Depot Yokohama
+1448 Tsukiji Market/Wholesale Warehouses Tokyo
+1449 Kenda Market Tokyo
+1450 Koto Market Tokyo
+1451 Naniwa Warehouse Yokohama
+1452 Yokosuka Base Headquarters Yokosuka
+1453 Yokosuka Gunnery And Navigation Schools Yokosuka
+1454 Kakigi Dry Dock Yokosuka
+
+1455 Oyama Point Ammo And Powder Stores Yokosuka

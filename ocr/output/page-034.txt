@@ -1,0 +1,520 @@
+20
+
+Serial #
+
+42-24665
+42-24666
+42-24667
+42-24668
+42-24669
+42-24670
+42-24671
+42-24672
+42-24673
+42-24674
+42-24675
+42-24676
+42-24677
+42-24678
+42-24679
+42-24680
+42-24680
+42-24681
+42-24682
+42-24683
+42-24684
+42-24685
+42-24685
+42-24686
+42-24687
+42-24688
+42-24688
+42-24689
+42-24690
+42-24691
+42-24691
+42-24692
+42-24693
+42-24693
+42-24694
+42-24695
+42-24696
+42-24697
+42-24698
+42-24699
+42-24700
+42-24700
+42-24701
+42-24702
+42-24703
+42-24703
+42-24704
+42-24705
+42-24706
+42-24707
+42-24708
+42-24709
+42-24710
+42-24711
+42-24711
+42-24712
+42-24713
+42-24714
+42-24714
+42-24714
+42-24714
+42-24715
+42-24716
+42-24717
+42-24718
+
+Name
+
+SATAN’S SISTER
+
+THE CANNUCK
+HONEY
+
+HAM’S EGGS
+THREE FEATHERS
+BLACK MAGIC
+DREAM GIRL
+
+THE BARRONESS
+
+PRIDE OF THE YANKEES
+DORIS ANN
+
+KICKAPOO LOU
+
+HELL'S BELLE
+BELLE RUTH
+
+TOKYO TWISTER
+
+THE OUTLAW
+THE OUTLAW
+AMERICAN BEAUTY
+TOKYO LOCAL
+
+NINA ROSS
+
+FAST COMPANY
+
+FAST COMPANY
+WABASH CANNONBALL
+LI’L LASSIE
+
+MARY ANNE
+
+DRAGGIN’ LADY
+LUCKY ‘LEVEN
+
+FANCY DETAIL
+
+ABROAD WITH 11 YANKS
+SALVO SALLY
+
+SLICK DICK
+
+SLICK DICK
+
+AMERICAN BEAUTY
+AMERICAN BEAUTY
+THE GEAR BOX
+
+LUCKY ELEVEN
+
+ROBERT J WILSON
+ROBERT J WILSON
+ROBERT J WILSON
+
+SOUTHERN BELLE
+BLACK MAGIC II
+
+THE B-29 SUPERFORTRESS
+
+Identification
+
+VSQ4 (1)
+
+V SQ 24 (1)
+VSQ21
+
+Z SQ 27 (1)
+
+V SQ 42 (2)
+
+V SQ 45 (2)
+
+Z SQ 49 (1)Z 57
+ZSQ4 (1)
+
+V SQ 43 (1)
+
+V SQ 25 (1)
+
+Z SQ 41 (1)
+
+Z SQ 24
+
+V SQ 46 (1)
+2WHTRUDSTRP
+V SQ 48 (1)
+ZSQ7 (1)
+
+Z SQ 37
+
+T SQ 29 (1)
+VSQ5 (1)
+VSQ (1)
+
+V SQ7 (1)
+FOURBLUSTRP M
+TRIS 19 (1)
+
+Z SQ 25 (1)
+
+Z SQ 26 (1)
+ZSQ (1)
+
+V SQ 29 (2)
+ZSQ9 (1)
+
+2WHTRUDSTRP
+TRII7
+ZSQ8(1)Z 12
+V SQ 27 (1)
+
+V SQ 27 (1)
+ZSQ6 (1)
+TSQ6 (1)
+
+Z SQ 50 (1)
+
+VSQ 8 (1)
+VSQ9 (1)
+V SQ 23 (1)
+Z SQ 33
+
+2WHTRUDSTRP
+TRII4
+2BLURUDSTRP
+
+2YLWRUDSTRP
+
+SOLYLWRUD
+TRI U 27
+
+ZSQ 11 (4)
+2YLWRUDSTRP
+TRII 46
+
+TRIS
+2YLWRUDSTRP
+
+ASQ 11 (1)
+FOURYLWSTRP A
+
+Delv
+
+8/24/1944
+8/26/1944
+
+8/25/1944
+
+8/25/1944
+
+8/27/1944
+8/30/1944
+
+8/31/1944
+8/28/1944
+
+8/29/1944
+8/31/1944
+
+8/31/1944
+8/31/1944
+51511945
+8/30/1944
+9ININ944
+
+91111944
+9118/1944
+
+5/11/1945
+91211944
+91511944
+91511944
+91511944
+91211944
+
+91711944
+
+91611944
+91811944
+11/00/44
+91711944
+
+91911944
+5/11/1945
+9181/1944
+911211944
+911211944
+
+9113/1944
+911911944
+51511945
+
+7IIN945
+12/23/1944
+5/11/1945
+
+911411944
+
+911311944
+911411944
+
+Assign
+
+499BG
+499BG
+499BG
+500BG
+499BG
+499BG
+500BG
+500BG
+499BG
+499BG
+500BG
+500BG
+499BG
+468BG
+499BG
+500BG
+500BG
+498BG
+499BG
+499BG
+499BG
+40BG
+40BG
+500BG
+500BG
+500BG
+499BG
+500BG
+4100BU
+468BG
+468BG
+500BG
+499BG
+499BG
+500BG
+498BG
+500BG
+248BU
+499BG
+499BG
+499BG
+500BG
+236BU
+
+468BG
+468BG
+468BG
+234BU
+468BG
+
+234BU
+462BG
+462BG
+
+500BG
+468BG
+468BG
+40BG
+
+468BG
+
+497BG
+40BG
+
+Off Inv
+
+1/9/1945
+12/18/1944
+
+9/11/1950
+
+10/4/1954
+
+41711945
+10/26/1946
+
+31211945
+11/24/1944
+
+12/3/1944
+1/27/1945
+
+12/22/1944
+51511945
+8/7/1945
+12/29/1944
+12/13/1944
+
+9/11/1950
+11/7/1950
+5/11/1945
+
+2/19/1945
+12/7/1944
+12/7/1944
+212711945
+5/10/1949
+
+4/12/1950
+412711945
+4128/1945
+11/00/44
+
+12/6/1950
+9/11/1950
+
+5/11/1945
+6/5/1945
+1/11/1945
+5/16/1945
+11/28/1944
+
+5/15/1947
+51511945
+11/30/1945
+
+5/11/1945
+
+12/23/1944
+12/21/1944
+
+7TINSIN945
+51511945
+
+Circumstances
+
+Ditched
+
+Collision with 29BG aircraft
+Unknown
+
+Unknown
+
+Reclaimed Tinker
+
+Unknown
+
+Reclaimed Tinker
+
+Unknown, survived war
+
+Reclaimed
+
+Hit by phosphorus bomb over Tokyo
+Reclaimed Spokane
+
+Transferred to Depot, combat damage
+Unknown
+
+Flak at Singapore
+
+Ditched, out of fuel
+
+Battle damage, repaired, became Z SQ 37
+Survived war; 31 msns
+
+Ditched
+
+Hard landing, salvaged
+Circumstances Unknown
+
+Ditched, damaged over target
+Group transfer to Tinian
+
+Crash landing, surveyed
+
+Ditched on weather strike — out of fuel
+Ditched from Nagoya — flak damage
+Shot up, ditched
+
+Unknown
+
+Reclaimed Tinker
+
+Reclaimed Tinker
+
+Group transfer to Tinian
+
+Unknown
+
+Rammed at Tokyo as Z Square 12
+Destroyed in Jap raid
+
+Destroyed in Jap raid
+
+Ditched Saipan on Slow timing flight
+Reclaimed Chanute
+
+Unknown
+
+Reclaimed Kelly
+
+MIA
+
+Ditched off Miyazaki
+
+Transferred to 500BG
+
+Reclaimed McClellan
+
+Reclaimed Pyote
+
+Unknown
+
+Group transfer to Tinian
+
+Surveyed — crashed landing at Iwo
+Missing from Singapore
+
+Abandoned Texas
+
+Lost Halliday Island, collision, eng fire
+Unknown
+
+Unknown
+
+Unknown
+
+Reclaimed Tinker
+
+Group transfer to Tinian
+
+Salvaged, off end of runway 8/7/45
+Unknown
+
+Unknown
+
+Unknown
+
+Group transfer to Tinian
+
+Unknown — transfer to 500BG?
+Transferred to 468BG 12/23/44
+Rammed at Mukden
+
+Unknown
+
+Ditched
+
+Group transfer to Tinian

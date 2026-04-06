@@ -1,0 +1,459 @@
+80
+
+Serial #
+
+44-86395
+44-86396
+44-86397
+44-86398
+44-86399
+44-86400
+44-86400
+44-86401
+44-86402
+44-86403
+44-86404
+44-86405
+44-86406
+44-86407
+44-86408
+44-86409
+44-86410
+44-86411
+44-86412
+44-86413
+44-86414
+44-86414
+44-86415
+44-86416
+44-86417
+44-86418
+44-86419
+44-86420
+44-86421
+44-86422
+44-86422
+44-86423
+44-86424
+44-86425
+44-86426
+44-86427
+44-86428
+44-86429
+44-86430
+44-86430
+44-86431
+44-86432
+44-86433
+44-86433
+44-86433
+44-86434
+44-86435
+44-86436
+44-86437
+44-86438
+44-86439
+44-86440
+44-86441
+44-86442
+44-86443
+44-86444
+44-86445
+44-86446
+44-86446
+44-86446
+44-86446
+44-86446
+44-86447
+44-86448
+44-86449
+
+Name
+
+BIG GASS BIRD
+CHOTTO MATTE
+
+HAGARTY’S HAG
+
+OVERNITE BAG
+OVERNITE BAG
+SQUEEZE PLAY
+
+PEACE MAKER
+PEACE MAKER
+PEACE MAKER
+
+MAIS OUI
+
+FLYING PARTS
+
+LADY IN DIS DRESS
+LOS ANGELES CALLING
+LOS ANGELES CALLING
+RANKLESS WRECK
+RAPID RABBIT
+
+THE B-29 SUPERFORTRESS
+
+Identification
+
+SQUARE Y
+TRIANGLE O
+
+SQUARE H
+SQUARE H
+TRIANGLE O
+
+BLKSTRPRED
+CIRCLE E
+SQUARE H
+
+RAINBOW STRP
+
+SQUARE P
+SQUARE Y
+BLKSTRP
+
+SQUARE Y
+
+SQUARE I
+TRIANGLE O
+TRIANGLE O
+SQUARE H
+
+TRIS
+CIRCLE W
+
+BLKSTRPBLU
+CIRCLE W
+SQUARE H
+CIRCLE M
+CIRCLE M
+SQUARE H
+TRIANGLE C
+CIRCLE W
+TRIANGLE O
+TRIANGLE C
+CIRCLE E
+SQUARE Y
+TRIANGLE C
+
+TRIANGLE O
+SQUARE H
+BLKSTRPRED
+SQUARE H
+SQUARE H
+SQUARE H
+
+TRIANGLE O
+
+Delv
+
+71271945
+712611945
+712511945
+712511945
+712611945
+
+7130/1945
+7IZANN945
+8/3/1945
+8/3/1945
+8/2/1945
+8/1/1945
+8/1/1945
+8/6/1945
+8/2/1945
+8/6/1945
+8/4/1945
+8/4/1945
+8/8/1945
+8/8/1945
+8/8/1945
+
+8/8/1945
+8/10/1945
+8/9/1945
+8/10/1945
+
+8/13/1945
+8/14/1945
+8/14/1945
+8/13/1945
+8/14/1945
+8/21/1945
+8/21/1945
+8/22/1945
+8/22/1945
+
+8/27/1945
+
+8/30/1945
+8/21/1945
+8/21/1945
+8/21/1945
+8/21/1945
+8/22/1945
+8/24/1945
+8/24/1945
+8/24/1945
+8/24/1945
+8/27/1945
+8/28/1945
+8/27/1945
+8/30/1945
+8/29/1945
+8/29/1945
+8/31/1945
+8/31/1945
+8/31/1945
+8/31/1945
+8/31/1945
+9NN10/1945
+
+8/31/1945
+
+Assign
+
+307BG
+97BG
+308RCN
+3203MSU
+
+98BG
+98BG
+97BG
+
+4141BU
+4141BU
+
+554BU
+
+19BG
+22BG
+98BG
+
+306BG
+307BG
+19BG
+4141BU
+307BG
+
+92SRC
+97BG
+97BG
+98BG
+
+40BS
+92BG
+
+19BG
+92BG
+98BG
+93BG
+93BG
+98BG
+509BG
+92BG
+97BG
+509BG
+22BG
+307BG
+509BG
+
+97BG
+98BG
+19BG
+98BG
+98BG
+98BG
+
+97BG
+
+Off Inv
+
+8/1/1956
+TIN4IN954
+4118/1954
+21411955
+12/31/1954
+3/31/1952
+3/31/1952
+911911954
+7TIN9IN1954
+TIN411954
+TIN411954
+TIN411954
+TIN4I1954
+TIN411954
+11/19/1953
+TIN4I1954
+8/19/1954
+TINN4I1954
+TIN4I1954
+TIN4IN954
+TIN4I1954
+TN4IN954
+9N19/1951
+TN4IN954
+TIN4IN954
+91111954
+7411954
+10/3/1952
+912711954
+741954
+741954
+8/19/1954
+912711954
+74/1954
+8/31/1953
+1/11/1955
+91511954
+5/2/1948
+91954
+
+712311947
+512711954
+8/8/1954
+8/8/1954
+8/8/1954
+8/16/1954
+9114/1954
+912711954
+12/17/1953
+2/10/1955
+5/10/1954
+6/22/1952
+7IN4IN954
+6/17/1954
+1/27/1955
+11/29/1954
+6/3/1954
+71811954
+71811954
+71811954
+71811954
+71811954
+21411953
+
+7TIN4N954
+
+Circumstances
+
+Dropped from inventory as surplus
+Salvaged at Davis-Monthan
+
+Last reported at McClellan
+
+Last reported at Olmsted
+
+Last reported at McClellan
+
+Flak damage, hit hill, burned
+
+Flak damage, hit hill, burned
+
+Last reported Langley
+
+Last reported Lockheed Burbank
+Salvaged at Davis-Monthan
+
+Salvaged at Davis-Monthan
+
+Salvaged at Davis-Monthan
+
+Salvaged at Davis-Monthan
+
+Salvaged at Davis-Monthan
+
+Class 26 Dugway Proving Grounds
+Salvaged at Davis-Monthan
+
+Reclaimed Kelly
+
+Salvaged at Davis-Monthan
+
+Salvaged at Davis-Monthan
+
+Salvaged at Davis-Monthan
+
+Salvaged at Davis-Monthan
+
+Salvaged at Davis-Monthan
+
+Crashed in Sea of Japan
+
+Salvaged at Davis-Monthan
+
+Salvaged at Davis-Monthan
+
+Last reported at Yokota
+
+Salvaged at Davis-Monthan
+
+Salvaged
+
+Last reported at McClellan
+
+Salvaged at Davis-Monthan
+
+Salvaged at Davis-Monthan
+
+Last reported at Kelly
+
+Last reported at McClellan
+
+Salvaged at Davis-Monthan
+
+Assigned Storage Sqdn at Davis-Monthan
+Last reported at Dow
+
+Last reported at Dow
+
+Salvaged
+
+Last reported at Yokota
+
+Unknown
+
+Surveyed
+
+Lastr reported at Elmendorf
+
+Reclaimed Tinker
+
+Reclaimed Tinker
+
+Reclaimed Tinker
+
+Assigned Storage Sqdn at Davis-Monthan
+Last reported at Hamilton
+
+Reclaimed McClellan
+
+Last reported at Tinker
+
+Last reported at McClellan
+
+Reclaimed Davis-Monthan
+
+Last reported at Randolph
+
+Reclaimed McClellan
+
+Class 26 Sheppard
+
+Last reported Iceland
+
+Last reported at Randolph
+
+Last reported at Randolph
+
+Assigned Storage Sqdn at Davis-Monthan
+Assigned Storage Sqdn at Davis-Monthan
+Assigned Storage Sqdn at Davis-Monthan
+Assigned Storage Sqdn at Davis-Monthan
+Assigned Storage Sqdn at Davis-Monthan
+Last reported at Tinker
+
+Salvaged at Davis-Monthan

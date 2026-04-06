@@ -1,0 +1,469 @@
+Serial #
+
+42-24488
+42-24489
+42-24490
+42-24491
+42-24492
+42-24492
+42-24493
+42-24494
+42-24495
+42-24496
+42-24497
+42-24498
+42-24499
+42-24500
+42-24501
+42-24502
+42-24503
+42-24504
+42-24505
+42-24506
+42-24507
+42-24507
+42-24508
+42-24509
+42-24510
+42-24511
+42-24512
+42-24513
+42-24514
+42-24515
+42-24516
+42-24517
+42-24518
+42-24519
+42-24520
+42-24521
+42-24522
+42-24523
+42-24524
+42-24524
+42-24525
+42-24525
+42-24526
+42-24527
+42-24528
+42-24529
+42-24530
+42-24531
+42-24532
+42-24533
+42-24534
+42-24535
+42-24536
+42-24537
+42-24538
+42-24538
+42-24539
+42-24540
+42-24541
+42-24541
+42-24542
+42-24542
+42-24543
+42-24544
+42-24545
+
+Name
+
+DEACON’S DISCIPLES II
+DEACON’S DISCIPLES II
+
+MARY ANN
+
+NIPPON NIPPER II
+GUNGA DIN
+WILD HAIR
+UNTOUCHABLE
+
+BACHELOR QUARTERS
+BACHELOR QUARTERS
+
+OUIJA BIRD
+
+SWEATER OUT
+
+B-SWEET II
+
+SUPER MOUSE
+SUPER MOUSE
+THE MARY K
+THE MARY K
+
+ANDY GUMP
+
+GREAT SPECKLED BIRD
+
+BETER ‘N’ NUTIN
+BETER ‘N’ NUTIN
+
+BOMBIN’ BUGGY II
+BOMBIN’ BUGGY II
+LADY HAMILTON II
+LADY HAMILTON II
+
+LONG DISTANCE
+
+Identification
+
+FOURRUDSTRP
+TRIS 13
+
+2WHTRUDSTRP V31
+
+FOURBLUSTRP A/I
+2WHTRUDSTRP
+SOLYLWRUD J2
+SOLREDRUD P1
+DIAM # 38
+
+TRI N 38
+FOURREDSTRP S
+
+DIAM #
+
+FOURREDSTRP
+
+DIAM #
+
+FOURREDSTRP S
+
+DIAM# 17
+
+TRIN 17 (1)
+2BLURUDSTRP
+TRI I 24
+
+SOLYLWRUD
+
+DIAM #
+TRI N 24
+
+L TRI
+FOURBLUSTRP H
+TRI S 25 (1)
+2BLURUDSTRP
+TRII51
+
+TSQ 49
+
+Master List
+
+Delv
+
+512511944
+512611944
+512611944
+5130/1944
+5130/1945
+5/10/1945
+5130/1944
+513111944
+513111944
+513111944
+513111944
+513111944
+6/1/1944
+6/1/1944
+6/2/1944
+6/2/1944
+6/2/1944
+6/3/1944
+6/6/1944
+6/5/1944
+61711944
+5/10/1945
+6/3/1944
+6/6/1944
+6/3/1944
+6/12/1944
+6/6/1944
+6/8/1944
+6/6/1944
+6/711944
+6/14/1944
+6/10/1944
+6/911944
+6/10/1944
+6/10/1944
+6/12/1944
+6/14/1944
+6/12/1944
+6/13/1944
+5/10/1945
+6/15/1944
+5/11/1945
+6/15/1944
+6/15/1944
+6/15/1944
+6/14/1944
+6/16/1944
+6/17/1944
+6/16/1944
+
+6/16/1944
+6/17/1944
+6/17/1944
+6/17/1944
+
+5/10/1945
+6/19/1944
+6/19/1944
+6/20/1944
+51511945
+
+6/22/1944
+5/11/1945
+6/21/1944
+6/21/1944
+6/22/1944
+
+Assign
+
+231BU
+504BG
+231BU
+504BG
+40BG
+40BG
+504BG
+468BG
+505BG
+244BU
+231BU
+231BU
+231BU
+462BG
+504BG
+505BG
+40BG
+468BG
+462BG
+462BG
+444BG
+444BG
+40BG
+499BG
+444BG
+245BU
+504BG
+40BG
+231BU
+236BU
+241BU
+9BG
+444BG
+504BG
+247BU
+236BU
+40BG
+236BU
+444BG
+444BG
+468BG
+468BG
+AMC
+610EXGP
+2750ABG
+9BG
+9BG
+462BG
+505BG
+
+505BG
+500BG
+505BG
+500BG
+444BG
+444BG
+231BU
+6BG
+40BG
+40BG
+468BG
+468BG
+236BU
+498BG
+
+Off Inv
+
+12/21/1949
+7IN4I1949
+7IN4I1949
+12/21/1949
+5/10/1945
+5/14/1945
+6/4/1948
+1/14/1945
+6/27/1949
+12/21/1949
+7TIN4I1949
+11/9/1944
+512411949
+3/20/1945
+12/21/1949
+6/27/1949
+6/30/1946
+10/25/1944
+12/21/1944
+912511944
+5110/1945
+412511949
+5115/1947
+12/21/1949
+11/23/1944
+12/21/1949
+11/1/1948
+10/14/1944
+8/7/1944
+51211949
+12/29/1948
+12/21/1949
+11/3/1944
+12/21/1949
+TIN4IN944
+8/25/1944
+12/31/1945
+8/20/1944
+5/10/1945
+6/1/1945
+5/11/1945
+2/2/1950
+912711949
+8/21/1946
+51411949
+9/11/1950
+11/21/1947
+11/19/1944
+9111/1950
+
+9111/1950
+212411945
+10/24/1944
+212411945
+5110/1945
+713111946
+3/14/1946
+9111/1950
+5151945
+12/6/1948
+5/11/1945
+6/1/1945
+5112/1945
+5131/1950
+713111946
+
+17
+
+Circumstances
+
+Reclaimed Pyote
+
+Reclaimed Robins
+
+Reclaimed Kelly
+
+Reclaimed Pyote
+
+Group transfer to Tinian
+Abandoned south of Iwo #2 engine fire
+Reclaimed Davis-Monthan
+Crashed returning from Formosa
+Reclaimed Davis-Monthan
+Reclaimed Pyote
+
+Reclaimed Kelly
+
+Surveyed Alamogordo — engine failed
+Reclaimed Tinker
+
+Surveyed at Harvard
+
+Reclaimed Pyote
+
+Reclaimed Davis-Monthan
+Reclaimed Amarillo
+
+Crashed takeoff from A-7 to Omura
+Shot down at Mukden
+
+Crashed on test flight
+
+Group transfer to Tinian
+Reclaimed Chanute
+
+Reclaimed Tinker
+
+Reclaimed Pyote
+
+Surveyed, crash landing Chungking
+Reclaimed Pyote
+
+Reclaimed Davis-Monthan
+Abandoned China
+
+Crashed landing Alamogordo 8/6
+Reclaimed Pyote
+
+Reclaimed Davis-Monthan
+Reclaimed Pyote
+
+Fire, ditched from Singapore
+Reclaimed Pyote
+
+Crashed Atlanta
+
+Surveyed
+
+Class 26 Kirtland
+
+Surveyed at Pyote
+
+Group transfer to Tinian
+Exploded over Osaka
+
+Group transfer to Tinian
+Reclaimed Keesler
+
+Unknown
+
+Surveyed at Eglin
+
+Reclaimed Wright-Patterson
+Reclaimed Pyote
+
+Class 01Z Smoky Hill
+Abandoned India, fire in radar position
+Reclaimed Pyote
+
+Unknown
+
+Reclaimed Pyote
+
+Surveyed
+
+Surveyed at Harvard, crashed takeoff
+Surveyed at Walker
+
+Group transfer to Tinian
+
+Class 01Z Lowry
+
+Class 01Z Fort Worth
+
+Reclaimed Pyote
+
+Group transfer to Tinian
+
+Class 01Z Chanute
+
+Group transfer to Tinian
+Missing from Osaka
+
+Surveyed at Pyote
+
+Reclaimed Keesler
+
+Reclaimed

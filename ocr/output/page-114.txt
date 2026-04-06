@@ -1,0 +1,53 @@
+II
+
+BLOCK NUMBERS AND
+CONSTRUCTION NUMBERS
+
+A block number consisted of one to three digits followed
+by a two-letter code. The digits represented aircraft built to
+the same engineering configuration. The two letters identified
+the factory at which the planes were built: BA Bell-Atlanta;
+BN Boeing Renton; BO Boeing Seattle; BW Boeing Wichita;
+MO Martin Omaha.
+
+The block number combined with the basic model des-
+ignation made up the aircraft model number, e.g., B-29-20-
+BW, B-29A-65-BN, B-29B-30-BA.
+
+A construction number was simply a tracking number used
+during construction of some of the B-29s. It is not clear just
+
+who assigned these numbers. The construction numbers for
+serials 42-6205 through 42-6454 are sequential — 3339
+through 3588. However, there were three different manufac-
+turers producing planes in that sequence. Irregularities exist;
+for example, Martin Omaha was assigned construction num-
+bers 3363 — 3366 and 3377 out of a build of 249 aircraft.
+
+Bell Atlanta did not use construction numbers after 3371
+for serial 42-6237, nor did Martin Omaha after 3377, serial
+42-6243. Boeing Renton and Boeing Wichita, on the other
+hand, used them for all their B-29 builds.
+
+Serial Numbers Manufactuer Model Block Number Construction Number
+41-002 Boeing Seattle XB-29-BO BO 2482
+41-003 Boeing Seattle XB-29-BO BO 2481
+41-18335 Boeing Seattle XB-29-BO BO 2884
+41-36954 Boeing Wichita YB-29-BW BW 3325
+41-36955 Boeing Wichita YB-29-BW BW 3326
+41-36956 Boeing Wichita YB-29-BW BW 3327
+41-36957 Boeing Wichita YB-29-BW BW 3328
+41-36958 Boeing Wichita YB-29-BW BW 3329
+41-36959 Boeing Wichita YB-29-BW BW 3330
+41-36960 Boeing Wichita YB-29-BW BW 3331
+41-36961 Boeing Wichita YB-29-BW BW 3332
+41-36962 Boeing Wichita YB-29-BW BW 3333
+41-36963 Boeing Wichita YB-29-BW BW 3334
+41-36964 Boeing Wichita YB-29-BW BW 3335
+41-36965 Boeing Wichita YB-29-BW BW 3336
+41-36966 Boeing Wichita YB-29-BW BW 3337
+41-36967 Boeing Wichita YB-29-BW BW 3338
+42-6205 -42-6221 Boeing Wichita B-29-1-BW 1-BW 3339-3355
+42-6222 Bell Atlanta B-29-1-BA 1-BA 3356
+42-6223 Boeing Wichita B-29-1-BW 1-BW 3357
+42-6224 Bell Atlanta B-29-1-BA 1-BA 3358

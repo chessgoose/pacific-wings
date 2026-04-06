@@ -1,0 +1,102 @@
+VI.
+
+In order to reflect this reality, this section offers a new,
+more detailed, mission list based on group data.
+
+The data included in the mission list require very little
+explanation. There are nine columns of data:
+
+MSN. This is the XXI Bomber Command mission num-
+ber.
+
+Date. Date of mission.
+
+Target. Name of the target. If secondary targets or tar-
+gets of opportunity were hit on that mission, those targets are
+listed below the first (primary) target and indented for clar-
+ity.
+
+Location. Geographic location of the target.
+
+Wing. Parent Bomb Wing of the group bombing. If more
+than one wing participated in the attack, the word “MIS-
+SION” appears in this column. In such cases, the numbers to
+the right of “MISSION” in the No. Up, Bombed and Lost
+
+columns are the totals for all wings/groups airborne, and num-
+
+The XXI Bomber Command
+
+141
+
+bers specific to a particular wing will follow on the next line.
+A notation of “in above” signifies that the number of planes
+attacking that particular target — almost always a target of op-
+portunity — is included in the group total cited just above.
+
+Grps. Unit(s) doing the bombing.
+
+No. Up. Number of aircraft airborne and attacking.
+
+Bombed. Number of aircraft attacking the primary tar-
+get. Wing total should equal sum of groups bombing the pri-
+mary target. However, in many cases, something happened to
+the numbers from the groups on their arrival at wing, and the
+totals reported by the wing did not always match the sum of
+the reportage by the groups.
+
+Lost. Number of aircraft lost on mission. Includes aircraft
+surveyed or salvaged.
+
+Following this composite mission list for the XXI
+Bomber Command are mission lists broken down by indi-
+
+vidual bomb group.
+
+XXI Bomber Command Detailed Mission List
+
+MSN Date Target Location Wings Grps No. Up Bombed Lost
+1 Oct 28, 1944 Submarine Base Truk 73BW 18 9 0
+1 Oct 28, 1944 Submarine Base Truk 497BG 9 7 0
+1 Oct 28, 1944 Submarine Base Truk 498BG 9 2 0
+2 October 30 Submarine Base Truk 73BW 18 17 0
+2 October 30 Submarine Base Truk 497BG 9 9 0
+2 October 30 Submarine Base Truk 498BG 9 8 0
+3 November 2 Submarine Base Truk 73BW 20 17 0
+3 November 2 Submarine Base Truk 497BG sll 9 0
+3 November 2 Submarine Base Truk 498BG 9 8 0
+4 November 5 Airfields Iwo Jima 73BW 36 25 0
+4 November 5 Airfields Iwo Jima 497BG 18 16 0
+4 November 5 Airfields Iwo Jima 498BG 18 9 0
+5 November 8 Airfields Iwo Jima 73BW 17 6 1
+5 November 8 Airfields Iwo Jima 497BG 7 6 0
+5 November 8 Airfields Iwo Jima 498BG 10 0 1
+6 November 11 Submarine Base Truk 73BW 500BG 9 8 0
+7 November 24 Musashino — Nakajima AC Eng Tokyo 73BW 11 24 2
+7 November 24 Secondary Urban & Dock Area Tokyo WING  inabove 59 0
+7 November 24 Targets of Opportunity Matsuzaki Village WING inabove 5 0
+7 November 24 Docks & Urban Area—Secondary Tokyo 497BG 28 20 1
+7 November 24 Docks & Urban Area—Secondary Tokyo 498BG 29 24 0
+7 November 24 Docks & Urban Area— Secondary Tokyo 499BG _ notavail 27 1
+7 November 24 Docks & Urban Area—Secondary Tokyo 500BG-__notavail 16 0
+8 November 27 Musashino — Nakajima AC Eng Tokyo 73BW 81 0 1
+8 November 27 Secondary Urban & Dock Area Tokyo WING  inabove 49 0
+8 November 27 Target of Opportunity Various WING inabove 13 0
+8 November 27 Musashino — Bombed Secondary Tokyo 497BG 26 14 0
+8 November 27 Docks Area — Secondary Tokyo 498BG 27 20 0
+8 November 27 Docks Area — Secondary Tokyo 499BG  inabove 13 0
+8 November 27 Docks Area — Secondary Tokyo 500BG- inabove 15 1
+9 November 29/30 Industrial Area Tokyo 73BW 28 24 1
+9 November 29/30 Last Resort Targets Tokyo WING inabove 2
+9 November 29/30 Industrial Area Tokyo 497BG 9 7 0
+9 Nov 29/30 Light Industrial & Dock Area Tokyo 498BG 10 8 0
+9 Nov 29/30 Light Industrial & Dock Area Tokyo 499BG -_ notavail §=5 0
+9 Nov 29/30 Light Industrial & Dock Area Tokyo 500BG__notavail =6 1
+
+10 December 3 Musashino — Nakajima AC Eng Tokyo 73BW 86 60 6
+
+10 December 3 Secondary Targets Tokyo WING inabove 15 0
+
+10 December 3 Musashino — Nakajima AC Eng Tokyo 497BG 24 11 1
+
+10 December 3 Musashino — Nakajima AC Eng Tokyo 498BG =. 24 20 3

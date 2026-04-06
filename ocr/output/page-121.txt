@@ -1,0 +1,106 @@
+V.  B-29 Variants 107
+
+KB-29P BOOM TANKER CONFIGURATION
+
+The KB-29M hose and drogue refueling method worked,
+but it was very slow and time-consuming. Searching for a bet-
+ter way, Boeing engineers came up with the concept of the
+flying boom.
+
+A telescoping boom, mounted on the lower aft fuselage,
+was made “flyable” by means of a pair of rudimentary elevons
+controlled by the boom operator in the rear gunner’s position.
+The receiving aircraft moved up on the tanker from behind
+and below. When he arrived in the proper position, guided
+by indicator lights on the belly of the tanker, the boom oper-
+ator “flew” the boom into the receiver receptacle and the
+tanker began pumping fuel. When the receiver had taken on
+his required load, he dropped off the boom. The boom oper-
+ator purged the refueling system with gaseous nitrogen to clear
+the system of gas fumes, retracted the boom to the maximum
+and stowed it in a horizontal position for flight.
+
+Serial# Model Serial# Model
+
+42-65389 KB-29P-30-MO 44-69822 KB-29P-65-BW
+42-93921 KB-29P-10-BN 44-69823 KB-29P-65-BW
+44-27346 KB-29P-40-MO 44-69826 KB-29P-65-BW
+44-27348 KB-29P-40-MO 44-69837 KB-29P-65-BW
+44-27353 KB-29P-40-MO 44-69858 KB-29P-65-BW
+44-61651 KB-29P-40-BN 44-69878 KB-29P-65-BW
+44-69672 KB-29P-55-BW 44-69904 KB-29P-65-BW
+44-69674 KB-29P-55-BW 44-69915 KB-29P-70-BW
+44-69687 KB-29P-55-BW 44-70019 KB-29P-75-BW
+44-69693 KB-29P-55-BW 44-70026 KB-29P-75-BW
+44-69701 KB-29P-55-BW 44-83905 KB-29P-45-BA
+44-69702 KB-29P-55-BW 44-83906 KB-29P-45-BA
+44-69709 KB-29P-60-BW 44-83943 KB-29P-45-BA
+44-69716 KB-29P-60-BW 44-83971 KB-29P-50-BA
+44-69797 KB-29P-60-BW 44-84025 KB-29P-55-BA
+44-69819 KB-29P-65-BW 44-84047 KB-29P-55-BA
+44-69821 KB-29P-65-BW 44-84055 KB-29P-55-BA
+
+With the use of form-fitting bomb bay tanks, the KB-
+29P carried just under 12,000 gallons. Assuming a stripped
+plane gross weight of 70,000 pounds, the 12,000 gallons would
+put the takeoff weight in the vicinity of 142,000 pounds, well
+above the specified 137,500 pound maximum takeoff weight.
+Takeoff weights over 140,000 pounds were, however, quite
+common in World War II and Korea.
+
+The normal crew of a KB-29P consisted of aircraft com-
+mander, pilot, flight engineer, navigator, radio operator, two
+scanners, a radar operator and the boom operator.
+
+The initial contract for conversion of planes to KB-29P
+was let in November of 1949. Sometime prior to April 1950,
+the first tests of the new system was made with the successful
+transfer of fuel to an F-84.
+
+Serial# Model Serial# Model
+44-84071 KB-29P-G0-BA 44-86363 KB-29P-50-MO
+44-84079 KB-29P-G0-BA 44-86384 KB-29P-55-MO
+44-84107 KB-29P-65-BA 44-86427 KB-29P-6G0-MO
+44-84118 KB-29P-65-BA 44-86428 KB-29P-G0-MO
+44-84123 KB-29P-65-BA 45-21827 KB-29P-95-BW
+44-84134 KB-29P-65-BA 44-69700 KB-29P-55-BW
+44-84139 KB-29P-65-BA 44-69828 KB-29P-65-BW
+44-84145 KB-29P-65-BA 44-69846 KB-29P-65-BW
+44-84147 KB-29P-65-BA 44-69847 KB-29P-65-BW
+44-84149 KB-29P-65-BA 44-69874 KB-29P-65-BW
+44-84151 KB-29P-65-BA 44-69914 KB-29P-70-BW
+44-84156 KB-29P-65-BA 44-83937 KB-29P-45-BA
+44-86244 KB-29P-40-MO 44-83950 KB-29P-45-BA
+44-86249 KB-29P-40-MO 44-83985 KB-29P-50-BA
+44-86251 KB-29P-40-MO 44-84029 KB-29P-55-BA
+44-86309 KB-29P-45-MO
+
+44-86350 KB-29P-50-MO
+
+SB-29 RESCUE CONFIGURATION
+
+While most sources cite sixteen as the number of B-29s
+converted to the SB-29 rescue configuration, some controversy
+does surround that number. Alwyn Lloyd, for example, in his
+B-29 Superfortress in Detail and Scale, Part 2, Derivatives lists
+the following yearly inventory of B-29s assigned to the Air
+Rescue Service:
+
+1947-49 3 1953 16
+1950 7 1954 17
+1951 9 1955 14
+1952 19
+
+Yet three lines later, following the sentence “The fol-
+lowing airplanes were converted into SB-29’s,” he lists sixteen
+serial numbers.
+
+In an attempt to clarify the situation, I made an SB-29
+data dump from my B-29 data base. By this means I identified
+twenty-three serial numbers assigned SB-29 model designa-
+tions. A check of my sources showed that for 21 of the 23 se-
+rial numbers listed, the SB-29 designation was derived from
+entries on the Aircraft Record Cards. Four photographs in my
+collection showed specific B-29s in Air Rescue markings.
+
+When the twenty-three SB-29s from my data base are

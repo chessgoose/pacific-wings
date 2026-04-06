@@ -1,0 +1,430 @@
+Serial #
+
+44-83907
+44-83908
+44-83909
+44-83910
+44-83911
+44-83912
+44-83913
+44-83914
+44-83915
+44-83916
+44-83917
+44-83918
+44-83919
+44-83919
+44-83920
+44-83921
+44-83922
+44-83923
+44-83924
+44-83925
+44-83926
+44-83927
+44-83928
+44-83929
+44-83930
+44-83931
+44-83932
+44-83933
+44-83934
+44-83934
+44-83935
+44-83936
+44-83937
+44-83938
+44-83939
+44-83940
+44-83941
+44-83942
+44-83943
+44-83943
+44-83944
+44-83945
+44-839 46
+44-83947
+44-83948
+44-83949
+44-83950
+44-83951
+44-83952
+44-83953
+44-83953
+44-83954
+44-83955
+44-83956
+44-83957
+44-83958
+44-83959
+44-83960
+44-83961
+44-83962
+44-83963
+44-83964
+44-83965
+44-83966
+44-83966
+
+Name
+
+TRIFLIN’ GAL
+
+SHACK RABBIT
+UNDECIDED
+
+VICTORY JEAN
+
+NEVER BEEN TRIED
+
+Identification
+DIAM L 5
+
+DIAM H
+DIAM H
+
+DIAM H
+DIAM B
+
+DIAM B
+
+DIAM B
+SQUARE A
+DIAM L 30
+
+DIAM L 31
+DIAM L 08
+SQUARE I
+
+DIAM L
+DIAM L 27
+DIAM B
+DIAM B
+DIAM B
+DIAM B
+SQUARE H
+SQUARE H
+
+L DIAM 48
+TRIANGLE C
+DIAM L 50
+
+DIAM L 49
+DIAM H
+
+DIAM L 32
+SQUARE I
+DIAM L 11
+
+DIAM L 51
+
+DIAM H
+
+DIAM L 13
+CIRCLE W
+SQUARE Y
+DIAM L 52
+
+DIAM L 37
+DIAM L 15
+BLK SQ M
+
+CIRC X
+DIAM L 33
+
+BLK SQM
+
+I. Master List
+
+Delv
+
+4130/1945
+512911945
+5181/1945
+
+5/10/1945
+5128/1945
+5/511945
+
+4130/1945
+5130/1945
+5/11/1945
+4130/1945
+5128/1945
+5/12/1945
+5/12/1945
+5/12/1945
+513111945
+51711945
+5/10/1945
+5130/1945
+5/11/1945
+51911945
+
+513111945
+51911945
+
+5131/1945
+5/8/1945
+
+513111945
+5/16/1945
+5/31/1945
+5/12/1945
+5/31/1945
+5/31/1945
+5/10/1945
+5/31/1945
+5/15/1945
+5/31/1945
+
+5/31/1945
+5/19/1945
+5/19/1945
+5/21/1945
+5/21/1945
+5/19/1945
+5/31/1945
+5/25/1945
+5/31/1945
+512411945
+5/31/1945
+
+6/2/1945
+
+5/28/1945
+5/31/1945
+5/31/1945
+5/25/1945
+5/31/1945
+5126/1945
+6/18/1945
+5/29/1945
+6/6/1945
+
+6/23/1945
+5/29/1945
+6/22/1945
+5/18/1945
+6/21/1945
+5/19/1945
+6/23/1945
+6/23/1945
+
+Assign
+
+331BG
+233BU
+502BG
+502BG
+4117BU
+502BG
+16BG
+233BU
+16BG
+4105BU
+233BU
+16BG
+301BW
+331BG
+233BU
+XXIBC
+XXIBC
+233BU
+331BG
+331BG
+91RCN
+91SRC
+331BG
+331BG
+16BG
+16BG
+16BG
+16BG
+98BG
+98BG
+XXIBC
+4105BU
+331BG
+509BW
+331BG
+233BU
+331BG
+502BG
+331BG
+91RCN
+331BG
+233BU
+331BG
+4105BU
+502BG
+233BU
+6BG
+233BU
+331BG
+92BG
+307BG
+331BG
+233BU
+331BG
+233BU
+331BG
+19BG
+9BG
+331BG
+
+620BU
+333BG
+
+19BG
+
+Off Inv
+
+5ITIN954
+10/12/1953
+5ITIN954
+10/11/1954
+11/12/1953
+51511954
+5ITIN954
+10/12/1953
+TIN4IN954
+51511954
+10/12/1953
+912211954
+
+10/12/1953
+4129/1950
+4/18/1954
+10/12/1953
+10/4/1954
+78/1954
+TIN4I954
+7ISIN954
+TIN4IN954
+6/24/1954
+TIN4IN954
+7TIN4I1954
+5/10/1954
+TINSI1954
+9/13/1954
+9/13/1954
+2/11/1954
+5/10/1954
+7131/1954
+7TIN4I1954
+
+10/12/1953
+3/31/1948
+9/10/1945
+5/18/1954
+5/18/1954
+2/14/1951
+10/12/1953
+51711954
+51511954
+11/23/1954
+10/12/1953
+9/12/1951
+8/17/1954
+11/23/1954
+12/7/1954
+12/7/1954
+7128/1948
+10/12/1953
+10/12/1954
+9/22/1953
+7TIN4IN954
+91211954
+1/2/1947
+2/16/1954
+2/28/1946
+8/25/1950
+10/7/1945
+
+5171954
+51711954
+
+73
+
+Circumstances
+
+Reclaimed Tinker
+Reclaimed Pyote
+Reclaimed McClellan
+Reclaimed Turner
+Reclaimed Robins
+Reclaimed Davis-Monthan
+Reclaimed McClellan
+Reclaimed Pyote
+
+Salvaged at Davis-Monthan
+Reclaimed Davis-Monthan
+Reclaimed Pyote
+Reclaimed Tinker
+Unknown
+
+Unknown
+
+Reclaimed Pyote
+
+Salvaged at Barksdale
+Reclaimed Tinker
+Reclaimed Pyote
+Reclaimed Tinker
+
+Lost at Mt Home
+
+Salvaged at Davis-Monthan
+Reclaimed Davis-Monthan
+Salvaged at Davis-Monthan
+Reclaimed Pyote
+
+Salvaged at Davis-Monthan
+Salvaged at Davis-Monthan
+Reclaimed Davis-Monthan
+Salvaged at Davis-Monthan
+Reclaimed Davis-Monthan
+Reclaimed Davis-Monthan
+Reclaimed Randolph
+Reclaimed Davis-Monthan
+Reclaimed Tinker
+Reclaimed McClellan
+Unknown
+
+Reclaimed Pyote
+Condemned Tinker
+Condemned overseas
+Reclaimed Tinker
+Reclaimed Tinker
+
+Salvaged at Barksdale
+Reclaimed Pyote
+Reclaimed McClellan
+Reclaimed Davis-Monthan
+Reclaimed Tinker
+Reclaimed Pyote
+
+Salvaged
+
+Reclaimed Tinker
+Reclaimed Tinker
+Reclaimed Tinker
+Reclaimed Tinker
+Condemned Tinker
+Reclaimed Pyote
+Reclaimed Bergstrom
+Reclaimed Pyote
+
+Salvaged at Davis-Monthan
+Reclaimed Hunter
+Condemned returning to ZI
+Reclaimed Randolph
+Salvaged overseas
+Reclaimed McClellan
+
+Lost, conditions unknown
+Unknown
+
+Reclaimed Robins
+Reclaimed Robins

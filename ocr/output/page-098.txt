@@ -1,0 +1,467 @@
+84
+
+Serial #
+
+44-87734
+44-87734
+44-87734
+44-87735
+44-87736
+44-87737
+44-87738
+44-87739
+44-87740
+44-87741
+44-87742
+44-87743
+44-87744
+44-87745
+44-87746
+44-87747
+44-87748
+44-87749
+44-87750
+44-87751
+44-87752
+44-87753
+44-87754
+44-87755
+44-87756
+44-87757
+44-87758
+44-87759
+44-87760
+44-87760
+44-87761
+44-87761
+44-87762
+44-87763
+44-87764
+44-87765
+44-87766
+44-87767
+44-87768
+44-87769
+44-87770
+44-87771
+44-87772
+44-87773
+44-87774
+44-87775
+44-87776
+44-87777
+44-87778
+44-87779
+44-87780
+44-87781
+44-87782
+44-87783
+45-21693
+45-21694
+45-21695
+45-21696
+45-21697
+45-21698
+45-21699
+45-21700
+45-21701
+45-21702
+45-21703
+
+Name
+
+DOUBLE WHAMMY
+
+ZZZUNNAMED
+
+ZZZUNNAMED
+
+BATTLIN’ BONNIE II
+
+PRIVATE LOVE WITCH
+
+HURRICANE HATTIE
+
+NIP-PON-ESE
+NIP-PON-ESE
+
+LEGAL EAGLE II
+
+THE B-29 SUPERFORTRESS
+
+Identification
+
+BLKSTRPRED
+TRIU
+CIRC R 15
+
+CIRC X 15
+SQUARE H
+
+TRIANGLE C
+CIRCLE K
+TRIANGLE C
+TRIANGLE S
+TRIANGLE O
+CIRCLE R
+
+TRIANGLE C
+
+TRIANGLE C
+TRIANGLE O
+
+TRIANGLE C
+TRIANGLE C
+
+TRIANGLE C
+CIRCLE K
+TRIANGLE O
+SQUARE Y
+CIRCLE W
+TRIANGLE C
+CIRCLE R
+
+TRIANGLE C
+TRIANGLE C
+CIRCLE R
+TRIANGLE O
+TRIANGLE C
+YLW BANDS
+TRIANGLE C
+
+TRIANGLE C
+TRIANGLE O
+TRIANGLE C
+
+CIRCLE K
+CIRCLE K
+TRIANGLE C
+
+SQUARE A
+TRIANGLE C
+
+TRIANGLE C
+CIRCLE K
+
+TRIANGLE C
+TRIANGLE C
+CIRCLE K
+
+CIRCLE K
+CIRCLE K
+TRIANGLE C
+CIRCLE K
+CIRCLE K
+
+Delv
+
+TISIN945
+
+TIAIN945
+7ISIN945
+TISIN945
+7ISIV945
+TISIV945
+TISIN945
+
+TISIN945
+TISIN945
+TISIN94S
+TIAIN945
+TISIN945
+TISIN94S
+TISIN945
+TIN0/1945
+TISIN945
+70/1945
+TISIN94S
+
+7ISI1945
+
+TISI1945
+
+72/1945
+70/1945
+7/10/1945
+7/10/1945
+7/10/1945
+71/1945
+71/1945
+72/1945
+71/1945
+7/10/1945
+71311945
+72/1945
+72/1945
+71311945
+7IN7IN945
+72/1945
+72/1945
+
+7IV7I1945
+7/18/1945
+7ING/I1945
+78/1945
+7ING/1945
+7ING/1945
+TIV7IN945
+
+78/1945
+74945
+7911945,
+7911945,
+7120/1945
+
+712111945
+7911945
+7120/1945
+TIN9I1945
+712111945
+712311945
+
+Assign
+
+19BG
+462BG
+6BG
+
+9BG
+98BG
+
+509BG
+43BG
+509BG
+2BG
+97BG
+9BG
+
+509BG
+
+509BG
+97BG
+
+509BG
+509BG
+
+509BG
+43BG
+97BG
+307BG
+92BG
+509BG
+9BG
+
+509BG
+509BG
+9BG
+97BG
+509BG
+
+509BG
+4187BU
+509BG
+97BG
+509BG
+
+43BG
+43BG
+509BG
+
+301BW
+509BG
+
+509BG
+43BG
+
+509BG
+509BG
+43BG
+
+43BG
+43BG
+509BG
+43BG
+43BG
+
+Off Inv
+
+1/22/1952
+1/22/1952
+
+12/15/1949
+7IN8/1954
+6/2/1952
+8/8/1954
+412011954
+
+12/17/1953
+
+7IN8/1954
+8/6/1951
+712211954
+8/9/1954
+
+8/8/1954
+10/4/1954
+4126/1950
+8/8/1954
+9113/1954
+8/8/1954
+712911954
+
+41511952
+8/8/1954
+8/2/1954
+5/12/1950
+8/8/1954
+8/8/1954
+8/16/1954
+8/16/1954
+9113/1954
+712711954
+8/8/1954
+7118/1954
+5/14/1947
+712411954
+7411954
+11/29/1949
+12/21/1949
+8/16/1954
+1/14/1949
+7IN8/1954
+8/1/1950
+
+7IN4IN954
+7IN4IN954
+8/8/1954
+
+8/8/1954
+8/16/1954
+3/13/1950
+
+7IN4IN954
+8/8/1954
+8/2/1954
+8/16/1954
+6/1/1950
+1/31/1955
+8/8/1954
+8/2/1954
+7IN4IN954
+3/31/1954
+7IN4IN954
+
+Circumstances
+
+#3 engine out, missing from Kadena
+MIA Korea
+
+Reclaimed
+
+Salvaged at Walker
+
+Lost at Mt Home
+
+Surveyed
+
+Reclaimed Tinker
+
+Reclaimed Hill
+
+Last reported Hickam 2/11/55
+Crash landed Andersen
+
+Last reported Yokota 5/27/54
+Lost at Mt Home
+
+Surveyed
+
+Lost at Mt Home
+
+Reclaimed Laurel
+
+Last reported at Yokoya 1/10/55
+Reclaimed Tinker
+
+Reclaimed Tinker
+
+Surveyed Kindley
+
+Reclaimed Tinker
+
+Reclaimed Davis-Monthan
+Reclaimed Tinker
+
+Lost at Mt Home
+
+Unknown
+
+Crashed, prop reversal in pattern
+Reclaimed Tinker
+
+Reclaimed Tinker
+
+Salvaged at Barksdale
+
+Reclaimed Tinker
+
+Reclaimed Tinker
+
+Assigned Storage Sqdn at Davis-Monthan
+Assigned Storage Sqdn at Davis-Monthan
+Reclaimed Tinker
+
+Mountain Home
+
+Reclaimed Tinker
+
+Lost at Mt Home
+
+Transferred to Navy
+
+Mountain Home
+
+Salvaged at Davis-Monthan
+Salvaged at Walker
+
+Salvaged at Marham
+
+Assigned Storage Sqdn at Davis-Monthan
+Surveyed Furstenfeldbuch
+
+Lost at Mt Home
+
+Surveyed
+
+Last reported at Birmingham
+Salvaged at Davis-Monthan
+Salvaged at Davis-Monthan
+Reclaimed Tinker
+
+Unknown
+
+Reclaimed Tinker
+
+Assigned Storage Sqdn at Davis-Monthan
+Surveyed
+
+Unknown
+
+Salvaged at Davis-Monthan
+Reclaimed Tinker
+
+Reclaimed Tinker
+
+Assigned Storage Sqdn at Davis-Monthan
+Salvaged
+
+Last reported Wright-Patterson
+Reclaimed Tinker
+
+Reclaimed Tinker
+
+Salvaged at Davis-Monthan
+
+Last reported at Forbes
+
+Salvaged at Davis-Monthan

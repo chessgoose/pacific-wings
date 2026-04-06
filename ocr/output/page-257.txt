@@ -1,0 +1,436 @@
+MSN
+
+214
+214
+214
+221
+221
+221
+221
+222
+222
+222
+222
+233
+233
+233
+233
+239
+239
+239
+239
+244
+244
+244
+246
+246
+246
+246
+256
+256
+256
+256
+262
+262
+262
+262
+262
+268
+268
+268
+268
+268
+269
+269
+269
+269
+269
+275
+275
+275
+275
+276
+276
+276
+276
+276
+282
+282
+282
+282
+292
+292
+292
+292
+292
+296
+296
+
+Date
+
+June 21/22
+June 21/22
+June 21/22
+June 23/24
+June 23/24
+June 23/24
+June 23/24
+June 25/26
+June 25/26
+June 25/26
+June 25/26
+June 27/28
+June 27/28
+June 27/28
+June 27/28
+June 29/30
+June 29/30
+June 29/30
+June 29/30
+July 1/2
+July 1/2
+July 1/2
+July 3/4
+July 3/4
+July 3/4
+July 3/4
+July 9/10
+July 9/10
+July 9/10
+July 9/10
+July 11
+July 11
+July 11
+July 11
+
+July 1
+
+July 13
+July 13
+July 13
+July 13
+July 15/16
+July 15/16
+July 15/16
+July 15/16
+July 15/16
+July 15/16
+July 17/18
+July 17/18
+July 17/18
+July 19
+July 19
+July 19
+July 19
+July 19
+July 19
+July 22
+July 22
+July 22
+July 23/24
+July 25/26
+July 25/26
+July 25/26
+July 25/26
+July 25/26
+July 27/28
+July 26/27
+
+VI.
+
+Target
+
+Mine Field X-Ray
+Mine Field Nan
+Mime Field Able
+Mining Mission 26
+Mine Field Charlie
+Mine Field Yoke
+Mine Field Uncle
+Mining Mission 27
+Mine Field Mike
+Mine Field Love
+Mine Field Zebra
+Mining Mission 28
+Mine Field X-Ray
+Mine Field Able
+Mine Field Uncle
+Mining - Mission 29
+Mine Field Mike
+Mine Field Zebra
+Mine Field Uncle
+Mining Mission 30
+Mine Field Love
+Mine Field Nan
+Mining Mission 31
+Mine Field William
+Mine Field Zebra
+Mine Field Mike
+Mining Mission 32
+Mine Field Mike
+Mine Field Uncle
+Mine Field Nan
+Mining Mission 33
+Mine Field Mike
+Mine Field Rashin
+Mine Field Fusan
+Mine Field Zebra
+Mining Mission 34
+Mine Field Mike
+Mine Field Seishin
+Mine Field Masan-Reisu
+Mine Field Charlie
+Mining Mission 35
+Mine Field Uncle/Nan
+Mine Field Rashin
+Mine Field Genzen-Konan
+Mine Field Fusan
+Mining Mission 36
+Mine Field Mike
+Mine Field Seishin
+Mine Field Nan
+Mining Mission 37
+Mine Field Able
+Mine Field Uncle/Nan
+Mine Field Zebra
+Mine Field Genzan - Konan
+Mining Mission 38
+Mine Field Mike/Love
+Mine Field Rashin
+Mine Field Fusan/Musan
+Mining Mission 39
+Mine Field Seishin
+Mine Field Fusan
+Mine Field Nan
+Mine Field Zebra
+Mining Mission 40
+Mine Field Mike
+
+Location
+
+Senzaki
+Fushiki
+Kobe/Osaka
+Fukuoka
+Fukuoka
+
+Sakai
+
+Niigata
+
+See Below
+Shimonoseki
+Shimonoseki
+Tsuruga Bay
+See Below
+Hagi
+Kobe/Osaka
+Niigata
+
+See Below
+Yawata
+Maizyuru
+Miyahoura
+Shimonoseki City
+Shimonoseki City
+Fushiki, Nanao
+See Below
+Funakoshi
+Maizuru
+Shimonoseki
+See Below
+Shimonoseki
+Niigata/Nanao
+Fushiki
+
+See below
+Shimonoseki
+Korea
+
+Korea
+Maizuru
+
+See Below
+Shimonoseki
+Korea
+
+Korea
+Fukuoka
+
+See Below
+Niigata/Naoetsu
+Rashin, Korea
+Genzen, Korea
+Fusan, Korea
+See Below
+Moji
+
+Seishin, Korea
+Nanao Bay
+See Below
+Shimonoseki
+Niigata
+Maizura/Miyama
+Korea
+
+See Below
+Shimonoseki
+Korea
+
+Korea
+
+See Below
+Seishin, Korea
+Fusan, Korea
+Nanao Bay
+Tsuruga Bay
+See Below
+Shimonoseki
+
+The XXI Bomber Command
+
+Grps
+
+505BG
+505BG
+505BG
+WING
+505BG
+505BG
+505BG
+WING
+505BG
+505BG
+505BG
+WING
+505BG
+505BG
+505BG
+WING
+505BG
+505BG
+505BG
+WING
+505BG
+505BG
+WING
+505BG
+505BG
+505BG
+WING
+6BG
+6BG
+6BG
+WING
+6BG
+6BG
+6BG
+6BG
+WING
+6BG
+6BG
+6BG
+6BG
+6BG
+6BG
+6BG
+6BG
+6BG
+WING
+6BG
+6BG
+6BG
+6BG
+6BG
+6BG
+6BG
+6BG
+6BG
+6BG
+6BG
+6BG
+WING
+504BG
+504BG
+504BG
+504BG
+WING
+504BG
+
+Number Up
+
+worm w
+~ a
+= oS
+
+30
+
+Bombed
+
+not avail
+not avail
+not avail
+27
+
+not avail
+not avail
+not avail
+not avail
+27
+
+not avail
+not avail
+not avail
+not avail
+26
+
+not avail
+not avail
+not avail
+not avail
+28
+
+not avail
+not avail
+not avail
+29
+
+not avail
+not avail
+not avail
+not avail
+26
+
+not avail
+not avail
+not avail
+29
+
+5
+
+7
+
+ll
+
+6
+
+24
+
+27
+
+243
+
+Lost
+
+rFoo°}f
+
+moooocoecocceocoeceococoeooceooo
+
+not avail
+not avail
+not avail
+0
+
+mooococeocececeoococeocce°co°ceococo
+
+wnodocordccceceocce

@@ -1,0 +1,332 @@
+110
+
+Serial #
+
+42-63459
+42-65281
+42-93951
+42-93975
+42-93980
+42-94040
+42-94047
+44-27269
+44-27271
+44-27321
+44-27324
+44-27335
+44-27337
+44-27343
+44-27344
+44-61540
+44-61556
+44-61600
+44-61640
+44-61697
+44-61710
+
+44-61728
+44-61734
+44-61738
+44-61776
+44-61788
+44-61792
+44-61800
+44-61808
+44-61882
+44-61885
+44-61888
+44-61891
+
+44-61893
+44-61901
+
+44-61909
+44-61964
+44-61974
+44-62034
+44-62061
+44-62077
+44-62079
+44-62080
+44-62089
+44-62090
+44-62094
+44-62125
+44-62126
+44-62128
+44-62151
+
+44-62155
+44-62156
+44-62157
+44-62163
+44-62195
+44-62197
+44-62200
+44-62201
+44-62202
+44-62214
+44-62216
+44-62219
+44-62220
+44-62225
+44-62229
+
+Model
+
+WB-29-20-BA
+WB-29-55-MO
+WB-29A-15-BN
+WB-29A-20-BN
+WB-29A-20-BN
+WB-29A-25-BN
+WB-29A-25-BN
+WB-29-35-MO
+WB-29-35-MO
+WB-29-35-MO
+WB-29-35-MO
+WB-29-40-MO
+WB-29-40-MO
+WB-29-40-MO
+WB-29-40-MO
+WB-29A-35-BN
+WB-29A-35-BN
+WB-29A-35-BN
+WB-29A-40-BN
+WB-29A-40-BN
+WB-29A-45-BN
+WB-29A-45-BN
+WB-29A-45-BN
+WB-29A-45-BN
+WB-29A-45-BN
+WB-29A-45-BN
+WB-29A-45-BN
+WB-29A-45-BN
+WB-29A-50-BN
+WB-29A-50-BN
+WB-29A-50-BN
+WB-29A-50-BN
+WB-29A-50-BN
+WB-29A-50-BN
+WB-29A-50-BN
+WB-29A-50-BN
+WB-29A-55-BN
+WB-29A-55-BN
+WB-29A-60-BN
+WB-29A-60-BN
+WB-29A-60-BN
+WB-29A-60-BN
+WB-29A-60-BN
+WB-29A-60-BN
+WB-29A-60-BN
+WB-29A-60-BN
+WB-29A-65-BN
+WB-29A-65-BN
+WB-29A-65-BN
+WB-29A-65-BN
+WB-29A-65-BN
+WB-29A-65-BN
+WB-29A-65-BN
+WB-29A-65-BN
+WB-29A-65-BN
+WB-29A-65-BN
+WB-29A-65-BN
+WB-29A-65-BN
+WB-29A-65-BN
+WB-29A-70-BN
+WB-29A-70-BN
+WB-29A-70-BN
+WB-29A-70-BN
+WB-29A-70-BN
+WB-29A-70-BN
+
+THE B-29 SUPERFORTRESS
+
+Factory
+
+Bell Atlanta
+
+Martin Omaha
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Martin Omaha
+Martin Omaha
+Martin Omaha
+Martin Omaha
+Martin Omaha
+Martin Omaha
+Martin Omaha
+Martin Omaha
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+Boeing Renton
+
+Assignments
+
+No Details Available
+
+No Details Available
+
+Kindley, Yokota
+
+Andersen, McClellan, Kindley
+Andersen, Kindley
+
+Kindley (three tours)
+
+Kindley, Yokota
+
+Hickam (two tours)
+
+McClellan Hickam
+
+Ladd, Eielsen (two tours)
+
+Eielsen, McClellan (two tours)
+
+Fairfield, Hickam (two tours)
+McClellan, Tinker
+
+Fairfield, McClellan, Tinker, Hickam (two tours)
+Fairfield, McClellan, Hickam
+
+No Details Available
+
+Andersen (three tours)
+
+Yokota, Andersen (two tours), England
+Andersen, lost on weather mission 2/27/52
+Morrison, North Field, Fairfield
+
+Kindley (two tours)
+
+No Details Available
+
+Fairfield, Andersen, Kindley
+
+Fairfield (two tours), Tinker
+
+Kindley
+
+No Details Available
+
+No Details Available
+
+Fairfield
+
+Morrison
+
+Morrison, Fairfield
+
+Yokota (two tours), Misawa
+
+Andersen (three tours)
+
+Morrison, North Field, Kindley, Fairfield
+Yokota (two tours), Misawa
+
+Yokota, Andersen
+
+Andersen (two tours)
+
+Andersen (two tours), McClellan, Andersen
+Kindley (two tours)
+
+Yokota, Misawa
+
+Yokota (two tours), Misawa
+
+Morrison, Fairfield, Tinker, McClellan (3 tours), Hickam
+Kindley, Andersen
+
+Kindley (two tours), McClellan, Andersen
+Yokota, Misawa, Kindley
+
+Yokota, Andersen, Kindley
+
+Andersen, (three tours)
+
+Tinker, Yokota, Eielsen
+
+No Details Available
+
+No Details Available
+
+Ladd, Eiellsen (two tours)
+
+No Details Available
+
+Ladd, Eielsen, Hickam
+
+No Details Available
+
+Eielsen (two tours), Yokota, Hickam
+Ladd, Eielsen, Hickam
+
+Fairfield, Eielsen (two tours)
+
+No Details Available
+
+No Details Available
+
+Fairfield, Hickam (two tours)
+
+Fairfield, Ladd, Eielson (two tours)
+
+No Details Available
+
+Elmendorf, Eielson (two tours) Yokota
+Kindley, Andersen, Kwajalein, Hickam (two tours)
+Kindley, Eielesen
+
+Kindley, Andersen, Alaska (three tours)

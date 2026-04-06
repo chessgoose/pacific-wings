@@ -1,0 +1,446 @@
+Serial #
+
+44-27332
+44-27333
+44-27334
+44-27335
+44-27336
+44-27337
+44-27338
+44-27339
+44-27340
+44-27340
+44-27341
+44-27342
+44-27342
+44-27342
+44-27343
+44-27344
+44-27345
+44-27346
+44-27347
+44-27348
+44-27349
+44-27350
+44-27351
+44-27352
+44-27353
+44-27354
+44-27354
+44-27355
+44-27356
+44-27357
+44-27358
+44-61509
+44-61510
+44-61511
+44-61512
+44-61513
+44-61514
+44-61515
+44-61516
+44-61517
+44-61518
+44-61519
+44-61520
+44-61521
+44-61522
+44-61523
+44-61524
+44-61524
+44-61525
+44-61526
+44-61527
+44-61528
+44-61529
+44-61530
+44-61531
+44-61532
+44-61533
+44-61533
+44-61534
+44-61535
+44-61535
+44-61535
+44-61536
+44-61537
+44-61537
+
+Name
+
+MISS SPOKANE
+
+NOAH’S ARK
+
+IRON GEORGE
+
+THE GREAT ARTISTE
+DAVE’S DREAM
+BIG STINK
+
+CONVINCER
+
+CITY OF YOUNGSTOWN
+
+CONFEDERATE SOLDIER
+
+VIRGINIA TECH
+
+CITY OF SANTA BARBARA
+SALEM WITCH
+
+I. Master List
+
+Identification
+
+SQUARE Y
+CIRCLE R
+
+SQUARE A
+SQUARE A
+
+SQUARE V
+TRI U 50
+SQUARE H
+
+SQUARE T
+BLK SQ. Q 94
+SQUARE Y
+SQUARE T
+
+SQUARE P
+
+CIRC R 89*
+CIRC X 90*
+CIRC X 90*
+
+SQUARE A
+
+TRI U
+TRII 51 (2)
+TRI I 16
+
+CIRC E 14
+TRI I 25
+
+BLK SQ P 09 (2)
+BLK SQ P 09 (2)
+TRIN 56
+TRIN
+
+cc
+
+F
+
+TRI S 29 (2nd)/38
+Z 39
+
+CIRCLE X
+
+BLK SQ P 41
+SQUARE I
+
+TRI U 43
+BLKSTRP
+SQUARE Y
+
+BLK SQK
+SQUARE H
+
+Delv
+
+412311945
+412311945
+412311945
+412511945
+412411945
+412411945
+412511945
+412511945
+412511945
+412511945
+4130/1945
+4130/1945
+5/20/1950
+3/16/1954
+4128/1945
+4128/1945
+412711945
+412711945
+4128/1945
+412711945
+4128/1945
+4128/1945
+4128/1945
+4128/1945
+4120/1945
+4120/1945
+4120/1945
+51711945
+
+51411945
+
+51411945
+
+5/15/1945
+
+3/24/1945
+3/24/1945
+3/22/1945
+3/24/1945
+312711945
+3/24/1945
+3/24/1945
+3/28/1945
+3/24/1945
+3/24/1945
+3/28/1945
+3/29/1945
+3/22/1945
+3/29/1945
+3/30/1945
+3/30/1945
+3/31/1945
+3/28/1945
+3/29/1945
+3/31/1945
+
+3/30/1945
+41211945
+
+3/30/1945
+3/30/1945
+3/30/1945
+3/31/1945
+3/31/1945
+3/31/1945
+3/31/1945
+6/30/1945
+3/30/1945
+3/30/1945
+
+Assign
+
+307BG
+9BG
+2759EXGP
+308WRG
+301BG
+308WRG
+301BG
+308WRG
+55RCN
+462BG
+98BG
+
+RAF
+USAF
+
+308WRG
+2BG
+39BG
+307BG
+2BG
+
+306BG
+3902ABG
+3902ABG
+509CG
+509CG
+509CG
+28BG
+22BG
+303BG
+4105BU
+2759EXGP
+301BG
+
+4141BU
+4117BU
+4141BU
+462BG
+468BG
+468BG
+4141BU
+4141BU
+504BG
+468BG
+4141BU
+328BU
+39BG
+39BG
+444BG
+444BG
+4141BU
+6CMG
+40BG
+500BG
+5RCN
+39BG
+91RCN
+5SRG
+4141BU
+462BG
+19BG
+307BG
+4141BU
+330BG
+98BG
+
+Off Inv
+
+6/19/1955
+8/16/1954
+8/23/1954
+11/2/1954
+TINAIN954
+912711954
+8/16/1954
+8/16/1954
+TINAIN954
+TIN4IN954
+912711954
+5/20/1950
+3/16/1954
+
+5116/1954
+91/1954
+512511954
+
+9115/1954
+8/11/1954
+912711954
+912711954
+6/17/1953
+1/7/1955
+912711949
+10/10/1954
+10/10/1954
+9114/1953
+9114/1953
+TINAIN954
+5/10/1954
+
+5/11/1948
+9115/1953
+9/15/1953
+11/12/1953
+9/15/1953
+412711954
+912711954
+8/3/1950
+9115/1953
+9115/1953
+6/23/1954
+5/10/1954
+9115/1953
+10/25/1945
+11/12/1953
+11/12/1953
+5/10/1954
+9115/1953
+9115/1953
+8/5/1948
+4/8/1951
+6/15/1945
+8/16/1954
+
+8/26/1954
+10/21/1954
+9115/1953
+
+6/27/1954
+6/27/1954
+9115/1953
+10/4/1953
+9113/1954
+
+45
+
+Circumstances
+
+Reclaimed Davis-Monthan
+Reclaimed Davis-Monthan
+Last reported at Wright Field
+Last reported at Tinker
+Salvaged at Davis-Monthan
+Last reported at Laurel
+Reclaimed Davis-Monthan
+Last reported at Laurel
+Reclaimed Davis-Monthan
+Salvaged at Davis-Monthan
+Reclaimed McClellan
+Transferred to RAF
+Returnerd to USAF
+Unknown
+
+Last reported at Hickam
+Reclaimed Hickam
+Reclaimed Randolph
+Unknown
+
+Reclaimed Davis-Monthan
+Last reported at Alexandria
+Reclaimed
+
+Reclaimed McClellan
+Reclaimed Davis-Monthan
+Last reported at Hill
+Salvaged at Goose Bay
+Reclaimed
+
+Reclaimed Tinker
+Reclaimed Tinker
+Reclaimed Tinker
+
+Salvaged at Davis-Monthan
+Reclaimed Davis-Monthan
+
+In-flight explosion Suadi Arabia
+Reclaimed Pyote
+Reclaimed Pyote
+Reclaimed Robins
+Reclaimed Pyote
+Transferred to Navy
+Reclaimed McClellan
+Salvaged
+
+Reclaimed
+
+Reclaimed
+
+Reclaimed Pyote
+Reclaimed Davis-Monthan
+Reclaimed Pyote
+
+Salvaged
+
+Reclaimed Robins
+Reclaimed Robins
+Reclaimed Davis-Monthan
+Reclaimed
+
+Reclaimed Pyote
+
+Salvaged
+
+Salvaged
+
+Non-combat crash, Saipan
+Reclaimed Davis-Monthan
+Survived war
+
+Reclaimed Yokota
+Reclaimed Yokota
+Reclaimed Pyote
+
+Survived war
+
+Reclaimed
+
+Reclaimed
+
+Reclaimed Pyote
+Reclaimed
+
+Reclaimed Davis-Monthan

@@ -1,0 +1,440 @@
+MSN
+
+101
+101
+101
+101
+101
+102
+102
+102
+102
+103
+103
+104
+104
+104
+105
+105
+105
+105
+105
+106
+106
+106
+106
+107
+107
+107
+107
+107
+107
+108
+108
+108
+109
+109
+109
+110
+110
+110
+110
+lll
+lll
+lll
+112
+112
+112
+113
+113
+113
+113
+113
+114
+115
+116
+117
+117
+118
+118
+118
+119
+119
+119
+119
+119
+120
+121
+
+Date
+
+April 26
+April 26
+April 26
+April 26
+April 26
+April 26
+April 26
+April 26
+April 26
+April 26
+April 26
+April 26
+April 26
+April 26
+April 26
+April 26
+April 26
+April 26
+April 26
+April 26
+April 26
+April 26
+April 26
+April 26
+April 26
+April 26
+April 26
+April 26
+April 26
+April 27
+April 27
+April 27
+April 27
+April 27
+April 27
+April 27
+April 27
+April 27
+April 27
+April 27
+April 27
+April 27
+April 27
+April 27
+April 27
+April 27
+April 27
+April 27
+April 27
+April 27
+April 28
+April 28
+April 28
+April 28
+April 28
+April 28
+April 28
+April 28
+April 28
+April 28
+April 28
+April 28
+April 28
+April 29
+April 29
+
+VI.
+
+Target
+
+Targets of Opportunity
+Targets of Opportunity
+Targets of Opportunity
+Matsuyama Airfield
+Matsuyama Airfield
+Nittagahara Airfield
+Nittagahara Airfield
+Targets of Opportunity
+Targets of Opportunity
+Miyazaki Airfield
+Secondary Target
+Kanoya Airfield
+Targets of Opportunity
+Targets of Opportunity
+Kushira Airfield
+Target of Opportunity
+Target of Opportunity
+Target of Opportunity
+Target of Opportunity
+Kokubu Airfield
+Targets of Opportunity
+Targets of Opportunity
+Targets of Opportunity
+Miyakonojo Airfield
+Miyakonojo Airfield
+Miyakonojo Air Field
+Secondary Target
+Target of Opportunity
+Target of Opportunity
+Izumi Airfield
+Izumi Airfield
+Izumi Airfield
+Miyazaki Airfield
+Miyazaki Airfield
+Miyazaki Airfield
+Kokubu Airfield
+Target of Opportunity
+Kokubu Airfield
+Kokubu Airfield
+Miyakonojo Airfield
+Miyakonojo Airfield
+Miyakonojo Airfield
+Kanoya Airfield
+Kanoya Airfield
+Kanoya Airfield
+Kushira Airfield
+Target of Opportunity
+Target of Opportunity
+Kushira Airfield
+Kushira Airfield
+Izumi Airfield
+Miyazaki Airfield
+Kokubu Airfield
+Miyakonojo Airfield
+Target of Opportunity
+Kanoya Airfield
+Kanoya Airfield
+Kanoya Airfield
+Kushira Airfield
+Target of Opportunity
+Target of Opportunity
+Kushira Airfield
+Kushira Airfield
+Miyazaki Airfield
+Miyakonojo Airfield
+
+The XXI Bomber Command
+
+Location
+
+Masaki
+Susaki A/F
+Sakumo
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kaimon Dake AF
+Miyazaki A/F
+Kyushu
+Kokubu A/F
+Kyushu
+Sakamoto
+Kaimon Dace
+Kyushu
+Kokubu A/F
+Chiran A/F
+Kanoya A/F
+Tanaga Shima
+Kyushu
+Miyakonojo A/F
+Nagasaki Docks
+Shibuski A/F
+Kyushu
+Kyushu
+Kyushu
+Miyazaki AF
+Yanikawa
+Makurazaki
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kanoya A/F
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kanoya A/F
+Makurazaki A/F
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Tanega Shima A/F
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+Kanoya A/F
+Naka Fukara
+Kyushu
+Kyushu
+Kyushu
+Kyushu
+
+Wings
+
+WING
+WING
+WING
+6BG
+505BG
+313BW
+505BG
+505BG
+505BG
+9BG
+9BG
+314BW
+19BG
+19BG
+314BW
+29BG
+29BG
+29BG
+29BG
+314BW
+39BG
+39BG
+39BG
+313BW
+
+330BG
+330BG
+330BG
+73BW
+499BG
+500BG
+73BW
+497BG
+498BG
+313BW
+WING
+9BG
+505BG
+313BW
+6BG
+504BG
+314BW
+19BG
+330BG
+314BW
+WING
+WING
+29BG
+39BG
+73BW
+73BW
+313BW
+313BW
+6BG
+314BW
+19BG
+330BG
+314BW
+WING
+WING
+29BG
+39BG
+73BW
+73BW
+
+Grps
+
+in above
+in above
+in above
+not avail
+not avail
+WING
+18
+
+in above
+in above
+21
+
+in above
+19BG
+
+in above
+in above
+29BG
+in above
+in above
+in above
+in above
+39BG
+in above
+in above
+in above
+WING
+504BG
+330BG
+in above
+in above
+in above
+
+WING
+
+WING
+not avail
+not avail
+
+WING
+
+in above
+in above
+ll
+
+12
+497BG
+498BG
+
+Number Up
+
+eee
+
+8
+
+not avail
+18
+
+18
+
+1
+
+1
+
+19
+
+1
+
+NPD
+dS NS NS
+
+Ore nynnraw
+
+20
+
+Bombed
+
+gecegeeecosgxcoeoseoeeoeooRgererescs
+
+NOCON ®
+
+=
+
+_
+
+19
+22
+
+omro
+
+N
+
+239
+
+Lost

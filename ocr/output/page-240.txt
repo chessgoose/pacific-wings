@@ -1,0 +1,88 @@
+226 THE B-29 SUPERFORTRESS
+
+Target # Target Location
+1598 Nagoya #2 Steam Power Plant Nagoya
+1600 Onada Steam Power Plant Onada
+
+1602 Saijo Steam Power Plant Saijo
+
+1604 Inaka Hydro-Electric Plant Kambara
+1607 Horai Hydro Plant Abukuma River
+1608 Kurobe #3 Hydro Electric Plant Kurobe River
+1609 Oigana Hydro-Electric Plant Oi River
+1611 Nakatsugawa Hydro-Electric Plant Nakatsugawa
+1613 Shimotaki Hydro-Electric Plant Shimotaki
+1615 Kasagi Hydro-Electric Plant Kiso River
+1616 Kuje Power Plant Osaka
+
+1626 Ube Steam Power Plant #2 Ube
+
+1627 Omura Aircraft Plant (code name: Fearless) Omura
+1628 Takeda Drug Co Osaka
+
+1629 Amagasaki Transformer Station Amagasaki
+1630 Osaka Transformer Station Osaka
+
+1631 Mizaguchi Gear Works Amagasaki
+1631 Yao Transformer Station Yao
+
+1632 Kizu Transformer Station Kizu
+
+1633 Sasasu Transformer Station Sasazu
+
+1634 Mizaguchi Gear Works Amagasaki
+1635 Nakajima Aircraft Works Handa
+
+1638 Inuyama Transformer Station Inuyama
+1639 Sumitoma Duraluminum Mill Kuwona Plant Kuwana
+1642 Nipon Soda K.K. Nihongo
+1643 Utsonomiya Air Training School & Arsenal Utsonomiya
+1644 Kumagaya Air Base Kumagaya
+1645 Kakowa Mfg Company Utsonomiya
+1646 Riken Industrial, Maebashi Shin-Maebashi
+1647 Riken Industrial, Takasaki Takasaki
+1648 Asada Aluminum Plants Shihama
+1649 Nippon Oil Refinery Kashiwazaki Kashiwazaki
+1650 Kakowa Mfg Company - Kumagaya Parts Plant Kumagaya
+1650 Nakajima Aircraft Company-Kumagaya Parts Plant Kumagaya
+1651 Nippon Stainless Steel Naoetsu Plant Naoetsu
+1652 Minakata Hydro-Electric Plant Tenryu River
+1653 Toyokawa Arsenal Toyokawa
+1655 Koriyama Railroad Shops Koriyama
+1656 Tsugami-Atagi Mfg Company Nagaoka
+1657 Sumitomo Aluminum Plant Niihawa
+1658 Northeast Aluminum Plant Koriyama
+1659 Niigata Iron Works Plant Kashiwazaki Plant Kashiwazaki
+1660 Niigata Iron Works Plant Nagaoka Plant Nagaoka
+1661 Osaka Machinery Company Plant #1 Nagaoka
+1662 Osaka Machinery Company Plant #2 Nagaoka
+1664 Tokyo Shibaura Electric Company Oguni Plant Oguni
+
+1665 Shinagawa Mfg Plant Fukushima
+1666 Nippon Soda, Odera Refinery Odera
+
+1667 Horai Hydro Plant Horai
+
+1667 Shinetsu Nitrogen Fertilizer, Naoetsu Plant Naoetsu
+1668 Niigata Iron Works Plant Kashiwazaki Plant Kashiwazaki
+1668 Riken Heavy Industry, Kashiwazaki Plant Kashiwazaki
+1669 Riken Heavy Industry, Nagaoka Plant Nagaoka
+1670 Niigata Harbor Facilities Niigata
+
+1671 Amagasaki Oil Refinery Unknown
+1671 Government Aircraft Parts Plant Sendai
+
+1675 Amagasaki Urban Area Yonago
+1675 Goto Railroad Shops Yonago
+1676 Tsuruga Railroad Yards Tsuruga
+1677 Nippon Electric Battery Company, Plant #1 Kyoto
+
+1678 Nippon Electric Battery Company, Plant #2 Kyoto
+
+1700 Hitachi Mfg Co. Ube Plant Ube
+
+1702 Kawanishi Aircraft Company (code name: Leafstalk) Kobe
+
+1703 Toyowa Heavy Industries Co. Osaka
+
+1704 Strong Engineering Works Ibaragi

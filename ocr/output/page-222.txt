@@ -1,0 +1,256 @@
+208
+
+THE B-29 SUPERFORTRESS
+
+Target
+
+Nippon Oil Company
+
+Nippon Oil Refinery
+
+Nippon Oil Refinery & Tank Farm
+Nippon Oil Refinery Kashiwazaki
+Nippon Oil Storage
+
+Nippon Rubber Company
+
+Nippon Soda Company, Aluminum Plant
+Nippon Soda Company, Magnesium Plant
+Nippon Soda, Odera Refinery
+
+Nippon Stainless Steel Naoetsu Plant
+Nippon Super Fuel Co
+
+Nippon Synthetic Chemicals Plany
+Nippon Typewriter Co
+
+Nippon Vehicle Manufacturing Company
+Nirada Firecracker Co
+
+Nishinomiya Urban Area
+
+Nissan Auto Company
+
+Nissan Chemical Industry Co, Onoda Plant
+Nissan Chemical Plant
+
+Nissan Chemical Plant #1
+
+Nissan Liquid Fuel Company
+
+Nisshin Spinning Mill
+
+Nisso Steel Mfg Company
+
+Nitta Leather Belt Mfg Co
+
+Nittigahara Air Field (code name: Bushing)
+Nobeoka Urban Area
+
+Northeast Aluminum Plant
+
+Numazu Railroad Yards
+
+Numazu Urban Area
+
+Oaska Machinery Company Plant #1
+Ogaki Iron Works
+
+Ogaki Iron Works
+
+Ogaki Urban Area
+
+Ogura Oil Company
+
+Ogura Oil Company
+
+Oi Hydro-Electric Plant
+
+Oi Railroad Works
+
+Oigana Hydro-Electric Plant
+
+Oita Air Field (code name: Camlet)
+
+Oita Air Field (code name: Fearless)
+
+Oita Railroad Yards
+
+Oita Urban Area
+
+Oji Army Arsenal
+
+Okamoto Aircraft Works, Kosagara Plant
+Okamoto Aircraft Works, Showa Plant
+Okamoto Aircraft Works, Tarui Plant
+Okayama Urba Area
+
+Okazaki Urban Area
+
+Oki Electric Company #1
+
+Oki Electric Company #1
+
+Oki Electric Company #1
+
+Okuma Iron Works, Asahi Plant
+
+Okuma Iron Works, Hagino Plant
+Okuma Iron Works, Kachikawa Plant
+Okuma Iron Works, Kami Iida Cho Plant
+Okuma Iron Works, Kusonoki Plant
+Okuma Iron Works, Nunoike Plant
+Okuma Iron Works, Ozone Plant
+
+Omura Aircraft Plant (code name: Fearless)
+Omura Airfield
+
+Omura Naval Air Station (code name: Vamoose)
+Omuta #1 Steam Power Plant
+
+Omuta #2 Steam Power Plant
+
+Omuta #3 Steam Power Plant
+
+Omuta Mill Kanegafuchi Spinning Company
+
+Target #
+
+1366
+1000
+1203
+1649
+261
+1264
+866
+1944
+1666
+1651
+129
+1826
+1333
+241
+78
+
+522
+819
+253
+936
+1123
+912
+334
+1761
+2531
+
+1658
+1181
+
+1661
+1810
+1811
+
+87
+on
+1505
+370
+1609
+1307
+1308
+1329
+
+206
+1129
+242
+1736
+
+1746
+1747
+888
+
+1807
+1146
+1806
+1797
+1805
+1147
+461
+
+1627
+
+849
+
+1249
+1595
+1596
+1273
+
+Location
+
+Tokyo
+Niigata
+Amagasaki
+Kashiwazaki
+Osaka
+Kurume
+Takaoka
+Higashi-Iwase
+Odera
+Naoetsu
+Yokohama
+Ogaki
+Tokyo
+Nagoya
+Yokohama
+Nishinomiya
+Yokohama
+Onoda
+Nagoya
+Sasakura
+Unknown
+Tokyo
+Tokyo
+Osaka
+Kyushu
+Nobeoka
+Koriyama
+Numazu
+Numazu
+
+Ogaki
+Gifu
+Ogaki
+Yokohama
+Tokyo
+Kiso River
+Tokyo
+
+Oi River
+Kyushu
+Oita
+
+Oita
+
+Oita
+Tokyo
+Nagoya
+Nagoya
+Tarui
+Okayama
+Okazaki
+Osaka
+Kobe
+Tokyo
+Seto
+Nagoya
+Kachikawa
+Nagoya
+Kachikawa
+Nagoya
+Nagoya
+Omura
+Omura
+Omura
+Omuta
+Omuta
+Omuta
+Omuta

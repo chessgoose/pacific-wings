@@ -1,0 +1,310 @@
+Serial #
+
+44-87670
+44-87671
+44-87672
+44-87673
+44-87674
+44-87675
+44-87676
+44-87677
+44-87678
+44-87679
+44-87680
+44-87681
+44-87682
+44-87683
+44-87684
+44-87684
+44-87685
+44-87686
+44-87687
+44-87688
+44-87689
+44-87690
+44-87691
+44-87692
+44-87693
+44-87694
+44-87695
+44-87696
+44-87697
+44-87698
+44-87699
+44-87700
+44-87701
+44-87702
+44-87703
+44-87704
+44-87705
+44-87706
+44-87707
+44-87708
+44-87709
+44-87710
+44-87711
+44-87712
+44-87713
+44-87714
+44-87715
+44-87716
+44-87717
+44-87718
+44-87719
+44-87720
+44-87721
+44-87722
+44-87723
+44-87724
+44-87725
+44-87726
+44-87727
+44-87728
+44-87729
+44-87730
+44-87731
+44-87732
+44-87733
+
+Name
+
+LADY CHOUTEAU
+
+Identification
+
+TRII 12
+CIRC R
+
+TRII 22
+
+CIRCLE K
+
+TRIANGLE C
+
+TRIANGLE C
+
+Master List
+
+Delv Assign
+
+6/15/1945
+
+6/13/1945 468BG
+6/13/1945 6BG
+6/12/1945
+
+6/15/1945 468BG
+6/14/1945
+
+6/18/1945
+
+6/15/1945 326BU
+6/19/1945 4117BU
+
+6/13/1945
+6/18/1945 43BG
+6/14/1945
+6/20/1945
+6/18/1945
+8532BU
+8532BU
+
+6/18/1945 8532BU
+6/20/1945 4141BU
+6/20/1945 4141BU
+6/21/1945 4141BU
+6/19/1945 4141BU
+6/20/1945 4141BU
+6/21/1945 4141BU
+
+6/20/1945 2753AST
+6/25/1945 3705BU
+6/21/1945 2753AST
+
+6/21/1945 4105BU
+6/22/1945 4141BU
+6/22/1945 4105BU
+6/22/1945
+
+4141BU
+6/23/1945 4105BU
+6/23/1945 4141BU
+6/23/1945 4105BU
+6/23/1945 4105BU
+
+509BG
+6/25/1945 4141BU
+6/25/1945 4141BU
+612711945 4141BU
+6/25/1945 4105BU
+6/26/1945 4141BU
+6/26/1945 4105BU
+612711945 4141BU
+6/26/1945 4141BU
+6/26/1945 4141BU
+7/2945 4105BU
+612711945 4105BU
+6/28/1945 4141BU
+612711945 4127BU
+6/28/1945 4196BU
+6/28/1945 4136BU
+6/28/1945 4127BU
+6/28/1945 4105BU
+6/29/1945 4141BU
+6/29/1945 4141BU
+
+7IAIN945 4135BU
+6/29/1945 509BG
+6/29/1945
+
+6/29/1945 4141BU
+7121945 4127BU
+71311945 4105BU
+7121945 4105BU
+71311945 4105BU
+7131945 3705BU
+7121945 4127BU
+
+Off Inv
+
+512611954
+7128/1948
+11/18/1953
+4120/1954
+TINAIN954
+8/2/1954
+
+8/8/1954
+TINAN954
+8/8/1954
+TINAN954
+8/16/1954
+5/31/1952
+5/31/1952
+TINBIN945,
+11/12/1953
+11/12/1953
+6/23/1954
+11/12/1953
+6/23/1954
+6/23/1954
+4120/1954
+8/25/1950
+4120/1954
+51511954
+6/23/1954
+51511954
+
+3/25/1953
+51511954
+3/25/1954
+51511954
+51511954
+12/12/1949
+6/23/1954
+6/23/1954
+11/12/1953
+51511954
+11/12/1953
+51511954
+3/25/1953
+3/25/1953
+6/23/1954
+51511954
+5/10/1954
+6/23/1954
+51711954
+8/25/1950
+9/11/1950
+51711954
+51511954
+11/12/1953
+6/23/1954
+312511954
+10/4/1954
+8/25/1950
+6/23/1954
+6/25/1950
+51511954
+5/10/1954
+51511954
+312911953
+12/6/1950
+
+Circumstances
+
+Reclaimed Randolph
+Surveyed at Tinker
+Reclaimed Tinker
+Reclaimed Hill
+
+Salvaged at Davis-Monthan
+Reclaimed Tinker
+
+Last reported at Wheelus
+Last reported Eglin 3/3/55
+Last reported Robins 1/4/55
+Reclaimed Tinker
+Salvaged at Davis-Monthan
+Reclaimed Tinker
+Reclaimed McClellan
+Reclaimed Molesworth
+Surveyed
+
+Surveyed
+
+Surveyed at Randolph
+Reclaimed Pyote
+Reclaimed Pyote
+Reclaimed Pyote
+Reclaimed Pyote
+Reclaimed Pyote
+Reclaimed Pyote
+Reclaimed Kelly
+
+Surveyed McClellan
+Reclaimed Kelly
+Reclaimed Davis-Monthan
+Reclaimed Pyote
+Reclaimed Davis-Monthan
+Unknown
+
+Reclaimed Pyote
+Reclaimed Davis-Monthan
+Reclaimed Kelly
+Reclaimed Davis-Monthan
+Reclaimed Davis-Monthan
+Surveyed
+
+Reclaimed Pyote
+Reclaimed Pyote
+Reclaimed Pyote
+Reclaimed Davis-Monthan
+Reclaimed Pyote
+Reclaimed Davis-Monthan
+Reclaimed Pyote
+Reclaimed Pyote
+Reclaimed Pyote
+Reclaimed Davis-Monthan
+Reclaimed Davis-Monthan
+Reclaimed Pyote
+Reclaimed McClellan
+Reclaimed McClellan
+Reclaimed Tinker
+Reclaimed McClellan
+Reclaimed Davis-Monthan
+Reclaimed Pyote
+Reclaimed Pyote
+Reclaimed Hill
+
+Reclaimed Tinker
+Surveyed
+
+Reclaimed Pyote
+
+Surveyed McClellan
+Reclaimed Davis-Monthan
+Reclaimed Davis-Monthan
+Reclaimed Davis-Monthan
+Reclaimed Tinker
+Reclaimed McClellan

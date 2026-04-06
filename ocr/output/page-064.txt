@@ -1,0 +1,426 @@
+50
+Serial #
+
+44-61743
+44-61743
+44-61743
+44-61743
+44-61744
+44-61745
+44-61746
+44-61747
+44-61748
+44-61748
+44-61749
+44-61750
+44-61751
+44-61751
+44-61752
+44-61753
+44-61754
+44-61755
+44-61756
+44-61757
+44-61757
+44-61757
+44-61758
+44-61759
+44-61760
+44-61761
+44-61762
+44-61763
+44-61764
+44-61765
+44-61766
+44-61767
+44-61768
+44-61769
+44-61770
+44-61771
+44-61772
+44-61773
+44-61774
+44-61775
+44-61775
+44-61776
+44-61776
+44-61776
+44-61777
+44-61778
+44-61779
+44-61780
+44-61781
+44-61782
+44-61783
+44-61784
+44-61785
+44-61786
+44-61787
+44-61787
+44-61788
+44-61789
+44-61790
+44-61790
+44-61790
+44-61791
+44-61792
+44-61792
+44-61793
+
+Name
+
+HAWG WILD
+IT’S HAWG WILD
+SOUTHERN COMFORT
+
+LUBRICATING LADY
+
+USS PINTADO
+
+RAPID RABBIT [7]
+(7]
+
+LITTLE FELLOW
+
+PEACE ON EARTH
+PEACE ON EARTH
+PEACE ON EARTH
+
+THE B-29 SUPERFORTRESS
+
+Identification
+
+TRIANGLE O
+
+TRI U
+
+TRIS
+
+TRIS
+SQUARE Y
+SQUARE Y
+BLKSTRPBLU
+
+BLK SQM
+BLKSTRPRED
+
+BLK SQ K 13
+T 24 (2)
+TRIANGLE O
+SQUARE Y
+
+CIRC X 17(3)
+
+T?
+
+BLK SQM
+
+SQUARE Y
+
+T SQ 34 (3)
+TRIANGLE O
+SQUARE H
+DIAM L 56
+TRIN 59 (2)
+
+CIRC W
+
+T 57
+Z 09 (2)
+
+CIRC R 07
+
+A
+
+TRI U
+TRIANGLE O
+
+CIRC W 10 (3)
+Z SQ 38 (2)
+BLKSTRPRED
+CIRCLE W
+
+BLK SQ M 16 (2)
+CIRC E 63
+TRIANGLE O
+
+Delv
+
+512511945
+512511945
+6/29/1950
+10/20/1953
+512411954
+5126/1945
+512511945
+6/19/1945
+5126/1945
+5126/1945
+512511945
+5126/1945
+
+5/28/1945
+5/28/1945
+5126/1945
+5126/1945
+5/28/1945
+5128/1945
+5128/1945
+5128/1945
+
+512911945
+512911945
+512911945
+5128/1945
+512911945
+5130/1945
+5130/1945
+513111945
+5130/1945
+513111945
+5130/1945
+5130/1945
+5130/1945
+513111945
+513111945
+513111945
+513111945
+513111945
+
+6/1/1945
+6/1/1945
+6/9/1945
+6/1/1945
+6/4/1945
+6/2/1945
+6/2/1945
+6/4/1945
+6/5/1945
+6/5/1945
+6/4/1945
+3/16/1950
+
+6/6/1945
+6/4/1945
+6/4/1945
+6/4/1945
+6I7I1945
+6/5/1945
+6/5/1945
+6I7I1945
+
+Assign
+
+97BG
+326BU
+RAF
+USAF
+462BG
+40BG
+40BG
+31SR
+307BG
+307BG
+19BG
+19BG
+19BG
+19BG
+19BG
+68BG
+582ARC
+4141BU
+330BG
+498BG
+97BG
+307BG
+
+4105BU
+9BG
+68BG
+4105BU
+308BG
+303BG
+308BG
+498BG
+19BG
+19BG
+581ARC
+4141BU
+307BG
+4141BU
+303BG
+300ABU
+498BG
+97BG
+98BG
+331BG
+444BG
+
+505BG
+3171EREG
+582ARC
+498BG
+500BG
+
+6BG
+497BG
+462BG
+97BW
+RAF
+505BG
+500BG
+19BG
+92BG
+10/00/50
+19BG
+504BG
+97BG
+59RCN
+
+Off Inv
+
+6/29/1950
+6/29/1950
+10/20/1953
+7TIN4IN954
+11/12/1953
+8/5/1948
+12/22/1948
+3/31/1953
+6/27/1954
+6/27/1954
+12/13/1950
+51511954
+
+10/31/1952
+5/10/1954
+7TIN4I1953
+31711954
+912211953
+6/8/1948
+
+TINAIN954
+8/5/1945
+51511954
+712511949
+7128/1953
+5/10/1954
+11/9/1953
+9128/1954
+9/22/1953
+91711953
+12/31/1950
+9122/1953
+9/18/1954
+9122/1953
+6/27/1954
+9122/1953
+3/1/1953
+10/1/1954
+
+6/28/1949
+3/31/1952
+
+9/00/45
+12/31/1945
+9/1/1954
+8/16/1954
+3/10/1954
+9/22/1953
+91911953
+7IN4I1954
+9/22/1953
+9/13/1954
+91411945
+3/16/1950
+7I511958
+11/20/1951
+8/31/1948
+
+10/00/50
+7IN4IN954
+
+3/15/1950
+3/15/1950
+10/16/1946
+
+Circumstances
+
+Transferred to RAF
+Transferred to RAF
+Returned to USAF
+Reclaimed Davis-Monthan
+Reclaimed Robins
+Salvaged at Harmon
+Salvaged at Harmon
+Surveyed at Kadena
+Salvaged at Kadena
+Salvaged at Kadena
+Salvaged at Itazuke
+Reclaimed Davis-Monthan
+Survived war
+
+Ditched off Kadena
+Reclaimed Davis-Monthan
+Reclaimed Davis-Monthan
+Reclaimed
+
+Reclaimed Pyote
+
+Salvaged Guam
+
+Survived war
+
+Unknown
+
+Salvaged at Davis-Monthan
+Unknown
+
+Reclaimed Davis-Monthan
+Salvaged at Kelly
+Reclaimed Davis-Monthan
+Reclaimed Davis-Monthan
+Reclaimed Randolph
+Reclaimed McClellan
+Reclaimed Davis-Monthan
+Reclaimed Davis-Monthan
+Reclaimed Kelly
+Reclaimed Pyote
+Reclaimed Davis-Monthan
+Reclaimed Pyote
+Reclaimed
+
+Reclaimed
+
+Reclaimed Davis-Monthan
+Reclaimed
+
+Survived war
+
+Salvaged at Marham
+Engine failure; abnd 3 miles from Kansong
+Converted to WB-29
+Transfer to 331BG
+Surveyed overseas
+Reclaimed
+
+Reclaimed Griffis
+Reclaimed Molesworth
+Reclaimed Pyote
+Reclaimed Clark Field
+Reclaimed McClellan
+Reclaimed Pyote
+Reclaimed Davis-Monthan
+Crashed on takeoff
+Transferred to RAF
+Broken up at Shoeburyness
+Salvaged
+
+Salvaged at North Field, Guam
+Ditched returning to ZI
+Transferred to 19BG when Group rotated
+Reclaimed McClellan
+Survived the war
+Transferred to RAF
+Transferred to RAF
+Salvaged at Eglin

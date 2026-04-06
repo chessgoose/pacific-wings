@@ -1,0 +1,72 @@
+IV
+
+DESIGN SPECIFICATIONS AND
+PERFORMANCE PARAMETERS
+
+Based on the Boeing Model 345, the B-29 Superfortress
+is a four-engine mid-wing monoplane. The circular fuselage
+consists, from nose to tail, of the forward pressurized com-
+partment, the forward bomb bay, the center wing tank, the
+rear bomb bay, the rear unpressurized compartment and the
+tail gunner’s compartment.
+
+The forward pressurized compartment contained posi-
+tions for the bombardier, aircraft commander, pilot, flight
+engineer, navigator and radio operator. In the rear pressurized
+compartment were the assigned positions of the central fire
+control gunner, the left and right gunners and the radar op-
+erator. The tail gunner worked in isolation in a separate pres-
+surized compartment under the rudder.
+
+Dimensions
+
+Wingspan: 14] feet 3 inches
+
+Length: 99 feet
+
+Height of Tail: 28 feet 7 inches
+
+Wing Area: 1736 square feet
+
+Flap Area: Approximately 360 square feet
+
+Power Plant
+
+Wright R-3350 18 cylinder radial engine
+
+3350 cubic inches displacement
+
+103
+
+Two General Electric B-11 turbo superchargers
+2200 Horsepower takeoff power at 2700 RPM
+
+Performance
+
+Maximum Speed: 365 MPH at 25,000 feet; 220 MPH
+
+cruise speed
+
+Range: 1900 mile radius with 10,000 pound bomb load;
+1550 mile radius with 20,000 pound load.
+
+Service Ceiling: 31,850 feet
+
+Weight:
+Empty. 72,000 pounds
+Maximum normal takeoff: 133,500 pounds
+Maximum overload takeoff: 140,000 pounds
+
+Fuel Capacity. With maximum four 640 gallon bomb
+bay tanks 9,100 gallons
+
+Armament: Four .50 caliber remotely aimed machine
+guns in forward dorsal turret; two remotely aimed .50 caliber
+machine guns each in aft dorsal, forward ventral and aft ven-
+tral turrets; two .50 caliber machine guns in the tail turret.
+Early models also had a 20MM cannon mounted between the
+tail machine guns. Due to sighting problems and trajectory
+differences the cannon was removed on later production mod-
+els.
+
+Total Built: 3,960

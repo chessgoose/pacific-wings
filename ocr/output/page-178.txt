@@ -1,0 +1,513 @@
+164
+
+MSN
+
+237
+238
+238
+238
+239
+239
+239
+239
+240
+240
+240
+240
+240
+241
+241
+241
+241
+241
+242
+242
+242
+242
+243
+243
+243
+243
+243
+243
+243
+243
+244
+244
+244
+245
+245
+245
+245
+246
+246
+246
+246
+247
+247
+247
+247
+247
+247
+247
+247
+248
+248
+248
+248
+248
+249
+249
+249
+249
+250
+250
+250
+250
+250
+250
+250
+
+Date
+
+June 28/29
+June 29/30
+June 29/30
+June 29/30
+June 29/30
+June 29/30
+June 29/30
+June 29/30
+July 1/2
+July 1/2
+July 1/2
+July 1/2
+July 1/2
+July 1/2
+July 1/2
+July 1/2
+July 1/2
+July 1/2
+July 1/2
+July 1/2
+July 1/2
+July 1/2
+July 1/2
+July 1/2
+July 1/2
+July 1/2
+July 1/2
+July 1/2
+July 1/2
+July 1/2
+July 1/2
+July 1/2
+July 1/2
+July 2/3°
+July 2/3
+July 2/3
+July 2/3
+July 3/4
+July 3/4
+July 3/4
+July 3/4
+July 3/4
+July 3/4
+July 3/4
+July 3/4
+July 3/4
+July 3/4
+July 3/4
+July 3/4
+July 3/4
+July 3/4
+July 3/4
+July 3/4
+July 3/4
+July 3/4
+July 3/4
+July 3/4
+July 3/4
+July 3/4
+July 3/4
+July 3/4
+July 3/4
+July 3/4
+July 3/4
+July 3/4
+
+Target
+
+Urban Area
+
+Nippon Oil Refinery
+
+Nippon Oil Refinery
+
+Nippon Oil Refinery
+
+Mining — Mission 29
+Mine Field Mike
+Mine Field Zebra
+Mine Field Uncle
+
+Kure Urban Area
+
+Kure Urban Area
+
+Kure Urban Area
+
+Kure Urban Area
+
+Kure Urban Area
+
+Urban Area
+
+Urban Area
+
+Urban Area
+
+Urban Area
+
+Urban Area
+Secondary Target
+Secondary Target
+Secondary Target
+Secondary Target
+
+Urban Area
+Target of Opportunity
+
+Urban Area
+
+Urban Area
+
+Urban Area
+Target of Opportunity
+Target of Opportunity
+
+Urban Area
+
+Mining Mission 30
+Mine Field Love
+Mine Field Nan
+
+Maruzan Oil Refirnery
+Target of Opportunity
+
+Maruzan Oil Refirnery
+
+Maruzan Oil Refirnery
+
+Mining Mission 31
+
+Mine Field William
+
+Mine Field Zebra
+
+Mine Field Mike
+
+rban Area
+
+rban Area
+
+rban Area
+
+rban Area
+
+Target of Opportunity
+
+rban Area
+
+Target of Opportunity
+
+Target of Opportunity
+
+rban Area
+
+rban Area
+
+rban Area
+
+rban Area
+
+rban Area
+
+rban Area
+
+rban Area
+
+rban Area
+
+rban Area
+
+rban Area
+
+Target of Opportunity
+
+Target of Opportunity
+
+Urban Area
+
+Urban Area
+
+Urban Area
+
+Urban Area
+
+qadaca
+
+ca
+
+qaaacacacacaccdcca
+
+Location
+
+Nobeoka
+Kadamatsu
+Kadamatsu
+Kadamatsu
+
+See Below
+Yawata
+
+Maizura Bay
+Miyahoura
+
+Kure
+
+Kure
+
+Kure
+
+Kure
+
+Kure
+
+Kumamoto
+Kumamoto
+Kumamoto
+Kumamoto
+Kumamoto
+
+Ube
+
+Ube
+
+Ube
+
+Ube
+
+Shimonoseki City
+Unknown
+Shimonoseki City
+Shimonoseki City
+Shimonoseki City
+Shimonoseki City
+Kumamoto
+Shimonoseki
+Shimonoseki City
+Shimonoseki City
+Fushiki, Nanao
+Shimotsu
+Sakinohama
+Shimotsu
+Shimotsu
+
+See Below
+Funakoshi
+Maizuru
+Shimonoseki
+Takamatsu
+Takamatsu
+Takamatsu
+Takamatsu
+Nobeoka
+Takamatsu
+Chichi Jima
+Sukumo
+
+Kochi
+
+Kochi
+
+Kochi
+
+Kochi
+
+Kochi
+
+Himeji
+
+Himeji
+
+Himeji
+
+Himeji
+Tokushima
+Shingu
+
+Tenuna
+Tokushima
+Tokushima
+Tokushima
+Tokushima
+
+THE B-29 SUPERFORTRESS
+
+Wings
+
+315BW
+315BW
+315BW
+313BW
+
+58BW
+
+73BW
+
+313BG
+
+314BW
+
+313BW
+
+315BW
+
+313BW
+
+58BW
+
+73BW
+
+313BW
+
+314BW
+
+WING
+501BG
+
+505BG
+505BG
+505BG
+
+40BG
+
+444BG
+462BG
+462BG
+468BG
+468BG
+468BG
+
+497BG
+498BG
+499BG
+500BG
+
+6BG
+9BG
+504BG
+
+WING
+WING
+19BG
+29BG
+39BG
+330BG
+
+No. Up
+
+not avail
+not avail
+112
+
+39
+
+38
+
+35
+
+142
+
+in above
+34
+
+32
+
+38
+
+in above
+in above
+38
+
+30
+
+9
+
+21
+
+40
+
+in above
+19
+
+21
+
+31
+
+6
+
+4
+
+16
+
+128
+
+31
+
+32
+
+32
+
+in above
+33
+
+in above
+in above
+129
+
+33
+
+33
+
+95
+
+35
+
+36
+
+35
+
+137
+
+in above
+in above
+
+31
+
+34
+35
+
+Bombed
+
+WN
+8
+3
+8
+
+omroocoocoococorcocoooocoeococoeoooeoo°oco
+
+oooorroonoroowncooococoeocococococcocococse
+
+oooocoocooc.oa(

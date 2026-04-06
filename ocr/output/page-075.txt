@@ -1,0 +1,438 @@
+Serial #
+
+44-62267
+44-62268
+44-62269
+44-62270
+44-62270
+44-62271
+44-62272
+44-62273
+44-62274
+44-62274
+44-62275
+44-62276
+44-62277
+44-62278
+44-62279
+44-62280
+44-62280
+44-62281
+44-62282
+44-62282
+44-62283
+44-62283
+44-62284
+44-62285
+44-62286
+44-62287
+44-62288
+44-62289
+44-62290
+44-62291
+44-62292
+44-62293
+44-62294
+44-62295
+44-62296
+44-62296
+44-62297
+44-62298
+44-62299
+44-62300
+44-62301
+44-62302
+44-62303
+44-62304
+44-62304
+44-62305
+44-62306
+44-62307
+44-62308
+44-62309
+44-62310
+44-62311
+44-62312
+44-62313
+44-62314
+44-62315
+44-62315
+44-62316
+44-62316
+44-62317
+44-62318
+44-62319
+44-62320
+44-62321
+44-62322
+
+Name
+
+DEE-FENCE BUSTER
+
+FIRE BALL
+
+THE IRON BIRD
+
+LUCKY LADY
+MISS LACE
+
+GAS GOBBLER
+SATAN’S MATE
+
+Identification
+
+SQUARE H
+SQUARE Y
+
+SQUARE A
+SQUARE V
+
+SQUARE A
+
+CIRCLE E YLW
+
+SQUARE H
+
+55,A
+
+SQUARE I
+SQUARE I
+
+SQUARE Y
+SQUARE I
+SQUARE I
+SQUARE I
+
+SQUARE I
+57,C
+
+CIRCLE V
+
+TRIANGLE C
+BLKSTRP
+BLKHORIZSTRP
+DIAM
+
+DIAM B
+
+TRIANGLE C
+
+CIRCLE K
+TRIANGLE C
+TRIANGLE C
+TRIANGLE C
+CIRCLE K
+SQUARE EMPTY
+TRIANGLE C
+TRIANGLE C
+SQUARE EMPTY
+
+CIRCLE R
+
+TRIANGLE C
+
+I. Master List
+
+Delv
+
+1/8/1946
+1/17/1946
+1/24/1946
+1/15/1946
+1/15/1946
+12/28/1945
+1/11/1946
+21411946
+21411946
+21411946
+1/25/1946
+2/15/1946
+2/11/1946
+2/15/1946
+2/19/1946
+
+41311951
+2/28/1946
+
+3/11/1952
+
+4I19/1952
+3/14/1946
+3/12/1946
+
+3/19/1946
+3/31/1946
+3/26/1946
+4116/1946
+412211946
+412211946
+412211946
+412211946
+412411946
+412911946
+8/21/1950
+412611946
+412611946
+
+5/1/1946
+5/1/1946
+51311946
+51311946
+
+513111946
+5120/1946
+512111946
+5120/1946
+512211946
+512211946
+512211946
+
+512911946
+512911946
+
+512911946
+
+512911946
+
+Assign
+
+4127BU
+580ASL
+580ASL
+98BG
+307BG
+4105BU
+3203MSU
+
+301BG
+55RCN
+4136BU
+301BG
+
+4117BU
+22BG
+
+91RCN
+91RCN
+
+307BG
+
+91RCN
+91RCN
+91RCN
+
+3171ERE
+3203MSU
+3203MSU
+4135BU
+91RCN
+RAF
+308WG
+55RCN
+
+3203MSU
+509BG
+19BG
+19BG
+43BG
+16BG
+
+308WG
+509BG
+
+248BU
+43BG
+509BG
+509BG
+509BG
+43BG
+2BG
+509BG
+509BG
+2BG
+
+9BG
+
+509BG
+
+Off Inv
+
+51711954
+
+9113/1954
+9113/1954
+9116/1948
+
+3/16/1948
+3/31/1949
+11/23/1953
+11/12/1953
+10/19/1950
+41311951
+411711958
+9/18/1953
+3/11/1952
+4I1711958
+411911952
+411711958
+
+2/7/1951
+
+9114/1953
+
+9181/1954
+
+11/17/1953
+8/21/1950
+411711958
+11/17/1953
+11/17/1953
+
+91911954
+7IN3BI1953
+
+3/17/1952
+5120/1953
+3/17/1952
+11/10/1948
+
+5120/1953
+91911954
+512411953
+
+91911954
+91911954
+512411953
+512411953
+3/17/1952
+
+3/12/1951
+
+6/10/1953
+
+61
+
+Circumstances
+
+Reclaimed McClellan
+
+Unknown
+
+Unknown
+
+Reclaimed Davis-Monthan
+
+Reclaimed Davis-Monthan
+
+Salvaged at Ladd
+
+Unknown
+
+Unknown
+
+Unknown
+
+Unknown
+
+Surveyed at Tinker
+
+Crashed Scotland — severe icing
+Reclaimed Robins
+
+Reclaimed Robins
+
+Engine fire on T/O, crashed in sea
+Transferred to RAF
+
+Broken up, scrapped England
+
+Assigned Storage Sqdn at Davis-Monthan
+Salvaged
+
+Broken up, scrapped England
+
+Transferred to RAF
+
+Broken up; scrapped England
+
+Unknown
+
+Unknown
+
+Surveyed
+
+Unknown
+
+Unknown
+
+Reclaimed Tinker
+
+Unknown
+
+Unknown
+
+Reclaimed Davis-Monthan
+
+Unknown
+
+Unknown
+
+Reclaimed Hill
+
+Transferred to RAF
+
+Scrapped England
+
+Reclaimed Kelly
+
+Reclaimed Hill
+
+Unknown
+
+Unknown
+
+Salvaged at Davis-Monthan
+
+Assigned Storage Sqdn at Davis-Monthan
+Unknown
+
+Unknown
+
+Unknown
+
+Unknown
+
+Class 26
+
+Assigned Storage Sqdn at Davis-Monthan
+Class 26
+
+Surveyed at Davis-Monthan
+
+Unknown
+
+Assigned Storage Sqdn at Davis-Monthan
+Reclaimed Davis-Monthan
+
+Assigned Storage Sqdn at Davis-Monthan
+Unknown
+
+Reclaimed Davis-Monthan
+
+Reclaimed Davis-Monthan
+
+Assigned Storage Sqdn at Davis-Monthan
+Reclaimed Davis-Monthan
+
+Class 26
+
+Unknown
+
+Salvaged Fairfield
+
+Unknown
+
+Unknown
+
+Assigned Storage Sqdn at Davis-Monthan

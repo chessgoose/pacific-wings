@@ -1,0 +1,69 @@
+228 THE B-29 SUPERFORTRESS
+
+Target # Target Location
+1780 Osaka Machinery Co Itami
+1781 Osaka Machinery Co Osaka
+1782 Osaka Metal Industry Sakai
+1784 Osaka Wakayama Iron Works Tsuda
+1785 Oriental Can Mfg Co Osaka
+1787 Oriental Can Mfg Co Oaska
+1795 Mitsubishi Steel Rolling Mill Nagasaki
+1797 Okuma Iron Works, Kami lida Cho Plant Nagoya
+1797 Osaka Machinery Works Nagoya
+1798 Osaka Machinery Works Nagoya
+1799 Hokoku Machinery Kasadera Plant Nagoya
+1883 Toyo Steel Plate Co Kudamatsu
+1884 Oshima Naval Oil Storage (code name: Anaphase) Oshima
+1884 Oshima Oshima
+1717 Yuasa Storage Battery Mfg Takasuki
+1732 Rasa industry co. osaka
+1748 Showa Electrode Co Naruo
+1771 Nakayama Steel Mfg Co Amagasaki
+1800 Daido Machinery Co Showa Plant Nagoya
+1802 Hitachi Works Kuwana
+1803 Meideisha Elec Mfg Co Nishi Biwajima Plant Heisaka
+1803 Mitsubishi Electrical Mfg Co Heisaka
+1805 Okuma Iron Works, Kusonoki Plant Kachikawa
+1806 Okuma Iron Works, Kachikawa Plant Kachikawa
+1807 Okuma Iron Works, Asahi Plant Seto
+1809 Hokoku Machinery Co., Atsuta Plant Nagoya
+1810 Ogaki Iron Works Ogaki
+1811 Ogaki Iron Works Gifu
+1812 Kagamigahara Machinery Works Gifu
+1813 Koa Machinery Company Tomita
+1814 Tokyo Shibaura Electrical Mfg Co Kuwana
+1815 Toyo Bearing Co, Dojima Plant Kuwana
+1816 Toyo Bearing Co., Uchibori Plant Kuwana
+1818 Tokoshu Light Metals-Atsuta Plant Nagoya
+1818 Tokushu Light Metals Atsuta Plant Nagoya
+1819 Tokushu Light Metals Ogaki Plant Ogaki
+1820 Tokushu Light Metals Inasawa Plant Inasawa
+1821 Riken Alunite Plant Nagoya
+1821 Toho Gas Works Nagoya
+1822 Ibagawa Electro-Chemical Co., Kido Plant Ogaki
+1823 Tokai Electrical Co Nagoya #1 Plant Nagoya
+1824 Tokai Electrical Co Nagoya #2 Plant Nagoya
+1825 Tokai Electrical Co Nagoya #3 Plant Nagoya
+1826 Nippon Synthetic Chemicals Plant Ogaki
+1827 Dai Nipon Cellophane Plant Nagoya
+1828 Aichi Aircraft Works, Tsukiji Plant Nagoya
+1829 Yahagi Steel Plant Nagoya
+1830 Toyoda Steel Plant Yokosura
+1831 Hirano Loom Works Nagoya
+1832 Ibagawa Electro-Chemical Co., Kita Kiriishi Plant Ogaki
+1833 Mitsubishi Aircraft Works, Kagamigahara Plant Gifu
+1834 Nakajima Aircraft Plant Koromo
+1835 Ainoura Steam Power Plant Ainoura
+1835 Yokose Oil Storage Yokose
+1841 Ube Coal Liquidification Company Ube
+1842 Nagasaki Wharves Nagasaki
+1843 Kyushu Coal and SS Co. Colliery Sekito Shima
+1844 Ube Soda Co Ube
+1870 Tachiari Machine Works Tachiari
+1871 Tosu Railroad Yards And Repair Shops Tosu
+1872 Showa Iron Works Fukuoka
+1873 Tatara Machinery Works Fukuoka
+1874 Asano Cement Company Nogota
+1875 Japan Explosives Mfg Nogata
+
+1877 Toyo Aluminum Co Miike
