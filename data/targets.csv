@@ -1,0 +1,119 @@
+name,aliases,lat,lng,country,type
+Rabaul,Rabaul,-4.20,152.18,New Britain,port/airfield
+Vunakanau,Vunakanau A/F,-4.30,152.10,New Britain,airfield
+Tobera,Tobera A/F,-4.35,152.30,New Britain,airfield
+Lakunai,Lakunai A/F,-4.20,152.18,New Britain,airfield
+Kiska,Kiska Island,-51.98,177.52,Aleutians,island/base
+Attu,Attu Island,52.90,-173.19,Aleutians,island/base
+Paramushiru,Paramushiro,50.38,155.76,Kuriles,island/airfield
+Shimushu,Shimushu,50.71,156.12,Kuriles,island/airfield
+Lae,Lae,-6.73,146.99,New Guinea,port/airfield
+Salamaua,Salamaua,-7.07,147.17,New Guinea,port/airfield
+Finschhafen,Finschhafen,-6.60,147.85,New Guinea,port
+Gasmata,Gasmata,-6.28,150.33,New Britain,airfield
+Cape Gloucester,Cape Gloucester A/F,-5.44,148.44,New Britain,airfield
+Wewak,Wewak,But,Dagua,-3.55,143.63,New Guinea,airfield
+Hollandia,Hollandia A/F,Sentani,-2.53,140.72,New Guinea,airfield
+Madang,Madang,-5.22,145.78,New Guinea,port
+Alexishafen,Alexishafen,-4.73,145.85,New Guinea,airfield
+Hansa Bay,Hansa Bay,-4.08,144.94,New Guinea,anchorage
+Aitape,Aitape,-3.14,142.35,New Guinea,airfield
+Biak,Biak Island Mokmer,-1.17,136.11,New Guinea,airfield
+Noemfoor,Noemfoor Island,-0.97,134.90,New Guinea,airfield
+Wakde,Wakde Island,-0.37,136.08,New Guinea,airfield
+Truk,Truk Lagoon Chuuk,7.45,151.83,Caroline Islands,naval base
+Ponape,Pohnpei,6.96,158.21,Caroline Islands,island
+Yap,Yap Island,9.51,138.13,Caroline Islands,airfield
+Palau,Palau Koror,7.34,134.48,Palau,naval base
+Guam,Guam Agana,13.44,144.79,Marianas,island
+Saipan,Saipan,15.18,145.75,Marianas,island
+Tinian,Tinian,15.07,145.63,Marianas,island
+Rota,Rota Island,14.17,145.20,Marianas,island
+Iwo Jima,Iwo Jima Sulphur Island,24.78,141.32,Volcano Islands,island
+Chichi Jima,Chichi Jima,27.09,142.19,Bonin Islands,island
+Marcus Island,Marcus Wake,24.30,153.98,Pacific,island
+Nauru,Nauru Island,-0.52,166.93,Pacific,island
+Tarawa,Tarawa Betio,1.37,173.02,Gilbert Islands,atoll
+Makin,Makin Butaritari,3.37,172.99,Gilbert Islands,atoll
+Kwajalein,Kwajalein Atoll,8.72,167.73,Marshall Islands,atoll
+Eniwetok,Eniwetok Atoll,11.35,162.34,Marshall Islands,atoll
+Mille,Mille Atoll,6.10,171.92,Marshall Islands,atoll
+Pagan,Pagan Island,18.12,145.76,Marianas,island
+Anatahan,Anatahan,16.36,145.67,Marianas,island
+Tokyo,Tokyo,35.68,139.76,Japan,city/industrial
+Yokohama,Yokohama,35.45,139.64,Japan,port/industrial
+Yokosuka,Yokosuka,35.28,139.67,Japan,naval base
+Nagoya,Nagoya,35.18,136.91,Japan,industrial
+Osaka,Osaka,34.69,135.50,Japan,industrial/port
+Kobe,Kobe,34.69,135.20,Japan,port/industrial
+Kyoto,Kyoto,35.02,135.76,Japan,city
+Hiroshima,Hiroshima,34.39,132.45,Japan,industrial/city
+Nagasaki,Nagasaki,32.77,129.86,Japan,port/industrial
+Yawata,Yawata Kitakyushu,33.88,130.82,Japan,industrial/steel
+Kokura,Kokura Kitakyushu,33.88,130.88,Japan,industrial
+Sasebo,Sasebo,33.15,129.72,Japan,naval base
+Omura,Omura,32.94,129.95,Japan,airfield/aircraft factory
+Kagoshima,Kagoshima,31.60,130.54,Japan,port
+Kure,Kure,34.23,132.57,Japan,naval base
+Toyohashi,Toyohashi,34.77,137.39,Japan,industrial
+Hamamatsu,Hamamatsu,34.71,137.73,Japan,airfield/industrial
+Tachikawa,Tachikawa,35.71,139.40,Japan,aircraft factory
+Musashino,Musashino,35.71,139.55,Japan,aircraft factory
+Okinawa,Okinawa Naha Kadena,26.21,127.68,Ryukyus,island
+Formosa,Formosa Taipei Taiwan Taihoku,25.04,121.56,Formosa,island
+Heito,Heito Pingtung,22.69,120.49,Formosa,airfield
+Tainan,Tainan,22.99,120.20,Formosa,airfield
+Seoul,Seoul Keijo,37.56,126.97,Korea,city
+Pyongyang,Pyongyang,39.02,125.75,Korea,city
+Rashin,Rashin Rajin,42.27,130.30,Korea,port/industrial
+Anshan,Anshan Manchuria,41.12,122.98,Manchuria,industrial/steel
+Mukden,Mukden Shenyang,41.80,123.43,Manchuria,industrial
+Harbin,Harbin,45.75,126.63,Manchuria,city
+Dairen,Dairen Dalian,38.91,121.62,Manchuria,port
+Shanghai,Shanghai,31.23,121.47,China,port/industrial
+Nanking,Nanking Nanjing,32.06,118.79,China,city
+Hankow,Hankow Wuhan Hankou,30.59,114.31,China,port/industrial
+Wuchang,Wuchang Wuhan,30.55,114.32,China,city
+Hong Kong,Hong Kong Kowloon,22.32,114.17,China,port
+Canton,Canton Guangzhou,23.13,113.26,China,port
+Kweilin,Kweilin Guilin,25.24,110.18,China,airfield
+Liuchow,Liuchow Liuzhou,24.33,109.40,China,airfield
+Lingling,Lingling Yongzhou,26.23,111.61,China,airfield
+Hengyang,Hengyang,26.89,112.61,China,airfield
+Changsha,Changsha,28.23,112.94,China,city
+Yungming,Yungming Jiangyong,25.33,111.22,China,town
+Kunming,Kunming,25.01,102.71,China,airfield
+Chengdu,Chengdu Chengtu,30.57,104.07,China,airfield
+Chungking,Chungking Chongqing,29.56,106.59,China,city
+Rangoon,Rangoon Yangon,16.87,96.17,Burma,port/city
+Mandalay,Mandalay,21.98,96.08,Burma,city
+Myitkyina,Myitkyina,25.40,97.39,Burma,airfield
+Akyab,Akyab Sittwe,20.15,92.90,Burma,port/airfield
+Lashio,Lashio,22.94,97.75,Burma,railway town
+Bhamo,Bhamo,24.27,97.24,Burma,river port
+Indaw,Indaw,24.10,96.07,Burma,airfield
+Bangkok,Bangkok Bankok,13.75,100.50,Thailand,city/rail hub
+Hanoi,Hanoi,21.03,105.85,Indochina,city
+Saigon,Saigon Ho Chi Minh,10.82,106.63,Indochina,port
+Singapore,Singapore,1.35,103.82,Malaya,naval base/port
+Penang,Penang,5.42,100.33,Malaya,port
+Palembang,Palembang,−2.97,104.76,Sumatra,oil refinery
+Balikpapan,Balikpapan,−1.27,116.83,Borneo,oil refinery
+Soerabaja,Surabaya Soerabaja,−7.25,112.75,Java,naval base/port
+Makassar,Makassar Ujung Pandang,−5.14,119.41,Celebes,port
+Kendari,Kendari,−3.97,122.52,Celebes,airfield
+Amboina,Amboina Ambon,−3.70,128.18,Moluccas,port/airfield
+Manila,Manila,14.59,120.98,Philippines,city/port
+Clark Field,Clark Field Pampanga,15.18,120.56,Philippines,airfield
+Cebu,Cebu,10.31,123.89,Philippines,port
+Davao,Davao,7.07,125.61,Philippines,port
+Zamboanga,Zamboanga,6.91,122.07,Philippines,port
+Leyte,Leyte Tacloban,10.99,124.91,Philippines,island
+Guadalcanal,Guadalcanal Henderson Field,−9.43,160.04,Solomons,airfield/island
+Munda,Munda New Georgia,−8.33,157.26,Solomons,airfield
+Kahili,Kahili Bougainville,−6.76,155.92,Solomons,airfield
+Bougainville,Bougainville Torokina,−6.21,155.00,Solomons,island
+Rekata Bay,Rekata Bay Santa Isabel,−8.05,159.67,Solomons,seaplane base
+Port Moresby,Port Moresby,−9.44,147.18,New Guinea,airfield/port
+Buna,Buna,−8.69,148.41,New Guinea,coastal
+Dobodura,Dobodura,−8.79,148.04,New Guinea,airfield
