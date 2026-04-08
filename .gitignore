@@ -6,3 +6,4 @@ build/
 .env
 *.log
 ocr/.venv/
+__pycache__

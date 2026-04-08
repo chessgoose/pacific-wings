@@ -22,9 +22,79 @@ class PacificWingsApp {
     async init() {
         this.initMap();
         this.initEventListeners();
-        this.generateHistoricalData();
+        await this.loadMissionsFromCSV('data/missions.csv');
+        this.generateReconFlights();
         this.startTick();
         this.updateUI();
+    }
+
+    async loadMissionsFromCSV(url) {
+        try {
+            const resp = await fetch(url);
+            if (!resp.ok) throw new Error(`Failed to load ${url}`);
+            const text = await resp.text();
+            this.parseMissionsCSV(text);
+        } catch (e) {
+            console.warn('Could not load missions CSV, falling back to built-in data.', e);
+            this.generateBuiltinMissions();
+        }
+    }
+
+    parseMissionsCSV(text) {
+        const lines = text.split('\n').map(l => l.trim()).filter(Boolean);
+        // Skip header row
+        for (let i = 1; i < lines.length; i++) {
+            const cols = this.splitCSVLine(lines[i]);
+            if (cols.length < 10) continue;
+            const [id, squadron, type, description, sLat, sLng, eLat, eLng, startTime, durationHours, altitude, speed, waypointsRaw] = cols;
+            const startMs = new Date(startTime).getTime();
+            if (isNaN(startMs)) continue;
+            const duration = parseFloat(durationHours) * 3600 * 1000;
+
+            let waypoints;
+            if (waypointsRaw && waypointsRaw.trim()) {
+                waypoints = waypointsRaw.trim().split(';').map(pair => {
+                    const [lat, lng] = pair.split(':').map(Number);
+                    return { lat, lng };
+                });
+            } else {
+                waypoints = [
+                    { lat: parseFloat(sLat), lng: parseFloat(sLng) },
+                    { lat: parseFloat(eLat), lng: parseFloat(eLng) }
+                ];
+            }
+
+            this.flights.push({
+                id: id.trim(),
+                squadron: squadron.trim(),
+                type: type.trim(),
+                description: description.trim(),
+                origin: `${sLat.trim()}, ${sLng.trim()}`,
+                destination: `${eLat.trim()}, ${eLng.trim()}`,
+                startTime,
+                startMs,
+                duration,
+                endMs: startMs + duration,
+                waypoints,
+                altitude: parseFloat(altitude) || 20000,
+                speed: parseFloat(speed) || 300
+            });
+        }
+    }
+
+    // Splits a CSV line respecting double-quoted fields
+    splitCSVLine(line) {
+        const cols = [];
+        let cur = '';
+        let inQuotes = false;
+        for (let i = 0; i < line.length; i++) {
+            const ch = line[i];
+            if (ch === '"') { inQuotes = !inQuotes; continue; }
+            if (ch === ',' && !inQuotes) { cols.push(cur); cur = ''; continue; }
+            cur += ch;
+        }
+        cols.push(cur);
+        return cols;
     }
 
     initMap() {
@@ -166,8 +236,8 @@ class PacificWingsApp {
         this.updateTick();
     }
 
-    generateHistoricalData() {
-        // Generating a set of representative historical 1944-1945 missions
+    // Fallback if CSV fetch fails
+    generateBuiltinMissions() {
         const missions = [
             {
                 id: 'B29-MATTERHORN-01',
@@ -316,33 +386,39 @@ class PacificWingsApp {
             }
         ];
 
-        // Add some more random activity around Korea and Manchuria (China)
+        this.flights = missions.map(m => ({
+            ...m,
+            startMs: new Date(m.startTime).getTime(),
+            endMs: new Date(m.startTime).getTime() + m.duration
+        }));
+        this.generateReconFlights();
+    }
+
+    generateReconFlights() {
         for (let i = 0; i < 20; i++) {
             const date = new Date(1944, Math.floor(Math.random() * 12), Math.floor(Math.random() * 28));
-            missions.push({
+            const startMs = date.getTime();
+            const duration = 5 * 3600 * 1000;
+            this.flights.push({
                 id: `RECON-${i}`,
                 type: Math.random() > 0.5 ? 'Ki-46 Dinah' : 'P-38 Lightning',
                 squadron: 'Special Recon Unit',
                 origin: 'Seoul (Keijo)',
                 destination: 'Mukden (Shenyang)',
                 startTime: date.toISOString(),
-                duration: 5 * 3600 * 1000,
+                startMs,
+                duration,
+                endMs: startMs + duration,
                 waypoints: [
-                    { lat: 37.56, lng: 126.97 }, // Seoul
-                    { lat: 38.99, lng: 125.75 }, // Pyongyang
-                    { lat: 41.80, lng: 123.43 }, // Mukden (Shenyang)
+                    { lat: 37.56, lng: 126.97 },
+                    { lat: 38.99, lng: 125.75 },
+                    { lat: 41.80, lng: 123.43 },
                     { lat: 37.56, lng: 126.97 }
                 ],
                 altitude: 32000,
                 speed: 380
             });
         }
-
-        this.flights = missions.map(m => ({
-            ...m,
-            startMs: new Date(m.startTime).getTime(),
-            endMs: new Date(m.startTime).getTime() + m.duration
-        }));
     }
 
     startTick() {
@@ -400,15 +476,14 @@ class PacificWingsApp {
 
                 if (!this.markers.has(flight.id)) {
                     // Create marker
+                    const iconFile = this.getIconFilename(flight.type);
                     const icon = L.divIcon({
                         className: 'plane-icon-wrapper',
-                        html: `<div class="plane-marker ${flight.type.toLowerCase().includes('b-29') ? 'bomber' : 'fighter'}" style="transform: rotate(${bearing}deg); transition: transform 0.3s ease;">
-                                <svg viewBox="0 0 24 24" width="24" height="24" fill="${this.getMarkerColor(flight.type)}">
-                                    <path d="M12,2L14,5V9L21,13V16L14,13V18L16,20V22L12,21L8,22V20L10,18V13L3,16V13L10,9V5L12,2Z" />
-                                </svg>
+                        html: `<div class="plane-marker" style="transform: rotate(${bearing}deg); transition: transform 0.3s ease; width: 32px; height: 32px;">
+                                <img src="${iconFile}" width="32" height="32" style="display:block;"/>
                                </div>`,
-                        iconSize: [24, 24],
-                        iconAnchor: [12, 12]
+                        iconSize: [32, 32],
+                        iconAnchor: [16, 16]
                     });
                     const marker = L.marker([pos.lat, pos.lng], { icon }).addTo(this.map);
 
@@ -470,10 +545,24 @@ class PacificWingsApp {
         };
     }
 
+    getIconFilename(type) {
+        if (type.includes('B-29'))   return 'icons/b29.svg';
+        if (type.includes('A6M5') || type.includes('Zero')) return 'icons/a6m5.svg';
+        if (type.includes('F6F'))    return 'icons/f6f.svg';
+        if (type.includes('P-51'))   return 'icons/p51.svg';
+        if (type.includes('Ki-43') || type.includes('Oscar')) return 'icons/ki43.svg';
+        if (type.includes('Ki-46') || type.includes('Dinah')) return 'icons/ki46.svg';
+        if (type.includes('P-38') || type.includes('Lightning')) return 'icons/p38.svg';
+        // Fallback: pick by class
+        if (type.toLowerCase().includes('bomber')) return 'icons/b29.svg';
+        return 'icons/p51.svg';
+    }
+
     getMarkerColor(type) {
-        if (type.includes('B-29')) return '#ef4444'; // Bomber (Red)
-        if (type.includes('F6F') || type.includes('P-51') || type.includes('Zero') || type.includes('Oscar')) return '#60a5fa'; // Fighter (Blue)
-        return '#10b981'; // Scout (Green)
+        if (type.includes('B-29')) return '#ef4444';
+        if (type.includes('F6F') || type.includes('P-51') || type.includes('P-38') || type.includes('Lightning')) return '#60a5fa';
+        if (type.includes('Zero') || type.includes('A6M5') || type.includes('Oscar') || type.includes('Ki-43')) return '#f97316';
+        return '#10b981'; // Recon / default
     }
 
     updateTimelineUI() {

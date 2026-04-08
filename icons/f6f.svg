@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <!-- Fuselage: wide (Hellcat was large/heavy) -->
+  <path d="M21,11 L27,11 L28,37 Q26,44 24,44 Q22,44 20,37 Z" fill="#60a5fa"/>
+  <!-- Large radial cowl (bigger than Zero) -->
+  <circle cx="24" cy="8.5" r="5.5" fill="#3b82f6"/>
+  <!-- Wide wings, slightly folded tips -->
+  <path d="M21,20 L5,27 L4,30 L13,27 L21,24 L27,24 L35,27 L44,30 L43,27 L27,20 Z" fill="#60a5fa"/>
+  <!-- Horizontal tail -->
+  <path d="M21,38 Q16,40 13,42 L13,40 Q17,38.5 21,37.5 L27,37.5 Q31,38.5 35,40 L35,42 Q32,40 27,38 Z" fill="#60a5fa"/>
+  <!-- Tail fin -->
+  <path d="M23,36 L25,36 L25,43 L23,43 Z" fill="#3b82f6"/>
+</svg>
