@@ -33,27 +33,19 @@
                 witness operations in Japan, China, and Korea.
             </div>
 
-            <div class="action-buttons" style="margin: 15px 0; display: flex; gap: 8px;">
+            <div class="action-buttons" style="margin: 15px 0; display: flex; gap: 8px; flex-wrap: wrap;">
+                <label id="load-file-btn" class="primary-btn"
+                    style="flex: 1; padding: 10px; background: var(--accent-color); color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; text-align: center;">
+                    Load CSV
+                    <input type="file" id="csv-file-input" accept=".csv" style="display:none;">
+                </label>
                 <button id="show-import" class="primary-btn"
-                    style="flex: 1; padding: 10px; background: var(--accent-color); color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600;">Import</button>
+                    style="flex: 1; padding: 10px; background: var(--accent-color); color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600;">Paste CSV</button>
                 <button id="clear-all" class="primary-btn"
-                    style="flex: 1; padding: 10px; background: var(--danger-color); color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600;">Clear
-                    All</button>
+                    style="flex: 1; padding: 10px; background: var(--danger-color); color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600;">Clear All</button>
             </div>
 
             <div class="jump-points-container" style="margin-bottom: 20px;">
-                <h3
-                    style="font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 12px; border-bottom: 1px solid var(--panel-border); padding-bottom: 8px;">
-                    Historical Operations</h3>
-                <div id="historical-jumps" class="jump-grid"
-                    style="display: grid; grid-template-columns: 1fr; gap: 8px; margin-bottom: 16px;">
-                    <button class="jump-btn" data-time="1944-06-15T08:00:00Z">Matterhorn (Yawata) - 1944</button>
-                    <button class="jump-btn" data-time="1944-10-10T08:00:00Z">Task Force 38 (Okinawa) - 1944</button>
-                    <button class="jump-btn" data-time="1945-03-09T18:00:00Z">Tokyo Firebombing - 1945</button>
-                    <button class="jump-btn" data-time="1945-08-05T23:10:00Z">Hiroshima Strike - Aug 6</button>
-                    <button class="jump-btn" data-time="1945-08-09T01:55:00Z">Nagasaki Strike - Aug 9</button>
-                </div>
-
                 <div id="custom-jumps-section" class="hidden">
                     <h3
                         style="font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 12px; border-bottom: 1px solid var(--panel-border); padding-bottom: 8px;">
@@ -72,10 +64,6 @@
                 <div class="stat-card">
                     <span class="label">Total Aircraft</span>
                     <span class="value" id="total-count">0</span>
-                </div>
-                <div class="stat-card">
-                    <span class="label">Major Operations</span>
-                    <span class="value" id="ops-count">12</span>
                 </div>
             </div>
 
@@ -143,14 +131,11 @@
                     <div class="speed-control">
                         <label>Speed:</label>
                         <select id="time-speed">
-                            <option value="1">1x</option>
-                            <option value="2">2x</option>
-                            <option value="5">5x</option>
-                            <option value="10">10x</option>
-                            <option value="30">30x</option>
-                            <option value="60">1h/min</option>
-                            <option value="120">2h/min</option>
-                            <option value="1440">1d/min</option>
+                            <option value="1440" selected>1d/min</option>
+                            <option value="2880">2d/min</option>
+                            <option value="7200">5d/min</option>
+                            <option value="10080">1wk/min</option>
+                            <option value="43200">1mo/min</option>
                         </select>
                     </div>
                 </div>
@@ -161,13 +146,14 @@
 
             <!-- Map Overlays -->
             <div id="map-legend" class="glass-panel">
-                <div class="legend-item"><img src="icons/b29.svg" width="24" height="24" style="vertical-align:middle;margin-right:6px;"/> B-29 Bomber</div>
-                <div class="legend-item"><img src="icons/f6f.svg" width="24" height="24" style="vertical-align:middle;margin-right:6px;"/> US Fighter</div>
-                <div class="legend-item"><img src="icons/p51.svg" width="24" height="24" style="vertical-align:middle;margin-right:6px;"/> P-51 Mustang</div>
-                <div class="legend-item"><img src="icons/p38.svg" width="24" height="24" style="vertical-align:middle;margin-right:6px;"/> P-38 Lightning</div>
-                <div class="legend-item"><img src="icons/a6m5.svg" width="24" height="24" style="vertical-align:middle;margin-right:6px;"/> A6M5 Zero</div>
-                <div class="legend-item"><img src="icons/ki43.svg" width="24" height="24" style="vertical-align:middle;margin-right:6px;"/> Ki-43 Oscar</div>
-                <div class="legend-item"><img src="icons/ki46.svg" width="24" height="24" style="vertical-align:middle;margin-right:6px;"/> Ki-46 Dinah</div>
+                <div class="legend-item"><img src="icons/b29.svg" width="24" height="24" style="vertical-align:middle;margin-right:6px;" onerror="this.src='icons/default.svg'"/> B-29 Bomber</div>
+                <div class="legend-item"><img src="icons/f6f.svg" width="24" height="24" style="vertical-align:middle;margin-right:6px;" onerror="this.src='icons/default.svg'"/> US Fighter</div>
+                <div class="legend-item"><img src="icons/p51.svg" width="24" height="24" style="vertical-align:middle;margin-right:6px;" onerror="this.src='icons/default.svg'"/> P-51 Mustang</div>
+                <div class="legend-item"><img src="icons/p38.svg" width="24" height="24" style="vertical-align:middle;margin-right:6px;" onerror="this.src='icons/default.svg'"/> P-38 Lightning</div>
+                <div class="legend-item"><img src="icons/p40_edited.png" width="24" height="24" style="vertical-align:middle;margin-right:6px; filter: invert(1);" onerror="this.src='icons/default.svg'"/> P-40 Warhawk</div>
+                <div class="legend-item"><img src="icons/a6m5.svg" width="24" height="24" style="vertical-align:middle;margin-right:6px;" onerror="this.src='icons/default.svg'"/> A6M5 Zero</div>
+                <div class="legend-item"><img src="icons/ki43.svg" width="24" height="24" style="vertical-align:middle;margin-right:6px;" onerror="this.src='icons/default.svg'"/> Ki-43 Oscar</div>
+                <div class="legend-item"><img src="icons/ki46.svg" width="24" height="24" style="vertical-align:middle;margin-right:6px;" onerror="this.src='icons/default.svg'"/> Ki-46 Dinah</div>
             </div>
         </main>
     </div>
@@ -193,6 +179,8 @@
     <!-- Scripts -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="data/bases_data.js"></script>
+    <script src="data/missions_data.js"></script>
     <script src="app.js"></script>
 </body>
 

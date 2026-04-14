@@ -7,13 +7,15 @@ class PacificWingsApp {
     constructor() {
         this.map = null;
         this.flights = [];
+        this.bases = [];
         this.markers = new Map(); // PlaneID -> Marker
+        this.baseMarkers = new Map(); // base key -> Marker
         this.selectedFlightPath = null; // Polyline for selected flight
-        this.currentTime = new Date('1944-06-15T08:00:00Z').getTime(); // Starting with Operation Matterhorn
+        this.currentTime = new Date('1941-12-07T06:00:00Z').getTime();
         this.isPlaying = false;
-        this.playbackSpeed = 1; // Real-time multiplier
-        this.startTime = new Date('1944-01-01T00:00:00Z').getTime();
-        this.endTime = new Date('1945-09-02T12:00:00Z').getTime();
+        this.playbackSpeed = 1440; // 1 day per minute
+        this.startTime = new Date('1941-12-07T00:00:00Z').getTime();
+        this.endTime = new Date('1945-09-06T12:00:00Z').getTime();
         this.selectedFlightId = null;
 
         this.init();
@@ -22,22 +24,42 @@ class PacificWingsApp {
     async init() {
         this.initMap();
         this.initEventListeners();
-        await this.loadMissionsFromCSV('data/missions.csv');
-        this.generateReconFlights();
+        this.loadEmbeddedData();
+        this.buildTimeIndex();
         this.startTick();
         this.updateUI();
     }
 
-    async loadMissionsFromCSV(url) {
-        try {
-            const resp = await fetch(url);
-            if (!resp.ok) throw new Error(`Failed to load ${url}`);
-            const text = await resp.text();
-            this.parseMissionsCSV(text);
-        } catch (e) {
-            console.warn('Could not load missions CSV, falling back to built-in data.', e);
-            this.generateBuiltinMissions();
+    loadEmbeddedData() {
+        // Load bases from window.BASES_DATA (bases_data.js)
+        if (window.BASES_DATA) {
+            this.bases = window.BASES_DATA.map(b => ({
+                ...b,
+                startMs: new Date(b.start).getTime(),
+                endMs: new Date(b.end).getTime(),
+                key: `${b.af}-${b.name}`,
+            }));
         }
+
+        // Load missions from window.MISSIONS_CSV (missions_data.js)
+        if (window.MISSIONS_CSV) {
+            this.parseMissionsCSV(window.MISSIONS_CSV);
+        }
+    }
+
+    loadMissionsFromFile(file) {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            this.flights = [];
+            this.markers.forEach(m => this.map.removeLayer(m));
+            this.markers.clear();
+            this.parseMissionsCSV(e.target.result);
+            this.buildTimeIndex();
+            this.updateTick();
+            this.renderDynamicJumpPoints();
+            console.log(`Loaded ${this.flights.length} missions from ${file.name}`);
+        };
+        reader.readAsText(file);
     }
 
     parseMissionsCSV(text) {
@@ -102,7 +124,7 @@ class PacificWingsApp {
         this.map = L.map('map', {
             zoomControl: false,
             attributionControl: false
-        }).setView([32.0, 130.0], 5); // Focused on Japan/China/Korea
+        }).setView([32.0, 130.0], 4); // Focused on Japan/China/Korea
 
         L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
@@ -186,6 +208,13 @@ class PacificWingsApp {
         const closeBtn = document.querySelector('.close-modal');
         const processBtn = document.getElementById('process-csv');
         const clearBtn = document.getElementById('clear-all');
+        const fileInput = document.getElementById('csv-file-input');
+
+        fileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) this.loadMissionsFromFile(file);
+            fileInput.value = ''; // reset so same file can be reloaded
+        });
 
         showBtn.onclick = () => {
             this.prefillCSVInput();
@@ -230,195 +259,52 @@ class PacificWingsApp {
         }
 
         this.flights = [];
+        this.flightsByStart = [];
+        this.maxDuration = 0;
         this.selectedFlightId = null;
         document.getElementById('selected-flight-details').classList.add('hidden');
         this.renderDynamicJumpPoints();
         this.updateTick();
     }
 
-    // Fallback if CSV fetch fails
-    generateBuiltinMissions() {
-        const missions = [
-            {
-                id: 'B29-MATTERHORN-01',
-                type: 'B-29 Superfortress',
-                squadron: '58th Bombardment Wing',
-                origin: 'Xinjin, China',
-                destination: 'Yawata, Japan',
-                startTime: '1944-06-15T07:00:00Z',
-                duration: 12 * 3600 * 1000,
-                waypoints: [
-                    { lat: 30.34, lng: 103.84 }, // Xinjin (Takeoff)
-                    { lat: 29.56, lng: 106.59 }, // Chongqing
-                    { lat: 31.23, lng: 121.47 }, // Shanghai (Pass-by)
-                    { lat: 33.88, lng: 130.82 }, // Yawata (Target)
-                    { lat: 32.75, lng: 129.87 }, // Return leg
-                    { lat: 30.34, lng: 103.84 }  // Xinjin (Landing)
-                ],
-                altitude: 28000,
-                speed: 350
-            },
-            {
-                id: 'A6M5-INTERCEPT-01',
-                type: 'A6M5 Zero',
-                squadron: '302nd Naval Air Group',
-                origin: 'Atsugi, Japan',
-                destination: 'Tokyo Bay Intercept',
-                startTime: '1944-06-15T11:00:00Z',
-                duration: 2 * 3600 * 1000,
-                waypoints: [
-                    { lat: 35.45, lng: 139.45 }, // Atsugi
-                    { lat: 35.68, lng: 139.76 }, // Tokyo Central
-                    { lat: 35.20, lng: 139.65 }, // Yokosuka
-                    { lat: 35.45, lng: 139.45 }  // Return
-                ],
-                altitude: 15000,
-                speed: 330
-            },
-            {
-                id: 'F6F-HELLCAT-TF38',
-                type: 'F6F Hellcat',
-                squadron: 'VF-15 (USS Essex)',
-                origin: 'Task Force 38 (Philippine Sea)',
-                destination: 'Okinawa Strikes',
-                startTime: '1944-10-10T06:00:00Z',
-                duration: 4 * 3600 * 1000,
-                waypoints: [
-                    { lat: 22.0, lng: 130.0 }, // TF 38 Location
-                    { lat: 26.21, lng: 127.68 }, // Naha, Okinawa
-                    { lat: 26.70, lng: 128.00 }, // Northern Okinawa
-                    { lat: 22.0, lng: 130.0 }  // Back to Carrier
-                ],
-                altitude: 12000,
-                speed: 380
-            },
-            {
-                id: 'P51-ESCORT-01',
-                type: 'P-51D Mustang',
-                squadron: '15th Fighter Group',
-                origin: 'Iwo Jima',
-                destination: 'Tokyo Escort',
-                startTime: '1945-04-07T08:00:00Z',
-                duration: 7 * 3600 * 1000,
-                waypoints: [
-                    { lat: 24.78, lng: 141.32 }, // Iwo Jima
-                    { lat: 30.0, lng: 140.0 },   // Midpoint
-                    { lat: 35.68, lng: 139.76 }, // Tokyo
-                    { lat: 34.0, lng: 139.0 },   // Return route
-                    { lat: 24.78, lng: 141.32 }  // Home
-                ],
-                altitude: 25000,
-                speed: 430
-            },
-            {
-                id: 'B29-MARCH9-RAID',
-                type: 'B-29 Superfortress',
-                squadron: '314th Bombardment Wing',
-                origin: 'Guam',
-                destination: 'Tokyo (Operation Meetinghouse)',
-                startTime: '1945-03-09T17:00:00Z',
-                duration: 14 * 3600 * 1000,
-                waypoints: [
-                    { lat: 13.44, lng: 144.79 }, // Guam
-                    { lat: 20.0, lng: 143.0 },
-                    { lat: 35.68, lng: 139.76 }, // Tokyo
-                    { lat: 30.0, lng: 145.0 },
-                    { lat: 13.44, lng: 144.79 }
-                ],
-                altitude: 7000, // Low level raid
-                speed: 300
-            },
-            {
-                id: 'Ki43-BUSY-OSAKA',
-                type: 'Ki-43 Oscar',
-                squadron: '59th Sentai',
-                origin: 'Itami Base',
-                destination: 'Osaka Patrol',
-                startTime: '1945-03-09T22:00:00Z',
-                duration: 3 * 3600 * 1000,
-                waypoints: [
-                    { lat: 34.78, lng: 135.43 }, // Itami
-                    { lat: 34.69, lng: 135.50 }, // Osaka
-                    { lat: 34.33, lng: 135.30 }, // Kansai area
-                    { lat: 34.78, lng: 135.43 }  // Base
-                ],
-                altitude: 18000,
-                speed: 320
-            },
-            {
-                id: 'B29-ENOLA-GAY',
-                type: 'B-29 Superfortress',
-                squadron: '509th Composite Group (Enola Gay)',
-                origin: 'Tinian (North Field)',
-                destination: 'Tinian (Round Trip)',
-                startTime: '1945-08-05T16:45:00Z',
-                duration: 12.5 * 3600 * 1000,
-                waypoints: [
-                    { lat: 15.07, lng: 145.63 }, // Tinian Takeoff
-                    { lat: 24.78, lng: 141.32 }, // Iwo Jima Rendezvous
-                    { lat: 34.3947, lng: 132.4547 }, // Hiroshima Hypocenter
-                    { lat: 32.0, lng: 136.0 }, // Return
-                    { lat: 15.07, lng: 145.63 }  // Tinian Landing
-                ],
-                altitude: 31060,
-                speed: 330,
-                description: "Primary target: Hiroshima. Visual release of 'Little Boy' at 08:15 local. Return flight across Iwo Jima."
-            },
-            {
-                id: 'B29-BOCKSCAR',
-                type: 'B-29 Superfortress',
-                squadron: '509th Composite Group (Bockscar)',
-                origin: 'Tinian (North Field)',
-                destination: 'Okinawa / Tinian',
-                startTime: '1945-08-08T17:47:00Z',
-                duration: 13.5 * 3600 * 1000,
-                waypoints: [
-                    { lat: 15.07, lng: 145.63 }, // Tinian Takeoff
-                    { lat: 30.28, lng: 130.65 }, // Yakushima Rendezvous
-                    { lat: 33.88, lng: 130.88 }, // Kokura (Obscured)
-                    { lat: 32.7737, lng: 129.8633 }, // Nagasaki Hypocenter
-                    { lat: 26.35, lng: 127.76 }, // Okinawa Emergency Landing
-                    { lat: 15.01, lng: 145.62 }  // Tinian Landing
-                ],
-                altitude: 30000,
-                speed: 340,
-                description: "Nagasaki strike after Kokura was obscured. Landed at Okinawa Kadena due to fuel shortage."
-            }
-        ];
-
-        this.flights = missions.map(m => ({
-            ...m,
-            startMs: new Date(m.startTime).getTime(),
-            endMs: new Date(m.startTime).getTime() + m.duration
-        }));
-        this.generateReconFlights();
+    // ------------------------------------------------------------------
+    // Time index — built once after all flights are loaded.
+    // Allows O(log n + k) active-flight lookup instead of O(n) per tick.
+    // ------------------------------------------------------------------
+    buildTimeIndex() {
+        this.flightsByStart = [...this.flights].sort((a, b) => a.startMs - b.startMs);
+        this.maxDuration = this.flights.reduce((m, f) => Math.max(m, f.duration), 0);
     }
 
-    generateReconFlights() {
-        for (let i = 0; i < 20; i++) {
-            const date = new Date(1944, Math.floor(Math.random() * 12), Math.floor(Math.random() * 28));
-            const startMs = date.getTime();
-            const duration = 5 * 3600 * 1000;
-            this.flights.push({
-                id: `RECON-${i}`,
-                type: Math.random() > 0.5 ? 'Ki-46 Dinah' : 'P-38 Lightning',
-                squadron: 'Special Recon Unit',
-                origin: 'Seoul (Keijo)',
-                destination: 'Mukden (Shenyang)',
-                startTime: date.toISOString(),
-                startMs,
-                duration,
-                endMs: startMs + duration,
-                waypoints: [
-                    { lat: 37.56, lng: 126.97 },
-                    { lat: 38.99, lng: 125.75 },
-                    { lat: 41.80, lng: 123.43 },
-                    { lat: 37.56, lng: 126.97 }
-                ],
-                altitude: 32000,
-                speed: 380
-            });
+    // First index where flightsByStart[i].startMs > time
+    _upperBound(time) {
+        let lo = 0, hi = this.flightsByStart.length;
+        while (lo < hi) {
+            const mid = (lo + hi) >> 1;
+            if (this.flightsByStart[mid].startMs <= time) lo = mid + 1;
+            else hi = mid;
         }
+        return lo;
+    }
+
+    // First index where flightsByStart[i].startMs >= time
+    _lowerBound(time) {
+        let lo = 0, hi = this.flightsByStart.length;
+        while (lo < hi) {
+            const mid = (lo + hi) >> 1;
+            if (this.flightsByStart[mid].startMs < time) lo = mid + 1;
+            else hi = mid;
+        }
+        return lo;
+    }
+
+    getActiveFlights() {
+        if (!this.flightsByStart || !this.flightsByStart.length) return [];
+        // Candidates: started on or before now, started no earlier than (now - maxDuration)
+        const hi = this._upperBound(this.currentTime);
+        const lo = this._lowerBound(this.currentTime - this.maxDuration);
+        const candidates = this.flightsByStart.slice(lo, hi);
+        return candidates.filter(f => f.endMs >= this.currentTime);
     }
 
     startTick() {
@@ -457,6 +343,7 @@ class PacificWingsApp {
     }
 
     updateTick() {
+        this.updateBasesOnMap();
         this.updatePlanesOnMap();
         this.updateTimelineUI();
         this.updateStats();
@@ -464,50 +351,95 @@ class PacificWingsApp {
         this.updateSelectedDetails();
     }
 
-    updatePlanesOnMap() {
-        this.flights.forEach(flight => {
-            const isVisible = this.currentTime >= flight.startMs && this.currentTime <= flight.endMs;
+    // AF color assignments for base markers
+    _afColor(af) {
+        const colors = {
+            'Hawaiian AF': '#fbbf24', 'FEAF': '#f97316', 'Fifth AF': '#60a5fa',
+            'Seventh AF': '#34d399', 'Tenth AF': '#a78bfa', 'Eleventh AF': '#94a3b8',
+            'Thirteenth AF': '#fb923c', 'Fourteenth AF': '#f87171',
+            'Twentieth AF': '#ef4444',
+        };
+        return colors[af] || '#e2e8f0';
+    }
 
-            if (isVisible) {
-                // Interpolate position
-                const progress = (this.currentTime - flight.startMs) / flight.duration;
-                const pos = this.interpolatePath(flight.waypoints, progress);
-                const bearing = this.getBearingAtProgress(flight.waypoints, progress);
+    updateBasesOnMap() {
+        const activeKeys = new Set();
 
-                if (!this.markers.has(flight.id)) {
-                    // Create marker
-                    const iconFile = this.getIconFilename(flight.type);
-                    const icon = L.divIcon({
-                        className: 'plane-icon-wrapper',
-                        html: `<div class="plane-marker" style="transform: rotate(${bearing}deg); transition: transform 0.3s ease; width: 32px; height: 32px;">
-                                <img src="${iconFile}" width="32" height="32" style="display:block;"/>
-                               </div>`,
-                        iconSize: [32, 32],
-                        iconAnchor: [16, 16]
-                    });
-                    const marker = L.marker([pos.lat, pos.lng], { icon }).addTo(this.map);
-
-                    marker.on('click', () => this.selectFlight(flight.id));
-                    this.markers.set(flight.id, marker);
-                } else {
-                    const marker = this.markers.get(flight.id);
-                    marker.setLatLng([pos.lat, pos.lng]);
-
-                    // Rotate icon to match bearing
-                    const el = marker.getElement();
-                    if (el) {
-                        const inner = el.querySelector('.plane-marker');
-                        if (inner) inner.style.transform = `rotate(${bearing}deg)`;
-                    }
-                }
-            } else {
-                // Remove marker if it exists
-                if (this.markers.has(flight.id)) {
-                    this.map.removeLayer(this.markers.get(flight.id));
-                    this.markers.delete(flight.id);
+        for (const base of this.bases) {
+            const active = this.currentTime >= base.startMs && this.currentTime <= base.endMs;
+            if (active) {
+                activeKeys.add(base.key);
+                if (!this.baseMarkers.has(base.key)) {
+                    const color = this._afColor(base.af);
+                    const marker = L.circleMarker([base.lat, base.lng], {
+                        radius: 7,
+                        fillColor: color,
+                        color: '#fff',
+                        weight: 1.5,
+                        opacity: 0.9,
+                        fillOpacity: 0.8,
+                    }).addTo(this.map);
+                    marker.bindTooltip(
+                        `<strong>${base.name}</strong><br>${base.af}<br><em>${base.notes}</em>`,
+                        { direction: 'top', offset: [0, -8] }
+                    );
+                    this.baseMarkers.set(base.key, marker);
                 }
             }
+        }
+
+        // Remove bases no longer active
+        this.baseMarkers.forEach((marker, key) => {
+            if (!activeKeys.has(key)) {
+                this.map.removeLayer(marker);
+                this.baseMarkers.delete(key);
+            }
         });
+    }
+
+    updatePlanesOnMap() {
+        const activeFlights = this.getActiveFlights();
+        const activeIds = new Set(activeFlights.map(f => f.id));
+
+        // Remove markers for flights that are no longer active
+        this.markers.forEach((marker, id) => {
+            if (!activeIds.has(id)) {
+                this.map.removeLayer(marker);
+                this.markers.delete(id);
+            }
+        });
+
+        // Update or create markers only for active flights
+        for (const flight of activeFlights) {
+            const progress = (this.currentTime - flight.startMs) / flight.duration;
+            const pos = this.interpolatePath(flight.waypoints, progress);
+            const bearing = this.getBearingAtProgress(flight.waypoints, progress);
+
+            if (!this.markers.has(flight.id)) {
+                const iconFile = this.getIconFilename(flight.type);
+                const needsInvert = iconFile.endsWith('.png');
+                const imgStyle = `display:block;${needsInvert ? ' filter: invert(1);' : ''}`;
+                const icon = L.divIcon({
+                    className: 'plane-icon-wrapper',
+                    html: `<div class="plane-marker" style="transform: rotate(${bearing}deg); transition: transform 0.3s ease; width: 32px; height: 32px;">
+                            <img src="${iconFile}" width="32" height="32" style="${imgStyle}" onerror="this.src='icons/default.svg'"/>
+                           </div>`,
+                    iconSize: [32, 32],
+                    iconAnchor: [16, 16]
+                });
+                const marker = L.marker([pos.lat, pos.lng], { icon }).addTo(this.map);
+                marker.on('click', () => this.selectFlight(flight.id));
+                this.markers.set(flight.id, marker);
+            } else {
+                const marker = this.markers.get(flight.id);
+                marker.setLatLng([pos.lat, pos.lng]);
+                const el = marker.getElement();
+                if (el) {
+                    const inner = el.querySelector('.plane-marker');
+                    if (inner) inner.style.transform = `rotate(${bearing}deg)`;
+                }
+            }
+        }
     }
 
     calculateBearing(from, to) {
@@ -546,16 +478,15 @@ class PacificWingsApp {
     }
 
     getIconFilename(type) {
-        if (type.includes('B-29'))   return 'icons/b29.svg';
-        if (type.includes('A6M5') || type.includes('Zero')) return 'icons/a6m5.svg';
-        if (type.includes('F6F'))    return 'icons/f6f.svg';
-        if (type.includes('P-51'))   return 'icons/p51.svg';
-        if (type.includes('Ki-43') || type.includes('Oscar')) return 'icons/ki43.svg';
-        if (type.includes('Ki-46') || type.includes('Dinah')) return 'icons/ki46.svg';
+        if (type.includes('B-29'))                              return 'icons/b29.svg';
+        if (type.includes('A6M5') || type.includes('Zero'))     return 'icons/a6m5.svg';
+        if (type.includes('F6F'))                               return 'icons/f6f.svg';
+        if (type.includes('P-51'))                              return 'icons/p51.svg';
+        if (type.includes('Ki-43') || type.includes('Oscar'))   return 'icons/ki43.svg';
+        if (type.includes('Ki-46') || type.includes('Dinah'))   return 'icons/ki46.svg';
         if (type.includes('P-38') || type.includes('Lightning')) return 'icons/p38.svg';
-        // Fallback: pick by class
-        if (type.toLowerCase().includes('bomber')) return 'icons/b29.svg';
-        return 'icons/p51.svg';
+        if (type.includes('P-40') || type.includes('Warhawk')) return 'icons/p40_edited.png';
+        return 'icons/default.svg';
     }
 
     getMarkerColor(type) {
@@ -576,15 +507,21 @@ class PacificWingsApp {
     }
 
     updateStats() {
-        const activeCount = this.flights.filter(f => this.currentTime >= f.startMs && this.currentTime <= f.endMs).length;
-        document.getElementById('total-count').textContent = activeCount;
+        document.getElementById('total-count').textContent = this.getActiveFlights().length;
     }
 
     renderFlightList(filter = '') {
+        // Throttle list rebuilds to every 500ms unless a search filter is active
+        const now = Date.now();
+        if (!filter && this._lastListRender && now - this._lastListRender < 500) return;
+        this._lastListRender = now;
+
         const listContainer = document.getElementById('flight-list');
-        const activeFlights = this.flights
-            .filter(f => this.currentTime >= f.startMs && this.currentTime <= f.endMs)
-            .filter(f => f.id.toLowerCase().includes(filter.toLowerCase()) || f.type.toLowerCase().includes(filter.toLowerCase()));
+        const lowerFilter = filter.toLowerCase();
+        const activeFlights = this.getActiveFlights()
+            .filter(f => !lowerFilter ||
+                f.id.toLowerCase().includes(lowerFilter) ||
+                f.type.toLowerCase().includes(lowerFilter));
 
         // Simple update logic: clear and rebuild (for larger sets use virtual scrolling)
         listContainer.innerHTML = '';
@@ -648,44 +585,53 @@ class PacificWingsApp {
     }
 
     parseCSV(data) {
-        const lines = data.split('\n');
-        lines.forEach((line, index) => {
-            if (index === 0 && line.includes('squadron')) return; // Skip header
-            if (!line.trim()) return;
+        const firstLine = data.trimStart().split('\n')[0].toLowerCase();
+        const prevCount = this.flights.length;
 
-            const parts = line.split(',').map(p => p.trim());
-            if (parts.length < 8) return;
+        // Route to the richer parser if this looks like missions_chronology.csv
+        if (firstLine.startsWith('id,')) {
+            this.parseMissionsCSV(data);
+        } else {
+            // Legacy format: squadron, type, description, start_lat, start_lng,
+            //                end_lat, end_lng, start_time, duration_hours
+            const lines = data.split('\n');
+            lines.forEach((line, index) => {
+                if (index === 0 && line.includes('squadron')) return;
+                if (!line.trim()) return;
 
-            const [squadron, type, desc, sLat, sLng, eLat, eLng, sTime, durationHours] = parts;
+                const parts = this.splitCSVLine(line);
+                if (parts.length < 8) return;
 
-            const startMs = new Date(sTime).getTime();
-            if (isNaN(startMs)) return;
+                const [squadron, type, desc, sLat, sLng, eLat, eLng, sTime, durationHours] = parts;
+                const startMs = new Date(sTime).getTime();
+                if (isNaN(startMs)) return;
 
-            const mission = {
-                id: `IMPORTED-${index}-${Date.now()}`,
-                type: type || 'Unknown Aircraft',
-                squadron: squadron || 'Unknown Squadron',
-                origin: `Lat: ${sLat}, Lng: ${sLng}`,
-                destination: `Lat: ${eLat}, Lng: ${eLng}`,
-                startTime: sTime,
-                startMs: startMs,
-                duration: parseFloat(durationHours) * 3600 * 1000,
-                endMs: startMs + (parseFloat(durationHours) * 3600 * 1000),
-                waypoints: [
-                    { lat: parseFloat(sLat), lng: parseFloat(sLng) },
-                    { lat: parseFloat(eLat), lng: parseFloat(eLng) }
-                ],
-                altitude: 20000,
-                speed: 300,
-                description: desc
-            };
+                const duration = parseFloat(durationHours) * 3600 * 1000;
+                this.flights.push({
+                    id: `IMPORTED-${index}-${Date.now()}`,
+                    type: type || 'Unknown Aircraft',
+                    squadron: squadron || 'Unknown Squadron',
+                    origin: `${sLat}, ${sLng}`,
+                    destination: `${eLat}, ${eLng}`,
+                    startTime: sTime,
+                    startMs,
+                    duration,
+                    endMs: startMs + duration,
+                    waypoints: [
+                        { lat: parseFloat(sLat), lng: parseFloat(sLng) },
+                        { lat: parseFloat(eLat), lng: parseFloat(eLng) }
+                    ],
+                    altitude: 20000,
+                    speed: 300,
+                    description: desc
+                });
+            });
+        }
 
-            this.flights.push(mission);
-        });
-
+        this.buildTimeIndex();
         this.updateTick();
         this.renderDynamicJumpPoints();
-        alert(`Successfully loaded ${this.flights.filter(f => f.id.startsWith('IMPORTED')).length} custom missions.`);
+        alert(`Successfully loaded ${this.flights.length - prevCount} missions.`);
     }
 
     renderDynamicJumpPoints() {
