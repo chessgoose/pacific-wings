@@ -26,6 +26,7 @@ class PacificWingsApp {
         this.initEventListeners();
         this.loadEmbeddedData();
         this.buildTimeIndex();
+        this.initLegend();
         this.startTick();
         this.updateUI();
     }
@@ -197,6 +198,14 @@ class PacificWingsApp {
         // Jump Point Listeners
         this.addJumpPointListeners();
 
+        // Legend Toggle
+        document.getElementById('toggle-legend').addEventListener('click', () => {
+            const content = document.getElementById('legend-content');
+            const btn = document.getElementById('toggle-legend');
+            content.classList.toggle('collapsed');
+            btn.textContent = content.classList.contains('collapsed') ? '+' : '−';
+        });
+
         this.setupImportModal();
     }
 
@@ -243,6 +252,43 @@ class PacificWingsApp {
                 this.clearAllMissions();
             }
         };
+    }
+
+    initLegend() {
+        const legendGrid = document.getElementById('legend-grid');
+
+        // Define all aircraft types with their icons and descriptions
+        const aircraftTypes = [
+            { name: 'B-29 Superfortress', type: 'Bomber', icon: 'icons/b29.svg' },
+            { name: 'B-24 Liberator', type: 'Bomber', icon: 'icons/b24.png' },
+            { name: 'B-25 Mitchell', type: 'Bomber', icon: 'icons/b25.png' },
+            { name: 'P-38 Lightning', type: 'Fighter', icon: 'icons/p38.png' },
+            { name: 'P-51 Mustang', type: 'Fighter', icon: 'icons/p51.svg' },
+            { name: 'P-40 Warhawk', type: 'Fighter', icon: 'icons/p40_edited.png' },
+            { name: 'A6M Zero', type: 'Fighter', icon: 'icons/a6m5.svg' },
+            { name: 'F6F Hellcat', type: 'Fighter', icon: 'icons/f6f.svg' },
+            { name: 'Ki-43 Oscar', type: 'Fighter', icon: 'icons/ki43.svg' },
+            { name: 'Ki-46 Dinah', type: 'Reconnaissance', icon: 'icons/ki46.svg' },
+        ];
+
+        legendGrid.innerHTML = aircraftTypes.map(aircraft => {
+            const needsInvert = aircraft.icon.includes('p40_edited') ||
+                               aircraft.icon.includes('b24') ||
+                               aircraft.icon.includes('b25');
+            const imgStyle = needsInvert ? 'filter: invert(1);' : '';
+
+            return `
+                <div class="legend-aircraft">
+                    <div class="legend-icon">
+                        <img src="${aircraft.icon}" style="${imgStyle}" onerror="this.src='icons/default.svg'">
+                    </div>
+                    <div class="legend-info">
+                        <div class="legend-name">${aircraft.name}</div>
+                        <div class="legend-type">${aircraft.type}</div>
+                    </div>
+                </div>
+            `;
+        }).join('');
     }
 
     prefillCSVInput() {
