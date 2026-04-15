@@ -144,6 +144,9 @@ class PacificWingsApp {
 
         // Move zoom control to top-right
         L.control.zoom({ position: 'topright' }).addTo(this.map);
+
+        // Keep projected marker interpolation aligned with the rendered route at each zoom level.
+        this.map.on('zoom viewreset', () => this.updatePlanesOnMap());
     }
 
     initEventListeners() {
@@ -483,8 +486,9 @@ class PacificWingsApp {
         // Update or create markers only for active flights
         for (const flight of activeFlights) {
             const progress = (this.currentTime - flight.startMs) / flight.duration;
-            const pos = this.interpolatePath(flight.waypoints, progress);
-            const bearing = this.getBearingAtProgress(flight.waypoints, progress);
+            const pose = this.getPlanePoseAtProgress(flight.waypoints, progress);
+            const pos = pose.position;
+            const bearing = pose.bearing;
 
             if (!this.markers.has(flight.id)) {
                 const iconFile = this.getIconFilename(flight.type);
@@ -513,6 +517,53 @@ class PacificWingsApp {
         }
     }
 
+    getPlanePoseAtProgress(waypoints, progress) {
+        if (waypoints.length < 2) {
+            return {
+                position: waypoints[0],
+                bearing: 0
+            };
+        }
+
+        const normalized = this.normalizePath(waypoints);
+        const segmentCount = normalized.length - 1;
+        const scaledProgress = Math.min(Math.max(progress, 0), 1) * segmentCount;
+        const segmentIndex = Math.min(Math.floor(scaledProgress), segmentCount - 1);
+        const segmentProgress = scaledProgress - segmentIndex;
+        const p1 = normalized[segmentIndex];
+        const p2 = normalized[segmentIndex + 1];
+
+        if (!this.map) {
+            return {
+                position: {
+                    lat: p1.lat + (p2.lat - p1.lat) * segmentProgress,
+                    lng: p1.lng + (p2.lng - p1.lng) * segmentProgress
+                },
+                bearing: this.calculateBearing(p1, p2)
+            };
+        }
+
+        const zoom = this.map.getZoom();
+        const point1 = this.map.project(L.latLng(p1.lat, p1.lng), zoom);
+        const point2 = this.map.project(L.latLng(p2.lat, p2.lng), zoom);
+        const interpolated = L.point(
+            point1.x + (point2.x - point1.x) * segmentProgress,
+            point1.y + (point2.y - point1.y) * segmentProgress
+        );
+        const position = this.map.unproject(interpolated, zoom);
+        const dx = point2.x - point1.x;
+        const dy = point2.y - point1.y;
+        const bearing = (Math.atan2(dx, -dy) * 180 / Math.PI + 360) % 360;
+
+        return {
+            position: {
+                lat: position.lat,
+                lng: position.lng
+            },
+            bearing
+        };
+    }
+
     calculateBearing(from, to) {
         const toRad = deg => deg * Math.PI / 180;
         const toDeg = rad => rad * 180 / Math.PI;
@@ -531,29 +582,11 @@ class PacificWingsApp {
     }
 
     getBearingAtProgress(waypoints, progress) {
-        const normalized = this.normalizePath(waypoints);
-        const segmentCount = normalized.length - 1;
-        const segmentIndex = Math.min(Math.floor(progress * segmentCount), segmentCount - 1);
-        return this.calculateBearing(normalized[segmentIndex], normalized[segmentIndex + 1]);
+        return this.getPlanePoseAtProgress(waypoints, progress).bearing;
     }
 
     interpolatePath(waypoints, progress) {
-        if (waypoints.length < 2) return waypoints[0];
-
-        const normalized = this.normalizePath(waypoints);
-        const segmentCount = normalized.length - 1;
-        const segmentIndex = Math.floor(progress * segmentCount);
-        const segmentProgress = (progress * segmentCount) % 1;
-
-        if (segmentIndex >= segmentCount) return normalized[normalized.length - 1];
-
-        const p1 = normalized[segmentIndex];
-        const p2 = normalized[segmentIndex + 1];
-
-        return {
-            lat: p1.lat + (p2.lat - p1.lat) * segmentProgress,
-            lng: p1.lng + (p2.lng - p1.lng) * segmentProgress
-        };
+        return this.getPlanePoseAtProgress(waypoints, progress).position;
     }
 
     getIconFilename(type) {

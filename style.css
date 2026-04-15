@@ -554,6 +554,13 @@ header .subtitle {
     justify-content: center;
     filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.8));
     transition: transform 0.2s linear;
+    transform-origin: center center;
+}
+
+.plane-marker img,
+.plane-marker svg {
+    display: block;
+    transform-origin: center center;
 }
 
 .plane-marker.bomber svg {
