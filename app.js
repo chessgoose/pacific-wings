@@ -68,7 +68,7 @@ class PacificWingsApp {
         for (let i = 1; i < lines.length; i++) {
             const cols = this.splitCSVLine(lines[i]);
             if (cols.length < 10) continue;
-            const [id, squadron, type, description, sLat, sLng, eLat, eLng, startTime, durationHours, altitude, speed, waypointsRaw] = cols;
+            const [id, squadron, type, description, sLat, sLng, eLat, eLng, startTime, durationHours, altitude, speed, waypointsRaw, ...rest] = cols;
             const startMs = new Date(startTime).getTime();
             if (isNaN(startMs)) continue;
             const duration = parseFloat(durationHours) * 3600 * 1000;
@@ -86,6 +86,14 @@ class PacificWingsApp {
                 ];
             }
 
+            // Extract num_aircraft if present (may be in rest[2] for chronology format)
+            let numAircraft = 1;
+            if (rest.length > 2) {
+                const numStr = rest[2].trim();
+                const num = parseInt(numStr);
+                if (!isNaN(num)) numAircraft = num;
+            }
+
             this.flights.push({
                 id: id.trim(),
                 squadron: squadron.trim(),
@@ -99,7 +107,8 @@ class PacificWingsApp {
                 endMs: startMs + duration,
                 waypoints,
                 altitude: parseFloat(altitude) || 20000,
-                speed: parseFloat(speed) || 300
+                speed: parseFloat(speed) || 300,
+                numAircraft
             });
         }
     }
@@ -417,7 +426,7 @@ class PacificWingsApp {
 
             if (!this.markers.has(flight.id)) {
                 const iconFile = this.getIconFilename(flight.type);
-                const needsInvert = iconFile.endsWith('.png');
+                const needsInvert = iconFile.includes('p40_edited') || iconFile.includes('b24') || iconFile.includes('b25');
                 const imgStyle = `display:block;${needsInvert ? ' filter: invert(1);' : ''}`;
                 const icon = L.divIcon({
                     className: 'plane-icon-wrapper',
@@ -445,7 +454,13 @@ class PacificWingsApp {
     calculateBearing(from, to) {
         const toRad = deg => deg * Math.PI / 180;
         const toDeg = rad => rad * 180 / Math.PI;
-        const dLng = toRad(to.lng - from.lng);
+
+        // Handle date line crossing - use shortest path
+        let dLng = to.lng - from.lng;
+        if (dLng > 180) dLng -= 360;
+        else if (dLng < -180) dLng += 360;
+
+        dLng = toRad(dLng);
         const lat1 = toRad(from.lat);
         const lat2 = toRad(to.lat);
         const y = Math.sin(dLng) * Math.cos(lat2);
@@ -471,14 +486,21 @@ class PacificWingsApp {
         const p1 = waypoints[segmentIndex];
         const p2 = waypoints[segmentIndex + 1];
 
+        // Handle date line crossing - interpolate via shortest path
+        let lngDiff = p2.lng - p1.lng;
+        if (lngDiff > 180) lngDiff -= 360;
+        else if (lngDiff < -180) lngDiff += 360;
+
         return {
             lat: p1.lat + (p2.lat - p1.lat) * segmentProgress,
-            lng: p1.lng + (p2.lng - p1.lng) * segmentProgress
+            lng: p1.lng + lngDiff * segmentProgress
         };
     }
 
     getIconFilename(type) {
         if (type.includes('B-29'))                              return 'icons/b29.svg';
+        if (type.includes('B-24') || type.includes('Liberator')) return 'icons/b24.png';
+        if (type.includes('B-25') || type.includes('Mitchell')) return 'icons/b25.png';
         if (type.includes('A6M5') || type.includes('Zero'))     return 'icons/a6m5.svg';
         if (type.includes('F6F'))                               return 'icons/f6f.svg';
         if (type.includes('P-51'))                              return 'icons/p51.svg';

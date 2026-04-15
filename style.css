@@ -376,12 +376,15 @@ header .subtitle {
 
 /* Legend */
 #map-legend {
-    position: absolute;
-    top: 24px;
+    position: fixed;
+    top: 200px;
     right: 24px;
     padding: 12px 16px;
     border-radius: 8px;
-    z-index: 1000;
+    z-index: 10000;
+    max-height: 300px;
+    overflow-y: auto;
+    pointer-events: auto;
 }
 
 .legend-item {

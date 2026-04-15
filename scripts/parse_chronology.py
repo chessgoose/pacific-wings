@@ -253,6 +253,44 @@ def extract_aircraft(body):
     return found or [("Unknown Aircraft", 20000, 250)]
 
 
+def extract_aircraft_count(body, aircraft_type):
+    """Extract number of aircraft from description for a specific aircraft type."""
+    # First try exact type match (e.g., "9 B-17's")
+    patterns = [
+        rf'(\d+)\s+{re.escape(aircraft_type)}',
+        rf'(\d+)\s+{aircraft_type.split()[0]}',  # e.g., "B-17" from "B-17 Flying Fortress"
+    ]
+
+    # Also try generic patterns near the type
+    if 'B-29' in aircraft_type or 'Superfortress' in aircraft_type:
+        patterns.extend([r'(\d+)\s+B-29', r'(\d+)\s+B-29s?'])
+    elif 'B-17' in aircraft_type:
+        patterns.extend([r'(\d+)\s+B-17', r'(\d+)\s+B-17s?'])
+    elif 'P-51' in aircraft_type or 'Mustang' in aircraft_type:
+        patterns.extend([r'(\d+)\s+P-51', r'(\d+)\s+Mustang'])
+    elif 'P-40' in aircraft_type or 'Warhawk' in aircraft_type:
+        patterns.extend([r'(\d+)\s+P-40', r'(\d+)\s+Warhawk'])
+    elif 'P-38' in aircraft_type or 'Lightning' in aircraft_type:
+        patterns.extend([r'(\d+)\s+P-38', r'(\d+)\s+Lightning'])
+    elif 'F6F' in aircraft_type or 'Hellcat' in aircraft_type:
+        patterns.extend([r'(\d+)\s+F6F', r'(\d+)\s+Hellcat'])
+    elif 'Zero' in aircraft_type or 'A6M' in aircraft_type:
+        patterns.extend([r'(\d+)\s+(?:Zero|A6M)'])
+    elif 'Ki-' in aircraft_type or 'Oscar' in aircraft_type:
+        patterns.extend([r'(\d+)\s+Ki-\d+', r'(\d+)\s+Oscar'])
+
+    for pattern in patterns:
+        m = re.search(pattern, body, re.IGNORECASE)
+        if m:
+            return int(m.group(1))
+
+    # Fallback: if description mentions generic "aircraft" and type is singular, default to 1
+    if 'Unknown' not in aircraft_type and 'Fighter' not in aircraft_type and not re.search(r'\d+\s+(?:aircraft|airplane|plane|bomber|fighter)', body, re.IGNORECASE):
+        return 1
+
+    return ""  # Empty if not found
+
+
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
@@ -301,6 +339,7 @@ def main():
             for acft_idx, (acft_type, alt, spd) in enumerate(aircraft_list):
                 if origin_lat is None:
                     continue
+                num_acft = extract_aircraft_count(body, acft_type)
                 row_id = f"{af_tag}-{date_tag}-{acft_idx:02d}"
                 rows.append({
                     "id":             row_id,
@@ -318,12 +357,14 @@ def main():
                     "waypoints":      f"{origin_lat}:{origin_lng}",
                     "origin_base":    base_name or "",
                     "target_name":    "",
+                    "num_aircraft":   num_acft,
                 })
         else:
             for tgt_idx, tgt in enumerate(tgt_list[:3]):   # cap at 3 targets per entry
                 for acft_idx, (acft_type, alt, spd) in enumerate(aircraft_list[:2]):
                     if origin_lat is None:
                         continue
+                    num_acft = extract_aircraft_count(body, acft_type)
                     dur = estimate_duration(origin_lat, origin_lng, tgt["lat"], tgt["lng"], spd)
                     row_id = f"{af_tag}-{date_tag}-{tgt['primary'].replace(' ','')[:8].upper()}-{acft_idx:02d}"
                     rows.append({
@@ -342,6 +383,7 @@ def main():
                         "waypoints":      f"{origin_lat}:{origin_lng};{tgt['lat']}:{tgt['lng']}",
                         "origin_base":    base_name or "",
                         "target_name":    tgt["primary"],
+                        "num_aircraft":   num_acft,
                     })
 
     print(f"\nParsed {total_entries} chronology entries")
@@ -353,7 +395,7 @@ def main():
         "id", "squadron", "type", "description",
         "start_lat", "start_lng", "end_lat", "end_lng",
         "start_time", "duration_hours", "altitude", "speed",
-        "waypoints", "origin_base", "target_name",
+        "waypoints", "origin_base", "target_name", "num_aircraft",
     ]
 
     with open(OUT_FILE, "w", newline="", encoding="utf-8") as f:
