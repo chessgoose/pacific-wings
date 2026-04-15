@@ -336,13 +336,29 @@ class PacificWingsApp {
         }, tickRate);
     }
 
+    // Adjusts waypoint longitudes so consecutive points never jump > 180°,
+    // letting Leaflet draw the path across the date line instead of around the world.
+    normalizePath(waypoints) {
+        if (waypoints.length < 2) return waypoints;
+        const result = [{ ...waypoints[0] }];
+        for (let i = 1; i < waypoints.length; i++) {
+            let lng = waypoints[i].lng;
+            const prevLng = result[i - 1].lng;
+            let diff = lng - prevLng;
+            if (diff > 180) diff -= 360;
+            else if (diff < -180) diff += 360;
+            result.push({ lat: waypoints[i].lat, lng: prevLng + diff });
+        }
+        return result;
+    }
+
     updateSelectedPath(flight) {
         if (this.selectedFlightPath) {
             this.map.removeLayer(this.selectedFlightPath);
         }
 
         if (flight) {
-            this.selectedFlightPath = L.polyline(flight.waypoints, {
+            this.selectedFlightPath = L.polyline(this.normalizePath(flight.waypoints), {
                 color: '#3b82f6',
                 weight: 2,
                 opacity: 0.6,
@@ -469,31 +485,28 @@ class PacificWingsApp {
     }
 
     getBearingAtProgress(waypoints, progress) {
-        const segmentCount = waypoints.length - 1;
+        const normalized = this.normalizePath(waypoints);
+        const segmentCount = normalized.length - 1;
         const segmentIndex = Math.min(Math.floor(progress * segmentCount), segmentCount - 1);
-        return this.calculateBearing(waypoints[segmentIndex], waypoints[segmentIndex + 1]);
+        return this.calculateBearing(normalized[segmentIndex], normalized[segmentIndex + 1]);
     }
 
     interpolatePath(waypoints, progress) {
         if (waypoints.length < 2) return waypoints[0];
 
-        const segmentCount = waypoints.length - 1;
+        const normalized = this.normalizePath(waypoints);
+        const segmentCount = normalized.length - 1;
         const segmentIndex = Math.floor(progress * segmentCount);
         const segmentProgress = (progress * segmentCount) % 1;
 
-        if (segmentIndex >= segmentCount) return waypoints[waypoints.length - 1];
+        if (segmentIndex >= segmentCount) return normalized[normalized.length - 1];
 
-        const p1 = waypoints[segmentIndex];
-        const p2 = waypoints[segmentIndex + 1];
-
-        // Handle date line crossing - interpolate via shortest path
-        let lngDiff = p2.lng - p1.lng;
-        if (lngDiff > 180) lngDiff -= 360;
-        else if (lngDiff < -180) lngDiff += 360;
+        const p1 = normalized[segmentIndex];
+        const p2 = normalized[segmentIndex + 1];
 
         return {
             lat: p1.lat + (p2.lat - p1.lat) * segmentProgress,
-            lng: p1.lng + lngDiff * segmentProgress
+            lng: p1.lng + (p2.lng - p1.lng) * segmentProgress
         };
     }
 
@@ -529,7 +542,9 @@ class PacificWingsApp {
     }
 
     updateStats() {
-        document.getElementById('total-count').textContent = this.getActiveFlights().length;
+        const activeFlights = this.getActiveFlights();
+        const totalAircraft = activeFlights.reduce((sum, f) => sum + (f.numAircraft || 1), 0);
+        document.getElementById('total-count').textContent = totalAircraft.toLocaleString();
     }
 
     renderFlightList(filter = '') {
