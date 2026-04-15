@@ -36,8 +36,8 @@ class PacificWingsApp {
         if (window.BASES_DATA) {
             this.bases = window.BASES_DATA.map(b => ({
                 ...b,
-                startMs: new Date(b.start).getTime(),
-                endMs: new Date(b.end).getTime(),
+                startMs: this.parseDateBoundary(b.start, false),
+                endMs: this.parseDateBoundary(b.end, true),
                 key: `${b.af}-${b.name}`,
             }));
         }
@@ -46,6 +46,13 @@ class PacificWingsApp {
         if (window.MISSIONS_CSV) {
             this.parseMissionsCSV(window.MISSIONS_CSV);
         }
+    }
+
+    parseDateBoundary(dateStr, endOfDay = false) {
+        const ms = new Date(dateStr).getTime();
+        if (Number.isNaN(ms)) return ms;
+        if (!endOfDay) return ms;
+        return ms + (24 * 60 * 60 * 1000) - 1;
     }
 
     loadMissionsFromFile(file) {
@@ -99,7 +106,7 @@ class PacificWingsApp {
                 id: id.trim(),
                 squadron: squadron.trim(),
                 type: type.trim(),
-                description: description.trim(),
+                description: description.replace(/\s*===== PAGE \d+ =====\s*/g, ' ').replace(/\s+/g, ' ').trim(),
                 origin: `${sLat.trim()}, ${sLng.trim()}`,
                 destination: `${eLat.trim()}, ${eLng.trim()}`,
                 startTime,
@@ -133,7 +140,9 @@ class PacificWingsApp {
         // Initialize Leaflet map
         this.map = L.map('map', {
             zoomControl: false,
-            attributionControl: false
+            attributionControl: false,
+            minZoom: 2,
+            maxZoom: 20
         }).setView([32.0, 130.0], 4); // Focused on Japan/China/Korea
 
         L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
@@ -262,7 +271,7 @@ class PacificWingsApp {
 
         // Define all aircraft types with their icons and descriptions
         const aircraftTypes = [
-            { name: 'B-29 Superfortress', type: 'Bomber', icon: 'icons/b29.svg' },
+            { name: 'B-29 Superfortress', type: 'Bomber', icon: 'icons/b29.png' },
             { name: 'B-24 Liberator', type: 'Bomber', icon: 'icons/b24.png' },
             { name: 'B-25 Mitchell', type: 'Bomber', icon: 'icons/b25.png' },
             { name: 'P-38 Lightning', type: 'Fighter', icon: 'icons/p38.png' },
@@ -277,7 +286,8 @@ class PacificWingsApp {
         legendGrid.innerHTML = aircraftTypes.map(aircraft => {
             const needsInvert = aircraft.icon.includes('p40_edited') ||
                                aircraft.icon.includes('b24') ||
-                               aircraft.icon.includes('b25');
+                               aircraft.icon.includes('b25') ||
+                               aircraft.icon.includes('b29');
             const imgStyle = needsInvert ? 'filter: invert(1);' : '';
 
             return `
@@ -590,7 +600,7 @@ class PacificWingsApp {
     }
 
     getIconFilename(type) {
-        if (type.includes('B-29'))                              return 'icons/b29.svg';
+        if (type.includes('B-29'))                              return 'icons/b29.png';
         if (type.includes('B-24') || type.includes('Liberator')) return 'icons/b24.png';
         if (type.includes('B-25') || type.includes('Mitchell')) return 'icons/b25.png';
         if (type.includes('A6M5') || type.includes('Zero'))     return 'icons/a6m5.svg';

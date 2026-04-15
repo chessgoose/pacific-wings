@@ -1,9 +1,9 @@
 // Auto-generated from bases.csv
 window.BASES_DATA = [
-  {af:"Hawaiian AF",start:"1941-12-07",end:"1942-02-04",name:"Hickam Field Hawaii",lat:21.34,lng:-157.94,notes:"Renamed Seventh AF Feb 1942"},
-  {af:"FEAF",start:"1941-12-07",end:"1942-03-01",name:"Clark Field Philippines",lat:15.18,lng:120.56,notes:"Evacuated after Dec 8 attack; HQ moved to Australia"},
-  {af:"FEAF",start:"1942-03-01",end:"1944-09-30",name:"Darwin Australia",lat:-12.46,lng:130.84,notes:"Reconstituted in Australia"},
-  {af:"FEAF",start:"1944-09-30",end:"1945-08-15",name:"Leyte Philippines",lat:10.99,lng:124.91,notes:"Returned to Philippines Oct 1944"},
+  {af:"Hawaiian AF",start:"1941-12-07",end:"1942-02-04",name:"Hickam Field Hawaii",lat:21.34,lng:-157.94,notes:"Hickam page lists Hawaiian Air Force through 1942-02-04 redesignation"},
+  {af:"FEAF",start:"1941-12-07",end:"1941-12-24",name:"Clark Field Philippines",lat:15.18,lng:120.56,notes:"Clark retained as main Luzon FEAF origin until evacuation to Australia in late Dec 1941"},
+  {af:"FEAF",start:"1941-12-25",end:"1944-10-19",name:"Darwin Australia",lat:-12.46,lng:130.84,notes:"RAAF Darwin page notes FEAF established HQ at Darwin in late Dec 1941; later span remains campaign-inferred"},
+  {af:"FEAF",start:"1944-10-20",end:"1945-08-15",name:"Leyte Philippines",lat:10.99,lng:124.91,notes:"Return to Philippines keyed to Leyte landings; campaign-inferred main FEAF base"},
   {af:"Fifth AF",start:"1942-01-01",end:"1942-08-31",name:"Darwin Australia",lat:-12.46,lng:130.84,notes:"Initial SW Pacific base"},
   {af:"Fifth AF",start:"1942-09-01",end:"1943-08-31",name:"Port Moresby New Guinea",lat:-9.44,lng:147.18,notes:"Main forward base during New Guinea campaign"},
   {af:"Fifth AF",start:"1943-09-01",end:"1944-01-31",name:"Dobodura New Guinea",lat:-8.79,lng:148.04,notes:"Advanced to NE New Guinea"},
@@ -11,7 +11,7 @@ window.BASES_DATA = [
   {af:"Fifth AF",start:"1944-05-01",end:"1944-09-30",name:"Hollandia New Guinea",lat:-2.53,lng:140.72,notes:"Leapfrog advance"},
   {af:"Fifth AF",start:"1944-10-01",end:"1944-12-31",name:"Leyte Philippines",lat:10.99,lng:124.91,notes:"MacArthur returns to Philippines"},
   {af:"Fifth AF",start:"1945-01-01",end:"1945-08-15",name:"Clark Field Luzon",lat:15.18,lng:120.56,notes:"Luzon liberated Jan 1945"},
-  {af:"Seventh AF",start:"1942-02-04",end:"1943-11-30",name:"Hickam Field Hawaii",lat:21.34,lng:-157.94,notes:"Central Pacific defense"},
+  {af:"Seventh AF",start:"1942-02-05",end:"1943-11-30",name:"Hickam Field Hawaii",lat:21.34,lng:-157.94,notes:"Hickam page lists Seventh Air Force from 1942 after redesignation on 1942-02-05"},
   {af:"Seventh AF",start:"1943-12-01",end:"1944-01-31",name:"Funafuti Ellice Islands",lat:-8.52,lng:179.19,notes:"Forward base for Gilbert Is campaign"},
   {af:"Seventh AF",start:"1944-02-01",end:"1944-05-31",name:"Kwajalein Marshall Islands",lat:8.72,lng:167.73,notes:"Marshall Islands campaign"},
   {af:"Seventh AF",start:"1944-06-01",end:"1944-08-31",name:"Saipan Marianas",lat:15.18,lng:145.75,notes:"Marianas campaign"},
@@ -36,7 +36,7 @@ window.BASES_DATA = [
   {af:"Fourteenth AF",start:"1945-02-01",end:"1945-08-15",name:"Kunming China",lat:25.01,lng:102.71,notes:"Returned to Kunming"},
   {af:"Twentieth AF",start:"1944-04-01",end:"1944-10-31",name:"Kharagpur India",lat:22.35,lng:87.23,notes:"XX Bomber Command CBI (B-29s)"},
   {af:"Twentieth AF",start:"1944-04-01",end:"1944-10-31",name:"Chengdu China Advanced",lat:30.57,lng:104.07,notes:"China advance staging for B-29 strikes on Japan"},
-  {af:"Twentieth AF",start:"1944-11-01",end:"1945-08-15",name:"Guam North Field",lat:13.54,lng:144.93,notes:"XXI Bomber Command Marianas"},
+  {af:"Twentieth AF",start:"1945-02-03",end:"1945-08-15",name:"Guam North Field",lat:13.54,lng:144.93,notes:"Andersen page says Guam North Field became operational on 1945-02-03"},
   {af:"Twentieth AF",start:"1944-11-01",end:"1945-08-15",name:"Saipan Isley Field",lat:15.15,lng:145.73,notes:"XXI Bomber Command Marianas"},
-  {af:"Twentieth AF",start:"1944-11-01",end:"1945-08-15",name:"Tinian North Field",lat:15.07,lng:145.63,notes:"509th CG based here; Enola Gay"},
+  {af:"Twentieth AF",start:"1944-11-01",end:"1945-08-15",name:"Tinian North Field",lat:15.07,lng:145.63,notes:"509th CG based here; Enola Gay"}
 ];

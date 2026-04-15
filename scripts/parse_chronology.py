@@ -76,6 +76,8 @@ EAST_ASIA_KEYWORDS = [
     "b-29", "superfortress",
 ]
 
+PAGE_ARTIFACT_RE = re.compile(r"\s*===== PAGE \d+ =====\s*")
+
 # ---------------------------------------------------------------------------
 # Aircraft type → (altitude_ft, cruise_mph, display_type)
 # ---------------------------------------------------------------------------
@@ -325,8 +327,9 @@ def main():
         tgt_list = find_targets_in_text(body, targets)
         aircraft_list = extract_aircraft(body)
 
-        # Shorten description for the CSV
-        desc = re.sub(r'\s+', ' ', body).strip()
+        # Remove OCR page markers before compacting whitespace for the CSV output.
+        desc = PAGE_ARTIFACT_RE.sub(" ", body)
+        desc = re.sub(r'\s+', ' ', desc).strip()
         if len(desc) > 220:
             desc = desc[:217] + "..."
 

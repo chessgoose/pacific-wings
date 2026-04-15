@@ -417,7 +417,7 @@ header .subtitle {
 #legend-container {
     position: absolute;
     top: 24px;
-    right: 24px;
+    left: 24px;
     width: 280px;
     max-height: 80vh;
     border-radius: 12px;
