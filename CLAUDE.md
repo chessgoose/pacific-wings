@@ -1,0 +1,1 @@
+when updating missions_data.js and the csv, bias towards manually reading the descriptinons unless you know you can be 100% accurate programatically

@@ -17,6 +17,7 @@ class PacificWingsApp {
         this.startTime = new Date('1941-12-07T00:00:00Z').getTime();
         this.endTime = new Date('1945-09-06T12:00:00Z').getTime();
         this.selectedFlightId = null;
+        this.searchAllMissions = false; // Toggle for searching all vs active missions
 
         this.init();
     }
@@ -205,6 +206,14 @@ class PacificWingsApp {
 
         document.getElementById('flight-search').addEventListener('input', (e) => {
             this.renderFlightList(e.target.value);
+        });
+
+        document.getElementById('search-all-toggle').addEventListener('click', () => {
+            this.searchAllMissions = !this.searchAllMissions;
+            const btn = document.getElementById('search-all-toggle');
+            btn.classList.toggle('active', this.searchAllMissions);
+            btn.textContent = this.searchAllMissions ? 'All' : 'Active';
+            this.renderFlightList(document.getElementById('flight-search').value);
         });
 
         // Jump Point Listeners
@@ -644,19 +653,29 @@ class PacificWingsApp {
 
         const listContainer = document.getElementById('flight-list');
         const lowerFilter = filter.toLowerCase();
-        const activeFlights = this.getActiveFlights()
-            .filter(f => !lowerFilter ||
-                f.id.toLowerCase().includes(lowerFilter) ||
-                f.type.toLowerCase().includes(lowerFilter));
+
+        // Get flights to search: all or active based on toggle
+        let flightsToSearch = this.searchAllMissions ? this.flights : this.getActiveFlights();
+
+        // Filter flights based on search term
+        const displayFlights = flightsToSearch.filter(f => {
+            if (!lowerFilter) return true;
+            return f.id.toLowerCase().includes(lowerFilter) ||
+                   f.type.toLowerCase().includes(lowerFilter) ||
+                   f.squadron.toLowerCase().includes(lowerFilter) ||
+                   (f.description && f.description.toLowerCase().includes(lowerFilter));
+        });
 
         // Simple update logic: clear and rebuild (for larger sets use virtual scrolling)
         listContainer.innerHTML = '';
-        activeFlights.forEach(flight => {
+        displayFlights.slice(0, 100).forEach(flight => {  // Limit to 100 results
             const li = document.createElement('li');
             li.className = `flight-item ${this.selectedFlightId === flight.id ? 'selected' : ''}`;
+            const isActive = this.currentTime >= flight.startMs && this.currentTime <= flight.endMs;
+            const activeIndicator = isActive ? '●' : '○';
             li.innerHTML = `
                 <div class="flight-item-info">
-                    <span class="flight-callsign">${flight.id}</span>
+                    <span class="flight-callsign">${activeIndicator} ${flight.id}</span>
                     <span class="flight-type">${flight.type}</span>
                 </div>
                 <div class="flight-alt">${flight.altitude.toLocaleString()}'</div>
@@ -664,6 +683,16 @@ class PacificWingsApp {
             li.addEventListener('click', () => this.selectFlight(flight.id));
             listContainer.appendChild(li);
         });
+
+        // Show result count if searching all and filter is active
+        if (this.searchAllMissions && lowerFilter && displayFlights.length > 100) {
+            const moreLi = document.createElement('li');
+            moreLi.style.padding = '12px';
+            moreLi.style.fontSize = '0.85rem';
+            moreLi.style.color = 'var(--text-secondary)';
+            moreLi.textContent = `... and ${displayFlights.length - 100} more results`;
+            listContainer.appendChild(moreLi);
+        }
     }
 
     selectFlight(id) {

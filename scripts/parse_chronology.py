@@ -164,14 +164,29 @@ def load_targets():
     return targets
 
 
-def find_targets_in_text(text, targets):
-    """Return list of target dicts mentioned in text (longest match first)."""
+def find_targets_in_text(text, targets, af_name=""):
+    """Return list of target dicts mentioned in text (longest match first).
+    Uses context-aware disambiguation for ambiguous names."""
     text_lower = text.lower()
     found = []
     seen = set()
+
+    # Canton disambiguation: "Canton I" / "Canton Is" / "Canton |" = Canton Island
+    # Otherwise Canton = Guangzhou (China)
+    canton_island_pattern = re.search(r'canton\s*[i|I|]\b|canton\s+is\b', text_lower)
+    is_pacific_af = af_name in ("Hawaiian AF", "Seventh AF")
+
     for tgt in sorted(targets, key=lambda t: -max(len(n) for n in t["names"])):
         for name in tgt["names"]:
             if len(name) >= 4 and name in text_lower and tgt["primary"] not in seen:
+                # Disambiguation rules
+                if tgt["primary"] == "Canton" and (canton_island_pattern or is_pacific_af):
+                    # Skip Canton/Guangzhou — Canton Island will match instead
+                    break
+                if tgt["primary"] == "Canton Island" and not canton_island_pattern and not is_pacific_af:
+                    # Skip Canton Island for CBI/China AFs unless explicitly mentioned
+                    break
+
                 found.append(tgt)
                 seen.add(tgt["primary"])
                 break
@@ -324,70 +339,43 @@ def main():
             continue
 
         origin_lat, origin_lng, base_name = get_base(af_name, date, bases)
-        tgt_list = find_targets_in_text(body, targets)
+        tgt_list = find_targets_in_text(body, targets, af_name)
         aircraft_list = extract_aircraft(body)
 
         # Remove OCR page markers before compacting whitespace for the CSV output.
         desc = PAGE_ARTIFACT_RE.sub(" ", body)
         desc = re.sub(r'\s+', ' ', desc).strip()
-        if len(desc) > 220:
-            desc = desc[:217] + "..."
+        # Keep full description — no truncation
 
         date_iso = date.strftime("%Y-%m-%dT06:00:00Z")  # default 0600 local
         date_tag  = date.strftime("%Y%m%d")
         af_tag    = re.sub(r'\s+', '', af_name).upper()
 
-        if not tgt_list:
-            # No geocodable target — emit one row with no destination
-            for acft_idx, (acft_type, alt, spd) in enumerate(aircraft_list):
-                if origin_lat is None:
-                    continue
-                num_acft = extract_aircraft_count(body, acft_type)
-                row_id = f"{af_tag}-{date_tag}-{acft_idx:02d}"
-                rows.append({
-                    "id":             row_id,
-                    "squadron":       af_name,
-                    "type":           acft_type,
-                    "description":    desc,
-                    "start_lat":      origin_lat,
-                    "start_lng":      origin_lng,
-                    "end_lat":        origin_lat,
-                    "end_lng":        origin_lng,
-                    "start_time":     date_iso,
-                    "duration_hours": 4.0,
-                    "altitude":       alt,
-                    "speed":          spd,
-                    "waypoints":      f"{origin_lat}:{origin_lng}",
-                    "origin_base":    base_name or "",
-                    "target_name":    "",
-                    "num_aircraft":   num_acft,
-                })
-        else:
-            for tgt_idx, tgt in enumerate(tgt_list[:3]):   # cap at 3 targets per entry
-                for acft_idx, (acft_type, alt, spd) in enumerate(aircraft_list[:2]):
-                    if origin_lat is None:
-                        continue
-                    num_acft = extract_aircraft_count(body, acft_type)
-                    dur = estimate_duration(origin_lat, origin_lng, tgt["lat"], tgt["lng"], spd)
-                    row_id = f"{af_tag}-{date_tag}-{tgt['primary'].replace(' ','')[:8].upper()}-{acft_idx:02d}"
-                    rows.append({
-                        "id":             row_id,
-                        "squadron":       af_name,
-                        "type":           acft_type,
-                        "description":    desc,
-                        "start_lat":      origin_lat,
-                        "start_lng":      origin_lng,
-                        "end_lat":        tgt["lat"],
-                        "end_lng":        tgt["lng"],
-                        "start_time":     date_iso,
-                        "duration_hours": dur,
-                        "altitude":       alt,
-                        "speed":          spd,
-                        "waypoints":      f"{origin_lat}:{origin_lng};{tgt['lat']}:{tgt['lng']}",
-                        "origin_base":    base_name or "",
-                        "target_name":    tgt["primary"],
-                        "num_aircraft":   num_acft,
-                    })
+        # Emit one row per aircraft type — leave destination blank for manual fill
+        for acft_idx, (acft_type, alt, spd) in enumerate(aircraft_list):
+            if origin_lat is None:
+                continue
+            num_acft = extract_aircraft_count(body, acft_type)
+            row_id = f"{af_tag}-{date_tag}-{acft_idx:02d}"
+            rows.append({
+                "id":             row_id,
+                "squadron":       af_name,
+                "type":           acft_type,
+                "description":    desc,
+                "start_lat":      origin_lat,
+                "start_lng":      origin_lng,
+                "end_lat":        "",
+                "end_lng":        "",
+                "start_time":     date_iso,
+                "duration_hours": "",
+                "altitude":       alt,
+                "speed":          spd,
+                "waypoints":      "",
+                "origin_base":    base_name or "",
+                "target_name":    "",
+                "num_aircraft":   num_acft,
+                "to_check":       "",
+            })
 
     print(f"\nParsed {total_entries} chronology entries")
     print(f"  Skipped (non-East Asia): {skipped}")
@@ -399,6 +387,7 @@ def main():
         "start_lat", "start_lng", "end_lat", "end_lng",
         "start_time", "duration_hours", "altitude", "speed",
         "waypoints", "origin_base", "target_name", "num_aircraft",
+        "to_check",
     ]
 
     with open(OUT_FILE, "w", newline="", encoding="utf-8") as f:
