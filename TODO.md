@@ -1,0 +1,1 @@
+- make the colors of the bases make sense based on the squadron? have a legend somewhere

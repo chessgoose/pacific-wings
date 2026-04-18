@@ -359,35 +359,22 @@ class PacificWingsApp {
     initLegend() {
         const legendGrid = document.getElementById('legend-grid');
 
-        // Define all aircraft types with their icons and descriptions
-        const aircraftTypes = [
-            { name: 'B-29 Superfortress', type: 'Bomber', icon: 'icons/b29.png' },
-            { name: 'B-24 Liberator', type: 'Bomber', icon: 'icons/b24.png' },
-            { name: 'B-25 Mitchell', type: 'Bomber', icon: 'icons/b25.png' },
-            { name: 'P-38 Lightning', type: 'Fighter', icon: 'icons/p38.png' },
-            { name: 'P-51 Mustang', type: 'Fighter', icon: 'icons/p51.svg' },
-            { name: 'P-40 Warhawk', type: 'Fighter', icon: 'icons/p40_edited.png' },
-            { name: 'A6M Zero', type: 'Fighter', icon: 'icons/a6m5.svg' },
-            { name: 'F6F Hellcat', type: 'Fighter', icon: 'icons/f6f.svg' },
-            { name: 'Ki-43 Oscar', type: 'Fighter', icon: 'icons/ki43.svg' },
-            { name: 'Ki-46 Dinah', type: 'Reconnaissance', icon: 'icons/ki46.svg' },
-        ];
+        // Build legend from AIRCRAFT_DATA — skip generic categories and unknowns
+        const skipTypes = new Set(['Heavy Bomber', 'Medium Bomber', 'Light Bomber', 'Fighter', 'Unknown Aircraft']);
+        const legendTypes = (window.AIRCRAFT_DATA || []).filter(d => !skipTypes.has(d.type));
 
-        legendGrid.innerHTML = aircraftTypes.map(aircraft => {
-            const needsInvert = aircraft.icon.includes('p40_edited') ||
-                               aircraft.icon.includes('b24') ||
-                               aircraft.icon.includes('b25') ||
-                               aircraft.icon.includes('b29');
-            const imgStyle = needsInvert ? 'filter: invert(1);' : '';
-
+        // Normalize icon display size for legend (cap at 40px wide)
+        legendGrid.innerHTML = legendTypes.map(ac => {
+            const legendW = Math.min(ac.width, 40);
+            const legendH = Math.round(legendW * ac.height / ac.width);
+            const imgStyle = ac.needsInvert ? 'filter: invert(1);' : '';
             return `
                 <div class="legend-aircraft">
-                    <div class="legend-icon">
-                        <img src="${aircraft.icon}" style="${imgStyle}" onerror="this.src='icons/default.svg'">
+                    <div class="legend-icon" style="width:44px;display:flex;align-items:center;justify-content:center;">
+                        <img src="${ac.icon}" width="${legendW}" height="${legendH}" style="${imgStyle}" onerror="this.src='icons/default.svg'">
                     </div>
                     <div class="legend-info">
-                        <div class="legend-name">${aircraft.name}</div>
-                        <div class="legend-type">${aircraft.type}</div>
+                        <div class="legend-name">${ac.type}</div>
                     </div>
                 </div>
             `;
@@ -606,16 +593,15 @@ class PacificWingsApp {
             const bearing = pose.bearing;
 
             if (!this.markers.has(flight.id)) {
-                const iconFile = this.getIconFilename(flight.type);
-                const needsInvert = iconFile.includes('p40_edited') || iconFile.includes('b24') || iconFile.includes('b25');
-                const imgStyle = `display:block;${needsInvert ? ' filter: invert(1);' : ''}`;
+                const ac = this.getAircraftData(flight.type);
+                const imgStyle = `display:block;${ac.needsInvert ? ' filter: invert(1);' : ''}`;
                 const icon = L.divIcon({
                     className: 'plane-icon-wrapper',
-                    html: `<div class="plane-marker" style="transform: rotate(${bearing}deg); transition: transform 0.3s ease; width: 32px; height: 32px;">
-                            <img src="${iconFile}" width="32" height="32" style="${imgStyle}" onerror="this.src='icons/default.svg'"/>
+                    html: `<div class="plane-marker" style="transform: rotate(${bearing}deg); transition: transform 0.3s ease; width: ${ac.width}px; height: ${ac.height}px;">
+                            <img src="${ac.icon}" width="${ac.width}" height="${ac.height}" style="${imgStyle}" onerror="this.src='icons/default.svg'"/>
                            </div>`,
-                    iconSize: [32, 32],
-                    iconAnchor: [16, 16]
+                    iconSize: [ac.width, ac.height],
+                    iconAnchor: [Math.round(ac.width / 2), Math.round(ac.height / 2)]
                 });
                 const marker = L.marker([pos.lat, pos.lng], { icon }).addTo(this.map);
                 marker.on('click', () => this.selectFlight(flight.id));
@@ -704,18 +690,48 @@ class PacificWingsApp {
         return this.getPlanePoseAtProgress(waypoints, progress).position;
     }
 
+    getAircraftData(type) {
+        // Build a lookup index from window.AIRCRAFT_DATA on first call
+        if (!this._aircraftIndex) {
+            this._aircraftIndex = {};
+            (window.AIRCRAFT_DATA || []).forEach(d => {
+                this._aircraftIndex[d.type.toLowerCase()] = d;
+            });
+        }
+        const t = type.toLowerCase();
+        // Exact match first
+        if (this._aircraftIndex[t]) return this._aircraftIndex[t];
+        // Partial match
+        for (const [key, data] of Object.entries(this._aircraftIndex)) {
+            if (t.includes(key) || key.includes(t)) return data;
+        }
+        // Fallback: try common keywords
+        if (t.includes('b-29') || t.includes('superfortress')) return this._aircraftIndex['b-29 superfortress'];
+        if (t.includes('b-24') || t.includes('liberator'))     return this._aircraftIndex['b-24 liberator'];
+        if (t.includes('b-25') || t.includes('mitchell'))      return this._aircraftIndex['b-25 mitchell'];
+        if (t.includes('b-17') || t.includes('fortress'))      return this._aircraftIndex['b-17 flying fortress'];
+        if (t.includes('b-26') || t.includes('marauder'))      return this._aircraftIndex['b-26 marauder'];
+        if (t.includes('p-38') || t.includes('lightning'))     return this._aircraftIndex['p-38 lightning'];
+        if (t.includes('p-51') || t.includes('mustang'))       return this._aircraftIndex['p-51 mustang'];
+        if (t.includes('p-40') || t.includes('warhawk'))       return this._aircraftIndex['p-40 warhawk'];
+        if (t.includes('p-47') || t.includes('thunderbolt'))   return this._aircraftIndex['p-47 thunderbolt'];
+        if (t.includes('p-39') || t.includes('airacobra'))     return this._aircraftIndex['p-39 airacobra'];
+        if (t.includes('a-20') || t.includes('havoc'))         return this._aircraftIndex['a-20 havoc'];
+        if (t.includes('a-26') || t.includes('invader'))       return this._aircraftIndex['a-26 invader'];
+        if (t.includes('a-36') || t.includes('apache'))        return this._aircraftIndex['a-36 apache'];
+        if (t.includes('f4u') || t.includes('corsair'))        return this._aircraftIndex['f4u corsair'];
+        if (t.includes('f6f') || t.includes('hellcat'))        return this._aircraftIndex['f6f hellcat'];
+        if (t.includes('zero') || t.includes('a6m'))           return this._aircraftIndex['a6m zero'];
+        if (t.includes('heavy bomber'))                         return this._aircraftIndex['heavy bomber'];
+        if (t.includes('medium bomber'))                        return this._aircraftIndex['medium bomber'];
+        if (t.includes('light bomber'))                         return this._aircraftIndex['light bomber'];
+        if (t.includes('fighter'))                              return this._aircraftIndex['fighter'];
+        // Ultimate fallback
+        return { icon: 'icons/default.svg', width: 24, height: 24, needsInvert: false };
+    }
+
     getIconFilename(type) {
-        if (type.includes('B-29'))                              return 'icons/b29.png';
-        if (type.includes('B-24') || type.includes('Liberator')) return 'icons/b24.png';
-        if (type.includes('B-25') || type.includes('Mitchell')) return 'icons/b25.png';
-        if (type.includes('A6M5') || type.includes('Zero'))     return 'icons/a6m5.svg';
-        if (type.includes('F6F'))                               return 'icons/f6f.svg';
-        if (type.includes('P-51'))                              return 'icons/p51.svg';
-        if (type.includes('Ki-43') || type.includes('Oscar'))   return 'icons/ki43.svg';
-        if (type.includes('Ki-46') || type.includes('Dinah'))   return 'icons/ki46.svg';
-        if (type.includes('P-38') || type.includes('Lightning')) return 'icons/p38.svg';
-        if (type.includes('P-40') || type.includes('Warhawk')) return 'icons/p40_edited.png';
-        return 'icons/default.svg';
+        return this.getAircraftData(type).icon;
     }
 
     getMarkerColor(type) {
