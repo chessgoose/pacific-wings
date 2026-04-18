@@ -1,2 +1,0 @@
-corrected_on,location_name,dataset_key,old_lat,old_lng,new_lat,new_lng,notes
-2026-04-15,Kiska Harbor,Kiska,-51.98,177.52,51.97,177.56,"Corrected latitude sign and aligned the Kiska target to Kiska Harbor coordinates."

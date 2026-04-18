@@ -61,10 +61,18 @@
                 <button id="search-all-toggle" class="search-toggle-btn" title="Search all missions">All</button>
             </div>
 
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <span class="label">Total Aircraft</span>
-                    <span class="value" id="total-count">0</span>
+            <div style="margin-bottom: 15px;">
+                <input type="text" id="mission-id-jump" placeholder="Jump to Mission ID (e.g., HAWAIIANAF-19411207-00)"
+                       style="width: 100%; padding: 8px 12px; border: 1px solid var(--panel-border); border-radius: 6px; background: var(--sidebar-bg); color: var(--text-primary); font-size: 0.85rem;">
+                <div id="mission-id-error" style="color: var(--danger-color); font-size: 0.75rem; margin-top: 4px; display: none;"></div>
+            </div>
+
+            <div class="squadron-filter-container" style="margin-bottom: 15px;">
+                <div style="font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 8px; border-bottom: 1px solid var(--panel-border); padding-bottom: 6px;">
+                    Filter by Squadron
+                </div>
+                <div id="squadron-tags" class="squadron-tags" style="display: flex; flex-wrap: wrap; gap: 6px;">
+                    <!-- Squadron tags will be injected here -->
                 </div>
             </div>
 

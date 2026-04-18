@@ -714,3 +714,38 @@ header .subtitle {
 .primary-btn:hover {
     transform: translateY(-2px);
 }
+
+/* Squadron Filter Tags */
+.squadron-filter-container {
+    padding: 12px 0;
+}
+
+.squadron-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.squadron-tag {
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 1px solid var(--panel-border);
+    background: transparent;
+    color: var(--text-primary);
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    font-family: inherit;
+}
+
+.squadron-tag:hover {
+    background: var(--panel-bg);
+    border-color: var(--accent-color);
+}
+
+.squadron-tag.active {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #fff;
+}

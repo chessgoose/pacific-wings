@@ -1,2 +1,0 @@
-- Create icons for each aircraft type (B-29, etc.)
-- Filter the combat chronology and convert into CSV 

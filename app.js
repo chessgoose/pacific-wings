@@ -18,6 +18,7 @@ class PacificWingsApp {
         this.endTime = new Date('1945-09-06T12:00:00Z').getTime();
         this.selectedFlightId = null;
         this.searchAllMissions = false; // Toggle for searching all vs active missions
+        this.squadronFilter = null; // Current squadron filter (null = no filter)
 
         this.init();
     }
@@ -30,6 +31,7 @@ class PacificWingsApp {
         this.initLegend();
         this.startTick();
         this.updateUI();
+        this.updateTick(); // Ensure bases and planes appear immediately on load
     }
 
     loadEmbeddedData() {
@@ -46,11 +48,65 @@ class PacificWingsApp {
         // Load missions from window.MISSIONS_CSV (missions_data.js)
         if (window.MISSIONS_CSV) {
             this.parseMissionsCSV(window.MISSIONS_CSV);
+            this.renderSquadronTags();
         }
     }
 
+    renderSquadronTags() {
+        // Get unique squadrons, sorted alphabetically
+        const squadrons = [...new Set(this.flights.map(f => f.squadron))].sort();
+        const container = document.getElementById('squadron-tags');
+        container.innerHTML = '';
+
+        squadrons.forEach(squadron => {
+            const tag = document.createElement('button');
+            tag.className = 'squadron-tag';
+            tag.textContent = squadron;
+            tag.style.cssText = `
+                padding: 6px 12px;
+                border-radius: 20px;
+                border: 1px solid var(--panel-border);
+                background: transparent;
+                color: var(--text-primary);
+                cursor: pointer;
+                font-size: 0.8rem;
+                transition: all 0.2s ease;
+            `;
+
+            // Highlight if this squadron is currently filtered
+            if (this.squadronFilter === squadron) {
+                tag.style.backgroundColor = 'var(--accent-color)';
+                tag.style.borderColor = 'var(--accent-color)';
+                tag.style.color = '#fff';
+            }
+
+            tag.addEventListener('mouseenter', () => {
+                if (this.squadronFilter !== squadron) {
+                    tag.style.backgroundColor = 'var(--panel-bg)';
+                }
+            });
+
+            tag.addEventListener('mouseleave', () => {
+                if (this.squadronFilter !== squadron) {
+                    tag.style.backgroundColor = 'transparent';
+                }
+            });
+
+            tag.addEventListener('click', () => {
+                // Toggle squadron filter
+                this.squadronFilter = this.squadronFilter === squadron ? null : squadron;
+                this.renderSquadronTags(); // Re-render to update highlights
+                this.renderFlightList(document.getElementById('flight-search').value);
+            });
+
+            container.appendChild(tag);
+        });
+    }
+
     parseDateBoundary(dateStr, endOfDay = false) {
-        const ms = new Date(dateStr).getTime();
+        // Ensure UTC parsing by adding T00:00:00Z if not present
+        const normalizedStr = dateStr.includes('T') ? dateStr : dateStr + 'T00:00:00Z';
+        const ms = new Date(normalizedStr).getTime();
         if (Number.isNaN(ms)) return ms;
         if (!endOfDay) return ms;
         return ms + (24 * 60 * 60 * 1000) - 1;
@@ -62,8 +118,10 @@ class PacificWingsApp {
             this.flights = [];
             this.markers.forEach(m => this.map.removeLayer(m));
             this.markers.clear();
+            this.squadronFilter = null; // Reset squadron filter
             this.parseMissionsCSV(e.target.result);
             this.buildTimeIndex();
+            this.renderSquadronTags();
             this.updateTick();
             this.renderDynamicJumpPoints();
             console.log(`Loaded ${this.flights.length} missions from ${file.name}`);
@@ -143,8 +201,9 @@ class PacificWingsApp {
             zoomControl: false,
             attributionControl: false,
             minZoom: 2,
-            maxZoom: 20
-        }).setView([32.0, 130.0], 4); // Focused on Japan/China/Korea
+            maxZoom: 20,
+            worldCopyJump: true
+        }).setView([20.0, 170.0], 3); // Pacific Theater (India/Philippines left, Hawaii center, US West Coast right)
 
         L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
@@ -215,6 +274,28 @@ class PacificWingsApp {
             btn.textContent = this.searchAllMissions ? 'All' : 'Active';
             this.renderFlightList(document.getElementById('flight-search').value);
         });
+
+        // Mission ID Jump
+        const missionIdInput = document.getElementById('mission-id-jump');
+        if (missionIdInput) {
+            missionIdInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    const missionId = missionIdInput.value.trim();
+                    if (missionId) {
+                        const success = this.jumpToMissionId(missionId);
+                        if (!success) {
+                            const errorDiv = document.getElementById('mission-id-error');
+                            if (errorDiv) {
+                                errorDiv.textContent = `Mission "${missionId}" not found`;
+                                errorDiv.style.display = 'block';
+                            }
+                        } else {
+                            missionIdInput.value = ''; // Clear input on success
+                        }
+                    }
+                }
+            });
+        }
 
         // Jump Point Listeners
         this.addJumpPointListeners();
@@ -339,7 +420,9 @@ class PacificWingsApp {
         this.flightsByStart = [];
         this.maxDuration = 0;
         this.selectedFlightId = null;
+        this.squadronFilter = null;
         document.getElementById('selected-flight-details').classList.add('hidden');
+        this.renderSquadronTags();
         this.renderDynamicJumpPoints();
         this.updateTick();
     }
@@ -464,7 +547,12 @@ class PacificWingsApp {
                 activeKeys.add(base.key);
                 if (!this.baseMarkers.has(base.key)) {
                     const color = this._afColor(base.af);
-                    const marker = L.circleMarker([base.lat, base.lng], {
+                    // Normalize longitude to the visible side of the map
+                    const mapCenterLng = this.map.getCenter().lng;
+                    let lng = base.lng;
+                    while (lng < mapCenterLng - 180) lng += 360;
+                    while (lng > mapCenterLng + 180) lng -= 360;
+                    const marker = L.circleMarker([base.lat, lng], {
                         radius: 7,
                         fillColor: color,
                         color: '#fff',
@@ -488,6 +576,14 @@ class PacificWingsApp {
                 this.baseMarkers.delete(key);
             }
         });
+
+        // Debug: log total active base markers
+        console.log(`Active bases on map: ${activeKeys.size}, Total markers: ${this.baseMarkers.size}`);
+        if (this.baseMarkers.has('Hawaiian AF-Hickam Field Hawaii')) {
+            console.log('✓ Hickam (Hawaiian AF) marker is in baseMarkers');
+        } else {
+            console.log('✗ Hickam (Hawaiian AF) marker NOT in baseMarkers');
+        }
     }
 
     updatePlanesOnMap() {
@@ -648,7 +744,7 @@ class PacificWingsApp {
     renderFlightList(filter = '') {
         // Throttle list rebuilds to every 500ms unless a search filter is active
         const now = Date.now();
-        if (!filter && this._lastListRender && now - this._lastListRender < 500) return;
+        if (!filter && !this.squadronFilter && this._lastListRender && now - this._lastListRender < 500) return;
         this._lastListRender = now;
 
         const listContainer = document.getElementById('flight-list');
@@ -657,8 +753,14 @@ class PacificWingsApp {
         // Get flights to search: all or active based on toggle
         let flightsToSearch = this.searchAllMissions ? this.flights : this.getActiveFlights();
 
-        // Filter flights based on search term
+        // Filter flights based on search term and squadron filter
         const displayFlights = flightsToSearch.filter(f => {
+            // Check squadron filter first
+            if (this.squadronFilter && f.squadron !== this.squadronFilter) {
+                return false;
+            }
+
+            // Then check search term
             if (!lowerFilter) return true;
             return f.id.toLowerCase().includes(lowerFilter) ||
                    f.type.toLowerCase().includes(lowerFilter) ||
@@ -723,6 +825,35 @@ class PacificWingsApp {
         this.renderFlightList(document.getElementById('flight-search').value);
     }
 
+    jumpToMissionId(missionId) {
+        const flight = this.flights.find(f => f.id === missionId);
+        if (!flight) {
+            return false; // Mission not found
+        }
+
+        // Stop playback
+        this.isPlaying = false;
+        document.getElementById('play-pause').textContent = '▶';
+
+        // Jump to mission start time
+        this.currentTime = flight.startMs;
+
+        // Select the flight (shows details panel and updates map)
+        this.selectFlight(missionId);
+
+        // Update timeline and map
+        this.updateTick();
+
+        // Clear error message
+        const errorDiv = document.getElementById('mission-id-error');
+        if (errorDiv) {
+            errorDiv.style.display = 'none';
+            errorDiv.textContent = '';
+        }
+
+        return true;
+    }
+
     updateSelectedDetails() {
         if (!this.selectedFlightId) return;
         const flight = this.flights.find(f => f.id === this.selectedFlightId);
@@ -783,7 +914,9 @@ class PacificWingsApp {
             });
         }
 
+        this.squadronFilter = null;
         this.buildTimeIndex();
+        this.renderSquadronTags();
         this.updateTick();
         this.renderDynamicJumpPoints();
         alert(`Successfully loaded ${this.flights.length - prevCount} missions.`);
