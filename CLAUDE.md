@@ -1,0 +1,2 @@
+- When updating missions_data.js and the csv, bias towards manually reading the descriptions unless you know you can be 100% accurate programatically
+- Whenever you make changes manually to missions_chronology.csv, go and use /Users/lzhao/Downloads/pacific-wings/scripts/generate-missions-data.py to update missions_data.js as well

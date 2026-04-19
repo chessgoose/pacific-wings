@@ -1,0 +1,21 @@
+type,length_ft,wingspan_ft,icon_src,notes
+B-29 Superfortress,99.0,141.3,icons/b29.png,Boeing B-29
+B-32 Dominator,83.6,135.0,,Consolidated B-32
+B-17 Flying Fortress,74.9,103.9,,Boeing B-17G
+B-24 Liberator,67.2,110.0,icons/b24.png,Consolidated B-24J
+B-18 Bolo,56.8,89.5,,Douglas B-18
+B-26 Marauder,56.1,71.0,,Martin B-26
+B-25 Mitchell,52.8,67.7,icons/b25.png,North American B-25J
+A-26 Invader,50.0,70.0,,Douglas A-26
+A-20 Havoc,47.0,61.4,,Douglas A-20G
+F-5A Lightning,37.8,52.0,,Lockheed F-5A (P-38 recon)
+P-38 Lightning,37.8,52.0,icons/p38.png,Lockheed P-38
+P-47 Thunderbolt,36.1,40.9,,Republic P-47D
+F4U Corsair,33.4,41.0,,Vought F4U
+F6F Hellcat,33.7,42.8,,Grumman F6F
+P-51 Mustang,32.2,37.0,,North American P-51D
+A-36 Apache,32.2,37.0,,North American A-36 (P-51 variant)
+P-40 Warhawk,31.7,37.3,icons/p40_edited.png,Curtiss P-40N
+P-39 Airacobra,30.2,34.0,,Bell P-39
+P-36 Hawk,28.6,37.3,,Curtiss P-36 Hawk
+A6M Zero,29.4,36.1,,Mitsubishi A6M

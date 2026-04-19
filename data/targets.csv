@@ -1,0 +1,28 @@
+name,aliases,lat,lng,country,type
+Rabaul,Rabaul,-4.20,152.18,New Britain,port/airfield
+Vunakanau,Vunakanau A/F,-4.30,152.10,New Britain,airfield
+Tobera,Tobera A/F,-4.35,152.30,New Britain,airfield
+Lakunai,Lakunai A/F,-4.20,152.18,New Britain,airfield
+Kiska,Kiska Island,51.97,177.56,Aleutians,island/base
+Attu,Attu Island,52.90,-173.19,Aleutians,island/base
+Paramushiru,Paramushiro,50.38,155.76,Kuriles,island/airfield
+Shimushu,Shimushu,50.71,156.12,Kuriles,island/airfield
+Lae,Lae,-6.73,146.99,New Guinea,port/airfield
+Salamaua,Salamaua,-7.07,147.17,New Guinea,port/airfield
+Finschhafen,Finschhafen,-6.60,147.85,New Guinea,port
+Gasmata,Gasmata,-6.28,150.33,New Britain,airfield
+Cape Gloucester,Cape Gloucester A/F,-5.44,148.44,New Britain,airfield
+Shihhweiyao,"Shih Hui Yao,Shihhwei",27.23,111.47,China,foundry
+That Khe,"Thatkhe,Thất Khê",21.95,105.97,Vietnam,transport hub
+Vinh,"Thanh Hoa,Vinh Thanh",18.67,105.72,Vietnam,town
+Kep,"Cap Kep,Kep Point",20.77,106.62,Vietnam,airfield
+Luc Nam,"Luc-nam,Lucnam",21.8,106.18,Vietnam,town
+Sichuan,"Szechuan,Sz Chuan",27.32,109.51,China,town
+Neihsiang,"Nei Hsiang,Neixiang",33.34,111.92,China,town
+Sinyang,"Hsinyang,Xinyang",32.12,114.07,China,town
+Mingkiang,"Ming Chiang,Mingjiang",25.8,110.33,China,town
+Siangtan,"Hsiang Tan,Xiangtan",27.82,112.95,China,town
+Kweiping,"Kueiping,Guiping",23.4,110.07,China,town
+Samah Bay,"Samaah,Samah",5.32,109.48,Malaysia,anchorage
+Truk,"Truk Lagoon,Chuuk,Truk Atoll",7.45,151.85,Caroline Islands,naval base
+Susaki,"Susaki A/F,Susuiki",27.06,142.21,Chichi Jima,airfield
