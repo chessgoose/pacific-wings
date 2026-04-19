@@ -379,9 +379,10 @@ body {
 
 .fd-route .fd-cell-value {
     font-size: 0.78rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    line-height: 1.4;
 }
 
 .fd-description {
@@ -967,45 +968,15 @@ body {
 }
 
 .target-marker {
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
-    background: transparent;
-    border: 2px solid #ef4444;
-    box-shadow: 0 0 6px rgba(239, 68, 68, 0.7), inset 0 0 3px rgba(239, 68, 68, 0.3);
-    position: relative;
-    transition: transform 0.15s ease;
-    cursor: default;
-    animation: target-pulse 1.8s ease-in-out infinite;
-}
-
-.target-marker::before,
-.target-marker::after {
-    content: '';
-    position: absolute;
     background: #ef4444;
-    opacity: 0.75;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+    cursor: default;
+    transition: transform 0.15s ease;
 }
 
-/* Crosshair horizontal bar */
-.target-marker::before {
-    width: 6px;
-    height: 1.5px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-/* Crosshair vertical bar */
-.target-marker::after {
-    width: 1.5px;
-    height: 6px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-@keyframes target-pulse {
-    0%, 100% { box-shadow: 0 0 5px rgba(239, 68, 68, 0.6), inset 0 0 3px rgba(239, 68, 68, 0.2); }
-    50%       { box-shadow: 0 0 10px rgba(239, 68, 68, 0.9), inset 0 0 5px rgba(239, 68, 68, 0.4); }
+.target-icon-wrapper:hover .target-marker {
+    transform: scale(1.9);
 }

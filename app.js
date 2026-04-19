@@ -177,7 +177,12 @@ class PacificWingsApp {
             }
 
             // rest[0] = origin_base, rest[1] = target_name
+            const originBaseName = (rest.length > 0 ? rest[0].trim() : '') || '';
             const targetName = (rest.length > 1 ? rest[1].trim() : '') || '';
+            const sLatNum = parseFloat(sLat.trim()) || 0;
+            const sLngNum = parseFloat(sLng.trim()) || 0;
+            const eLatNum = parseFloat(eLat.trim()) || 0;
+            const eLngNum = parseFloat(eLng.trim()) || 0;
 
             this.flights.push({
                 id: id.trim(),
@@ -185,7 +190,10 @@ class PacificWingsApp {
                 type: type.trim(),
                 description: description.replace(/\s*===== PAGE \d+ =====\s*/g, ' ').replace(/\s+/g, ' ').trim(),
                 origin: `${sLat.trim()}, ${sLng.trim()}`,
+                originLatLng: { lat: sLatNum, lng: sLngNum },
+                originBaseName,
                 destination: `${eLat.trim()}, ${eLng.trim()}`,
+                destLatLng: { lat: eLatNum, lng: eLngNum },
                 startTime,
                 startMs,
                 duration,
@@ -651,8 +659,8 @@ class PacificWingsApp {
             const icon = L.divIcon({
                 className: 'target-icon-wrapper',
                 html: `<div class="target-marker"></div>`,
-                iconSize: [14, 14],
-                iconAnchor: [7, 7]
+                iconSize: [16, 16],
+                iconAnchor: [8, 8]
             });
             const marker = L.marker([targetData.lat, lng], { icon, zIndexOffset: -100 }).addTo(this.map);
             marker.bindTooltip(
@@ -959,8 +967,25 @@ class PacificWingsApp {
         document.getElementById('plane-type').textContent = flight.type;
         document.getElementById('plane-id').textContent = flight.id;
         document.getElementById('plane-squadron').textContent = flight.squadron;
-        document.getElementById('plane-origin').textContent = flight.origin;
-        document.getElementById('plane-dest').textContent = flight.destination;
+
+        // Display origin location with coordinates as secondary text
+        const originEl = document.getElementById('plane-origin');
+        originEl.innerHTML = '';
+        const originName = flight.originBaseName || 'Unknown';
+        const originLat = flight.originLatLng?.lat || 0;
+        const originLng = flight.originLatLng?.lng || 0;
+        const originCoords = originLat && originLng ? `${originLat.toFixed(2)}°, ${originLng.toFixed(2)}°` : 'Unknown';
+        originEl.innerHTML = `<strong>${originName}</strong><br><span style="font-size:0.85em;opacity:0.7;">${originCoords}</span>`;
+
+        // Display destination location with coordinates as secondary text
+        const destEl = document.getElementById('plane-dest');
+        destEl.innerHTML = '';
+        const destName = flight.targetName || 'Unknown';
+        const destLat = flight.destLatLng?.lat || 0;
+        const destLng = flight.destLatLng?.lng || 0;
+        const destCoords = destLat && destLng ? `${destLat.toFixed(2)}°, ${destLng.toFixed(2)}°` : 'Unknown';
+        destEl.innerHTML = `<strong>${destName}</strong><br><span style="font-size:0.85em;opacity:0.7;">${destCoords}</span>`;
+
         document.getElementById('plane-alt').textContent = `${flight.altitude.toLocaleString()} ft`;
         document.getElementById('plane-speed').textContent = `${flight.speed} mph`;
         document.getElementById('plane-quantity').textContent = flight.numAircraft > 1 ? flight.numAircraft : 'N/A';
@@ -1068,23 +1093,31 @@ class PacificWingsApp {
                 if (isNaN(startMs)) return;
 
                 const duration = parseFloat(durationHours) * 3600 * 1000;
+                const sLatNum = parseFloat(sLat);
+                const sLngNum = parseFloat(sLng);
+                const eLatNum = parseFloat(eLat);
+                const eLngNum = parseFloat(eLng);
                 this.flights.push({
                     id: `IMPORTED-${index}-${Date.now()}`,
                     type: type || 'Unknown Aircraft',
                     squadron: squadron || 'Unknown Squadron',
                     origin: `${sLat}, ${sLng}`,
+                    originLatLng: { lat: sLatNum, lng: sLngNum },
+                    originBaseName: '',
                     destination: `${eLat}, ${eLng}`,
+                    destLatLng: { lat: eLatNum, lng: eLngNum },
                     startTime: sTime,
                     startMs,
                     duration,
                     endMs: startMs + duration,
                     waypoints: [
-                        { lat: parseFloat(sLat), lng: parseFloat(sLng) },
-                        { lat: parseFloat(eLat), lng: parseFloat(eLng) }
+                        { lat: sLatNum, lng: sLngNum },
+                        { lat: eLatNum, lng: eLngNum }
                     ],
                     altitude: 20000,
                     speed: 300,
-                    description: desc
+                    description: desc,
+                    targetName: ''
                 });
             });
         }
