@@ -23,142 +23,143 @@
     <div id="app">
         <!-- Sidebar -->
         <aside id="sidebar" class="glass-panel">
-            <div class="mission-brief">
-                Select a flight to view its historical mission and path across the Pacific front. Use the timeline to
-                witness operations in Japan, China, and Korea.
-            </div>
+            <div id="sidebar-views">
 
-            <div class="action-buttons" style="margin: 15px 0; display: flex; gap: 8px; flex-wrap: wrap;">
-                <label id="load-file-btn" class="primary-btn"
-                    style="flex: 1; padding: 10px; background: var(--accent-color); color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; text-align: center;">
-                    Load CSV
-                    <input type="file" id="csv-file-input" accept=".csv" style="display:none;">
-                </label>
-                <button id="show-import" class="primary-btn"
-                    style="flex: 1; padding: 10px; background: var(--accent-color); color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600;">Paste CSV</button>
-                <button id="clear-all" class="primary-btn"
-                    style="flex: 1; padding: 10px; background: var(--danger-color); color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600;">Clear All</button>
-            </div>
+                <!-- ══ PAGE 0: Default panels ══ -->
+                <div class="sidebar-page" id="sidebar-default">
 
-            <div class="jump-points-container" style="margin-bottom: 20px;">
-                <div id="custom-jumps-section" class="hidden">
-                    <h3
-                        style="font-size: 0.8rem; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 12px; border-bottom: 1px solid var(--panel-border); padding-bottom: 8px;">
-                        My Missions</h3>
-                    <div id="custom-jumps" class="jump-grid"
-                        style="display: grid; grid-template-columns: 1fr; gap: 8px;">
+                    <!-- Compact toolbar -->
+                    <div class="sw-toolbar">
+                        <label id="load-file-btn" class="sw-btn">
+                            Load CSV
+                            <input type="file" id="csv-file-input" accept=".csv" style="display:none;">
+                        </label>
+                        <button id="show-import" class="sw-btn">Paste</button>
+                        <button id="clear-all" class="sw-btn sw-btn-danger">Clear</button>
                     </div>
-                </div>
-            </div>
 
-            <div class="search-container">
-                <input type="text" id="flight-search" placeholder="Search squadron or aircraft...">
-                <button id="search-all-toggle" class="search-toggle-btn" title="Search all missions">All</button>
-            </div>
-
-            <div style="margin-bottom: 15px;">
-                <input type="text" id="mission-id-jump" placeholder="Jump to Mission ID (e.g., HAWAIIANAF-19411207-00)"
-                       style="width: 100%; padding: 8px 12px; border: 1px solid var(--panel-border); border-radius: 6px; background: var(--sidebar-bg); color: var(--text-primary); font-size: 0.85rem;">
-                <div id="mission-id-error" style="color: var(--danger-color); font-size: 0.75rem; margin-top: 4px; display: none;"></div>
-            </div>
-
-            <div class="squadron-filter-container" style="margin-bottom: 15px;">
-                <div style="font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 8px; border-bottom: 1px solid var(--panel-border); padding-bottom: 6px;">
-                    Filter by Squadron
-                </div>
-                <div id="squadron-tags" class="squadron-tags" style="display: flex; flex-wrap: wrap; gap: 6px;">
-                    <!-- Squadron tags will be injected here -->
-                </div>
-            </div>
-
-            <ul id="flight-list" style="display:none;"></ul>
-
-            <!-- Base details popup -->
-            <div id="selected-base-details" class="details-panel hidden">
-                <button id="close-base-details" class="close-btn">&times;</button>
-                <div class="fd-header">
-                    <div>
-                        <div class="fd-callsign" id="base-name">-</div>
-                        <div class="fd-subtype">Airbase</div>
-                    </div>
-                </div>
-                <div class="fd-section">
-                    <div class="fd-section-title">Unit</div>
-                    <div class="fd-grid">
-                        <div class="fd-cell fd-cell-wide">
-                            <span class="fd-cell-label">Air Force</span>
-                            <span class="fd-cell-value" id="base-af">-</span>
+                    <!-- Panel: Active Missions -->
+                    <div class="sw-panel">
+                        <div class="sw-panel-hd">
+                            <span class="sw-panel-title">Active Missions</span>
+                            <span class="sw-badge-live">LIVE</span>
+                            <button class="sw-collapse-btn" aria-label="toggle">−</button>
                         </div>
-                        <div class="fd-cell fd-cell-wide">
-                            <span class="fd-cell-label">Active Period</span>
-                            <span class="fd-cell-value" id="base-active">-</span>
+                        <div class="sw-panel-bd">
+                            <div class="sw-stat-row">
+                                <span>Currently flying</span>
+                                <strong id="active-count">0</strong>
+                            </div>
+                            <div id="active-missions-list" class="sw-mission-list"></div>
                         </div>
                     </div>
-                </div>
-                <div class="fd-section">
-                    <div class="fd-section-title">Position</div>
-                    <div class="fd-grid">
-                        <div class="fd-cell fd-cell-wide">
-                            <span class="fd-cell-label">Coordinates</span>
-                            <span class="fd-cell-value" id="base-location">-</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="fd-section fd-section-last">
-                    <div class="fd-section-title">Notes</div>
-                    <div id="base-notes" class="fd-description"></div>
-                </div>
-            </div>
 
-            <!-- Flight details popup -->
-            <div id="selected-flight-details" class="details-panel hidden">
-                <button id="close-details" class="close-btn">&times;</button>
-                <div class="fd-header">
-                    <div class="fd-header-text">
-                        <div class="fd-callsign" id="plane-type">-</div>
-                        <div class="fd-subtype fd-meta-id" id="plane-id">-</div>
+                    <!-- hidden flight-list kept for JS compatibility -->
+                    <ul id="flight-list" style="display:none;"></ul>
+                    <div id="custom-jumps-section" class="hidden"></div>
+                    <div id="squadron-tags" style="display:none;"></div>
+                    <input type="text" id="flight-search" style="display:none;">
+                    <button id="search-all-toggle" style="display:none;"></button>
+
+                </div><!-- /sidebar-default -->
+
+                <!-- ══ PAGE 1: Detail ══ -->
+                <div class="sidebar-page" id="sidebar-detail">
+
+                    <button id="detail-close" class="sw-detail-close" title="Close">&times;</button>
+
+                    <!-- Flight details -->
+                    <div id="selected-flight-details" class="hidden">
+                        <div class="fd-header">
+                            <div class="fd-header-text">
+                                <div class="fd-callsign" id="plane-type">-</div>
+                                <div class="fd-subtype fd-meta-id" id="plane-id">-</div>
+                            </div>
+                        </div>
+                        <div class="fd-section">
+                            <div class="fd-section-title">Mission Data</div>
+                            <div class="fd-grid">
+                                <div class="fd-cell fd-cell-wide">
+                                    <span class="fd-cell-label">Squadron</span>
+                                    <span class="fd-cell-value" id="plane-squadron">-</span>
+                                </div>
+                                <div class="fd-cell fd-cell-wide">
+                                    <span class="fd-cell-label">Mission Type</span>
+                                    <span class="fd-cell-value" id="plane-category">-</span>
+                                </div>
+                                <div class="fd-cell">
+                                    <span class="fd-cell-label">Altitude</span>
+                                    <span class="fd-cell-value" id="plane-alt">-</span>
+                                </div>
+                                <div class="fd-cell">
+                                    <span class="fd-cell-label">Speed</span>
+                                    <span class="fd-cell-value" id="plane-speed">-</span>
+                                </div>
+                                <div class="fd-cell">
+                                    <span class="fd-cell-label">Aircraft</span>
+                                    <span class="fd-cell-value" id="plane-quantity">-</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fd-section">
+                            <div class="fd-section-title">Route</div>
+                            <div class="fd-route">
+                                <div class="fd-route-point">
+                                    <span class="fd-cell-label">Origin</span>
+                                    <span class="fd-cell-value" id="plane-origin">-</span>
+                                </div>
+                                <div class="fd-route-arrow">→</div>
+                                <div class="fd-route-point fd-route-right">
+                                    <span class="fd-cell-label">Destination</span>
+                                    <span class="fd-cell-value" id="plane-dest">-</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fd-section fd-section-last">
+                            <div class="fd-section-title">Mission Notes</div>
+                            <div id="plane-description" class="fd-description"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="fd-section">
-                    <div class="fd-section-title">Mission Data</div>
-                    <div class="fd-grid">
-                        <div class="fd-cell fd-cell-wide">
-                            <span class="fd-cell-label">Squadron</span>
-                            <span class="fd-cell-value" id="plane-squadron">-</span>
+
+                    <!-- Base details -->
+                    <div id="selected-base-details" class="hidden">
+                        <div class="fd-header">
+                            <div>
+                                <div class="fd-callsign" id="base-name">-</div>
+                                <div class="fd-subtype">Airbase</div>
+                            </div>
                         </div>
-                        <div class="fd-cell">
-                            <span class="fd-cell-label">Altitude</span>
-                            <span class="fd-cell-value" id="plane-alt">-</span>
+                        <div class="fd-section">
+                            <div class="fd-section-title">Unit</div>
+                            <div class="fd-grid">
+                                <div class="fd-cell fd-cell-wide">
+                                    <span class="fd-cell-label">Air Force</span>
+                                    <span class="fd-cell-value" id="base-af">-</span>
+                                </div>
+                                <div class="fd-cell fd-cell-wide">
+                                    <span class="fd-cell-label">Active Period</span>
+                                    <span class="fd-cell-value" id="base-active">-</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="fd-cell">
-                            <span class="fd-cell-label">Speed</span>
-                            <span class="fd-cell-value" id="plane-speed">-</span>
+                        <div class="fd-section">
+                            <div class="fd-section-title">Position</div>
+                            <div class="fd-grid">
+                                <div class="fd-cell fd-cell-wide">
+                                    <span class="fd-cell-label">Coordinates</span>
+                                    <span class="fd-cell-value" id="base-location">-</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="fd-cell">
-                            <span class="fd-cell-label">Aircraft</span>
-                            <span class="fd-cell-value" id="plane-quantity">-</span>
+                        <div class="fd-section fd-section-last">
+                            <div class="fd-section-title">Notes</div>
+                            <div id="base-notes" class="fd-description"></div>
                         </div>
                     </div>
-                </div>
-                <div class="fd-section">
-                    <div class="fd-section-title">Route</div>
-                    <div class="fd-route">
-                        <div class="fd-route-point">
-                            <span class="fd-cell-label">Origin</span>
-                            <span class="fd-cell-value" id="plane-origin">-</span>
-                        </div>
-                        <div class="fd-route-arrow">→</div>
-                        <div class="fd-route-point fd-route-right">
-                            <span class="fd-cell-label">Destination</span>
-                            <span class="fd-cell-value" id="plane-dest">-</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="fd-section fd-section-last">
-                    <div class="fd-section-title">Mission Notes</div>
-                    <div id="plane-description" class="fd-description"></div>
-                </div>
-            </div>
+
+                </div><!-- /sidebar-detail -->
+
+            </div><!-- /sidebar-views -->
         </aside>
 
         <!-- Map Container -->
@@ -171,18 +172,12 @@
                 <p class="subtitle">1944–1945 Theater Operations</p>
             </div>
 
-            <!-- Aircraft Legend -->
-            <div id="legend-container" class="glass-panel">
-                <div class="legend-header">
-                    <h3>Aircraft Legend</h3>
-                    <button id="toggle-legend" class="toggle-btn">+</button>
-                </div>
-                <div id="legend-content" class="legend-content collapsed">
-                    <div id="legend-grid" class="legend-grid">
-                        <!-- Legend items will be injected here -->
-                    </div>
-                </div>
+            <!-- Mission ID Search -->
+            <div id="map-search">
+                <input type="text" id="mission-id-jump" placeholder="Jump to Mission ID…" autocomplete="off">
+                <div id="mission-id-error"></div>
             </div>
+
 
             <!-- Timeline Controls -->
             <div id="timeline-container" class="glass-panel">

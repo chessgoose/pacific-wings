@@ -176,9 +176,10 @@ class PacificWingsApp {
                 if (!isNaN(num)) numAircraft = num;
             }
 
-            // rest[0] = origin_base, rest[1] = target_name
+            // rest[0] = origin_base, rest[1] = target_name, rest[2] = num_aircraft, rest[3] = to_check, rest[4] = mission_category
             const originBaseName = (rest.length > 0 ? rest[0].trim() : '') || '';
             const targetName = (rest.length > 1 ? rest[1].trim() : '') || '';
+            const missionCategory = (rest.length > 4 ? rest[4].trim() : '') || 'Other';
             const sLatNum = parseFloat(sLat.trim()) || 0;
             const sLngNum = parseFloat(sLng.trim()) || 0;
             const eLatNum = parseFloat(eLat.trim()) || 0;
@@ -202,7 +203,8 @@ class PacificWingsApp {
                 altitude: parseFloat(altitude) || 20000,
                 speed: parseFloat(speed) || 300,
                 numAircraft,
-                targetName
+                targetName,
+                missionCategory
             });
         }
     }
@@ -310,25 +312,22 @@ class PacificWingsApp {
             this.updateTick();
         });
 
-        document.getElementById('close-base-details').addEventListener('click', () => {
-            document.getElementById('selected-base-details').classList.add('hidden');
-            this.selectedBaseKey = null;
+        // Detail page close button — slide back to default panels
+        document.getElementById('detail-close').addEventListener('click', () => {
+            this._closeDetailView();
         });
 
-        document.getElementById('close-details').addEventListener('click', () => {
-            if (this.selectedFlightId) {
-                const m = this.markers.get(this.selectedFlightId);
-                if (m) {
-                    const el = m.getElement();
-                    if (el) {
-                        const area = el.querySelector('.plane-hover-area');
-                        if (area) area.classList.remove('selected');
-                    }
-                }
-            }
-            document.getElementById('selected-flight-details').classList.add('hidden');
-            this.selectedFlightId = null;
-            this.renderFlightList();
+        // SW panel collapse/expand — delegate from sidebar
+        document.getElementById('sidebar-default').addEventListener('click', (e) => {
+            const hd = e.target.closest('.sw-panel-hd');
+            if (!hd) return;
+            const panel = hd.closest('.sw-panel');
+            const bd = panel && panel.querySelector('.sw-panel-bd');
+            const btn = hd.querySelector('.sw-collapse-btn');
+            if (!bd) return;
+            const collapsing = !bd.classList.contains('collapsed');
+            bd.classList.toggle('collapsed', collapsing);
+            if (btn) btn.textContent = collapsing ? '+' : '−';
         });
 
         document.getElementById('flight-search').addEventListener('input', (e) => {
@@ -351,17 +350,22 @@ class PacificWingsApp {
                     const missionId = missionIdInput.value.trim();
                     if (missionId) {
                         const success = this.jumpToMissionId(missionId);
+                        const errorDiv = document.getElementById('mission-id-error');
                         if (!success) {
-                            const errorDiv = document.getElementById('mission-id-error');
                             if (errorDiv) {
                                 errorDiv.textContent = `Mission "${missionId}" not found`;
                                 errorDiv.style.display = 'block';
                             }
                         } else {
-                            missionIdInput.value = ''; // Clear input on success
+                            missionIdInput.value = '';
+                            if (errorDiv) errorDiv.style.display = 'none';
                         }
                     }
                 }
+            });
+            missionIdInput.addEventListener('input', () => {
+                const errorDiv = document.getElementById('mission-id-error');
+                if (errorDiv) errorDiv.style.display = 'none';
             });
         }
 
@@ -369,12 +373,14 @@ class PacificWingsApp {
         this.addJumpPointListeners();
 
         // Legend Toggle
-        document.getElementById('toggle-legend').addEventListener('click', () => {
-            const content = document.getElementById('legend-content');
-            const btn = document.getElementById('toggle-legend');
-            content.classList.toggle('collapsed');
-            btn.textContent = content.classList.contains('collapsed') ? '+' : '−';
-        });
+        const toggleLegendBtn = document.getElementById('toggle-legend');
+        if (toggleLegendBtn) {
+            toggleLegendBtn.addEventListener('click', () => {
+                const content = document.getElementById('legend-content');
+                content.classList.toggle('collapsed');
+                toggleLegendBtn.textContent = content.classList.contains('collapsed') ? '+' : '−';
+            });
+        }
 
         this.setupImportModal();
     }
@@ -426,6 +432,7 @@ class PacificWingsApp {
 
     initLegend() {
         const legendGrid = document.getElementById('legend-grid');
+        if (!legendGrid) return;
 
         // Build legend from AIRCRAFT_DATA — skip generic categories and unknowns
         const skipTypes = new Set(['Heavy Bomber', 'Medium Bomber', 'Light Bomber', 'Fighter', 'Unknown Aircraft']);
@@ -477,8 +484,9 @@ class PacificWingsApp {
         this.flightsByStart = [];
         this.maxDuration = 0;
         this.selectedFlightId = null;
+        this.selectedBaseKey = null;
         this.squadronFilter = null;
-        document.getElementById('selected-flight-details').classList.add('hidden');
+        document.getElementById('sidebar-views').classList.remove('detail-open');
         this.renderSquadronTags();
         this.renderDynamicJumpPoints();
         this.updateTick();
@@ -490,7 +498,8 @@ class PacificWingsApp {
     // ------------------------------------------------------------------
     buildTimeIndex() {
         this.flightsByStart = [...this.flights].sort((a, b) => a.startMs - b.startMs);
-        this.maxDuration = this.flights.reduce((m, f) => Math.max(m, f.duration), 0);
+        // Exclude NaN durations (empty duration field) so maxDuration stays numeric
+        this.maxDuration = this.flights.reduce((m, f) => isNaN(f.duration) ? m : Math.max(m, f.duration), 0);
     }
 
     // First index where flightsByStart[i].startMs > time
@@ -521,7 +530,7 @@ class PacificWingsApp {
         const hi = this._upperBound(this.currentTime);
         const lo = this._lowerBound(this.currentTime - this.maxDuration);
         const candidates = this.flightsByStart.slice(lo, hi);
-        return candidates.filter(f => f.endMs >= this.currentTime);
+        return candidates.filter(f => !isNaN(f.endMs) && f.endMs >= this.currentTime);
     }
 
     startTick() {
@@ -865,16 +874,47 @@ class PacificWingsApp {
     }
 
     updateStats() {
-        const el = document.getElementById('total-count');
-        if (!el) return;
         const activeFlights = this.getActiveFlights();
-        const totalAircraft = activeFlights.reduce((sum, f) => sum + (f.numAircraft || 1), 0);
-        el.textContent = totalAircraft.toLocaleString();
+        const countEl = document.getElementById('active-count');
+        if (countEl) countEl.textContent = activeFlights.length.toLocaleString();
+        this.updateActiveMissionsPanel(activeFlights);
+    }
+
+    updateActiveMissionsPanel(activeFlights) {
+        const listEl = document.getElementById('active-missions-list');
+        if (!listEl) return;
+
+        const now = Date.now();
+        if (this._lastActivePanelRender && now - this._lastActivePanelRender < 500) return;
+        this._lastActivePanelRender = now;
+
+        listEl.innerHTML = '';
+        const top = activeFlights.slice(0, 6);
+        top.forEach(flight => {
+            const item = document.createElement('div');
+            item.className = 'sw-flight-item';
+            const cat = flight.missionCategory || '';
+            item.innerHTML = `
+                <div class="sw-fi-info">
+                    <span class="sw-fi-type">${flight.type}</span>
+                    <span class="sw-fi-sq">${flight.squadron}</span>
+                </div>
+                ${cat ? `<span class="sw-fi-cat">${cat.toUpperCase()}</span>` : ''}
+            `;
+            item.addEventListener('click', () => this.selectFlight(flight.id));
+            listEl.appendChild(item);
+        });
+        if (activeFlights.length > 6) {
+            const more = document.createElement('div');
+            more.className = 'sw-more-label';
+            more.textContent = `+${activeFlights.length - 6} more missions`;
+            listEl.appendChild(more);
+        }
     }
 
     renderFlightList(filter = '') {
         const listContainer = document.getElementById('flight-list');
-        if (!listContainer || listContainer.style.display === 'none') return;
+        if (!listContainer) return;
 
         // Throttle list rebuilds to every 500ms unless a search filter is active
         const now = Date.now();
@@ -929,6 +969,30 @@ class PacificWingsApp {
         }
     }
 
+    _openDetailView() {
+        document.getElementById('sidebar-views').classList.add('detail-open');
+        // Reset detail page scroll to top
+        document.getElementById('sidebar-detail').scrollTop = 0;
+    }
+
+    _closeDetailView() {
+        // Deselect flight marker
+        if (this.selectedFlightId) {
+            const m = this.markers.get(this.selectedFlightId);
+            if (m) {
+                const el = m.getElement();
+                if (el) {
+                    const area = el.querySelector('.plane-hover-area');
+                    if (area) area.classList.remove('selected');
+                }
+            }
+        }
+        document.getElementById('sidebar-views').classList.remove('detail-open');
+        this.selectedFlightId = null;
+        this.selectedBaseKey = null;
+        this.renderFlightList();
+    }
+
     selectFlight(id) {
         // Clear previous selection visual
         if (this.selectedFlightId) {
@@ -956,13 +1020,12 @@ class PacificWingsApp {
             }
         }
 
-        // Close base panel if open
+        // Show flight detail, hide base detail, slide to detail page
         document.getElementById('selected-base-details').classList.add('hidden');
         this.selectedBaseKey = null;
-
-        // Show flight details panel
         const panel = document.getElementById('selected-flight-details');
         panel.classList.remove('hidden');
+        this._openDetailView();
 
         document.getElementById('plane-type').textContent = flight.type;
         document.getElementById('plane-id').textContent = flight.id;
@@ -989,6 +1052,7 @@ class PacificWingsApp {
         document.getElementById('plane-alt').textContent = `${flight.altitude.toLocaleString()} ft`;
         document.getElementById('plane-speed').textContent = `${flight.speed} mph`;
         document.getElementById('plane-quantity').textContent = flight.numAircraft > 1 ? flight.numAircraft : 'N/A';
+        document.getElementById('plane-category').textContent = flight.missionCategory || 'Unknown';
         document.getElementById('plane-description').textContent = flight.description || '';
 
         // Focus map
@@ -1007,8 +1071,9 @@ class PacificWingsApp {
 
         this.selectedBaseKey = key;
 
-        // Close flight panel if open
+        // Show base detail, hide flight detail, slide to detail page
         document.getElementById('selected-flight-details').classList.add('hidden');
+        this.selectedFlightId = null;
 
         const fmt = dateStr => {
             const d = new Date(dateStr.includes('T') ? dateStr : dateStr + 'T00:00:00Z');
@@ -1023,6 +1088,7 @@ class PacificWingsApp {
         document.getElementById('base-notes').textContent = base.notes || '';
 
         document.getElementById('selected-base-details').classList.remove('hidden');
+        this._openDetailView();
     }
 
     jumpToMissionId(missionId) {
@@ -1040,6 +1106,13 @@ class PacificWingsApp {
 
         // Select the flight (shows details panel and updates map)
         this.selectFlight(missionId);
+
+        // Zoom to mission origin
+        const lat = flight.originLatLng?.lat || flight.waypoints[0]?.lat;
+        const lng = flight.originLatLng?.lng || flight.waypoints[0]?.lng;
+        if (lat && lng) {
+            this.map.setView([lat, lng], 7, { animate: true });
+        }
 
         // Update timeline and map
         this.updateTick();

@@ -17,10 +17,5 @@ P-51 Mustang,32.2,37.0,,North American P-51D
 A-36 Apache,32.2,37.0,,North American A-36 (P-51 variant)
 P-40 Warhawk,31.7,37.3,icons/p40_edited.png,Curtiss P-40N
 P-39 Airacobra,30.2,34.0,,Bell P-39
-P-36,28.6,37.3,,Curtiss P-36
+P-36 Hawk,28.6,37.3,,Curtiss P-36 Hawk
 A6M Zero,29.4,36.1,,Mitsubishi A6M
-Heavy Bomber,75.0,105.0,,Generic heavy bomber (B-17 class)
-Medium Bomber,54.0,70.0,,Generic medium bomber (B-25 class)
-Light Bomber,47.0,61.0,,Generic light bomber (A-20 class)
-Fighter,32.0,37.0,,Generic fighter
-Unknown Aircraft,45.0,60.0,,Unknown type
