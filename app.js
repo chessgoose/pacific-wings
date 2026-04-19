@@ -146,66 +146,89 @@ class PacificWingsApp {
 
     parseMissionsCSV(text) {
         const lines = text.split('\n').map(l => l.trim()).filter(Boolean);
+        let parsedCount = 0;
         // Skip header row
         for (let i = 1; i < lines.length; i++) {
-            const cols = this.splitCSVLine(lines[i]);
-            if (cols.length < 10) continue;
-            const [id, squadron, type, description, sLat, sLng, eLat, eLng, startTime, durationHours, altitude, speed, waypointsRaw, ...rest] = cols;
-            const startMs = new Date(startTime).getTime();
-            if (isNaN(startMs)) continue;
-            const duration = parseFloat(durationHours) * 3600 * 1000;
+            try {
+                const cols = this.splitCSVLine(lines[i]);
+                if (cols.length < 9) continue;
 
-            let waypoints;
-            if (waypointsRaw && waypointsRaw.trim()) {
-                waypoints = waypointsRaw.trim().split(';').map(pair => {
-                    const [lat, lng] = pair.split(':').map(Number);
-                    return { lat, lng };
+                // Columns: id, squadron, type, description, sLat, sLng, eLat, eLng, startTime, duration, altitude, speed, waypoints, origin_base, target_name, num_aircraft, to_check, mission_category
+                const [id, squadron, type, description, sLat, sLng, eLat, eLng, startTime, durationHours, altitude, speed, waypointsRaw, ...rest] = cols;
+
+                // Validate critical fields
+                const sLatNum = parseFloat(sLat.trim());
+                const sLngNum = parseFloat(sLng.trim());
+                const eLatNum = parseFloat(eLat.trim());
+                const eLngNum = parseFloat(eLng.trim());
+
+                // Skip rows with invalid coordinates
+                if (isNaN(sLatNum) || isNaN(sLngNum) || isNaN(eLatNum) || isNaN(eLngNum)) {
+                    continue;
+                }
+
+                const startMs = new Date(startTime).getTime();
+                if (isNaN(startMs)) continue;
+
+                const duration = parseFloat(durationHours) * 3600 * 1000;
+
+                let waypoints;
+                if (waypointsRaw && waypointsRaw.trim()) {
+                    waypoints = waypointsRaw.trim().split(';').map(pair => {
+                        const [lat, lng] = pair.split(':').map(Number);
+                        if (!isNaN(lat) && !isNaN(lng)) {
+                            return { lat, lng };
+                        }
+                        return null;
+                    }).filter(wp => wp !== null);
+                }
+
+                if (!waypoints || waypoints.length === 0) {
+                    waypoints = [
+                        { lat: sLatNum, lng: sLngNum },
+                        { lat: eLatNum, lng: eLngNum }
+                    ];
+                }
+
+                // Extract optional fields from rest array
+                let numAircraft = 1;
+                if (rest.length > 2) {
+                    const numStr = rest[2].trim();
+                    const num = parseInt(numStr);
+                    if (!isNaN(num) && num > 0) numAircraft = num;
+                }
+
+                // rest[0] = origin_base, rest[1] = target_name, rest[2] = num_aircraft, rest[3] = to_check, rest[4] = mission_category
+                const originBaseName = (rest.length > 0 ? rest[0].trim() : '') || '';
+                const targetName = (rest.length > 1 ? rest[1].trim() : '') || '';
+                const missionCategory = (rest.length > 4 ? rest[4].trim() : '') || 'Other';
+
+                this.flights.push({
+                    id: id.trim(),
+                    squadron: squadron.trim(),
+                    type: type.trim(),
+                    description: description.replace(/\s*===== PAGE \d+ =====\s*/g, ' ').replace(/\s+/g, ' ').trim(),
+                    origin: `${sLat.trim()}, ${sLng.trim()}`,
+                    originLatLng: { lat: sLatNum, lng: sLngNum },
+                    originBaseName,
+                    destination: `${eLat.trim()}, ${eLng.trim()}`,
+                    destLatLng: { lat: eLatNum, lng: eLngNum },
+                    startTime,
+                    startMs,
+                    duration,
+                    endMs: startMs + duration,
+                    waypoints,
+                    altitude: parseFloat(altitude) || 20000,
+                    speed: parseFloat(speed) || 300,
+                    numAircraft,
+                    targetName,
+                    missionCategory
                 });
-            } else {
-                waypoints = [
-                    { lat: parseFloat(sLat), lng: parseFloat(sLng) },
-                    { lat: parseFloat(eLat), lng: parseFloat(eLng) }
-                ];
+                parsedCount++;
+            } catch (err) {
+                // Skip malformed rows silently
+                continue;
             }
-
-            // Extract num_aircraft if present (may be in rest[2] for chronology format)
-            let numAircraft = 1;
-            if (rest.length > 2) {
-                const numStr = rest[2].trim();
-                const num = parseInt(numStr);
-                if (!isNaN(num)) numAircraft = num;
-            }
-
-            // rest[0] = origin_base, rest[1] = target_name, rest[2] = num_aircraft, rest[3] = to_check, rest[4] = mission_category
-            const originBaseName = (rest.length > 0 ? rest[0].trim() : '') || '';
-            const targetName = (rest.length > 1 ? rest[1].trim() : '') || '';
-            const missionCategory = (rest.length > 4 ? rest[4].trim() : '') || 'Other';
-            const sLatNum = parseFloat(sLat.trim()) || 0;
-            const sLngNum = parseFloat(sLng.trim()) || 0;
-            const eLatNum = parseFloat(eLat.trim()) || 0;
-            const eLngNum = parseFloat(eLng.trim()) || 0;
-
-            this.flights.push({
-                id: id.trim(),
-                squadron: squadron.trim(),
-                type: type.trim(),
-                description: description.replace(/\s*===== PAGE \d+ =====\s*/g, ' ').replace(/\s+/g, ' ').trim(),
-                origin: `${sLat.trim()}, ${sLng.trim()}`,
-                originLatLng: { lat: sLatNum, lng: sLngNum },
-                originBaseName,
-                destination: `${eLat.trim()}, ${eLng.trim()}`,
-                destLatLng: { lat: eLatNum, lng: eLngNum },
-                startTime,
-                startMs,
-                duration,
-                endMs: startMs + duration,
-                waypoints,
-                altitude: parseFloat(altitude) || 20000,
-                speed: parseFloat(speed) || 300,
-                numAircraft,
-                targetName,
-                missionCategory
-            });
         }
     }
 
@@ -398,11 +421,11 @@ class PacificWingsApp {
 
     setupImportModal() {
         const modal = document.getElementById('import-modal');
-        const showBtn = document.getElementById('show-import');
         const closeBtn = document.querySelector('.close-modal');
         const processBtn = document.getElementById('process-csv');
-        const clearBtn = document.getElementById('clear-all');
+        const clearCsvBtn = document.getElementById('clear-csv');
         const fileInput = document.getElementById('csv-file-input');
+        const csvInput = document.getElementById('csv-input');
 
         fileInput.addEventListener('change', (e) => {
             const file = e.target.files[0];
@@ -410,17 +433,17 @@ class PacificWingsApp {
             fileInput.value = ''; // reset so same file can be reloaded
         });
 
-        showBtn.onclick = () => {
-            this.prefillCSVInput();
-            modal.classList.remove('hidden');
-        };
         closeBtn.onclick = () => modal.classList.add('hidden');
         window.onclick = (e) => { if (e.target == modal) modal.classList.add('hidden'); };
 
         processBtn.onclick = () => {
-            const data = document.getElementById('csv-input').value;
+            const data = csvInput.value;
             this.parseCSV(data);
-            modal.classList.add('hidden');
+        };
+
+        clearCsvBtn.onclick = () => {
+            csvInput.value = '';
+            csvInput.focus();
         };
 
         clearBtn.onclick = () => {
@@ -1144,63 +1167,131 @@ class PacificWingsApp {
     }
 
     parseCSV(data) {
-        const firstLine = data.trimStart().split('\n')[0].toLowerCase();
-        const prevCount = this.flights.length;
-
-        // Route to the richer parser if this looks like missions_chronology.csv
-        if (firstLine.startsWith('id,')) {
-            this.parseMissionsCSV(data);
-        } else {
-            // Legacy format: squadron, type, description, start_lat, start_lng,
-            //                end_lat, end_lng, start_time, duration_hours
-            const lines = data.split('\n');
-            lines.forEach((line, index) => {
-                if (index === 0 && line.includes('squadron')) return;
-                if (!line.trim()) return;
-
-                const parts = this.splitCSVLine(line);
-                if (parts.length < 8) return;
-
-                const [squadron, type, desc, sLat, sLng, eLat, eLng, sTime, durationHours] = parts;
-                const startMs = new Date(sTime).getTime();
-                if (isNaN(startMs)) return;
-
-                const duration = parseFloat(durationHours) * 3600 * 1000;
-                const sLatNum = parseFloat(sLat);
-                const sLngNum = parseFloat(sLng);
-                const eLatNum = parseFloat(eLat);
-                const eLngNum = parseFloat(eLng);
-                this.flights.push({
-                    id: `IMPORTED-${index}-${Date.now()}`,
-                    type: type || 'Unknown Aircraft',
-                    squadron: squadron || 'Unknown Squadron',
-                    origin: `${sLat}, ${sLng}`,
-                    originLatLng: { lat: sLatNum, lng: sLngNum },
-                    originBaseName: '',
-                    destination: `${eLat}, ${eLng}`,
-                    destLatLng: { lat: eLatNum, lng: eLngNum },
-                    startTime: sTime,
-                    startMs,
-                    duration,
-                    endMs: startMs + duration,
-                    waypoints: [
-                        { lat: sLatNum, lng: sLngNum },
-                        { lat: eLatNum, lng: eLngNum }
-                    ],
-                    altitude: 20000,
-                    speed: 300,
-                    description: desc,
-                    targetName: ''
-                });
-            });
+        if (!data || !data.trim()) {
+            this.showNotification('Please paste CSV data first', 'error');
+            return;
         }
 
-        this.squadronFilter = null;
-        this.buildTimeIndex();
-        this.renderSquadronTags();
-        this.updateTick();
-        this.renderDynamicJumpPoints();
-        alert(`Successfully loaded ${this.flights.length - prevCount} missions.`);
+        const firstLine = data.trimStart().split('\n')[0].toLowerCase();
+        const prevCount = this.flights.length;
+        let loadedCount = 0;
+
+        try {
+            // Route to the richer parser if this looks like missions_chronology.csv
+            if (firstLine.startsWith('id,')) {
+                this.parseMissionsCSV(data);
+            } else {
+                // Legacy format: squadron, type, description, start_lat, start_lng,
+                //                end_lat, end_lng, start_time, duration_hours
+                const lines = data.split('\n');
+                lines.forEach((line, index) => {
+                    if (index === 0 && line.includes('squadron')) return;
+                    if (!line.trim()) return;
+
+                    const parts = this.splitCSVLine(line);
+                    if (parts.length < 8) return;
+
+                    const [squadron, type, desc, sLat, sLng, eLat, eLng, sTime, durationHours] = parts;
+                    const startMs = new Date(sTime).getTime();
+                    if (isNaN(startMs)) return;
+
+                    const duration = parseFloat(durationHours) * 3600 * 1000;
+                    const sLatNum = parseFloat(sLat);
+                    const sLngNum = parseFloat(sLng);
+                    const eLatNum = parseFloat(eLat);
+                    const eLngNum = parseFloat(eLng);
+                    this.flights.push({
+                        id: `IMPORTED-${index}-${Date.now()}`,
+                        type: type || 'Unknown Aircraft',
+                        squadron: squadron || 'Unknown Squadron',
+                        origin: `${sLat}, ${sLng}`,
+                        originLatLng: { lat: sLatNum, lng: sLngNum },
+                        originBaseName: '',
+                        destination: `${eLat}, ${eLng}`,
+                        destLatLng: { lat: eLatNum, lng: eLngNum },
+                        startTime: sTime,
+                        startMs,
+                        duration,
+                        endMs: startMs + duration,
+                        waypoints: [
+                            { lat: sLatNum, lng: sLngNum },
+                            { lat: eLatNum, lng: eLngNum }
+                        ],
+                        altitude: 20000,
+                        speed: 300,
+                        description: desc,
+                        targetName: ''
+                    });
+                    loadedCount++;
+                });
+            }
+
+            this.squadronFilter = null;
+            this.buildTimeIndex();
+            this.renderSquadronTags();
+            this.updateTick();
+            this.renderDynamicJumpPoints();
+
+            // Close modal
+            const modal = document.getElementById('import-modal');
+            if (modal) {
+                modal.classList.add('hidden');
+            }
+
+            const newCount = this.flights.length - prevCount;
+            if (newCount > 0) {
+                this.showNotification(`✓ Loaded ${newCount} mission${newCount !== 1 ? 's' : ''}`, 'success');
+            } else {
+                this.showNotification('No valid missions found in CSV data', 'warning');
+            }
+        } catch (err) {
+            console.error('CSV parsing error:', err);
+            this.showNotification(`Error loading CSV: ${err.message}`, 'error');
+        }
+    }
+
+    showNotification(message, type = 'info') {
+        // Remove old notification if exists
+        const oldNotif = document.getElementById('load-notification');
+        if (oldNotif) {
+            clearTimeout(oldNotif._timeout);
+            oldNotif.remove();
+        }
+
+        // Create notification element
+        const notif = document.createElement('div');
+        notif.id = 'load-notification';
+
+        // Set color based on type
+        const colors = {
+            success: '#10b981',
+            error: '#ef4444',
+            warning: '#f59e0b',
+            info: '#3b82f6'
+        };
+        const bgColor = colors[type] || colors.info;
+
+        notif.style.cssText = `
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 16px 24px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: white;
+            background-color: ${bgColor};
+            z-index: 1000;
+            animation: slideIn 0.3s ease;
+        `;
+        notif.textContent = message;
+        document.body.appendChild(notif);
+
+        // Auto-dismiss after 3 seconds
+        notif._timeout = setTimeout(() => {
+            notif.style.animation = 'slideOut 0.3s ease';
+            setTimeout(() => notif.remove(), 300);
+        }, 3000);
     }
 
     renderDynamicJumpPoints() {
