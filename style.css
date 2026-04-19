@@ -80,22 +80,6 @@ body {
     overflow-y: auto;
 }
 
-header h1 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    letter-spacing: -1px;
-    color: var(--accent-color);
-    margin-bottom: 2px;
-}
-
-header .subtitle {
-    font-size: 0.7rem;
-    color: var(--text-secondary);
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
 .mission-brief {
     background: rgba(59, 130, 246, 0.1);
     border-left: 2px solid var(--accent-color);
@@ -238,26 +222,23 @@ header .subtitle {
     color: var(--text-secondary);
 }
 
-/* Details Panel */
+/* Details Panel — slides up from bottom of sidebar */
 .details-panel {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    background: var(--bg-color);
-    padding: 24px;
+    max-height: 80vh;
+    overflow-y: auto;
+    background: #0f1117;
     border-top: 1px solid var(--panel-border);
-    animation: slideUp 0.3s ease-out;
+    animation: slideUp 0.25s ease-out;
+    padding: 20px 20px 24px;
 }
 
 @keyframes slideUp {
-    from {
-        transform: translateY(100%);
-    }
-
-    to {
-        transform: translateY(0);
-    }
+    from { transform: translateY(100%); }
+    to   { transform: translateY(0); }
 }
 
 .hidden {
@@ -266,35 +247,147 @@ header .subtitle {
 
 .close-btn {
     position: absolute;
-    top: 10px;
-    right: 15px;
+    top: 12px;
+    right: 14px;
     background: none;
     border: none;
     color: var(--text-secondary);
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     cursor: pointer;
+    line-height: 1;
+    transition: color 0.15s ease;
 }
+.close-btn:hover { color: var(--text-primary); }
 
-.details-header h2 {
-    font-size: 1.2rem;
-    margin-bottom: 4px;
-}
+/* ── FlightRadar24-style panel internals ── */
 
-.details-header p {
-    font-size: 0.8rem;
-    color: var(--text-secondary);
-    margin-bottom: 16px;
-}
-
-.detail-item {
+.fd-header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 8px;
-    font-size: 0.9rem;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--panel-border);
+    padding-right: 24px; /* space for close btn */
 }
 
-.detail-item .label {
+.fd-header-text { flex: 1; min-width: 0; }
+
+.fd-callsign {
+    font-family: var(--font-mono);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    letter-spacing: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.fd-subtype {
+    font-size: 0.78rem;
     color: var(--text-secondary);
+    margin-top: 3px;
+}
+
+.fd-meta-id {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+}
+
+.fd-header-icon {
+    flex-shrink: 0;
+    margin-left: 12px;
+    opacity: 0.85;
+}
+
+.fd-section {
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.fd-section-last {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.fd-section-title {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    color: var(--text-secondary);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.fd-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 16px;
+}
+
+.fd-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.fd-cell-wide {
+    grid-column: span 2;
+}
+
+.fd-cell-label {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-secondary);
+}
+
+.fd-cell-value {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+}
+
+/* Route row: origin → destination */
+.fd-route {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.fd-route-point {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 0;
+}
+
+.fd-route-right { text-align: right; }
+
+.fd-route-arrow {
+    font-size: 1rem;
+    color: var(--accent-color);
+    flex-shrink: 0;
+    opacity: 0.7;
+}
+
+.fd-route .fd-cell-value {
+    font-size: 0.78rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.fd-description {
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    line-height: 1.55;
 }
 
 /* Map Container */
@@ -302,6 +395,41 @@ header .subtitle {
     flex: 1;
     position: relative;
     height: 100%;
+}
+
+/* Centered top header overlay on the map */
+#map-header {
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1001;
+    text-align: center;
+    pointer-events: none;
+    padding: 10px 28px 8px;
+    border-radius: 10px;
+    background: var(--panel-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--panel-border);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    white-space: nowrap;
+}
+
+#map-header h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--accent-color);
+    margin-bottom: 1px;
+}
+
+#map-header .subtitle {
+    font-size: 0.6rem;
+    color: var(--text-secondary);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 #map {
@@ -575,12 +703,91 @@ header .subtitle {
     border: none !important;
 }
 
+/* Base dot markers — divIcon so they live in the marker pane (no SVG zoom artifacts) */
+.base-icon-wrapper {
+    background: none !important;
+    border: none !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.base-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+    transition: transform 0.15s ease;
+    cursor: pointer;
+}
+
+.base-icon-wrapper:hover .base-dot {
+    transform: scale(1.9);
+}
+
+/* Larger invisible hit area wrapping the plane icon */
+.plane-hover-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Flight ID label — shown on hover */
+.plane-label {
+    position: absolute;
+    bottom: calc(100% + 2px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffffff;
+    color: #1a1c22;
+    padding: 3px 9px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    white-space: nowrap;
+    display: none;
+    pointer-events: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+    font-family: var(--font-main);
+    letter-spacing: 0.2px;
+    z-index: 1000;
+}
+
+/* Small downward caret pointing at the plane */
+.plane-label::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid transparent;
+    border-top-color: #ffffff;
+}
+
+.plane-hover-area:hover .plane-label {
+    display: block;
+}
+
+/* Warm red/orange tint on hover */
+.plane-hover-area:hover .plane-marker {
+    filter: sepia(1) saturate(6) hue-rotate(-15deg) brightness(1.2) drop-shadow(0 0 4px rgba(220, 80, 30, 0.5));
+}
+
+/* Selected plane stays original color (yellow) — must beat hover tint */
+.plane-hover-area.selected .plane-marker,
+.plane-hover-area.selected:hover .plane-marker {
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.8)) !important;
+}
+
 .plane-marker {
     display: flex;
     align-items: center;
     justify-content: center;
     filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.8));
-    transition: transform 0.2s linear;
+    transition: transform 0.2s linear, filter 0.15s ease;
     transform-origin: center center;
 }
 
@@ -748,4 +955,57 @@ header .subtitle {
     background: var(--accent-color);
     border-color: var(--accent-color);
     color: #fff;
+}
+
+/* Target markers — shown only when an active mission is attacking that location */
+.target-icon-wrapper {
+    background: none !important;
+    border: none !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.target-marker {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #ef4444;
+    box-shadow: 0 0 6px rgba(239, 68, 68, 0.7), inset 0 0 3px rgba(239, 68, 68, 0.3);
+    position: relative;
+    transition: transform 0.15s ease;
+    cursor: default;
+    animation: target-pulse 1.8s ease-in-out infinite;
+}
+
+.target-marker::before,
+.target-marker::after {
+    content: '';
+    position: absolute;
+    background: #ef4444;
+    opacity: 0.75;
+}
+
+/* Crosshair horizontal bar */
+.target-marker::before {
+    width: 6px;
+    height: 1.5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Crosshair vertical bar */
+.target-marker::after {
+    width: 1.5px;
+    height: 6px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes target-pulse {
+    0%, 100% { box-shadow: 0 0 5px rgba(239, 68, 68, 0.6), inset 0 0 3px rgba(239, 68, 68, 0.2); }
+    50%       { box-shadow: 0 0 10px rgba(239, 68, 68, 0.9), inset 0 0 5px rgba(239, 68, 68, 0.4); }
 }

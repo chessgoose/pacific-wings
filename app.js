@@ -10,6 +10,7 @@ class PacificWingsApp {
         this.bases = [];
         this.markers = new Map(); // PlaneID -> Marker
         this.baseMarkers = new Map(); // base key -> Marker
+        this.targetMarkers = new Map(); // target name -> Marker
         this.selectedFlightPath = null; // Polyline for selected flight
         this.currentTime = new Date('1941-12-07T06:00:00Z').getTime();
         this.isPlaying = false;
@@ -17,6 +18,7 @@ class PacificWingsApp {
         this.startTime = new Date('1941-12-07T00:00:00Z').getTime();
         this.endTime = new Date('1945-09-06T12:00:00Z').getTime();
         this.selectedFlightId = null;
+        this.selectedBaseKey = null;
         this.searchAllMissions = false; // Toggle for searching all vs active missions
         this.squadronFilter = null; // Current squadron filter (null = no filter)
 
@@ -43,6 +45,19 @@ class PacificWingsApp {
                 endMs: this.parseDateBoundary(b.end, true),
                 key: `${b.af}-${b.name}`,
             }));
+        }
+
+        // Load targets lookup from window.TARGETS_DATA (targets_data.js)
+        this._targetsIndex = {};
+        if (window.TARGETS_DATA) {
+            for (const t of window.TARGETS_DATA) {
+                const key = t.name.toLowerCase();
+                this._targetsIndex[key] = t;
+                for (const alias of t.aliases) {
+                    const akey = alias.toLowerCase();
+                    if (!this._targetsIndex[akey]) this._targetsIndex[akey] = t;
+                }
+            }
         }
 
         // Load missions from window.MISSIONS_CSV (missions_data.js)
@@ -161,6 +176,9 @@ class PacificWingsApp {
                 if (!isNaN(num)) numAircraft = num;
             }
 
+            // rest[0] = origin_base, rest[1] = target_name
+            const targetName = (rest.length > 1 ? rest[1].trim() : '') || '';
+
             this.flights.push({
                 id: id.trim(),
                 squadron: squadron.trim(),
@@ -175,7 +193,8 @@ class PacificWingsApp {
                 waypoints,
                 altitude: parseFloat(altitude) || 20000,
                 speed: parseFloat(speed) || 300,
-                numAircraft
+                numAircraft,
+                targetName
             });
         }
     }
@@ -214,8 +233,34 @@ class PacificWingsApp {
         // Move zoom control to top-right
         L.control.zoom({ position: 'topright' }).addTo(this.map);
 
-        // Keep projected marker interpolation aligned with the rendered route at each zoom level.
+        // Planes: keep interpolation aligned during zoom animation.
         this.map.on('zoom viewreset', () => this.updatePlanesOnMap());
+
+        // Bases use divIcon (marker pane) so zoom is handled natively.
+        // On moveend, re-normalize longitudes in place without recreating markers.
+        this.map.on('moveend', () => {
+            const mapCenterLng = this.map.getCenter().lng;
+            for (const base of this.bases) {
+                const marker = this.baseMarkers.get(base.key);
+                if (marker) {
+                    let lng = base.lng;
+                    while (lng < mapCenterLng - 180) lng += 360;
+                    while (lng > mapCenterLng + 180) lng -= 360;
+                    marker.setLatLng([base.lat, lng]);
+                }
+            }
+            if (window.TARGETS_DATA) {
+                for (const t of window.TARGETS_DATA) {
+                    const marker = this.targetMarkers.get(t.name);
+                    if (marker) {
+                        let lng = t.lng;
+                        while (lng < mapCenterLng - 180) lng += 360;
+                        while (lng > mapCenterLng + 180) lng -= 360;
+                        marker.setLatLng([t.lat, lng]);
+                    }
+                }
+            }
+        });
     }
 
     initEventListeners() {
@@ -257,7 +302,22 @@ class PacificWingsApp {
             this.updateTick();
         });
 
+        document.getElementById('close-base-details').addEventListener('click', () => {
+            document.getElementById('selected-base-details').classList.add('hidden');
+            this.selectedBaseKey = null;
+        });
+
         document.getElementById('close-details').addEventListener('click', () => {
+            if (this.selectedFlightId) {
+                const m = this.markers.get(this.selectedFlightId);
+                if (m) {
+                    const el = m.getElement();
+                    if (el) {
+                        const area = el.querySelector('.plane-hover-area');
+                        if (area) area.classList.remove('selected');
+                    }
+                }
+            }
             document.getElementById('selected-flight-details').classList.add('hidden');
             this.selectedFlightId = null;
             this.renderFlightList();
@@ -398,6 +458,8 @@ class PacificWingsApp {
         // Remove markers and paths from map
         this.markers.forEach(marker => this.map.removeLayer(marker));
         this.markers.clear();
+        this.targetMarkers.forEach(marker => this.map.removeLayer(marker));
+        this.targetMarkers.clear();
         if (this.selectedFlightPath) {
             this.map.removeLayer(this.selectedFlightPath);
             this.selectedFlightPath = null;
@@ -507,6 +569,7 @@ class PacificWingsApp {
 
     updateTick() {
         this.updateBasesOnMap();
+        this.updateTargetsOnMap();
         this.updatePlanesOnMap();
         this.updateTimelineUI();
         this.updateStats();
@@ -539,17 +602,17 @@ class PacificWingsApp {
                     let lng = base.lng;
                     while (lng < mapCenterLng - 180) lng += 360;
                     while (lng > mapCenterLng + 180) lng -= 360;
-                    const marker = L.circleMarker([base.lat, lng], {
-                        radius: 7,
-                        fillColor: color,
-                        color: '#fff',
-                        weight: 1.5,
-                        opacity: 0.9,
-                        fillOpacity: 0.8,
-                    }).addTo(this.map);
+                    const dotIcon = L.divIcon({
+                        className: 'base-icon-wrapper',
+                        html: `<div class="base-dot" style="background:${color};"></div>`,
+                        iconSize: [16, 16],
+                        iconAnchor: [8, 8]
+                    });
+                    const marker = L.marker([base.lat, lng], { icon: dotIcon }).addTo(this.map);
+                    marker.on('click', () => this.selectBase(base.key));
                     marker.bindTooltip(
-                        `<strong>${base.name}</strong><br>${base.af}<br><em>${base.notes}</em>`,
-                        { direction: 'top', offset: [0, -8] }
+                        `<strong>${base.name}</strong><br>${base.af}`,
+                        { direction: 'top', offset: [0, -10] }
                     );
                     this.baseMarkers.set(base.key, marker);
                 }
@@ -564,13 +627,48 @@ class PacificWingsApp {
             }
         });
 
-        // Debug: log total active base markers
-        console.log(`Active bases on map: ${activeKeys.size}, Total markers: ${this.baseMarkers.size}`);
-        if (this.baseMarkers.has('Hawaiian AF-Hickam Field Hawaii')) {
-            console.log('✓ Hickam (Hawaiian AF) marker is in baseMarkers');
-        } else {
-            console.log('✗ Hickam (Hawaiian AF) marker NOT in baseMarkers');
+    }
+
+    updateTargetsOnMap() {
+        // Collect canonical target names for currently active missions
+        const activeFlights = this.getActiveFlights();
+        const activeCanonicalNames = new Set(); // canonical targetData.name values
+        for (const flight of activeFlights) {
+            if (!flight.targetName) continue;
+            const targetData = this._targetsIndex && this._targetsIndex[flight.targetName.toLowerCase()];
+            if (targetData) activeCanonicalNames.add(targetData.name);
         }
+
+        // Show markers for active targets
+        for (const canonicalName of activeCanonicalNames) {
+            if (this.targetMarkers.has(canonicalName)) continue;
+            const targetData = this._targetsIndex && this._targetsIndex[canonicalName.toLowerCase()];
+            if (!targetData) continue;
+            const mapCenterLng = this.map.getCenter().lng;
+            let lng = targetData.lng;
+            while (lng < mapCenterLng - 180) lng += 360;
+            while (lng > mapCenterLng + 180) lng -= 360;
+            const icon = L.divIcon({
+                className: 'target-icon-wrapper',
+                html: `<div class="target-marker"></div>`,
+                iconSize: [14, 14],
+                iconAnchor: [7, 7]
+            });
+            const marker = L.marker([targetData.lat, lng], { icon, zIndexOffset: -100 }).addTo(this.map);
+            marker.bindTooltip(
+                `<strong>${targetData.name}</strong><br><span style="opacity:0.7">${targetData.type}</span>`,
+                { direction: 'top', offset: [0, -10] }
+            );
+            this.targetMarkers.set(canonicalName, marker);
+        }
+
+        // Remove targets no longer referenced by active missions
+        this.targetMarkers.forEach((marker, key) => {
+            if (!activeCanonicalNames.has(key)) {
+                this.map.removeLayer(marker);
+                this.targetMarkers.delete(key);
+            }
+        });
     }
 
     updatePlanesOnMap() {
@@ -595,13 +693,20 @@ class PacificWingsApp {
             if (!this.markers.has(flight.id)) {
                 const ac = this.getAircraftData(flight.type);
                 const imgStyle = `display:block;${ac.needsInvert ? ' filter: invert(1);' : ''}`;
+                const hitPad = 12;
+                const wrapperW = ac.width + hitPad * 2;
+                const wrapperH = ac.height + hitPad * 2;
+                const isSelected = this.selectedFlightId === flight.id;
                 const icon = L.divIcon({
                     className: 'plane-icon-wrapper',
-                    html: `<div class="plane-marker" style="transform: rotate(${bearing}deg); transition: transform 0.3s ease; width: ${ac.width}px; height: ${ac.height}px;">
-                            <img src="${ac.icon}" width="${ac.width}" height="${ac.height}" style="${imgStyle}" onerror="this.src='icons/default.svg'"/>
+                    html: `<div class="plane-hover-area${isSelected ? ' selected' : ''}" style="width:${wrapperW}px;height:${wrapperH}px;">
+                            <div class="plane-label">${flight.id}</div>
+                            <div class="plane-marker" style="transform:rotate(${bearing}deg);width:${ac.width}px;height:${ac.height}px;">
+                              <img src="${ac.icon}" width="${ac.width}" height="${ac.height}" style="${imgStyle}" onerror="this.src='icons/default.svg'"/>
+                            </div>
                            </div>`,
-                    iconSize: [ac.width, ac.height],
-                    iconAnchor: [Math.round(ac.width / 2), Math.round(ac.height / 2)]
+                    iconSize: [wrapperW, wrapperH],
+                    iconAnchor: [Math.round(wrapperW / 2), Math.round(wrapperH / 2)]
                 });
                 const marker = L.marker([pos.lat, pos.lng], { icon }).addTo(this.map);
                 marker.on('click', () => this.selectFlight(flight.id));
@@ -752,18 +857,21 @@ class PacificWingsApp {
     }
 
     updateStats() {
+        const el = document.getElementById('total-count');
+        if (!el) return;
         const activeFlights = this.getActiveFlights();
         const totalAircraft = activeFlights.reduce((sum, f) => sum + (f.numAircraft || 1), 0);
-        document.getElementById('total-count').textContent = totalAircraft.toLocaleString();
+        el.textContent = totalAircraft.toLocaleString();
     }
 
     renderFlightList(filter = '') {
+        const listContainer = document.getElementById('flight-list');
+        if (!listContainer || listContainer.style.display === 'none') return;
+
         // Throttle list rebuilds to every 500ms unless a search filter is active
         const now = Date.now();
         if (!filter && !this.squadronFilter && this._lastListRender && now - this._lastListRender < 500) return;
         this._lastListRender = now;
-
-        const listContainer = document.getElementById('flight-list');
         const lowerFilter = filter.toLowerCase();
 
         // Get flights to search: all or active based on toggle
@@ -814,21 +922,48 @@ class PacificWingsApp {
     }
 
     selectFlight(id) {
+        // Clear previous selection visual
+        if (this.selectedFlightId) {
+            const prev = this.markers.get(this.selectedFlightId);
+            if (prev) {
+                const prevEl = prev.getElement();
+                if (prevEl) {
+                    const area = prevEl.querySelector('.plane-hover-area');
+                    if (area) area.classList.remove('selected');
+                }
+            }
+        }
+
         this.selectedFlightId = id;
         const flight = this.flights.find(f => f.id === id);
         if (!flight) return;
 
-        // Show details panel
+        // Apply selected visual to new marker
+        const selMarker = this.markers.get(id);
+        if (selMarker) {
+            const selEl = selMarker.getElement();
+            if (selEl) {
+                const area = selEl.querySelector('.plane-hover-area');
+                if (area) area.classList.add('selected');
+            }
+        }
+
+        // Close base panel if open
+        document.getElementById('selected-base-details').classList.add('hidden');
+        this.selectedBaseKey = null;
+
+        // Show flight details panel
         const panel = document.getElementById('selected-flight-details');
         panel.classList.remove('hidden');
 
         document.getElementById('plane-type').textContent = flight.type;
-        document.getElementById('plane-id').textContent = `Callsign: ${flight.id}`;
+        document.getElementById('plane-id').textContent = flight.id;
         document.getElementById('plane-squadron').textContent = flight.squadron;
         document.getElementById('plane-origin').textContent = flight.origin;
         document.getElementById('plane-dest').textContent = flight.destination;
         document.getElementById('plane-alt').textContent = `${flight.altitude.toLocaleString()} ft`;
         document.getElementById('plane-speed').textContent = `${flight.speed} mph`;
+        document.getElementById('plane-quantity').textContent = flight.numAircraft > 1 ? flight.numAircraft : 'N/A';
         document.getElementById('plane-description').textContent = flight.description || '';
 
         // Focus map
@@ -839,6 +974,30 @@ class PacificWingsApp {
 
         this.updateSelectedPath(flight);
         this.renderFlightList(document.getElementById('flight-search').value);
+    }
+
+    selectBase(key) {
+        const base = this.bases.find(b => b.key === key);
+        if (!base) return;
+
+        this.selectedBaseKey = key;
+
+        // Close flight panel if open
+        document.getElementById('selected-flight-details').classList.add('hidden');
+
+        const fmt = dateStr => {
+            const d = new Date(dateStr.includes('T') ? dateStr : dateStr + 'T00:00:00Z');
+            return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+        };
+
+        document.getElementById('base-name').textContent = base.name;
+        document.getElementById('base-af').textContent = base.af;
+        document.getElementById('base-active').textContent = `${fmt(base.start)} – ${fmt(base.end)}`;
+        document.getElementById('base-location').textContent =
+            `${base.lat.toFixed(2)}° N, ${base.lng.toFixed(2)}° E`;
+        document.getElementById('base-notes').textContent = base.notes || '';
+
+        document.getElementById('selected-base-details').classList.remove('hidden');
     }
 
     jumpToMissionId(missionId) {

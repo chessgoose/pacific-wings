@@ -2,8 +2,8 @@ Read /Users/lzhao/Downloads/pacific-wings/data/missions_chronology.csv and make 
 
 # Todo
 
-
-
 # Completed
 - As you can see in HHAWAIIANAF-19411207-00, the origin Hickam Field Hawaii is in the incorrect location, fix the coordinates in everything
 - These are two separate data points, you should add this as new rows to the CSV -- 12/7/41 Alaska Def Cmd Upon learning of the Pearl Harbor attack, the Cmd’s 6 B-18’s and 12 P-36’s take to the air to avoid being caught on their fields. 
+-  FIFTHAF-19440311-00, FIFTHAF-19430403-00, FIFTHAF-19430215-01, and other missions should be converted into multiple missions with multiple destinations. Check for other descriptiosn that contain multiple locations where separate types of planes may have bombed different locations depending on the plane type and the programatic approac. Add those locations to targets.csv as well
+
