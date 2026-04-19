@@ -445,12 +445,6 @@ class PacificWingsApp {
             csvInput.value = '';
             csvInput.focus();
         };
-
-        clearBtn.onclick = () => {
-            if (confirm('Clear all missions?')) {
-                this.clearAllMissions();
-            }
-        };
     }
 
     initLegend() {
@@ -1297,6 +1291,10 @@ class PacificWingsApp {
     renderDynamicJumpPoints() {
         const container = document.getElementById('custom-jumps');
         const section = document.getElementById('custom-jumps-section');
+
+        // Skip if elements don't exist
+        if (!container || !section) return;
+
         const importedFlights = this.flights.filter(f => f.id.startsWith('IMPORTED'));
 
         container.innerHTML = '';

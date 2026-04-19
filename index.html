@@ -34,7 +34,6 @@
                             Load CSV
                             <input type="file" id="csv-file-input" accept=".csv" style="display:none;">
                         </label>
-                        <button id="show-import" class="sw-btn">Paste</button>
                         <button id="clear-all" class="sw-btn sw-btn-danger">Clear</button>
                     </div>
 
@@ -169,7 +168,7 @@
             <!-- Map Header -->
             <div id="map-header">
                 <h1>Pacific Wings</h1>
-                <p class="subtitle">1944–1945 Theater Operations</p>
+                <p class="subtitle">US World War II Air Force Pacific Theater (1942-45)</p>
             </div>
 
             <!-- Mission ID Search -->
@@ -217,16 +216,14 @@
     <div id="import-modal" class="modal hidden">
         <div class="modal-content glass-panel">
             <header>
-                <h2>Import Historical Missions</h2>
+                <h2>Import Missions</h2>
                 <span class="close-modal">&times;</span>
             </header>
-            <p>Paste CSV data below. Header format:
-                <code>squadron, type, description, start_lat, start_lng, end_lat, end_lng, start_time, duration_hours</code>
-            </p>
-            <textarea id="csv-input"
-                placeholder="Example: 794th Wing, Bomber, Mission to Yawata, 30.34, 103.84, 33.88, 130.82, 1944-06-15 08:00, 10"></textarea>
+            <p>Paste CSV mission data:</p>
+            <textarea id="csv-input" placeholder="Paste CSV data here..."></textarea>
             <div class="modal-actions">
-                <button id="process-csv" class="primary-btn">Load Flights</button>
+                <button id="clear-csv" class="primary-btn" style="background: #666; color: white;">Clear</button>
+                <button id="process-csv" class="primary-btn">Load CSV</button>
             </div>
         </div>
     </div>
