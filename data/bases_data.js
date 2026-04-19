@@ -11,7 +11,7 @@ window.BASES_DATA = [
   {af:"Fifth AF",start:"1944-05-01",end:"1944-09-30",name:"Hollandia New Guinea",lat:-2.53,lng:140.72,notes:"Leapfrog advance"},
   {af:"Fifth AF",start:"1944-10-01",end:"1944-12-31",name:"Leyte Philippines",lat:10.99,lng:124.91,notes:"MacArthur returns to Philippines"},
   {af:"Fifth AF",start:"1945-01-01",end:"1945-08-15",name:"Clark Field Luzon",lat:15.18,lng:120.56,notes:"Luzon liberated Jan 1945"},
-  {af:"Seventh AF",start:"1942-02-05",end:"1944-12-19",name:"Hickam Field Hawaii",lat:21.3156,lng:-157.9497,notes:"Hickam page lists Seventh Air Force from 1942 after redesignation on 1942-02-05; HQ moved to Saipan 1944-12-19"},
+  {af:"Seventh AF",start:"1942-02-05",end:"1945-08-15",name:"Hickam Field Hawaii",lat:21.3156,lng:-157.9497,notes:"Hickam page lists Seventh Air Force from 1942 after redesignation on 1942-02-05; "},
   {af:"Seventh AF",start:"1943-04-20",end:"1944-01-31",name:"Funafuti Ellice Islands",lat:-8.52,lng:179.19,notes:"First B-24 mission from Funafuti 1943-04-20 (Nauru strike); forward base for Gilbert Is campaign"},
   {af:"Seventh AF",start:"1944-02-01",end:"1944-05-31",name:"Kwajalein Marshall Islands",lat:8.72,lng:167.73,notes:"Marshall Islands campaign"},
   {af:"Seventh AF",start:"1944-06-01",end:"1944-08-31",name:"Saipan Marianas",lat:15.18,lng:145.75,notes:"Marianas campaign"},

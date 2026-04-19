@@ -1,28 +1,30 @@
 // Auto-generated from targets.csv
 window.TARGETS_DATA = [
-  {name:"Rabaul",aliases:["Rabaul"],lat:-4.2,lng:152.18,country:"New Britain",type:"port/airfield"}
-  {name:"Vunakanau",aliases:["Vunakanau A/F"],lat:-4.3,lng:152.1,country:"New Britain",type:"airfield"}
-  {name:"Tobera",aliases:["Tobera A/F"],lat:-4.35,lng:152.3,country:"New Britain",type:"airfield"}
-  {name:"Lakunai",aliases:["Lakunai A/F"],lat:-4.2,lng:152.18,country:"New Britain",type:"airfield"}
-  {name:"Kiska",aliases:["Kiska Island"],lat:51.97,lng:177.56,country:"Aleutians",type:"island/base"}
-  {name:"Attu",aliases:["Attu Island"],lat:52.9,lng:-173.19,country:"Aleutians",type:"island/base"}
-  {name:"Paramushiru",aliases:["Paramushiro"],lat:50.38,lng:155.76,country:"Kuriles",type:"island/airfield"}
-  {name:"Shimushu",aliases:["Shimushu"],lat:50.71,lng:156.12,country:"Kuriles",type:"island/airfield"}
-  {name:"Lae",aliases:["Lae"],lat:-6.73,lng:146.99,country:"New Guinea",type:"port/airfield"}
-  {name:"Salamaua",aliases:["Salamaua"],lat:-7.07,lng:147.17,country:"New Guinea",type:"port/airfield"}
-  {name:"Finschhafen",aliases:["Finschhafen"],lat:-6.6,lng:147.85,country:"New Guinea",type:"port"}
-  {name:"Gasmata",aliases:["Gasmata"],lat:-6.28,lng:150.33,country:"New Britain",type:"airfield"}
-  {name:"Cape Gloucester",aliases:["Cape Gloucester A/F"],lat:-5.44,lng:148.44,country:"New Britain",type:"airfield"}
-  {name:"Shihhweiyao",aliases:["Shih Hui Yao","Shihhwei"],lat:27.23,lng:111.47,country:"China",type:"foundry"}
-  {name:"That Khe",aliases:["Thatkhe","Thất Khê"],lat:21.95,lng:105.97,country:"Vietnam",type:"transport hub"}
-  {name:"Vinh",aliases:["Thanh Hoa","Vinh Thanh"],lat:18.67,lng:105.72,country:"Vietnam",type:"town"}
-  {name:"Kep",aliases:["Cap Kep","Kep Point"],lat:20.77,lng:106.62,country:"Vietnam",type:"airfield"}
-  {name:"Luc Nam",aliases:["Luc-nam","Lucnam"],lat:21.8,lng:106.18,country:"Vietnam",type:"town"}
-  {name:"Sichuan",aliases:["Szechuan","Sz Chuan"],lat:27.32,lng:109.51,country:"China",type:"town"}
-  {name:"Neihsiang",aliases:["Nei Hsiang","Neixiang"],lat:33.34,lng:111.92,country:"China",type:"town"}
-  {name:"Sinyang",aliases:["Hsinyang","Xinyang"],lat:32.12,lng:114.07,country:"China",type:"town"}
-  {name:"Mingkiang",aliases:["Ming Chiang","Mingjiang"],lat:25.8,lng:110.33,country:"China",type:"town"}
-  {name:"Siangtan",aliases:["Hsiang Tan","Xiangtan"],lat:27.82,lng:112.95,country:"China",type:"town"}
-  {name:"Kweiping",aliases:["Kueiping","Guiping"],lat:23.4,lng:110.07,country:"China",type:"town"}
-  {name:"Samah Bay",aliases:["Samaah","Samah"],lat:5.32,lng:109.48,country:"Malaysia",type:"anchorage"}
+  {name:"Rabaul",aliases:["Rabaul"],lat:-4.2,lng:152.18,country:"New Britain",type:"port/airfield"},
+  {name:"Vunakanau",aliases:["Vunakanau A/F"],lat:-4.3,lng:152.1,country:"New Britain",type:"airfield"},
+  {name:"Tobera",aliases:["Tobera A/F"],lat:-4.35,lng:152.3,country:"New Britain",type:"airfield"},
+  {name:"Lakunai",aliases:["Lakunai A/F"],lat:-4.2,lng:152.18,country:"New Britain",type:"airfield"},
+  {name:"Kiska",aliases:["Kiska Island"],lat:51.97,lng:177.56,country:"Aleutians",type:"island/base"},
+  {name:"Attu",aliases:["Attu Island"],lat:52.9,lng:-173.19,country:"Aleutians",type:"island/base"},
+  {name:"Paramushiru",aliases:["Paramushiro"],lat:50.38,lng:155.76,country:"Kuriles",type:"island/airfield"},
+  {name:"Shimushu",aliases:["Shimushu"],lat:50.71,lng:156.12,country:"Kuriles",type:"island/airfield"},
+  {name:"Lae",aliases:["Lae"],lat:-6.73,lng:146.99,country:"New Guinea",type:"port/airfield"},
+  {name:"Salamaua",aliases:["Salamaua"],lat:-7.07,lng:147.17,country:"New Guinea",type:"port/airfield"},
+  {name:"Finschhafen",aliases:["Finschhafen"],lat:-6.6,lng:147.85,country:"New Guinea",type:"port"},
+  {name:"Gasmata",aliases:["Gasmata"],lat:-6.28,lng:150.33,country:"New Britain",type:"airfield"},
+  {name:"Cape Gloucester",aliases:["Cape Gloucester A/F"],lat:-5.44,lng:148.44,country:"New Britain",type:"airfield"},
+  {name:"Shihhweiyao",aliases:["Shih Hui Yao","Shihhwei"],lat:27.23,lng:111.47,country:"China",type:"foundry"},
+  {name:"That Khe",aliases:["Thatkhe","Thất Khê"],lat:21.95,lng:105.97,country:"Vietnam",type:"transport hub"},
+  {name:"Vinh",aliases:["Thanh Hoa","Vinh Thanh"],lat:18.67,lng:105.72,country:"Vietnam",type:"town"},
+  {name:"Kep",aliases:["Cap Kep","Kep Point"],lat:20.77,lng:106.62,country:"Vietnam",type:"airfield"},
+  {name:"Luc Nam",aliases:["Luc-nam","Lucnam"],lat:21.8,lng:106.18,country:"Vietnam",type:"town"},
+  {name:"Sichuan",aliases:["Szechuan","Sz Chuan"],lat:27.32,lng:109.51,country:"China",type:"town"},
+  {name:"Neihsiang",aliases:["Nei Hsiang","Neixiang"],lat:33.34,lng:111.92,country:"China",type:"town"},
+  {name:"Sinyang",aliases:["Hsinyang","Xinyang"],lat:32.12,lng:114.07,country:"China",type:"town"},
+  {name:"Mingkiang",aliases:["Ming Chiang","Mingjiang"],lat:25.8,lng:110.33,country:"China",type:"town"},
+  {name:"Siangtan",aliases:["Hsiang Tan","Xiangtan"],lat:27.82,lng:112.95,country:"China",type:"town"},
+  {name:"Kweiping",aliases:["Kueiping","Guiping"],lat:23.4,lng:110.07,country:"China",type:"town"},
+  {name:"Samah Bay",aliases:["Samaah","Samah"],lat:5.32,lng:109.48,country:"Malaysia",type:"anchorage"},
+  {name:"Truk",aliases:["Truk Lagoon","Chuuk","Truk Atoll"],lat:7.45,lng:151.85,country:"Caroline Islands",type:"naval base"},
+  {name:"Susaki",aliases:["Susaki A/F","Susuiki"],lat:27.06,lng:142.21,country:"Chichi Jima",type:"airfield"}
 ];
