@@ -1,9 +1,13 @@
 Read /Users/lzhao/Downloads/pacific-wings/data/missions_chronology.csv and make the following fixes
 
-# Todo
+# Specific Todo
+- ELEVENTHAF-19420904-00 location is incorrect, should be Nazan and Kuluk Bays
+- FOURTEENTHAF-19450611-00 destination should be Kuanshuishih.
+
 - FOURTEENTHAF-19431005-01 destination assigned is incorrect
+
+# General Todo
 - FOURTEENTHAF-19450402-01 and other similar missions should be split up more specifically since there are multiple trips with different destinations, you will probably need to manually inspect the description to figure out the best way to do so, update the targets as well
-- there are a few instances where multiple events were parsed into one description, correct those and add any new Asian missions you might find (you could regex dates within the descriptions field)
 
 # Completed
 - As you can see in HHAWAIIANAF-19411207-00, the origin Hickam Field Hawaii is in the incorrect location, fix the coordinates in everything

@@ -1,2 +1,3 @@
 - When updating missions_data.js and the csv, bias towards manually reading the descriptions unless you know you can be 100% accurate programatically
-- Whenever you make changes manually to missions_chronology.csv, go and use /Users/lzhao/Downloads/pacific-wings/scripts/generate-missions-data.py to update missions_data.js as well
+- Whenever you make changes manually to missions_chronology.csv, go and use /Users/lzhao/Downloads/pacific-wings/scripts/generate-missions-data.py to update missions_data.js as well. If there is a base or a target that was not included in bases or targets, you should add the relevant rows in teh csv and use the corresponding scripts to update the js.
+- If you realize that a row in missions.csv corresponds to multiple missions, you should add more rows to the missions_chronology.csv spreadsheet
