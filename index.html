@@ -41,7 +41,6 @@
                     <div class="sw-panel">
                         <div class="sw-panel-hd">
                             <span class="sw-panel-title">Active Missions</span>
-                            <span class="sw-badge-live">LIVE</span>
                             <button class="sw-collapse-btn" aria-label="toggle">−</button>
                         </div>
                         <div class="sw-panel-bd">
@@ -50,6 +49,21 @@
                                 <strong id="active-count">0</strong>
                             </div>
                             <div id="active-missions-list" class="sw-mission-list"></div>
+                        </div>
+                    </div>
+
+                    <!-- Panel: Squadron Filter -->
+                    <div class="sw-panel">
+                        <div class="sw-panel-hd">
+                            <span class="sw-panel-title">Squadron Filter</span>
+                            <button class="sw-collapse-btn" aria-label="toggle">−</button>
+                        </div>
+                        <div class="sw-panel-bd">
+                            <div class="sqf-controls">
+                                <button id="sqf-select-all" class="sqf-ctrl-btn">Select All</button>
+                                <button id="sqf-unselect-all" class="sqf-ctrl-btn">Unselect All</button>
+                            </div>
+                            <div id="sqf-list" class="sqf-list"></div>
                         </div>
                     </div>
 
@@ -153,6 +167,33 @@
                         <div class="fd-section fd-section-last">
                             <div class="fd-section-title">Notes</div>
                             <div id="base-notes" class="fd-description"></div>
+                        </div>
+                    </div>
+
+                    <!-- Target details -->
+                    <div id="selected-target-details" class="hidden">
+                        <div class="fd-header">
+                            <div>
+                                <div class="fd-callsign" id="target-name">-</div>
+                                <div class="fd-subtype" id="target-type">Target</div>
+                            </div>
+                        </div>
+                        <div class="fd-section">
+                            <div class="fd-section-title">Location</div>
+                            <div class="fd-grid">
+                                <div class="fd-cell fd-cell-wide">
+                                    <span class="fd-cell-label">Country / Region</span>
+                                    <span class="fd-cell-value" id="target-country">-</span>
+                                </div>
+                                <div class="fd-cell fd-cell-wide">
+                                    <span class="fd-cell-label">Coordinates</span>
+                                    <span class="fd-cell-value" id="target-location">-</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fd-section fd-section-last">
+                            <div class="fd-section-title">Missions to This Target</div>
+                            <div id="target-missions-list" class="sw-mission-list"></div>
                         </div>
                     </div>
 

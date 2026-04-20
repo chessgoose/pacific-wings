@@ -11,6 +11,7 @@ class PacificWingsApp {
         this.markers = new Map(); // PlaneID -> Marker
         this.baseMarkers = new Map(); // base key -> Marker
         this.targetMarkers = new Map(); // target name -> Marker
+        this.trailPolylines = new Map(); // flightId -> [L.polyline, ...]
         this.selectedFlightPath = null; // Polyline for selected flight
         this.currentTime = new Date('1941-12-07T06:00:00Z').getTime();
         this.isPlaying = false;
@@ -20,7 +21,7 @@ class PacificWingsApp {
         this.selectedFlightId = null;
         this.selectedBaseKey = null;
         this.searchAllMissions = false; // Toggle for searching all vs active missions
-        this.squadronFilter = null; // Current squadron filter (null = no filter)
+        this.selectedSquadrons = null; // Set of selected squadrons (null = all shown)
 
         this.init();
     }
@@ -64,58 +65,182 @@ class PacificWingsApp {
         if (window.MISSIONS_CSV) {
             this.parseMissionsCSV(window.MISSIONS_CSV);
             this.renderSquadronTags();
+            this.renderSquadronFilterPanel();
         }
     }
 
     renderSquadronTags() {
-        // Get unique squadrons, sorted alphabetically
+        // Get unique squadrons, sorted alphabetically (legacy hidden tags — kept for compat)
         const squadrons = [...new Set(this.flights.map(f => f.squadron))].sort();
         const container = document.getElementById('squadron-tags');
         container.innerHTML = '';
-
         squadrons.forEach(squadron => {
             const tag = document.createElement('button');
             tag.className = 'squadron-tag';
             tag.textContent = squadron;
-            tag.style.cssText = `
-                padding: 6px 12px;
-                border-radius: 20px;
-                border: 1px solid var(--panel-border);
-                background: transparent;
-                color: var(--text-primary);
-                cursor: pointer;
-                font-size: 0.8rem;
-                transition: all 0.2s ease;
-            `;
-
-            // Highlight if this squadron is currently filtered
-            if (this.squadronFilter === squadron) {
-                tag.style.backgroundColor = 'var(--accent-color)';
-                tag.style.borderColor = 'var(--accent-color)';
-                tag.style.color = '#fff';
-            }
-
-            tag.addEventListener('mouseenter', () => {
-                if (this.squadronFilter !== squadron) {
-                    tag.style.backgroundColor = 'var(--panel-bg)';
-                }
-            });
-
-            tag.addEventListener('mouseleave', () => {
-                if (this.squadronFilter !== squadron) {
-                    tag.style.backgroundColor = 'transparent';
-                }
-            });
-
-            tag.addEventListener('click', () => {
-                // Toggle squadron filter
-                this.squadronFilter = this.squadronFilter === squadron ? null : squadron;
-                this.renderSquadronTags(); // Re-render to update highlights
-                this.renderFlightList(document.getElementById('flight-search').value);
-            });
-
             container.appendChild(tag);
         });
+    }
+
+    renderSquadronFilterPanel() {
+        const listEl = document.getElementById('sqf-list');
+        if (!listEl) return;
+
+        const squadrons = [...new Set(this.flights.map(f => f.squadron))].sort();
+
+        // Initialize selectedSquadrons to all if not set
+        if (this.selectedSquadrons === null) {
+            this.selectedSquadrons = new Set(squadrons);
+        }
+
+        // Count missions per squadron
+        const counts = {};
+        squadrons.forEach(sq => { counts[sq] = 0; });
+        this.flights.forEach(f => { if (counts[f.squadron] !== undefined) counts[f.squadron]++; });
+
+        listEl.innerHTML = '';
+        squadrons.forEach(squadron => {
+            const item = document.createElement('label');
+            item.className = 'sqf-item';
+
+            const cb = document.createElement('input');
+            cb.type = 'checkbox';
+            cb.checked = this.selectedSquadrons.has(squadron);
+            cb.addEventListener('change', () => {
+                if (cb.checked) {
+                    this.selectedSquadrons.add(squadron);
+                } else {
+                    this.selectedSquadrons.delete(squadron);
+                }
+                this._applySquadronFilter();
+            });
+
+            const label = document.createElement('span');
+            label.className = 'sqf-label';
+            label.textContent = squadron;
+
+            const count = document.createElement('span');
+            count.className = 'sqf-count';
+            count.textContent = counts[squadron];
+
+            item.appendChild(cb);
+            item.appendChild(label);
+            item.appendChild(count);
+            listEl.appendChild(item);
+        });
+
+        // Wire up Select All / Unselect All
+        const selectAllBtn = document.getElementById('sqf-select-all');
+        const unselectAllBtn = document.getElementById('sqf-unselect-all');
+        if (selectAllBtn) {
+            selectAllBtn.onclick = () => {
+                this.selectedSquadrons = new Set(squadrons);
+                listEl.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = true);
+                this._applySquadronFilter();
+            };
+        }
+        if (unselectAllBtn) {
+            unselectAllBtn.onclick = () => {
+                this.selectedSquadrons = new Set();
+                listEl.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+                this._applySquadronFilter();
+            };
+        }
+    }
+
+    _applySquadronFilter() {
+        this.updatePlanesOnMap();
+        this.updateStats();
+        this.renderFlightList(document.getElementById('flight-search').value);
+    }
+
+    _isSquadronVisible(squadron) {
+        if (this.selectedSquadrons === null) return true;
+        return this.selectedSquadrons.has(squadron);
+    }
+
+    _updateTrails(visibleFlights) {
+        const TRAIL_GAME_WINDOW_MS = 4 * 60 * 60 * 1000; // trail covers last 4 game-hours of a flight
+        const FADE_DURATION_MS    = 6 * 60 * 60 * 1000; // post-landing trail fades over 6 game-hours
+        const TRAIL_SAMPLE_POINTS = 40;
+        const TRAIL_SEGMENTS = 6;
+        const BASE_OPACITIES = [0.06, 0.13, 0.23, 0.37, 0.55, 0.72];
+        const WEIGHTS        = [1,    1,    1.5,  1.5,  2,    2];
+        const COLOR = '#ffffff';
+
+        // Recently-landed flights that are still within the fade window
+        const fadingFlights = this.flights.filter(f =>
+            f.endMs < this.currentTime &&
+            this.currentTime - f.endMs < FADE_DURATION_MS &&
+            this._isSquadronVisible(f.squadron)
+        );
+
+        const allTrailIds = new Set([
+            ...visibleFlights.map(f => f.id),
+            ...fadingFlights.map(f => f.id)
+        ]);
+
+        // Remove polylines for flights outside both sets
+        this.trailPolylines.forEach((segs, id) => {
+            if (!allTrailIds.has(id)) {
+                segs.forEach(p => this.map.removeLayer(p));
+                this.trailPolylines.delete(id);
+            }
+        });
+
+        const renderTrail = (flight, trailStart, trailEnd, opacityScale) => {
+            const span = trailEnd - trailStart;
+            if (span <= 0) return;
+
+            const points = [];
+            for (let i = 0; i <= TRAIL_SAMPLE_POINTS; i++) {
+                const t = trailStart + (i / TRAIL_SAMPLE_POINTS) * span;
+                const progress = (t - flight.startMs) / flight.duration;
+                const pos = this.getPlanePoseAtProgress(flight.waypoints, progress).position;
+                points.push([pos.lat, pos.lng]);
+            }
+
+            if (!this.trailPolylines.has(flight.id)) {
+                const segs = Array.from({ length: TRAIL_SEGMENTS }, (_, i) =>
+                    L.polyline([], {
+                        color: COLOR,
+                        weight: WEIGHTS[i],
+                        opacity: BASE_OPACITIES[i],
+                        interactive: false,
+                        pane: 'shadowPane'
+                    }).addTo(this.map)
+                );
+                this.trailPolylines.set(flight.id, segs);
+            }
+
+            const segs = this.trailPolylines.get(flight.id);
+            const n = points.length;
+            for (let s = 0; s < TRAIL_SEGMENTS; s++) {
+                const startIdx = Math.floor((s / TRAIL_SEGMENTS) * (n - 1));
+                const endIdx   = Math.floor(((s + 1) / TRAIL_SEGMENTS) * (n - 1));
+                segs[s].setLatLngs(points.slice(startIdx, endIdx + 1));
+                segs[s].setStyle({ opacity: BASE_OPACITIES[s] * opacityScale });
+            }
+        };
+
+        // Active flights — trail follows current position
+        for (const flight of visibleFlights) {
+            const trailStart = Math.max(this.currentTime - TRAIL_GAME_WINDOW_MS, flight.startMs);
+            renderTrail(flight, trailStart, this.currentTime, 1.0);
+        }
+
+        // Fading flights — trail frozen at landing position, opacity decays to 0
+        for (const flight of fadingFlights) {
+            const age = this.currentTime - flight.endMs;
+            const opacityScale = 1.0 - (age / FADE_DURATION_MS);
+            const trailStart = Math.max(flight.endMs - TRAIL_GAME_WINDOW_MS, flight.startMs);
+            renderTrail(flight, trailStart, flight.endMs, opacityScale);
+        }
+    }
+
+    _clearAllTrails() {
+        this.trailPolylines.forEach(segs => segs.forEach(p => this.map.removeLayer(p)));
+        this.trailPolylines.clear();
     }
 
     parseDateBoundary(dateStr, endOfDay = false) {
@@ -133,10 +258,12 @@ class PacificWingsApp {
             this.flights = [];
             this.markers.forEach(m => this.map.removeLayer(m));
             this.markers.clear();
-            this.squadronFilter = null; // Reset squadron filter
+            this._clearAllTrails();
+            this.selectedSquadrons = null; // Reset squadron filter
             this.parseMissionsCSV(e.target.result);
             this.buildTimeIndex();
             this.renderSquadronTags();
+            this.renderSquadronFilterPanel();
             this.updateTick();
             this.renderDynamicJumpPoints();
             console.log(`Loaded ${this.flights.length} missions from ${file.name}`);
@@ -492,6 +619,7 @@ class PacificWingsApp {
         this.markers.clear();
         this.targetMarkers.forEach(marker => this.map.removeLayer(marker));
         this.targetMarkers.clear();
+        this._clearAllTrails();
         if (this.selectedFlightPath) {
             this.map.removeLayer(this.selectedFlightPath);
             this.selectedFlightPath = null;
@@ -502,9 +630,10 @@ class PacificWingsApp {
         this.maxDuration = 0;
         this.selectedFlightId = null;
         this.selectedBaseKey = null;
-        this.squadronFilter = null;
+        this.selectedSquadrons = null;
         document.getElementById('sidebar-views').classList.remove('detail-open');
         this.renderSquadronTags();
+        this.renderSquadronFilterPanel();
         this.renderDynamicJumpPoints();
         this.updateTick();
     }
@@ -689,6 +818,7 @@ class PacificWingsApp {
                 iconAnchor: [8, 8]
             });
             const marker = L.marker([targetData.lat, lng], { icon, zIndexOffset: -100 }).addTo(this.map);
+            marker.on('click', () => this.selectTarget(canonicalName));
             marker.bindTooltip(
                 `<strong>${targetData.name}</strong><br><span style="opacity:0.7">${targetData.type}</span>`,
                 { direction: 'top', offset: [0, -10] }
@@ -707,18 +837,19 @@ class PacificWingsApp {
 
     updatePlanesOnMap() {
         const activeFlights = this.getActiveFlights();
-        const activeIds = new Set(activeFlights.map(f => f.id));
+        const visibleFlights = activeFlights.filter(f => this._isSquadronVisible(f.squadron));
+        const visibleIds = new Set(visibleFlights.map(f => f.id));
 
-        // Remove markers for flights that are no longer active
+        // Remove markers for flights that are no longer active or are filtered out
         this.markers.forEach((marker, id) => {
-            if (!activeIds.has(id)) {
+            if (!visibleIds.has(id)) {
                 this.map.removeLayer(marker);
                 this.markers.delete(id);
             }
         });
 
-        // Update or create markers only for active flights
-        for (const flight of activeFlights) {
+        // Update or create markers only for visible active flights
+        for (const flight of visibleFlights) {
             const progress = (this.currentTime - flight.startMs) / flight.duration;
             const pose = this.getPlanePoseAtProgress(flight.waypoints, progress);
             const pos = pose.position;
@@ -752,9 +883,13 @@ class PacificWingsApp {
                 if (el) {
                     const inner = el.querySelector('.plane-marker');
                     if (inner) inner.style.transform = `rotate(${bearing}deg)`;
+                    const hoverArea = el.querySelector('.plane-hover-area');
+                    if (hoverArea) hoverArea.classList.toggle('selected', this.selectedFlightId === flight.id);
                 }
             }
         }
+
+        this._updateTrails(visibleFlights);
     }
 
     getPlanePoseAtProgress(waypoints, progress) {
@@ -892,9 +1027,10 @@ class PacificWingsApp {
 
     updateStats() {
         const activeFlights = this.getActiveFlights();
+        const visibleFlights = activeFlights.filter(f => this._isSquadronVisible(f.squadron));
         const countEl = document.getElementById('active-count');
-        if (countEl) countEl.textContent = activeFlights.length.toLocaleString();
-        this.updateActiveMissionsPanel(activeFlights);
+        if (countEl) countEl.textContent = visibleFlights.length.toLocaleString();
+        this.updateActiveMissionsPanel(visibleFlights);
     }
 
     updateActiveMissionsPanel(activeFlights) {
@@ -935,7 +1071,8 @@ class PacificWingsApp {
 
         // Throttle list rebuilds to every 500ms unless a search filter is active
         const now = Date.now();
-        if (!filter && !this.squadronFilter && this._lastListRender && now - this._lastListRender < 500) return;
+        const hasSquadronFilter = this.selectedSquadrons !== null && this.selectedSquadrons.size !== this.flights.length;
+        if (!filter && !hasSquadronFilter && this._lastListRender && now - this._lastListRender < 500) return;
         this._lastListRender = now;
         const lowerFilter = filter.toLowerCase();
 
@@ -945,7 +1082,7 @@ class PacificWingsApp {
         // Filter flights based on search term and squadron filter
         const displayFlights = flightsToSearch.filter(f => {
             // Check squadron filter first
-            if (this.squadronFilter && f.squadron !== this.squadronFilter) {
+            if (!this._isSquadronVisible(f.squadron)) {
                 return false;
             }
 
@@ -1037,8 +1174,9 @@ class PacificWingsApp {
             }
         }
 
-        // Show flight detail, hide base detail, slide to detail page
+        // Show flight detail, hide base/target detail, slide to detail page
         document.getElementById('selected-base-details').classList.add('hidden');
+        document.getElementById('selected-target-details').classList.add('hidden');
         this.selectedBaseKey = null;
         const panel = document.getElementById('selected-flight-details');
         panel.classList.remove('hidden');
@@ -1088,8 +1226,9 @@ class PacificWingsApp {
 
         this.selectedBaseKey = key;
 
-        // Show base detail, hide flight detail, slide to detail page
+        // Show base detail, hide flight/target detail, slide to detail page
         document.getElementById('selected-flight-details').classList.add('hidden');
+        document.getElementById('selected-target-details').classList.add('hidden');
         this.selectedFlightId = null;
 
         const fmt = dateStr => {
@@ -1105,6 +1244,51 @@ class PacificWingsApp {
         document.getElementById('base-notes').textContent = base.notes || '';
 
         document.getElementById('selected-base-details').classList.remove('hidden');
+        this._openDetailView();
+    }
+
+    selectTarget(canonicalName) {
+        const targetData = this._targetsIndex && this._targetsIndex[canonicalName.toLowerCase()];
+        if (!targetData) return;
+
+        // Hide other detail panels
+        document.getElementById('selected-flight-details').classList.add('hidden');
+        document.getElementById('selected-base-details').classList.add('hidden');
+        this.selectedFlightId = null;
+        this.selectedBaseKey = null;
+
+        document.getElementById('target-name').textContent = targetData.name;
+        document.getElementById('target-type').textContent = targetData.type || 'Target';
+        document.getElementById('target-country').textContent = targetData.country || '-';
+        document.getElementById('target-location').textContent =
+            `${targetData.lat.toFixed(2)}° N, ${targetData.lng.toFixed(2)}° E`;
+
+        // List missions that targeted this location
+        const list = document.getElementById('target-missions-list');
+        list.innerHTML = '';
+        const missions = this.flights.filter(f =>
+            f.targetName && f.targetName.toLowerCase() === canonicalName.toLowerCase()
+        );
+        if (missions.length === 0) {
+            list.innerHTML = '<div style="opacity:0.5;font-size:0.85em;">No missions in current data.</div>';
+        } else {
+            for (const m of missions) {
+                const item = document.createElement('div');
+                item.className = 'sw-flight-item';
+                const cat = m.missionCategory || '';
+                item.innerHTML = `
+                    <div class="sw-fi-info">
+                        <span class="sw-fi-type">${m.type}</span>
+                        <span class="sw-fi-sq">${m.squadron}</span>
+                    </div>
+                    ${cat ? `<span class="sw-fi-cat">${cat.toUpperCase()}</span>` : ''}
+                `;
+                item.addEventListener('click', () => this.selectFlight(m.id));
+                list.appendChild(item);
+            }
+        }
+
+        document.getElementById('selected-target-details').classList.remove('hidden');
         this._openDetailView();
     }
 
@@ -1220,9 +1404,10 @@ class PacificWingsApp {
                 });
             }
 
-            this.squadronFilter = null;
+            this.selectedSquadrons = null;
             this.buildTimeIndex();
             this.renderSquadronTags();
+            this.renderSquadronFilterPanel();
             this.updateTick();
             this.renderDynamicJumpPoints();
 
