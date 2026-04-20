@@ -34,6 +34,7 @@
                             Load CSV
                             <input type="file" id="csv-file-input" accept=".csv" style="display:none;">
                         </label>
+                        <button id="about-btn" class="sw-btn">About</button>
                         <button id="clear-all" class="sw-btn sw-btn-danger">Clear</button>
                     </div>
 
@@ -252,6 +253,54 @@
                 </div>
             </div>
         </main>
+    </div>
+
+    <!-- About Modal -->
+    <div id="about-modal" class="modal hidden">
+        <div class="modal-content glass-panel about-modal-content">
+            <span class="close-modal" id="about-close">&times;</span>
+            <h2>About Pacific Wings</h2>
+            <p>A historical flight tracker for US Army Air Forces operations in the Pacific Theater, 1941–1945. Missions are visualized in real time along the timeline, with routes derived from operational records.</p>
+
+            <div class="about-section">
+                <h3>Sources</h3>
+                <ul class="about-list">
+                    <li><em>USAF Historical Division, Air Force Historical Research Agency (AFHRA)</em> — mission chronologies and operational summaries</li>
+                    <li><em>The B-29 Superfortress</em> — aircraft records and serial numbers</li>
+                    <li>Historical basemap: <a href="https://github.com/aourednik/historical-basemaps" target="_blank" rel="noopener">aourednik/historical-basemaps</a> (1938 GeoJSON)</li>
+                </ul>
+            </div>
+
+            <div class="about-section">
+                <h3>Load CSV — Format</h3>
+                <p>The <strong>Load CSV</strong> button accepts a local file. Data never leaves your browser. Required columns (header row must be present):</p>
+                <div class="csv-schema">
+                    <table class="about-table">
+                        <thead><tr><th>Column</th><th>Example</th><th>Notes</th></tr></thead>
+                        <tbody>
+                            <tr><td>id</td><td>TWENTHAF-19450806-00</td><td>Unique mission identifier</td></tr>
+                            <tr><td>squadron</td><td>Twentieth AF</td><td>Unit / command name</td></tr>
+                            <tr><td>type</td><td>B-29 Superfortress</td><td>Aircraft type</td></tr>
+                            <tr><td>description</td><td>"Mission notes…"</td><td>Free text; quote if it contains commas</td></tr>
+                            <tr><td>start_lat</td><td>24.78</td><td>Origin latitude</td></tr>
+                            <tr><td>start_lng</td><td>141.32</td><td>Origin longitude</td></tr>
+                            <tr><td>end_lat</td><td>34.39</td><td>Destination latitude</td></tr>
+                            <tr><td>end_lng</td><td>132.45</td><td>Destination longitude</td></tr>
+                            <tr><td>start_time</td><td>1945-08-06T02:45:00Z</td><td>ISO 8601 UTC</td></tr>
+                            <tr><td>duration_hours</td><td>6.5</td><td>Flight duration in hours</td></tr>
+                            <tr><td>altitude</td><td>31000</td><td>Feet (optional)</td></tr>
+                            <tr><td>speed</td><td>220</td><td>MPH (optional)</td></tr>
+                            <tr><td>waypoints</td><td>25.1:141.3;30.0:138.0</td><td>lat:lng pairs separated by <code>;</code> (optional)</td></tr>
+                            <tr><td>origin_base</td><td>North Field Tinian</td><td>Must match a base in bases.csv (optional)</td></tr>
+                            <tr><td>target_name</td><td>Hiroshima</td><td>Must match a target in targets.csv (optional)</td></tr>
+                            <tr><td>num_aircraft</td><td>1</td><td>Number of aircraft (optional)</td></tr>
+                            <tr><td>to_check</td><td></td><td>Internal review flag — leave blank</td></tr>
+                            <tr><td>mission_category</td><td>Strategic Bombing</td><td>Category label (optional)</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Import Modal -->

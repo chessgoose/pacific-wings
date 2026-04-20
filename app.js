@@ -374,6 +374,205 @@ class PacificWingsApp {
         return cols;
     }
 
+    // ── Basemap helpers ─────────────────────────────────────────────────────
+
+    // Recursively shift all [lng, lat] coordinates by a longitude offset
+    _shiftGeoJSONLng(geojson, offset) {
+        function shiftCoords(c) {
+            if (typeof c[0] === 'number') return [c[0] + offset, c[1]];
+            return c.map(shiftCoords);
+        }
+        return {
+            ...geojson,
+            features: geojson.features.map(f => f.geometry ? {
+                ...f,
+                geometry: { ...f.geometry, coordinates: shiftCoords(f.geometry.coordinates) }
+            } : f)
+        };
+    }
+
+    // Area-weighted centroid across ALL polygons in a MultiPolygon (returns [lat, lng]).
+    // Using the weighted average rather than just the largest polygon avoids cases
+    // where near-equal-sized islands cause the label to land on the wrong one
+    // (e.g. the 1938 "Saipan" feature covers the whole Marianas chain).
+    // Handles features that straddle the antimeridian by normalising longitudes
+    // to a ±180° window around a global reference before accumulating.
+    _multipolygonCenter(coordinates) {
+        // First pass: pick a reference longitude from the raw average of all coords
+        const allLngs = [];
+        for (const polygon of coordinates) {
+            for (const pt of polygon[0]) allLngs.push(pt[0]);
+        }
+        const refLng = allLngs.reduce((a, b) => a + b, 0) / allLngs.length;
+
+        function normLng(lng) {
+            let d = lng - refLng;
+            while (d > 180) d -= 360;
+            while (d < -180) d += 360;
+            return refLng + d;
+        }
+
+        // Second pass: accumulate area-weighted centroid across every polygon
+        let totalArea = 0, sumCx = 0, sumCy = 0;
+        for (const polygon of coordinates) {
+            const ring = polygon[0];
+            let area = 0, cx = 0, cy = 0;
+            for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+                const xi = normLng(ring[i][0]), yi = ring[i][1];
+                const xj = normLng(ring[j][0]), yj = ring[j][1];
+                const cross = xi * yj - xj * yi;
+                area += cross;
+                cx += (xi + xj) * cross;
+                cy += (yi + yj) * cross;
+            }
+            area = Math.abs(area) / 2;
+            if (area > 0) {
+                sumCx += cx / 6;   // == area * centroid_x
+                sumCy += cy / 6;
+                totalArea += area;
+            }
+        }
+        if (totalArea === 0) return [0, 0];
+
+        let lng = sumCx / totalArea;
+        while (lng > 180) lng -= 360;
+        while (lng < -180) lng += 360;
+        return [sumCy / totalArea, lng]; // [lat, lng]
+    }
+
+    // Add a GeoJSON layer at 0°, -360°, and +360° so the map tiles horizontally.
+    // Pass nameProp to also render permanent labels from that feature property.
+    // Pass group (a L.LayerGroup) to collect everything into it instead of the map.
+    _addRepeatableGeoJSON(geojson, options, nameProp, group) {
+        const target = group || this.map;
+        [-360, 0, 360].forEach(offset => {
+            const data = offset === 0 ? geojson : this._shiftGeoJSONLng(geojson, offset);
+            const opts = { ...options };
+            if (nameProp) {
+                const self = this;
+                opts.onEachFeature = (feature, layer) => {
+                    const name = feature.properties[nameProp]
+                        || feature.properties.NAME
+                        || feature.properties.name;
+                    if (!name) return;
+                    const center = self._multipolygonCenter(feature.geometry.coordinates);
+                    L.marker(center, {
+                        icon: L.divIcon({
+                            className: 'basemap-label',
+                            html: `<span>${name}</span>`,
+                            iconSize: null,
+                            iconAnchor: [0, 0]
+                        }),
+                        interactive: false,
+                        zIndexOffset: -9999
+                    }).addTo(target);
+                };
+            }
+            L.geoJSON(data, opts).addTo(target);
+        });
+    }
+
+    async _loadBasemap() {
+        const LAND_STYLE = {
+            style: {
+                fillColor: '#1c2a3a',
+                fillOpacity: 1,
+                color: 'rgba(160, 140, 100, 0.35)',
+                weight: 0.8
+            },
+            interactive: false
+        };
+        const ISLAND_STYLE = {
+            style: {
+                fillColor: '#1c2a3a',
+                fillOpacity: 1,
+                color: 'rgba(160, 140, 100, 0.25)',
+                weight: 0.5
+            },
+            interactive: false
+        };
+
+        // Pacific island sub-regions in Natural Earth 50m country data.
+        // "Australia and New Zealand" is included for Norfolk Is., Ashmore & Cartier, etc.
+        const PACIFIC_SUBREGIONS = new Set([
+            'polynesia', 'micronesia', 'melanesia', 'australia and new zealand'
+        ]);
+
+        // Nations/territories to skip from the modern supplement — either large
+        // continental landmasses already in the 1938 layer, or islands already
+        // covered under a different 1938 name (e.g. "N. Mariana Is." = 1938 "Saipan").
+        const SKIP_NAMES = new Set([
+            // Continental Asia-Pacific (already in 1938 basemap)
+            'australia', 'new zealand', 'papua new guinea',
+            'indonesia', 'philippines', 'japan', 'china', 'taiwan',
+            'malaysia', 'brunei', 'singapore', 'vietnam', 'thailand',
+            'cambodia', 'laos', 'timor-leste', 'mongolia',
+            'north korea', 'south korea', 'hong kong', 'macao',
+            // Islands already present in 1938 data under same or different name
+            'guam',              // 1938: "Guam"
+            'n. mariana is.',    // 1938: "Saipan"
+            'new caledonia',     // 1938: "New Caledonia"
+            'solomon is.',       // 1938: "Solomon Islands" area
+            'vanuatu',           // 1938: "New Hebrides"
+            'american samoa',    // 1938: "American Samoa"
+            'samoa',             // 1938: "Samoa"
+            'tonga',             // 1938: "Tonga"
+            'niue',              // 1938: "Niue"
+            'wallis and futuna is.', // 1938: "Wallis and Futuna Islands"
+        ]);
+
+        // Historical layer group — everything goes here so we can show/hide as a unit
+        this._historicalGroup = L.layerGroup().addTo(this.map);
+
+        // Modern CARTO tile — created now but not added to map until toggled
+        this._modernTile = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            subdomains: 'abcd',
+            maxZoom: 20
+        });
+
+        this._basemapMode = 'historical';
+
+        try {
+            const [hist, modern] = await Promise.all([
+                fetch('https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1938.geojson').then(r => r.json()),
+                // 50m for better small-island coverage (Fiji, Marshall Is., Kiribati, etc.)
+                fetch('https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson').then(r => r.json())
+            ]);
+
+            const pacificIslands = {
+                type: 'FeatureCollection',
+                features: modern.features.filter(f => {
+                    const subregion = (f.properties.SUBREGION || '').toLowerCase();
+                    if (!PACIFIC_SUBREGIONS.has(subregion)) return false;
+                    const name = (f.properties.NAME || '').toLowerCase().trim();
+                    return !SKIP_NAMES.has(name);
+                })
+            };
+
+            this._addRepeatableGeoJSON(hist, LAND_STYLE, 'NAME', this._historicalGroup);
+            this._addRepeatableGeoJSON(pacificIslands, ISLAND_STYLE, 'NAME', this._historicalGroup);
+        } catch {
+            // Silent fallback — ocean background from CSS remains visible
+        }
+    }
+
+    _toggleBasemap() {
+        const btn = document.getElementById('basemap-toggle-btn');
+        if (this._basemapMode === 'historical') {
+            this._historicalGroup.remove();
+            this._modernTile.addTo(this.map);
+            this._basemapMode = 'modern';
+            btn.textContent = 'Modern map';
+            btn.classList.add('active');
+        } else {
+            this._modernTile.remove();
+            this._historicalGroup.addTo(this.map);
+            this._basemapMode = 'historical';
+            btn.textContent = '1938 map';
+            btn.classList.remove('active');
+        }
+    }
+
     initMap() {
         // Initialize Leaflet map
         this.map = L.map('map', {
@@ -384,11 +583,24 @@ class PacificWingsApp {
             worldCopyJump: true
         }).setView([20.0, 170.0], 3); // Pacific Theater (India/Philippines left, Hawaii center, US West Coast right)
 
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-            subdomains: 'abcd',
-            maxZoom: 20
-        }).addTo(this.map);
+        // Load basemap layers (historical + modern Pacific islands, repeating)
+        this._loadBasemap();
+
+
+        // Basemap toggle control (top-right, above zoom)
+        const BasemapToggle = L.Control.extend({
+            options: { position: 'topright' },
+            onAdd: () => {
+                const div = L.DomUtil.create('div', 'basemap-toggle-wrap leaflet-bar');
+                div.innerHTML = '<button id="basemap-toggle-btn" class="basemap-toggle-btn">1938 map</button>';
+                L.DomEvent.disableClickPropagation(div);
+                return div;
+            }
+        });
+        new BasemapToggle().addTo(this.map);
+        document.addEventListener('click', e => {
+            if (e.target.id === 'basemap-toggle-btn') this._toggleBasemap();
+        });
 
         // Move zoom control to top-right
         L.control.zoom({ position: 'topright' }).addTo(this.map);
@@ -533,6 +745,7 @@ class PacificWingsApp {
         }
 
         this.setupImportModal();
+        this.setupAboutModal();
     }
 
     addJumpPointListeners() {
@@ -572,6 +785,16 @@ class PacificWingsApp {
             csvInput.value = '';
             csvInput.focus();
         };
+    }
+
+    setupAboutModal() {
+        const modal = document.getElementById('about-modal');
+        const closeBtn = document.getElementById('about-close');
+        const openBtn = document.getElementById('about-btn');
+
+        openBtn.onclick = () => modal.classList.remove('hidden');
+        closeBtn.onclick = () => modal.classList.add('hidden');
+        modal.addEventListener('click', (e) => { if (e.target === modal) modal.classList.add('hidden'); });
     }
 
     initLegend() {
