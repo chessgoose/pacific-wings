@@ -1,0 +1,12 @@
+image,image_num,report_date_if_manually_read,squadron_if_manually_read,transcription_status,extracted_sortie_id,notes
+IMG_3362.JPG,3362,1944-10-01,484th Squadron,extracted_front,484BS_1944-10-01,paired-back candidate follows image+1 rule; many candidates still need verification against page content
+IMG_3363.JPG,3363,1944-10-01,82nd Squadron,extracted_front,82BS_1944-10-01_B,Reviewed directly and confirmed as a separate front page rather than merely the image+1 backside candidate of the previous sortie.
+IMG_3368.JPG,3368,1944-10-02,83rd Bombardment Squadron,extracted_front,83BS_1944-10-02,rule-linked +1 image appears to be a separate front page rather than a confirmed reverse side
+IMG_3369.JPG,3369,1944-10-02,82nd Squadron attached list,extracted_front,82BS_1944-10-02,rule-linked +1 image not yet reviewed as a true reverse side
+IMG_3373.JPG,3373,1944-10-02,81st Squadron,extracted_front,81BS_1944-10-02,paired-back candidate follows image+1 rule; many candidates still need verification against page content
+IMG_3377.JPG,3377,1944-10-03,83rd Bombardment Squadron,extracted_front,83BS_1944-10-03,paired-back candidate follows image+1 rule; many candidates still need verification against page content
+IMG_3378.JPG,3378,1944-10-03,82nd Squadron,extracted_front,82BS_1944-10-03_B,Reviewed directly and confirmed as a separate front page rather than merely the image+1 backside candidate of the previous sortie.
+IMG_3380.JPG,3380,1944-10-03,81st Squadron,extracted_front,81BS_1944-10-03_B,weather-diverted mission with alternate strike on bridge south of Mawlu
+IMG_3386.JPG,3386,1944-10-04,434th Squadron,extracted_front,434BS_1944-10-04,paired-back candidate follows image+1 rule; many candidates still need verification against page content
+IMG_3393.JPG,3393,1944-10-05,82nd Squadron attached flight,extracted_front,82BS_1944-10-05,paired-back candidate follows image+1 rule; many candidates still need verification against page content
+IMG_3394.JPG,3394,1944-10-05,81st Squadron,extracted_front,81BS_1944-10-05_B,Reviewed directly and extracted to sortie dataset; image+1 candidate backside still unreviewed.

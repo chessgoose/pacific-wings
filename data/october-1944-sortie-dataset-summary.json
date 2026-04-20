@@ -1,0 +1,15 @@
+{
+  "image_count": 252,
+  "index_file": "/Users/grantzhang/pacific-wings/data/october-1944-sortie-image-index.csv",
+  "extracts_file": "/Users/grantzhang/pacific-wings/data/october-1944-sortie-extracts.csv",
+  "folder_wide_inventory_file": "/Users/grantzhang/pacific-wings/data/indiaburma1944-sortie-report-inventory.csv",
+  "likely_sortie_front_images_folder_wide": 78,
+  "pairing_rule": "For double-sided items, the backside image number is one greater than the front-side image number.",
+  "verified_manual_extracts": [
+    "83BS_1944-10-18",
+    "82BS_1944-10-18",
+    "81BS_1944-10-18",
+    "484BS_1944-10-19",
+    "82BS_1944-10-19"
+  ]
+}
