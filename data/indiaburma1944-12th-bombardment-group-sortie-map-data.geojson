@@ -1,0 +1,6776 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.1809,
+            23.4607
+          ],
+          [
+            91.766667,
+            23.283333
+          ],
+          [
+            91.666667,
+            23.166667
+          ],
+          [
+            91.1809,
+            23.4607
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "484BS_1944-10-01",
+        "report_date": "1944-10-01",
+        "squadron": "484th Squadron",
+        "primary_target": "rail bridge over Panlaung River at Myittha, Burma",
+        "alternate_target": "rail yards at Kyaukse, Burma",
+        "target_status": "alternate attacked",
+        "confidence": "high for front-page extraction; backside linkage unresolved"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "484BS_1944-10-01",
+        "report_date": "1944-10-01",
+        "squadron": "484th Squadron",
+        "kind": "base",
+        "label": "Comilla",
+        "confidence": "high for front-page extraction; backside linkage unresolved"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.766667,
+          23.283333
+        ]
+      },
+      "properties": {
+        "sortie_id": "484BS_1944-10-01",
+        "report_date": "1944-10-01",
+        "squadron": "484th Squadron",
+        "kind": "coordinate",
+        "label": "23 17N 91 46E",
+        "confidence": "high for front-page extraction; backside linkage unresolved"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.666667,
+          23.166667
+        ]
+      },
+      "properties": {
+        "sortie_id": "484BS_1944-10-01",
+        "report_date": "1944-10-01",
+        "squadron": "484th Squadron",
+        "kind": "event_coordinate",
+        "label": "23 10N, 91 40E",
+        "confidence": "high for front-page extraction; backside linkage unresolved"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "484BS_1944-10-01",
+        "report_date": "1944-10-01",
+        "squadron": "484th Squadron",
+        "kind": "base_return",
+        "label": "Comilla",
+        "confidence": "high for front-page extraction; backside linkage unresolved"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            97.2,
+            22.566667
+          ],
+          [
+            95.65,
+            22.733333
+          ],
+          [
+            96.333333,
+            22.75
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-01_B",
+        "report_date": "1944-10-01",
+        "squadron": "82nd Squadron",
+        "primary_target": "Demolition bombing of railroad bridge at Bawgyo, Burma",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "medium-high: core mission fields clear, some route lines faint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.2,
+          22.566667
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-01_B",
+        "report_date": "1944-10-01",
+        "squadron": "82nd Squadron",
+        "kind": "coordinate",
+        "label": "22 34N 97 12E",
+        "confidence": "medium-high: core mission fields clear, some route lines faint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.65,
+          22.733333
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-01_B",
+        "report_date": "1944-10-01",
+        "squadron": "82nd Squadron",
+        "kind": "coordinate",
+        "label": "22 44N 95 39E",
+        "confidence": "medium-high: core mission fields clear, some route lines faint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.333333,
+          22.75
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-01_B",
+        "report_date": "1944-10-01",
+        "squadron": "82nd Squadron",
+        "kind": "coordinate",
+        "label": "22 45N 96 20E",
+        "confidence": "medium-high: core mission fields clear, some route lines faint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            98.5858,
+            24.4367
+          ],
+          [
+            92.983333,
+            23.533333
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-02",
+        "report_date": "1944-10-02",
+        "squadron": "81st Squadron",
+        "primary_target": "Mangshih, southwest portion of area B",
+        "alternate_target": "",
+        "target_status": "alternate attacked",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-02",
+        "report_date": "1944-10-02",
+        "squadron": "81st Squadron",
+        "kind": "base",
+        "label": "Feni",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.5858,
+          24.4367
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-02",
+        "report_date": "1944-10-02",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "Mangshih",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.983333,
+          23.533333
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-02",
+        "report_date": "1944-10-02",
+        "squadron": "81st Squadron",
+        "kind": "event_coordinate",
+        "label": "23 32N, 92 59E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-02",
+        "report_date": "1944-10-02",
+        "squadron": "81st Squadron",
+        "kind": "base_return",
+        "label": "Feni",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            97.4389,
+            23.1889
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-02",
+        "report_date": "1944-10-02",
+        "squadron": "82nd Squadron attached list",
+        "primary_target": "KUTKAI area (S08518) with alternate stores and barracks area at KUTKAI",
+        "alternate_target": "",
+        "target_status": "alternate attacked",
+        "confidence": "medium; timing and target details are legible but some narrative lines remain fragmentary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-02",
+        "report_date": "1944-10-02",
+        "squadron": "82nd Squadron attached list",
+        "kind": "base",
+        "label": "Fenny",
+        "confidence": "medium; timing and target details are legible but some narrative lines remain fragmentary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.4389,
+          23.1889
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-02",
+        "report_date": "1944-10-02",
+        "squadron": "82nd Squadron attached list",
+        "kind": "coordinate",
+        "label": "Kutkai",
+        "confidence": "medium; timing and target details are legible but some narrative lines remain fragmentary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-02",
+        "report_date": "1944-10-02",
+        "squadron": "82nd Squadron attached list",
+        "kind": "base_return",
+        "label": "Fenny",
+        "confidence": "medium; timing and target details are legible but some narrative lines remain fragmentary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            94.083333,
+            23.85
+          ],
+          [
+            94.083333,
+            23.416667
+          ],
+          [
+            96.05,
+            23.416667
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-02",
+        "report_date": "1944-10-02",
+        "squadron": "83rd Bombardment Squadron",
+        "primary_target": "Four bomb stores areas at Mangshih, China",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "medium-high; legible front-page extraction with some weather text still partial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-02",
+        "report_date": "1944-10-02",
+        "squadron": "83rd Bombardment Squadron",
+        "kind": "base",
+        "label": "Fenny A/D, India",
+        "confidence": "medium-high; legible front-page extraction with some weather text still partial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.083333,
+          23.85
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-02",
+        "report_date": "1944-10-02",
+        "squadron": "83rd Bombardment Squadron",
+        "kind": "coordinate",
+        "label": "23 51N 94 05E",
+        "confidence": "medium-high; legible front-page extraction with some weather text still partial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.083333,
+          23.416667
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-02",
+        "report_date": "1944-10-02",
+        "squadron": "83rd Bombardment Squadron",
+        "kind": "coordinate",
+        "label": "23 25N 94 05E",
+        "confidence": "medium-high; legible front-page extraction with some weather text still partial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.05,
+          23.416667
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-02",
+        "report_date": "1944-10-02",
+        "squadron": "83rd Bombardment Squadron",
+        "kind": "coordinate",
+        "label": "23 25N 96 03E",
+        "confidence": "medium-high; legible front-page extraction with some weather text still partial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-02",
+        "report_date": "1944-10-02",
+        "squadron": "83rd Bombardment Squadron",
+        "kind": "base_return",
+        "label": "Fenny A/D, India",
+        "confidence": "medium-high; legible front-page extraction with some weather text still partial"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            96.583333,
+            24.5
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-03_B",
+        "report_date": "1944-10-03",
+        "squadron": "81st Squadron",
+        "primary_target": "Stores area A at Mangshih, China",
+        "alternate_target": "",
+        "target_status": "alternate attacked",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-03_B",
+        "report_date": "1944-10-03",
+        "squadron": "81st Squadron",
+        "kind": "base",
+        "label": "Feni",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.583333,
+          24.5
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-03_B",
+        "report_date": "1944-10-03",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "24 30N, 96 35E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-03_B",
+        "report_date": "1944-10-03",
+        "squadron": "81st Squadron",
+        "kind": "base_return",
+        "label": "Feni",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            98.5858,
+            24.4367
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-03_B",
+        "report_date": "1944-10-03",
+        "squadron": "82nd Squadron",
+        "primary_target": "Demolition bombing of barracks and stores area at Mangshih, China (SK 5243)",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-03_B",
+        "report_date": "1944-10-03",
+        "squadron": "82nd Squadron",
+        "kind": "base",
+        "label": "Fenny",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.5858,
+          24.4367
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-03_B",
+        "report_date": "1944-10-03",
+        "squadron": "82nd Squadron",
+        "kind": "coordinate",
+        "label": "Mangshih",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-03_B",
+        "report_date": "1944-10-03",
+        "squadron": "82nd Squadron",
+        "kind": "base_return",
+        "label": "Fenny",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            97.55,
+            23.916667
+          ],
+          [
+            95.916667,
+            23.75
+          ],
+          [
+            95.833333,
+            24.0
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-03",
+        "report_date": "1944-10-03",
+        "squadron": "83rd Bombardment Squadron",
+        "primary_target": "Bomb stores at area A (north) at Mangshih, China",
+        "alternate_target": "",
+        "target_status": "primary attacked",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-03",
+        "report_date": "1944-10-03",
+        "squadron": "83rd Bombardment Squadron",
+        "kind": "base",
+        "label": "Fenny A/D, India",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.55,
+          23.916667
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-03",
+        "report_date": "1944-10-03",
+        "squadron": "83rd Bombardment Squadron",
+        "kind": "coordinate",
+        "label": "23 55N 97 33E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.916667,
+          23.75
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-03",
+        "report_date": "1944-10-03",
+        "squadron": "83rd Bombardment Squadron",
+        "kind": "coordinate",
+        "label": "23 45N 95 55E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.833333,
+          24.0
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-03",
+        "report_date": "1944-10-03",
+        "squadron": "83rd Bombardment Squadron",
+        "kind": "coordinate",
+        "label": "24 00N 95 50E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-03",
+        "report_date": "1944-10-03",
+        "squadron": "83rd Bombardment Squadron",
+        "kind": "base_return",
+        "label": "Fenny A/D, India",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.1809,
+            23.4607
+          ],
+          [
+            94.0511,
+            23.1888
+          ],
+          [
+            92.416667,
+            23.333333
+          ],
+          [
+            91.1809,
+            23.4607
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-04",
+        "report_date": "1944-10-04",
+        "squadron": "434th Squadron",
+        "primary_target": "area along east shore of Chindwin River, Kalewa, Burma",
+        "alternate_target": "village of Kalemyo, Burma",
+        "target_status": "alternate attacked",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-04",
+        "report_date": "1944-10-04",
+        "squadron": "434th Squadron",
+        "kind": "base",
+        "label": "Comilla",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.0511,
+          23.1888
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-04",
+        "report_date": "1944-10-04",
+        "squadron": "434th Squadron",
+        "kind": "coordinate",
+        "label": "Kalemyo",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.416667,
+          23.333333
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-04",
+        "report_date": "1944-10-04",
+        "squadron": "434th Squadron",
+        "kind": "event_coordinate",
+        "label": "23 20N, 92 25E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-04",
+        "report_date": "1944-10-04",
+        "squadron": "434th Squadron",
+        "kind": "base_return",
+        "label": "Comilla",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            95.1358,
+            22.1086
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-05_B",
+        "report_date": "1944-10-05",
+        "squadron": "81st Squadron",
+        "primary_target": "Indainggyi, Burma mission",
+        "alternate_target": "",
+        "target_status": "alternate attacked",
+        "confidence": "medium-high: squadron/date/mission clear, some target-line wording remains crowded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-05_B",
+        "report_date": "1944-10-05",
+        "squadron": "81st Squadron",
+        "kind": "base",
+        "label": "FENI",
+        "confidence": "medium-high: squadron/date/mission clear, some target-line wording remains crowded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.1358,
+          22.1086
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-05_B",
+        "report_date": "1944-10-05",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "Monywa",
+        "confidence": "medium-high: squadron/date/mission clear, some target-line wording remains crowded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-05_B",
+        "report_date": "1944-10-05",
+        "squadron": "81st Squadron",
+        "kind": "base_return",
+        "label": "FENI",
+        "confidence": "medium-high: squadron/date/mission clear, some target-line wording remains crowded"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            94.3011,
+            23.1914
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-05",
+        "report_date": "1944-10-05",
+        "squadron": "82nd Squadron attached flight",
+        "primary_target": "Kalewa, China/Burma theater target area, map reference RU 8269 (84 I quarter-inch)",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "medium; partial front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-05",
+        "report_date": "1944-10-05",
+        "squadron": "82nd Squadron attached flight",
+        "kind": "base",
+        "label": "Fenny L.G.",
+        "confidence": "medium; partial front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.3011,
+          23.1914
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-05",
+        "report_date": "1944-10-05",
+        "squadron": "82nd Squadron attached flight",
+        "kind": "coordinate",
+        "label": "Kalewa",
+        "confidence": "medium; partial front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-05",
+        "report_date": "1944-10-05",
+        "squadron": "82nd Squadron attached flight",
+        "kind": "base_return",
+        "label": "Fenny L.G.",
+        "confidence": "medium; partial front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.1809,
+            23.4607
+          ],
+          [
+            94.133333,
+            22.8
+          ],
+          [
+            93.566667,
+            23.283333
+          ],
+          [
+            91.1809,
+            23.4607
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-06",
+        "report_date": "1944-10-06",
+        "squadron": "434th Squadron",
+        "primary_target": "Village of Kalemyo, Burma",
+        "alternate_target": "",
+        "target_status": "alternate attacked",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-06",
+        "report_date": "1944-10-06",
+        "squadron": "434th Squadron",
+        "kind": "base",
+        "label": "Comilla",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.133333,
+          22.8
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-06",
+        "report_date": "1944-10-06",
+        "squadron": "434th Squadron",
+        "kind": "coordinate",
+        "label": "22 48N 94 08E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.566667,
+          23.283333
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-06",
+        "report_date": "1944-10-06",
+        "squadron": "434th Squadron",
+        "kind": "coordinate",
+        "label": "23 17N 93 34E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-06",
+        "report_date": "1944-10-06",
+        "squadron": "434th Squadron",
+        "kind": "base_return",
+        "label": "Comilla",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            94.0511,
+            23.1888
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-06",
+        "report_date": "1944-10-06",
+        "squadron": "81st Squadron",
+        "primary_target": "Town of Kalemyo, Burma",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-06",
+        "report_date": "1944-10-06",
+        "squadron": "81st Squadron",
+        "kind": "base",
+        "label": "Feni",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.0511,
+          23.1888
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-06",
+        "report_date": "1944-10-06",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "Kalemyo",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-06",
+        "report_date": "1944-10-06",
+        "squadron": "81st Squadron",
+        "kind": "base_return",
+        "label": "Feni",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            96.99,
+            22.633
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-06",
+        "report_date": "1944-10-06",
+        "squadron": "82nd Squadron",
+        "primary_target": "Demolition bombing of railroad bridge at Bawgyo (ST 1107)",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-06",
+        "report_date": "1944-10-06",
+        "squadron": "82nd Squadron",
+        "kind": "base",
+        "label": "Fenny",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.99,
+          22.633
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-06",
+        "report_date": "1944-10-06",
+        "squadron": "82nd Squadron",
+        "kind": "coordinate",
+        "label": "Bawgyo",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-06",
+        "report_date": "1944-10-06",
+        "squadron": "82nd Squadron",
+        "kind": "base_return",
+        "label": "Fenny",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            96.166667,
+            21.833333
+          ],
+          [
+            96.116667,
+            21.5
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-06",
+        "report_date": "1944-10-06",
+        "squadron": "83rd Bombardment Squadron",
+        "primary_target": "Bombing of bridge at Nyaungyan",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-06",
+        "report_date": "1944-10-06",
+        "squadron": "83rd Bombardment Squadron",
+        "kind": "base",
+        "label": "Fenny A/D, India",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.166667,
+          21.833333
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-06",
+        "report_date": "1944-10-06",
+        "squadron": "83rd Bombardment Squadron",
+        "kind": "coordinate",
+        "label": "21 50N 96 10E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.116667,
+          21.5
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-06",
+        "report_date": "1944-10-06",
+        "squadron": "83rd Bombardment Squadron",
+        "kind": "event_coordinate",
+        "label": "21 30N 96 07E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-06",
+        "report_date": "1944-10-06",
+        "squadron": "83rd Bombardment Squadron",
+        "kind": "base_return",
+        "label": "Fenny A/D, India",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.1809,
+            23.4607
+          ],
+          [
+            93.683333,
+            23.066667
+          ],
+          [
+            91.1809,
+            23.4607
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-07",
+        "report_date": "1944-10-07",
+        "squadron": "434th Squadron",
+        "primary_target": "Primary target: military area just north of Indainggyi, Burma (RU 608756)",
+        "alternate_target": "area along west shore of Chindwin River, Kalewa, Burma",
+        "target_status": "alternate attacked",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-07",
+        "report_date": "1944-10-07",
+        "squadron": "434th Squadron",
+        "kind": "base",
+        "label": "Comilla",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.683333,
+          23.066667
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-07",
+        "report_date": "1944-10-07",
+        "squadron": "434th Squadron",
+        "kind": "coordinate",
+        "label": "23 04N 93 41E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-07",
+        "report_date": "1944-10-07",
+        "squadron": "434th Squadron",
+        "kind": "base_return",
+        "label": "Comilla",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            96.2,
+            19.733333
+          ],
+          [
+            92.75,
+            21.5
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-07",
+        "report_date": "1944-10-07",
+        "squadron": "81st Squadron",
+        "primary_target": "Railroad bridge #393 at Pyinmana, 19 44 N 96 12 E",
+        "alternate_target": "",
+        "target_status": "alternate attacked",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-07",
+        "report_date": "1944-10-07",
+        "squadron": "81st Squadron",
+        "kind": "base",
+        "label": "Feni",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.2,
+          19.733333
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-07",
+        "report_date": "1944-10-07",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "19 44 N 96 12 E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.75,
+          21.5
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-07",
+        "report_date": "1944-10-07",
+        "squadron": "81st Squadron",
+        "kind": "event_coordinate",
+        "label": "21 30 N, 92 45 E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-07",
+        "report_date": "1944-10-07",
+        "squadron": "81st Squadron",
+        "kind": "base_return",
+        "label": "Feni",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            96.2074,
+            19.7381
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-07",
+        "report_date": "1944-10-07",
+        "squadron": "82nd Squadron",
+        "primary_target": "Bombing of railroad bridge at Pyinmana (LV 6695)",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "medium-high; clear aborted-mission front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-07",
+        "report_date": "1944-10-07",
+        "squadron": "82nd Squadron",
+        "kind": "base",
+        "label": "Fenny",
+        "confidence": "medium-high; clear aborted-mission front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.2074,
+          19.7381
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-07",
+        "report_date": "1944-10-07",
+        "squadron": "82nd Squadron",
+        "kind": "coordinate",
+        "label": "Pyinmana",
+        "confidence": "medium-high; clear aborted-mission front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-07",
+        "report_date": "1944-10-07",
+        "squadron": "82nd Squadron",
+        "kind": "base_return",
+        "label": "Fenny",
+        "confidence": "medium-high; clear aborted-mission front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.1809,
+            23.4607
+          ],
+          [
+            93.666667,
+            23.083333
+          ],
+          [
+            91.1809,
+            23.4607
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-10",
+        "report_date": "1944-10-10",
+        "squadron": "434th Squadron",
+        "primary_target": "Bomb bridges along the Kanu-to-Yeu road",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-10",
+        "report_date": "1944-10-10",
+        "squadron": "434th Squadron",
+        "kind": "base",
+        "label": "Comilla",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.666667,
+          23.083333
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-10",
+        "report_date": "1944-10-10",
+        "squadron": "434th Squadron",
+        "kind": "event_coordinate",
+        "label": "23 05N, 93 40E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-10",
+        "report_date": "1944-10-10",
+        "squadron": "434th Squadron",
+        "kind": "base_return",
+        "label": "Comilla",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            95.283333,
+            21.95
+          ],
+          [
+            95.133333,
+            22.116667
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-10",
+        "report_date": "1944-10-10",
+        "squadron": "81st Squadron",
+        "primary_target": "Railroad bridge at Chaung-U, Burma (21 57N, 95 17E)",
+        "alternate_target": "",
+        "target_status": "alternate attacked",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-10",
+        "report_date": "1944-10-10",
+        "squadron": "81st Squadron",
+        "kind": "base",
+        "label": "FENI",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.283333,
+          21.95
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-10",
+        "report_date": "1944-10-10",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "21 57N 95 17E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.133333,
+          22.116667
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-10",
+        "report_date": "1944-10-10",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "22 07N 95 08E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-10",
+        "report_date": "1944-10-10",
+        "squadron": "81st Squadron",
+        "kind": "base_return",
+        "label": "FENI",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            95.1358,
+            22.1086
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-10",
+        "report_date": "1944-10-10",
+        "squadron": "82nd Squadron",
+        "primary_target": "Demolition bombing of stores area at Monywa, Burma (PK 5184)",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-10",
+        "report_date": "1944-10-10",
+        "squadron": "82nd Squadron",
+        "kind": "base",
+        "label": "Fenny",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.1358,
+          22.1086
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-10",
+        "report_date": "1944-10-10",
+        "squadron": "82nd Squadron",
+        "kind": "coordinate",
+        "label": "Monywa",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-10",
+        "report_date": "1944-10-10",
+        "squadron": "82nd Squadron",
+        "kind": "base_return",
+        "label": "Fenny",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.1809,
+            23.4607
+          ],
+          [
+            96.135,
+            21.6056
+          ],
+          [
+            91.1809,
+            23.4607
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-11",
+        "report_date": "1944-10-11",
+        "squadron": "434th Squadron",
+        "primary_target": "rail bridge at Kyaukse, Burma",
+        "alternate_target": "rail bridge at Chaungu, Burma",
+        "target_status": "alternate attacked",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-11",
+        "report_date": "1944-10-11",
+        "squadron": "434th Squadron",
+        "kind": "base",
+        "label": "Comilla",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.135,
+          21.6056
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-11",
+        "report_date": "1944-10-11",
+        "squadron": "434th Squadron",
+        "kind": "coordinate",
+        "label": "Kyaukse",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-11",
+        "report_date": "1944-10-11",
+        "squadron": "434th Squadron",
+        "kind": "base_return",
+        "label": "Comilla",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            95.45,
+            20.433333
+          ],
+          [
+            91.833333,
+            22.333333
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-11",
+        "report_date": "1944-10-11",
+        "squadron": "81st Squadron",
+        "primary_target": "R.R. Bridge #393 at Sinthe, LQ 682367",
+        "alternate_target": "R.R. bridge at Shweda, LQ 525925",
+        "target_status": "alternate attacked",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-11",
+        "report_date": "1944-10-11",
+        "squadron": "81st Squadron",
+        "kind": "base",
+        "label": "Feni",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.45,
+          20.433333
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-11",
+        "report_date": "1944-10-11",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "20 26 N 95 27 E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.833333,
+          22.333333
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-11",
+        "report_date": "1944-10-11",
+        "squadron": "81st Squadron",
+        "kind": "event_coordinate",
+        "label": "22 20 N, 91 50 E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-11",
+        "report_date": "1944-10-11",
+        "squadron": "81st Squadron",
+        "kind": "base_return",
+        "label": "Feni",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            96.2074,
+            19.7381
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-11",
+        "report_date": "1944-10-11",
+        "squadron": "82nd Squadron",
+        "primary_target": "Demolition bombing of Pyinmana Bridge (LV 6695)",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "high for front+back extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-11",
+        "report_date": "1944-10-11",
+        "squadron": "82nd Squadron",
+        "kind": "base",
+        "label": "Fenny",
+        "confidence": "high for front+back extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.2074,
+          19.7381
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-11",
+        "report_date": "1944-10-11",
+        "squadron": "82nd Squadron",
+        "kind": "coordinate",
+        "label": "Pyinmana",
+        "confidence": "high for front+back extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-11",
+        "report_date": "1944-10-11",
+        "squadron": "82nd Squadron",
+        "kind": "base_return",
+        "label": "Fenny",
+        "confidence": "high for front+back extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.1809,
+            23.4607
+          ],
+          [
+            95.27,
+            21.95
+          ],
+          [
+            91.666667,
+            23.25
+          ],
+          [
+            92.45,
+            22.866667
+          ],
+          [
+            94.883333,
+            21.9
+          ],
+          [
+            93.933333,
+            22.366667
+          ],
+          [
+            92.833333,
+            22.766667
+          ],
+          [
+            91.1809,
+            23.4607
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-12",
+        "report_date": "1944-10-12",
+        "squadron": "434th Squadron",
+        "primary_target": "Primary target: rail bridge at Myittha, Burma",
+        "alternate_target": "rail bridge at Chaungu, Burma",
+        "target_status": "alternate attacked",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-12",
+        "report_date": "1944-10-12",
+        "squadron": "434th Squadron",
+        "kind": "base",
+        "label": "Comilla",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.27,
+          21.95
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-12",
+        "report_date": "1944-10-12",
+        "squadron": "434th Squadron",
+        "kind": "coordinate",
+        "label": "Chaungu",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.666667,
+          23.25
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-12",
+        "report_date": "1944-10-12",
+        "squadron": "434th Squadron",
+        "kind": "event_coordinate",
+        "label": "23 15N, 91 40E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.45,
+          22.866667
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-12",
+        "report_date": "1944-10-12",
+        "squadron": "434th Squadron",
+        "kind": "event_coordinate",
+        "label": "22 52N, 92 27E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.883333,
+          21.9
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-12",
+        "report_date": "1944-10-12",
+        "squadron": "434th Squadron",
+        "kind": "event_coordinate",
+        "label": "21 54N 94 53E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.933333,
+          22.366667
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-12",
+        "report_date": "1944-10-12",
+        "squadron": "434th Squadron",
+        "kind": "event_coordinate",
+        "label": "22 22N 93 56E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.833333,
+          22.766667
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-12",
+        "report_date": "1944-10-12",
+        "squadron": "434th Squadron",
+        "kind": "event_coordinate",
+        "label": "22 46N 92 50E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-12",
+        "report_date": "1944-10-12",
+        "squadron": "434th Squadron",
+        "kind": "base_return",
+        "label": "Comilla",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            91.333333,
+            23.333333
+          ],
+          [
+            91.333333,
+            22.75
+          ],
+          [
+            95.116667,
+            20.433333
+          ],
+          [
+            94.766667,
+            20.766667
+          ],
+          [
+            96.266667,
+            20.133333
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-12",
+        "report_date": "1944-10-12",
+        "squadron": "81st Squadron",
+        "primary_target": "R.R. Bridge No. 393 at Sinthe, LQ 682367, elev. 450 feet",
+        "alternate_target": "bridge at Shweda, LQ 525925",
+        "target_status": "alternate attacked",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-12",
+        "report_date": "1944-10-12",
+        "squadron": "81st Squadron",
+        "kind": "base",
+        "label": "Feni",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.333333,
+          23.333333
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-12",
+        "report_date": "1944-10-12",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "23 20 N 91 20 E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.333333,
+          22.75
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-12",
+        "report_date": "1944-10-12",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "22 45 N 91 20 E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.116667,
+          20.433333
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-12",
+        "report_date": "1944-10-12",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "20 26 N 95 07 E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.766667,
+          20.766667
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-12",
+        "report_date": "1944-10-12",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "20 46 N 94 46 E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.266667,
+          20.133333
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-12",
+        "report_date": "1944-10-12",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "20 08 N 96 16 E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-12",
+        "report_date": "1944-10-12",
+        "squadron": "81st Squadron",
+        "kind": "base_return",
+        "label": "Feni",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            97.916667,
+            23.3
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-13",
+        "report_date": "1944-10-13",
+        "squadron": "82nd Squadron",
+        "primary_target": "Demolition bombing of military area at Hsenwi, Burma, 23 18N 97 55E (SO 9000)",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-13",
+        "report_date": "1944-10-13",
+        "squadron": "82nd Squadron",
+        "kind": "base",
+        "label": "Fenny",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.916667,
+          23.3
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-13",
+        "report_date": "1944-10-13",
+        "squadron": "82nd Squadron",
+        "kind": "coordinate",
+        "label": "23 18N 97 55E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-13",
+        "report_date": "1944-10-13",
+        "squadron": "82nd Squadron",
+        "kind": "base_return",
+        "label": "Fenny",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            97.533333,
+            22.95
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-13",
+        "report_date": "1944-10-13",
+        "squadron": "83rd Bombardment Squadron",
+        "primary_target": "Bomb stores area at Hsenwi, Burma",
+        "alternate_target": "",
+        "target_status": "primary attacked",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-13",
+        "report_date": "1944-10-13",
+        "squadron": "83rd Bombardment Squadron",
+        "kind": "base",
+        "label": "Fenny A/D, India",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.533333,
+          22.95
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-13",
+        "report_date": "1944-10-13",
+        "squadron": "83rd Bombardment Squadron",
+        "kind": "coordinate",
+        "label": "22 57N 97 32E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-13",
+        "report_date": "1944-10-13",
+        "squadron": "83rd Bombardment Squadron",
+        "kind": "base_return",
+        "label": "Fenny A/D, India",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.1809,
+            23.4607
+          ],
+          [
+            91.583333,
+            22.416667
+          ],
+          [
+            91.1809,
+            23.4607
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-15",
+        "report_date": "1944-10-15",
+        "squadron": "434th Squadron",
+        "primary_target": "Bomb Meiktila A/D and dispersal areas",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-15",
+        "report_date": "1944-10-15",
+        "squadron": "434th Squadron",
+        "kind": "base",
+        "label": "Comilla",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.583333,
+          22.416667
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-15",
+        "report_date": "1944-10-15",
+        "squadron": "434th Squadron",
+        "kind": "event_coordinate",
+        "label": "22 25N, 91 35E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-15",
+        "report_date": "1944-10-15",
+        "squadron": "434th Squadron",
+        "kind": "base_return",
+        "label": "Comilla",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            95.866667,
+            20.883333
+          ],
+          [
+            95.9,
+            20.883333
+          ],
+          [
+            94.916667,
+            20.466667
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-15",
+        "report_date": "1944-10-15",
+        "squadron": "81st Squadron",
+        "primary_target": "Airfield at Meiktila, 20 53 N, 95 52 E",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-15",
+        "report_date": "1944-10-15",
+        "squadron": "81st Squadron",
+        "kind": "base",
+        "label": "Feni",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.866667,
+          20.883333
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-15",
+        "report_date": "1944-10-15",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "20 53 N 95 52 E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.9,
+          20.883333
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-15",
+        "report_date": "1944-10-15",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "20 53 N 95 54 E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.916667,
+          20.466667
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-15",
+        "report_date": "1944-10-15",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "20 28 N 94 55 E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-15",
+        "report_date": "1944-10-15",
+        "squadron": "81st Squadron",
+        "kind": "base_return",
+        "label": "Feni",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            95.883333,
+            20.883333
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-15",
+        "report_date": "1944-10-15",
+        "squadron": "82nd Squadron",
+        "primary_target": "Fragmentary bombing of dispersal area southeast of runway at Meiktila A/D",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-15",
+        "report_date": "1944-10-15",
+        "squadron": "82nd Squadron",
+        "kind": "base",
+        "label": "Fenny",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.883333,
+          20.883333
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-15",
+        "report_date": "1944-10-15",
+        "squadron": "82nd Squadron",
+        "kind": "coordinate",
+        "label": "20 53N 95 53E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-15",
+        "report_date": "1944-10-15",
+        "squadron": "82nd Squadron",
+        "kind": "base_return",
+        "label": "Fenny",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.1809,
+            23.4607
+          ],
+          [
+            94.88,
+            20.38
+          ],
+          [
+            91.1809,
+            23.4607
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-16",
+        "report_date": "1944-10-16",
+        "squadron": "434th Squadron",
+        "primary_target": "Thedaw airfield, Burma",
+        "alternate_target": "",
+        "target_status": "alternate attacked",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-16",
+        "report_date": "1944-10-16",
+        "squadron": "434th Squadron",
+        "kind": "base",
+        "label": "Comilla",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.88,
+          20.38
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-16",
+        "report_date": "1944-10-16",
+        "squadron": "434th Squadron",
+        "kind": "coordinate",
+        "label": "Thedaw",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-16",
+        "report_date": "1944-10-16",
+        "squadron": "434th Squadron",
+        "kind": "base_return",
+        "label": "Comilla",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            95.9,
+            20.883333
+          ],
+          [
+            94.9,
+            20.55
+          ],
+          [
+            93.5,
+            21.166667
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-16",
+        "report_date": "1944-10-16",
+        "squadron": "81st Squadron",
+        "primary_target": "Thedaw Airfield, 20 53 N, 95 54 E, elev. 710 feet",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "high for front-page extraction with supplement integrated"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-16",
+        "report_date": "1944-10-16",
+        "squadron": "81st Squadron",
+        "kind": "base",
+        "label": "Feni",
+        "confidence": "high for front-page extraction with supplement integrated"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.9,
+          20.883333
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-16",
+        "report_date": "1944-10-16",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "20 53 N 95 54 E",
+        "confidence": "high for front-page extraction with supplement integrated"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.9,
+          20.55
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-16",
+        "report_date": "1944-10-16",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "20 33 N 94 54 E",
+        "confidence": "high for front-page extraction with supplement integrated"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.5,
+          21.166667
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-16",
+        "report_date": "1944-10-16",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "21 10 N 93 30 E",
+        "confidence": "high for front-page extraction with supplement integrated"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-16",
+        "report_date": "1944-10-16",
+        "squadron": "81st Squadron",
+        "kind": "base_return",
+        "label": "Feni",
+        "confidence": "high for front-page extraction with supplement integrated"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            94.88,
+            20.38
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-16",
+        "report_date": "1944-10-16",
+        "squadron": "82nd Squadron",
+        "primary_target": "northern portion of alternate runway at Thedaw Airdrome, LL3436 (84 P quarter-inch)",
+        "alternate_target": "",
+        "target_status": "alternate attacked",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-16",
+        "report_date": "1944-10-16",
+        "squadron": "82nd Squadron",
+        "kind": "base",
+        "label": "Fenny",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.88,
+          20.38
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-16",
+        "report_date": "1944-10-16",
+        "squadron": "82nd Squadron",
+        "kind": "coordinate",
+        "label": "Thedaw",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-16",
+        "report_date": "1944-10-16",
+        "squadron": "82nd Squadron",
+        "kind": "base_return",
+        "label": "Fenny",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            93.5,
+            21.166667
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-17_SUPP",
+        "report_date": "1944-10-17",
+        "squadron": "81st Squadron",
+        "primary_target": "Supplement to OpRep 130 (16 Oct 1944): aircraft #23 rejoined mission and completed bomb run with formation before recovering to base next morning",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "medium; supplement front rather than standard complete sortie form"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-17_SUPP",
+        "report_date": "1944-10-17",
+        "squadron": "81st Squadron",
+        "kind": "base",
+        "label": "Feni / home base recovery from Silchar stopover",
+        "confidence": "medium; supplement front rather than standard complete sortie form"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.5,
+          21.166667
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-17_SUPP",
+        "report_date": "1944-10-17",
+        "squadron": "81st Squadron",
+        "kind": "event_coordinate",
+        "label": "21 10N, 93 30E",
+        "confidence": "medium; supplement front rather than standard complete sortie form"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-17_SUPP",
+        "report_date": "1944-10-17",
+        "squadron": "81st Squadron",
+        "kind": "base_return",
+        "label": "Feni / home base recovery from Silchar stopover",
+        "confidence": "medium; supplement front rather than standard complete sortie form"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            95.216667,
+            18.8
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-18",
+        "report_date": "1944-10-18",
+        "squadron": "81st Bombardment Squadron",
+        "primary_target": "Stores area #4, Prome, Burma (18 48 N, 95 13 E)",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "medium; strong front-page extraction with inferred back linkage only"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-18",
+        "report_date": "1944-10-18",
+        "squadron": "81st Bombardment Squadron",
+        "kind": "base",
+        "label": "Feni",
+        "confidence": "medium; strong front-page extraction with inferred back linkage only"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.216667,
+          18.8
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-18",
+        "report_date": "1944-10-18",
+        "squadron": "81st Bombardment Squadron",
+        "kind": "coordinate",
+        "label": "18 48 N, 95 13 E",
+        "confidence": "medium; strong front-page extraction with inferred back linkage only"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-18",
+        "report_date": "1944-10-18",
+        "squadron": "81st Bombardment Squadron",
+        "kind": "base_return",
+        "label": "Feni",
+        "confidence": "medium; strong front-page extraction with inferred back linkage only"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            95.2222,
+            18.8246
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-18",
+        "report_date": "1944-10-18",
+        "squadron": "82nd Bombardment Squadron",
+        "primary_target": "Military area #5, Prome, Burma",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "medium; fields taken from legible front and paired continuation page"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-18",
+        "report_date": "1944-10-18",
+        "squadron": "82nd Bombardment Squadron",
+        "kind": "base",
+        "label": "Fenny",
+        "confidence": "medium; fields taken from legible front and paired continuation page"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.2222,
+          18.8246
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-18",
+        "report_date": "1944-10-18",
+        "squadron": "82nd Bombardment Squadron",
+        "kind": "coordinate",
+        "label": "Prome",
+        "confidence": "medium; fields taken from legible front and paired continuation page"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-18",
+        "report_date": "1944-10-18",
+        "squadron": "82nd Bombardment Squadron",
+        "kind": "base_return",
+        "label": "Fenny",
+        "confidence": "medium; fields taken from legible front and paired continuation page"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            93.183333,
+            20.916667
+          ],
+          [
+            93.083333,
+            21.166667
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-18",
+        "report_date": "1944-10-18",
+        "squadron": "83rd Bombardment Squadron",
+        "primary_target": "Supply Dump #6, Prome, Burma",
+        "alternate_target": "",
+        "target_status": "primary attacked",
+        "confidence": "high for extracted fields present on reviewed page"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-18",
+        "report_date": "1944-10-18",
+        "squadron": "83rd Bombardment Squadron",
+        "kind": "base",
+        "label": "Fenny A/D, India",
+        "confidence": "high for extracted fields present on reviewed page"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.183333,
+          20.916667
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-18",
+        "report_date": "1944-10-18",
+        "squadron": "83rd Bombardment Squadron",
+        "kind": "coordinate",
+        "label": "20\u00b055'N 93\u00b011'E",
+        "confidence": "high for extracted fields present on reviewed page"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.083333,
+          21.166667
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-18",
+        "report_date": "1944-10-18",
+        "squadron": "83rd Bombardment Squadron",
+        "kind": "event_coordinate",
+        "label": "21\u00b010'N 93\u00b005'E",
+        "confidence": "high for extracted fields present on reviewed page"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-18",
+        "report_date": "1944-10-18",
+        "squadron": "83rd Bombardment Squadron",
+        "kind": "base_return",
+        "label": "Fenny A/D, India",
+        "confidence": "high for extracted fields present on reviewed page"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.1809,
+            23.4607
+          ],
+          [
+            93.728,
+            20.754
+          ],
+          [
+            92.383333,
+            23.3
+          ],
+          [
+            91.1809,
+            23.4607
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-19",
+        "report_date": "1944-10-19",
+        "squadron": "434th Squadron",
+        "primary_target": "military area at Kennedy Peak, Burma",
+        "alternate_target": "rail bridge at Chaungu, Burma",
+        "target_status": "alternate attacked",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-19",
+        "report_date": "1944-10-19",
+        "squadron": "434th Squadron",
+        "kind": "base",
+        "label": "Comilla",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.728,
+          20.754
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-19",
+        "report_date": "1944-10-19",
+        "squadron": "434th Squadron",
+        "kind": "coordinate",
+        "label": "Kennedy Peak",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.383333,
+          23.3
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-19",
+        "report_date": "1944-10-19",
+        "squadron": "434th Squadron",
+        "kind": "event_coordinate",
+        "label": "23 18N, 92 23E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-19",
+        "report_date": "1944-10-19",
+        "squadron": "434th Squadron",
+        "kind": "base_return",
+        "label": "Comilla",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.1809,
+            23.4607
+          ],
+          [
+            95.133333,
+            21.966667
+          ],
+          [
+            94.183333,
+            23.25
+          ],
+          [
+            91.1809,
+            23.4607
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "484BS_1944-10-19",
+        "report_date": "1944-10-19",
+        "squadron": "484th Bombardment Squadron",
+        "primary_target": "Military area at Vital Corner, Burma (primary)",
+        "alternate_target": "",
+        "target_status": "alternate attacked",
+        "confidence": "high for front-page route narrative; target geocoding still partly interpretive"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "484BS_1944-10-19",
+        "report_date": "1944-10-19",
+        "squadron": "484th Bombardment Squadron",
+        "kind": "base",
+        "label": "Comilla",
+        "confidence": "high for front-page route narrative; target geocoding still partly interpretive"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.133333,
+          21.966667
+        ]
+      },
+      "properties": {
+        "sortie_id": "484BS_1944-10-19",
+        "report_date": "1944-10-19",
+        "squadron": "484th Bombardment Squadron",
+        "kind": "coordinate",
+        "label": "21\u00b058'N 95\u00b008'E",
+        "confidence": "high for front-page route narrative; target geocoding still partly interpretive"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.183333,
+          23.25
+        ]
+      },
+      "properties": {
+        "sortie_id": "484BS_1944-10-19",
+        "report_date": "1944-10-19",
+        "squadron": "484th Bombardment Squadron",
+        "kind": "coordinate",
+        "label": "23\u00b015'N 94\u00b011'E",
+        "confidence": "high for front-page route narrative; target geocoding still partly interpretive"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "484BS_1944-10-19",
+        "report_date": "1944-10-19",
+        "squadron": "484th Bombardment Squadron",
+        "kind": "base_return",
+        "label": "Comilla",
+        "confidence": "high for front-page route narrative; target geocoding still partly interpretive"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            93.728,
+            20.754
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-19",
+        "report_date": "1944-10-19",
+        "squadron": "82nd Bombardment Squadron",
+        "primary_target": "Enemy troop concentrations at Kennedy Peak, RU 2181",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "medium-high; front-page strike details are clear but target coordinates are inferred from place-name geocoding"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-19",
+        "report_date": "1944-10-19",
+        "squadron": "82nd Bombardment Squadron",
+        "kind": "base",
+        "label": "Fenny",
+        "confidence": "medium-high; front-page strike details are clear but target coordinates are inferred from place-name geocoding"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.728,
+          20.754
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-19",
+        "report_date": "1944-10-19",
+        "squadron": "82nd Bombardment Squadron",
+        "kind": "coordinate",
+        "label": "Kennedy Peak",
+        "confidence": "medium-high; front-page strike details are clear but target coordinates are inferred from place-name geocoding"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-19",
+        "report_date": "1944-10-19",
+        "squadron": "82nd Bombardment Squadron",
+        "kind": "base_return",
+        "label": "Fenny",
+        "confidence": "medium-high; front-page strike details are clear but target coordinates are inferred from place-name geocoding"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            94.08,
+            20.93
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-19_B",
+        "report_date": "1944-10-19",
+        "squadron": "82nd Squadron",
+        "primary_target": "enemy troop concentrations at Vital Corner, Burma (RU 2184)",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-19_B",
+        "report_date": "1944-10-19",
+        "squadron": "82nd Squadron",
+        "kind": "base",
+        "label": "Fenny",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.08,
+          20.93
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-19_B",
+        "report_date": "1944-10-19",
+        "squadron": "82nd Squadron",
+        "kind": "coordinate",
+        "label": "Vital Corner",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-19_B",
+        "report_date": "1944-10-19",
+        "squadron": "82nd Squadron",
+        "kind": "base_return",
+        "label": "Fenny",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            93.728,
+            20.754
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-19_A",
+        "report_date": "1944-10-19",
+        "squadron": "83rd Bombardment Squadron",
+        "primary_target": "Bombing of Kennedy Peak area",
+        "alternate_target": "",
+        "target_status": "primary attacked",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-19_A",
+        "report_date": "1944-10-19",
+        "squadron": "83rd Bombardment Squadron",
+        "kind": "base",
+        "label": "Fenny A/D, India",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.728,
+          20.754
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-19_A",
+        "report_date": "1944-10-19",
+        "squadron": "83rd Bombardment Squadron",
+        "kind": "coordinate",
+        "label": "Kennedy Peak",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-19_A",
+        "report_date": "1944-10-19",
+        "squadron": "83rd Bombardment Squadron",
+        "kind": "base_return",
+        "label": "Fenny A/D, India",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            95.0,
+            22.383333
+          ],
+          [
+            94.916667,
+            22.5
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-19_B",
+        "report_date": "1944-10-19",
+        "squadron": "83rd Bombardment Squadron",
+        "primary_target": "Primary apparently Vital Corner area",
+        "alternate_target": "",
+        "target_status": "alternate attacked",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-19_B",
+        "report_date": "1944-10-19",
+        "squadron": "83rd Bombardment Squadron",
+        "kind": "base",
+        "label": "Fenny A/D, India",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.0,
+          22.383333
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-19_B",
+        "report_date": "1944-10-19",
+        "squadron": "83rd Bombardment Squadron",
+        "kind": "coordinate",
+        "label": "22 23N 95 00E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.916667,
+          22.5
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-19_B",
+        "report_date": "1944-10-19",
+        "squadron": "83rd Bombardment Squadron",
+        "kind": "coordinate",
+        "label": "22 30N 94 55E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-19_B",
+        "report_date": "1944-10-19",
+        "squadron": "83rd Bombardment Squadron",
+        "kind": "base_return",
+        "label": "Fenny A/D, India",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.1809,
+            23.4607
+          ],
+          [
+            95.083333,
+            22.433333
+          ],
+          [
+            95.95,
+            23.05
+          ],
+          [
+            91.1809,
+            23.4607
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-20",
+        "report_date": "1944-10-20",
+        "squadron": "434th Squadron",
+        "primary_target": "Budalin by-pass rail bridge, Burma",
+        "alternate_target": "Chantha rail bridge, Burma",
+        "target_status": "alternate attacked",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-20",
+        "report_date": "1944-10-20",
+        "squadron": "434th Squadron",
+        "kind": "base",
+        "label": "Comilla",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.083333,
+          22.433333
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-20",
+        "report_date": "1944-10-20",
+        "squadron": "434th Squadron",
+        "kind": "coordinate",
+        "label": "22 26N 95 05E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.95,
+          23.05
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-20",
+        "report_date": "1944-10-20",
+        "squadron": "434th Squadron",
+        "kind": "coordinate",
+        "label": "23 03N 95 57E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-20",
+        "report_date": "1944-10-20",
+        "squadron": "434th Squadron",
+        "kind": "base_return",
+        "label": "Comilla",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            95.4,
+            21.95
+          ],
+          [
+            95.416667,
+            21.833333
+          ],
+          [
+            95.283333,
+            21.966667
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-20",
+        "report_date": "1944-10-20",
+        "squadron": "81st Squadron",
+        "primary_target": "R.R. bridge at Chaung-U, 21 58N, 95 17E",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-20",
+        "report_date": "1944-10-20",
+        "squadron": "81st Squadron",
+        "kind": "base",
+        "label": "Feni",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.4,
+          21.95
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-20",
+        "report_date": "1944-10-20",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "21 57N 95 24E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.416667,
+          21.833333
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-20",
+        "report_date": "1944-10-20",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "21 50N 95 25E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.283333,
+          21.966667
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-20",
+        "report_date": "1944-10-20",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "21 58N, 95 17E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-20",
+        "report_date": "1944-10-20",
+        "squadron": "81st Squadron",
+        "kind": "base_return",
+        "label": "Feni",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.1809,
+            23.4607
+          ],
+          [
+            93.816667,
+            23.233333
+          ],
+          [
+            93.683333,
+            23.25
+          ],
+          [
+            91.1809,
+            23.4607
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-21",
+        "report_date": "1944-10-21",
+        "squadron": "434th Squadron",
+        "primary_target": "military area at Kennedy Peak, Burma",
+        "alternate_target": "stores area on west bank of Chindwin River at Kalewa",
+        "target_status": "alternate attacked",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-21",
+        "report_date": "1944-10-21",
+        "squadron": "434th Squadron",
+        "kind": "base",
+        "label": "Comilla",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.816667,
+          23.233333
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-21",
+        "report_date": "1944-10-21",
+        "squadron": "434th Squadron",
+        "kind": "coordinate",
+        "label": "23 14N 93 49E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.683333,
+          23.25
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-21",
+        "report_date": "1944-10-21",
+        "squadron": "434th Squadron",
+        "kind": "coordinate",
+        "label": "23 15N 93 41E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-21",
+        "report_date": "1944-10-21",
+        "squadron": "434th Squadron",
+        "kind": "base_return",
+        "label": "Comilla",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.1809,
+            23.4607
+          ],
+          [
+            94.3011,
+            23.1914
+          ],
+          [
+            91.1809,
+            23.4607
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-21_B",
+        "report_date": "1944-10-21",
+        "squadron": "434th Squadron",
+        "primary_target": "military area at Vital Corner, Burma",
+        "alternate_target": "stores area on west bank of Chindwin River at Kalewa",
+        "target_status": "alternate attacked",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-21_B",
+        "report_date": "1944-10-21",
+        "squadron": "434th Squadron",
+        "kind": "base",
+        "label": "Comilla",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.3011,
+          23.1914
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-21_B",
+        "report_date": "1944-10-21",
+        "squadron": "434th Squadron",
+        "kind": "coordinate",
+        "label": "Kalewa",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-21_B",
+        "report_date": "1944-10-21",
+        "squadron": "434th Squadron",
+        "kind": "base_return",
+        "label": "Comilla",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            94.083333,
+            23.25
+          ],
+          [
+            94.3,
+            23.2
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-21_A",
+        "report_date": "1944-10-21",
+        "squadron": "81st Squadron",
+        "primary_target": "troop concentrations at Kennedy Peak, Burma (RU 209813, elevation 8871 feet)",
+        "alternate_target": "Kalewa, Burma (23 12N, 94 18E)",
+        "target_status": "alternate attacked",
+        "confidence": "medium-high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-21_A",
+        "report_date": "1944-10-21",
+        "squadron": "81st Squadron",
+        "kind": "base",
+        "label": "Feni",
+        "confidence": "medium-high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.083333,
+          23.25
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-21_A",
+        "report_date": "1944-10-21",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "23 15N 94 05E",
+        "confidence": "medium-high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.3,
+          23.2
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-21_A",
+        "report_date": "1944-10-21",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "23 12N, 94 18E",
+        "confidence": "medium-high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-21_A",
+        "report_date": "1944-10-21",
+        "squadron": "81st Squadron",
+        "kind": "base_return",
+        "label": "Feni",
+        "confidence": "medium-high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            94.3,
+            23.2
+          ],
+          [
+            93.75,
+            23.333333
+          ],
+          [
+            92.416667,
+            23.133333
+          ],
+          [
+            92.1,
+            23.083333
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-21_B",
+        "report_date": "1944-10-21",
+        "squadron": "81st Squadron",
+        "primary_target": "Vital Corner, RU 205844, elevation 7750 feet",
+        "alternate_target": "",
+        "target_status": "alternate attacked",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-21_B",
+        "report_date": "1944-10-21",
+        "squadron": "81st Squadron",
+        "kind": "base",
+        "label": "Feni",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.3,
+          23.2
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-21_B",
+        "report_date": "1944-10-21",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "23 12N 94 18E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.75,
+          23.333333
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-21_B",
+        "report_date": "1944-10-21",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "23 20N 93 45E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.416667,
+          23.133333
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-21_B",
+        "report_date": "1944-10-21",
+        "squadron": "81st Squadron",
+        "kind": "event_coordinate",
+        "label": "23 08N, 92 25E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.1,
+          23.083333
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-21_B",
+        "report_date": "1944-10-21",
+        "squadron": "81st Squadron",
+        "kind": "event_coordinate",
+        "label": "23 05N, 92 06E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-21_B",
+        "report_date": "1944-10-21",
+        "squadron": "81st Squadron",
+        "kind": "base_return",
+        "label": "Feni",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            93.728,
+            20.754
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-21",
+        "report_date": "1944-10-21",
+        "squadron": "82nd Squadron",
+        "primary_target": "Enemy troop concentration at Vital Corner, Burma (U-205844)",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-21",
+        "report_date": "1944-10-21",
+        "squadron": "82nd Squadron",
+        "kind": "base",
+        "label": "Fenny",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.728,
+          20.754
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-21",
+        "report_date": "1944-10-21",
+        "squadron": "82nd Squadron",
+        "kind": "coordinate",
+        "label": "Kennedy Peak",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-21",
+        "report_date": "1944-10-21",
+        "squadron": "82nd Squadron",
+        "kind": "base_return",
+        "label": "Fenny",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            94.3,
+            23.2
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-21_B",
+        "report_date": "1944-10-21",
+        "squadron": "82nd Squadron",
+        "primary_target": "Primary target at Kennedy Peak was covered",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "medium-high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-21_B",
+        "report_date": "1944-10-21",
+        "squadron": "82nd Squadron",
+        "kind": "base",
+        "label": "Fenny",
+        "confidence": "medium-high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.3,
+          23.2
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-21_B",
+        "report_date": "1944-10-21",
+        "squadron": "82nd Squadron",
+        "kind": "coordinate",
+        "label": "23 12N 94 18E",
+        "confidence": "medium-high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-21_B",
+        "report_date": "1944-10-21",
+        "squadron": "82nd Squadron",
+        "kind": "base_return",
+        "label": "Fenny",
+        "confidence": "medium-high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            96.2074,
+            19.7381
+          ],
+          [
+            93.266667,
+            21.516667
+          ],
+          [
+            92.966667,
+            21.75
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-22",
+        "report_date": "1944-10-22",
+        "squadron": "81st Squadron",
+        "primary_target": "Natmauk railroad bridge no. 162 at PU 7875, elevation 600 feet",
+        "alternate_target": "any railroad bridge on the Pyinmana-Kyaukpadaung rail line",
+        "target_status": "alternate attacked",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-22",
+        "report_date": "1944-10-22",
+        "squadron": "81st Squadron",
+        "kind": "base",
+        "label": "Feni",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.2074,
+          19.7381
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-22",
+        "report_date": "1944-10-22",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "Pyinmana",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.266667,
+          21.516667
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-22",
+        "report_date": "1944-10-22",
+        "squadron": "81st Squadron",
+        "kind": "event_coordinate",
+        "label": "21 31N, 93 16E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.966667,
+          21.75
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-22",
+        "report_date": "1944-10-22",
+        "squadron": "81st Squadron",
+        "kind": "event_coordinate",
+        "label": "21 45N, 92 58E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-22",
+        "report_date": "1944-10-22",
+        "squadron": "81st Squadron",
+        "kind": "base_return",
+        "label": "Feni",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            95.433333,
+            20.266667
+          ],
+          [
+            94.766667,
+            20.666667
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-22_B",
+        "report_date": "1944-10-22",
+        "squadron": "82nd Squadron",
+        "primary_target": "Bomb railroad bridge north of Taungdwingyi, Burma at PU 8833",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-22_B",
+        "report_date": "1944-10-22",
+        "squadron": "82nd Squadron",
+        "kind": "base",
+        "label": "Fenny",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.433333,
+          20.266667
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-22_B",
+        "report_date": "1944-10-22",
+        "squadron": "82nd Squadron",
+        "kind": "coordinate",
+        "label": "20 16N 95 26E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.766667,
+          20.666667
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-22_B",
+        "report_date": "1944-10-22",
+        "squadron": "82nd Squadron",
+        "kind": "coordinate",
+        "label": "20 40N 94 46E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-22_B",
+        "report_date": "1944-10-22",
+        "squadron": "82nd Squadron",
+        "kind": "base_return",
+        "label": "Fenny",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            94.083333,
+            23.066667
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-22",
+        "report_date": "1944-10-22",
+        "squadron": "83rd Bomb Squadron",
+        "primary_target": "Bombing bridges on Ye-U - Kin-U road at SR 2420, SR 1819, and SR 1420",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-22",
+        "report_date": "1944-10-22",
+        "squadron": "83rd Bomb Squadron",
+        "kind": "base",
+        "label": "Fenny A/D, India",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.083333,
+          23.066667
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-22",
+        "report_date": "1944-10-22",
+        "squadron": "83rd Bomb Squadron",
+        "kind": "coordinate",
+        "label": "23 04N 94 05E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-22",
+        "report_date": "1944-10-22",
+        "squadron": "83rd Bomb Squadron",
+        "kind": "base_return",
+        "label": "Fenny A/D, India",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.1809,
+            23.4607
+          ],
+          [
+            96.8,
+            22.633333
+          ],
+          [
+            95.25,
+            22.916667
+          ],
+          [
+            95.883333,
+            22.95
+          ],
+          [
+            91.1809,
+            23.4607
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-23",
+        "report_date": "1944-10-23",
+        "squadron": "434th Squadron",
+        "primary_target": "rail bridge #351 near Bawgyo, Burma",
+        "alternate_target": "rail bridge #321 near Kyaukme, Burma",
+        "target_status": "alternate attacked",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-23",
+        "report_date": "1944-10-23",
+        "squadron": "434th Squadron",
+        "kind": "base",
+        "label": "Comilla",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.8,
+          22.633333
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-23",
+        "report_date": "1944-10-23",
+        "squadron": "434th Squadron",
+        "kind": "coordinate",
+        "label": "22 38N, 96 48E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.25,
+          22.916667
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-23",
+        "report_date": "1944-10-23",
+        "squadron": "434th Squadron",
+        "kind": "coordinate",
+        "label": "22 55N, 95 15E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.883333,
+          22.95
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-23",
+        "report_date": "1944-10-23",
+        "squadron": "434th Squadron",
+        "kind": "event_coordinate",
+        "label": "22 57N, 95 53E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-23",
+        "report_date": "1944-10-23",
+        "squadron": "434th Squadron",
+        "kind": "base_return",
+        "label": "Comilla",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            97.283333,
+            22.616667
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-23_A",
+        "report_date": "1944-10-23",
+        "squadron": "82nd Squadron",
+        "primary_target": "Road bridge at Hsipaw, Burma (22 37N, 97 17E), ST 2115",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-23_A",
+        "report_date": "1944-10-23",
+        "squadron": "82nd Squadron",
+        "kind": "base",
+        "label": "Fenny",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.283333,
+          22.616667
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-23_A",
+        "report_date": "1944-10-23",
+        "squadron": "82nd Squadron",
+        "kind": "coordinate",
+        "label": "22 37N 97 17E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-23_A",
+        "report_date": "1944-10-23",
+        "squadron": "82nd Squadron",
+        "kind": "base_return",
+        "label": "Fenny",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            95.633333,
+            22.866667
+          ],
+          [
+            94.466667,
+            22.933333
+          ],
+          [
+            92.333333,
+            23.083333
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-23_B",
+        "report_date": "1944-10-23",
+        "squadron": "82nd Bomb Squadron",
+        "primary_target": "Bomb railroad bridge #433, 7 miles northeast of Hsipaw, Burma",
+        "alternate_target": "",
+        "target_status": "primary attacked",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-23_B",
+        "report_date": "1944-10-23",
+        "squadron": "82nd Bomb Squadron",
+        "kind": "base",
+        "label": "Fenny A/D, India",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.633333,
+          22.866667
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-23_B",
+        "report_date": "1944-10-23",
+        "squadron": "82nd Bomb Squadron",
+        "kind": "coordinate",
+        "label": "22 52N 95 38E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.466667,
+          22.933333
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-23_B",
+        "report_date": "1944-10-23",
+        "squadron": "82nd Bomb Squadron",
+        "kind": "coordinate",
+        "label": "22 56N 94 28E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.333333,
+          23.083333
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-23_B",
+        "report_date": "1944-10-23",
+        "squadron": "82nd Bomb Squadron",
+        "kind": "coordinate",
+        "label": "23 05N 92 20E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-23_B",
+        "report_date": "1944-10-23",
+        "squadron": "82nd Bomb Squadron",
+        "kind": "base_return",
+        "label": "Fenny A/D, India",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.1809,
+            23.4607
+          ],
+          [
+            95.1358,
+            22.1086
+          ],
+          [
+            91.1809,
+            23.4607
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-24",
+        "report_date": "1944-10-24",
+        "squadron": "434th Squadron",
+        "primary_target": "Maymyo railway yards and sheds, Burma",
+        "alternate_target": "rail yards and troops billets (#3 area), Monywa, Burma",
+        "target_status": "alternate attacked",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-24",
+        "report_date": "1944-10-24",
+        "squadron": "434th Squadron",
+        "kind": "base",
+        "label": "Comilla",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.1358,
+          22.1086
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-24",
+        "report_date": "1944-10-24",
+        "squadron": "434th Squadron",
+        "kind": "coordinate",
+        "label": "Monywa",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "434BS_1944-10-24",
+        "report_date": "1944-10-24",
+        "squadron": "434th Squadron",
+        "kind": "base_return",
+        "label": "Comilla",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            93.416667,
+            22.5
+          ],
+          [
+            94.166667,
+            22.533333
+          ],
+          [
+            91.333333,
+            22.716667
+          ],
+          [
+            91.966667,
+            22.916667
+          ],
+          [
+            94.416667,
+            22.516667
+          ],
+          [
+            96.0,
+            22.25
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-24",
+        "report_date": "1944-10-24",
+        "squadron": "81st Squadron",
+        "primary_target": "Maymyo military area, LG 0172, elevation 3357 feet",
+        "alternate_target": "Monywa PK-5184 (military stores) and area",
+        "target_status": "alternate attacked",
+        "confidence": "medium-high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-24",
+        "report_date": "1944-10-24",
+        "squadron": "81st Squadron",
+        "kind": "base",
+        "label": "FENI",
+        "confidence": "medium-high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.416667,
+          22.5
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-24",
+        "report_date": "1944-10-24",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "22 30N 93 25E",
+        "confidence": "medium-high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.166667,
+          22.533333
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-24",
+        "report_date": "1944-10-24",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "22 32N 94 10E",
+        "confidence": "medium-high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.333333,
+          22.716667
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-24",
+        "report_date": "1944-10-24",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "22 43N 91 20E",
+        "confidence": "medium-high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.966667,
+          22.916667
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-24",
+        "report_date": "1944-10-24",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "22 55N 91 58E",
+        "confidence": "medium-high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.416667,
+          22.516667
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-24",
+        "report_date": "1944-10-24",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "22 31N 94 25E",
+        "confidence": "medium-high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.0,
+          22.25
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-24",
+        "report_date": "1944-10-24",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "22 15N 96 00E",
+        "confidence": "medium-high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-24",
+        "report_date": "1944-10-24",
+        "squadron": "81st Squadron",
+        "kind": "base_return",
+        "label": "FENI",
+        "confidence": "medium-high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            96.0,
+            22.25
+          ],
+          [
+            96.333333,
+            22.15
+          ],
+          [
+            96.216667,
+            22.5
+          ],
+          [
+            96.0,
+            22.166667
+          ],
+          [
+            95.75,
+            22.366667
+          ],
+          [
+            96.166667,
+            22.133333
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-24",
+        "report_date": "1944-10-24",
+        "squadron": "83rd Bomb Squadron",
+        "primary_target": "Bomb military barracks area at Maymyo, Burma",
+        "alternate_target": "",
+        "target_status": "alternate attacked",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-24",
+        "report_date": "1944-10-24",
+        "squadron": "83rd Bomb Squadron",
+        "kind": "base",
+        "label": "Fenny A/D, India",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.0,
+          22.25
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-24",
+        "report_date": "1944-10-24",
+        "squadron": "83rd Bomb Squadron",
+        "kind": "coordinate",
+        "label": "22 15N, 96 00E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.333333,
+          22.15
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-24",
+        "report_date": "1944-10-24",
+        "squadron": "83rd Bomb Squadron",
+        "kind": "coordinate",
+        "label": "22 09N, 96 20E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.216667,
+          22.5
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-24",
+        "report_date": "1944-10-24",
+        "squadron": "83rd Bomb Squadron",
+        "kind": "coordinate",
+        "label": "22 30N, 96 13E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.0,
+          22.166667
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-24",
+        "report_date": "1944-10-24",
+        "squadron": "83rd Bomb Squadron",
+        "kind": "coordinate",
+        "label": "22 10N 96 00E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.75,
+          22.366667
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-24",
+        "report_date": "1944-10-24",
+        "squadron": "83rd Bomb Squadron",
+        "kind": "coordinate",
+        "label": "22 22N 95 45E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.166667,
+          22.133333
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-24",
+        "report_date": "1944-10-24",
+        "squadron": "83rd Bomb Squadron",
+        "kind": "coordinate",
+        "label": "22 08N 96 10E",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-24",
+        "report_date": "1944-10-24",
+        "squadron": "83rd Bomb Squadron",
+        "kind": "base_return",
+        "label": "Fenny A/D, India",
+        "confidence": "high for front-page extraction"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            96.666667,
+            21.983333
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-25",
+        "report_date": "1944-10-25",
+        "squadron": "82nd Squadron",
+        "primary_target": "Me River by-pass bridge, Burma (21 59N 96 40E",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "medium; front and backside reviewed, with some low-legibility figures still approximate"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-25",
+        "report_date": "1944-10-25",
+        "squadron": "82nd Squadron",
+        "kind": "base",
+        "label": "Fenny",
+        "confidence": "medium; front and backside reviewed, with some low-legibility figures still approximate"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.666667,
+          21.983333
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-25",
+        "report_date": "1944-10-25",
+        "squadron": "82nd Squadron",
+        "kind": "coordinate",
+        "label": "21 59N 96 40E",
+        "confidence": "medium; front and backside reviewed, with some low-legibility figures still approximate"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-25",
+        "report_date": "1944-10-25",
+        "squadron": "82nd Squadron",
+        "kind": "base_return",
+        "label": "Fenny",
+        "confidence": "medium; front and backside reviewed, with some low-legibility figures still approximate"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            94.233333,
+            18.85
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-26",
+        "report_date": "1944-10-26",
+        "squadron": "82nd Squadron",
+        "primary_target": "Stores area at Taungup, Burma (18 51N, 94 14E)",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "medium; target and bombing fields legible, with base/squadron inferred from sequence"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-26",
+        "report_date": "1944-10-26",
+        "squadron": "82nd Squadron",
+        "kind": "base",
+        "label": "Fenny",
+        "confidence": "medium; target and bombing fields legible, with base/squadron inferred from sequence"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.233333,
+          18.85
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-26",
+        "report_date": "1944-10-26",
+        "squadron": "82nd Squadron",
+        "kind": "coordinate",
+        "label": "18 51N 94 14E",
+        "confidence": "medium; target and bombing fields legible, with base/squadron inferred from sequence"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "82BS_1944-10-26",
+        "report_date": "1944-10-26",
+        "squadron": "82nd Squadron",
+        "kind": "base_return",
+        "label": "Fenny",
+        "confidence": "medium; target and bombing fields legible, with base/squadron inferred from sequence"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.1809,
+            23.4607
+          ],
+          [
+            95.956,
+            21.9162
+          ],
+          [
+            91.1809,
+            23.4607
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "UNK_1944-10-29_AIRRADAR",
+        "report_date": "1944-10-29",
+        "squadron": "Squadron unread on late-month scan",
+        "primary_target": "erase Japanese air radar, Burma",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "low-medium; date, base, target type, timing window, and backside linkage are clear, but some top-line identifiers are too faint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "UNK_1944-10-29_AIRRADAR",
+        "report_date": "1944-10-29",
+        "squadron": "Squadron unread on late-month scan",
+        "kind": "base",
+        "label": "Comilla",
+        "confidence": "low-medium; date, base, target type, timing window, and backside linkage are clear, but some top-line identifiers are too faint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.956,
+          21.9162
+        ]
+      },
+      "properties": {
+        "sortie_id": "UNK_1944-10-29_AIRRADAR",
+        "report_date": "1944-10-29",
+        "squadron": "Squadron unread on late-month scan",
+        "kind": "approximate_target",
+        "label": "Burma target area (approx.)",
+        "confidence": "low-medium; date, base, target type, timing window, and backside linkage are clear, but some top-line identifiers are too faint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.1809,
+          23.4607
+        ]
+      },
+      "properties": {
+        "sortie_id": "UNK_1944-10-29_AIRRADAR",
+        "report_date": "1944-10-29",
+        "squadron": "Squadron unread on late-month scan",
+        "kind": "base_return",
+        "label": "Comilla",
+        "confidence": "low-medium; date, base, target type, timing window, and backside linkage are clear, but some top-line identifiers are too faint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            95.516667,
+            22.483333
+          ],
+          [
+            96.95,
+            22.483333
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "UNK_1944-10-29_BR201",
+        "report_date": "1944-10-29",
+        "squadron": "Squadron unread on late-month scan",
+        "primary_target": "Rail bridge #201, LV-9205, Paukton, Burma",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "medium; target, date, timing, bridge result, and backside linkage are clear, but some labels and coordinates remain approximate"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "UNK_1944-10-29_BR201",
+        "report_date": "1944-10-29",
+        "squadron": "Squadron unread on late-month scan",
+        "kind": "base",
+        "label": "Fenny",
+        "confidence": "medium; target, date, timing, bridge result, and backside linkage are clear, but some labels and coordinates remain approximate"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.516667,
+          22.483333
+        ]
+      },
+      "properties": {
+        "sortie_id": "UNK_1944-10-29_BR201",
+        "report_date": "1944-10-29",
+        "squadron": "Squadron unread on late-month scan",
+        "kind": "coordinate",
+        "label": "22 29N 95 31E",
+        "confidence": "medium; target, date, timing, bridge result, and backside linkage are clear, but some labels and coordinates remain approximate"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.95,
+          22.483333
+        ]
+      },
+      "properties": {
+        "sortie_id": "UNK_1944-10-29_BR201",
+        "report_date": "1944-10-29",
+        "squadron": "Squadron unread on late-month scan",
+        "kind": "coordinate",
+        "label": "22 29N 96 57E",
+        "confidence": "medium; target, date, timing, bridge result, and backside linkage are clear, but some labels and coordinates remain approximate"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "UNK_1944-10-29_BR201",
+        "report_date": "1944-10-29",
+        "squadron": "Squadron unread on late-month scan",
+        "kind": "base_return",
+        "label": "Fenny",
+        "confidence": "medium; target, date, timing, bridge result, and backside linkage are clear, but some labels and coordinates remain approximate"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            95.783333,
+            21.333333
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "UNK_1944-10-30_BR433",
+        "report_date": "1944-10-30",
+        "squadron": "Squadron unread on late-month scan",
+        "primary_target": "Railroad bridge #433, JU-6505, Pyinmana, Burma",
+        "alternate_target": "",
+        "target_status": "alternate attacked",
+        "confidence": "medium; date, target, bomb totals, and result are legible, while squadron line and some wording remain unread"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "UNK_1944-10-30_BR433",
+        "report_date": "1944-10-30",
+        "squadron": "Squadron unread on late-month scan",
+        "kind": "base",
+        "label": "Fenny",
+        "confidence": "medium; date, target, bomb totals, and result are legible, while squadron line and some wording remain unread"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.783333,
+          21.333333
+        ]
+      },
+      "properties": {
+        "sortie_id": "UNK_1944-10-30_BR433",
+        "report_date": "1944-10-30",
+        "squadron": "Squadron unread on late-month scan",
+        "kind": "coordinate",
+        "label": "21 20N 95 47E",
+        "confidence": "medium; date, target, bomb totals, and result are legible, while squadron line and some wording remain unread"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "UNK_1944-10-30_BR433",
+        "report_date": "1944-10-30",
+        "squadron": "Squadron unread on late-month scan",
+        "kind": "base_return",
+        "label": "Fenny",
+        "confidence": "medium; date, target, bomb totals, and result are legible, while squadron line and some wording remain unread"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            97.283333,
+            19.616667
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "UNK_1944-10-30_BR44",
+        "report_date": "1944-10-30",
+        "squadron": "Squadron unread on late-month scan",
+        "primary_target": "Railroad bridge #44, ES-5279, Kyun, Burma",
+        "alternate_target": "",
+        "target_status": "",
+        "confidence": "medium; target, timing, bomb load, and bridge result are readable, though some top-line identifiers are faint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "UNK_1944-10-30_BR44",
+        "report_date": "1944-10-30",
+        "squadron": "Squadron unread on late-month scan",
+        "kind": "base",
+        "label": "Fenny",
+        "confidence": "medium; target, timing, bomb load, and bridge result are readable, though some top-line identifiers are faint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.283333,
+          19.616667
+        ]
+      },
+      "properties": {
+        "sortie_id": "UNK_1944-10-30_BR44",
+        "report_date": "1944-10-30",
+        "squadron": "Squadron unread on late-month scan",
+        "kind": "coordinate",
+        "label": "19 37N 97 17E",
+        "confidence": "medium; target, timing, bomb load, and bridge result are readable, though some top-line identifiers are faint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "UNK_1944-10-30_BR44",
+        "report_date": "1944-10-30",
+        "squadron": "Squadron unread on late-month scan",
+        "kind": "base_return",
+        "label": "Fenny",
+        "confidence": "medium; target, timing, bomb load, and bridge result are readable, though some top-line identifiers are faint"
+      }
+    }
+  ]
+}

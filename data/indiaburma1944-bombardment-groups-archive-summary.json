@@ -1,0 +1,22 @@
+{
+  "archive_scope": "IndiaBurma1944Photos folder-wide sortie-report inventory for the 12th Bombardment Group (M)",
+  "image_count": 252,
+  "likely_sortie_front_images_folder_wide": 78,
+  "pairing_rule": "For double-sided items, the backside image number is one greater than the front-side image number.",
+  "inventory_file": "/Users/grantzhang/pacific-wings/data/indiaburma1944-bombardment-groups-sortie-inventory.csv",
+  "group_assumption": "12th Bombardment Group (M) for the full folder",
+  "group_assumption_basis": "User confirmed all material in IndiaBurma1944Photos belongs to the 12th Bombardment Group.",
+  "manually_read_pages_with_squadron_or_date": [
+    "IMG_3490.JPG",
+    "IMG_3491.JPG",
+    "IMG_3492.JPG",
+    "IMG_3496.JPG",
+    "IMG_3497.JPG",
+    "IMG_3498.JPG",
+    "IMG_3499.JPG",
+    "IMG_3500.JPG",
+    "IMG_3501.JPG"
+  ],
+  "manually_read_page_count": 9,
+  "note": "This file name is legacy from an earlier broader pass, but its contents now reflect the user-confirmed 12th Bombardment Group scope."
+}
