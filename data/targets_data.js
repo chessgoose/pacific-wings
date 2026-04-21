@@ -26,5 +26,9 @@ window.TARGETS_DATA = [
   {name:"Kweiping",aliases:["Kueiping","Guiping"],lat:23.4,lng:110.07,country:"China",type:"town"},
   {name:"Samah Bay",aliases:["Samaah","Samah"],lat:5.32,lng:109.48,country:"Malaysia",type:"anchorage"},
   {name:"Truk",aliases:["Truk Lagoon","Chuuk","Truk Atoll"],lat:7.45,lng:151.85,country:"Caroline Islands",type:"naval base"},
-  {name:"Susaki",aliases:["Susaki A/F","Susuiki"],lat:27.06,lng:142.21,country:"Chichi Jima",type:"airfield"}
+  {name:"Susaki",aliases:["Susaki A/F","Susuiki"],lat:27.06,lng:142.21,country:"Chichi Jima",type:"airfield"},
+  {name:"Wake",aliases:["Wake Island","Wake Atoll"],lat:19.28,lng:166.64,country:"Wake Island",type:"island/airfield"},
+  {name:"Ponape",aliases:["Pohnpei","Ponape Island"],lat:6.96,lng:158.21,country:"Caroline Islands",type:"island/airfield"},
+  {name:"Jaluit",aliases:["Jaluit Atoll","Jabor"],lat:5.92,lng:169.63,country:"Marshall Islands",type:"atoll/airfield"},
+  {name:"Maloelap",aliases:["Maloelap Atoll","Taroa"],lat:8.74,lng:171.23,country:"Marshall Islands",type:"atoll/airfield"}
 ];

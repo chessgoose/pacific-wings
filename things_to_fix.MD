@@ -7,7 +7,7 @@ Read /Users/lzhao/Downloads/pacific-wings/data/missions_chronology.csv and make 
 - FOURTEENTHAF-19431005-01 destination assigned is incorrect
 
 # General Todo
-- FOURTEENTHAF-19450402-01 and other similar missions should be split up more specifically since there are multiple trips with different destinations, you will probably need to manually inspect the description to figure out the best way to do so, update the targets as well
+- FOURTEENTHAF-19450402-01, THIRTEENTHAF-19440402-01 and other similar missions should be split up more specifically since there are multiple trips with different destinations, you will probably need to manually inspect the description to figure out the best way to do so, update the bases and targets as well if necessary 
 
 # Completed
 - As you can see in HHAWAIIANAF-19411207-00, the origin Hickam Field Hawaii is in the incorrect location, fix the coordinates in everything

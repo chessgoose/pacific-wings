@@ -521,10 +521,13 @@ class PacificWingsApp {
             'wallis and futuna is.', // 1938: "Wallis and Futuna Islands"
         ]);
 
-        // Historical layer group — everything goes here so we can show/hide as a unit
+        // Continental 1938 layer — always visible in historical mode
         this._historicalGroup = L.layerGroup().addTo(this.map);
 
-        // Modern CARTO tile — created now but not added to map until toggled
+        // Pacific islands layer — only shown at zoom >= 5 in historical mode
+        this._islandsGroup = L.layerGroup();
+
+        // Modern CARTO tile — created now but not added until toggled
         this._modernTile = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
             subdomains: 'abcd',
             maxZoom: 20
@@ -535,10 +538,19 @@ class PacificWingsApp {
         try {
             const [hist, modern] = await Promise.all([
                 fetch('https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1938.geojson').then(r => r.json()),
-                // 50m for better small-island coverage (Fiji, Marshall Is., Kiribati, etc.)
                 fetch('https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson').then(r => r.json())
             ]);
 
+            // Continental 1938 layer: named features only.
+            // The 79 unnamed features are all tiny Pacific island dots with coarse/
+            // misaligned coordinates — drop them entirely and use modern data instead.
+            const continental = {
+                type: 'FeatureCollection',
+                features: hist.features.filter(f => f.properties.NAME !== null)
+            };
+
+            // Modern Pacific islands: all Polynesia / Micronesia / Melanesia /
+            // Aus & NZ small territories. Zoom-dependent — shown only at zoom >= 5.
             const pacificIslands = {
                 type: 'FeatureCollection',
                 features: modern.features.filter(f => {
@@ -549,10 +561,24 @@ class PacificWingsApp {
                 })
             };
 
-            this._addRepeatableGeoJSON(hist, LAND_STYLE, 'NAME', this._historicalGroup);
-            this._addRepeatableGeoJSON(pacificIslands, ISLAND_STYLE, 'NAME', this._historicalGroup);
+            this._addRepeatableGeoJSON(continental, LAND_STYLE, 'NAME', this._historicalGroup);
+            this._addRepeatableGeoJSON(pacificIslands, ISLAND_STYLE, 'NAME', this._islandsGroup);
+
+            // Set initial island visibility based on starting zoom
+            this._updateIslandsVisibility();
         } catch {
             // Silent fallback — ocean background from CSS remains visible
+        }
+    }
+
+    _updateIslandsVisibility() {
+        if (!this._islandsGroup) return;
+        // Only show islands layer in historical mode
+        if (this._basemapMode !== 'historical') return;
+        if (this.map.getZoom() >= 5) {
+            if (!this.map.hasLayer(this._islandsGroup)) this._islandsGroup.addTo(this.map);
+        } else {
+            if (this.map.hasLayer(this._islandsGroup)) this._islandsGroup.remove();
         }
     }
 
@@ -560,6 +586,7 @@ class PacificWingsApp {
         const btn = document.getElementById('basemap-toggle-btn');
         if (this._basemapMode === 'historical') {
             this._historicalGroup.remove();
+            if (this._islandsGroup) this._islandsGroup.remove();
             this._modernTile.addTo(this.map);
             this._basemapMode = 'modern';
             btn.textContent = 'Modern map';
@@ -570,6 +597,7 @@ class PacificWingsApp {
             this._basemapMode = 'historical';
             btn.textContent = '1938 map';
             btn.classList.remove('active');
+            this._updateIslandsVisibility();
         }
     }
 
@@ -604,6 +632,9 @@ class PacificWingsApp {
 
         // Move zoom control to top-right
         L.control.zoom({ position: 'topright' }).addTo(this.map);
+
+        // Show/hide Pacific islands layer based on zoom level
+        this.map.on('zoomend', () => this._updateIslandsVisibility());
 
         // Planes: keep interpolation aligned during zoom animation.
         this.map.on('zoom viewreset', () => this.updatePlanesOnMap());
