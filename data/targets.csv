@@ -37,3 +37,46 @@ Wake,"Wake Island,Wake Atoll",19.28,166.64,Wake Island,island/airfield
 Ponape,"Pohnpei,Ponape Island",6.96,158.21,Caroline Islands,island/airfield
 Jaluit,"Jaluit Atoll,Jabor",5.92,169.63,Marshall Islands,atoll/airfield
 Maloelap,"Maloelap Atoll,Taroa",8.74,171.23,Marshall Islands,atoll/airfield
+Kwajalein,"Kwajalein Atoll",8.72,167.73,Marshall Islands,atoll/naval base
+Wotje,"Wotje Atoll",9.45,170.22,Marshall Islands,atoll/airfield
+Kutkai,"Kutkhai,Kutkaing",23.47,97.87,Burma,town
+Katha,,24.18,96.33,Burma,town/railroad
+Naba,"Naba Junction",24.35,95.97,Burma,railroad junction
+Mohnyin,,24.78,96.37,Burma,town
+Mawhun,,23.30,97.61,Burma,town
+Myothit,,24.26,97.24,Burma,town
+Chefang,"Zhefang,Che-fang",24.39,98.81,China,town
+Weichow Island,"Weizhou Dao,Weichow,Weizhou",21.03,109.10,China,island
+Saint John Island,"St. John Island,St John I.",21.10,107.50,Vietnam,island
+Boram,"Boram A/F,Boram Airfield",-3.58,143.67,New Guinea,airfield
+Amboina,"Ambon,Amboina Island,Halong",-3.70,128.18,Maluku,port/airfield
+Aitape,,-3.14,142.35,New Guinea,town
+Shaggy Ridge,"Kankiryo Saddle,Finisterre Range",-5.75,145.67,New Guinea,ridge/battlefield
+Cape Raoult,,-6.00,147.00,New Guinea,cape
+Toyohara,"Toyohara A/F,Fengyuan,Taichung area",24.25,120.72,Formosa,airfield
+Mako,"Mako harbor,Makung,Magong",23.57,119.57,Formosa,harbor
+Tokichito,,22.57,120.32,Formosa,town
+Hong Kong,"Hong Kong harbor,Victoria Harbor",22.28,114.18,China,port
+Central Luzon,"C Luzon,Luzon",15.50,121.00,Philippines,region
+Calauag,,13.95,122.29,Philippines,town
+NW Negros,"NW Negros,Northwest Negros",10.90,123.15,Philippines,region
+Central Mindanao,"C Mindanao,Mindanao",7.80,124.50,Philippines,region
+Pontianak,,-0.02,109.34,Borneo,city/shipyards
+Makassar,"Makassar Strait,Ujung Pandang",-5.14,119.41,Indonesia,city/strait
+Surabaya,"Soerabaja,Soerabaya",-7.26,112.74,Java,port/city
+Mankayan,,16.86,120.73,Philippines,town
+Tourane,"Da Nang,Danang,Tourane M/Y",16.07,108.22,Vietnam,port/railroad
+Quang Nam,"Quang-Nam,Quang-nam",15.87,108.33,Vietnam,region
+Takao,"Kaohsiung,Takow",22.62,120.27,Formosa,port
+Nagasaki,,32.74,129.87,Japan,city/port
+Koniya,"Koniya A/F,Koniwa",28.15,129.35,Amami Islands,airfield
+Sendai,,38.27,140.87,Japan,city/railroad
+Nagoya,,35.18,136.90,Japan,city/industrial
+Yap,"Yap Island,Yap A/F",9.51,138.13,Caroline Islands,island/airfield
+Sorol,"Sorol Atoll",8.12,140.62,Caroline Islands,atoll
+Babo,"Babo A/F",-2.53,133.44,New Guinea,airfield/town
+Manokwari,,-0.87,134.06,New Guinea,port/town
+Kokas,,-3.27,132.25,New Guinea,port/supply depot
+Amahai,"Amahai A/F",-3.33,128.92,Seram Island,airfield
+Wewak,"Wewak A/F",-3.55,143.63,New Guinea,port/airfield
+Mushu Island,"Mushu I.",-3.47,143.83,New Guinea,island

@@ -492,34 +492,33 @@ class PacificWingsApp {
             interactive: false
         };
 
-        // Pacific island sub-regions in Natural Earth 50m country data.
-        // "Australia and New Zealand" is included for Norfolk Is., Ashmore & Cartier, etc.
+        // Features to drop from the 1938 layer:
+        //   - Pacific islands — modern dataset supplies better per-atoll shapes and current names
+        //   - United States — replaced by the modern multipolygon which has accurate Hawaii/Alaska/Aleutian shapes
+        //   - Kuwait — source polygon is a 4-point sliver along its southern border, renders as garbage
+        const HIST_1938_SKIP = new Set([
+            'American Samoa', 'Fiji', 'Gilbert and Elice Islands', 'Guam',
+            'New Caledonia', 'New Hebrides', 'Niue', 'Rapa Nui', 'Saipan',
+            'Samoa', 'Tonga', 'Wallis and Futuna Islands',
+            'United States', 'Kuwait', 'Syria (France)'
+        ]);
+
+        // Subregions (on the modern Natural Earth dataset) that count as Pacific
+        // islands. "Australia and New Zealand" is included because it hosts
+        // Norfolk Is., Ashmore & Cartier, Coral Sea Is.
         const PACIFIC_SUBREGIONS = new Set([
             'polynesia', 'micronesia', 'melanesia', 'australia and new zealand'
         ]);
 
-        // Nations/territories to skip from the modern supplement — either large
-        // continental landmasses already in the 1938 layer, or islands already
-        // covered under a different 1938 name (e.g. "N. Mariana Is." = 1938 "Saipan").
-        const SKIP_NAMES = new Set([
-            // Continental Asia-Pacific (already in 1938 basemap)
-            'australia', 'new zealand', 'papua new guinea',
-            'indonesia', 'philippines', 'japan', 'china', 'taiwan',
-            'malaysia', 'brunei', 'singapore', 'vietnam', 'thailand',
-            'cambodia', 'laos', 'timor-leste', 'mongolia',
-            'north korea', 'south korea', 'hong kong', 'macao',
-            // Islands already present in 1938 data under same or different name
-            'guam',              // 1938: "Guam"
-            'n. mariana is.',    // 1938: "Saipan"
-            'new caledonia',     // 1938: "New Caledonia"
-            'solomon is.',       // 1938: "Solomon Islands" area
-            'vanuatu',           // 1938: "New Hebrides"
-            'american samoa',    // 1938: "American Samoa"
-            'samoa',             // 1938: "Samoa"
-            'tonga',             // 1938: "Tonga"
-            'niue',              // 1938: "Niue"
-            'wallis and futuna is.', // 1938: "Wallis and Futuna Islands"
+        // Large continental/landmass features to drop from the modern Pacific-island
+        // supplement — those stay on the 1938 layer with historical names.
+        const MODERN_SKIP_NAMES = new Set([
+            'australia', 'new zealand', 'papua new guinea', 'bougainville'
         ]);
+
+        // Small Pacific islands not tagged under a Pacific subregion in Natural Earth
+        // but that we still want from the modern layer (Midway sits in "Northern America").
+        const MODERN_EXTRA_NAMES = new Set(['midway is.']);
 
         // Continental 1938 layer — always visible in historical mode
         this._historicalGroup = L.layerGroup().addTo(this.map);
@@ -538,31 +537,59 @@ class PacificWingsApp {
         try {
             const [hist, modern] = await Promise.all([
                 fetch('https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1938.geojson').then(r => r.json()),
-                fetch('https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson').then(r => r.json())
+                fetch('https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_admin_0_map_units.geojson').then(r => r.json())
             ]);
 
-            // Continental 1938 layer: named features only.
+            // Continental 1938 layer: named features only, minus Pacific islands.
             // The 79 unnamed features are all tiny Pacific island dots with coarse/
-            // misaligned coordinates — drop them entirely and use modern data instead.
+            // misaligned coordinates — drop them entirely. The named Pacific-island
+            // features are also dropped so the modern dataset can supply them.
             const continental = {
                 type: 'FeatureCollection',
-                features: hist.features.filter(f => f.properties.NAME !== null)
+                features: hist.features.filter(f =>
+                    f.properties.NAME !== null && !HIST_1938_SKIP.has(f.properties.NAME)
+                )
             };
 
-            // Modern Pacific islands: all Polynesia / Micronesia / Melanesia /
-            // Aus & NZ small territories. Zoom-dependent — shown only at zoom >= 5.
+            // Modern Pacific islands: everything in a Pacific subregion plus a few
+            // explicit extras (Midway), minus the large continental landmasses that
+            // stay on the 1938 layer. Zoom-dependent — shown only at zoom >= 5.
             const pacificIslands = {
                 type: 'FeatureCollection',
                 features: modern.features.filter(f => {
-                    const subregion = (f.properties.SUBREGION || '').toLowerCase();
-                    if (!PACIFIC_SUBREGIONS.has(subregion)) return false;
                     const name = (f.properties.NAME || '').toLowerCase().trim();
-                    return !SKIP_NAMES.has(name);
+                    if (MODERN_SKIP_NAMES.has(name)) return false;
+                    const subregion = (f.properties.SUBREGION || '').toLowerCase();
+                    return PACIFIC_SUBREGIONS.has(subregion) || MODERN_EXTRA_NAMES.has(name);
                 })
             };
 
             this._addRepeatableGeoJSON(continental, LAND_STYLE, 'NAME', this._historicalGroup);
             this._addRepeatableGeoJSON(pacificIslands, ISLAND_STYLE, 'NAME', this._islandsGroup);
+
+            // Modern US replaces the 1938 "United States" feature — accurate Hawaii, Alaska & Aleutian shapes.
+            // Added to the continental group (always visible) with LAND_STYLE so it renders like other landmasses.
+            const modernUS = modern.features.find(f => f.properties.NAME === 'United States of America');
+            if (modernUS) {
+                this._addRepeatableGeoJSON(
+                    { type: 'FeatureCollection', features: [modernUS] },
+                    LAND_STYLE, 'NAME', this._historicalGroup
+                );
+            }
+
+            // Aleutian Islands — part of the modern US multipolygon but labeled "United States of America".
+            // Add a manual label over the central chain (~Andreanof Islands).
+            const aleutianLabel = (lngOffset) => L.marker([52.5, -175.5 + lngOffset], {
+                icon: L.divIcon({
+                    className: 'basemap-label',
+                    html: '<span>Aleutian Islands</span>',
+                    iconSize: null,
+                    iconAnchor: [0, 0]
+                }),
+                interactive: false,
+                zIndexOffset: -9999
+            });
+            [-360, 0, 360].forEach(offset => aleutianLabel(offset).addTo(this._historicalGroup));
 
             // Set initial island visibility based on starting zoom
             this._updateIslandsVisibility();
