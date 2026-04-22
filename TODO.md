@@ -1,16 +1,31 @@
-Read /Users/lzhao/Downloads/pacific-wings/data/missions_chronology.csv and make the following fixes. Move tasks to completed once the fix has been implemented 
+Read /Users/lzhao/Downloads/pacific-wings/data/missions_chronology.csv and make the following fixes. Move tasks to completed once the fix has been implemented. When you see "SEVENTHAF-19441012-x", I'm referring to all missions with that original prefix and any number attached to it
+
+- When updating missions_data.js and the csv, bias towards manually reading the descriptions unless you know you can be 100% accurate programatically
+- Whenever you make changes manually to missions_chronology.csv, go and use /Users/lzhao/Downloads/pacific-wings/scripts/generate-missions-data.py to update missions_data.js as well. If there is a base or a target that was not included in bases or targets, you should add the relevant rows in teh csv and use the corresponding scripts (/Users/lzhao/Downloads/pacific-wings/scripts/generate-bases-data.py and /Users/lzhao/Downloads/pacific-wings/scripts/generate-targets-data.py) to update the js.
+- If you realize that a row in missions.csv corresponds to multiple missions, you should add more rows to the missions_chronology.csv spreadsheet
 
 # General Todo
-- Fix FEAF-19440713-00
+
+
 
 
 # Completed
 
+- SEVENTHAF-19441012-x split up
+- SEVENTHAF-19440605-01 start in Makin
+- SEVENTHAF-19431219-x
+- ELEVENTHAF-19420913-00: corrected `num_aircraft` from 14 to 1 to match the description (only 1 LB-30 flew the recon/strafing mission; 14 B-24s were moving to Adak)
+
+- FEAF-19440713-00: already split in `missions_chronology.csv` into Yap, Sorol, Babo, Wewak, Manokwari, Kokas, and Amahai rows; moved stale TODO
+- FEAF-19450506-00: split into Formosa, Borneo, Celebes, Tarakan, Dong Hoi, Central Luzon, Ranau, and Labuan missions; added missing targets
+- TWENTIETHAF-19450207-00: split into Saigon, Phnom Penh, Martaban, and Rama VI Bridge/Bangkok strikes; added missing targets
+- TENTHAF-19421231-01: corrected the bad New Guinea origin cluster from Karachi to Port Moresby after checking the distance outliers
 - TENTHAF-19440915: split into 6 missions — -00 (B-24→Liuchow), -01 (B-25→Chefang), -02 (P-47→Kutkai), -03 (P-51→Mawhun), -04 (P-47 16ac→Katha river sweep), -05 (P-47 12ac→Myothit Burma Road sweep); added targets and updated bases
 - FOURTEENTHAF-19441130-00: origin corrected from Kweilin to Kunming (Kweilin evacuated Nov 7, Liuchow Nov 10); added missing Kunming base entry for Nov 1944–Jan 1945 gap
 - TWENTIETHAF-19450111-00: origin corrected from Saipan Isley Field to Kharagpur India (description says "out of Calcutta"; bases data confirms XX Bomber Command was at Kharagpur Jan 1945, not Saipan) — NOTE: you said "should be singapore" but that contradicts the source description; please verify
 - SEVENTHAF-19440114-01: split from -00 — B-25s were from Makin attacking Wotje, not Funafuti→Kwajalein; updated origin/destination/duration
 - FOURTEENTHAF-19440114-00 (B-24): destination corrected Haiphong→Saint John Island (21.10,107.50); -01 (B-25): destination corrected Haiphong→Weichow Island
+- General Todo (long/suspicious missions): reviewed distance and long-description outliers; fixed malformed Truk latitude rows (151.83 -> 7.45), split TWENTIETHAF-19450127-00 and TWENTIETHAF-19450310-00 previously, then added TWENTIETHAF-19450304-01 (Tokyo, 159 aircraft), corrected TWENTIETHAF-19450304-00 count to 192, corrected TWENTIETHAF-19450809-00 destination coords to Nagasaki, and added TWENTIETHAF-19450809-01 (Amagasaki, 95 aircraft); regenerated missions_data.js
 
 - ELEVENTHAF-19420904-00 location is incorrect, should be Nazan and Kuluk Bays
 - FOURTEENTHAF-19450611-00 destination should be Kuanshuishih.

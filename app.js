@@ -475,18 +475,18 @@ class PacificWingsApp {
     async _loadBasemap() {
         const LAND_STYLE = {
             style: {
-                fillColor: '#1c2a3a',
+                fillColor: '#0e0e0e',
                 fillOpacity: 1,
-                color: 'rgba(160, 140, 100, 0.35)',
+                color: 'rgba(102, 102, 102, 0.5)',
                 weight: 0.8
             },
             interactive: false
         };
         const ISLAND_STYLE = {
             style: {
-                fillColor: '#1c2a3a',
+                fillColor: '#0e0e0e',
                 fillOpacity: 1,
-                color: 'rgba(160, 140, 100, 0.25)',
+                color: 'rgba(102, 102, 102, 0.35)',
                 weight: 0.5
             },
             interactive: false

@@ -670,7 +670,7 @@ body {
 #map {
     height: 100%;
     width: 100%;
-    background: #000;
+    background: #2c353c;
 }
 
 /* Timeline Styling */
@@ -918,7 +918,7 @@ body {
 
 /* Override Leaflet Dark Mode */
 .leaflet-container {
-    background: #0b1520 !important;
+    background: #2c353c !important;
 }
 
 /* Filter removed with CartoDB Dark Matter */
@@ -1358,12 +1358,12 @@ body {
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: rgba(210, 195, 160, 0.75);
+    color: rgba(200, 200, 200, 0.75);
     text-shadow:
-        0 0 4px #0b1520,
-        0 0 8px #0b1520,
-        1px 1px 0 #0b1520,
-        -1px -1px 0 #0b1520;
+        0 0 4px #2c353c,
+        0 0 8px #2c353c,
+        1px 1px 0 #2c353c,
+        -1px -1px 0 #2c353c;
     white-space: nowrap;
     transform: translateX(-50%);
 }

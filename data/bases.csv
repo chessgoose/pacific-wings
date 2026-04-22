@@ -3,8 +3,7 @@ Hawaiian AF,1941-12-07,1942-02-04,Hickam Field Hawaii,21.3156,-157.9497,Hickam p
 FEAF,1941-12-07,1941-12-24,Clark Field Philippines,15.18,120.56,Clark retained as main Luzon FEAF origin until evacuation to Australia in late Dec 1941
 FEAF,1941-12-25,1944-10-19,Darwin Australia,-12.46,130.84,RAAF Darwin page notes FEAF established HQ at Darwin in late Dec 1941; later span remains campaign-inferred
 FEAF,1944-10-20,1945-08-11,Leyte Philippines,10.99,124.91,Return to Philippines keyed to Leyte landings; campaign-inferred main FEAF base
-FEAF,1945-04-21,1945-08-11,Ie Shima,26.72,127.79,Ie Shima captured April 1945; FEAF fighter-bomber and B-24 operations against Kyushu and Japan
-FEAF,1945-08-12,1945-08-15,Okinawa,26.36,127.77,B-24 operations shifted to Okinawa by Aug 1945
+FEAF,1945-04-21,1945-08-15,Ie Shima,26.72,127.79,Ie Shima captured April 1945; FEAF fighter-bomber and B-24 operations against Kyushu and Japan through end of war
 Fifth AF,1942-01-01,1942-08-31,Darwin Australia,-12.46,130.84,Initial SW Pacific base
 Fifth AF,1942-09-01,1943-08-31,Port Moresby New Guinea,-9.44,147.18,Main forward base during New Guinea campaign
 Fifth AF,1943-09-01,1944-01-31,Dobodura New Guinea,-8.79,148.04,Advanced to NE New Guinea
@@ -18,6 +17,7 @@ Seventh AF,1943-11-24,1944-08-31,Makin Gilbert Islands,3.12,172.99,B-25 forward 
 Seventh AF,1944-02-01,1944-05-31,Kwajalein Marshall Islands,8.72,167.73,Marshall Islands campaign
 Seventh AF,1944-06-01,1944-08-31,Saipan Marianas,15.18,145.75,Marianas campaign
 Seventh AF,1944-09-01,1945-01-31,Guam Marianas,13.44,144.79,Main Marianas base
+Seventh AF,1944-10-01,1945-08-15,Angaur Palaus,6.90,134.14,494th BG based at Angaur from Oct 1944 for Pacific strike operations
 Seventh AF,1945-02-01,1945-08-15,Iwo Jima,24.78,141.32,Advanced to Iwo Jima for Japan strikes
 Tenth AF,1942-02-12,1942-12-31,Karachi India,24.86,67.01,CBI theater activation
 Tenth AF,1943-01-01,1944-07-31,Dinjan Assam India,27.39,95.00,India-Burma operations; Hump route
