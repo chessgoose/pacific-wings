@@ -6,6 +6,8 @@ Read /Users/lzhao/Downloads/pacific-wings/data/missions_chronology.csv and make 
 
 # General Todo
 
+- SEVENTHAF-19440817-01 origin should be Makin
+- look at SEVENTHAF-19420605-00 etc. and think about how to fix the entries in the missions_chronology.csv (and potentially add a base)related to the battle of midway, you can look at https://en.wikipedia.org/wiki/Battle_of_Midway for more information in case the descriptions are insufficnet
 
 
 # Completed

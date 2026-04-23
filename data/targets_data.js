@@ -10,6 +10,8 @@ window.TARGETS_DATA = [
   {name:"Shimushu",aliases:["Shimushu"],lat:50.71,lng:156.12,country:"Kuriles",type:"island/airfield"},
   {name:"Lae",aliases:["Lae"],lat:-6.73,lng:146.99,country:"New Guinea",type:"port/airfield"},
   {name:"Salamaua",aliases:["Salamaua"],lat:-7.07,lng:147.17,country:"New Guinea",type:"port/airfield"},
+  {name:"Komiatum",aliases:["Komiatum Ridge"],lat:-7.1,lng:147.05,country:"New Guinea",type:"defensive position"},
+  {name:"Selaroe",aliases:["Selaru Island"],lat:-8.22,lng:131.03,country:"Indonesia",type:"island"},
   {name:"Finschhafen",aliases:["Finschhafen"],lat:-6.6,lng:147.85,country:"New Guinea",type:"port"},
   {name:"Gasmata",aliases:["Gasmata"],lat:-6.28,lng:150.33,country:"New Britain",type:"airfield"},
   {name:"Cape Gloucester",aliases:["Cape Gloucester A/F"],lat:-5.44,lng:148.44,country:"New Britain",type:"airfield"},
@@ -24,7 +26,7 @@ window.TARGETS_DATA = [
   {name:"Mingkiang",aliases:["Ming Chiang", "Mingjiang"],lat:25.8,lng:110.33,country:"China",type:"town"},
   {name:"Siangtan",aliases:["Hsiang Tan", "Xiangtan"],lat:27.82,lng:112.95,country:"China",type:"town"},
   {name:"Kweiping",aliases:["Kueiping", "Guiping"],lat:23.4,lng:110.07,country:"China",type:"town"},
-  {name:"Samah Bay",aliases:["Samaah", "Samah"],lat:5.32,lng:109.48,country:"Malaysia",type:"anchorage"},
+  {name:"Samah Bay",aliases:["Samaah", "Samah"],lat:18.22,lng:109.58,country:"Hainan",type:"anchorage"},
   {name:"Truk",aliases:["Truk Lagoon", "Chuuk", "Truk Atoll"],lat:7.45,lng:151.85,country:"Caroline Islands",type:"naval base"},
   {name:"Susaki",aliases:["Susaki A/F", "Susuiki"],lat:27.06,lng:142.21,country:"Chichi Jima",type:"airfield"},
   {name:"Nazan and Kuluk Bays",aliases:["Nazan Bay", "Kuluk Bay", "Atka Island", "Adak Island"],lat:52.04,lng:-175.37,country:"Aleutians",type:"bay"},
@@ -101,5 +103,12 @@ window.TARGETS_DATA = [
   {name:"Omura",aliases:["Omura A/F", "Omura Naval Air Station"],lat:32.94,lng:129.95,country:"Japan",type:"airfield"},
   {name:"Koror",aliases:["Koror Palau"],lat:7.34,lng:134.49,country:"Palau",type:"port/town"},
   {name:"Bulan",aliases:["Bulan A/F"],lat:12.67,lng:124.05,country:"Philippines",type:"airfield"},
-  {name:"Corregidor",aliases:["Corregidor Island", "The Rock"],lat:14.38,lng:120.57,country:"Philippines",type:"island/fortification"}
+  {name:"Corregidor",aliases:["Corregidor Island", "The Rock"],lat:14.38,lng:120.57,country:"Philippines",type:"island/fortification"},
+  {name:"Shanghai",aliases:["Shanghai Harbor", "Shanghai Port"],lat:31.23,lng:121.47,country:"China",type:"city/port"},
+  {name:"Shinei",aliases:["Sinnei", "Xinying", "Shinei railroad yards"],lat:23.31,lng:120.31,country:"Formosa",type:"railroad yards"},
+  {name:"Karenko",aliases:["Karenko A/F", "Hualien", "Hualien A/F"],lat:23.98,lng:121.62,country:"Formosa",type:"airfield"},
+  {name:"Hainan",aliases:["Hainan Island", "Hainan I."],lat:19.2,lng:109.7,country:"Hainan",type:"island"},
+  {name:"Saigon",aliases:["Saigon naval base", "Ho Chi Minh City"],lat:10.82,lng:106.63,country:"French Indochina",type:"city/naval base"},
+  {name:"Sepinggang",aliases:["Sepinggang A/F", "Balikpapan area"],lat:1.27,lng:116.9,country:"Borneo",type:"airfield"},
+  {name:"Jesselton",aliases:["Jesselton A/F", "Kota Kinabalu"],lat:5.98,lng:116.07,country:"Borneo",type:"city/airfield"}
 ];

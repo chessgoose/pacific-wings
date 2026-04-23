@@ -9,6 +9,8 @@ Paramushiru,Paramushiro,50.38,155.76,Kuriles,island/airfield
 Shimushu,Shimushu,50.71,156.12,Kuriles,island/airfield
 Lae,Lae,-6.73,146.99,New Guinea,port/airfield
 Salamaua,Salamaua,-7.07,147.17,New Guinea,port/airfield
+Komiatum,Komiatum Ridge,-7.1,147.05,New Guinea,defensive position
+Selaroe,Selaru Island,-8.22,131.03,Indonesia,island
 Finschhafen,Finschhafen,-6.60,147.85,New Guinea,port
 Gasmata,Gasmata,-6.28,150.33,New Britain,airfield
 Cape Gloucester,Cape Gloucester A/F,-5.44,148.44,New Britain,airfield
@@ -23,7 +25,7 @@ Sinyang,"Hsinyang,Xinyang",32.12,114.07,China,town
 Mingkiang,"Ming Chiang,Mingjiang",25.8,110.33,China,town
 Siangtan,"Hsiang Tan,Xiangtan",27.82,112.95,China,town
 Kweiping,"Kueiping,Guiping",23.4,110.07,China,town
-Samah Bay,"Samaah,Samah",5.32,109.48,Malaysia,anchorage
+Samah Bay,"Samaah,Samah",18.22,109.58,Hainan,anchorage
 Truk,"Truk Lagoon,Chuuk,Truk Atoll",7.45,151.85,Caroline Islands,naval base
 Susaki,"Susaki A/F,Susuiki",27.06,142.21,Chichi Jima,airfield
 Nazan and Kuluk Bays,"Nazan Bay,Kuluk Bay,Atka Island,Adak Island",52.04,-175.37,Aleutians,bay
@@ -101,3 +103,10 @@ Omura,"Omura A/F,Omura Naval Air Station",32.94,129.95,Japan,airfield
 Koror,"Koror Palau",7.34,134.49,Palau,port/town
 Bulan,"Bulan A/F",12.67,124.05,Philippines,airfield
 Corregidor,"Corregidor Island,The Rock",14.38,120.57,Philippines,island/fortification
+Shanghai,"Shanghai Harbor,Shanghai Port",31.23,121.47,China,city/port
+Shinei,"Sinnei,Xinying,Shinei railroad yards",23.31,120.31,Formosa,railroad yards
+Karenko,"Karenko A/F,Hualien,Hualien A/F",23.98,121.62,Formosa,airfield
+Hainan,"Hainan Island,Hainan I.",19.2,109.7,Hainan,island
+Saigon,"Saigon naval base,Ho Chi Minh City",10.82,106.63,French Indochina,city/naval base
+Sepinggang,"Sepinggang A/F,Balikpapan area",1.27,116.9,Borneo,airfield
+Jesselton,"Jesselton A/F,Kota Kinabalu",5.98,116.07,Borneo,city/airfield

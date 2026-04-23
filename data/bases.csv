@@ -6,27 +6,36 @@ FEAF,1944-10-20,1945-08-11,Leyte Philippines,10.99,124.91,Return to Philippines 
 FEAF,1945-04-21,1945-08-15,Ie Shima,26.72,127.79,Ie Shima captured April 1945; FEAF fighter-bomber and B-24 operations against Kyushu and Japan through end of war
 Fifth AF,1942-01-01,1942-08-31,Darwin Australia,-12.46,130.84,Initial SW Pacific base
 Fifth AF,1942-09-01,1943-08-31,Port Moresby New Guinea,-9.44,147.18,Main forward base during New Guinea campaign
+Fifth AF,1943-05-01,1944-09-01,Fenton Australia,-13.62,131.34,380th BG base for long-range Dutch East Indies operations (Surabaya, Selaroe, etc.)
 Fifth AF,1943-09-01,1944-01-31,Dobodura New Guinea,-8.79,148.04,Advanced to NE New Guinea
 Fifth AF,1944-02-01,1944-04-30,Nadzab New Guinea,-6.59,146.73,Ramu Valley advance
 Fifth AF,1944-05-01,1944-09-30,Hollandia New Guinea,-2.53,140.72,Leapfrog advance
 Fifth AF,1944-10-01,1944-12-31,Leyte Philippines,10.99,124.91,MacArthur returns to Philippines
 Fifth AF,1945-01-01,1945-08-15,Clark Field Luzon,15.18,120.56,Luzon liberated Jan 1945
 Seventh AF,1942-02-05,1945-08-15,Hickam Field Hawaii,21.3156,-157.9497,Hickam page lists Seventh Air Force from 1942 after redesignation on 1942-02-05; 
+Seventh AF,1942-05-30,1943-07-31,Midway Atoll,28.21,-177.38,Forward Seventh AF detachment base beginning just before the Battle of Midway; search/strike and patrol operations continued through mid-1943
 Seventh AF,1943-04-20,1944-01-31,Funafuti Ellice Islands,-8.52,179.19,First B-24 mission from Funafuti 1943-04-20 (Nauru strike); forward base for Gilbert Is campaign
 Seventh AF,1943-11-24,1944-08-31,Makin Gilbert Islands,3.12,172.99,B-25 forward base; Makin secured Nov 1943 during Gilbert Is campaign
 Seventh AF,1944-02-01,1944-05-31,Kwajalein Marshall Islands,8.72,167.73,Marshall Islands campaign
+Seventh AF,1944-02-22,1944-10-31,Eniwetok Marshall Islands,11.50,162.25,Battle of Eniwetok (17-23 Feb 1944) secured the atoll; Engebi/Wrigley operations supported Seventh AF strikes in the Marshalls-Carolines period
 Seventh AF,1944-06-01,1944-08-31,Saipan Marianas,15.18,145.75,Marianas campaign
 Seventh AF,1944-09-01,1945-01-31,Guam Marianas,13.44,144.79,Main Marianas base
 Seventh AF,1944-10-01,1945-08-15,Angaur Palaus,6.90,134.14,494th BG based at Angaur from Oct 1944 for Pacific strike operations
 Seventh AF,1945-02-01,1945-08-15,Iwo Jima,24.78,141.32,Advanced to Iwo Jima for Japan strikes
-Tenth AF,1942-02-12,1942-12-31,Karachi India,24.86,67.01,CBI theater activation
-Tenth AF,1943-01-01,1944-07-31,Dinjan Assam India,27.39,95.00,India-Burma operations; Hump route
-Tenth AF,1944-08-01,1945-08-15,Myitkyina Burma,25.40,97.39,Advanced into Burma
+Tenth AF,1942-02-12,1943-09-30,Karachi India,24.86,67.01,CBI theater activation; early India command period
+Tenth AF,1943-01-01,1945-08-15,Dinjan Assam India,27.39,95.00,India-Burma operations; Hump route; remained active alongside later command stations
+Tenth AF,1943-10-01,1943-12-31,Barrackpore India,22.76,88.37,Timeline station phase from Wikipedia (Oct-Dec 1943)
+Tenth AF,1944-01-01,1944-05-31,Belvedere Palace Calcutta India,22.54,88.33,Timeline station phase from Wikipedia (Jan-May 1944)
+Tenth AF,1944-06-01,1944-10-31,Kanjikoah Assam India,27.44,95.24,Timeline station phase from Wikipedia (Jun-Oct 1944)
+Tenth AF,1944-11-01,1945-01-31,Myitkyina Burma,25.40,97.39,Timeline station phase from Wikipedia (Nov 1944-Jan 1945)
+Tenth AF,1945-02-01,1945-04-30,Bhamo Burma,24.25,97.23,Timeline station phase from Wikipedia (Feb-Apr 1945)
+Tenth AF,1945-05-01,1945-08-15,Piardoba India,23.14,87.26,Timeline station phase from Wikipedia (from May 1945)
 Eleventh AF,1942-01-01,1942-07-31,Kodiak Alaska,57.79,-152.51,Alaska defense
 Eleventh AF,1942-03-01,1942-11-30,Cold Bay Alaska,55.19,-162.72,Aleutian campaign begins; Cold Bay operational Mar 1942
 Eleventh AF,1942-09-10,1943-03-31,Adak Aleutians,51.88,-176.65,Adak occupied Sep 1942; first strikes from Adak 1942-09-14
 Eleventh AF,1943-02-16,1943-08-31,Amchitka Aleutians,51.37,-179.22,Amchitka occupied Jan 1943; first combat missions 1943-02-16
 Eleventh AF,1943-06-24,1945-08-15,Shemya Aleutians,52.71,174.13,Shemya occupied May 1943; first B-24 strikes from Shemya 1943-06-24
+Thirteenth AF,1942-08-01,1943-01-12,Espiritu Santo New Hebrides,-15.5,166.88,Pre-activation B-17 staging base for South Pacific USAAF operations (Battle of Eastern Solomons etc.)
 Thirteenth AF,1943-01-13,1943-09-30,Henderson Field Guadalcanal,-9.43,160.04,Guadalcanal base
 Thirteenth AF,1943-08-14,1944-02-28,Munda New Georgia,-8.33,157.26,Munda airstrip captured Aug 1943; operational 1943-08-14
 Thirteenth AF,1944-03-01,1944-05-31,Torokina Bougainville,-6.21,155.00,Bougainville base
