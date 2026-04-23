@@ -8,7 +8,6 @@ Read /Users/lzhao/Downloads/pacific-wings/data/missions_chronology.csv and make 
 
 
 
-
 # Completed
 
 - SEVENTHAF-19441012-x split up
@@ -26,6 +25,10 @@ Read /Users/lzhao/Downloads/pacific-wings/data/missions_chronology.csv and make 
 - SEVENTHAF-19440114-01: split from -00 — B-25s were from Makin attacking Wotje, not Funafuti→Kwajalein; updated origin/destination/duration
 - FOURTEENTHAF-19440114-00 (B-24): destination corrected Haiphong→Saint John Island (21.10,107.50); -01 (B-25): destination corrected Haiphong→Weichow Island
 - General Todo (long/suspicious missions): reviewed distance and long-description outliers; fixed malformed Truk latitude rows (151.83 -> 7.45), split TWENTIETHAF-19450127-00 and TWENTIETHAF-19450310-00 previously, then added TWENTIETHAF-19450304-01 (Tokyo, 159 aircraft), corrected TWENTIETHAF-19450304-00 count to 192, corrected TWENTIETHAF-19450809-00 destination coords to Nagasaki, and added TWENTIETHAF-19450809-01 (Amagasaki, 95 aircraft); regenerated missions_data.js
+- SEVENTHAF-19440926-x: expanded into separate Marcus, Iwo Jima, Nauru, and Wake rows; corrected origins/durations for Gilberts and Marshalls legs
+- SEVENTHAF-19440127-00: split B-24 actions into Nauru (6), Wotje (9), and Taroa/Maloelap (7) missions
+- TWENTIETHAF-19450127-x: further split Marianas strike package by adding the remaining 14-aircraft mission row
+- TENTHAF-19430126-x: corrected fighter destination to Naba and added separate B-25 Naba (3 aircraft) strike row
 
 - ELEVENTHAF-19420904-00 location is incorrect, should be Nazan and Kuluk Bays
 - FOURTEENTHAF-19450611-00 destination should be Kuanshuishih.
