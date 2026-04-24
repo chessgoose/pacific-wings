@@ -9,6 +9,8 @@ Paramushiru,Paramushiro,50.38,155.76,Kuriles,island/airfield
 Shimushu,Shimushu,50.71,156.12,Kuriles,island/airfield
 Lae,Lae,-6.73,146.99,New Guinea,port/airfield
 Salamaua,Salamaua,-7.07,147.17,New Guinea,port/airfield
+Komiatum,Komiatum Ridge,-7.1,147.05,New Guinea,defensive position
+Selaroe,Selaru Island,-8.22,131.03,Indonesia,island
 Finschhafen,Finschhafen,-6.60,147.85,New Guinea,port
 Gasmata,Gasmata,-6.28,150.33,New Britain,airfield
 Cape Gloucester,Cape Gloucester A/F,-5.44,148.44,New Britain,airfield
@@ -23,6 +25,90 @@ Sinyang,"Hsinyang,Xinyang",32.12,114.07,China,town
 Mingkiang,"Ming Chiang,Mingjiang",25.8,110.33,China,town
 Siangtan,"Hsiang Tan,Xiangtan",27.82,112.95,China,town
 Kweiping,"Kueiping,Guiping",23.4,110.07,China,town
-Samah Bay,"Samaah,Samah",5.32,109.48,Malaysia,anchorage
+Samah Bay,"Samaah,Samah",18.22,109.58,Hainan,anchorage
 Truk,"Truk Lagoon,Chuuk,Truk Atoll",7.45,151.85,Caroline Islands,naval base
 Susaki,"Susaki A/F,Susuiki",27.06,142.21,Chichi Jima,airfield
+Nazan and Kuluk Bays,"Nazan Bay,Kuluk Bay,Atka Island,Adak Island",52.04,-175.37,Aleutians,bay
+Kuanshuishih,Guanshuishi,,,China,railroad yard
+Dublon,"Dublon Island,Tonoas,Truk Dublon",7.36,151.87,Caroline Islands,naval base
+Raluana Pt,"Raluana Point,Raluana",-4.37,152.21,New Britain,point
+Otomari Cape,"Cape Otomari,Otomari,Korsakov",46.63,142.78,Sakhalin,cape/harbor
+W Formosa,"West Formosa,W Taiwan,Western Taiwan",23.5,120.3,Formosa,region
+Balete Pass,"Dalton Pass,Santa Fe Pass",16.3,121.2,Philippines,mountain pass
+Wake,"Wake Island,Wake Atoll",19.28,166.64,Wake Island,island/airfield
+Ponape,"Pohnpei,Ponape Island",6.96,158.21,Caroline Islands,island/airfield
+Jaluit,"Jaluit Atoll,Jabor",5.92,169.63,Marshall Islands,atoll/airfield
+Maloelap,"Maloelap Atoll,Taroa",8.74,171.23,Marshall Islands,atoll/airfield
+Kwajalein,"Kwajalein Atoll",8.72,167.73,Marshall Islands,atoll/naval base
+Wotje,"Wotje Atoll",9.45,170.22,Marshall Islands,atoll/airfield
+Kutkai,"Kutkhai,Kutkaing",23.47,97.87,Burma,town
+Katha,,24.18,96.33,Burma,town/railroad
+Naba,"Naba Junction",24.35,95.97,Burma,railroad junction
+Mohnyin,,24.78,96.37,Burma,town
+Mawhun,,23.30,97.61,Burma,town
+Myothit,,24.26,97.24,Burma,town
+Chefang,"Zhefang,Che-fang",24.39,98.81,China,town
+Weichow Island,"Weizhou Dao,Weichow,Weizhou",21.03,109.10,China,island
+Saint John Island,"St. John Island,St John I.",21.10,107.50,Vietnam,island
+Boram,"Boram A/F,Boram Airfield",-3.58,143.67,New Guinea,airfield
+Amboina,"Ambon,Amboina Island,Halong",-3.70,128.18,Maluku,port/airfield
+Aitape,,-3.14,142.35,New Guinea,town
+Shaggy Ridge,"Kankiryo Saddle,Finisterre Range",-5.75,145.67,New Guinea,ridge/battlefield
+Cape Raoult,,-6.00,147.00,New Guinea,cape
+Toyohara,"Toyohara A/F,Fengyuan,Taichung area",24.25,120.72,Formosa,airfield
+Mako,"Mako harbor,Makung,Magong",23.57,119.57,Formosa,harbor
+Tokichito,,22.57,120.32,Formosa,town
+Hong Kong,"Hong Kong harbor,Victoria Harbor",22.28,114.18,China,port
+Central Luzon,"C Luzon,Luzon",15.50,121.00,Philippines,region
+Calauag,,13.95,122.29,Philippines,town
+NW Negros,"NW Negros,Northwest Negros",10.90,123.15,Philippines,region
+Central Mindanao,"C Mindanao,Mindanao",7.80,124.50,Philippines,region
+Pontianak,,-0.02,109.34,Borneo,city/shipyards
+Makassar,"Makassar Strait,Ujung Pandang",-5.14,119.41,Indonesia,city/strait
+Surabaya,"Soerabaja,Soerabaya",-7.26,112.74,Java,port/city
+Mankayan,,16.86,120.73,Philippines,town
+Tourane,"Da Nang,Danang,Tourane M/Y",16.07,108.22,Vietnam,port/railroad
+Quang Nam,"Quang-Nam,Quang-nam",15.87,108.33,Vietnam,region
+Takao,"Kaohsiung,Takow",22.62,120.27,Formosa,port
+Nagasaki,,32.74,129.87,Japan,city/port
+Koniya,"Koniya A/F,Koniwa",28.15,129.35,Amami Islands,airfield
+Sendai,,38.27,140.87,Japan,city/railroad
+Nagoya,,35.18,136.90,Japan,city/industrial
+Yap,"Yap Island,Yap A/F",9.51,138.13,Caroline Islands,island/airfield
+Sorol,"Sorol Atoll",8.12,140.62,Caroline Islands,atoll
+Babo,"Babo A/F",-2.53,133.44,New Guinea,airfield/town
+Manokwari,,-0.87,134.06,New Guinea,port/town
+Kokas,,-3.27,132.25,New Guinea,port/supply depot
+Amahai,"Amahai A/F",-3.33,128.92,Seram Island,airfield
+Wewak,"Wewak A/F",-3.55,143.63,New Guinea,port/airfield
+Mushu Island,"Mushu I.",-3.47,143.83,New Guinea,island
+Matsuyama,"Matsuyama A/F,Taihoku Matsuyama,Songshan",25.07,121.55,Formosa,airfield
+Toshien,"Toshien Harbor,Zuoying Harbor,Takao Harbor",22.69,120.26,Formosa,harbor
+Toko,"Toko Seaplane Base,Dapeng Bay",22.45,120.48,Formosa,seaplane base
+Kiirun,"Keelung,Kiirun Naval Port",25.15,121.76,Formosa,port/naval base
+Mato,"Mato Airdrome,Madou",23.20,120.28,Formosa,airfield/town
+Kudat,"Kudat A/F,Kudat Airfield",6.89,116.82,Borneo,airfield
+Keningau,"Keningau A/F,Keningau Airfield",5.36,116.16,Borneo,airfield
+Ranau,"Ranau Airstrip,Ranau Airfield",5.95,116.66,Borneo,airfield
+Labuan,"Labuan Airfield,Labuan A/F",5.32,115.22,Borneo,island/airfield
+Tarakan,"Tarakan Island,Tarakan I.",3.31,117.59,Borneo,island/battlefield
+Limboeng,"Limbung,Limboeng Airfield",-5.30,119.43,Celebes,airfield
+Dong Hoi,"Dong Hoi warehouses,Donghoi",17.47,106.62,Vietnam,town/warehouses
+Phnom Penh,"Pnom Penh",11.56,104.92,Cambodia,city
+Martaban,"Martaben,Mottama",16.53,97.62,Burma,railroad yard/port
+Rama VI Bridge,"Bangkok Rama VI Bridge,Rama 6 Bridge",13.81,100.52,Thailand,bridge
+Iwo Jima,"Iwo To,Sulfur Island,Iwo Jima A/F",24.78,141.32,Japan,island/airfield
+Ototo Jima,"Ototo-jima,Ototojima",27.07,142.17,Japan,island
+Omura,"Omura A/F,Omura Naval Air Station",32.94,129.95,Japan,airfield
+Koror,"Koror Palau",7.34,134.49,Palau,port/town
+Bulan,"Bulan A/F",12.67,124.05,Philippines,airfield
+Corregidor,"Corregidor Island,The Rock",14.38,120.57,Philippines,island/fortification
+Shanghai,"Shanghai Harbor,Shanghai Port",31.23,121.47,China,city/port
+Shinei,"Sinnei,Xinying,Shinei railroad yards",23.31,120.31,Formosa,railroad yards
+Karenko,"Karenko A/F,Hualien,Hualien A/F",23.98,121.62,Formosa,airfield
+Hainan,"Hainan Island,Hainan I.",19.2,109.7,Hainan,island
+Saigon,"Saigon naval base,Ho Chi Minh City",10.82,106.63,French Indochina,city/naval base
+Sepinggang,"Sepinggang A/F,Balikpapan area",1.27,116.9,Borneo,airfield
+Jesselton,"Jesselton A/F,Kota Kinabalu",5.98,116.07,Borneo,city/airfield
+Sandakan,"Sandakan A/F,Sandakan Airfield",5.84,118.12,Borneo,city/airfield
+Buayoan,"Buayan A/F,Buayoan A/F,General Santos",6.05,125.17,Philippines,airfield
