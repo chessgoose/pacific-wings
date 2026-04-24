@@ -110,5 +110,7 @@ window.TARGETS_DATA = [
   {name:"Hainan",aliases:["Hainan Island", "Hainan I."],lat:19.2,lng:109.7,country:"Hainan",type:"island"},
   {name:"Saigon",aliases:["Saigon naval base", "Ho Chi Minh City"],lat:10.82,lng:106.63,country:"French Indochina",type:"city/naval base"},
   {name:"Sepinggang",aliases:["Sepinggang A/F", "Balikpapan area"],lat:1.27,lng:116.9,country:"Borneo",type:"airfield"},
-  {name:"Jesselton",aliases:["Jesselton A/F", "Kota Kinabalu"],lat:5.98,lng:116.07,country:"Borneo",type:"city/airfield"}
+  {name:"Jesselton",aliases:["Jesselton A/F", "Kota Kinabalu"],lat:5.98,lng:116.07,country:"Borneo",type:"city/airfield"},
+  {name:"Sandakan",aliases:["Sandakan A/F", "Sandakan Airfield"],lat:5.84,lng:118.12,country:"Borneo",type:"city/airfield"},
+  {name:"Buayoan",aliases:["Buayan A/F", "Buayoan A/F", "General Santos"],lat:6.05,lng:125.17,country:"Philippines",type:"airfield"}
 ];

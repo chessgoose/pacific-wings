@@ -441,22 +441,24 @@ class PacificWingsApp {
     }
 
     // Add a GeoJSON layer at 0°, -360°, and +360° so the map tiles horizontally.
-    // Pass nameProp to also render permanent labels from that feature property.
-    // Pass group (a L.LayerGroup) to collect everything into it instead of the map.
-    _addRepeatableGeoJSON(geojson, options, nameProp, group) {
+    // Pass nameProp to render labels from that feature property.
+    // Pass group (a L.LayerGroup) to collect polygons into it.
+    // Pass labelsGroup to collect label markers separately.
+    // Pass labelCollector (array) to store {marker, bounds} for dynamic visibility.
+    _addRepeatableGeoJSON(geojson, options, nameProp, group, labelsGroup, labelCollector) {
         const target = group || this.map;
+        const labelsTarget = labelsGroup || target;
         [-360, 0, 360].forEach(offset => {
             const data = offset === 0 ? geojson : this._shiftGeoJSONLng(geojson, offset);
             const opts = { ...options };
             if (nameProp) {
-                const self = this;
                 opts.onEachFeature = (feature, layer) => {
                     const name = feature.properties[nameProp]
                         || feature.properties.NAME
                         || feature.properties.name;
                     if (!name) return;
-                    const center = self._multipolygonCenter(feature.geometry.coordinates);
-                    L.marker(center, {
+                    const center = layer.getBounds().getCenter();
+                    const marker = L.marker(center, {
                         icon: L.divIcon({
                             className: 'basemap-label',
                             html: `<span>${name}</span>`,
@@ -465,7 +467,14 @@ class PacificWingsApp {
                         }),
                         interactive: false,
                         zIndexOffset: -9999
-                    }).addTo(target);
+                    }).addTo(labelsTarget);
+
+                    if (labelCollector) {
+                        labelCollector.push({
+                            marker,
+                            bounds: layer.getBounds()
+                        });
+                    }
                 };
             }
             L.geoJSON(data, opts).addTo(target);
@@ -473,58 +482,30 @@ class PacificWingsApp {
     }
 
     async _loadBasemap() {
-        const LAND_STYLE = {
+        const MODERN_FILL_STYLE = {
             style: {
                 fillColor: '#0e0e0e',
                 fillOpacity: 1,
+                color: 'transparent',
+                weight: 0
+            },
+            interactive: false
+        };
+        const HIST_BOUNDARY_STYLE = {
+            style: {
+                fill: false,
+                fillOpacity: 0,
                 color: 'rgba(102, 102, 102, 0.5)',
                 weight: 0.8
             },
             interactive: false
         };
-        const ISLAND_STYLE = {
-            style: {
-                fillColor: '#0e0e0e',
-                fillOpacity: 1,
-                color: 'rgba(102, 102, 102, 0.35)',
-                weight: 0.5
-            },
-            interactive: false
-        };
 
-        // Features to drop from the 1938 layer:
-        //   - Pacific islands — modern dataset supplies better per-atoll shapes and current names
-        //   - United States — replaced by the modern multipolygon which has accurate Hawaii/Alaska/Aleutian shapes
-        //   - Kuwait — source polygon is a 4-point sliver along its southern border, renders as garbage
-        const HIST_1938_SKIP = new Set([
-            'American Samoa', 'Fiji', 'Gilbert and Elice Islands', 'Guam',
-            'New Caledonia', 'New Hebrides', 'Niue', 'Rapa Nui', 'Saipan',
-            'Samoa', 'Tonga', 'Wallis and Futuna Islands',
-            'United States', 'Kuwait', 'Syria (France)'
-        ]);
-
-        // Subregions (on the modern Natural Earth dataset) that count as Pacific
-        // islands. "Australia and New Zealand" is included because it hosts
-        // Norfolk Is., Ashmore & Cartier, Coral Sea Is.
-        const PACIFIC_SUBREGIONS = new Set([
-            'polynesia', 'micronesia', 'melanesia', 'australia and new zealand'
-        ]);
-
-        // Large continental/landmass features to drop from the modern Pacific-island
-        // supplement — those stay on the 1938 layer with historical names.
-        const MODERN_SKIP_NAMES = new Set([
-            'australia', 'new zealand', 'papua new guinea', 'bougainville'
-        ]);
-
-        // Small Pacific islands not tagged under a Pacific subregion in Natural Earth
-        // but that we still want from the modern layer (Midway sits in "Northern America").
-        const MODERN_EXTRA_NAMES = new Set(['midway is.']);
-
-        // Continental 1938 layer — always visible in historical mode
+        // Historical mode: modern land geometry + 1938 boundaries/labels.
         this._historicalGroup = L.layerGroup().addTo(this.map);
-
-        // Pacific islands layer — only shown at zoom >= 5 in historical mode
-        this._islandsGroup = L.layerGroup();
+        this._historicalMinorIslandsGroup = L.layerGroup();
+        this._historicalLabelsGroup = L.layerGroup();
+        this._historicalLabelEntries = [];
 
         // Modern CARTO tile — created now but not added until toggled
         this._modernTile = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
@@ -535,85 +516,91 @@ class PacificWingsApp {
         this._basemapMode = 'historical';
 
         try {
-            const [hist, modern] = await Promise.all([
+            const [hist, modern, modernMinorIslands] = await Promise.all([
                 fetch('https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1938.geojson').then(r => r.json()),
-                fetch('https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_admin_0_map_units.geojson').then(r => r.json())
+                fetch('https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_admin_0_map_units.geojson').then(r => r.json()),
+                fetch('https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_admin_0_scale_rank_minor_islands.geojson').then(r => r.json())
             ]);
 
-            // Continental 1938 layer: named features only, minus Pacific islands.
-            // The 79 unnamed features are all tiny Pacific island dots with coarse/
-            // misaligned coordinates — drop them entirely. The named Pacific-island
-            // features are also dropped so the modern dataset can supply them.
-            const continental = {
+            const modernLand = {
                 type: 'FeatureCollection',
-                features: hist.features.filter(f =>
-                    f.properties.NAME !== null && !HIST_1938_SKIP.has(f.properties.NAME)
-                )
+                features: modern.features.filter(f => f.geometry)
             };
 
-            // Modern Pacific islands: everything in a Pacific subregion plus a few
-            // explicit extras (Midway), minus the large continental landmasses that
-            // stay on the 1938 layer. Zoom-dependent — shown only at zoom >= 5.
-            const pacificIslands = {
+            const hist1938Named = {
                 type: 'FeatureCollection',
-                features: modern.features.filter(f => {
-                    const name = (f.properties.NAME || '').toLowerCase().trim();
-                    if (MODERN_SKIP_NAMES.has(name)) return false;
-                    const subregion = (f.properties.SUBREGION || '').toLowerCase();
-                    return PACIFIC_SUBREGIONS.has(subregion) || MODERN_EXTRA_NAMES.has(name);
-                })
+                features: hist.features.filter(f => f.geometry && f.properties && f.properties.NAME)
             };
 
-            this._addRepeatableGeoJSON(continental, LAND_STYLE, 'NAME', this._historicalGroup);
-            this._addRepeatableGeoJSON(pacificIslands, ISLAND_STYLE, 'NAME', this._islandsGroup);
+            const modernMinor = {
+                type: 'FeatureCollection',
+                features: modernMinorIslands.features.filter(f => f.geometry)
+            };
 
-            // Modern US replaces the 1938 "United States" feature — accurate Hawaii, Alaska & Aleutian shapes.
-            // Added to the continental group (always visible) with LAND_STYLE so it renders like other landmasses.
-            const modernUS = modern.features.find(f => f.properties.NAME === 'United States of America');
-            if (modernUS) {
-                this._addRepeatableGeoJSON(
-                    { type: 'FeatureCollection', features: [modernUS] },
-                    LAND_STYLE, 'NAME', this._historicalGroup
-                );
-            }
-
-            // Aleutian Islands — part of the modern US multipolygon but labeled "United States of America".
-            // Add a manual label over the central chain (~Andreanof Islands).
-            const aleutianLabel = (lngOffset) => L.marker([52.5, -175.5 + lngOffset], {
-                icon: L.divIcon({
-                    className: 'basemap-label',
-                    html: '<span>Aleutian Islands</span>',
-                    iconSize: null,
-                    iconAnchor: [0, 0]
-                }),
-                interactive: false,
-                zIndexOffset: -9999
-            });
-            [-360, 0, 360].forEach(offset => aleutianLabel(offset).addTo(this._historicalGroup));
-
-            // Set initial island visibility based on starting zoom
+            this._addRepeatableGeoJSON(modernLand, MODERN_FILL_STYLE, null, this._historicalGroup);
+            this._addRepeatableGeoJSON(modernMinor, MODERN_FILL_STYLE, null, this._historicalMinorIslandsGroup);
+            this._addRepeatableGeoJSON(
+                hist1938Named,
+                HIST_BOUNDARY_STYLE,
+                'NAME',
+                this._historicalGroup,
+                this._historicalLabelsGroup,
+                this._historicalLabelEntries
+            );
             this._updateIslandsVisibility();
         } catch {
             // Silent fallback — ocean background from CSS remains visible
         }
     }
 
-    _updateIslandsVisibility() {
-        if (!this._islandsGroup) return;
-        // Only show islands layer in historical mode
-        if (this._basemapMode !== 'historical') return;
-        if (this.map.getZoom() >= 5) {
-            if (!this.map.hasLayer(this._islandsGroup)) this._islandsGroup.addTo(this.map);
-        } else {
-            if (this.map.hasLayer(this._islandsGroup)) this._islandsGroup.remove();
+    _updateHistoricalLabelVisibility() {
+        if (!this.map || !this._historicalLabelEntries) return;
+
+        // Pixel-space threshold: show labels only when their feature is large enough
+        // on screen (dynamic behavior instead of fixed zoom).
+        const minLabelPixelSpan = 28;
+
+        for (const entry of this._historicalLabelEntries) {
+            const { marker, bounds } = entry;
+            const sw = this.map.latLngToLayerPoint(bounds.getSouthWest());
+            const ne = this.map.latLngToLayerPoint(bounds.getNorthEast());
+            const width = Math.abs(ne.x - sw.x);
+            const height = Math.abs(sw.y - ne.y);
+            const show = Math.max(width, height) >= minLabelPixelSpan;
+            marker.setOpacity(show ? 1 : 0);
         }
+    }
+
+    _updateIslandsVisibility() {
+        if (!this._historicalMinorIslandsGroup || !this._historicalLabelsGroup) return;
+        if (this._basemapMode !== 'historical') return;
+
+        // Extra tiny-island detail appears only when zooming in.
+        if (this.map.getZoom() >= 5) {
+            if (!this.map.hasLayer(this._historicalMinorIslandsGroup)) {
+                this._historicalMinorIslandsGroup.addTo(this.map);
+            }
+            if (!this.map.hasLayer(this._historicalLabelsGroup)) {
+                this._historicalLabelsGroup.addTo(this.map);
+            }
+        } else if (this.map.hasLayer(this._historicalMinorIslandsGroup)) {
+            this._historicalMinorIslandsGroup.remove();
+        }
+
+        // Labels are always mounted in historical mode, then filtered dynamically
+        // by rendered feature size.
+        if (!this.map.hasLayer(this._historicalLabelsGroup)) {
+            this._historicalLabelsGroup.addTo(this.map);
+        }
+        this._updateHistoricalLabelVisibility();
     }
 
     _toggleBasemap() {
         const btn = document.getElementById('basemap-toggle-btn');
         if (this._basemapMode === 'historical') {
             this._historicalGroup.remove();
-            if (this._islandsGroup) this._islandsGroup.remove();
+            if (this._historicalMinorIslandsGroup) this._historicalMinorIslandsGroup.remove();
+            if (this._historicalLabelsGroup) this._historicalLabelsGroup.remove();
             this._modernTile.addTo(this.map);
             this._basemapMode = 'modern';
             btn.textContent = 'Modern map';
@@ -638,7 +625,7 @@ class PacificWingsApp {
             worldCopyJump: true
         }).setView([20.0, 170.0], 3); // Pacific Theater (India/Philippines left, Hawaii center, US West Coast right)
 
-        // Load basemap layers (historical + modern Pacific islands, repeating)
+        // Load basemap layers (historical = modern geometry + 1938 boundaries/names)
         this._loadBasemap();
 
 
@@ -660,8 +647,9 @@ class PacificWingsApp {
         // Move zoom control to top-right
         L.control.zoom({ position: 'topright' }).addTo(this.map);
 
-        // Show/hide Pacific islands layer based on zoom level
+        // Show/hide tiny modern-island detail based on zoom level
         this.map.on('zoomend', () => this._updateIslandsVisibility());
+        this.map.on('moveend', () => this._updateHistoricalLabelVisibility());
 
         // Planes: keep interpolation aligned during zoom animation.
         this.map.on('zoom viewreset', () => this.updatePlanesOnMap());
