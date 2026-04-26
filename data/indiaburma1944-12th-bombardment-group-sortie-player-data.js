@@ -1,9 +1,9 @@
 window.MONTH_SORTIE_DATA = {
   "generated_from": "indiaburma1944-12th-bombardment-group-sortie-extracts.csv",
-  "mission_count": 67,
+  "mission_count": 77,
   "missions": [
     {
-      "id": "484BS_1944-10-01",
+      "id": "434BS_1944-10-01",
       "date": "1944-10-01",
       "squadron": "484th Squadron",
       "unit": "12th Bombardment Group (M)",
@@ -12,6 +12,8 @@ window.MONTH_SORTIE_DATA = {
       "base": "Comilla",
       "sourceFront": "IMG_3362.JPG",
       "sourceBack": "",
+      "scanFrontPath": "./LabeledSorties/434BS_1944-10-01/434BS_1944-10-01__front__IMG_3362.JPG",
+      "scanBackPath": "",
       "confidence": "high for front-page extraction",
       "primaryTarget": "rail bridge over Panlaung River at Myittha, Burma",
       "alternateTarget": "rail yards at Kyaukse, Burma",
@@ -52,6 +54,18 @@ window.MONTH_SORTIE_DATA = {
           "label": "23 17N 91 46E"
         },
         {
+          "kind": "coordinate",
+          "lat": 20.85,
+          "lon": 96.37,
+          "label": "Myittha"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 21.6056,
+          "lon": 96.135,
+          "label": "Kyaukse"
+        },
+        {
           "kind": "event_coordinate",
           "lat": 23.166667,
           "lon": 91.666667,
@@ -80,8 +94,8 @@ window.MONTH_SORTIE_DATA = {
           "description": "rail yards at Kyaukse, Burma",
           "time": "10:34",
           "isoTime": "1944-10-01T10:34:00Z",
-          "lat": 21.6056,
-          "lng": 96.135
+          "lat": 20.85,
+          "lng": 96.37
         },
         {
           "kind": "observation",
@@ -91,6 +105,24 @@ window.MONTH_SORTIE_DATA = {
           "isoTime": "",
           "lat": 23.283333,
           "lng": 91.766667
+        },
+        {
+          "kind": "breakoff",
+          "label": "Myittha",
+          "description": "A/C 87 salvoed due to engine trouble and landed back at base at 0916. Rule-linked candidate backside IMG_3363.JPG appears to be another Part A front and has not been treated as this sortie back. 23 10N 91 40E; 23 17N 91 46E; LF 5407; LF 261",
+          "time": "09:16",
+          "isoTime": "1944-10-01T09:16:00Z",
+          "lat": 20.85,
+          "lng": 96.37
+        },
+        {
+          "kind": "breakoff",
+          "label": "Kyaukse",
+          "description": "A/C 87 salvoed due to engine trouble and landed back at base at 0916. Rule-linked candidate backside IMG_3363.JPG appears to be another Part A front and has not been treated as this sortie back. 23 10N 91 40E; 23 17N 91 46E; LF 5407; LF 261",
+          "time": "09:16",
+          "isoTime": "1944-10-01T09:16:00Z",
+          "lat": 21.6056,
+          "lng": 96.135
         },
         {
           "kind": "breakoff",
@@ -121,7 +153,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "10",
       "base": "base field not legible on front page",
       "sourceFront": "IMG_3363.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3364.JPG",
+      "scanFrontPath": "./LabeledSorties/82BS_1944-10-01_B/82BS_1944-10-01_B__front__IMG_3363.JPG",
+      "scanBackPath": "./LabeledSorties/82BS_1944-10-01_B/82BS_1944-10-01_B__back_candidate__IMG_3364.JPG",
       "confidence": "medium-high: core mission fields clear, some route lines faint",
       "primaryTarget": "Demolition bombing of railroad bridge at Bawgyo, Burma",
       "alternateTarget": "",
@@ -216,7 +250,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Feni",
       "sourceFront": "IMG_3373.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3374.JPG",
+      "scanFrontPath": "./LabeledSorties/81BS_1944-10-02/81BS_1944-10-02__front__IMG_3373.JPG",
+      "scanBackPath": "./LabeledSorties/81BS_1944-10-02/81BS_1944-10-02__back_candidate__IMG_3374.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Mangshih, southwest portion of area B",
       "alternateTarget": "",
@@ -335,7 +371,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "9",
       "base": "Fenny",
       "sourceFront": "IMG_3369.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3370.JPG",
+      "scanFrontPath": "./LabeledSorties/82BS_1944-10-02/82BS_1944-10-02__front__IMG_3369.JPG",
+      "scanBackPath": "./LabeledSorties/82BS_1944-10-02/82BS_1944-10-02__back_candidate__IMG_3370.JPG",
       "confidence": "medium",
       "primaryTarget": "KUTKAI area (S08518) with alternate stores and barracks area at KUTKAI",
       "alternateTarget": "",
@@ -431,6 +469,8 @@ window.MONTH_SORTIE_DATA = {
       "base": "Fenny A/D, India",
       "sourceFront": "IMG_3368.JPG",
       "sourceBack": "",
+      "scanFrontPath": "./LabeledSorties/83BS_1944-10-02/83BS_1944-10-02__front__IMG_3368.JPG",
+      "scanBackPath": "",
       "confidence": "medium-high",
       "primaryTarget": "Four bomb stores areas at Mangshih, China",
       "alternateTarget": "",
@@ -555,7 +595,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Feni",
       "sourceFront": "IMG_3380.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3381.JPG",
+      "scanFrontPath": "./LabeledSorties/81BS_1944-10-03_B/81BS_1944-10-03_B__front__IMG_3380.JPG",
+      "scanBackPath": "./LabeledSorties/81BS_1944-10-03_B/81BS_1944-10-03_B__back_candidate__IMG_3381.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Stores area A at Mangshih, China",
       "alternateTarget": "",
@@ -596,6 +638,12 @@ window.MONTH_SORTIE_DATA = {
           "label": "24 30N, 96 35E"
         },
         {
+          "kind": "coordinate",
+          "lat": 24.4367,
+          "lon": 98.5858,
+          "label": "Mangshih"
+        },
+        {
           "kind": "base_return",
           "lat": 23.014,
           "lon": 91.397,
@@ -632,6 +680,15 @@ window.MONTH_SORTIE_DATA = {
         },
         {
           "kind": "landing",
+          "label": "Mangshih",
+          "description": "264 x 100 GP carried; 66 dropped and 198 brought back. Aircraft 20 and 10 landed at Feni at 1240, and aircraft 09 landed at Imphal for gasoline and had not yet returned when the report was written. Photos were taken from a fixed camera in A",
+          "time": "12:40",
+          "isoTime": "1944-10-03T12:40:00Z",
+          "lat": 24.4367,
+          "lng": 98.5858
+        },
+        {
+          "kind": "landing",
           "label": "Landing",
           "description": "Formation landed at Feni by 1052-1240.",
           "time": "10:52",
@@ -650,7 +707,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "6",
       "base": "Fenny",
       "sourceFront": "IMG_3378.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3379.JPG",
+      "scanFrontPath": "./LabeledSorties/82BS_1944-10-03_B/82BS_1944-10-03_B__front__IMG_3378.JPG",
+      "scanBackPath": "./LabeledSorties/82BS_1944-10-03_B/82BS_1944-10-03_B__back_candidate__IMG_3379.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Demolition bombing of barracks and stores area at Mangshih, China (SK 5243)",
       "alternateTarget": "",
@@ -755,6 +814,8 @@ window.MONTH_SORTIE_DATA = {
       "base": "Fenny A/D, India",
       "sourceFront": "IMG_3377.JPG",
       "sourceBack": "",
+      "scanFrontPath": "./LabeledSorties/83BS_1944-10-03/83BS_1944-10-03__front__IMG_3377.JPG",
+      "scanBackPath": "",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Bomb stores at area A (north) at Mangshih, China",
       "alternateTarget": "",
@@ -879,7 +940,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Comilla",
       "sourceFront": "IMG_3386.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3387.JPG",
+      "scanFrontPath": "./LabeledSorties/434BS_1944-10-04/434BS_1944-10-04__front__IMG_3386.JPG",
+      "scanBackPath": "./LabeledSorties/434BS_1944-10-04/434BS_1944-10-04__back_candidate__IMG_3387.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "area along east shore of Chindwin River, Kalewa, Burma",
       "alternateTarget": "village of Kalemyo, Burma",
@@ -912,6 +975,12 @@ window.MONTH_SORTIE_DATA = {
           "lat": 23.4607,
           "lon": 91.1809,
           "label": "Comilla"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 23.1914,
+          "lon": 94.3011,
+          "label": "Kalewa"
         },
         {
           "kind": "coordinate",
@@ -948,8 +1017,17 @@ window.MONTH_SORTIE_DATA = {
           "description": "village of Kalemyo, Burma",
           "time": "16:33",
           "isoTime": "1944-10-04T16:33:00Z",
-          "lat": 23.1888,
-          "lng": 94.0511
+          "lat": 23.1914,
+          "lng": 94.3011
+        },
+        {
+          "kind": "observation",
+          "label": "Kalewa",
+          "description": "3 released armed in hills 10 miles north of Kalewa hills 10 miles north of Kalewa",
+          "time": "",
+          "isoTime": "",
+          "lat": 23.1914,
+          "lng": 94.3011
         },
         {
           "kind": "takeoff",
@@ -989,7 +1067,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "FENI",
       "sourceFront": "IMG_3394.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3395.JPG",
+      "scanFrontPath": "./LabeledSorties/81BS_1944-10-05_B/81BS_1944-10-05_B__front__IMG_3394.JPG",
+      "scanBackPath": "./LabeledSorties/81BS_1944-10-05_B/81BS_1944-10-05_B__back_candidate__IMG_3395.JPG",
       "confidence": "medium-high: squadron/date/mission clear, some target-line wording remains crowded",
       "primaryTarget": "Indainggyi, Burma mission",
       "alternateTarget": "",
@@ -1025,6 +1105,12 @@ window.MONTH_SORTIE_DATA = {
         },
         {
           "kind": "coordinate",
+          "lat": 22.93,
+          "lon": 95.33,
+          "label": "Indainggyi"
+        },
+        {
+          "kind": "coordinate",
           "lat": 22.1086,
           "lon": 95.1358,
           "label": "Monywa"
@@ -1052,6 +1138,15 @@ window.MONTH_SORTIE_DATA = {
           "description": "Indainggyi, Burma mission",
           "time": "09:58",
           "isoTime": "1944-10-05T09:58:00Z",
+          "lat": 22.93,
+          "lng": 95.33
+        },
+        {
+          "kind": "observation",
+          "label": "Indainggyi",
+          "description": "Indainggyi / target area near a dam and canal-river junction",
+          "time": "",
+          "isoTime": "",
           "lat": 22.93,
           "lng": 95.33
         },
@@ -1085,6 +1180,8 @@ window.MONTH_SORTIE_DATA = {
       "base": "Fenny L.G.",
       "sourceFront": "IMG_3393.JPG",
       "sourceBack": "",
+      "scanFrontPath": "./LabeledSorties/82BS_1944-10-05/82BS_1944-10-05__front__IMG_3393.JPG",
+      "scanBackPath": "",
       "confidence": "medium",
       "primaryTarget": "Kalewa, China/Burma theater target area, map reference RU 8269 (84 I quarter-inch)",
       "alternateTarget": "",
@@ -1179,7 +1276,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Comilla",
       "sourceFront": "IMG_3399.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3400.JPG",
+      "scanFrontPath": "./LabeledSorties/434BS_1944-10-06/434BS_1944-10-06__front__IMG_3399.JPG",
+      "scanBackPath": "./LabeledSorties/434BS_1944-10-06/434BS_1944-10-06__back_candidate__IMG_3400.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Village of Kalemyo, Burma",
       "alternateTarget": "",
@@ -1226,6 +1325,12 @@ window.MONTH_SORTIE_DATA = {
           "label": "23 17N 93 34E"
         },
         {
+          "kind": "coordinate",
+          "lat": 23.1888,
+          "lon": 94.0511,
+          "label": "Kalemyo"
+        },
+        {
           "kind": "base_return",
           "lat": 23.4607,
           "lon": 91.1809,
@@ -1270,6 +1375,15 @@ window.MONTH_SORTIE_DATA = {
           "lng": 93.566667
         },
         {
+          "kind": "salvo",
+          "label": "Kalemyo",
+          "description": "104 x 250-lb M-57 GP carried; 95 dropped in target area, 8 salvoed safe north of target, and 1 brought back. 1,000 propaganda leaflets were dropped in the target area. Rule-linked candidate IMG_3400.JPG has not yet been reviewed. 22 48N 94",
+          "time": "",
+          "isoTime": "",
+          "lat": 23.1888,
+          "lng": 94.0511
+        },
+        {
           "kind": "landing",
           "label": "Landing",
           "description": "Formation landed at Comilla by 1800.",
@@ -1289,7 +1403,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Feni",
       "sourceFront": "IMG_3403.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3404.JPG",
+      "scanFrontPath": "./LabeledSorties/81BS_1944-10-06/81BS_1944-10-06__front__IMG_3403.JPG",
+      "scanBackPath": "./LabeledSorties/81BS_1944-10-06/81BS_1944-10-06__back_candidate__IMG_3404.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Town of Kalemyo, Burma",
       "alternateTarget": "",
@@ -1330,6 +1446,18 @@ window.MONTH_SORTIE_DATA = {
           "label": "Kalemyo"
         },
         {
+          "kind": "coordinate",
+          "lat": 22.93,
+          "lon": 95.33,
+          "label": "Indainggyi"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 23.1914,
+          "lon": 94.3011,
+          "label": "Kalewa"
+        },
+        {
           "kind": "base_return",
           "lat": 23.014,
           "lon": 91.397,
@@ -1365,6 +1493,24 @@ window.MONTH_SORTIE_DATA = {
           "lng": 94.0511
         },
         {
+          "kind": "observation",
+          "label": "Indainggyi",
+          "description": "Indainggyi Multi-target strike from Feni against Kalemyo, Indainggyi, and Kalewa",
+          "time": "",
+          "isoTime": "",
+          "lat": 22.93,
+          "lng": 95.33
+        },
+        {
+          "kind": "observation",
+          "label": "Kalewa",
+          "description": "Kalewa Multi-target strike from Feni against Kalemyo, Indainggyi, and Kalewa",
+          "time": "",
+          "isoTime": "",
+          "lat": 23.1914,
+          "lng": 94.3011
+        },
+        {
           "kind": "landing",
           "label": "Landing",
           "description": "Formation landed at Feni by 1005-1020 except #14 1120.",
@@ -1384,7 +1530,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "11",
       "base": "Fenny",
       "sourceFront": "IMG_3414.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3415.JPG",
+      "scanFrontPath": "./LabeledSorties/82BS_1944-10-06/82BS_1944-10-06__front__IMG_3414.JPG",
+      "scanBackPath": "./LabeledSorties/82BS_1944-10-06/82BS_1944-10-06__back_candidate__IMG_3415.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Demolition bombing of railroad bridge at Bawgyo (ST 1107)",
       "alternateTarget": "",
@@ -1479,7 +1627,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Fenny A/D, India",
       "sourceFront": "IMG_3401.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3402.JPG",
+      "scanFrontPath": "./LabeledSorties/83BS_1944-10-06/83BS_1944-10-06__front__IMG_3401.JPG",
+      "scanBackPath": "./LabeledSorties/83BS_1944-10-06/83BS_1944-10-06__back_candidate__IMG_3402.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Bombing of bridge at Nyaungyan",
       "alternateTarget": "",
@@ -1589,7 +1739,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Comilla",
       "sourceFront": "IMG_3405.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3406.JPG",
+      "scanFrontPath": "./LabeledSorties/434BS_1944-10-07/434BS_1944-10-07__front__IMG_3405.JPG",
+      "scanBackPath": "./LabeledSorties/434BS_1944-10-07/434BS_1944-10-07__back_candidate__IMG_3406.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Primary target: military area just north of Indainggyi, Burma (RU 608756)",
       "alternateTarget": "area along west shore of Chindwin River, Kalewa, Burma",
@@ -1630,6 +1782,18 @@ window.MONTH_SORTIE_DATA = {
           "label": "23 04N 93 41E"
         },
         {
+          "kind": "coordinate",
+          "lat": 22.93,
+          "lon": 95.33,
+          "label": "Indainggyi"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 23.1914,
+          "lon": 94.3011,
+          "label": "Kalewa"
+        },
+        {
           "kind": "base_return",
           "lat": 23.4607,
           "lon": 91.1809,
@@ -1652,8 +1816,8 @@ window.MONTH_SORTIE_DATA = {
           "description": "area along west shore of Chindwin River, Kalewa, Burma",
           "time": "16:43",
           "isoTime": "1944-10-07T16:43:00Z",
-          "lat": 23.1914,
-          "lng": 94.3011
+          "lat": 22.93,
+          "lng": 95.33
         },
         {
           "kind": "observation",
@@ -1663,6 +1827,24 @@ window.MONTH_SORTIE_DATA = {
           "isoTime": "1944-10-07T16:30:00Z",
           "lat": 23.066667,
           "lng": 93.683333
+        },
+        {
+          "kind": "salvo",
+          "label": "Indainggyi",
+          "description": "144 x 250-lb M-57 GP carried; 115 dropped in target area, 5 salvoed 1000 yards north of target, and 24 brought back. Bomb run 345-350 degrees at indicated 6500 feet, IAS 185 MPH, intervalometer 180 feet. Photos were taken on bomb-run statis",
+          "time": "",
+          "isoTime": "",
+          "lat": 22.93,
+          "lng": 95.33
+        },
+        {
+          "kind": "salvo",
+          "label": "Kalewa",
+          "description": "144 x 250-lb M-57 GP carried; 115 dropped in target area, 5 salvoed 1000 yards north of target, and 24 brought back. Bomb run 345-350 degrees at indicated 6500 feet, IAS 185 MPH, intervalometer 180 feet. Photos were taken on bomb-run statis",
+          "time": "",
+          "isoTime": "",
+          "lat": 23.1914,
+          "lng": 94.3011
         },
         {
           "kind": "landing",
@@ -1684,7 +1866,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Feni",
       "sourceFront": "IMG_3418.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3419.JPG",
+      "scanFrontPath": "./LabeledSorties/81BS_1944-10-07/81BS_1944-10-07__front__IMG_3418.JPG",
+      "scanBackPath": "./LabeledSorties/81BS_1944-10-07/81BS_1944-10-07__back_candidate__IMG_3419.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Railroad bridge #393 at Pyinmana, 19 44 N 96 12 E",
       "alternateTarget": "",
@@ -1723,6 +1907,12 @@ window.MONTH_SORTIE_DATA = {
           "lat": 19.733333,
           "lon": 96.2,
           "label": "19 44 N 96 12 E"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 19.7381,
+          "lon": 96.2074,
+          "label": "Pyinmana"
         },
         {
           "kind": "event_coordinate",
@@ -1766,6 +1956,15 @@ window.MONTH_SORTIE_DATA = {
           "lng": 96.2
         },
         {
+          "kind": "observation",
+          "label": "Pyinmana",
+          "description": "Mission from Feni against the Pyinmana bridge system",
+          "time": "",
+          "isoTime": "",
+          "lat": 19.7381,
+          "lng": 96.2074
+        },
+        {
           "kind": "breakoff",
           "label": "21 30 N, 92 45 E",
           "description": "The formation was unable to make contact with the fighter escort over the rendezvous point at Chittagong and turned back as briefed at 21 30 N, 92 45 E at 0910, landing back at Feni at 0950",
@@ -1794,7 +1993,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Fenny",
       "sourceFront": "IMG_3416.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3417.JPG",
+      "scanFrontPath": "./LabeledSorties/82BS_1944-10-07/82BS_1944-10-07__front__IMG_3416.JPG",
+      "scanBackPath": "./LabeledSorties/82BS_1944-10-07/82BS_1944-10-07__back_candidate__IMG_3417.JPG",
       "confidence": "medium-high",
       "primaryTarget": "Bombing of railroad bridge at Pyinmana (LV 6695)",
       "alternateTarget": "",
@@ -1889,7 +2090,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Comilla",
       "sourceFront": "IMG_3424.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3425.JPG",
+      "scanFrontPath": "./LabeledSorties/434BS_1944-10-10/434BS_1944-10-10__front__IMG_3424.JPG",
+      "scanBackPath": "./LabeledSorties/434BS_1944-10-10/434BS_1944-10-10__back_candidate__IMG_3425.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Bomb bridges along the Kanu-to-Yeu road",
       "alternateTarget": "",
@@ -1975,7 +2178,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "FENI",
       "sourceFront": "IMG_3430.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3431.JPG",
+      "scanFrontPath": "./LabeledSorties/81BS_1944-10-10/81BS_1944-10-10__front__IMG_3430.JPG",
+      "scanBackPath": "./LabeledSorties/81BS_1944-10-10/81BS_1944-10-10__back_candidate__IMG_3431.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Railroad bridge at Chaung-U, Burma (21 57N, 95 17E)",
       "alternateTarget": "",
@@ -2022,6 +2227,24 @@ window.MONTH_SORTIE_DATA = {
           "label": "22 07N 95 08E"
         },
         {
+          "kind": "coordinate",
+          "lat": 21.95,
+          "lon": 95.27,
+          "label": "Chaung-U"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 22.1086,
+          "lon": 95.1358,
+          "label": "Monywa"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 22.93,
+          "lon": 95.33,
+          "label": "Indainggyi"
+        },
+        {
           "kind": "base_return",
           "lat": 23.014,
           "lon": 91.397,
@@ -2044,8 +2267,8 @@ window.MONTH_SORTIE_DATA = {
           "description": "Railroad bridge at Chaung-U, Burma (21 57N, 95 17E)",
           "time": "09:58",
           "isoTime": "1944-10-10T09:58:00Z",
-          "lat": 22.1086,
-          "lng": 95.1358
+          "lat": 21.95,
+          "lng": 95.27
         },
         {
           "kind": "observation",
@@ -2064,6 +2287,33 @@ window.MONTH_SORTIE_DATA = {
           "isoTime": "",
           "lat": 22.116667,
           "lng": 95.133333
+        },
+        {
+          "kind": "bomb",
+          "label": "Chaung-U",
+          "description": "Chaung-U 21 57N 95 17E The first box bombed the Chaung-U bridge in multiple runs, with bombs released at 1001 and 1010 on headings of 190 and 200 degrees from about 1700 feet indicated at 190 IAS",
+          "time": "10:01",
+          "isoTime": "1944-10-10T10:01:00Z",
+          "lat": 21.95,
+          "lng": 95.27
+        },
+        {
+          "kind": "bomb",
+          "label": "Monywa",
+          "description": "The formation also saw light and heavy AA about 5 miles north of Monywa, apparently directed at another squadron bombing there Monywa 22 07N 95 08E",
+          "time": "",
+          "isoTime": "",
+          "lat": 22.1086,
+          "lng": 95.1358
+        },
+        {
+          "kind": "observation",
+          "label": "Indainggyi",
+          "description": "Indainggyi RU 6074",
+          "time": "",
+          "isoTime": "",
+          "lat": 22.93,
+          "lng": 95.33
         },
         {
           "kind": "landing",
@@ -2085,7 +2335,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Fenny",
       "sourceFront": "IMG_3427.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3428.JPG",
+      "scanFrontPath": "./LabeledSorties/82BS_1944-10-10/82BS_1944-10-10__front__IMG_3427.JPG",
+      "scanBackPath": "./LabeledSorties/82BS_1944-10-10/82BS_1944-10-10__back_candidate__IMG_3428.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Demolition bombing of stores area at Monywa, Burma (PK 5184)",
       "alternateTarget": "",
@@ -2189,7 +2441,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "9",
       "base": "Comilla",
       "sourceFront": "IMG_3437.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3438.JPG",
+      "scanFrontPath": "./LabeledSorties/434BS_1944-10-11/434BS_1944-10-11__front__IMG_3437.JPG",
+      "scanBackPath": "./LabeledSorties/434BS_1944-10-11/434BS_1944-10-11__back_candidate__IMG_3438.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "rail bridge at Kyaukse, Burma",
       "alternateTarget": "rail bridge at Chaungu, Burma",
@@ -2230,6 +2484,12 @@ window.MONTH_SORTIE_DATA = {
           "label": "Kyaukse"
         },
         {
+          "kind": "coordinate",
+          "lat": 21.95,
+          "lon": 95.27,
+          "label": "Chaungu"
+        },
+        {
           "kind": "base_return",
           "lat": 23.4607,
           "lon": 91.1809,
@@ -2265,6 +2525,15 @@ window.MONTH_SORTIE_DATA = {
           "lng": 96.135
         },
         {
+          "kind": "takeoff",
+          "label": "Chaungu",
+          "description": "Bombs carried on takeoff: 62 x 500-lb M-64 GP, instantaneous nose and 1/40 tail. All bombs were dropped in the target area. Ammunition expended: 546 rounds .50 cal, estimated test fired. Results note all bombs in the target area. Photos wer",
+          "time": "",
+          "isoTime": "",
+          "lat": 21.95,
+          "lng": 95.27
+        },
+        {
           "kind": "landing",
           "label": "Landing",
           "description": "Formation landed at Comilla by 1240.",
@@ -2284,7 +2553,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Feni",
       "sourceFront": "IMG_3443.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3444.JPG",
+      "scanFrontPath": "./LabeledSorties/81BS_1944-10-11/81BS_1944-10-11__front__IMG_3443.JPG",
+      "scanBackPath": "./LabeledSorties/81BS_1944-10-11/81BS_1944-10-11__back_candidate__IMG_3444.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "R.R. Bridge #393 at Sinthe, LQ 682367",
       "alternateTarget": "R.R. bridge at Shweda, LQ 525925",
@@ -2395,6 +2666,8 @@ window.MONTH_SORTIE_DATA = {
       "base": "Fenny",
       "sourceFront": "IMG_3439.JPG",
       "sourceBack": "IMG_3440.JPG",
+      "scanFrontPath": "./LabeledSorties/82BS_1944-10-11/82BS_1944-10-11__front__IMG_3439.JPG",
+      "scanBackPath": "./LabeledSorties/82BS_1944-10-11/82BS_1944-10-11__back_reviewed__IMG_3440.JPG",
       "confidence": "high for front+back extraction",
       "primaryTarget": "Demolition bombing of Pyinmana Bridge (LV 6695)",
       "alternateTarget": "",
@@ -2489,7 +2762,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Comilla",
       "sourceFront": "IMG_3449.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3450.JPG",
+      "scanFrontPath": "./LabeledSorties/434BS_1944-10-12/434BS_1944-10-12__front__IMG_3449.JPG",
+      "scanBackPath": "./LabeledSorties/434BS_1944-10-12/434BS_1944-10-12__back_candidate__IMG_3450.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Primary target: rail bridge at Myittha, Burma",
       "alternateTarget": "rail bridge at Chaungu, Burma",
@@ -2522,6 +2797,12 @@ window.MONTH_SORTIE_DATA = {
           "lat": 23.4607,
           "lon": 91.1809,
           "label": "Comilla"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 20.85,
+          "lon": 96.37,
+          "label": "Myittha"
         },
         {
           "kind": "coordinate",
@@ -2582,8 +2863,17 @@ window.MONTH_SORTIE_DATA = {
           "description": "rail bridge at Chaungu, Burma",
           "time": "11:06",
           "isoTime": "1944-10-12T11:06:00Z",
-          "lat": 21.95,
-          "lng": 95.27
+          "lat": 20.85,
+          "lng": 96.37
+        },
+        {
+          "kind": "salvo",
+          "label": "Myittha",
+          "description": "80 x 500-lb M-65 GP bombs were carried. 54 bombs were dropped in the target area, 17 were dropped 2000 yards south of target in open country, and 13 were salvoed en route: 6 at 1149 near 21 54N 94 53E, 3 at 1210 near 22 22N 93 56E, and 4 at",
+          "time": "11:49",
+          "isoTime": "1944-10-12T11:49:00Z",
+          "lat": 20.85,
+          "lng": 96.37
         },
         {
           "kind": "salvo",
@@ -2659,7 +2949,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Feni",
       "sourceFront": "IMG_3452.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3453.JPG",
+      "scanFrontPath": "./LabeledSorties/81BS_1944-10-12/81BS_1944-10-12__front__IMG_3452.JPG",
+      "scanBackPath": "./LabeledSorties/81BS_1944-10-12/81BS_1944-10-12__back_candidate__IMG_3453.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "R.R. Bridge No. 393 at Sinthe, LQ 682367, elev. 450 feet",
       "alternateTarget": "bridge at Shweda, LQ 525925",
@@ -2814,7 +3106,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Fenny",
       "sourceFront": "IMG_3457.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3458.JPG",
+      "scanFrontPath": "./LabeledSorties/82BS_1944-10-13/82BS_1944-10-13__front__IMG_3457.JPG",
+      "scanBackPath": "./LabeledSorties/82BS_1944-10-13/82BS_1944-10-13__back_candidate__IMG_3458.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Demolition bombing of military area at Hsenwi, Burma, 23 18N 97 55E (SO 9000)",
       "alternateTarget": "",
@@ -2909,7 +3203,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Fenny A/D, India",
       "sourceFront": "IMG_3459.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3460.JPG",
+      "scanFrontPath": "./LabeledSorties/83BS_1944-10-13/83BS_1944-10-13__front__IMG_3459.JPG",
+      "scanBackPath": "./LabeledSorties/83BS_1944-10-13/83BS_1944-10-13__back_candidate__IMG_3460.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Bomb stores area at Hsenwi, Burma",
       "alternateTarget": "",
@@ -3013,7 +3309,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Comilla",
       "sourceFront": "IMG_3465.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3466.JPG",
+      "scanFrontPath": "./LabeledSorties/434BS_1944-10-15/434BS_1944-10-15__front__IMG_3465.JPG",
+      "scanBackPath": "./LabeledSorties/434BS_1944-10-15/434BS_1944-10-15__back_candidate__IMG_3466.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Bomb Meiktila A/D and dispersal areas",
       "alternateTarget": "",
@@ -3099,7 +3397,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Feni",
       "sourceFront": "IMG_3469.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3470.JPG",
+      "scanFrontPath": "./LabeledSorties/81BS_1944-10-15/81BS_1944-10-15__front__IMG_3469.JPG",
+      "scanBackPath": "./LabeledSorties/81BS_1944-10-15/81BS_1944-10-15__back_candidate__IMG_3470.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Airfield at Meiktila, 20 53 N, 95 52 E",
       "alternateTarget": "",
@@ -3224,7 +3524,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Fenny",
       "sourceFront": "IMG_3467.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3468.JPG",
+      "scanFrontPath": "./LabeledSorties/82BS_1944-10-15/82BS_1944-10-15__front__IMG_3467.JPG",
+      "scanBackPath": "./LabeledSorties/82BS_1944-10-15/82BS_1944-10-15__back_candidate__IMG_3468.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Fragmentary bombing of dispersal area southeast of runway at Meiktila A/D",
       "alternateTarget": "",
@@ -3319,7 +3621,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "13",
       "base": "Comilla",
       "sourceFront": "IMG_3478.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3479.JPG",
+      "scanFrontPath": "./LabeledSorties/434BS_1944-10-16/434BS_1944-10-16__front__IMG_3478.JPG",
+      "scanBackPath": "./LabeledSorties/434BS_1944-10-16/434BS_1944-10-16__back_candidate__IMG_3479.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Thedaw airfield, Burma",
       "alternateTarget": "",
@@ -3414,7 +3718,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Feni",
       "sourceFront": "IMG_3483.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3484.JPG",
+      "scanFrontPath": "./LabeledSorties/81BS_1944-10-16/81BS_1944-10-16__front__IMG_3483.JPG",
+      "scanBackPath": "./LabeledSorties/81BS_1944-10-16/81BS_1944-10-16__back_candidate__IMG_3484.JPG",
       "confidence": "high for front-page extraction with supplement integrated",
       "primaryTarget": "Thedaw Airfield, 20 53 N, 95 54 E, elev. 710 feet",
       "alternateTarget": "",
@@ -3539,7 +3845,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Fenny",
       "sourceFront": "IMG_3481.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3482.JPG",
+      "scanFrontPath": "./LabeledSorties/82BS_1944-10-16/82BS_1944-10-16__front__IMG_3481.JPG",
+      "scanBackPath": "./LabeledSorties/82BS_1944-10-16/82BS_1944-10-16__back_candidate__IMG_3482.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "northern portion of alternate runway at Thedaw Airdrome, LL3436 (84 P quarter-inch)",
       "alternateTarget": "",
@@ -3635,6 +3943,8 @@ window.MONTH_SORTIE_DATA = {
       "base": "Feni / home base recovery from Silchar stopover",
       "sourceFront": "IMG_3489.JPG",
       "sourceBack": "",
+      "scanFrontPath": "./LabeledSorties/81BS_1944-10-17_SUPP/81BS_1944-10-17_SUPP__front__IMG_3489.JPG",
+      "scanBackPath": "",
       "confidence": "medium",
       "primaryTarget": "Supplement to OpRep 130 (16 Oct 1944): aircraft #23 rejoined mission and completed bomb run with formation before recovering to base next morning",
       "alternateTarget": "",
@@ -3720,7 +4030,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Feni",
       "sourceFront": "IMG_3496.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3497.JPG",
+      "scanFrontPath": "./LabeledSorties/81BS_1944-10-18/81BS_1944-10-18__front__IMG_3496.JPG",
+      "scanBackPath": "./LabeledSorties/81BS_1944-10-18/81BS_1944-10-18__back_candidate__IMG_3497.JPG",
       "confidence": "medium",
       "primaryTarget": "Stores area #4, Prome, Burma (18 48 N, 95 13 E)",
       "alternateTarget": "",
@@ -3761,6 +4073,12 @@ window.MONTH_SORTIE_DATA = {
           "label": "18 48 N, 95 13 E"
         },
         {
+          "kind": "coordinate",
+          "lat": 18.8246,
+          "lon": 95.2222,
+          "label": "Prome"
+        },
+        {
           "kind": "base_return",
           "lat": 23.014,
           "lon": 91.397,
@@ -3796,6 +4114,15 @@ window.MONTH_SORTIE_DATA = {
           "lng": 95.216667
         },
         {
+          "kind": "observation",
+          "label": "Prome",
+          "description": "Strike on stores area #4 at Prome",
+          "time": "",
+          "isoTime": "",
+          "lat": 18.8246,
+          "lng": 95.2222
+        },
+        {
           "kind": "landing",
           "label": "Landing",
           "description": "Formation landed at Feni by 1255.",
@@ -3816,6 +4143,8 @@ window.MONTH_SORTIE_DATA = {
       "base": "Fenny",
       "sourceFront": "IMG_3491.JPG",
       "sourceBack": "IMG_3492.JPG",
+      "scanFrontPath": "./LabeledSorties/82BS_1944-10-18/82BS_1944-10-18__front__IMG_3491.JPG",
+      "scanBackPath": "./LabeledSorties/82BS_1944-10-18/82BS_1944-10-18__back_reviewed__IMG_3492.JPG",
       "confidence": "medium",
       "primaryTarget": "Military area #5, Prome, Burma",
       "alternateTarget": "",
@@ -3911,6 +4240,8 @@ window.MONTH_SORTIE_DATA = {
       "base": "Fenny A/D, India",
       "sourceFront": "IMG_3490.JPG",
       "sourceBack": "",
+      "scanFrontPath": "./LabeledSorties/83BS_1944-10-18/83BS_1944-10-18__front__IMG_3490.JPG",
+      "scanBackPath": "",
       "confidence": "high for extracted fields present on reviewed page",
       "primaryTarget": "Supply Dump #6, Prome, Burma",
       "alternateTarget": "",
@@ -3949,6 +4280,12 @@ window.MONTH_SORTIE_DATA = {
           "lat": 20.916667,
           "lon": 93.183333,
           "label": "20\u00b055'N 93\u00b011'E"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 18.8246,
+          "lon": 95.2222,
+          "label": "Prome"
         },
         {
           "kind": "event_coordinate",
@@ -3993,6 +4330,15 @@ window.MONTH_SORTIE_DATA = {
         },
         {
           "kind": "salvo",
+          "label": "Prome",
+          "description": "Plane #55 dropped bombs at 21\u00b010'N 93\u00b005'E at 1025 and returned to base. 20\u00b055'N 93\u00b011'E Base direct to Tawma, direct to target; return, left turn off target, target direct to base",
+          "time": "10:25",
+          "isoTime": "1944-10-18T10:25:00Z",
+          "lat": 18.8246,
+          "lng": 95.2222
+        },
+        {
+          "kind": "salvo",
           "label": "21\u00b010'N 93\u00b005'E",
           "description": "Plane #55 dropped bombs at 21\u00b010'N 93\u00b005'E at 1025 and returned to base",
           "time": "10:25",
@@ -4012,7 +4358,7 @@ window.MONTH_SORTIE_DATA = {
       ]
     },
     {
-      "id": "434BS_1944-10-19",
+      "id": "434BS_1944-10-19_A",
       "date": "1944-10-19",
       "squadron": "434th Squadron",
       "unit": "12th Bombardment Group (M)",
@@ -4021,6 +4367,8 @@ window.MONTH_SORTIE_DATA = {
       "base": "Comilla",
       "sourceFront": "IMG_3506.JPG",
       "sourceBack": "",
+      "scanFrontPath": "./LabeledSorties/434BS_1944-10-19/434BS_1944-10-19__front__IMG_3506.JPG",
+      "scanBackPath": "",
       "confidence": "high for front-page extraction",
       "primaryTarget": "military area at Kennedy Peak, Burma",
       "alternateTarget": "rail bridge at Chaungu, Burma",
@@ -4059,6 +4407,24 @@ window.MONTH_SORTIE_DATA = {
           "lat": 20.754,
           "lon": 93.728,
           "label": "Kennedy Peak"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 21.95,
+          "lon": 95.27,
+          "label": "Chaungu"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 22.93,
+          "lon": 95.33,
+          "label": "Indainggyi"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 20.93,
+          "lon": 94.08,
+          "label": "Vital Corner"
         },
         {
           "kind": "event_coordinate",
@@ -4102,6 +4468,33 @@ window.MONTH_SORTIE_DATA = {
           "lng": 93.728
         },
         {
+          "kind": "observation",
+          "label": "Chaungu",
+          "description": "Encountering poor weather over Kennedy Peak and finding it too late in the afternoon to bomb the alternate at Chaungu, the formation went on to the last-resort target at Indainggyi",
+          "time": "",
+          "isoTime": "",
+          "lat": 21.95,
+          "lng": 95.27
+        },
+        {
+          "kind": "observation",
+          "label": "Indainggyi",
+          "description": "Encountering poor weather over Kennedy Peak and finding it too late in the afternoon to bomb the alternate at Chaungu, the formation went on to the last-resort target at Indainggyi",
+          "time": "",
+          "isoTime": "",
+          "lat": 22.93,
+          "lng": 95.33
+        },
+        {
+          "kind": "observation",
+          "label": "Vital Corner",
+          "description": "A possible camouflaged dump was seen at the fork in the road at RU 630717, and considerable quantities of supplies were reported south of Vital Corner Vital Corner",
+          "time": "",
+          "isoTime": "",
+          "lat": 20.93,
+          "lng": 94.08
+        },
+        {
           "kind": "breakoff",
           "label": "23 18N, 92 23E",
           "description": "One plane turned back because of engine trouble at 1503 at 23 18N, 92 23E and landed at base at 1537 with all bombs",
@@ -4122,15 +4515,17 @@ window.MONTH_SORTIE_DATA = {
       ]
     },
     {
-      "id": "484BS_1944-10-19",
+      "id": "434BS_1944-10-19",
       "date": "1944-10-19",
-      "squadron": "484th Bombardment Squadron",
+      "squadron": "434th Bombardment Squadron",
       "unit": "12th Bombardment Group (M)",
       "aircraftType": "12 B-25s",
       "aircraftCount": "12",
       "base": "Comilla",
       "sourceFront": "IMG_3498.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3499.JPG",
+      "scanFrontPath": "./LabeledSorties/434BS_1944-10-19_A/434BS_1944-10-19_A__front__IMG_3498.JPG",
+      "scanBackPath": "",
       "confidence": "high for front-page route narrative",
       "primaryTarget": "Military area at Vital Corner, Burma (primary)",
       "alternateTarget": "",
@@ -4177,6 +4572,12 @@ window.MONTH_SORTIE_DATA = {
           "label": "23\u00b015'N 94\u00b011'E"
         },
         {
+          "kind": "coordinate",
+          "lat": 20.93,
+          "lon": 94.08,
+          "label": "Vital Corner"
+        },
+        {
           "kind": "base_return",
           "lat": 23.4607,
           "lon": 91.1809,
@@ -4221,6 +4622,15 @@ window.MONTH_SORTIE_DATA = {
           "lng": 94.183333
         },
         {
+          "kind": "observation",
+          "label": "Vital Corner",
+          "description": "All bombs dropped in target areas. Back linked by archive rule to IMG_3499.JPG; front page contains the key route narrative. 21\u00b058'N 95\u00b008'E; 23\u00b015'N 94\u00b011'E All planes took off from 0800 to 0805. Formation flew on course 95 degrees to targ",
+          "time": "08:00",
+          "isoTime": "1944-10-19T08:00:00Z",
+          "lat": 20.93,
+          "lng": 94.08
+        },
+        {
           "kind": "landing",
           "label": "Landing",
           "description": "Formation landed at Comilla by 1155.",
@@ -4240,7 +4650,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Fenny",
       "sourceFront": "IMG_3500.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3501.JPG",
+      "scanFrontPath": "./LabeledSorties/82BS_1944-10-19/82BS_1944-10-19__front__IMG_3500.JPG",
+      "scanBackPath": "./LabeledSorties/82BS_1944-10-19/82BS_1944-10-19__back_candidate__IMG_3501.JPG",
       "confidence": "medium-high",
       "primaryTarget": "Enemy troop concentrations at Kennedy Peak, RU 2181",
       "alternateTarget": "",
@@ -4335,7 +4747,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Fenny",
       "sourceFront": "IMG_3508.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3509.JPG",
+      "scanFrontPath": "./LabeledSorties/82BS_1944-10-19_B/82BS_1944-10-19_B__front__IMG_3508.JPG",
+      "scanBackPath": "",
       "confidence": "high for front-page extraction",
       "primaryTarget": "enemy troop concentrations at Vital Corner, Burma (RU 2184)",
       "alternateTarget": "",
@@ -4376,6 +4790,12 @@ window.MONTH_SORTIE_DATA = {
           "label": "Vital Corner"
         },
         {
+          "kind": "coordinate",
+          "lat": 22.93,
+          "lon": 95.33,
+          "label": "Indainggyi"
+        },
+        {
           "kind": "base_return",
           "lat": 23.014,
           "lon": 91.397,
@@ -4411,6 +4831,15 @@ window.MONTH_SORTIE_DATA = {
           "lng": 94.08
         },
         {
+          "kind": "bomb",
+          "label": "Indainggyi",
+          "description": "Due to bad weather over the primary, both boxes bombed the supply area at Indainggyi instead",
+          "time": "",
+          "isoTime": "",
+          "lat": 22.93,
+          "lng": 95.33
+        },
+        {
           "kind": "landing",
           "label": "Landing",
           "description": "Formation landed at Fenny by 1620.",
@@ -4430,7 +4859,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Fenny A/D, India",
       "sourceFront": "IMG_3503.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3504.JPG",
+      "scanFrontPath": "./LabeledSorties/83BS_1944-10-19_A/83BS_1944-10-19_A__front__IMG_3503.JPG",
+      "scanBackPath": "./LabeledSorties/83BS_1944-10-19_A/83BS_1944-10-19_A__back_candidate__IMG_3504.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Bombing of Kennedy Peak area",
       "alternateTarget": "",
@@ -4535,6 +4966,8 @@ window.MONTH_SORTIE_DATA = {
       "base": "Fenny A/D, India",
       "sourceFront": "IMG_3507.JPG",
       "sourceBack": "",
+      "scanFrontPath": "./LabeledSorties/83BS_1944-10-19_B/83BS_1944-10-19_B__front__IMG_3507.JPG",
+      "scanBackPath": "",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Primary apparently Vital Corner area",
       "alternateTarget": "",
@@ -4581,6 +5014,18 @@ window.MONTH_SORTIE_DATA = {
           "label": "22 30N 94 55E"
         },
         {
+          "kind": "coordinate",
+          "lat": 20.93,
+          "lon": 94.08,
+          "label": "Vital Corner"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 20.754,
+          "lon": 93.728,
+          "label": "Kennedy Peak"
+        },
+        {
           "kind": "base_return",
           "lat": 23.014,
           "lon": 91.397,
@@ -4603,8 +5048,8 @@ window.MONTH_SORTIE_DATA = {
           "description": "Primary apparently Vital Corner area",
           "time": "15:57",
           "isoTime": "1944-10-19T15:57:00Z",
-          "lat": 20.754,
-          "lng": 93.728
+          "lat": 20.93,
+          "lng": 94.08
         },
         {
           "kind": "observation",
@@ -4625,13 +5070,31 @@ window.MONTH_SORTIE_DATA = {
           "lng": 94.916667
         },
         {
+          "kind": "observation",
+          "label": "Vital Corner",
+          "description": "Vital Corner Route listed as base direct to area of Kennedy Peak and Vital Corner, then direct to target and direct return to base",
+          "time": "",
+          "isoTime": "",
+          "lat": 20.93,
+          "lng": 94.08
+        },
+        {
+          "kind": "observation",
+          "label": "Kennedy Peak",
+          "description": "Kennedy Peak Route listed as base direct to area of Kennedy Peak and Vital Corner, then direct to target and direct return to base",
+          "time": "",
+          "isoTime": "",
+          "lat": 20.754,
+          "lng": 93.728
+        },
+        {
           "kind": "flak",
           "label": "Opposition",
           "description": "and casualties were nil. Photo aircraft included plane 65 Durkin, plane 57 Flynn, plane 63 Kramer, and plane 60 Kerr",
           "time": "15:57",
           "isoTime": "1944-10-19T15:57:00Z",
-          "lat": 20.754,
-          "lng": 93.728
+          "lat": 20.93,
+          "lng": 94.08
         },
         {
           "kind": "landing",
@@ -4653,7 +5116,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "13",
       "base": "Comilla",
       "sourceFront": "IMG_3514.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3515.JPG",
+      "scanFrontPath": "./LabeledSorties/434BS_1944-10-20/434BS_1944-10-20__front__IMG_3514.JPG",
+      "scanBackPath": "./LabeledSorties/434BS_1944-10-20/434BS_1944-10-20__back_candidate__IMG_3515.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Budalin by-pass rail bridge, Burma",
       "alternateTarget": "Chantha rail bridge, Burma",
@@ -4763,7 +5228,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Feni",
       "sourceFront": "IMG_3517.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3518.JPG",
+      "scanFrontPath": "./LabeledSorties/81BS_1944-10-20/81BS_1944-10-20__front__IMG_3517.JPG",
+      "scanBackPath": "./LabeledSorties/81BS_1944-10-20/81BS_1944-10-20__back_candidate__IMG_3518.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "R.R. bridge at Chaung-U, 21 58N, 95 17E",
       "alternateTarget": "",
@@ -4888,7 +5355,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Comilla",
       "sourceFront": "IMG_3521.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3522.JPG",
+      "scanFrontPath": "./LabeledSorties/434BS_1944-10-21/434BS_1944-10-21__front__IMG_3521.JPG",
+      "scanBackPath": "./LabeledSorties/434BS_1944-10-21/434BS_1944-10-21__back_candidate__IMG_3522.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "military area at Kennedy Peak, Burma",
       "alternateTarget": "stores area on west bank of Chindwin River at Kalewa",
@@ -4935,6 +5404,18 @@ window.MONTH_SORTIE_DATA = {
           "label": "23 15N 93 41E"
         },
         {
+          "kind": "coordinate",
+          "lat": 20.754,
+          "lon": 93.728,
+          "label": "Kennedy Peak"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 23.1914,
+          "lon": 94.3011,
+          "label": "Kalewa"
+        },
+        {
           "kind": "base_return",
           "lat": 23.4607,
           "lon": 91.1809,
@@ -4957,8 +5438,8 @@ window.MONTH_SORTIE_DATA = {
           "description": "stores area on west bank of Chindwin River at Kalewa",
           "time": "10:10",
           "isoTime": "1944-10-21T10:10:00Z",
-          "lat": 23.1914,
-          "lng": 94.3011
+          "lat": 20.754,
+          "lng": 93.728
         },
         {
           "kind": "observation",
@@ -4979,13 +5460,31 @@ window.MONTH_SORTIE_DATA = {
           "lng": 93.683333
         },
         {
+          "kind": "observation",
+          "label": "Kennedy Peak",
+          "description": "Observations note 5-6 possible M/T east of Kennedy Peak on the east-running road, 1 M/T on the road between Kennedy Peak and Fort White, many bomb craters along the Kennedy Peak-Fort White road, and black smoke in the target area at 23 14N, 93 49E at 0950 from 12,900 feet and at 23 15N, 93 41E at 1027 from 12,400 feet Kennedy Peak",
+          "time": "09:50",
+          "isoTime": "1944-10-21T09:50:00Z",
+          "lat": 20.754,
+          "lng": 93.728
+        },
+        {
+          "kind": "takeoff",
+          "label": "Kalewa",
+          "description": "144 x 250-lb M-57 GP bombs with 1/10 nose and 1/40 tail fuzing were carried on takeoff and all were dropped in the target area. Ammunition expended: none. Bomb run was 75-80 degrees from 12,500 to 12,880 feet indicated at IAS 180 with inter",
+          "time": "",
+          "isoTime": "",
+          "lat": 23.1914,
+          "lng": 94.3011
+        },
+        {
           "kind": "flak",
           "label": "Opposition",
           "description": "and casualties were nil. Photos were taken on bomb-run statistics by aircraft 81, 86, 84, 76, and 79",
           "time": "10:10",
           "isoTime": "1944-10-21T10:10:00Z",
-          "lat": 23.1914,
-          "lng": 94.3011
+          "lat": 20.754,
+          "lng": 93.728
         },
         {
           "kind": "landing",
@@ -5007,7 +5506,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Comilla",
       "sourceFront": "IMG_3530.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3531.JPG",
+      "scanFrontPath": "./LabeledSorties/434BS_1944-10-21_B/434BS_1944-10-21_B__front__IMG_3530.JPG",
+      "scanBackPath": "./LabeledSorties/434BS_1944-10-21_B/434BS_1944-10-21_B__back_candidate__IMG_3531.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "military area at Vital Corner, Burma",
       "alternateTarget": "stores area on west bank of Chindwin River at Kalewa",
@@ -5043,9 +5544,21 @@ window.MONTH_SORTIE_DATA = {
         },
         {
           "kind": "coordinate",
+          "lat": 20.93,
+          "lon": 94.08,
+          "label": "Vital Corner"
+        },
+        {
+          "kind": "coordinate",
           "lat": 23.1914,
           "lon": 94.3011,
           "label": "Kalewa"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 20.85,
+          "lon": 96.37,
+          "label": "Myittha"
         },
         {
           "kind": "base_return",
@@ -5070,8 +5583,17 @@ window.MONTH_SORTIE_DATA = {
           "description": "stores area on west bank of Chindwin River at Kalewa",
           "time": "16:06",
           "isoTime": "1944-10-21T16:06:00Z",
-          "lat": 23.1914,
-          "lng": 94.3011
+          "lat": 20.93,
+          "lng": 94.08
+        },
+        {
+          "kind": "observation",
+          "label": "Vital Corner",
+          "description": "Vital Corner",
+          "time": "",
+          "isoTime": "",
+          "lat": 20.93,
+          "lng": 94.08
         },
         {
           "kind": "observation",
@@ -5083,13 +5605,22 @@ window.MONTH_SORTIE_DATA = {
           "lng": 94.3011
         },
         {
+          "kind": "salvo",
+          "label": "Myittha",
+          "description": "The second-box pattern fell short of the area, beginning on the south shore of the Myittha River and extending into the southern part of the assigned area as many as 15-20 bombs may have hit there, and the rest fell in the Myittha River except for the 8 salvoed armed bombs north of the target",
+          "time": "",
+          "isoTime": "",
+          "lat": 20.85,
+          "lng": 96.37
+        },
+        {
           "kind": "flak",
           "label": "Opposition",
           "description": "and casualties were nil. Photos were taken for bomb-run statistics by aircraft 81, 76, 79, 83, and 86",
           "time": "16:06",
           "isoTime": "1944-10-21T16:06:00Z",
-          "lat": 23.1914,
-          "lng": 94.3011
+          "lat": 20.93,
+          "lng": 94.08
         },
         {
           "kind": "landing",
@@ -5112,6 +5643,8 @@ window.MONTH_SORTIE_DATA = {
       "base": "Feni",
       "sourceFront": "IMG_3552.JPG",
       "sourceBack": "",
+      "scanFrontPath": "./LabeledSorties/81BS_1944-10-21_A/81BS_1944-10-21_A__front__IMG_3552.JPG",
+      "scanBackPath": "",
       "confidence": "medium-high for front-page extraction",
       "primaryTarget": "troop concentrations at Kennedy Peak, Burma (RU 209813, elevation 8871 feet)",
       "alternateTarget": "Kalewa, Burma (23 12N, 94 18E)",
@@ -5158,6 +5691,18 @@ window.MONTH_SORTIE_DATA = {
           "label": "23 12N, 94 18E"
         },
         {
+          "kind": "coordinate",
+          "lat": 20.754,
+          "lon": 93.728,
+          "label": "Kennedy Peak"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 23.1914,
+          "lon": 94.3011,
+          "label": "Kalewa"
+        },
+        {
           "kind": "base_return",
           "lat": 23.014,
           "lon": 91.397,
@@ -5180,8 +5725,8 @@ window.MONTH_SORTIE_DATA = {
           "description": "Kalewa, Burma (23 12N, 94 18E)",
           "time": "15:08",
           "isoTime": "1944-10-21T15:08:00Z",
-          "lat": 23.1888,
-          "lng": 94.0511
+          "lat": 20.754,
+          "lng": 93.728
         },
         {
           "kind": "observation",
@@ -5200,6 +5745,24 @@ window.MONTH_SORTIE_DATA = {
           "isoTime": "",
           "lat": 23.2,
           "lng": 94.3
+        },
+        {
+          "kind": "observation",
+          "label": "Kennedy Peak",
+          "description": "Kennedy Peak RU 209813 Primary target Kennedy Peak was obscured, so the mission divided its attack between the cloud-covered primary and the alternate target at Kalewa",
+          "time": "",
+          "isoTime": "",
+          "lat": 20.754,
+          "lng": 93.728
+        },
+        {
+          "kind": "bomb",
+          "label": "Kalewa",
+          "description": "Second box bombed the alternate at Kalewa at 1532 Kalewa RU 828685",
+          "time": "15:32",
+          "isoTime": "1944-10-21T15:32:00Z",
+          "lat": 23.1914,
+          "lng": 94.3011
         },
         {
           "kind": "landing",
@@ -5222,6 +5785,8 @@ window.MONTH_SORTIE_DATA = {
       "base": "Feni",
       "sourceFront": "IMG_3524.JPG",
       "sourceBack": "IMG_3525.JPG",
+      "scanFrontPath": "./LabeledSorties/81BS_1944-10-21_B/81BS_1944-10-21_B__front__IMG_3524.JPG",
+      "scanBackPath": "./LabeledSorties/81BS_1944-10-21_B/81BS_1944-10-21_B__back_reviewed__IMG_3525.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Vital Corner, RU 205844, elevation 7750 feet",
       "alternateTarget": "",
@@ -5266,6 +5831,18 @@ window.MONTH_SORTIE_DATA = {
           "lat": 23.333333,
           "lon": 93.75,
           "label": "23 20N 93 45E"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 20.93,
+          "lon": 94.08,
+          "label": "Vital Corner"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 23.1914,
+          "lon": 94.3011,
+          "label": "Kalewa"
         },
         {
           "kind": "event_coordinate",
@@ -5324,6 +5901,24 @@ window.MONTH_SORTIE_DATA = {
           "lng": 93.75
         },
         {
+          "kind": "observation",
+          "label": "Vital Corner",
+          "description": "Front-page route narrative is nil, but the sortie sheet records a Vital Corner strike from Feni under excellent weather with 3/10 stratocumulus, 6000-foot bases, and unlimited visibility",
+          "time": "",
+          "isoTime": "",
+          "lat": 20.93,
+          "lng": 94.08
+        },
+        {
+          "kind": "observation",
+          "label": "Kalewa",
+          "description": "Kalewa 23 12N 94 18E",
+          "time": "",
+          "isoTime": "",
+          "lat": 23.1914,
+          "lng": 94.3011
+        },
+        {
           "kind": "breakoff",
           "label": "23 08N, 92 25E",
           "description": "Two aircraft turned back early because of engine trouble: aircraft 19 at 23 08N, 92 25E at 0856 and aircraft 22 at 23 05N, 92 06E at 0852, with aircraft 22 down at 0905",
@@ -5362,6 +5957,8 @@ window.MONTH_SORTIE_DATA = {
       "base": "Fenny",
       "sourceFront": "IMG_3523.JPG",
       "sourceBack": "",
+      "scanFrontPath": "./LabeledSorties/82BS_1944-10-21/82BS_1944-10-21__front__IMG_3523.JPG",
+      "scanBackPath": "",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Enemy troop concentration at Vital Corner, Burma (U-205844)",
       "alternateTarget": "",
@@ -5397,6 +5994,12 @@ window.MONTH_SORTIE_DATA = {
         },
         {
           "kind": "coordinate",
+          "lat": 20.93,
+          "lon": 94.08,
+          "label": "Vital Corner"
+        },
+        {
+          "kind": "coordinate",
           "lat": 20.754,
           "lon": 93.728,
           "label": "Kennedy Peak"
@@ -5424,8 +6027,17 @@ window.MONTH_SORTIE_DATA = {
           "description": "Enemy troop concentration at Vital Corner, Burma (U-205844)",
           "time": "09:53",
           "isoTime": "1944-10-21T09:53:00Z",
-          "lat": 20.754,
-          "lng": 93.728
+          "lat": 20.93,
+          "lng": 94.08
+        },
+        {
+          "kind": "observation",
+          "label": "Vital Corner",
+          "description": "Mission from Fenny against Vital Corner under good weather, with 3/10 to 4/10 cumulus and unlimited visibility",
+          "time": "",
+          "isoTime": "",
+          "lat": 20.93,
+          "lng": 94.08
         },
         {
           "kind": "observation",
@@ -5442,8 +6054,8 @@ window.MONTH_SORTIE_DATA = {
           "description": "and casualties were nil. Photo aircraft listed were 31 with K-3B (3 shots), 49 with K-24 (17 shots), 39 with K-24 (12 shots), and 38 with K-17 (5 shots)",
           "time": "09:53",
           "isoTime": "1944-10-21T09:53:00Z",
-          "lat": 20.754,
-          "lng": 93.728
+          "lat": 20.93,
+          "lng": 94.08
         },
         {
           "kind": "landing",
@@ -5465,7 +6077,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Fenny",
       "sourceFront": "IMG_3553.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3554.JPG",
+      "scanFrontPath": "./LabeledSorties/82BS_1944-10-21_B/82BS_1944-10-21_B__front__IMG_3553.JPG",
+      "scanBackPath": "./LabeledSorties/82BS_1944-10-21_B/82BS_1944-10-21_B__back_candidate__IMG_3554.JPG",
       "confidence": "medium-high for front-page extraction",
       "primaryTarget": "Primary target at Kennedy Peak was covered",
       "alternateTarget": "",
@@ -5506,6 +6120,18 @@ window.MONTH_SORTIE_DATA = {
           "label": "23 12N 94 18E"
         },
         {
+          "kind": "coordinate",
+          "lat": 20.754,
+          "lon": 93.728,
+          "label": "Kennedy Peak"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 23.1914,
+          "lon": 94.3011,
+          "label": "Kalewa"
+        },
+        {
           "kind": "base_return",
           "lat": 23.014,
           "lon": 91.397,
@@ -5528,8 +6154,8 @@ window.MONTH_SORTIE_DATA = {
           "description": "Primary target at Kennedy Peak was covered",
           "time": "15:32",
           "isoTime": "1944-10-21T15:32:00Z",
-          "lat": 23.1914,
-          "lng": 94.3011
+          "lat": 20.754,
+          "lng": 93.728
         },
         {
           "kind": "observation",
@@ -5541,13 +6167,31 @@ window.MONTH_SORTIE_DATA = {
           "lng": 94.3
         },
         {
+          "kind": "observation",
+          "label": "Kennedy Peak",
+          "description": "Narrative states the primary at Kennedy Peak was cloud covered, so the formation attacked Kalewa instead",
+          "time": "",
+          "isoTime": "",
+          "lat": 20.754,
+          "lng": 93.728
+        },
+        {
+          "kind": "observation",
+          "label": "Kalewa",
+          "description": "Observations include a medium-sized burning boat about 200 yards north of Kalewa Point drifting crossways in the middle of the river, a wrecked truck or aircraft on the west side of Kalewa runway, and Kalewa runway obstructed with small piles or mounds of logs Kalewa 23 12N 94 18E",
+          "time": "",
+          "isoTime": "",
+          "lat": 23.1914,
+          "lng": 94.3011
+        },
+        {
           "kind": "flak",
           "label": "Opposition",
           "description": "and casualties were recorded on the visible front. Photo aircraft listed were aircraft 42 with K-3B (5 photos), 47 with K-17 (6 photos), and 34 with K-24 (10 photos)",
           "time": "15:32",
           "isoTime": "1944-10-21T15:32:00Z",
-          "lat": 23.1914,
-          "lng": 94.3011
+          "lat": 20.754,
+          "lng": 93.728
         },
         {
           "kind": "landing",
@@ -5570,6 +6214,8 @@ window.MONTH_SORTIE_DATA = {
       "base": "Feni",
       "sourceFront": "IMG_3546.JPG",
       "sourceBack": "",
+      "scanFrontPath": "./LabeledSorties/81BS_1944-10-22/81BS_1944-10-22__front__IMG_3546.JPG",
+      "scanBackPath": "",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Natmauk railroad bridge no. 162 at PU 7875, elevation 600 feet",
       "alternateTarget": "any railroad bridge on the Pyinmana-Kyaukpadaung rail line",
@@ -5694,7 +6340,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "13",
       "base": "Fenny",
       "sourceFront": "IMG_3549.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3550.JPG",
+      "scanFrontPath": "./LabeledSorties/82BS_1944-10-22_B/82BS_1944-10-22_B__front__IMG_3549.JPG",
+      "scanBackPath": "./LabeledSorties/82BS_1944-10-22_B/82BS_1944-10-22_B__back_candidate__IMG_3550.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Bomb railroad bridge north of Taungdwingyi, Burma at PU 8833",
       "alternateTarget": "",
@@ -5813,7 +6461,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Fenny A/D, India",
       "sourceFront": "IMG_3547.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3548.JPG",
+      "scanFrontPath": "./LabeledSorties/83BS_1944-10-22/83BS_1944-10-22__front__IMG_3547.JPG",
+      "scanBackPath": "./LabeledSorties/83BS_1944-10-22/83BS_1944-10-22__back_candidate__IMG_3548.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Bombing bridges on Ye-U - Kin-U road at SR 2420, SR 1819, and SR 1420",
       "alternateTarget": "",
@@ -5917,7 +6567,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Comilla",
       "sourceFront": "IMG_3539.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3540.JPG",
+      "scanFrontPath": "./LabeledSorties/434BS_1944-10-23/434BS_1944-10-23__front__IMG_3539.JPG",
+      "scanBackPath": "./LabeledSorties/434BS_1944-10-23/434BS_1944-10-23__back_candidate__IMG_3540.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "rail bridge #351 near Bawgyo, Burma",
       "alternateTarget": "rail bridge #321 near Kyaukme, Burma",
@@ -5962,6 +6614,18 @@ window.MONTH_SORTIE_DATA = {
           "lat": 22.916667,
           "lon": 95.25,
           "label": "22 55N, 95 15E"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 22.633,
+          "lon": 96.99,
+          "label": "Bawgyo"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 22.1086,
+          "lon": 95.1358,
+          "label": "Monywa"
         },
         {
           "kind": "event_coordinate",
@@ -6014,6 +6678,24 @@ window.MONTH_SORTIE_DATA = {
           "lng": 95.25
         },
         {
+          "kind": "observation",
+          "label": "Bawgyo",
+          "description": "Bawgyo",
+          "time": "",
+          "isoTime": "",
+          "lat": 22.633,
+          "lng": 96.99
+        },
+        {
+          "kind": "observation",
+          "label": "Monywa",
+          "description": "Monywa",
+          "time": "",
+          "isoTime": "",
+          "lat": 22.1086,
+          "lng": 95.1358
+        },
+        {
           "kind": "breakoff",
           "label": "22 57N, 95 53E",
           "description": "Plane 75 developed engine trouble at 1135 at 22 57N, 95 53E and landed at Tamu, Burma at 1300 with its starboard engine unserviceable",
@@ -6051,7 +6733,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Fenny",
       "sourceFront": "IMG_3535.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3536.JPG",
+      "scanFrontPath": "./LabeledSorties/82BS_1944-10-23_A/82BS_1944-10-23_A__front__IMG_3535.JPG",
+      "scanBackPath": "./LabeledSorties/82BS_1944-10-23_A/82BS_1944-10-23_A__back_candidate__IMG_3536.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Road bridge at Hsipaw, Burma (22 37N, 97 17E), ST 2115",
       "alternateTarget": "",
@@ -6092,6 +6776,12 @@ window.MONTH_SORTIE_DATA = {
           "label": "22 37N 97 17E"
         },
         {
+          "kind": "coordinate",
+          "lat": 22.62,
+          "lon": 97.3,
+          "label": "Hsipaw"
+        },
+        {
           "kind": "base_return",
           "lat": 23.014,
           "lon": 91.397,
@@ -6127,6 +6817,15 @@ window.MONTH_SORTIE_DATA = {
           "lng": 97.283333
         },
         {
+          "kind": "observation",
+          "label": "Hsipaw",
+          "description": "a boat or barge about one-quarter the length of the Hsipaw bridge docked parallel to its southeast side Hsipaw 22 37N 97 17E",
+          "time": "",
+          "isoTime": "",
+          "lat": 22.62,
+          "lng": 97.3
+        },
+        {
           "kind": "landing",
           "label": "Landing",
           "description": "Formation landed at Fenny by 1245.",
@@ -6146,7 +6845,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Fenny A/D, India",
       "sourceFront": "IMG_3537.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3538.JPG",
+      "scanFrontPath": "./LabeledSorties/82BS_1944-10-23_B/82BS_1944-10-23_B__front__IMG_3537.JPG",
+      "scanBackPath": "./LabeledSorties/82BS_1944-10-23_B/82BS_1944-10-23_B__back_candidate__IMG_3538.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Bomb railroad bridge #433, 7 miles northeast of Hsipaw, Burma",
       "alternateTarget": "",
@@ -6280,7 +6981,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Comilla",
       "sourceFront": "IMG_3556.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3557.JPG",
+      "scanFrontPath": "./LabeledSorties/434BS_1944-10-24/434BS_1944-10-24__front__IMG_3556.JPG",
+      "scanBackPath": "./LabeledSorties/434BS_1944-10-24/434BS_1944-10-24__back_candidate__IMG_3557.JPG",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Maymyo railway yards and sheds, Burma",
       "alternateTarget": "rail yards and troops billets (#3 area), Monywa, Burma",
@@ -6316,6 +7019,12 @@ window.MONTH_SORTIE_DATA = {
         },
         {
           "kind": "coordinate",
+          "lat": 22.035,
+          "lon": 96.4568,
+          "label": "Maymyo"
+        },
+        {
+          "kind": "coordinate",
           "lat": 22.1086,
           "lon": 95.1358,
           "label": "Monywa"
@@ -6343,8 +7052,17 @@ window.MONTH_SORTIE_DATA = {
           "description": "rail yards and troops billets (#3 area), Monywa, Burma",
           "time": "11:15",
           "isoTime": "1944-10-24T11:15:00Z",
-          "lat": 22.1086,
-          "lng": 95.1358
+          "lat": 22.035,
+          "lng": 96.4568
+        },
+        {
+          "kind": "breakoff",
+          "label": "Maymyo",
+          "description": "Maymyo Remaining aircraft flew toward the primary on heading 101 degrees, diverted to the alternate when Maymyo weather was bad on a heading of 268 degrees, and returned to base on heading 290 degrees",
+          "time": "",
+          "isoTime": "",
+          "lat": 22.035,
+          "lng": 96.4568
         },
         {
           "kind": "flak",
@@ -6361,8 +7079,8 @@ window.MONTH_SORTIE_DATA = {
           "description": "moderate inaccurate light AA from Monywa town with white bursts and moderate inaccurate heavy AA",
           "time": "11:15",
           "isoTime": "1944-10-24T11:15:00Z",
-          "lat": 22.1086,
-          "lng": 95.1358
+          "lat": 22.035,
+          "lng": 96.4568
         },
         {
           "kind": "landing",
@@ -6384,7 +7102,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "11",
       "base": "FENI",
       "sourceFront": "IMG_3559.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3560.JPG",
+      "scanFrontPath": "./LabeledSorties/81BS_1944-10-24/81BS_1944-10-24__front__IMG_3559.JPG",
+      "scanBackPath": "./LabeledSorties/81BS_1944-10-24/81BS_1944-10-24__back_candidate__IMG_3560.JPG",
       "confidence": "medium-high for front-page extraction",
       "primaryTarget": "Maymyo military area, LG 0172, elevation 3357 feet",
       "alternateTarget": "Monywa PK-5184 (military stores) and area",
@@ -6477,8 +7197,8 @@ window.MONTH_SORTIE_DATA = {
           "description": "Monywa PK-5184 (military stores) and area",
           "time": "11:12",
           "isoTime": "1944-10-24T11:12:00Z",
-          "lat": 22.1086,
-          "lng": 95.1358
+          "lat": 22.035,
+          "lng": 96.4568
         },
         {
           "kind": "observation",
@@ -6540,8 +7260,8 @@ window.MONTH_SORTIE_DATA = {
           "description": "flashes from six anti-aircraft batteries",
           "time": "11:12",
           "isoTime": "1944-10-24T11:12:00Z",
-          "lat": 22.1086,
-          "lng": 95.1358
+          "lat": 22.035,
+          "lng": 96.4568
         },
         {
           "kind": "landing",
@@ -6564,6 +7284,8 @@ window.MONTH_SORTIE_DATA = {
       "base": "Fenny A/D, India",
       "sourceFront": "IMG_3558.JPG",
       "sourceBack": "",
+      "scanFrontPath": "./LabeledSorties/83BS_1944-10-24/83BS_1944-10-24__front__IMG_3558.JPG",
+      "scanBackPath": "",
       "confidence": "high for front-page extraction",
       "primaryTarget": "Bomb military barracks area at Maymyo, Burma",
       "alternateTarget": "",
@@ -6656,8 +7378,8 @@ window.MONTH_SORTIE_DATA = {
           "description": "Bomb military barracks area at Maymyo, Burma",
           "time": "11:15",
           "isoTime": "1944-10-24T11:15:00Z",
-          "lat": 22.1086,
-          "lng": 95.1358
+          "lat": 22.035,
+          "lng": 96.4568
         },
         {
           "kind": "observation",
@@ -6719,8 +7441,8 @@ window.MONTH_SORTIE_DATA = {
           "description": "inaccurate 20 or 40 mm light AA from five positions, including PK 5286, PK 5287, PK 515830, and two positions on the west bank of the Chindwin opposite the target",
           "time": "11:15",
           "isoTime": "1944-10-24T11:15:00Z",
-          "lat": 22.1086,
-          "lng": 95.1358
+          "lat": 22.035,
+          "lng": 96.4568
         },
         {
           "kind": "landing",
@@ -6734,8 +7456,8 @@ window.MONTH_SORTIE_DATA = {
       ]
     },
     {
-      "id": "82BS_1944-10-25",
-      "date": "1944-10-25",
+      "id": "82BS_1944-10-30_MU_RIVER_BYPASS",
+      "date": "1944-10-30",
       "squadron": "82nd Squadron",
       "unit": "12th Bombardment Group (M)",
       "aircraftType": "12 Mitchells",
@@ -6743,14 +7465,16 @@ window.MONTH_SORTIE_DATA = {
       "base": "Fenny",
       "sourceFront": "IMG_3570.JPG",
       "sourceBack": "IMG_3571.JPG",
+      "scanFrontPath": "./LabeledSorties/82BS_1944-10-30_MU_RIVER_BYPASS/82BS_1944-10-30_MU_RIVER_BYPASS__front__IMG_3570.JPG",
+      "scanBackPath": "./LabeledSorties/82BS_1944-10-30_MU_RIVER_BYPASS/82BS_1944-10-30_MU_RIVER_BYPASS__back_reviewed__IMG_3571.JPG",
       "confidence": "medium",
-      "primaryTarget": "Me River by-pass bridge, Burma (21 59N 96 40E",
+      "primaryTarget": "Mu River by-pass bridge, Burma (21 58N 95 40E)",
       "alternateTarget": "",
       "targetStatus": "",
       "timeUp": "0900",
-      "timeOverTarget": "",
-      "timeDown": "1200",
-      "routeSummary": "Target weather was poor with 10/10 stratus around 8500 feet, but the formation continued to the Me River by-pass bridge and attacked in two boxes from right to left. Two aircraft turned back early because of engine trouble, and the continuation sheet notes the bridge remained open to traffic after the strike.",
+      "timeOverTarget": "1030",
+      "timeDown": "1205",
+      "routeSummary": "Target weather was fair with scattered cloud, and the formation bombed the Mu River by-pass bridge in two boxes. One aircraft turned back with compass trouble and another went missing after the formation spread out in instrument conditions, while the reviewed reverse page notes route weather and follow-on observations.",
       "weatherSummary": "",
       "bombLoadCarried": "80 x 500-lb GP",
       "bombsOnTarget": "74",
@@ -6766,9 +7490,9 @@ window.MONTH_SORTIE_DATA = {
       "photos": "",
       "leaflets": "",
       "results": "state the first-box pattern began about fifty yards beyond the target and carried through it, while the second-box pattern also crossed the bridge area. Continuation page IMG_3571.JPG was reviewed and notes one aircraft landing back at 1013 and another at 0958",
-      "observations": "21 59N 96 40E; bridge open to traffic",
-      "startIso": "1944-10-25T09:00:00Z",
-      "endIso": "1944-10-25T12:00:00Z",
+      "observations": "21 58N 95 40E; bridge open to traffic",
+      "startIso": "1944-10-30T09:00:00Z",
+      "endIso": "1944-10-30T12:05:00Z",
       "points": [
         {
           "kind": "base",
@@ -6778,9 +7502,9 @@ window.MONTH_SORTIE_DATA = {
         },
         {
           "kind": "coordinate",
-          "lat": 21.983333,
-          "lon": 96.666667,
-          "label": "21 59N 96 40E"
+          "lat": 21.966667,
+          "lon": 95.666667,
+          "label": "21 58N 95 40E"
         },
         {
           "kind": "base_return",
@@ -6795,34 +7519,34 @@ window.MONTH_SORTIE_DATA = {
           "label": "Takeoff",
           "description": "Formation took off from Fenny at 0900.",
           "time": "09:00",
-          "isoTime": "1944-10-25T09:00:00Z",
+          "isoTime": "1944-10-30T09:00:00Z",
           "lat": 23.014,
           "lng": 91.397
         },
         {
           "kind": "bomb",
           "label": "Target strike",
-          "description": "Me River by-pass bridge, Burma (21 59N 96 40E",
+          "description": "Mu River by-pass bridge, Burma (21 58N 95 40E)",
           "time": "",
           "isoTime": "",
-          "lat": 21.983333,
-          "lng": 96.666667
+          "lat": 21.966667,
+          "lng": 95.666667
         },
         {
           "kind": "observation",
-          "label": "21 59N 96 40E",
-          "description": "21 59N 96 40E",
+          "label": "21 58N 95 40E",
+          "description": "21 58N 95 40E",
           "time": "",
           "isoTime": "",
-          "lat": 21.983333,
-          "lng": 96.666667
+          "lat": 21.966667,
+          "lng": 95.666667
         },
         {
           "kind": "landing",
           "label": "Landing",
-          "description": "Formation landed at Fenny by 1200.",
-          "time": "12:00",
-          "isoTime": "1944-10-25T12:00:00Z",
+          "description": "Formation landed at Fenny by 1205.",
+          "time": "12:05",
+          "isoTime": "1944-10-30T12:05:00Z",
           "lat": 23.014,
           "lng": 91.397
         }
@@ -6837,7 +7561,9 @@ window.MONTH_SORTIE_DATA = {
       "aircraftCount": "12",
       "base": "Fenny",
       "sourceFront": "IMG_3578.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3579.JPG",
+      "scanFrontPath": "./LabeledSorties/82BS_1944-10-26/82BS_1944-10-26__front__IMG_3578.JPG",
+      "scanBackPath": "./LabeledSorties/82BS_1944-10-26/82BS_1944-10-26__back_candidate__IMG_3579.JPG",
       "confidence": "medium",
       "primaryTarget": "Stores area at Taungup, Burma (18 51N, 94 14E)",
       "alternateTarget": "",
@@ -6933,15 +7659,17 @@ window.MONTH_SORTIE_DATA = {
       ]
     },
     {
-      "id": "UNK_1944-10-29_AIRRADAR",
+      "id": "434BS_1944-10-29_AIRRADAR",
       "date": "1944-10-29",
-      "squadron": "Squadron unread on late-month scan",
+      "squadron": "434th Squadron",
       "unit": "12th Bombardment Group (M)",
       "aircraftType": "B-25 formation",
       "aircraftCount": "12",
       "base": "Comilla",
       "sourceFront": "IMG_3591.JPG",
       "sourceBack": "IMG_3592.JPG",
+      "scanFrontPath": "./LabeledSorties/434BS_1944-10-29_AIRRADAR/434BS_1944-10-29_AIRRADAR__front__IMG_3591.JPG",
+      "scanBackPath": "./LabeledSorties/434BS_1944-10-29_AIRRADAR/434BS_1944-10-29_AIRRADAR__back_reviewed__IMG_3592.JPG",
       "confidence": "low-medium",
       "primaryTarget": "erase Japanese air radar, Burma",
       "alternateTarget": "",
@@ -7019,15 +7747,17 @@ window.MONTH_SORTIE_DATA = {
       ]
     },
     {
-      "id": "UNK_1944-10-29_BR201",
+      "id": "81BS_1944-10-29_BR201",
       "date": "1944-10-29",
-      "squadron": "Squadron unread on late-month scan",
+      "squadron": "81st Squadron",
       "unit": "12th Bombardment Group (M)",
       "aircraftType": "B-25 formation",
       "aircraftCount": "11",
       "base": "Fenny",
       "sourceFront": "IMG_3595.JPG",
       "sourceBack": "IMG_3596.JPG",
+      "scanFrontPath": "./LabeledSorties/81BS_1944-10-29_BR201/81BS_1944-10-29_BR201__front__IMG_3595.JPG",
+      "scanBackPath": "./LabeledSorties/81BS_1944-10-29_BR201/81BS_1944-10-29_BR201__back_reviewed__IMG_3596.JPG",
       "confidence": "medium",
       "primaryTarget": "Rail bridge #201, LV-9205, Paukton, Burma",
       "alternateTarget": "",
@@ -7129,19 +7859,21 @@ window.MONTH_SORTIE_DATA = {
       ]
     },
     {
-      "id": "UNK_1944-10-30_BR433",
-      "date": "1944-10-30",
-      "squadron": "Squadron unread on late-month scan",
+      "id": "81BS_1944-10-26_BR433",
+      "date": "1944-10-26",
+      "squadron": "81st Squadron",
       "unit": "12th Bombardment Group (M)",
       "aircraftType": "11 B-25s",
       "aircraftCount": "11",
       "base": "Fenny",
       "sourceFront": "IMG_3603.JPG",
       "sourceBack": "",
+      "scanFrontPath": "./LabeledSorties/81BS_1944-10-26_BR433/81BS_1944-10-26_BR433__front__IMG_3603.JPG",
+      "scanBackPath": "",
       "confidence": "medium",
       "primaryTarget": "Railroad bridge #433, JU-6505, Pyinmana, Burma",
       "alternateTarget": "",
-      "targetStatus": "alternate attacked",
+      "targetStatus": "primary attacked",
       "timeUp": "0740",
       "timeOverTarget": "",
       "timeDown": "1215",
@@ -7156,14 +7888,14 @@ window.MONTH_SORTIE_DATA = {
       "bombingAltitude": "8250 feet",
       "bombingInterval": "",
       "ammoExpended": "",
-      "opposition": "was moderate inaccurate heavy AA, with one accurate burst hitting the lead aircraft and damaging a bomb-bay hydraulic line. Rule-linked IMG_3604 is itself another front page, so it has not been treated as a reviewed backside",
+      "opposition": "was moderate inaccurate heavy AA, with one accurate burst hitting the lead aircraft and damaging a bomb-bay hydraulic line",
       "casualties": "",
       "photos": "",
       "leaflets": "",
-      "results": "say the first-box pattern straddled the bridge, probably knocking one span out of line, while the second-box pattern hit at either end with limited damage. Opposition was moderate inaccurate heavy AA, with one accurate burst hitting the lead aircraft and damaging a bomb-bay hydraulic line. Rule-linked IMG_3604 is itself another front page, so it has not been treated as a reviewed backside",
+      "results": "say the first-box pattern straddled the bridge, probably knocking one span out of line, while the second-box pattern hit at either end with limited damage. Opposition was moderate inaccurate heavy AA, with one accurate burst hitting the lead aircraft and damaging a bomb-bay hydraulic line",
       "observations": "12 miles east of Pyinmana; 21 20N 95 47E; JU-6505",
-      "startIso": "1944-10-30T07:40:00Z",
-      "endIso": "1944-10-30T12:15:00Z",
+      "startIso": "1944-10-26T07:40:00Z",
+      "endIso": "1944-10-26T12:15:00Z",
       "points": [
         {
           "kind": "base",
@@ -7178,6 +7910,12 @@ window.MONTH_SORTIE_DATA = {
           "label": "21 20N 95 47E"
         },
         {
+          "kind": "coordinate",
+          "lat": 19.7381,
+          "lon": 96.2074,
+          "label": "Pyinmana"
+        },
+        {
           "kind": "base_return",
           "lat": 23.014,
           "lon": 91.397,
@@ -7190,7 +7928,7 @@ window.MONTH_SORTIE_DATA = {
           "label": "Takeoff",
           "description": "Formation took off from Fenny at 0740.",
           "time": "07:40",
-          "isoTime": "1944-10-30T07:40:00Z",
+          "isoTime": "1944-10-26T07:40:00Z",
           "lat": 23.014,
           "lng": 91.397
         },
@@ -7213,9 +7951,18 @@ window.MONTH_SORTIE_DATA = {
           "lng": 95.783333
         },
         {
+          "kind": "breakoff",
+          "label": "Pyinmana",
+          "description": "12 miles east of Pyinmana Formation departed Fenny under overcast conditions at base, climbed through hills, and attacked the Pyinmana bridge target despite one aircraft returning with mechanical trouble and another losing a bomb rack",
+          "time": "",
+          "isoTime": "",
+          "lat": 19.7381,
+          "lng": 96.2074
+        },
+        {
           "kind": "flak",
           "label": "Opposition",
-          "description": "was moderate inaccurate heavy AA, with one accurate burst hitting the lead aircraft and damaging a bomb-bay hydraulic line. Rule-linked IMG_3604 is itself another front page, so it has not been treated as a reviewed backside",
+          "description": "was moderate inaccurate heavy AA, with one accurate burst hitting the lead aircraft and damaging a bomb-bay hydraulic line",
           "time": "",
           "isoTime": "",
           "lat": 19.7381,
@@ -7226,48 +7973,50 @@ window.MONTH_SORTIE_DATA = {
           "label": "Landing",
           "description": "Formation landed at Fenny by 1215.",
           "time": "12:15",
-          "isoTime": "1944-10-30T12:15:00Z",
+          "isoTime": "1944-10-26T12:15:00Z",
           "lat": 23.014,
           "lng": 91.397
         }
       ]
     },
     {
-      "id": "UNK_1944-10-30_BR44",
-      "date": "1944-10-30",
-      "squadron": "Squadron unread on late-month scan",
+      "id": "82BS_1944-10-26_BR4_LEWE",
+      "date": "1944-10-26",
+      "squadron": "82nd Squadron",
       "unit": "12th Bombardment Group (M)",
       "aircraftType": "12 bombers",
       "aircraftCount": "12",
       "base": "Fenny",
       "sourceFront": "IMG_3605.JPG",
-      "sourceBack": "",
+      "sourceBack": "IMG_3606.JPG",
+      "scanFrontPath": "./LabeledSorties/82BS_1944-10-26_BR4_LEWE/82BS_1944-10-26_BR4_LEWE__front__IMG_3605.JPG",
+      "scanBackPath": "./LabeledSorties/82BS_1944-10-26_BR4_LEWE/82BS_1944-10-26_BR4_LEWE__back_reviewed__IMG_3606.JPG",
       "confidence": "medium",
-      "primaryTarget": "Railroad bridge #44, ES-5279, Kyun, Burma",
+      "primaryTarget": "RR bridge #4, LV-5279, Lewe, Burma (19 37N 96 07E)",
       "alternateTarget": "",
       "targetStatus": "",
-      "timeUp": "0835",
-      "timeOverTarget": "",
+      "timeUp": "0730",
+      "timeOverTarget": "1004",
       "timeDown": "1205",
-      "routeSummary": "Mission from Fenny went direct to bridge target and returned after a two-box attack. Weather at the target was fair with about 4/10 cloud and good visibility, and both bomb-box patterns were reported to have crossed the bridge area.",
+      "routeSummary": "Mission from Fenny went direct to the Lewe bridge target and returned after a two-box attack. Weather at the target was CAVU, both boxes bombed on the leader, and the reverse page records additional reconnaissance sightings during the return.",
       "weatherSummary": "",
-      "bombLoadCarried": "",
-      "bombsOnTarget": "",
+      "bombLoadCarried": "80 x 500-lb GP, fused instant nose and 1/40 tail",
+      "bombsOnTarget": "80",
       "bombsSalvoed": "",
       "bombsReturned": "",
-      "bombingCourse": "176 degrees",
-      "bombingSpeed": "176 IAS",
-      "bombingAltitude": "4000 feet",
-      "bombingInterval": "",
-      "ammoExpended": "",
+      "bombingCourse": "40 degrees | 35 degrees",
+      "bombingSpeed": "180 IAS | 176 IAS",
+      "bombingAltitude": "4000 feet | 4100 feet",
+      "bombingInterval": "60 feet in lead A/C | 20 feet in wing A/C",
+      "ammoExpended": "465 rounds",
       "opposition": "",
       "casualties": "",
       "photos": "",
-      "leaflets": "",
-      "results": "state both patterns bombed on the leader and that a direct hit on the bridge was observed, leaving a section dangling. Observations list camouflaged trees and boats near LF-2629 and traffic or boat activity near PP-0815. Rule-linked IMG_3606 has not been reviewed",
-      "observations": "ES-5279; 19 37N 97 17E; LF-2629; PP-0815",
-      "startIso": "1944-10-30T08:35:00Z",
-      "endIso": "1944-10-30T12:05:00Z",
+      "leaflets": "SBN/5, 15000 over Lewe area",
+      "results": "state both boxes pattern-bombed on the leader. The first-box pattern fell 300 feet south of the bridge in the river and along the east bank, while the second-box pattern began southwest of the bridge and ran up to the west approach with a few hits on the tracks",
+      "observations": "LV-2682; LV-1587; 20 36N 94 48E; PP-0815; PU-8833",
+      "startIso": "1944-10-26T07:30:00Z",
+      "endIso": "1944-10-26T12:05:00Z",
       "points": [
         {
           "kind": "base",
@@ -7278,8 +8027,8 @@ window.MONTH_SORTIE_DATA = {
         {
           "kind": "coordinate",
           "lat": 19.616667,
-          "lon": 97.283333,
-          "label": "19 37N 97 17E"
+          "lon": 96.116667,
+          "label": "19 37N 96 07E"
         },
         {
           "kind": "base_return",
@@ -7292,36 +8041,1390 @@ window.MONTH_SORTIE_DATA = {
         {
           "kind": "takeoff",
           "label": "Takeoff",
-          "description": "Formation took off from Fenny at 0835.",
-          "time": "08:35",
-          "isoTime": "1944-10-30T08:35:00Z",
+          "description": "Formation took off from Fenny at 0730.",
+          "time": "07:30",
+          "isoTime": "1944-10-26T07:30:00Z",
           "lat": 23.014,
           "lng": 91.397
         },
         {
           "kind": "bomb",
           "label": "Target strike",
-          "description": "Railroad bridge #44, ES-5279, Kyun, Burma",
+          "description": "RR bridge #4, LV-5279, Lewe, Burma (19 37N 96 07E)",
           "time": "",
           "isoTime": "",
           "lat": 19.616667,
-          "lng": 97.283333
+          "lng": 96.116667
         },
         {
           "kind": "observation",
-          "label": "19 37N 97 17E",
-          "description": "19 37N 97 17E",
+          "label": "19 37N 96 07E",
+          "description": "19 37N 96 07E",
           "time": "",
           "isoTime": "",
           "lat": 19.616667,
-          "lng": 97.283333
+          "lng": 96.116667
         },
         {
           "kind": "landing",
           "label": "Landing",
           "description": "Formation landed at Fenny by 1205.",
           "time": "12:05",
-          "isoTime": "1944-10-30T12:05:00Z",
+          "isoTime": "1944-10-26T12:05:00Z",
+          "lat": 23.014,
+          "lng": 91.397
+        }
+      ]
+    },
+    {
+      "id": "81BS_1944-10-25_KALEMYO",
+      "date": "1944-10-25",
+      "squadron": "81st Squadron",
+      "unit": "12th Bombardment Group (M)",
+      "aircraftType": "9 B-25s",
+      "aircraftCount": "9",
+      "base": "Fenny",
+      "sourceFront": "IMG_3613.JPG",
+      "sourceBack": "",
+      "scanFrontPath": "./LabeledSorties/81BS_1944-10-25_KALEMYO/81BS_1944-10-25_KALEMYO__front__IMG_3613.JPG",
+      "scanBackPath": "",
+      "confidence": "medium",
+      "primaryTarget": "enemy stores point B at Kalemyo, Burma",
+      "alternateTarget": "H.S. special area at Kalewa, Burma",
+      "targetStatus": "alternate attacked",
+      "timeUp": "0857",
+      "timeOverTarget": "",
+      "timeDown": "1240",
+      "routeSummary": "Mission from Fenny bombed the assigned Kalemyo stores objective after climbing over the hills, with Kalewa retained as the alternate. The target line on the front also notes Fort White and enemy stores point markings, but the sortie reads as a Kalemyo-area stores strike.",
+      "weatherSummary": "as fair and includes bombing data for the attacked objective, but some of the target-line wording is faint. This row preserves the confirmed front-page identity and target geography pending a fuller hand transcription",
+      "bombLoadCarried": "",
+      "bombsOnTarget": "",
+      "bombsSalvoed": "",
+      "bombsReturned": "",
+      "bombingCourse": "",
+      "bombingSpeed": "",
+      "bombingAltitude": "",
+      "bombingInterval": "",
+      "ammoExpended": "",
+      "opposition": "",
+      "casualties": "",
+      "photos": "",
+      "leaflets": "",
+      "results": "",
+      "observations": "Fort White RU 2371; enemy stores point at RU 2273; Kalemyo; Kalewa",
+      "startIso": "1944-10-25T08:57:00Z",
+      "endIso": "1944-10-25T12:40:00Z",
+      "points": [
+        {
+          "kind": "base",
+          "lat": 23.014,
+          "lon": 91.397,
+          "label": "Fenny"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 23.1888,
+          "lon": 94.0511,
+          "label": "Kalemyo"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 23.1914,
+          "lon": 94.3011,
+          "label": "Kalewa"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 23.1615,
+          "lon": 93.4419,
+          "label": "Fort White"
+        },
+        {
+          "kind": "base_return",
+          "lat": 23.014,
+          "lon": 91.397,
+          "label": "Fenny"
+        }
+      ],
+      "eventPoints": [
+        {
+          "kind": "takeoff",
+          "label": "Takeoff",
+          "description": "Formation took off from Fenny at 0857.",
+          "time": "08:57",
+          "isoTime": "1944-10-25T08:57:00Z",
+          "lat": 23.014,
+          "lng": 91.397
+        },
+        {
+          "kind": "bomb",
+          "label": "Target strike",
+          "description": "H.S. special area at Kalewa, Burma",
+          "time": "",
+          "isoTime": "",
+          "lat": 23.1888,
+          "lng": 94.0511
+        },
+        {
+          "kind": "bomb",
+          "label": "Kalemyo",
+          "description": "Kalemyo Mission from Fenny bombed the assigned Kalemyo stores objective after climbing over the hills, with Kalewa retained as the alternate",
+          "time": "",
+          "isoTime": "",
+          "lat": 23.1888,
+          "lng": 94.0511
+        },
+        {
+          "kind": "bomb",
+          "label": "Kalewa",
+          "description": "Kalewa Mission from Fenny bombed the assigned Kalemyo stores objective after climbing over the hills, with Kalewa retained as the alternate",
+          "time": "",
+          "isoTime": "",
+          "lat": 23.1914,
+          "lng": 94.3011
+        },
+        {
+          "kind": "observation",
+          "label": "Fort White",
+          "description": "Fort White RU 2371 The target line on the front also notes Fort White and enemy stores point markings, but the sortie reads as a Kalemyo-area stores strike",
+          "time": "",
+          "isoTime": "",
+          "lat": 23.1615,
+          "lng": 93.4419
+        },
+        {
+          "kind": "landing",
+          "label": "Landing",
+          "description": "Formation landed at Fenny by 1240.",
+          "time": "12:40",
+          "isoTime": "1944-10-25T12:40:00Z",
+          "lat": 23.014,
+          "lng": 91.397
+        }
+      ]
+    },
+    {
+      "id": "82BS_1944-10-25_KALEWA",
+      "date": "1944-10-25",
+      "squadron": "82nd Squadron",
+      "unit": "12th Bombardment Group (M)",
+      "aircraftType": "12 B-25s",
+      "aircraftCount": "12",
+      "base": "Fenny",
+      "sourceFront": "IMG_3614.JPG",
+      "sourceBack": "IMG_3615.JPG",
+      "scanFrontPath": "./LabeledSorties/82BS_1944-10-25_KALEWA/82BS_1944-10-25_KALEWA__front__IMG_3614.JPG",
+      "scanBackPath": "./LabeledSorties/82BS_1944-10-25_KALEWA/82BS_1944-10-25_KALEWA__back_candidate__IMG_3615.JPG",
+      "confidence": "medium",
+      "primaryTarget": "Stores area about 1200 yards running along the Kalewa-Myittha River, Burma",
+      "alternateTarget": "",
+      "targetStatus": "",
+      "timeUp": "0845",
+      "timeOverTarget": "1018-1150",
+      "timeDown": "1250",
+      "routeSummary": "Mission from Fenny attacked a stores area running along the Kalewa-Myittha River. The front page records four bombing flights or elements across the same target area, with patterns carrying through the bridge or riverbank objective.",
+      "weatherSummary": "",
+      "bombLoadCarried": "264 x 100-lb GP, instantaneous nose, 1/40 tail",
+      "bombsOnTarget": "263",
+      "bombsSalvoed": "",
+      "bombsReturned": "",
+      "bombingCourse": "307 degrees",
+      "bombingSpeed": "190 IAS",
+      "bombingAltitude": "",
+      "bombingInterval": "",
+      "ammoExpended": "580 rounds",
+      "opposition": "",
+      "casualties": "",
+      "photos": "were taken by aircraft 31, 46, 39, 57, and 50",
+      "leaflets": "",
+      "results": "",
+      "observations": "Kalewa; Myittha River; RU-831684; RU-824689; RU-807268; RU-812686",
+      "startIso": "1944-10-25T08:45:00Z",
+      "endIso": "1944-10-25T12:50:00Z",
+      "points": [
+        {
+          "kind": "base",
+          "lat": 23.014,
+          "lon": 91.397,
+          "label": "Fenny"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 23.1914,
+          "lon": 94.3011,
+          "label": "Kalewa"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 20.85,
+          "lon": 96.37,
+          "label": "Myittha"
+        },
+        {
+          "kind": "base_return",
+          "lat": 23.014,
+          "lon": 91.397,
+          "label": "Fenny"
+        }
+      ],
+      "eventPoints": [
+        {
+          "kind": "takeoff",
+          "label": "Takeoff",
+          "description": "Formation took off from Fenny at 0845.",
+          "time": "08:45",
+          "isoTime": "1944-10-25T08:45:00Z",
+          "lat": 23.014,
+          "lng": 91.397
+        },
+        {
+          "kind": "bomb",
+          "label": "Target strike",
+          "description": "Stores area about 1200 yards running along the Kalewa-Myittha River, Burma",
+          "time": "10:18",
+          "isoTime": "1944-10-25T10:18:00Z",
+          "lat": 23.1914,
+          "lng": 94.3011
+        },
+        {
+          "kind": "observation",
+          "label": "Kalewa",
+          "description": "Kalewa Mission from Fenny attacked a stores area running along the Kalewa-Myittha River",
+          "time": "",
+          "isoTime": "",
+          "lat": 23.1914,
+          "lng": 94.3011
+        },
+        {
+          "kind": "observation",
+          "label": "Myittha",
+          "description": "Myittha River Mission from Fenny attacked a stores area running along the Kalewa-Myittha River",
+          "time": "",
+          "isoTime": "",
+          "lat": 20.85,
+          "lng": 96.37
+        },
+        {
+          "kind": "landing",
+          "label": "Landing",
+          "description": "Formation landed at Fenny by 1250.",
+          "time": "12:50",
+          "isoTime": "1944-10-25T12:50:00Z",
+          "lat": 23.014,
+          "lng": 91.397
+        }
+      ]
+    },
+    {
+      "id": "83BS_1944-10-25_FORTWHITE",
+      "date": "1944-10-25",
+      "squadron": "83rd Bombardment Squadron",
+      "unit": "12th Bombardment Group (M)",
+      "aircraftType": "6 Mitchell B-25s",
+      "aircraftCount": "6",
+      "base": "Tiddim",
+      "sourceFront": "IMG_3616.JPG",
+      "sourceBack": "",
+      "scanFrontPath": "./LabeledSorties/83BS_1944-10-25_FORTWHITE/83BS_1944-10-25_FORTWHITE__front__IMG_3616.JPG",
+      "scanBackPath": "",
+      "confidence": "high",
+      "primaryTarget": "Fort White area, Burma",
+      "alternateTarget": "Fort White-Kalewa road / Kalemyo vicinity",
+      "targetStatus": "alternate attacked",
+      "timeUp": "0830",
+      "timeOverTarget": "",
+      "timeDown": "0935",
+      "routeSummary": "First element bombed at Fort White. The second element found Fort White overcast and bombed Kalemyo / Fort White road area instead, then returned direct to Tiddim.",
+      "weatherSummary": "",
+      "bombLoadCarried": "",
+      "bombsOnTarget": "",
+      "bombsSalvoed": "",
+      "bombsReturned": "",
+      "bombingCourse": "",
+      "bombingSpeed": "",
+      "bombingAltitude": "",
+      "bombingInterval": "",
+      "ammoExpended": "",
+      "opposition": "and casualties nil",
+      "casualties": "nil",
+      "photos": "",
+      "leaflets": "",
+      "results": "state the first element hit Fort White while the second fell short of Kalemyo, with the bomb pattern stopping several hundred yards east of town. Opposition and casualties nil",
+      "observations": "RU 5867; RU 5467; Fort White; Kalemyo",
+      "startIso": "1944-10-25T08:30:00Z",
+      "endIso": "1944-10-25T09:35:00Z",
+      "points": [
+        {
+          "kind": "base",
+          "lat": 23.3787,
+          "lon": 93.658,
+          "label": "Tiddim"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 23.1615,
+          "lon": 93.4419,
+          "label": "Fort White"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 23.1914,
+          "lon": 94.3011,
+          "label": "Kalewa"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 23.1888,
+          "lon": 94.0511,
+          "label": "Kalemyo"
+        },
+        {
+          "kind": "base_return",
+          "lat": 23.3787,
+          "lon": 93.658,
+          "label": "Tiddim"
+        }
+      ],
+      "eventPoints": [
+        {
+          "kind": "takeoff",
+          "label": "Takeoff",
+          "description": "Formation took off from Tiddim at 0830.",
+          "time": "08:30",
+          "isoTime": "1944-10-25T08:30:00Z",
+          "lat": 23.3787,
+          "lng": 93.658
+        },
+        {
+          "kind": "bomb",
+          "label": "Target strike",
+          "description": "Fort White-Kalewa road / Kalemyo vicinity",
+          "time": "",
+          "isoTime": "",
+          "lat": 23.1615,
+          "lng": 93.4419
+        },
+        {
+          "kind": "observation",
+          "label": "Fort White",
+          "description": "Results state the first element hit Fort White while the second fell short of Kalemyo, with the bomb pattern stopping several hundred yards east of town Fort White",
+          "time": "",
+          "isoTime": "",
+          "lat": 23.1615,
+          "lng": 93.4419
+        },
+        {
+          "kind": "bomb",
+          "label": "Kalewa",
+          "description": "Time down on the front is listed separately by element: first element 0925, second element 0935. Bomb load: first element 36 x 250-lb GP on target, second element 20 x 500-lb M-76 on target. Results state the first element hit Fort White wh",
+          "time": "",
+          "isoTime": "",
+          "lat": 23.1914,
+          "lng": 94.3011
+        },
+        {
+          "kind": "observation",
+          "label": "Kalemyo",
+          "description": "Results state the first element hit Fort White while the second fell short of Kalemyo, with the bomb pattern stopping several hundred yards east of town Kalemyo",
+          "time": "",
+          "isoTime": "",
+          "lat": 23.1888,
+          "lng": 94.0511
+        },
+        {
+          "kind": "flak",
+          "label": "Opposition",
+          "description": "and casualties nil",
+          "time": "",
+          "isoTime": "",
+          "lat": 23.1615,
+          "lng": 93.4419
+        },
+        {
+          "kind": "landing",
+          "label": "Landing",
+          "description": "Formation landed at Tiddim by 0935.",
+          "time": "09:35",
+          "isoTime": "1944-10-25T09:35:00Z",
+          "lat": 23.3787,
+          "lng": 93.658
+        }
+      ]
+    },
+    {
+      "id": "434BS_1944-10-25_FORTWHITE",
+      "date": "1944-10-25",
+      "squadron": "434th Squadron",
+      "unit": "12th Bombardment Group (M)",
+      "aircraftType": "9 B-25s",
+      "aircraftCount": "9",
+      "base": "Comilla",
+      "sourceFront": "IMG_3617.JPG",
+      "sourceBack": "IMG_3618.JPG",
+      "scanFrontPath": "./LabeledSorties/434BS_1944-10-25_FORTWHITE/434BS_1944-10-25_FORTWHITE__front__IMG_3617.JPG",
+      "scanBackPath": "./LabeledSorties/434BS_1944-10-25_FORTWHITE/434BS_1944-10-25_FORTWHITE__back_candidate__IMG_3618.JPG",
+      "confidence": "medium",
+      "primaryTarget": "Flight A and C Fort White area",
+      "alternateTarget": "stores area on north bank of Myittha River at Kalewa",
+      "targetStatus": "alternate attacked",
+      "timeUp": "0910",
+      "timeOverTarget": "1015-1145",
+      "timeDown": "1300",
+      "routeSummary": "Three flights left Comilla in sequence and attacked Fort White / road targets, with some bombs salvoed safe because of target visibility and pattern extension. The alternate was a stores area on the north bank of the Myittha River at Kalewa.",
+      "weatherSummary": "",
+      "bombLoadCarried": "included 198 x 100-lb M-30 GP with instantaneous and 1/40 tail fusing plus 173 x 10-lb M-30",
+      "bombsOnTarget": "",
+      "bombsSalvoed": "",
+      "bombsReturned": "",
+      "bombingCourse": "285 degrees",
+      "bombingSpeed": "185 IAS",
+      "bombingAltitude": "",
+      "bombingInterval": "",
+      "ammoExpended": "is listed as 540 rounds",
+      "opposition": "",
+      "casualties": "",
+      "photos": "",
+      "leaflets": "",
+      "results": "",
+      "observations": "RU 244716; RU 2572; RU 8469; Fort White; Myittha River; Kalewa",
+      "startIso": "1944-10-25T09:10:00Z",
+      "endIso": "1944-10-25T13:00:00Z",
+      "points": [
+        {
+          "kind": "base",
+          "lat": 23.4607,
+          "lon": 91.1809,
+          "label": "Comilla"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 23.1615,
+          "lon": 93.4419,
+          "label": "Fort White"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 20.85,
+          "lon": 96.37,
+          "label": "Myittha"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 23.1914,
+          "lon": 94.3011,
+          "label": "Kalewa"
+        },
+        {
+          "kind": "base_return",
+          "lat": 23.4607,
+          "lon": 91.1809,
+          "label": "Comilla"
+        }
+      ],
+      "eventPoints": [
+        {
+          "kind": "takeoff",
+          "label": "Takeoff",
+          "description": "Formation took off from Comilla at 0910.",
+          "time": "09:10",
+          "isoTime": "1944-10-25T09:10:00Z",
+          "lat": 23.4607,
+          "lng": 91.1809
+        },
+        {
+          "kind": "bomb",
+          "label": "Target strike",
+          "description": "stores area on north bank of Myittha River at Kalewa",
+          "time": "10:15",
+          "isoTime": "1944-10-25T10:15:00Z",
+          "lat": 23.1615,
+          "lng": 93.4419
+        },
+        {
+          "kind": "salvo",
+          "label": "Fort White",
+          "description": "Fort White Three flights left Comilla in sequence and attacked Fort White / road targets, with some bombs salvoed safe because of target visibility and pattern extension",
+          "time": "",
+          "isoTime": "",
+          "lat": 23.1615,
+          "lng": 93.4419
+        },
+        {
+          "kind": "observation",
+          "label": "Myittha",
+          "description": "Myittha River The alternate was a stores area on the north bank of the Myittha River at Kalewa",
+          "time": "",
+          "isoTime": "",
+          "lat": 20.85,
+          "lng": 96.37
+        },
+        {
+          "kind": "observation",
+          "label": "Kalewa",
+          "description": "Kalewa The alternate was a stores area on the north bank of the Myittha River at Kalewa",
+          "time": "",
+          "isoTime": "",
+          "lat": 23.1914,
+          "lng": 94.3011
+        },
+        {
+          "kind": "landing",
+          "label": "Landing",
+          "description": "Formation landed at Comilla by 1300.",
+          "time": "13:00",
+          "isoTime": "1944-10-25T13:00:00Z",
+          "lat": 23.4607,
+          "lng": 91.1809
+        }
+      ]
+    },
+    {
+      "id": "83BS_1944-10-26_KANTHE",
+      "date": "1944-10-26",
+      "squadron": "83rd Bombardment Squadron",
+      "unit": "12th Bombardment Group (M)",
+      "aircraftType": "12 Mitchell B-25s",
+      "aircraftCount": "12",
+      "base": "Fenny A/D, India",
+      "sourceFront": "IMG_3604.JPG",
+      "sourceBack": "",
+      "scanFrontPath": "./LabeledSorties/83BS_1944-10-26_KANTHE/83BS_1944-10-26_KANTHE__front__IMG_3604.JPG",
+      "scanBackPath": "",
+      "confidence": "high",
+      "primaryTarget": "Bombing of RR bridge at Kanthe, Burma",
+      "alternateTarget": "",
+      "targetStatus": "primary attacked",
+      "timeUp": "0740",
+      "timeOverTarget": "1002",
+      "timeDown": "1230",
+      "routeSummary": "Base to Chittagong and on to the Irrawaddy River, then 130 degrees to Sattwa and direct to target. Return joined at Chittagong and left us on the Irrawaddy River in the vicinity of Chaulk / Chauk, then direct to base.",
+      "weatherSummary": "",
+      "bombLoadCarried": "74 x 500-lb GP with instantaneous nose and 1/40 tail",
+      "bombsOnTarget": "",
+      "bombsSalvoed": "",
+      "bombsReturned": "",
+      "bombingCourse": "89 degrees",
+      "bombingSpeed": "180 MPH | 180 MPH",
+      "bombingAltitude": "4500 feet | 4650 feet",
+      "bombingInterval": "",
+      "ammoExpended": "",
+      "opposition": "",
+      "casualties": "",
+      "photos": "were taken for both boxes",
+      "leaflets": "",
+      "results": "state the first-box pattern fell parallel to the bridge with probable structural damage and the second-box pattern also paralleled the bridge. Two unidentified fighters were observed south on the deck near Yenangyaung at 0930. Photos were taken for both boxes",
+      "observations": "20 30N 94 51E; 21 30N 95 37E; 20 40N 94 50E; 20 40N 94 50E; 19 40N 95 37E; 20 20N 94 50E; 19 30N 93 51E",
+      "startIso": "1944-10-26T07:40:00Z",
+      "endIso": "1944-10-26T12:30:00Z",
+      "points": [
+        {
+          "kind": "base",
+          "lat": 23.014,
+          "lon": 91.397,
+          "label": "Fenny A/D, India"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 20.5,
+          "lon": 94.85,
+          "label": "20 30N 94 51E"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 21.5,
+          "lon": 95.616667,
+          "label": "21 30N 95 37E"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 20.666667,
+          "lon": 94.833333,
+          "label": "20 40N 94 50E"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 19.666667,
+          "lon": 95.616667,
+          "label": "19 40N 95 37E"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 20.333333,
+          "lon": 94.833333,
+          "label": "20 20N 94 50E"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 19.5,
+          "lon": 93.85,
+          "label": "19 30N 93 51E"
+        },
+        {
+          "kind": "base_return",
+          "lat": 23.014,
+          "lon": 91.397,
+          "label": "Fenny A/D, India"
+        }
+      ],
+      "eventPoints": [
+        {
+          "kind": "takeoff",
+          "label": "Takeoff",
+          "description": "Formation took off from Fenny A/D, India at 0740.",
+          "time": "07:40",
+          "isoTime": "1944-10-26T07:40:00Z",
+          "lat": 23.014,
+          "lng": 91.397
+        },
+        {
+          "kind": "bomb",
+          "label": "Target strike",
+          "description": "Bombing of RR bridge at Kanthe, Burma",
+          "time": "10:02",
+          "isoTime": "1944-10-26T10:02:00Z",
+          "lat": 20.5,
+          "lng": 94.85
+        },
+        {
+          "kind": "observation",
+          "label": "20 30N 94 51E",
+          "description": "20 30N 94 51E",
+          "time": "",
+          "isoTime": "",
+          "lat": 20.5,
+          "lng": 94.85
+        },
+        {
+          "kind": "observation",
+          "label": "21 30N 95 37E",
+          "description": "21 30N 95 37E",
+          "time": "",
+          "isoTime": "",
+          "lat": 21.5,
+          "lng": 95.616667
+        },
+        {
+          "kind": "observation",
+          "label": "20 40N 94 50E",
+          "description": "20 40N 94 50E 20 40N 94 50E",
+          "time": "",
+          "isoTime": "",
+          "lat": 20.666667,
+          "lng": 94.833333
+        },
+        {
+          "kind": "observation",
+          "label": "19 40N 95 37E",
+          "description": "19 40N 95 37E",
+          "time": "",
+          "isoTime": "",
+          "lat": 19.666667,
+          "lng": 95.616667
+        },
+        {
+          "kind": "observation",
+          "label": "20 20N 94 50E",
+          "description": "20 20N 94 50E",
+          "time": "",
+          "isoTime": "",
+          "lat": 20.333333,
+          "lng": 94.833333
+        },
+        {
+          "kind": "observation",
+          "label": "19 30N 93 51E",
+          "description": "19 30N 93 51E",
+          "time": "",
+          "isoTime": "",
+          "lat": 19.5,
+          "lng": 93.85
+        },
+        {
+          "kind": "landing",
+          "label": "Landing",
+          "description": "Formation landed at Fenny A/D, India by 1230.",
+          "time": "12:30",
+          "isoTime": "1944-10-26T12:30:00Z",
+          "lat": 23.014,
+          "lng": 91.397
+        }
+      ]
+    },
+    {
+      "id": "434BS_1944-10-27_PAKOKKU",
+      "date": "1944-10-27",
+      "squadron": "434th Squadron",
+      "unit": "12th Bombardment Group (M)",
+      "aircraftType": "9 B-25s",
+      "aircraftCount": "9",
+      "base": "Comilla",
+      "sourceFront": "IMG_3597.JPG",
+      "sourceBack": "IMG_3598.JPG",
+      "scanFrontPath": "./LabeledSorties/434BS_1944-10-27_PAKOKKU/434BS_1944-10-27_PAKOKKU__front__IMG_3597.JPG",
+      "scanBackPath": "./LabeledSorties/434BS_1944-10-27_PAKOKKU/434BS_1944-10-27_PAKOKKU__back_candidate__IMG_3598.JPG",
+      "confidence": "medium",
+      "primaryTarget": "area east of Shwegu Chaung, Pakokku, Burma",
+      "alternateTarget": "military and troop billets area #2, Monywa, Burma",
+      "targetStatus": "alternate attacked",
+      "timeUp": "0835",
+      "timeOverTarget": "1035",
+      "timeDown": "1155",
+      "routeSummary": "All planes took off from 0825 to 0830 and flew on a heading of 123 degrees. The primary mission was overcast, so the formation turned to bomb the alternate near Monywa, then returned to base.",
+      "weatherSummary": "",
+      "bombLoadCarried": "198 x 100-lb GP, 1/10 nose, 1/40 tail",
+      "bombsOnTarget": "196",
+      "bombsSalvoed": "",
+      "bombsReturned": "",
+      "bombingCourse": "300 degrees",
+      "bombingSpeed": "180 IAS | 180 IAS",
+      "bombingAltitude": "000 feet | 600 feet",
+      "bombingInterval": "",
+      "ammoExpended": "",
+      "opposition": "",
+      "casualties": "",
+      "photos": "",
+      "leaflets": "",
+      "results": "were observed through cloud. 540 rounds .50 cal expended",
+      "observations": "21 20N 94 40E; 21 20N 94 40E; 22 20N 94 40E; Pakokku; Monywa",
+      "startIso": "1944-10-27T08:35:00Z",
+      "endIso": "1944-10-27T11:55:00Z",
+      "points": [
+        {
+          "kind": "base",
+          "lat": 23.4607,
+          "lon": 91.1809,
+          "label": "Comilla"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 21.333333,
+          "lon": 94.666667,
+          "label": "21 20N 94 40E"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 22.333333,
+          "lon": 94.666667,
+          "label": "22 20N 94 40E"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 22.1086,
+          "lon": 95.1358,
+          "label": "Monywa"
+        },
+        {
+          "kind": "base_return",
+          "lat": 23.4607,
+          "lon": 91.1809,
+          "label": "Comilla"
+        }
+      ],
+      "eventPoints": [
+        {
+          "kind": "takeoff",
+          "label": "Takeoff",
+          "description": "Formation took off from Comilla at 0835.",
+          "time": "08:35",
+          "isoTime": "1944-10-27T08:35:00Z",
+          "lat": 23.4607,
+          "lng": 91.1809
+        },
+        {
+          "kind": "bomb",
+          "label": "Target strike",
+          "description": "military and troop billets area #2, Monywa, Burma",
+          "time": "10:35",
+          "isoTime": "1944-10-27T10:35:00Z",
+          "lat": 22.1086,
+          "lng": 95.1358
+        },
+        {
+          "kind": "observation",
+          "label": "21 20N 94 40E",
+          "description": "21 20N 94 40E 21 20N 94 40E",
+          "time": "",
+          "isoTime": "",
+          "lat": 21.333333,
+          "lng": 94.666667
+        },
+        {
+          "kind": "observation",
+          "label": "22 20N 94 40E",
+          "description": "22 20N 94 40E",
+          "time": "",
+          "isoTime": "",
+          "lat": 22.333333,
+          "lng": 94.666667
+        },
+        {
+          "kind": "landing",
+          "label": "Monywa",
+          "description": "Monywa The primary mission was overcast, so the formation turned to bomb the alternate near Monywa, then returned to base",
+          "time": "",
+          "isoTime": "",
+          "lat": 22.1086,
+          "lng": 95.1358
+        },
+        {
+          "kind": "landing",
+          "label": "Landing",
+          "description": "Formation landed at Comilla by 1155.",
+          "time": "11:55",
+          "isoTime": "1944-10-27T11:55:00Z",
+          "lat": 23.4607,
+          "lng": 91.1809
+        }
+      ]
+    },
+    {
+      "id": "434BS_1944-10-28_MYAUNGUP",
+      "date": "1944-10-28",
+      "squadron": "434th Squadron",
+      "unit": "12th Bombardment Group (M)",
+      "aircraftType": "9 B-25s (Mitchells)",
+      "aircraftCount": "9",
+      "base": "Comilla",
+      "sourceFront": "IMG_3580.JPG",
+      "sourceBack": "IMG_3581.JPG",
+      "scanFrontPath": "./LabeledSorties/434BS_1944-10-28_MYAUNGUP/434BS_1944-10-28_MYAUNGUP__front__IMG_3580.JPG",
+      "scanBackPath": "./LabeledSorties/434BS_1944-10-28_MYAUNGUP/434BS_1944-10-28_MYAUNGUP__back_candidate__IMG_3581.JPG",
+      "confidence": "medium",
+      "primaryTarget": "stores and supply area, Myaungup, Burma",
+      "alternateTarget": "stores and supply area #4, Prome, Burma",
+      "targetStatus": "alternate attacked",
+      "timeUp": "0745",
+      "timeOverTarget": "0936",
+      "timeDown": "1155",
+      "routeSummary": "All aircraft joined and flew on a course of 156 degrees to Fenny, India, then with the 82nd and 83rd squadrons continued toward the target. Observation of the primary was impossible, so the formation bombed the alternate area at Prome.",
+      "weatherSummary": "",
+      "bombLoadCarried": "",
+      "bombsOnTarget": "",
+      "bombsSalvoed": "",
+      "bombsReturned": "",
+      "bombingCourse": "",
+      "bombingSpeed": "190 IAS",
+      "bombingAltitude": "8300 feet",
+      "bombingInterval": "",
+      "ammoExpended": "",
+      "opposition": "",
+      "casualties": "",
+      "photos": "",
+      "leaflets": "30 were dropped safe in the target area and 30 were salvoed in the town just beyond the target when the pattern overshot. 495 rounds .50 cal expended. Bombing from 7900-8300 feet at 190 IAS with 150-foot pattern interval on formation leader. Heavy AA from sight 4 was accurate at the rear, and a separate heavy burst from sight 4 and another squadron was observed. 10,000 SJ/44 propaganda leaflets were dropped",
+      "results": "",
+      "observations": "A/C 81; 72; 86; 82; 119 30N 93 52E",
+      "startIso": "1944-10-28T07:45:00Z",
+      "endIso": "1944-10-28T11:55:00Z",
+      "points": [
+        {
+          "kind": "base",
+          "lat": 23.4607,
+          "lon": 91.1809,
+          "label": "Comilla"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 19.5,
+          "lon": 93.866667,
+          "label": "19 30N 93 52E"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 18.8069,
+          "lon": 94.5614,
+          "label": "Myaungup"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 18.8246,
+          "lon": 95.2222,
+          "label": "Prome"
+        },
+        {
+          "kind": "event_coordinate",
+          "lat": 21.966667,
+          "lon": 95.816667,
+          "label": "21 58N 95 49E"
+        },
+        {
+          "kind": "event_coordinate",
+          "lat": 21.95,
+          "lon": 95.916667,
+          "label": "21 57N 95 55E"
+        },
+        {
+          "kind": "base_return",
+          "lat": 23.4607,
+          "lon": 91.1809,
+          "label": "Comilla"
+        }
+      ],
+      "eventPoints": [
+        {
+          "kind": "takeoff",
+          "label": "Takeoff",
+          "description": "Formation took off from Comilla at 0745.",
+          "time": "07:45",
+          "isoTime": "1944-10-28T07:45:00Z",
+          "lat": 23.4607,
+          "lng": 91.1809
+        },
+        {
+          "kind": "bomb",
+          "label": "Target strike",
+          "description": "stores and supply area #4, Prome, Burma",
+          "time": "09:36",
+          "isoTime": "1944-10-28T09:36:00Z",
+          "lat": 18.8069,
+          "lng": 94.5614
+        },
+        {
+          "kind": "observation",
+          "label": "19 30N 93 52E",
+          "description": "119 30N 93 52E",
+          "time": "",
+          "isoTime": "",
+          "lat": 19.5,
+          "lng": 93.866667
+        },
+        {
+          "kind": "salvo",
+          "label": "Myaungup",
+          "description": "42 x 100-lb GP were carried; 30 were dropped safe in the target area and 30 were salvoed in the town just beyond the target when the pattern overshot. 495 rounds .50 cal expended. Bombing from 7900-8300 feet at 190 IAS with 150-foot pattern",
+          "time": "79:00",
+          "isoTime": "1944-10-28T79:00:00Z",
+          "lat": 18.8069,
+          "lng": 94.5614
+        },
+        {
+          "kind": "bomb",
+          "label": "Prome",
+          "description": "Observation of the primary was impossible, so the formation bombed the alternate area at Prome",
+          "time": "",
+          "isoTime": "",
+          "lat": 18.8246,
+          "lng": 95.2222
+        },
+        {
+          "kind": "observation",
+          "label": "21 58N 95 49E",
+          "description": "Naval vessels and six box cars were seen near 21 58N 95 49E and 21 57N 95 55E",
+          "time": "",
+          "isoTime": "",
+          "lat": 21.966667,
+          "lng": 95.816667
+        },
+        {
+          "kind": "observation",
+          "label": "21 57N 95 55E",
+          "description": "Naval vessels and six box cars were seen near 21 58N 95 49E and 21 57N 95 55E",
+          "time": "",
+          "isoTime": "",
+          "lat": 21.95,
+          "lng": 95.916667
+        },
+        {
+          "kind": "landing",
+          "label": "Landing",
+          "description": "Formation landed at Comilla by 1155.",
+          "time": "11:55",
+          "isoTime": "1944-10-28T11:55:00Z",
+          "lat": 23.4607,
+          "lng": 91.1809
+        }
+      ]
+    },
+    {
+      "id": "82BS_1944-10-28_NAMSANG",
+      "date": "1944-10-28",
+      "squadron": "82nd Squadron",
+      "unit": "12th Bombardment Group (M)",
+      "aircraftType": "5 B-25s",
+      "aircraftCount": "5",
+      "base": "Fenny",
+      "sourceFront": "IMG_3586.JPG",
+      "sourceBack": "IMG_3587.JPG",
+      "scanFrontPath": "./LabeledSorties/82BS_1944-10-28_NAMSANG/82BS_1944-10-28_NAMSANG__front__IMG_3586.JPG",
+      "scanBackPath": "./LabeledSorties/82BS_1944-10-28_NAMSANG/82BS_1944-10-28_NAMSANG__back_candidate__IMG_3587.JPG",
+      "confidence": "high",
+      "primaryTarget": "Bomb dispersal area south of runway at Namsang, Burma (IW 4031)",
+      "alternateTarget": "",
+      "targetStatus": "",
+      "timeUp": "0921",
+      "timeOverTarget": "1145",
+      "timeDown": "1410",
+      "routeSummary": "One aircraft crashed on take-off and prevented the remaining scheduled aircraft from getting off on time. Five B-25s eventually left Fenny and carried out the Namsang dispersal-area strike in two boxes.",
+      "weatherSummary": "",
+      "bombLoadCarried": "60 x 100-lb M47 bombs, instantaneous nose fuse",
+      "bombsOnTarget": "",
+      "bombsSalvoed": "",
+      "bombsReturned": "",
+      "bombingCourse": "360 degrees | 300 degrees",
+      "bombingSpeed": "190 IAS | 183 IAS",
+      "bombingAltitude": "500 feet | 200 feet",
+      "bombingInterval": "",
+      "ammoExpended": "",
+      "opposition": "",
+      "casualties": "",
+      "photos": "were taken in aircraft 48 and K3B 8 shots",
+      "leaflets": "",
+      "results": "",
+      "observations": "Namsang; IW 4031",
+      "startIso": "1944-10-28T09:21:00Z",
+      "endIso": "1944-10-28T14:10:00Z",
+      "points": [
+        {
+          "kind": "base",
+          "lat": 23.014,
+          "lon": 91.397,
+          "label": "Fenny"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 20.8878,
+          "lon": 97.7356,
+          "label": "Namsang"
+        },
+        {
+          "kind": "base_return",
+          "lat": 23.014,
+          "lon": 91.397,
+          "label": "Fenny"
+        }
+      ],
+      "eventPoints": [
+        {
+          "kind": "takeoff",
+          "label": "Takeoff",
+          "description": "Formation took off from Fenny at 0921.",
+          "time": "09:21",
+          "isoTime": "1944-10-28T09:21:00Z",
+          "lat": 23.014,
+          "lng": 91.397
+        },
+        {
+          "kind": "bomb",
+          "label": "Target strike",
+          "description": "Bomb dispersal area south of runway at Namsang, Burma (IW 4031)",
+          "time": "11:45",
+          "isoTime": "1944-10-28T11:45:00Z",
+          "lat": 20.8878,
+          "lng": 97.7356
+        },
+        {
+          "kind": "observation",
+          "label": "Namsang",
+          "description": "Namsang Five B-25s eventually left Fenny and carried out the Namsang dispersal-area strike in two boxes",
+          "time": "",
+          "isoTime": "",
+          "lat": 20.8878,
+          "lng": 97.7356
+        },
+        {
+          "kind": "landing",
+          "label": "Landing",
+          "description": "Formation landed at Fenny by 1410.",
+          "time": "14:10",
+          "isoTime": "1944-10-28T14:10:00Z",
+          "lat": 23.014,
+          "lng": 91.397
+        }
+      ]
+    },
+    {
+      "id": "81BS_1944-10-29_MYAUNGUP",
+      "date": "1944-10-29",
+      "squadron": "81st Squadron",
+      "unit": "12th Bombardment Group (M)",
+      "aircraftType": "9 B-25J/H aircraft",
+      "aircraftCount": "9",
+      "base": "FENNI",
+      "sourceFront": "IMG_3575.JPG",
+      "sourceBack": "IMG_3576.JPG",
+      "scanFrontPath": "./LabeledSorties/81BS_1944-10-29_MYAUNGUP/81BS_1944-10-29_MYAUNGUP__front__IMG_3575.JPG",
+      "scanBackPath": "./LabeledSorties/81BS_1944-10-29_MYAUNGUP/81BS_1944-10-29_MYAUNGUP__back_candidate__IMG_3576.JPG",
+      "confidence": "medium",
+      "primaryTarget": "Myaungup military stores (JD L093), Burma",
+      "alternateTarget": "Prome, Burma",
+      "targetStatus": "alternate attacked",
+      "timeUp": "0750",
+      "timeOverTarget": "1006",
+      "timeDown": "1144",
+      "routeSummary": "Primary target was damaged upon arrival but could not be observed effectively due to cloud, so the formation turned to the alternate at Prome. One aircraft came back soon after takeoff due to faulty generator and another salvoed safe at 22 25N, 95 49E before returning because of a bomb-shackle malfunction.",
+      "weatherSummary": "",
+      "bombLoadCarried": "196 x 100 GP, fused 1/10 nose x 1/40 tail",
+      "bombsOnTarget": "194",
+      "bombsSalvoed": "",
+      "bombsReturned": "",
+      "bombingCourse": "270 degrees",
+      "bombingSpeed": "",
+      "bombingAltitude": "8500 feet",
+      "bombingInterval": "",
+      "ammoExpended": "",
+      "opposition": "",
+      "casualties": "",
+      "photos": "were taken",
+      "leaflets": "",
+      "results": "",
+      "observations": "22 25N 95 49E; 21 57N 95 55E",
+      "startIso": "1944-10-29T07:50:00Z",
+      "endIso": "1944-10-29T11:44:00Z",
+      "points": [
+        {
+          "kind": "base",
+          "lat": 23.014,
+          "lon": 91.397,
+          "label": "FENNI"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 21.95,
+          "lon": 95.916667,
+          "label": "21 57N 95 55E"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 18.8069,
+          "lon": 94.5614,
+          "label": "Myaungup"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 18.8246,
+          "lon": 95.2222,
+          "label": "Prome"
+        },
+        {
+          "kind": "event_coordinate",
+          "lat": 22.416667,
+          "lon": 95.816667,
+          "label": "22 25N, 95 49E"
+        },
+        {
+          "kind": "base_return",
+          "lat": 23.014,
+          "lon": 91.397,
+          "label": "FENNI"
+        }
+      ],
+      "eventPoints": [
+        {
+          "kind": "takeoff",
+          "label": "Takeoff",
+          "description": "Formation took off from FENNI at 0750.",
+          "time": "07:50",
+          "isoTime": "1944-10-29T07:50:00Z",
+          "lat": 23.014,
+          "lng": 91.397
+        },
+        {
+          "kind": "bomb",
+          "label": "Target strike",
+          "description": "Prome, Burma",
+          "time": "10:06",
+          "isoTime": "1944-10-29T10:06:00Z",
+          "lat": 18.8069,
+          "lng": 94.5614
+        },
+        {
+          "kind": "observation",
+          "label": "21 57N 95 55E",
+          "description": "21 57N 95 55E",
+          "time": "",
+          "isoTime": "",
+          "lat": 21.95,
+          "lng": 95.916667
+        },
+        {
+          "kind": "bomb",
+          "label": "Myaungup",
+          "description": "Bombs carried: 196 x 100 GP, fused 1/10 nose x 1/40 tail. Bombs dropped on target: 194. First box bombed from true altitude 8500 feet on course 270 degrees at IAS 210; pattern started considerably short of the target and carried across it",
+          "time": "",
+          "isoTime": "",
+          "lat": 18.8069,
+          "lng": 94.5614
+        },
+        {
+          "kind": "observation",
+          "label": "Prome",
+          "description": "Primary target was damaged upon arrival but could not be observed effectively due to cloud, so the formation turned to the alternate at Prome",
+          "time": "",
+          "isoTime": "",
+          "lat": 18.8246,
+          "lng": 95.2222
+        },
+        {
+          "kind": "salvo",
+          "label": "22 25N, 95 49E",
+          "description": "One aircraft came back soon after takeoff due to faulty generator and another salvoed safe at 22 25N, 95 49E before returning because of a bomb-shackle malfunction",
+          "time": "",
+          "isoTime": "",
+          "lat": 22.416667,
+          "lng": 95.816667
+        },
+        {
+          "kind": "landing",
+          "label": "Landing",
+          "description": "Formation landed at FENNI by 1144.",
+          "time": "11:44",
+          "isoTime": "1944-10-29T11:44:00Z",
+          "lat": 23.014,
+          "lng": 91.397
+        }
+      ]
+    },
+    {
+      "id": "81BS_1944-10-30_MYAUNGUP",
+      "date": "1944-10-30",
+      "squadron": "81st Squadron",
+      "unit": "12th Bombardment Group (M)",
+      "aircraftType": "9 B-25J/H aircraft",
+      "aircraftCount": "9",
+      "base": "FENNI",
+      "sourceFront": "IMG_3569.JPG",
+      "sourceBack": "",
+      "scanFrontPath": "./LabeledSorties/81BS_1944-10-30_MYAUNGUP/81BS_1944-10-30_MYAUNGUP__front__IMG_3569.JPG",
+      "scanBackPath": "",
+      "confidence": "medium",
+      "primaryTarget": "Myaungup military stores (JD L093), Burma",
+      "alternateTarget": "Prome, Burma",
+      "targetStatus": "alternate attacked",
+      "timeUp": "0750",
+      "timeOverTarget": "1006",
+      "timeDown": "1148",
+      "routeSummary": "The primary Myaungup stores area was overcast, and the element instead bombed the alternate target at Prome. One aircraft came back at 0800 after takeoff because of faulty generator and brought back two bombs; another salvoed safe at 22 25N, 95 40E and landed after its bomb shackle malfunctioned.",
+      "weatherSummary": "",
+      "bombLoadCarried": "196 x 100 GP, fused 1/10 nose x 1/40 tail",
+      "bombsOnTarget": "194",
+      "bombsSalvoed": "",
+      "bombsReturned": "",
+      "bombingCourse": "270 degrees",
+      "bombingSpeed": "",
+      "bombingAltitude": "8500 feet",
+      "bombingInterval": "",
+      "ammoExpended": "",
+      "opposition": "",
+      "casualties": "",
+      "photos": "",
+      "leaflets": "",
+      "results": "",
+      "observations": "22 25N 95 40E; 21 58N 95 49E; 21 57N 95 55E",
+      "startIso": "1944-10-30T07:50:00Z",
+      "endIso": "1944-10-30T11:48:00Z",
+      "points": [
+        {
+          "kind": "base",
+          "lat": 23.014,
+          "lon": 91.397,
+          "label": "FENNI"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 18.8069,
+          "lon": 94.5614,
+          "label": "Myaungup"
+        },
+        {
+          "kind": "coordinate",
+          "lat": 18.8246,
+          "lon": 95.2222,
+          "label": "Prome"
+        },
+        {
+          "kind": "event_coordinate",
+          "lat": 22.416667,
+          "lon": 95.666667,
+          "label": "22 25N, 95 40E"
+        },
+        {
+          "kind": "event_coordinate",
+          "lat": 21.966667,
+          "lon": 95.816667,
+          "label": "21 58N 95 49E"
+        },
+        {
+          "kind": "event_coordinate",
+          "lat": 21.95,
+          "lon": 95.916667,
+          "label": "21 57N 95 55E"
+        },
+        {
+          "kind": "base_return",
+          "lat": 23.014,
+          "lon": 91.397,
+          "label": "FENNI"
+        }
+      ],
+      "eventPoints": [
+        {
+          "kind": "takeoff",
+          "label": "Takeoff",
+          "description": "Formation took off from FENNI at 0750.",
+          "time": "07:50",
+          "isoTime": "1944-10-30T07:50:00Z",
+          "lat": 23.014,
+          "lng": 91.397
+        },
+        {
+          "kind": "bomb",
+          "label": "Target strike",
+          "description": "Prome, Burma",
+          "time": "10:06",
+          "isoTime": "1944-10-30T10:06:00Z",
+          "lat": 18.8069,
+          "lng": 94.5614
+        },
+        {
+          "kind": "bomb",
+          "label": "Myaungup",
+          "description": "The primary Myaungup stores area was overcast, and the element instead bombed the alternate target at Prome",
+          "time": "",
+          "isoTime": "",
+          "lat": 18.8069,
+          "lng": 94.5614
+        },
+        {
+          "kind": "bomb",
+          "label": "Prome",
+          "description": "The primary Myaungup stores area was overcast, and the element instead bombed the alternate target at Prome",
+          "time": "",
+          "isoTime": "",
+          "lat": 18.8246,
+          "lng": 95.2222
+        },
+        {
+          "kind": "salvo",
+          "label": "22 25N, 95 40E",
+          "description": "another salvoed safe at 22 25N, 95 40E and landed after its bomb shackle malfunctioned",
+          "time": "",
+          "isoTime": "",
+          "lat": 22.416667,
+          "lng": 95.666667
+        },
+        {
+          "kind": "observation",
+          "label": "21 58N 95 49E",
+          "description": "Reports note two anti-aircraft positions and extensive fires in the target area, with AA sight 4 observed on the left and boats or barges seen around 21 58N 95 49E and 21 57N 95 55E 21 58N 95 49E",
+          "time": "",
+          "isoTime": "",
+          "lat": 21.966667,
+          "lng": 95.816667
+        },
+        {
+          "kind": "observation",
+          "label": "21 57N 95 55E",
+          "description": "Reports note two anti-aircraft positions and extensive fires in the target area, with AA sight 4 observed on the left and boats or barges seen around 21 58N 95 49E and 21 57N 95 55E 21 57N 95 55E",
+          "time": "",
+          "isoTime": "",
+          "lat": 21.95,
+          "lng": 95.916667
+        },
+        {
+          "kind": "landing",
+          "label": "Landing",
+          "description": "Formation landed at FENNI by 1148.",
+          "time": "11:48",
+          "isoTime": "1944-10-30T11:48:00Z",
           "lat": 23.014,
           "lng": 91.397
         }

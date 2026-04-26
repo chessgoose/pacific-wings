@@ -4,7 +4,7 @@ import re
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 SOURCE = ROOT / "data" / "indiaburma1944-12th-bombardment-group-sortie-extracts.csv"
 NORMALIZED = ROOT / "data" / "indiaburma1944-12th-bombardment-group-sortie-normalized.csv"
 GEOJSON = ROOT / "data" / "indiaburma1944-12th-bombardment-group-sortie-map-data.geojson"
@@ -17,6 +17,7 @@ COORD_RE = re.compile(
 )
 
 PLACE_POINTS = {
+    "Fort White": (23.1615, 93.4419),
     "Prome": (18.8246, 95.2222),
     "Monywa": (22.1086, 95.1358),
     "Maymyo": (22.035, 96.4568),
@@ -29,6 +30,7 @@ PLACE_POINTS = {
     "Kutkai": (23.1889, 97.4389),
     "Mangshih": (24.4367, 98.5858),
     "Mangshi": (24.4367, 98.5858),
+    "Myaungup": (18.8069, 94.5614),
     "Bawgyo": (22.633, 96.99),
     "Hsipaw": (22.62, 97.3),
     "Chaung-U": (21.95, 95.27),
@@ -36,6 +38,7 @@ PLACE_POINTS = {
     "Thedaw": (20.38, 94.88),
     "Myittha": (20.85, 96.37),
     "Indainggyi": (22.93, 95.33),
+    "Namsang": (20.8878, 97.7356),
 }
 
 APPROXIMATE_TARGET_POINTS = {
@@ -148,7 +151,7 @@ def split_target(target: str):
     if "Primary:" in target:
         primary = first_match(r"Primary:\s*([^;]+)", target)
     if "alternate" in target.lower():
-        alternate = first_match(r"alternate(?: target| No\. \d+| weather alternate)?:\s*([^;]+)", target)
+        alternate = first_match(r"alternate(?: target(?: bombed)?| No\. \d+| weather alternate)?:\s*([^;]+)", target)
     if not primary and ";" in target:
         primary = clean(target.split(";")[0])
     if not primary:
@@ -157,11 +160,33 @@ def split_target(target: str):
 
 
 def infer_place_point(*texts: str):
-    haystack = " ".join(clean(t) for t in texts)
-    for place, coords in PLACE_POINTS.items():
-        if place.lower() in haystack.lower():
-            return {"lat": coords[0], "lon": coords[1], "label": place}
+    for text in texts:
+        cleaned = clean(text)
+        lower = cleaned.lower()
+        for place, coords in PLACE_POINTS.items():
+            if place.lower() in lower:
+                return {"lat": coords[0], "lon": coords[1], "label": place}
     return None
+
+
+def extract_place_points(*texts: str):
+    points = []
+    seen = set()
+    for text in texts:
+        cleaned = clean(text)
+        lower = cleaned.lower()
+        found = []
+        for place, coords in PLACE_POINTS.items():
+            idx = lower.find(place.lower())
+            if idx != -1:
+                found.append((idx, place, coords))
+        for _, place, coords in sorted(found, key=lambda item: item[0]):
+            key = (round(coords[0], 6), round(coords[1], 6))
+            if key in seen:
+                continue
+            seen.add(key)
+            points.append({"lat": coords[0], "lon": coords[1], "label": place})
+    return points
 
 
 def parse_all_time_values(text: str):
@@ -335,10 +360,14 @@ def derive_base_point(base: str):
     base = clean(base).lower()
     if "fenny" in base or "feni" in base:
         return 23.014, 91.397
+    if "fenni" in base:
+        return 23.014, 91.397
     if "comilla" in base:
         return 23.4607, 91.1809
     if "fenny a/d" in base:
         return 23.014, 91.397
+    if "tiddim" in base:
+        return 23.3787, 93.6580
     return None
 
 
@@ -363,6 +392,16 @@ def normalize_row(row):
             event_coords.append(coord)
         else:
             coords.append(coord)
+
+    place_points = extract_place_points(primary_target, alternate_target, route_note, observations)
+    if len(coords) < 3:
+        for place_point in place_points:
+            key = (round(place_point["lat"], 6), round(place_point["lon"], 6))
+            existing_route = {(round(coord["lat"], 6), round(coord["lon"], 6)) for coord in coords}
+            existing_event = {(round(coord["lat"], 6), round(coord["lon"], 6)) for coord in event_coords}
+            if key in existing_route or key in existing_event:
+                continue
+            coords.append(place_point)
 
     lead_aircraft = first_match(r"Leading (?:Plane|Aircraft)\s*#?(\d+)", special) or first_match(
         r"lead(?:ing)? (?:plane|aircraft)(?: was)?\s*#?(\d+)", route_note + " " + special
@@ -499,6 +538,22 @@ def parse_time_value(date_value: str, time_value: str):
     return f"{date_value}T{digits[:2]}:{digits[2:]}:00Z"
 
 
+def slugify(value: str) -> str:
+    value = clean(value)
+    value = re.sub(r"[^A-Za-z0-9._-]+", "_", value)
+    value = re.sub(r"_+", "_", value).strip("_")
+    return value or "unknown"
+
+
+def build_scan_path(sortie_id: str, filename: str, kind: str) -> str:
+    filename = clean(filename)
+    if not sortie_id or not filename:
+        return ""
+    relative = f"./LabeledSorties/{sortie_id}/{sortie_id}__{kind}__{slugify(filename)}"
+    absolute = ROOT / "Oct1944" / relative.replace("./", "", 1)
+    return relative if absolute.exists() else ""
+
+
 def build_player_missions(rows):
     missions = []
     for row in rows:
@@ -524,7 +579,13 @@ def build_player_missions(rows):
             "aircraftCount": row["aircraft_count"],
             "base": row["base"],
             "sourceFront": row["source_front_image"],
-            "sourceBack": row["paired_back_candidate_by_rule"] if row["paired_back_reviewed"] == "yes" else "",
+            "sourceBack": row["paired_back_candidate_by_rule"],
+            "scanFrontPath": build_scan_path(row["sortie_id"], row["source_front_image"], "front"),
+            "scanBackPath": build_scan_path(
+                row["sortie_id"],
+                row["paired_back_candidate_by_rule"],
+                "back_reviewed" if row["paired_back_reviewed"] == "yes" else "back_candidate",
+            ),
             "confidence": confidence,
             "primaryTarget": row["primary_target"],
             "alternateTarget": row["alternate_target"],
