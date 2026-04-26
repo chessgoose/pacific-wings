@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacific Wings 1941-1945 | WWII Flight Tracker</title>
+    <meta name="description"
+        content="A real-time flight tracker for historical WWII aircraft in the Pacific Theater, covering China, Japan, and Korea from 1944 to 1945.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="dark-theme">
+    <div id="app">
+        <!-- Sidebar -->
+        <aside id="sidebar" class="glass-panel">
+            <div id="sidebar-views">
+
+                <!-- ══ PAGE 0: Default panels ══ -->
+                <div class="sidebar-page" id="sidebar-default">
+
+                    <!-- Compact toolbar -->
+                    <div class="sw-toolbar">
+                        <label id="load-file-btn" class="sw-btn">
+                            Load CSV
+                            <input type="file" id="csv-file-input" accept=".csv" style="display:none;">
+                        </label>
+                        <button id="about-btn" class="sw-btn">About</button>
+                        <button id="clear-all" class="sw-btn sw-btn-danger">Clear</button>
+                    </div>
+
+                    <!-- Panel: Active Missions -->
+                    <div class="sw-panel">
+                        <div class="sw-panel-hd">
+                            <span class="sw-panel-title">Active Missions</span>
+                            <button class="sw-collapse-btn" aria-label="toggle">−</button>
+                        </div>
+                        <div class="sw-panel-bd">
+                            <div class="sw-stat-row">
+                                <span>Currently flying</span>
+                                <strong id="active-count">0</strong>
+                            </div>
+                            <div id="active-missions-list" class="sw-mission-list"></div>
+                        </div>
+                    </div>
+
+                    <!-- Panel: Numbered Air Force Filter -->
+                    <div class="sw-panel">
+                        <div class="sw-panel-hd">
+                            <span class="sw-panel-title">Numbered Air Force Filter</span>
+                            <button class="sw-collapse-btn" aria-label="toggle">−</button>
+                        </div>
+                        <div class="sw-panel-bd">
+                            <div class="sqf-controls">
+                                <button id="sqf-select-all" class="sqf-ctrl-btn">Select All</button>
+                                <button id="sqf-unselect-all" class="sqf-ctrl-btn">Unselect All</button>
+                            </div>
+                            <div id="sqf-list" class="sqf-list"></div>
+                        </div>
+                    </div>
+
+                    <!-- hidden flight-list kept for JS compatibility -->
+                    <ul id="flight-list" style="display:none;"></ul>
+                    <div id="custom-jumps-section" class="hidden"></div>
+                    <div id="squadron-tags" style="display:none;"></div>
+                    <input type="text" id="flight-search" style="display:none;">
+                    <button id="search-all-toggle" style="display:none;"></button>
+
+                </div><!-- /sidebar-default -->
+
+                <!-- ══ PAGE 1: Detail ══ -->
+                <div class="sidebar-page" id="sidebar-detail">
+
+                    <button id="detail-close" class="sw-detail-close" title="Close">&times;</button>
+
+                    <!-- Flight details -->
+                    <div id="selected-flight-details" class="hidden">
+                        <div class="fd-header">
+                            <div class="fd-header-text">
+                                <div class="fd-callsign" id="plane-type">-</div>
+                                <div class="fd-subtype fd-meta-id" id="plane-id">-</div>
+                            </div>
+                        </div>
+                        <div class="fd-section">
+                            <div class="fd-section-title">Mission Data</div>
+                            <div class="fd-grid">
+                                <div class="fd-cell fd-cell-wide">
+                                    <span class="fd-cell-label">Air Force / Command</span>
+                                    <span class="fd-cell-value" id="plane-squadron">-</span>
+                                </div>
+                                <div class="fd-cell fd-cell-wide">
+                                    <span class="fd-cell-label">Mission Type</span>
+                                    <span class="fd-cell-value" id="plane-category">-</span>
+                                </div>
+                                <div class="fd-cell">
+                                    <span class="fd-cell-label">Altitude</span>
+                                    <span class="fd-cell-value" id="plane-alt">-</span>
+                                </div>
+                                <div class="fd-cell">
+                                    <span class="fd-cell-label">Speed</span>
+                                    <span class="fd-cell-value" id="plane-speed">-</span>
+                                </div>
+                                <div class="fd-cell">
+                                    <span class="fd-cell-label">Aircraft</span>
+                                    <span class="fd-cell-value" id="plane-quantity">-</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fd-section">
+                            <div class="fd-section-title">Route</div>
+                            <div class="fd-route">
+                                <div class="fd-route-point">
+                                    <span class="fd-cell-label">Origin</span>
+                                    <span class="fd-cell-value" id="plane-origin">-</span>
+                                </div>
+                                <div class="fd-route-arrow">→</div>
+                                <div class="fd-route-point fd-route-right">
+                                    <span class="fd-cell-label">Destination</span>
+                                    <span class="fd-cell-value" id="plane-dest">-</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fd-section fd-section-last">
+                            <div class="fd-section-title">Mission Notes</div>
+                            <div id="plane-description" class="fd-description"></div>
+                        </div>
+                    </div>
+
+                    <!-- Base details -->
+                    <div id="selected-base-details" class="hidden">
+                        <div class="fd-header">
+                            <div>
+                                <div class="fd-callsign" id="base-name">-</div>
+                                <div class="fd-subtype">Airbase</div>
+                            </div>
+                        </div>
+                        <div class="fd-section">
+                            <div class="fd-section-title">Unit</div>
+                            <div class="fd-grid">
+                                <div class="fd-cell fd-cell-wide">
+                                    <span class="fd-cell-label">Air Force</span>
+                                    <span class="fd-cell-value" id="base-af">-</span>
+                                </div>
+                                <div class="fd-cell fd-cell-wide">
+                                    <span class="fd-cell-label">Active Period</span>
+                                    <span class="fd-cell-value" id="base-active">-</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fd-section">
+                            <div class="fd-section-title">Position</div>
+                            <div class="fd-grid">
+                                <div class="fd-cell fd-cell-wide">
+                                    <span class="fd-cell-label">Coordinates</span>
+                                    <span class="fd-cell-value" id="base-location">-</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fd-section fd-section-last">
+                            <div class="fd-section-title">Notes</div>
+                            <div id="base-notes" class="fd-description"></div>
+                        </div>
+                    </div>
+
+                    <!-- Target details -->
+                    <div id="selected-target-details" class="hidden">
+                        <div class="fd-header">
+                            <div>
+                                <div class="fd-callsign" id="target-name">-</div>
+                                <div class="fd-subtype" id="target-type">Target</div>
+                            </div>
+                        </div>
+                        <div class="fd-section">
+                            <div class="fd-section-title">Location</div>
+                            <div class="fd-grid">
+                                <div class="fd-cell fd-cell-wide">
+                                    <span class="fd-cell-label">Country / Region</span>
+                                    <span class="fd-cell-value" id="target-country">-</span>
+                                </div>
+                                <div class="fd-cell fd-cell-wide">
+                                    <span class="fd-cell-label">Coordinates</span>
+                                    <span class="fd-cell-value" id="target-location">-</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fd-section fd-section-last">
+                            <div class="fd-section-title">Missions to This Target</div>
+                            <div id="target-missions-list" class="sw-mission-list"></div>
+                        </div>
+                    </div>
+
+                </div><!-- /sidebar-detail -->
+
+            </div><!-- /sidebar-views -->
+        </aside>
+
+        <!-- Map Container -->
+        <main id="map-container">
+            <div id="map"></div>
+
+            <!-- Map Header -->
+            <div id="map-header">
+                <h1>Pacific Wings</h1>
+                <p class="subtitle">US World War II Air Force Pacific Theater (1941-45)</p>
+            </div>
+
+            <!-- Mission ID Search -->
+            <div id="map-search">
+                <input type="text" id="mission-id-jump" placeholder="Jump to Mission ID…" autocomplete="off">
+                <div id="mission-id-error"></div>
+            </div>
+
+
+            <!-- Timeline Controls -->
+            <div id="timeline-container" class="glass-panel">
+                <div class="timeline-header">
+                    <div class="current-date-info">
+                        <span id="current-date">Oct 25, 1944</span>
+                        <span id="current-time">10:45 AM</span>
+                    </div>
+                    <div class="playback-controls">
+                        <button id="prev-day" class="control-btn" title="Previous Day">⏮</button>
+                        <button id="prev-hour" class="control-btn" title="Previous Hour" style="font-size: 0.9rem;">prev
+                            hour</button>
+                        <button id="play-pause" class="control-btn play" title="Play/Pause">▶</button>
+                        <button id="next-hour" class="control-btn" title="Next Hour" style="font-size: 0.9rem;">next
+                            hour</button>
+                        <button id="next-day" class="control-btn" title="Next Day">⏭</button>
+                    </div>
+                    <div class="speed-control">
+                        <label>Speed:</label>
+                        <select id="time-speed">
+                            <option value="1440" selected>1d/min</option>
+                            <option value="2880">2d/min</option>
+                            <option value="7200">5d/min</option>
+                            <option value="10080">1wk/min</option>
+                            <option value="43200">1mo/min</option>
+                            <option value="129600">3mo/min</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="slider-wrapper">
+                    <input type="range" id="timeline-slider" min="0" max="100000" value="0">
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- About Modal -->
+    <div id="about-modal" class="modal hidden">
+        <div class="modal-content glass-panel about-modal-content">
+            <span class="close-modal" id="about-close">&times;</span>
+            <h2>About Pacific Wings</h2>
+            <p>A historical flight tracker for US Army Air Forces operations in the Pacific Theater, 1941–1945. Missions are visualized in real time along the timeline, with routes derived from operational records.</p>
+
+            <div class="about-section">
+                <h3>Vision</h3>
+                <p>Pacific Wings is meant to be a foundation for something bigger: an <strong>open-source platform where anyone can contribute World War II flight path data</strong>. The goal is to build a community-maintained database of individual sorties — with aircraft type, origin, destination, timing, and crew details — that can be visualized, explored, and cross-referenced.</p>
+                <p>Right now the dataset is drawn from USAAF operational summaries, which record activity at the air force or command level. But the real history lives in the <em>mission reports</em>: the individual sortie records, bomb group logs, and crew debriefs sitting in archives at AFHRA, the National Archives, and private collections. If those records were digitized and contributed here, this map could show not just "the 8th Air Force bombed X" but every single aircraft that flew that day, the exact route it took, and who was in it.</p>
+                <p>If you have access to sortie-level data — from historical research, family records, or archival work — you can load it directly using the <strong>Load CSV</strong> button below. The format is documented in the schema section. Contributions to the core dataset are welcome via the project repository.</p>
+            </div>
+
+            <div class="about-section">
+                <h3>Sources</h3>
+                <ul class="about-list">
+                    <li><em>USAF Historical Division, Air Force Historical Research Agency (AFHRA)</em> — mission chronologies and operational summaries</li>
+                    <li>Historical basemap: <a href="https://github.com/aourednik/historical-basemaps" target="_blank" rel="noopener">aourednik/historical-basemaps</a> (1938 GeoJSON)</li>
+                </ul>
+            </div>
+
+            <div class="about-section">
+                <h3>Load CSV — Format</h3>
+                <p>The <strong>Load CSV</strong> button accepts a local file. Data never leaves your browser. Required columns (header row must be present):</p>
+                <div class="csv-schema">
+                    <table class="about-table">
+                        <thead><tr><th>Column</th><th>Example</th><th>Notes</th></tr></thead>
+                        <tbody>
+                            <tr><td>id</td><td>TWENTHAF-19450806-00</td><td>Unique mission identifier</td></tr>
+                            <tr><td>squadron</td><td>Twentieth AF</td><td>Legacy field name; Air Force / command name</td></tr>
+                            <tr><td>type</td><td>B-29 Superfortress</td><td>Aircraft type</td></tr>
+                            <tr><td>description</td><td>"Mission notes…"</td><td>Free text; quote if it contains commas</td></tr>
+                            <tr><td>start_lat</td><td>24.78</td><td>Origin latitude</td></tr>
+                            <tr><td>start_lng</td><td>141.32</td><td>Origin longitude</td></tr>
+                            <tr><td>end_lat</td><td>34.39</td><td>Destination latitude</td></tr>
+                            <tr><td>end_lng</td><td>132.45</td><td>Destination longitude</td></tr>
+                            <tr><td>start_time</td><td>1945-08-06T02:45:00Z</td><td>ISO 8601 UTC</td></tr>
+                            <tr><td>duration_hours</td><td>6.5</td><td>Flight duration in hours</td></tr>
+                            <tr><td>altitude</td><td>31000</td><td>Feet (optional)</td></tr>
+                            <tr><td>speed</td><td>220</td><td>MPH (optional)</td></tr>
+                            <tr><td>waypoints</td><td>25.1:141.3;30.0:138.0</td><td>lat:lng pairs separated by <code>;</code> (optional)</td></tr>
+                            <tr><td>origin_base</td><td>North Field Tinian</td><td>Must match a base in bases.csv (optional)</td></tr>
+                            <tr><td>target_name</td><td>Hiroshima</td><td>Must match a target in targets.csv (optional)</td></tr>
+                            <tr><td>num_aircraft</td><td>1</td><td>Number of aircraft (optional)</td></tr>
+                            <tr><td>to_check</td><td></td><td>Internal review flag — leave blank</td></tr>
+                            <tr><td>mission_category</td><td>Strategic Bombing</td><td>Category label (optional)</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Import Modal -->
+    <div id="import-modal" class="modal hidden">
+        <div class="modal-content glass-panel">
+            <header>
+                <h2>Import Missions</h2>
+                <span class="close-modal">&times;</span>
+            </header>
+            <p>Paste CSV mission data:</p>
+            <textarea id="csv-input" placeholder="Paste CSV data here..."></textarea>
+            <div class="modal-actions">
+                <button id="clear-csv" class="primary-btn" style="background: #666; color: white;">Clear</button>
+                <button id="process-csv" class="primary-btn">Load CSV</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="data/bases_data.js"></script>
+    <script src="data/missions_data.js"></script>
+    <script src="data/aircrafts_data.js"></script>
+    <script src="data/targets_data.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
