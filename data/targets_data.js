@@ -32,7 +32,7 @@ window.TARGETS_DATA = [
   {name:"Truk",aliases:["Truk Lagoon", "Chuuk", "Truk Atoll"],lat:7.45,lng:151.85,country:"Caroline Islands",type:"naval base"},
   {name:"Susaki",aliases:["Susaki A/F", "Susuiki"],lat:27.06,lng:142.21,country:"Chichi Jima",type:"airfield"},
   {name:"Nazan and Kuluk Bays",aliases:["Nazan Bay", "Kuluk Bay", "Atka Island", "Adak Island"],lat:52.04,lng:-175.37,country:"Aleutians",type:"bay"},
-  {name:"Kuanshuishih",aliases:["Guanshuishi"],lat:null,lng:null,country:"China",type:"railroad yard"},
+  {name:"Kuanshuishih",aliases:["Guanshuishi", "Guangshui"],lat:31.68,lng:113.84,country:"China",type:"railroad yard"},
   {name:"Dublon",aliases:["Dublon Island", "Tonoas", "Truk Dublon"],lat:7.36,lng:151.87,country:"Caroline Islands",type:"naval base"},
   {name:"Raluana Pt",aliases:["Raluana Point", "Raluana"],lat:-4.37,lng:152.21,country:"New Britain",type:"point"},
   {name:"Otomari Cape",aliases:["Cape Otomari", "Otomari", "Korsakov"],lat:46.63,lng:142.78,country:"Sakhalin",type:"cape/harbor"},
@@ -40,6 +40,7 @@ window.TARGETS_DATA = [
   {name:"Balete Pass",aliases:["Dalton Pass", "Santa Fe Pass"],lat:16.3,lng:121.2,country:"Philippines",type:"mountain pass"},
   {name:"Wake",aliases:["Wake Island", "Wake Atoll"],lat:19.28,lng:166.64,country:"Wake Island",type:"island/airfield"},
   {name:"Ponape",aliases:["Pohnpei", "Ponape Island"],lat:6.96,lng:158.21,country:"Caroline Islands",type:"island/airfield"},
+  {name:"Woleai",aliases:["Woleai Atoll", "Oleai"],lat:7.37,lng:143.93,country:"Caroline Islands",type:"atoll/airfield"},
   {name:"Jaluit",aliases:["Jaluit Atoll", "Jabor"],lat:5.92,lng:169.63,country:"Marshall Islands",type:"atoll/airfield"},
   {name:"Nauru",aliases:["Nauru Island", "Pleasant Island"],lat:-0.52,lng:166.93,country:"Nauru",type:"island/airfield"},
   {name:"Maloelap",aliases:["Maloelap Atoll", "Taroa"],lat:8.74,lng:171.23,country:"Marshall Islands",type:"atoll/airfield"},
@@ -134,5 +135,8 @@ window.TARGETS_DATA = [
   {name:"Ternate",aliases:["Ternate Island", "Ternate A/F"],lat:0.78,lng:127.38,country:"Maluku",type:"island/airfield"},
   {name:"Waingapoe",aliases:["Waingapu", "Sumba Island"],lat:-9.65,lng:120.27,country:"Sumba",type:"town/airfield"},
   {name:"Buna",aliases:["Buna A/F", "Buna Mission"],lat:-8.67,lng:148.4,country:"New Guinea",type:"battle area/airfield"},
-  {name:"Rapopo",aliases:["Rapopo A/F", "Rapopo Airfield"],lat:-4.21,lng:152.37,country:"New Britain",type:"airfield"}
+  {name:"Rapopo",aliases:["Rapopo A/F", "Rapopo Airfield"],lat:-4.21,lng:152.37,country:"New Britain",type:"airfield"},
+  {name:"Owchihkow",aliases:["Ouchikou", "Owchi-kow"],lat:29.48,lng:112.48,country:"China",type:"town/ground target area"},
+  {name:"Palmyra",aliases:["Palmyra Atoll", "Palmyra Island"],lat:5.87,lng:-162.08,country:"US Pacific",type:"island/atoll"},
+  {name:"Nandi",aliases:["Nadi", "Nandi Airfield", "Viti Levu"],lat:-17.78,lng:177.44,country:"Fiji",type:"airfield"}
 ];
