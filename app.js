@@ -297,7 +297,18 @@ class PacificWingsApp {
                 const startMs = new Date(startTime).getTime();
                 if (isNaN(startMs)) continue;
 
-                const duration = parseFloat(durationHours) * 3600 * 1000;
+                const speedNum = parseFloat(speed);
+                let duration;
+                if (!isNaN(eLatNum) && !isNaN(eLngNum) && !isNaN(speedNum) && speedNum > 0) {
+                    const R = 3958.8; // Earth radius in miles
+                    const dLat = (eLatNum - sLatNum) * Math.PI / 180;
+                    const dLng = (eLngNum - sLngNum) * Math.PI / 180;
+                    const a = Math.sin(dLat/2)**2 + Math.cos(sLatNum * Math.PI/180) * Math.cos(eLatNum * Math.PI/180) * Math.sin(dLng/2)**2;
+                    const distMiles = R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+                    duration = (distMiles / speedNum) * 3600 * 1000;
+                } else {
+                    duration = parseFloat(durationHours) * 3600 * 1000;
+                }
 
                 let waypoints;
                 if (waypointsRaw && waypointsRaw.trim()) {

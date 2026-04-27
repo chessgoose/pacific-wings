@@ -7,6 +7,8 @@ Kiska,Kiska Island,51.97,177.56,Aleutians,island/base
 Attu,Attu Island,52.90,-173.19,Aleutians,island/base
 Paramushiru,Paramushiro,50.38,155.76,Kuriles,island/airfield
 Shimushu,Shimushu,50.71,156.12,Kuriles,island/airfield
+Onnekotan,"Onekotan,Onnekotan Island",49.45,154.77,Kuriles,island
+Matsuwa,"Matua,Matsuwa Island",48.08,153.22,Kuriles,island/airfield
 Lae,Lae,-6.73,146.99,New Guinea,port/airfield
 Salamaua,Salamaua,-7.07,147.17,New Guinea,port/airfield
 Komiatum,Komiatum Ridge,-7.1,147.05,New Guinea,defensive position
@@ -38,6 +40,7 @@ Balete Pass,"Dalton Pass,Santa Fe Pass",16.3,121.2,Philippines,mountain pass
 Wake,"Wake Island,Wake Atoll",19.28,166.64,Wake Island,island/airfield
 Ponape,"Pohnpei,Ponape Island",6.96,158.21,Caroline Islands,island/airfield
 Jaluit,"Jaluit Atoll,Jabor",5.92,169.63,Marshall Islands,atoll/airfield
+Nauru,"Nauru Island,Pleasant Island",-0.52,166.93,Nauru,island/airfield
 Maloelap,"Maloelap Atoll,Taroa",8.74,171.23,Marshall Islands,atoll/airfield
 Kwajalein,"Kwajalein Atoll",8.72,167.73,Marshall Islands,atoll/naval base
 Wotje,"Wotje Atoll",9.45,170.22,Marshall Islands,atoll/airfield
@@ -48,6 +51,7 @@ Mohnyin,,24.78,96.37,Burma,town
 Mawhun,,23.30,97.61,Burma,town
 Myothit,,24.26,97.24,Burma,town
 Kadrangyang,,26.12,97.46,Burma,bridge
+Tengehung,"Tengchong,Tengchung,Tengchung-hsien",25.02,98.50,China,town
 Chefang,"Zhefang,Che-fang",24.39,98.81,China,town
 Weichow Island,"Weizhou Dao,Weichow,Weizhou",21.03,109.10,China,island
 Saint John Island,"St. John Island,St John I.",21.10,107.50,Vietnam,island
