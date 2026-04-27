@@ -47,11 +47,14 @@ Naba,"Naba Junction",24.35,95.97,Burma,railroad junction
 Mohnyin,,24.78,96.37,Burma,town
 Mawhun,,23.30,97.61,Burma,town
 Myothit,,24.26,97.24,Burma,town
+Kadrangyang,,26.12,97.46,Burma,bridge
 Chefang,"Zhefang,Che-fang",24.39,98.81,China,town
 Weichow Island,"Weizhou Dao,Weichow,Weizhou",21.03,109.10,China,island
 Saint John Island,"St. John Island,St John I.",21.10,107.50,Vietnam,island
 Boram,"Boram A/F,Boram Airfield",-3.58,143.67,New Guinea,airfield
 Amboina,"Ambon,Amboina Island,Halong",-3.70,128.18,Maluku,port/airfield
+Old Namlea A/F,"Old Namlea,Old Namlea Airfield,Namlea",-3.25,127.08,Buru,airfield
+Wasile Bay,"Wasile,Halmahera waters",1.07,128.27,Halmahera,bay/shipping area
 Aitape,,-3.14,142.35,New Guinea,town
 Shaggy Ridge,"Kankiryo Saddle,Finisterre Range",-5.75,145.67,New Guinea,ridge/battlefield
 Cape Raoult,,-6.00,147.00,New Guinea,cape
@@ -112,3 +115,18 @@ Sepinggang,"Sepinggang A/F,Balikpapan area",1.27,116.9,Borneo,airfield
 Jesselton,"Jesselton A/F,Kota Kinabalu",5.98,116.07,Borneo,city/airfield
 Sandakan,"Sandakan A/F,Sandakan Airfield",5.84,118.12,Borneo,city/airfield
 Buayoan,"Buayan A/F,Buayoan A/F,General Santos",6.05,125.17,Philippines,airfield
+Madang,"Madang A/F,Madang Harbor",-5.22,145.79,New Guinea,port/airfield
+Alexishafen,"Alexishafen Harbor,Alexishafen A/F",-5.07,145.74,New Guinea,port/airfield
+Hansa Bay,"Hansa,Hansa Bay anchorage",-4.10,144.83,New Guinea,bay/anchorage
+Balikpapan,"Balikpapan oil center,Balikpapan port",-1.27,116.83,Borneo,oil refinery/port
+Sattelberg,"Sattelberg Mission,Sattelberg Hill",-6.55,147.82,New Guinea,fortified hill/mission
+Hoskins,"Cape Hoskins,Hoskins A/F",-5.47,150.40,New Britain,airfield/port
+Arawe,"Arawe Peninsula,Arawe A/F",-6.03,149.45,New Britain,peninsula/battle area
+Sanananda,"Sanananda Point,Sanananda Track",-8.87,148.53,New Guinea,battle area/point
+Koepang,"Kupang,Koepang A/F",-10.17,123.58,Timor,airfield/town
+Nadzab,"Nadzab A/F,Nadzab Airstrip",-6.57,146.73,New Guinea,airfield
+Larat,"Larat A/F,Tanimbar Islands",-7.17,131.83,Tanimbar Islands,airfield/town
+Ternate,"Ternate Island,Ternate A/F",0.78,127.38,Maluku,island/airfield
+Waingapoe,"Waingapu,Sumba Island",-9.65,120.27,Sumba,town/airfield
+Buna,"Buna A/F,Buna Mission",-8.67,148.40,New Guinea,battle area/airfield
+Rapopo,"Rapopo A/F,Rapopo Airfield",-4.21,152.37,New Britain,airfield
