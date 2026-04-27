@@ -33,7 +33,7 @@
         ]
       },
       "properties": {
-        "sortie_id": "434BS_1944-10-01",
+        "sortie_id": "484BS_1944-10-01",
         "report_date": "1944-10-01",
         "squadron": "484th Squadron",
         "primary_target": "rail bridge over Panlaung River at Myittha, Burma",
@@ -52,7 +52,7 @@
         ]
       },
       "properties": {
-        "sortie_id": "434BS_1944-10-01",
+        "sortie_id": "484BS_1944-10-01",
         "report_date": "1944-10-01",
         "squadron": "484th Squadron",
         "kind": "base",
@@ -70,7 +70,7 @@
         ]
       },
       "properties": {
-        "sortie_id": "434BS_1944-10-01",
+        "sortie_id": "484BS_1944-10-01",
         "report_date": "1944-10-01",
         "squadron": "484th Squadron",
         "kind": "coordinate",
@@ -88,7 +88,7 @@
         ]
       },
       "properties": {
-        "sortie_id": "434BS_1944-10-01",
+        "sortie_id": "484BS_1944-10-01",
         "report_date": "1944-10-01",
         "squadron": "484th Squadron",
         "kind": "coordinate",
@@ -106,7 +106,7 @@
         ]
       },
       "properties": {
-        "sortie_id": "434BS_1944-10-01",
+        "sortie_id": "484BS_1944-10-01",
         "report_date": "1944-10-01",
         "squadron": "484th Squadron",
         "kind": "coordinate",
@@ -124,7 +124,7 @@
         ]
       },
       "properties": {
-        "sortie_id": "434BS_1944-10-01",
+        "sortie_id": "484BS_1944-10-01",
         "report_date": "1944-10-01",
         "squadron": "484th Squadron",
         "kind": "event_coordinate",
@@ -142,7 +142,7 @@
         ]
       },
       "properties": {
-        "sortie_id": "434BS_1944-10-01",
+        "sortie_id": "484BS_1944-10-01",
         "report_date": "1944-10-01",
         "squadron": "484th Squadron",
         "kind": "base_return",
@@ -4159,7 +4159,7 @@
         ]
       },
       "properties": {
-        "sortie_id": "434BS_1944-10-19_A",
+        "sortie_id": "434BS_1944-10-19",
         "report_date": "1944-10-19",
         "squadron": "434th Squadron",
         "primary_target": "military area at Kennedy Peak, Burma",
@@ -4322,9 +4322,9 @@
         ]
       },
       "properties": {
-        "sortie_id": "434BS_1944-10-19",
+        "sortie_id": "484BS_1944-10-19",
         "report_date": "1944-10-19",
-        "squadron": "434th Bombardment Squadron",
+        "squadron": "484th Bombardment Squadron",
         "primary_target": "Military area at Vital Corner, Burma (primary)",
         "alternate_target": "",
         "target_status": "alternate attacked",
@@ -4341,9 +4341,9 @@
         ]
       },
       "properties": {
-        "sortie_id": "434BS_1944-10-19_A",
+        "sortie_id": "484BS_1944-10-19",
         "report_date": "1944-10-19",
-        "squadron": "434th Bombardment Squadron",
+        "squadron": "484th Bombardment Squadron",
         "kind": "base",
         "label": "Comilla",
         "confidence": "high for front-page route narrative; target geocoding still partly interpretive"
@@ -4359,9 +4359,9 @@
         ]
       },
       "properties": {
-        "sortie_id": "434BS_1944-10-19_A",
+        "sortie_id": "484BS_1944-10-19",
         "report_date": "1944-10-19",
-        "squadron": "434th Bombardment Squadron",
+        "squadron": "484th Bombardment Squadron",
         "kind": "coordinate",
         "label": "21\u00b058'N 95\u00b008'E",
         "confidence": "high for front-page route narrative; target geocoding still partly interpretive"
@@ -4377,9 +4377,9 @@
         ]
       },
       "properties": {
-        "sortie_id": "434BS_1944-10-19_A",
+        "sortie_id": "484BS_1944-10-19",
         "report_date": "1944-10-19",
-        "squadron": "434th Bombardment Squadron",
+        "squadron": "484th Bombardment Squadron",
         "kind": "coordinate",
         "label": "23\u00b015'N 94\u00b011'E",
         "confidence": "high for front-page route narrative; target geocoding still partly interpretive"
@@ -4395,9 +4395,9 @@
         ]
       },
       "properties": {
-        "sortie_id": "434BS_1944-10-19_A",
+        "sortie_id": "484BS_1944-10-19",
         "report_date": "1944-10-19",
-        "squadron": "434th Bombardment Squadron",
+        "squadron": "484th Bombardment Squadron",
         "kind": "coordinate",
         "label": "Vital Corner",
         "confidence": "high for front-page route narrative; target geocoding still partly interpretive"
@@ -4413,9 +4413,9 @@
         ]
       },
       "properties": {
-        "sortie_id": "434BS_1944-10-19_A",
+        "sortie_id": "484BS_1944-10-19",
         "report_date": "1944-10-19",
-        "squadron": "434th Bombardment Squadron",
+        "squadron": "484th Bombardment Squadron",
         "kind": "base_return",
         "label": "Comilla",
         "confidence": "high for front-page route narrative; target geocoding still partly interpretive"
@@ -7142,8 +7142,8 @@
             23.014
           ],
           [
-            95.666667,
-            21.966667
+            96.666667,
+            21.983333
           ],
           [
             91.397,
@@ -7152,13 +7152,13 @@
         ]
       },
       "properties": {
-        "sortie_id": "82BS_1944-10-30_MU_RIVER_BYPASS",
-        "report_date": "1944-10-30",
+        "sortie_id": "82BS_1944-10-25",
+        "report_date": "1944-10-25",
         "squadron": "82nd Squadron",
-        "primary_target": "Mu River by-pass bridge, Burma (21 58N 95 40E)",
+        "primary_target": "Me River by-pass bridge, Burma (21 59N 96 40E",
         "alternate_target": "",
         "target_status": "",
-        "confidence": "medium; front and reviewed reverse page confirm the date, squadron, target, and route-weather notes, though some figures remain approximate"
+        "confidence": "medium; front and backside reviewed, with some low-legibility figures still approximate"
       }
     },
     {
@@ -7171,8 +7171,8 @@
         ]
       },
       "properties": {
-        "sortie_id": "82BS_1944-10-30_MU_RIVER_BYPASS",
-        "report_date": "1944-10-30",
+        "sortie_id": "82BS_1944-10-25",
+        "report_date": "1944-10-25",
         "squadron": "82nd Squadron",
         "kind": "base",
         "label": "Fenny",
@@ -7184,17 +7184,17 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-            95.666667,
-            21.966667
+          96.666667,
+          21.983333
         ]
       },
       "properties": {
-        "sortie_id": "82BS_1944-10-30_MU_RIVER_BYPASS",
-        "report_date": "1944-10-30",
+        "sortie_id": "82BS_1944-10-25",
+        "report_date": "1944-10-25",
         "squadron": "82nd Squadron",
         "kind": "coordinate",
-        "label": "21 58N 95 40E",
-        "confidence": "medium; front and reviewed reverse page confirm the date, squadron, target, and route-weather notes, though some figures remain approximate"
+        "label": "21 59N 96 40E",
+        "confidence": "medium; front and backside reviewed, with some low-legibility figures still approximate"
       }
     },
     {
@@ -7207,12 +7207,12 @@
         ]
       },
       "properties": {
-        "sortie_id": "82BS_1944-10-30_MU_RIVER_BYPASS",
-        "report_date": "1944-10-30",
+        "sortie_id": "82BS_1944-10-25",
+        "report_date": "1944-10-25",
         "squadron": "82nd Squadron",
         "kind": "base_return",
         "label": "Fenny",
-        "confidence": "medium; front and reviewed reverse page confirm the date, squadron, target, and route-weather notes, though some figures remain approximate"
+        "confidence": "medium; front and backside reviewed, with some low-legibility figures still approximate"
       }
     },
     {
@@ -7318,9 +7318,9 @@
         ]
       },
       "properties": {
-        "sortie_id": "434BS_1944-10-29_AIRRADAR",
+        "sortie_id": "UNK_1944-10-29_AIRRADAR",
         "report_date": "1944-10-29",
-        "squadron": "434th Squadron",
+        "squadron": "Squadron unread on late-month scan",
         "primary_target": "erase Japanese air radar, Burma",
         "alternate_target": "",
         "target_status": "",
@@ -7337,9 +7337,9 @@
         ]
       },
       "properties": {
-        "sortie_id": "434BS_1944-10-29_AIRRADAR",
+        "sortie_id": "UNK_1944-10-29_AIRRADAR",
         "report_date": "1944-10-29",
-        "squadron": "434th Squadron",
+        "squadron": "Squadron unread on late-month scan",
         "kind": "base",
         "label": "Comilla",
         "confidence": "low-medium; date, base, target type, timing window, and backside linkage are clear, but some top-line identifiers are too faint"
@@ -7355,9 +7355,9 @@
         ]
       },
       "properties": {
-        "sortie_id": "434BS_1944-10-29_AIRRADAR",
+        "sortie_id": "UNK_1944-10-29_AIRRADAR",
         "report_date": "1944-10-29",
-        "squadron": "434th Squadron",
+        "squadron": "Squadron unread on late-month scan",
         "kind": "approximate_target",
         "label": "Burma target area (approx.)",
         "confidence": "low-medium; date, base, target type, timing window, and backside linkage are clear, but some top-line identifiers are too faint"
@@ -7373,9 +7373,9 @@
         ]
       },
       "properties": {
-        "sortie_id": "434BS_1944-10-29_AIRRADAR",
+        "sortie_id": "UNK_1944-10-29_AIRRADAR",
         "report_date": "1944-10-29",
-        "squadron": "434th Squadron",
+        "squadron": "Squadron unread on late-month scan",
         "kind": "base_return",
         "label": "Comilla",
         "confidence": "low-medium; date, base, target type, timing window, and backside linkage are clear, but some top-line identifiers are too faint"
@@ -7405,9 +7405,9 @@
         ]
       },
       "properties": {
-        "sortie_id": "81BS_1944-10-29_BR201",
+        "sortie_id": "UNK_1944-10-29_BR201",
         "report_date": "1944-10-29",
-        "squadron": "81st Squadron",
+        "squadron": "Squadron unread on late-month scan",
         "primary_target": "Rail bridge #201, LV-9205, Paukton, Burma",
         "alternate_target": "",
         "target_status": "",
@@ -7424,9 +7424,9 @@
         ]
       },
       "properties": {
-        "sortie_id": "81BS_1944-10-29_BR201",
+        "sortie_id": "UNK_1944-10-29_BR201",
         "report_date": "1944-10-29",
-        "squadron": "81st Squadron",
+        "squadron": "Squadron unread on late-month scan",
         "kind": "base",
         "label": "Fenny",
         "confidence": "medium; target, date, timing, bridge result, and backside linkage are clear, but some labels and coordinates remain approximate"
@@ -7442,9 +7442,9 @@
         ]
       },
       "properties": {
-        "sortie_id": "81BS_1944-10-29_BR201",
+        "sortie_id": "UNK_1944-10-29_BR201",
         "report_date": "1944-10-29",
-        "squadron": "81st Squadron",
+        "squadron": "Squadron unread on late-month scan",
         "kind": "coordinate",
         "label": "22 29N 95 31E",
         "confidence": "medium; target, date, timing, bridge result, and backside linkage are clear, but some labels and coordinates remain approximate"
@@ -7460,9 +7460,9 @@
         ]
       },
       "properties": {
-        "sortie_id": "81BS_1944-10-29_BR201",
+        "sortie_id": "UNK_1944-10-29_BR201",
         "report_date": "1944-10-29",
-        "squadron": "81st Squadron",
+        "squadron": "Squadron unread on late-month scan",
         "kind": "coordinate",
         "label": "22 29N 96 57E",
         "confidence": "medium; target, date, timing, bridge result, and backside linkage are clear, but some labels and coordinates remain approximate"
@@ -7478,9 +7478,9 @@
         ]
       },
       "properties": {
-        "sortie_id": "81BS_1944-10-29_BR201",
+        "sortie_id": "UNK_1944-10-29_BR201",
         "report_date": "1944-10-29",
-        "squadron": "81st Squadron",
+        "squadron": "Squadron unread on late-month scan",
         "kind": "base_return",
         "label": "Fenny",
         "confidence": "medium; target, date, timing, bridge result, and backside linkage are clear, but some labels and coordinates remain approximate"
@@ -7510,13 +7510,13 @@
         ]
       },
       "properties": {
-        "sortie_id": "81BS_1944-10-26_BR433",
-        "report_date": "1944-10-26",
-        "squadron": "81st Squadron",
+        "sortie_id": "UNK_1944-10-30_BR433",
+        "report_date": "1944-10-30",
+        "squadron": "Squadron unread on late-month scan",
         "primary_target": "Railroad bridge #433, JU-6505, Pyinmana, Burma",
         "alternate_target": "",
-        "target_status": "primary attacked",
-        "confidence": "medium; date, target, bomb totals, result, and squadron header are legible, while some wording remains faint"
+        "target_status": "alternate attacked",
+        "confidence": "medium; date, target, bomb totals, and result are legible, while squadron line and some wording remain unread"
       }
     },
     {
@@ -7529,12 +7529,12 @@
         ]
       },
       "properties": {
-        "sortie_id": "81BS_1944-10-26_BR433",
-        "report_date": "1944-10-26",
-        "squadron": "81st Squadron",
+        "sortie_id": "UNK_1944-10-30_BR433",
+        "report_date": "1944-10-30",
+        "squadron": "Squadron unread on late-month scan",
         "kind": "base",
         "label": "Fenny",
-        "confidence": "medium; date, target, bomb totals, result, and squadron header are legible, while some wording remains faint"
+        "confidence": "medium; date, target, bomb totals, and result are legible, while squadron line and some wording remain unread"
       }
     },
     {
@@ -7547,12 +7547,12 @@
         ]
       },
       "properties": {
-        "sortie_id": "81BS_1944-10-26_BR433",
-        "report_date": "1944-10-26",
-        "squadron": "81st Squadron",
+        "sortie_id": "UNK_1944-10-30_BR433",
+        "report_date": "1944-10-30",
+        "squadron": "Squadron unread on late-month scan",
         "kind": "coordinate",
         "label": "21 20N 95 47E",
-        "confidence": "medium; date, target, bomb totals, result, and squadron header are legible, while some wording remains faint"
+        "confidence": "medium; date, target, bomb totals, and result are legible, while squadron line and some wording remain unread"
       }
     },
     {
@@ -7565,12 +7565,12 @@
         ]
       },
       "properties": {
-        "sortie_id": "81BS_1944-10-26_BR433",
-        "report_date": "1944-10-26",
-        "squadron": "81st Squadron",
+        "sortie_id": "UNK_1944-10-30_BR433",
+        "report_date": "1944-10-30",
+        "squadron": "Squadron unread on late-month scan",
         "kind": "coordinate",
         "label": "Pyinmana",
-        "confidence": "medium; date, target, bomb totals, result, and squadron header are legible, while some wording remains faint"
+        "confidence": "medium; date, target, bomb totals, and result are legible, while squadron line and some wording remain unread"
       }
     },
     {
@@ -7583,12 +7583,12 @@
         ]
       },
       "properties": {
-        "sortie_id": "81BS_1944-10-26_BR433",
-        "report_date": "1944-10-26",
-        "squadron": "81st Squadron",
+        "sortie_id": "UNK_1944-10-30_BR433",
+        "report_date": "1944-10-30",
+        "squadron": "Squadron unread on late-month scan",
         "kind": "base_return",
         "label": "Fenny",
-        "confidence": "medium; date, target, bomb totals, result, and squadron header are legible, while some wording remains faint"
+        "confidence": "medium; date, target, bomb totals, and result are legible, while squadron line and some wording remain unread"
       }
     },
     {
@@ -7601,7 +7601,7 @@
             23.014
           ],
           [
-            96.116667,
+            97.283333,
             19.616667
           ],
           [
@@ -7611,13 +7611,13 @@
         ]
       },
       "properties": {
-        "sortie_id": "82BS_1944-10-26_BR4_LEWE",
-        "report_date": "1944-10-26",
-        "squadron": "82nd Squadron",
-        "primary_target": "RR bridge #4, LV-5279, Lewe, Burma (19 37N 96 07E)",
+        "sortie_id": "UNK_1944-10-30_BR44",
+        "report_date": "1944-10-30",
+        "squadron": "Squadron unread on late-month scan",
+        "primary_target": "Railroad bridge #44, ES-5279, Kyun, Burma",
         "alternate_target": "",
         "target_status": "",
-        "confidence": "medium; target, date, squadron, timing, bomb load, and bridge result are readable on the front and reviewed reverse page"
+        "confidence": "medium; target, timing, bomb load, and bridge result are readable, though some top-line identifiers are faint"
       }
     },
     {
@@ -7630,9 +7630,9 @@
         ]
       },
       "properties": {
-        "sortie_id": "82BS_1944-10-26_BR4_LEWE",
-        "report_date": "1944-10-26",
-        "squadron": "82nd Squadron",
+        "sortie_id": "UNK_1944-10-30_BR44",
+        "report_date": "1944-10-30",
+        "squadron": "Squadron unread on late-month scan",
         "kind": "base",
         "label": "Fenny",
         "confidence": "medium; target, timing, bomb load, and bridge result are readable, though some top-line identifiers are faint"
@@ -7643,17 +7643,17 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-            96.116667,
-            19.616667
+          97.283333,
+          19.616667
         ]
       },
       "properties": {
-        "sortie_id": "82BS_1944-10-26_BR4_LEWE",
-        "report_date": "1944-10-26",
-        "squadron": "82nd Squadron",
+        "sortie_id": "UNK_1944-10-30_BR44",
+        "report_date": "1944-10-30",
+        "squadron": "Squadron unread on late-month scan",
         "kind": "coordinate",
-        "label": "19 37N 96 07E",
-        "confidence": "medium; target, date, squadron, timing, bomb load, and bridge result are readable on the front and reviewed reverse page"
+        "label": "19 37N 97 17E",
+        "confidence": "medium; target, timing, bomb load, and bridge result are readable, though some top-line identifiers are faint"
       }
     },
     {
@@ -7666,12 +7666,12 @@
         ]
       },
       "properties": {
-        "sortie_id": "82BS_1944-10-26_BR4_LEWE",
-        "report_date": "1944-10-26",
-        "squadron": "82nd Squadron",
+        "sortie_id": "UNK_1944-10-30_BR44",
+        "report_date": "1944-10-30",
+        "squadron": "Squadron unread on late-month scan",
         "kind": "base_return",
         "label": "Fenny",
-        "confidence": "medium; target, date, squadron, timing, bomb load, and bridge result are readable on the front and reviewed reverse page"
+        "confidence": "medium; target, timing, bomb load, and bridge result are readable, though some top-line identifiers are faint"
       }
     },
     {

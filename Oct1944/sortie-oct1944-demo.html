@@ -197,7 +197,7 @@
             color: var(--muted);
             font-size: 0.74rem;
             line-height: 1.34;
-            max-width: 44ch;
+            max-width: none;
         }
 
         .stats-row,
@@ -234,14 +234,14 @@
         }
 
         .stat-pill {
-            padding: 7px 10px;
+            padding: 6px 9px;
             display: flex;
             gap: 7px;
             align-items: baseline;
         }
 
         .stat-pill .label {
-            font-size: 0.65rem;
+            font-size: 0.6rem;
             color: var(--muted);
             letter-spacing: 0.08em;
             text-transform: uppercase;
@@ -250,7 +250,7 @@
         .stat-pill .value {
             font-family: var(--font-mono);
             font-weight: 700;
-            font-size: 0.9rem;
+            font-size: 0.82rem;
             color: #fff;
         }
 
@@ -299,7 +299,7 @@
 
         .squadron-chip {
             padding: 6px 9px;
-            font-size: 0.7rem;
+            font-size: 0.68rem;
             line-height: 1.15;
             justify-content: center;
             text-align: center;
@@ -307,7 +307,7 @@
 
         .event-chip {
             padding: 5px 7px;
-            font-size: 0.62rem;
+            font-size: 0.68rem;
             line-height: 1.1;
             letter-spacing: 0.01em;
             justify-content: center;
@@ -433,7 +433,7 @@
         }
 
         .selection-strip {
-            margin-top: 10px;
+            margin-top: 6px;
             padding: 9px 11px;
             border-radius: 14px;
             background: rgba(255, 255, 255, 0.035);
@@ -442,6 +442,11 @@
             justify-content: space-between;
             align-items: center;
             gap: 10px;
+        }
+
+        .selection-kicker {
+            margin-top: 12px;
+            margin-bottom: 0;
         }
 
         .selection-meta {
@@ -580,6 +585,17 @@
             width: min(1100px, calc(100vw - 32px));
             max-height: min(90vh, 980px);
             overflow: auto;
+            padding: 0;
+        }
+
+        .scan-viewer-card .modal-head {
+            padding: 20px 20px 12px;
+            background: linear-gradient(180deg, rgba(9, 16, 24, 0.99), rgba(17, 24, 33, 0.96));
+            border-radius: 22px 22px 0 0;
+        }
+
+        .scan-viewer-card .scan-viewer-pages {
+            padding: 0 20px 20px;
         }
 
         .scan-viewer-pages {
@@ -631,6 +647,10 @@
             line-height: 1.45;
         }
 
+        .citation-item p + p {
+            margin-top: 0.85rem;
+        }
+
         .citation-item a {
             color: var(--blue);
             text-decoration: none;
@@ -638,6 +658,42 @@
 
         .citation-item a:hover {
             text-decoration: underline;
+        }
+
+        .csv-schema {
+            margin-top: 10px;
+            overflow-x: auto;
+        }
+
+        .about-table {
+            width: 100%;
+            min-width: 560px;
+            border-collapse: collapse;
+        }
+
+        .about-table th,
+        .about-table td {
+            padding: 8px 10px;
+            text-align: left;
+            vertical-align: top;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            font-size: 0.78rem;
+            line-height: 1.4;
+        }
+
+        .about-table th {
+            color: var(--text);
+            font-weight: 700;
+            border-top: 0;
+        }
+
+        .about-table td {
+            color: var(--muted);
+        }
+
+        .about-table code {
+            font-family: var(--font-mono);
+            font-size: 0.74rem;
         }
 
         .picker-list {
@@ -704,6 +760,30 @@
             cursor: default;
         }
 
+        .basemap-label {
+            background: none !important;
+            border: none !important;
+            box-shadow: none !important;
+            pointer-events: none;
+        }
+
+        .basemap-label span {
+            display: block;
+            font-family: var(--font-main);
+            font-size: 0.62rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: rgba(200, 200, 200, 0.75);
+            text-shadow:
+                0 0 4px #2c353c,
+                0 0 8px #2c353c,
+                1px 1px 0 #2c353c,
+                -1px -1px 0 #2c353c;
+            white-space: nowrap;
+            transform: translateX(-50%);
+        }
+
         #map-shell {
             position: relative;
             min-width: 0;
@@ -713,7 +793,7 @@
         #map {
             position: absolute;
             inset: 0;
-            background: #0b1219;
+            background: #2c353c;
         }
 
         .floating {
@@ -788,7 +868,7 @@
         .legend-card,
         .point-info-card {
             min-width: 0;
-            width: 348px;
+            width: 372px;
             align-self: flex-start;
             padding: 8px 10px;
         }
@@ -867,8 +947,8 @@
 
         .legend-row {
             display: flex;
-            flex-wrap: wrap;
-            gap: 6px 14px;
+            flex-wrap: nowrap;
+            gap: 6px 12px;
             align-items: center;
         }
 
@@ -879,7 +959,30 @@
             flex: 0 0 auto;
         }
 
-        .swatch-route-neutral { background: #4e79a7; }
+        .swatch-route-neutral {
+            background: transparent;
+            border: 2px dashed #ff4d4f;
+        }
+
+        .swatch-squadron-81 {
+            background: #66d1c1;
+        }
+
+        .swatch-squadron-82 {
+            background: #f3b64f;
+        }
+
+        .swatch-squadron-83 {
+            background: #e25555;
+        }
+
+        .swatch-squadron-434 {
+            background: #7ea6ff;
+        }
+
+        .swatch-squadron-unknown {
+            background: #b3bcc7;
+        }
 
         .legend-symbol {
             width: 18px;
@@ -900,19 +1003,19 @@
         }
 
         .point-marker {
-            width: 18px;
-            height: 18px;
+            width: 16px;
+            height: 16px;
             display: flex;
             align-items: center;
             justify-content: center;
             border-radius: 999px;
-            box-shadow: 0 0 0 1.5px rgba(255, 255, 255, 0.8), 0 6px 14px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 0 0 1.25px rgba(255, 255, 255, 0.8), 0 5px 12px rgba(0, 0, 0, 0.25);
             color: #f7fbff;
         }
 
         .point-marker svg {
-            width: 11px;
-            height: 11px;
+            width: 10px;
+            height: 10px;
             display: block;
         }
 
@@ -922,18 +1025,18 @@
 
         .point-marker-count {
             position: absolute;
-            right: -5px;
-            bottom: -5px;
-            min-width: 13px;
-            height: 13px;
-            padding: 0 3px;
+            right: -4px;
+            bottom: -4px;
+            min-width: 12px;
+            height: 12px;
+            padding: 0 2px;
             border-radius: 999px;
             display: inline-flex;
             align-items: center;
             justify-content: center;
             background: #fff;
             color: #0d1218;
-            font-size: 0.58rem;
+            font-size: 0.5rem;
             font-weight: 800;
             line-height: 1;
             box-shadow: 0 0 0 1px rgba(13, 18, 24, 0.28);
@@ -1144,7 +1247,7 @@
         .plane-marker {
             width: 28px;
             height: 28px;
-            filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.55));
+            filter: brightness(0) invert(1) drop-shadow(0 0 8px rgba(0, 0, 0, 0.55));
         }
 
         .plane-marker .plane-art {
@@ -1244,16 +1347,18 @@
         <aside id="sidebar">
             <div class="sidebar-head">
                 <div class="sidebar-head-actions">
+                    <label class="sidebar-toggle">
+                        Load CSV
+                        <input type="file" id="sortieCsvInput" accept=".csv,text/csv" style="display:none;">
+                    </label>
                     <button type="button" class="sidebar-toggle" id="openMissionBrowser">Browse Missions</button>
-                    <button type="button" class="sidebar-toggle" id="openSources">Sources</button>
+                    <button type="button" class="sidebar-toggle" id="openSources">About</button>
                 </div>
                 <div class="eyebrow">Pacific Wings Archive Player</div>
-                <h1>October 1944 Sorties</h1>
+                <h1>US Army Air Forces 12th Bombardment Group Combat Sorties, October 1944</h1>
                 <p class="summary">This player follows the 12th Bombardment Group in October 1944, after the Japanese offensive into India had been turned back and the Burma campaign shifted from emergency defense to sustained Allied attack. Flying from India, the group struck roads, rail links, supply points, and troop positions as part of the broader push to weaken Japanese control in Burma and help reopen overland communications with China.</p>
                 <div class="stats-row">
                     <div class="stat-pill"><span class="label">Sorties</span><span class="value" id="statSorties">0</span></div>
-                    <div class="stat-pill"><span class="label">Days</span><span class="value" id="statDays">0</span></div>
-                    <div class="stat-pill"><span class="label">Mappable</span><span class="value" id="statMapped">0</span></div>
                 </div>
             </div>
 
@@ -1283,6 +1388,7 @@
                         <div class="section-kicker">Event</div>
                         <div class="week-filters" id="eventFilters"></div>
                     </div>
+                    <div class="section-kicker selection-kicker">Selected Mission</div>
                     <div class="selection-strip">
                         <div class="selection-meta">
                             <strong id="selectionId">No sortie selected</strong>
@@ -1330,8 +1436,10 @@
                             <div class="legend-label">Routes</div>
                             <div class="legend-rows">
                                 <div class="legend-row">
-                                    <div class="legend-item"><span class="legend-swatch swatch-route-neutral"></span><span>Selected route</span></div>
-                                    <div class="legend-item"><span class="legend-swatch swatch-route-neutral" style="border-style:dashed;opacity:0.92"></span><span>Flown trail</span></div>
+                                    <div class="legend-item"><span class="legend-swatch swatch-squadron-81"></span><span>81st</span></div>
+                                    <div class="legend-item"><span class="legend-swatch swatch-squadron-82"></span><span>82nd</span></div>
+                                    <div class="legend-item"><span class="legend-swatch swatch-squadron-83"></span><span>83rd</span></div>
+                                    <div class="legend-item"><span class="legend-swatch swatch-squadron-434"></span><span>434th</span></div>
                                 </div>
                             </div>
                         </div>
@@ -1453,8 +1561,8 @@
         <div class="modal-card glass">
             <div class="modal-head">
                 <div>
-                    <h2>Sources</h2>
-                    <p>Archive citations for the October 1944 sortie dataset and the broader Army Air Forces records context.</p>
+                    <h2>About This Player</h2>
+                    <p>Historical context, archival provenance, and data notes for the October 1944 sortie dataset.</p>
                 </div>
                 <div class="modal-actions">
                     <button type="button" class="control-btn" id="closeSources">Close</button>
@@ -1462,9 +1570,59 @@
             </div>
             <div class="citation-list">
                 <div class="citation-item">
-                    <strong>National Archives visit, College Park, Maryland</strong>
-                    <p>The October 1944 sortie dataset in this project is based on photographs taken during an in-person visit to the National Archives at College Park, Maryland. The archival catalog anchor for the material is the following National Archives record.</p>
-                    <p><a href="https://catalog.archives.gov/id/596339" target="_blank" rel="noreferrer">catalog.archives.gov/id/596339</a></p>
+                    <strong>Historical context</strong>
+                    <p>This website follows the October 1944 combat sorties of the 12th Bombardment Group in the India-Burma theater, when American medium bombers based in India were striking Japanese transport networks and battlefield positions across Burma. The group’s missions targeted roads, rail links, bridges, supply depots, and troop concentrations, reflecting the central role of air power in a campaign fought across difficult terrain and fragile lines of communication. October 1944 was a pivotal point in the war in Burma: the Japanese drive into India had failed, the balance of the campaign had shifted, and Allied forces were moving from defensive survival toward reconquest. Rather than treating these missions as isolated entries in a chronology, this project maps them across time and space to show how repeated tactical sorties contributed to the wider effort to weaken Japanese control in Burma and support the reopening of land routes to China.</p>
+                </div>
+                <div class="citation-item">
+                    <strong>Source material</strong>
+                    <p>The October 1944 sortie dataset in this project is based on photographs taken during an in-person visit to the National Archives at College Park, Maryland. The working dataset was then normalized from those archival sortie forms into a local player-ready CSV and JavaScript file for this demo.</p>
+                    <p>The archival catalog anchor for the material is the following National Archives record: <a href="https://catalog.archives.gov/id/596339" target="_blank" rel="noreferrer">catalog.archives.gov/id/596339</a></p>
+                    <p>The historical country-boundary basemap used in the player is also derived from the following GeoJSON file: <a href="https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1938.geojson" target="_blank" rel="noreferrer">github.com/aourednik/historical-basemaps/blob/master/geojson/world_1938.geojson</a></p>
+                </div>
+                <div class="citation-item">
+                    <strong>Data notes</strong>
+                    <p>This player is built from a manually reviewed extract table of October 1944 sortie reports photographed at the National Archives and transcribed into a structured CSV. Each record includes mission identifiers, squadron and base, primary and alternate targets, takeoff/bombing/landing times, route notes, observation points, bomb-load details, opposition, photo-aircraft notes, leaflet drops, and other operational remarks.</p>
+                    <p>A local normalization script then parses those fields, converts written coordinates into decimal latitude/longitude, matches named places against a reference lookup, and generates both route geometry and event markers such as takeoff, target strike, salvo, breakoff, flak, and landing. The result is not a raw archival dump but a constructed research dataset: a player-ready map and timeline built from archival forms, transcription decisions, place matching, and selective inference where the original reports are incomplete or ambiguous.</p>
+                </div>
+                <div class="citation-item">
+                    <strong>Load CSV - Format</strong>
+                    <p>The Load CSV button accepts a local normalized sortie CSV in the same structure used by this project. Data never leaves your browser. Required columns are listed below.</p>
+                    <div class="csv-schema">
+                        <table class="about-table">
+                            <thead>
+                                <tr>
+                                    <th>Variable</th>
+                                    <th>Example</th>
+                                    <th>Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td><code>sortie_id</code></td><td><code>434BS_1944-10-12</code></td><td>Unique mission identifier.</td></tr>
+                                <tr><td><code>report_date</code></td><td><code>1944-10-12</code></td><td>Date in <code>YYYY-MM-DD</code> format.</td></tr>
+                                <tr><td><code>squadron</code></td><td><code>434th Squadron</code></td><td>Mission unit label shown in the player.</td></tr>
+                                <tr><td><code>unit</code></td><td><code>12th Bombardment Group (M)</code></td><td>Parent unit label.</td></tr>
+                                <tr><td><code>aircraft_type</code></td><td><code>12 B-25s</code></td><td>Aircraft description used in the mission card and detail panel.</td></tr>
+                                <tr><td><code>aircraft_count</code></td><td><code>12</code></td><td>Count of aircraft on the sortie.</td></tr>
+                                <tr><td><code>base</code></td><td><code>Comilla</code></td><td>Departure or reporting base.</td></tr>
+                                <tr><td><code>primary_target</code></td><td><code>rail bridge at Myittha, Burma</code></td><td>Main target description.</td></tr>
+                                <tr><td><code>alternate_target</code></td><td><code>rail bridge at Chaungu, Burma</code></td><td>Optional alternate target.</td></tr>
+                                <tr><td><code>target_status</code></td><td><code>alternate attacked</code></td><td>Use when the attacked target differs from the primary target.</td></tr>
+                                <tr><td><code>time_up</code></td><td><code>0900</code></td><td>Takeoff time in sortie-report format.</td></tr>
+                                <tr><td><code>time_over_target</code></td><td><code>1106-1113</code></td><td>Bombing or target time; the first readable value is used for the strike event.</td></tr>
+                                <tr><td><code>time_down</code></td><td><code>1310</code></td><td>Landing time in sortie-report format.</td></tr>
+                                <tr><td><code>route_summary</code></td><td><code>All aircraft took off...</code></td><td>Mission route narrative used in the details panel.</td></tr>
+                                <tr><td><code>observation_points_raw</code></td><td><code>23 15N 91 40E; ...</code></td><td>Raw coordinate / observation field from the normalized dataset.</td></tr>
+                                <tr><td><code>special_remarks</code></td><td><code>80 x 500-lb M-65 GP...</code></td><td>Bomb-load details, remarks, and results text.</td></tr>
+                                <tr><td><code>confidence</code></td><td><code>high for front-page extraction</code></td><td>Confidence note shown in the mission source line.</td></tr>
+                                <tr><td><code>map_points_json</code></td><td><code>[{"kind":"base",...}]</code></td><td>JSON array of mapped points; required for route geometry.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="citation-item">
+                    <strong>Data limitations</strong>
+                    <p>This visualization is an interpretive research tool, not a literal replay captured from onboard navigation records. Times, target descriptions, route points, and event sequences come from handwritten or typed sortie documentation that sometimes contains gaps, ambiguous wording, or uneven levels of detail from one mission to the next.</p>
+                    <p>Some coordinates and route segments are directly extracted from the source material, while others are inferred from base locations, target references, and intermediate clues in the reports so the missions can be mapped coherently. As a result, the player is best read as a historically grounded reconstruction of sortie activity for October 1944, with confidence varying mission by mission.</p>
                 </div>
             </div>
         </div>
@@ -1504,9 +1662,256 @@
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="../data/indiaburma1944-12th-bombardment-group-sortie-player-data.js"></script>
     <script>
-        const rawData = window.MONTH_SORTIE_DATA || { missions: [] };
+        const IMPORTED_SORTIE_DATA_KEY = "pacific-wings-oct1944-imported-data";
+
+        function splitCsvLine(line) {
+            const cols = [];
+            let current = "";
+            let inQuotes = false;
+            for (let index = 0; index < line.length; index += 1) {
+                const ch = line[index];
+                if (ch === "\"") {
+                    if (inQuotes && line[index + 1] === "\"") {
+                        current += "\"";
+                        index += 1;
+                    } else {
+                        inQuotes = !inQuotes;
+                    }
+                    continue;
+                }
+                if (ch === "," && !inQuotes) {
+                    cols.push(current);
+                    current = "";
+                    continue;
+                }
+                current += ch;
+            }
+            cols.push(current);
+            return cols;
+        }
+
+        function parseCsvRows(text) {
+            const lines = String(text || "")
+                .replace(/\r\n/g, "\n")
+                .replace(/\r/g, "\n")
+                .split("\n")
+                .filter((line) => line.trim());
+            if (!lines.length) return [];
+
+            const headers = splitCsvLine(lines[0]).map((header) => header.trim());
+            return lines.slice(1).map((line) => {
+                const cols = splitCsvLine(line);
+                const row = {};
+                headers.forEach((header, index) => {
+                    row[header] = (cols[index] || "").trim();
+                });
+                return row;
+            });
+        }
+
+        function parseFirstImportTime(text) {
+            const match = String(text || "").match(/\b(\d{3,4})\b/);
+            if (!match) return "";
+            const digits = match[1].padStart(4, "0");
+            return `${digits.slice(0, 2)}:${digits.slice(2)}`;
+        }
+
+        function isoForImportTime(dateValue, hhmm) {
+            if (!dateValue || !hhmm) return "";
+            return `${dateValue}T${hhmm}:00Z`;
+        }
+
+        function cleanSentence(text) {
+            return String(text || "").replace(/\s+/g, " ").trim().replace(/[.;\s]+$/, "");
+        }
+
+        function inferImportedTargetPoint(row, points) {
+            const targetLabel = row.target_status === "alternate attacked" && row.alternate_target
+                ? row.alternate_target
+                : row.primary_target;
+            const lowerTarget = String(targetLabel || "").toLowerCase();
+            return points.find((point) => (
+                point.kind !== "base"
+                && point.kind !== "base_return"
+                && lowerTarget.includes(String(point.label || "").toLowerCase())
+            )) || points.find((point) => point.kind === "coordinate" || point.kind === "approximate_target")
+                || points.find((point) => point.kind === "event_coordinate")
+                || null;
+        }
+
+        function buildImportedEventPoints(row, points) {
+            const events = [];
+            const base = points.find((point) => point.kind === "base");
+            const baseReturn = [...points].reverse().find((point) => point.kind === "base_return") || base;
+            const targetPoint = inferImportedTargetPoint(row, points);
+            const timeUp = parseFirstImportTime(row.time_up);
+            const timeOverTarget = parseFirstImportTime(row.time_over_target);
+            const timeDown = parseFirstImportTime(row.time_down);
+            const targetLabel = row.target_status === "alternate attacked" && row.alternate_target
+                ? row.alternate_target
+                : row.primary_target;
+
+            if (base) {
+                events.push({
+                    kind: "takeoff",
+                    label: "Takeoff",
+                    description: `Formation took off from ${base.label} at ${row.time_up || "unknown time"}.`,
+                    time: timeUp,
+                    isoTime: isoForImportTime(row.report_date, timeUp),
+                    lat: Number(base.lat),
+                    lng: Number(base.lon)
+                });
+            }
+
+            if (targetPoint) {
+                events.push({
+                    kind: "bomb",
+                    label: "Target strike",
+                    description: cleanSentence(targetLabel),
+                    time: timeOverTarget,
+                    isoTime: isoForImportTime(row.report_date, timeOverTarget),
+                    lat: Number(targetPoint.lat),
+                    lng: Number(targetPoint.lon)
+                });
+            }
+
+            if (baseReturn) {
+                events.push({
+                    kind: "landing",
+                    label: "Landing",
+                    description: `Formation landed at ${baseReturn.label} by ${row.time_down || "unknown time"}.`,
+                    time: timeDown,
+                    isoTime: isoForImportTime(row.report_date, timeDown),
+                    lat: Number(baseReturn.lat),
+                    lng: Number(baseReturn.lon)
+                });
+            }
+
+            return events;
+        }
+
+        function normalizedCsvToPlayerData(text, filename = "local-sorties.csv") {
+            const rows = parseCsvRows(text);
+            if (!rows.length) {
+                throw new Error("The selected CSV is empty.");
+            }
+
+            const requiredColumns = [
+                "sortie_id",
+                "report_date",
+                "squadron",
+                "unit",
+                "aircraft_type",
+                "aircraft_count",
+                "base",
+                "primary_target",
+                "time_up",
+                "time_down",
+                "route_summary",
+                "confidence",
+                "map_points_json"
+            ];
+            const missing = requiredColumns.filter((column) => !(column in rows[0]));
+            if (missing.length) {
+                throw new Error(`Missing required CSV columns: ${missing.join(", ")}`);
+            }
+
+            const missions = rows.map((row) => {
+                let points = [];
+                try {
+                    points = JSON.parse(row.map_points_json || "[]");
+                } catch (error) {
+                    throw new Error(`Could not parse map_points_json for sortie ${row.sortie_id || "(unknown id)"}.`);
+                }
+                if (!Array.isArray(points)) {
+                    throw new Error(`map_points_json must be a JSON array for sortie ${row.sortie_id || "(unknown id)"}.`);
+                }
+
+                const timeUp = parseFirstImportTime(row.time_up);
+                const timeDown = parseFirstImportTime(row.time_down);
+
+                return {
+                    id: row.sortie_id,
+                    date: row.report_date,
+                    squadron: row.squadron,
+                    unit: row.unit,
+                    aircraftType: row.aircraft_type,
+                    aircraftCount: row.aircraft_count,
+                    base: row.base,
+                    sourceFront: row.source_front_image || "",
+                    sourceBack: row.paired_back_candidate_by_rule || "",
+                    scanFrontPath: "",
+                    scanBackPath: "",
+                    confidence: String(row.confidence || "").split(";")[0] || "",
+                    primaryTarget: row.primary_target || "",
+                    alternateTarget: row.alternate_target || "",
+                    targetStatus: row.target_status || "",
+                    timeUp: row.time_up || "",
+                    timeOverTarget: row.time_over_target || "",
+                    timeDown: row.time_down || "",
+                    routeSummary: row.route_summary || "",
+                    weatherSummary: row.weather_summary || "",
+                    bombLoadCarried: row.bomb_load_carried || "",
+                    bombsOnTarget: row.bombs_on_target || "",
+                    bombsSalvoed: row.bombs_salvoed_or_jettisoned || "",
+                    bombsReturned: row.bombs_returned || "",
+                    bombingCourse: row.bombing_course || "",
+                    bombingSpeed: row.bombing_speed || "",
+                    bombingAltitude: row.bombing_altitude || "",
+                    bombingInterval: row.bombing_interval || "",
+                    ammoExpended: row.ammo_expended || "",
+                    opposition: row.opposition_summary || "",
+                    casualties: row.casualties || "",
+                    photos: row.photo_aircraft || "",
+                    leaflets: row.leaflet_drops || "",
+                    results: row.special_remarks || "",
+                    observations: row.observation_points_raw || "",
+                    startIso: isoForImportTime(row.report_date, timeUp) || `${row.report_date}T08:00:00Z`,
+                    endIso: isoForImportTime(row.report_date, timeDown) || `${row.report_date}T12:00:00Z`,
+                    points,
+                    eventPoints: buildImportedEventPoints(row, points)
+                };
+            });
+
+            return {
+                generated_from: filename,
+                mission_count: missions.length,
+                missions
+            };
+        }
+
+        function importSortieCsvFile(file) {
+            const reader = new FileReader();
+            reader.onload = () => {
+                try {
+                    const imported = normalizedCsvToPlayerData(reader.result, file.name);
+                    sessionStorage.setItem(IMPORTED_SORTIE_DATA_KEY, JSON.stringify(imported));
+                    window.location.reload();
+                } catch (error) {
+                    window.alert(error.message);
+                }
+            };
+            reader.onerror = () => {
+                window.alert("The selected CSV could not be read.");
+            };
+            reader.readAsText(file);
+        }
+
+        function getInitialRawData() {
+            try {
+                const imported = sessionStorage.getItem(IMPORTED_SORTIE_DATA_KEY);
+                if (imported) {
+                    return JSON.parse(imported);
+                }
+            } catch (error) {
+                console.warn("Imported sortie data could not be restored.", error);
+            }
+            return window.MONTH_SORTIE_DATA || { missions: [] };
+        }
+
+        const rawData = getInitialRawData();
         const WORLD_BOUNDS = [[-58, -179], [83, 179]];
-        const THEATER_BOUNDS = [[15.5, 88], [27.8, 99.8]];
+        const THEATER_BOUNDS = [[13.4, 85.2], [29.8, 102.8]];
         function distanceKm(a, b) {
             const meanLat = ((a.lat + b.lat) / 2) * Math.PI / 180;
             const dx = (b.lng - a.lng) * 111.32 * Math.cos(meanLat);
@@ -1923,63 +2328,255 @@
         const monthStart = Math.min(...missions.map((mission) => mission.startMs));
         const monthEnd = Math.max(...missions.map((mission) => mission.endMs));
 
+        const INITIAL_THEATER_BOUNDS = [[13.4, 85.2], [29.8, 102.8]];
+
         const map = L.map("map", {
             zoomControl: false,
-            attributionControl: true,
+            attributionControl: false,
             worldCopyJump: true,
             minZoom: 1.5,
+            maxZoom: 20,
             zoomSnap: 0.25
         });
+        map.fitBounds(INITIAL_THEATER_BOUNDS, { padding: [32, 32] });
         L.control.zoom({ position: "topright" }).addTo(map);
 
-        const standardTiles = L.tileLayer("https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png", {
+        map.createPane("historicalBasePane");
+        map.getPane("historicalBasePane").style.zIndex = "340";
+        map.createPane("historicalBorderPane");
+        map.getPane("historicalBorderPane").style.zIndex = "360";
+        map.createPane("routePane");
+        map.getPane("routePane").style.zIndex = "450";
+        map.createPane("liveRoutePane");
+        map.getPane("liveRoutePane").style.zIndex = "470";
+
+        const standardTiles = L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png", {
             subdomains: "abcd",
             maxZoom: 20,
             attribution: "&copy; OpenStreetMap contributors &copy; CARTO"
-        }).addTo(map);
+        });
         const terrainTiles = L.tileLayer("https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png", {
             maxZoom: 17,
             attribution: "&copy; OpenStreetMap contributors, SRTM | &copy; OpenTopoMap"
         });
-        let activeBaseLayer = standardTiles;
+        let activeBaseLayer = null;
+        let historicalBasemapLoaded = false;
+        let basemapMode = "historical";
 
-        let tileErrors = 0;
-        [standardTiles, terrainTiles].forEach((layer) => layer.on("tileerror", () => {
-            tileErrors += 1;
-            if (tileErrors === 1) {
-                document.getElementById("timelineNote").textContent = "Leaflet is active, but the basemap tiles did not load. Serving the file locally usually fixes tile requests.";
-            }
-        }));
-
-        let historicalBoundariesLayer = null;
-        fetch("../world_1938.geojson")
-            .then((response) => {
-                if (!response.ok) throw new Error(`HTTP ${response.status}`);
-                return response.json();
-            })
-            .then((geojson) => {
-                historicalBoundariesLayer = L.geoJSON(geojson, {
-                    style: () => ({
-                        color: "#7c6b57",
-                        weight: 1.1,
-                        opacity: 0.72,
-                        fillColor: "#d8cfbd",
-                        fillOpacity: 0.03
-                    }),
-                    interactive: false
-                }).addTo(map);
-            })
-            .catch(() => {
-                timelineNote.textContent = "Historical 1938 boundary overlay did not load. Serving the file locally usually fixes local GeoJSON requests.";
+        [standardTiles, terrainTiles].forEach((layer) => {
+            layer.on("tileerror", () => {
+                document.getElementById("timelineNote").textContent = "Leaflet is active, but a fallback tile layer did not load. Serving the file locally usually fixes tile requests.";
             });
+        });
 
-        map.fitBounds(THEATER_BOUNDS, { padding: [40, 40] });
+        function shiftCoordsLng(coords, offset) {
+            if (!Array.isArray(coords)) return coords;
+            if (typeof coords[0] === "number" && typeof coords[1] === "number") {
+                return [coords[0] + offset, coords[1]];
+            }
+            return coords.map((part) => shiftCoordsLng(part, offset));
+        }
+
+        function shiftGeoJSONLng(geojson, offset) {
+            return {
+                ...geojson,
+                features: (geojson.features || []).map((feature) => ({
+                    ...feature,
+                    geometry: feature.geometry
+                        ? { ...feature.geometry, coordinates: shiftCoordsLng(feature.geometry.coordinates, offset) }
+                        : feature.geometry
+                }))
+            };
+        }
+
+        function addRepeatableGeoJSON(geojson, options, nameProp, group, labelsGroup, labelCollector) {
+            const target = group || map;
+            const labelsTarget = labelsGroup || target;
+
+            [-360, 0, 360].forEach((offset) => {
+                const data = offset === 0 ? geojson : shiftGeoJSONLng(geojson, offset);
+                const opts = { ...options };
+                if (nameProp) {
+                    opts.onEachFeature = (feature, layer) => {
+                        const name = feature.properties?.[nameProp]
+                            || feature.properties?.NAME
+                            || feature.properties?.name;
+                        if (!name) return;
+                        const center = layer.getBounds().getCenter();
+                        const marker = L.marker(center, {
+                            icon: L.divIcon({
+                                className: "basemap-label",
+                                html: `<span>${name}</span>`,
+                                iconSize: null,
+                                iconAnchor: [0, 0]
+                            }),
+                            interactive: false,
+                            zIndexOffset: -9999
+                        }).addTo(labelsTarget);
+
+                        if (labelCollector) {
+                            labelCollector.push({
+                                marker,
+                                bounds: layer.getBounds()
+                            });
+                        }
+                    };
+                }
+                L.geoJSON(data, opts).addTo(target);
+            });
+        }
+
+        const historicalBaseGroup = L.layerGroup().addTo(map);
+        const historicalBordersGroup = L.layerGroup().addTo(map);
+        const historicalMinorIslandsGroup = L.layerGroup();
+        const historicalLabelsGroup = L.layerGroup();
+        const historicalLabelEntries = [];
+        const modernLandStyle = {
+            pane: "historicalBasePane",
+            style: {
+                fillColor: "#0e0e0e",
+                fillOpacity: 1,
+                color: "transparent",
+                weight: 0
+            },
+            interactive: false
+        };
+        const historicalBoundaryStyle = {
+            pane: "historicalBorderPane",
+            style: {
+                fill: false,
+                fillOpacity: 0,
+                color: "rgba(170, 176, 184, 0.72)",
+                weight: 1.15,
+                opacity: 1
+            },
+            interactive: false
+        };
+
+        function updateHistoricalBoundaryStyle() {
+            const zoom = map.getZoom();
+            const weight = zoom >= 8 ? 2.2 : zoom >= 6 ? 1.6 : 1.1;
+            const opacity = zoom >= 8 ? 0.96 : zoom >= 6 ? 0.84 : 0.68;
+            historicalBordersGroup.eachLayer((layer) => {
+                if (typeof layer.setStyle === "function") {
+                    layer.setStyle({
+                        color: `rgba(184, 190, 198, ${opacity})`,
+                        weight,
+                        opacity
+                    });
+                }
+            });
+        }
+
+        function updateHistoricalLabelVisibility() {
+            const minLabelPixelSpan = 28;
+            historicalLabelEntries.forEach(({ marker, bounds }) => {
+                const sw = map.latLngToLayerPoint(bounds.getSouthWest());
+                const ne = map.latLngToLayerPoint(bounds.getNorthEast());
+                const width = Math.abs(ne.x - sw.x);
+                const height = Math.abs(sw.y - ne.y);
+                marker.setOpacity(Math.max(width, height) >= minLabelPixelSpan ? 1 : 0);
+            });
+        }
+
+        function updateHistoricalLayerVisibility() {
+            if (basemapMode !== "historical") return;
+            if (!map.hasLayer(historicalBordersGroup)) {
+                historicalBordersGroup.addTo(map);
+            }
+            if (!map.hasLayer(historicalLabelsGroup)) {
+                historicalLabelsGroup.addTo(map);
+            }
+            if (map.getZoom() >= 5) {
+                if (!map.hasLayer(historicalMinorIslandsGroup)) {
+                    historicalMinorIslandsGroup.addTo(map);
+                }
+            } else if (map.hasLayer(historicalMinorIslandsGroup)) {
+                historicalMinorIslandsGroup.remove();
+            }
+            updateHistoricalBoundaryStyle();
+            updateHistoricalLabelVisibility();
+        }
+
+        function showHistoricalBasemap() {
+            if (activeBaseLayer && map.hasLayer(activeBaseLayer)) {
+                map.removeLayer(activeBaseLayer);
+            }
+            activeBaseLayer = null;
+            historicalBaseGroup.addTo(map);
+            historicalBordersGroup.addTo(map);
+            basemapMode = "historical";
+            updateHistoricalLayerVisibility();
+        }
+
+        function showModernBasemap(layer) {
+            historicalBaseGroup.remove();
+            historicalBordersGroup.remove();
+            historicalMinorIslandsGroup.remove();
+            historicalLabelsGroup.remove();
+            if (activeBaseLayer && map.hasLayer(activeBaseLayer)) {
+                map.removeLayer(activeBaseLayer);
+            }
+            activeBaseLayer = layer;
+            activeBaseLayer.addTo(map);
+            basemapMode = "modern";
+        }
+
+        function loadHistoricalBasemap() {
+            Promise.all([
+                fetch("https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1938.geojson").then((response) => {
+                    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                    return response.json();
+                }),
+                fetch("https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_admin_0_map_units.geojson").then((response) => {
+                    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                    return response.json();
+                }),
+                fetch("https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_admin_0_scale_rank_minor_islands.geojson").then((response) => {
+                    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                    return response.json();
+                })
+            ]).then(([historicalGeojson, modernGeojson, modernMinorIslandsGeojson]) => {
+                const modernLand = {
+                    type: "FeatureCollection",
+                    features: (modernGeojson.features || []).filter((feature) => feature.geometry)
+                };
+                const modernMinor = {
+                    type: "FeatureCollection",
+                    features: (modernMinorIslandsGeojson.features || []).filter((feature) => feature.geometry)
+                };
+                const historicalNamed = {
+                    type: "FeatureCollection",
+                    features: (historicalGeojson.features || []).filter((feature) => feature.geometry && feature.properties?.NAME)
+                };
+
+                addRepeatableGeoJSON(modernLand, modernLandStyle, null, historicalBaseGroup);
+                addRepeatableGeoJSON(modernMinor, modernLandStyle, null, historicalMinorIslandsGroup);
+                addRepeatableGeoJSON(
+                    historicalNamed,
+                    historicalBoundaryStyle,
+                    "NAME",
+                    historicalBordersGroup,
+                    historicalLabelsGroup,
+                    historicalLabelEntries
+                );
+                historicalBasemapLoaded = true;
+                showHistoricalBasemap();
+            }).catch(() => {
+                showModernBasemap(standardTiles);
+                timelineNote.textContent = "Historical 1938 basemap did not load. Showing the unlabeled dark fallback instead.";
+            });
+        }
+
+        loadHistoricalBasemap();
+
+        map.on("zoomend", updateHistoricalLayerVisibility);
+        map.on("moveend", updateHistoricalLabelVisibility);
 
         const routeLayer = L.layerGroup().addTo(map);
         const liveLayer = L.layerGroup().addTo(map);
 
         const statSorties = document.getElementById("statSorties");
-        const statDays = document.getElementById("statDays");
         const statMapped = document.getElementById("statMapped");
         const startDayRange = document.getElementById("startDayRange");
         const endDayRange = document.getElementById("endDayRange");
@@ -1998,6 +2595,7 @@
         const toggleSidebarLabel = document.getElementById("toggleSidebarLabel");
         const openMissionBrowserBtn = document.getElementById("openMissionBrowser");
         const openSourcesBtn = document.getElementById("openSources");
+        const sortieCsvInput = document.getElementById("sortieCsvInput");
         const sourcesModal = document.getElementById("sourcesModal");
         const closeSourcesBtn = document.getElementById("closeSources");
         const missionBrowserModal = document.getElementById("missionBrowserModal");
@@ -2210,11 +2808,15 @@
 
         function setTerrainVisible(visible) {
             terrainVisible = visible;
-            if (activeBaseLayer && map.hasLayer(activeBaseLayer)) {
-                map.removeLayer(activeBaseLayer);
+            if (visible) {
+                showModernBasemap(terrainTiles);
+            } else {
+                if (historicalBasemapLoaded) {
+                    showHistoricalBasemap();
+                } else {
+                    showModernBasemap(standardTiles);
+                }
             }
-            activeBaseLayer = visible ? terrainTiles : standardTiles;
-            activeBaseLayer.addTo(map);
             toggleTerrainBtn.textContent = visible ? "Terrain On" : "Terrain Off";
             toggleTerrainBtn.classList.toggle("active", visible);
         }
@@ -2313,6 +2915,21 @@
             if (/\b83(?:rd)?\b/i.test(value)) return "83rd Squadron";
             if (/\b434(?:th)?\b/i.test(value) || /\b484(?:th)?\b/i.test(value)) return "434th Squadron";
             return "Unread / Uncertain";
+        }
+
+        function squadronColor(squadronName) {
+            switch (canonicalSquadronName(squadronName)) {
+                case "81st Squadron":
+                    return "#66d1c1";
+                case "82nd Squadron":
+                    return "#f3b64f";
+                case "83rd Squadron":
+                    return "#e25555";
+                case "434th Squadron":
+                    return "#7ea6ff";
+                default:
+                    return "#b3bcc7";
+            }
         }
 
         function displaySquadronLabel(mission) {
@@ -2487,8 +3104,8 @@
             return L.divIcon({
                 className: "",
                 html: `<span class="point-marker" style="background:${color};color:${symbolColor}">${symbolSvg(pointType)}</span>`,
-                iconSize: [18, 18],
-                iconAnchor: [9, 9]
+                iconSize: [16, 16],
+                iconAnchor: [8, 8]
             });
         }
 
@@ -2496,8 +3113,8 @@
             return L.divIcon({
                 className: "",
                 html: `<span class="point-marker is-grouped" style="background:${color};color:${symbolColor}">${symbolSvg(pointType)}<span class="point-marker-count">${count}</span></span>`,
-                iconSize: [22, 22],
-                iconAnchor: [11, 11]
+                iconSize: [20, 20],
+                iconAnchor: [10, 10]
             });
         }
 
@@ -2756,6 +3373,38 @@
             return getVisibleMissions().filter((item) => item.date === mission.date);
         }
 
+        function jumpToAdjacentMissionDay(direction) {
+            const visible = getVisibleMissions();
+            if (!visible.length) return;
+
+            const currentMission = getSelectedMission();
+            const currentMs = getProgressTime(playbackProgress);
+            const currentDate = currentMission?.date
+                || visible.find((mission) => mission.startMs >= currentMs)?.date
+                || visible[visible.length - 1]?.date;
+            if (!currentDate) return;
+
+            let targetMission = null;
+            if (direction > 0) {
+                targetMission = visible.find((mission) => mission.date > currentDate) || null;
+            } else {
+                for (let index = visible.length - 1; index >= 0; index -= 1) {
+                    if (visible[index].date < currentDate) {
+                        targetMission = visible[index];
+                        break;
+                    }
+                }
+            }
+            if (!targetMission) return;
+
+            selectedMissionId = targetMission.id;
+            playbackProgress = Math.max(0, Math.min(1, getTimeProgress(targetMission.startMs)));
+            clearPointInfo({ force: true });
+            renderMissionBrowser();
+            updateDetailPanel();
+            refreshPlaybackView();
+        }
+
         function createPlaneIcon() {
             return L.divIcon({
                 className: "plane-marker",
@@ -2878,11 +3527,15 @@
 
         function buildMissionLayers() {
             missions.forEach((mission) => {
-                const routeColor = "#4e79a7";
+                const routeColor = squadronColor(mission.squadron);
                 const route = L.polyline(mission.displayRoutePoints.map((point) => [point.lat, point.lng]), {
+                    pane: "routePane",
                     color: routeColor,
-                    weight: 3.5,
-                    opacity: 0
+                    weight: 2.2,
+                    opacity: 0,
+                    dashArray: "1 7",
+                    lineCap: "round",
+                    lineJoin: "round"
                 }).addTo(routeLayer);
                 route.on("click", () => {
                     selectMission(mission);
@@ -2943,10 +3596,11 @@
                 });
 
                 const progressLine = L.polyline([], {
-                    color: "#2f5f91",
-                    weight: 4,
-                    opacity: 0.95,
-                    dashArray: "7 10",
+                    pane: "liveRoutePane",
+                    color: routeColor,
+                    weight: 2.8,
+                    opacity: 0.98,
+                    dashArray: "1 7",
                     lineCap: "round",
                     lineJoin: "round"
                 }).addTo(liveLayer);
@@ -2956,16 +3610,16 @@
                 }).addTo(liveLayer);
                 plane.setOpacity(0);
 
-                missionState.set(mission.id, { route, softRouteMarkers, events, progressLine, plane, color: "#2f5f91" });
+                missionState.set(mission.id, { route, softRouteMarkers, events, progressLine, plane, color: routeColor });
             });
         }
 
         function updateStats() {
             const visible = getVisibleMissions();
-            const uniqueDays = new Set(visible.map((mission) => mission.date));
             statSorties.textContent = String(visible.length);
-            statDays.textContent = String(uniqueDays.size);
-            statMapped.textContent = String(visible.filter((mission) => mission.displayRoutePoints.length >= 2).length);
+            if (statMapped) {
+                statMapped.textContent = String(visible.filter((mission) => mission.displayRoutePoints.length >= 2).length);
+            }
         }
 
         function updateDateRangeControls() {
@@ -2977,6 +3631,9 @@
             const right = ((activeEndDay - 1) / 30) * 100;
             dateRangeFill.style.left = `${left}%`;
             dateRangeFill.style.width = `${Math.max(0, right - left)}%`;
+            if (playbackScope === "month" && missionState.size) {
+                refreshPlaybackView();
+            }
         }
 
         function buildSquadronFilter() {
@@ -3234,7 +3891,7 @@
         }
 
         function focusTheater() {
-            map.fitBounds(THEATER_BOUNDS, { padding: [40, 40] });
+            map.fitBounds(THEATER_BOUNDS, { padding: [44, 44] });
             setContext("theater");
         }
 
@@ -3242,7 +3899,7 @@
             const mission = getSelectedMission();
             if (!mission) return;
             const bounds = L.latLngBounds(mission.displayRoutePoints.map((point) => [point.lat, point.lng]));
-            map.fitBounds(bounds, { padding: [70, 70], maxZoom: 7 });
+            map.fitBounds(bounds, { padding: [110, 110], maxZoom: 6.25 });
             setContext("selection");
         }
 
@@ -3279,28 +3936,12 @@
                 const inScope = scopedIds.has(mission.id);
                 const isActive = active.some((item) => item.id === mission.id);
                 const isSelected = mission.id === selectedMissionId;
-                const showEvents = playbackScope === "month"
-                    ? inScope && (isSelected || isActive)
-                    : inScope && isActive;
-                const showSoftRouteMarkers = playbackScope === "month"
-                    ? inScope && isSelected
-                    : inScope && isActive;
-                const routeVisible = playbackScope === "mission"
-                    ? inScope
-                    : playbackScope === "day"
-                        ? inScope && (isSelected || isActive)
-                        : isSelected;
-                const routeOpacity = !routeVisible
-                    ? 0
-                    : playbackScope === "mission"
-                        ? (isSelected ? 0.92 : isActive ? 0.54 : 0.22)
-                        : playbackScope === "day"
-                            ? (isSelected ? 0.9 : 0.46)
-                            : 0.42;
+                const showEvents = inScope && isActive;
+                const showSoftRouteMarkers = inScope && isActive;
                 state.route.setStyle({
-                    opacity: routeOpacity,
-                    weight: playbackScope === "month" ? (isSelected ? 3.8 : 3.2) : isSelected ? 4.8 : 3.5,
-                    dashArray: playbackScope === "month" ? (isSelected ? "6 12" : "4 14") : null
+                    opacity: 0,
+                    weight: playbackScope === "month" ? (isSelected ? 2.6 : 2) : isSelected ? 3 : 2.3,
+                    dashArray: "1 7"
                 });
                 state.softRouteMarkers.forEach((marker) => setMarkerVisualOpacity(
                     marker,
@@ -3320,8 +3961,10 @@
                 const currentPoint = pointAtTime(mission, ms);
                 state.progressLine.setLatLngs(routeSlice(mission, ms));
                 state.progressLine.setStyle({
+                    color: state.color,
                     opacity: playbackScope === "mission" ? 0.98 : playbackScope === "day" ? 0.96 : 0.92,
-                    weight: isSelected ? 4.6 : 3.6
+                    weight: isSelected ? 3 : 2.4,
+                    dashArray: "1 7"
                 });
                 state.plane.setLatLng(currentPoint);
                 state.plane.setOpacity(1);
@@ -3445,18 +4088,21 @@
             playbackProgress = 0;
             playing = true;
             playPause.textContent = "Pause";
+            refreshPlaybackView();
         });
         document.getElementById("backDay").addEventListener("click", () => {
-            const ms = getProgressTime(playbackProgress) - 24 * 60 * 60 * 1000;
-            playbackProgress = Math.max(0, getTimeProgress(ms));
+            jumpToAdjacentMissionDay(-1);
         });
         document.getElementById("forwardDay").addEventListener("click", () => {
-            const ms = getProgressTime(playbackProgress) + 24 * 60 * 60 * 1000;
-            playbackProgress = Math.min(1, getTimeProgress(ms));
+            jumpToAdjacentMissionDay(1);
         });
         playPause.addEventListener("click", () => {
+            if (!playing && playbackProgress >= 1) {
+                playbackProgress = 0;
+            }
             playing = !playing;
             playPause.textContent = playing ? "Pause" : "Play";
+            refreshPlaybackView();
         });
         timeline.addEventListener("input", (event) => {
             playbackProgress = Number(event.target.value) / 1000;
@@ -3516,6 +4162,11 @@
         });
         sourcesModal.addEventListener("click", (event) => {
             if (event.target === sourcesModal) sourcesModal.classList.remove("open");
+        });
+        sortieCsvInput.addEventListener("change", (event) => {
+            const file = event.target.files?.[0];
+            if (file) importSortieCsvFile(file);
+            event.target.value = "";
         });
 
         buildSquadronFilter();

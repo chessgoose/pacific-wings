@@ -1,5 +1,6 @@
 import csv
 import json
+import math
 import re
 from pathlib import Path
 
@@ -271,10 +272,26 @@ def parse_context_time(text: str):
     return ""
 
 
+def shifted_point(point, direction: str, yards: int):
+    meters = yards * 0.9144
+    lat = point["lat"]
+    lon = point["lon"]
+    if direction == "north":
+        lat += meters / 111320
+    elif direction == "south":
+        lat -= meters / 111320
+    elif direction == "east":
+        lon += meters / max(1e-6, 111320 * math.cos(math.radians(lat)))
+    elif direction == "west":
+        lon -= meters / max(1e-6, 111320 * math.cos(math.radians(lat)))
+    return {"lat": lat, "lon": lon}
+
+
 def build_event_points(row, points):
     events = []
     base = next((point for point in points if point["kind"] == "base"), None)
     base_return = next((point for point in reversed(points) if point["kind"] == "base_return"), base)
+    targeted_place_labels = {point["label"] for point in extract_place_points(row["primary_target"], row["alternate_target"])}
 
     if base:
         events.append({
@@ -287,12 +304,12 @@ def build_event_points(row, points):
             "lng": base["lon"],
         })
 
-    target_point = infer_place_point(row["primary_target"], row["alternate_target"], row["route_summary"], row["special_remarks"])
+    target_label = row["alternate_target"] if row["target_status"] == "alternate attacked" and row["alternate_target"] else row["primary_target"]
+    target_point = infer_place_point(target_label, row["route_summary"], row["special_remarks"])
     if not target_point:
         target_point = next((point for point in points if point["kind"] in {"coordinate", "approximate_target"}), None)
     bombing_time_text = parse_first_time_value(row["time_over_target"])
     if target_point:
-        target_label = row["alternate_target"] if row["target_status"] == "alternate attacked" and row["alternate_target"] else row["primary_target"]
         events.append({
             "kind": "bomb",
             "label": "Target strike",
@@ -302,12 +319,36 @@ def build_event_points(row, points):
             "lat": target_point["lat"],
             "lng": target_point["lon"],
         })
+        short_drop = re.search(
+            r"(\d+)(?:\s+bombs?)?\s+were\s+dropped\s+(\d+)\s+yards?\s+(north|south|east|west|n|s|e|w)\s+of target",
+            row["special_remarks"] or "",
+            flags=re.IGNORECASE,
+        )
+        if short_drop:
+            direction = {
+                "n": "north",
+                "s": "south",
+                "e": "east",
+                "w": "west",
+            }.get(short_drop.group(3).lower(), short_drop.group(3).lower())
+            short_drop_point = shifted_point(target_point, direction, int(short_drop.group(2)))
+            events.append({
+                "kind": "bomb",
+                "label": "Short of target",
+                "description": clean_sentence(short_drop.group(0)),
+                "time": bombing_time_text,
+                "isoTime": iso_for_time(row["report_date"], bombing_time_text),
+                "lat": short_drop_point["lat"],
+                "lng": short_drop_point["lon"],
+            })
 
     combined = " ".join([row["special_remarks"], row["observation_points_raw"], row["route_summary"]])
     for point in points:
         if point["kind"] not in {"coordinate", "event_coordinate"}:
             continue
         label = point["label"]
+        if point["kind"] == "coordinate" and label in targeted_place_labels:
+            continue
         snippet = snippet_for_label(label, row["special_remarks"], row["observation_points_raw"], row["route_summary"])
         time_value = parse_context_time(snippet)
         kind = classify_event_text(snippet)
