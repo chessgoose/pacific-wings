@@ -522,23 +522,13 @@ class PacificWingsApp {
             interactive: false
         };
 
-        // Historical mode: modern land geometry + 1938 boundaries/labels.
         this._historicalGroup = L.layerGroup().addTo(this.map);
         this._historicalMinorIslandsGroup = L.layerGroup();
         this._historicalLabelsGroup = L.layerGroup();
         this._historicalLabelEntries = [];
 
-        // Modern CARTO tile — created now but not added until toggled
-        this._modernTile = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-            subdomains: 'abcd',
-            maxZoom: 20
-        });
-
-        this._basemapMode = 'historical';
-
         try {
-            const [hist, modern, modernMinorIslands] = await Promise.all([
-                fetch('https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1938.geojson').then(r => r.json()),
+            const [modern, modernMinorIslands] = await Promise.all([
                 fetch('https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_admin_0_map_units.geojson').then(r => r.json()),
                 fetch('https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_admin_0_scale_rank_minor_islands.geojson').then(r => r.json())
             ]);
@@ -548,9 +538,9 @@ class PacificWingsApp {
                 features: modern.features.filter(f => f.geometry)
             };
 
-            const hist1938Named = {
+            const hist1945Named = {
                 type: 'FeatureCollection',
-                features: hist.features.filter(f => f.geometry && f.properties && f.properties.NAME)
+                features: window.WORLD_1945_GEOJSON.features.filter(f => f.geometry && f.properties && f.properties.NAME)
             };
 
             const modernMinor = {
@@ -561,7 +551,7 @@ class PacificWingsApp {
             this._addRepeatableGeoJSON(modernLand, MODERN_FILL_STYLE, null, this._historicalGroup);
             this._addRepeatableGeoJSON(modernMinor, MODERN_FILL_STYLE, null, this._historicalMinorIslandsGroup);
             this._addRepeatableGeoJSON(
-                hist1938Named,
+                hist1945Named,
                 HIST_BOUNDARY_STYLE,
                 'NAME',
                 this._historicalGroup,
@@ -594,7 +584,6 @@ class PacificWingsApp {
 
     _updateIslandsVisibility() {
         if (!this._historicalMinorIslandsGroup || !this._historicalLabelsGroup) return;
-        if (this._basemapMode !== 'historical') return;
 
         // Extra tiny-island detail appears only when zooming in.
         if (this.map.getZoom() >= 5) {
@@ -616,26 +605,6 @@ class PacificWingsApp {
         this._updateHistoricalLabelVisibility();
     }
 
-    _toggleBasemap() {
-        const btn = document.getElementById('basemap-toggle-btn');
-        if (this._basemapMode === 'historical') {
-            this._historicalGroup.remove();
-            if (this._historicalMinorIslandsGroup) this._historicalMinorIslandsGroup.remove();
-            if (this._historicalLabelsGroup) this._historicalLabelsGroup.remove();
-            this._modernTile.addTo(this.map);
-            this._basemapMode = 'modern';
-            btn.textContent = 'Modern map';
-            btn.classList.add('active');
-        } else {
-            this._modernTile.remove();
-            this._historicalGroup.addTo(this.map);
-            this._basemapMode = 'historical';
-            btn.textContent = '1938 map';
-            btn.classList.remove('active');
-            this._updateIslandsVisibility();
-        }
-    }
-
     initMap() {
         // Initialize Leaflet map
         this.map = L.map('map', {
@@ -646,24 +615,7 @@ class PacificWingsApp {
             worldCopyJump: true
         }).setView([20.0, 170.0], 3); // Pacific Theater (India/Philippines left, Hawaii center, US West Coast right)
 
-        // Load basemap layers (historical = modern geometry + 1938 boundaries/names)
         this._loadBasemap();
-
-
-        // Basemap toggle control (top-right, above zoom)
-        const BasemapToggle = L.Control.extend({
-            options: { position: 'topright' },
-            onAdd: () => {
-                const div = L.DomUtil.create('div', 'basemap-toggle-wrap leaflet-bar');
-                div.innerHTML = '<button id="basemap-toggle-btn" class="basemap-toggle-btn">1938 map</button>';
-                L.DomEvent.disableClickPropagation(div);
-                return div;
-            }
-        });
-        new BasemapToggle().addTo(this.map);
-        document.addEventListener('click', e => {
-            if (e.target.id === 'basemap-toggle-btn') this._toggleBasemap();
-        });
 
         // Move zoom control to top-right
         L.control.zoom({ position: 'topright' }).addTo(this.map);
