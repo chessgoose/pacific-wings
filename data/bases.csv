@@ -4,7 +4,10 @@ FEAF,1941-12-07,1941-12-24,Clark Field Philippines,15.18,120.56,Clark retained a
 FEAF,1941-12-25,1944-10-19,Darwin Australia,-12.46,130.84,RAAF Darwin page notes FEAF established HQ at Darwin in late Dec 1941; later span remains campaign-inferred
 FEAF,1944-10-20,1945-08-11,Leyte Philippines,10.99,124.91,Return to Philippines keyed to Leyte landings; campaign-inferred main FEAF base
 FEAF,1945-04-21,1945-08-15,Ie Shima,26.72,127.79,Ie Shima captured April 1945; FEAF fighter-bomber and B-24 operations against Kyushu and Japan through end of war
-Fifth AF,1942-01-01,1942-08-31,Darwin Australia,-12.46,130.84,Initial SW Pacific base
+Fifth AF,1942-02-01,1942-07-25,Townsville Australia,-19.26,146.77,19th BG (B-17) at Townsville then Longreach; 22nd BG (B-26) at Garbutt/Antill Plains near Townsville
+Fifth AF,1942-07-26,1942-08-31,Mareeba Australia,-17.07,145.43,19th BG (B-17) relocated to Mareeba 26 Jul 1942 per Wikipedia 19th BG article
+Fifth AF,1942-03-01,1942-08-31,Charters Towers Australia,-20.05,146.27,3rd BG (B-25/A-20) based at Charters Towers from March 1942
+Fifth AF,1942-04-01,1942-09-30,Darwin Australia,-12.46,130.84,49th FG (P-40) air defense base; Northern Territory; P-39s operated from Port Moresby forward
 Fifth AF,1942-09-01,1943-08-31,Port Moresby New Guinea,-9.44,147.18,Main forward base during New Guinea campaign
 Fifth AF,1943-05-01,1944-09-01,Fenton Australia,-13.62,131.34,380th BG base for long-range Dutch East Indies operations (Surabaya, Selaroe, etc.)
 Fifth AF,1943-09-01,1944-01-31,Dobodura New Guinea,-8.79,148.04,Advanced to NE New Guinea
@@ -17,6 +20,7 @@ Seventh AF,1942-05-30,1943-07-31,Midway Atoll,28.21,-177.38,Forward Seventh AF d
 Seventh AF,1943-01-01,1944-01-31,Canton Island Phoenix,-2.81,-171.67,Forward staging and reconnaissance base for Gilberts-Marshalls operations
 Seventh AF,1943-04-20,1944-01-31,Funafuti Ellice Islands,-8.52,179.19,First B-24 mission from Funafuti 1943-04-20 (Nauru strike); forward base for Gilbert Is campaign
 Seventh AF,1943-09-01,1944-01-31,Nanumea Ellice Islands,-5.68,176.12,Forward heavy-bomber base for pre-GALVANIC strikes
+Seventh AF,1943-09-01,1944-01-31,Baker Island,0.20,-176.47,B-24 forward base used alongside Nanumea and Nukufetau for Marshall Islands strikes
 Seventh AF,1943-09-01,1944-01-31,Nukufetau Ellice Islands,-8.00,178.38,Forward heavy-bomber base for pre-GALVANIC strikes
 Seventh AF,1943-11-24,1944-08-31,Makin Gilbert Islands,3.12,172.99,B-25 forward base; Makin secured Nov 1943 during Gilbert Is campaign
 Seventh AF,1944-02-01,1944-05-31,Kwajalein Marshall Islands,8.72,167.73,Marshall Islands campaign
@@ -39,7 +43,9 @@ Eleventh AF,1942-09-10,1943-03-31,Adak Aleutians,51.88,-176.65,Adak occupied Sep
 Eleventh AF,1943-02-16,1943-08-31,Amchitka Aleutians,51.37,-179.22,Amchitka occupied Jan 1943; first combat missions 1943-02-16
 Eleventh AF,1943-06-24,1945-08-15,Shemya Aleutians,52.71,174.13,Shemya occupied May 1943; first B-24 strikes from Shemya 1943-06-24
 Thirteenth AF,1942-08-01,1943-01-12,Espiritu Santo New Hebrides,-15.5,166.88,Pre-activation B-17 staging base for South Pacific USAAF operations (Battle of Eastern Solomons etc.)
-Thirteenth AF,1943-01-13,1943-09-30,Henderson Field Guadalcanal,-9.43,160.04,Guadalcanal base
+Thirteenth AF,1943-01-13,1943-01-20,Plaine Des Gaiacs New Caledonia,-21.30,165.50,Activated on 1943-01-13 with HQ at Plaine des Gaiacs; HQ moved to Espiritu Santo on 1943-01-21
+Thirteenth AF,1943-01-13,1943-09-30,Henderson Field Guadalcanal,-9.43,160.04,Forward operational base for Guadalcanal sorties (including B-17/P-39 missions over Mount Austen area)
+Thirteenth AF,1943-01-21,1944-01-31,Espiritu Santo New Hebrides,-15.5,166.88,HQ station after move from New Caledonia; principal Thirteenth AF headquarters through Jan 1944
 Thirteenth AF,1943-08-14,1944-02-28,Munda New Georgia,-8.33,157.26,Munda airstrip captured Aug 1943; operational 1943-08-14
 Thirteenth AF,1944-03-01,1944-05-31,Torokina Bougainville,-6.21,155.00,Bougainville base
 Thirteenth AF,1944-06-01,1944-09-30,Los Negros Admiralties,-2.07,147.33,Admiralties leap

@@ -113,6 +113,72 @@
             gap: 12px;
         }
 
+        .card.full {
+            grid-column: 1 / -1;
+            gap: 16px;
+        }
+
+        .dl-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+            gap: 10px;
+        }
+
+        .dl-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            background: rgba(14, 79, 102, 0.05);
+            border: 1px solid rgba(14, 79, 102, 0.14);
+            border-radius: 10px;
+            padding: 11px 13px;
+            text-decoration: none;
+            color: var(--ink);
+            transition: background 0.15s, border-color 0.15s, transform 0.15s;
+        }
+
+        .dl-item:hover {
+            background: rgba(14, 79, 102, 0.10);
+            border-color: rgba(14, 79, 102, 0.28);
+            transform: translateY(-1px);
+        }
+
+        .dl-icon {
+            flex-shrink: 0;
+            width: 32px;
+            height: 32px;
+            border-radius: 7px;
+            background: var(--accent-2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dl-icon svg {
+            width: 16px;
+            height: 16px;
+            fill: none;
+            stroke: #fff;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .dl-text strong {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+
+        .dl-text span {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--muted);
+            margin-top: 2px;
+            line-height: 1.35;
+        }
+
         .card h2 {
             margin: 0;
             font-size: 1.25rem;
@@ -196,6 +262,14 @@
             .grid {
                 grid-template-columns: 1fr;
             }
+
+            .card.full {
+                grid-column: 1;
+            }
+
+            .dl-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -230,6 +304,63 @@
                         logbooks, reconstructed routes, and manually corrected mission metadata.
                     </p>
                     <a class="btn" href="Oct1944/sortie-oct1944-demo.html">Open Oct 1944 Demo</a>
+                </article>
+
+                <article class="card full">
+                    <div>
+                        <p class="meta">Raw Data</p>
+                        <h2>Download Source Files</h2>
+                        <p style="margin:8px 0 0;color:var(--muted);font-size:0.96rem;line-height:1.55;">
+                            All underlying CSV files are available for reuse, correction, or independent analysis.
+                        </p>
+                    </div>
+                    <div class="dl-grid">
+                        <a class="dl-item" href="data/missions_chronology.csv" download>
+                            <div class="dl-icon">
+                                <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                            </div>
+                            <div class="dl-text">
+                                <strong>missions_chronology.csv</strong>
+                                <span>~9,300 mission rows, 1941–1945, all theaters</span>
+                            </div>
+                        </a>
+                        <a class="dl-item" href="data/targets.csv" download>
+                            <div class="dl-icon">
+                                <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                            </div>
+                            <div class="dl-text">
+                                <strong>targets.csv</strong>
+                                <span>139 target locations with coordinates and aliases</span>
+                            </div>
+                        </a>
+                        <a class="dl-item" href="data/bases.csv" download>
+                            <div class="dl-icon">
+                                <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                            </div>
+                            <div class="dl-text">
+                                <strong>bases.csv</strong>
+                                <span>Air force HQ locations by date range</span>
+                            </div>
+                        </a>
+                        <a class="dl-item" href="data/aircrafts.csv" download>
+                            <div class="dl-icon">
+                                <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                            </div>
+                            <div class="dl-text">
+                                <strong>aircrafts.csv</strong>
+                                <span>Aircraft types, speeds, and service ceilings</span>
+                            </div>
+                        </a>
+                        <a class="dl-item" href="data/october-1944-sortie-extracts.csv" download>
+                            <div class="dl-icon">
+                                <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                            </div>
+                            <div class="dl-text">
+                                <strong>october-1944-sortie-extracts.csv</strong>
+                                <span>Archival sortie-level records, Oct 1944</span>
+                            </div>
+                        </a>
+                    </div>
                 </article>
             </div>
 

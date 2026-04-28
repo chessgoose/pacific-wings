@@ -274,6 +274,7 @@ class PacificWingsApp {
     parseMissionsCSV(text) {
         const lines = text.split('\n').map(l => l.trim()).filter(Boolean);
         let parsedCount = 0;
+        let skippedMissingDestination = 0;
         // Skip header row
         for (let i = 1; i < lines.length; i++) {
             try {
@@ -297,7 +298,18 @@ class PacificWingsApp {
                 const startMs = new Date(startTime).getTime();
                 if (isNaN(startMs)) continue;
 
-                const duration = parseFloat(durationHours) * 3600 * 1000;
+                const speedNum = parseFloat(speed);
+                let duration;
+                if (!isNaN(eLatNum) && !isNaN(eLngNum) && !isNaN(speedNum) && speedNum > 0) {
+                    const R = 3958.8; // Earth radius in miles
+                    const dLat = (eLatNum - sLatNum) * Math.PI / 180;
+                    const dLng = (eLngNum - sLngNum) * Math.PI / 180;
+                    const a = Math.sin(dLat/2)**2 + Math.cos(sLatNum * Math.PI/180) * Math.cos(eLatNum * Math.PI/180) * Math.sin(dLng/2)**2;
+                    const distMiles = R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+                    duration = (distMiles / speedNum) * 3600 * 1000;
+                } else {
+                    duration = parseFloat(durationHours) * 3600 * 1000;
+                }
 
                 let waypoints;
                 if (waypointsRaw && waypointsRaw.trim()) {
@@ -330,6 +342,12 @@ class PacificWingsApp {
                 const targetName = (rest.length > 1 ? rest[1].trim() : '') || '';
                 const missionCategory = (rest.length > 4 ? rest[4].trim() : '') || 'Other';
 
+                // Keep chronology rows with missing destination in CSV, but do not load them into the app.
+                if (!targetName || isNaN(eLatNum) || isNaN(eLngNum)) {
+                    skippedMissingDestination++;
+                    continue;
+                }
+
                 this.flights.push({
                     id: id.trim(),
                     squadron: squadron.trim(),
@@ -356,6 +374,9 @@ class PacificWingsApp {
                 // Skip malformed rows silently
                 continue;
             }
+        }
+        if (skippedMissingDestination > 0) {
+            console.log(`Skipped ${skippedMissingDestination} missions missing destination data`);
         }
     }
 
