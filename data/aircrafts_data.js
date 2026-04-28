@@ -19,5 +19,4 @@ window.AIRCRAFT_DATA = [
   {type:"P-40 Warhawk",icon:"icons/scaled/p_40_warhawk.png",width:17,height:14,needsInvert:true},
   {type:"P-39 Airacobra",icon:"icons/default.svg",width:16,height:16,needsInvert:false},
   {type:"P-36 Hawk",icon:"icons/default.svg",width:15,height:15,needsInvert:false},
-  {type:"A6M Zero",icon:"icons/default.svg",width:15,height:15,needsInvert:false},
 ];
