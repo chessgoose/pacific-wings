@@ -764,24 +764,20 @@
             background: none !important;
             border: none !important;
             box-shadow: none !important;
+            padding: 0 !important;
             pointer-events: none;
-        }
-
-        .basemap-label span {
-            display: block;
             font-family: var(--font-main);
             font-size: 0.62rem;
             font-weight: 600;
             letter-spacing: 0.08em;
             text-transform: uppercase;
-            color: rgba(200, 200, 200, 0.75);
+            color: rgba(210, 215, 220, 0.85);
             text-shadow:
-                0 0 4px #2c353c,
-                0 0 8px #2c353c,
-                1px 1px 0 #2c353c,
-                -1px -1px 0 #2c353c;
+                0 0 4px #0e1214,
+                0 0 8px #0e1214,
+                1px 1px 0 #0e1214,
+                -1px -1px 0 #0e1214;
             white-space: nowrap;
-            transform: translateX(-50%);
         }
 
         #map-shell {
@@ -2345,6 +2341,9 @@
         map.getPane("historicalBasePane").style.zIndex = "340";
         map.createPane("historicalBorderPane");
         map.getPane("historicalBorderPane").style.zIndex = "360";
+        map.createPane("historicalLabelPane");
+        map.getPane("historicalLabelPane").style.zIndex = "370";
+        map.getPane("historicalLabelPane").style.pointerEvents = "none";
         map.createPane("routePane");
         map.getPane("routePane").style.zIndex = "450";
         map.createPane("liveRoutePane");
@@ -2402,21 +2401,15 @@
                             || feature.properties?.NAME
                             || feature.properties?.name;
                         if (!name) return;
-                        const center = layer.getBounds().getCenter();
-                        const marker = L.marker(center, {
-                            icon: L.divIcon({
-                                className: "basemap-label",
-                                html: `<span>${name}</span>`,
-                                iconSize: null,
-                                iconAnchor: [0, 0]
-                            }),
-                            interactive: false,
-                            zIndexOffset: -9999
-                        }).addTo(labelsTarget);
-
+                        layer.bindTooltip(name, {
+                            permanent: true,
+                            direction: "center",
+                            className: "basemap-label",
+                            pane: "historicalLabelPane"
+                        });
                         if (labelCollector) {
                             labelCollector.push({
-                                marker,
+                                layer,
                                 bounds: layer.getBounds()
                             });
                         }
@@ -2470,12 +2463,13 @@
 
         function updateHistoricalLabelVisibility() {
             const minLabelPixelSpan = 28;
-            historicalLabelEntries.forEach(({ marker, bounds }) => {
+            historicalLabelEntries.forEach(({ layer, bounds }) => {
                 const sw = map.latLngToLayerPoint(bounds.getSouthWest());
                 const ne = map.latLngToLayerPoint(bounds.getNorthEast());
                 const width = Math.abs(ne.x - sw.x);
                 const height = Math.abs(sw.y - ne.y);
-                marker.setOpacity(Math.max(width, height) >= minLabelPixelSpan ? 1 : 0);
+                const tooltip = layer.getTooltip();
+                if (tooltip) tooltip.setOpacity(Math.max(width, height) >= minLabelPixelSpan ? 1 : 0);
             });
         }
 
@@ -2522,38 +2516,31 @@
             basemapMode = "modern";
         }
 
+        async function fetchJsonWithFallback(paths) {
+            for (const path of paths) {
+                try {
+                    const r = await fetch(path);
+                    if (r.ok) return r.json();
+                } catch (_) {}
+            }
+            throw new Error("All paths failed: " + paths.join(", "));
+        }
+
         function loadHistoricalBasemap() {
-            Promise.all([
-                fetch("https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1938.geojson").then((response) => {
-                    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-                    return response.json();
-                }),
-                fetch("https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_admin_0_map_units.geojson").then((response) => {
-                    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-                    return response.json();
-                }),
-                fetch("https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_admin_0_scale_rank_minor_islands.geojson").then((response) => {
-                    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-                    return response.json();
-                })
-            ]).then(([historicalGeojson, modernGeojson, modernMinorIslandsGeojson]) => {
-                const modernLand = {
+            fetchJsonWithFallback(["../world_1945.geojson", "world_1945.geojson", "/world_1945.geojson"])
+            .then((geojson) => {
+                const allLand = {
                     type: "FeatureCollection",
-                    features: (modernGeojson.features || []).filter((feature) => feature.geometry)
+                    features: (geojson.features || []).filter((feature) => feature.geometry)
                 };
-                const modernMinor = {
+                const namedFeatures = {
                     type: "FeatureCollection",
-                    features: (modernMinorIslandsGeojson.features || []).filter((feature) => feature.geometry)
-                };
-                const historicalNamed = {
-                    type: "FeatureCollection",
-                    features: (historicalGeojson.features || []).filter((feature) => feature.geometry && feature.properties?.NAME)
+                    features: (geojson.features || []).filter((feature) => feature.geometry && feature.properties?.NAME)
                 };
 
-                addRepeatableGeoJSON(modernLand, modernLandStyle, null, historicalBaseGroup);
-                addRepeatableGeoJSON(modernMinor, modernLandStyle, null, historicalMinorIslandsGroup);
+                addRepeatableGeoJSON(allLand, modernLandStyle, null, historicalBaseGroup);
                 addRepeatableGeoJSON(
-                    historicalNamed,
+                    namedFeatures,
                     historicalBoundaryStyle,
                     "NAME",
                     historicalBordersGroup,
@@ -2564,7 +2551,7 @@
                 showHistoricalBasemap();
             }).catch(() => {
                 showModernBasemap(standardTiles);
-                timelineNote.textContent = "Historical 1938 basemap did not load. Showing the unlabeled dark fallback instead.";
+                timelineNote.textContent = "Historical basemap did not load. Showing the unlabeled dark fallback instead.";
             });
         }
 
