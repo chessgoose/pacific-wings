@@ -522,11 +522,17 @@ class PacificWingsApp {
             interactive: false
         };
 
-        // Historical mode: modern land geometry + 1938 boundaries/labels.
+        // Historical 1938 mode: modern land geometry + 1938 boundaries/labels.
         this._historicalGroup = L.layerGroup().addTo(this.map);
         this._historicalMinorIslandsGroup = L.layerGroup();
         this._historicalLabelsGroup = L.layerGroup();
         this._historicalLabelEntries = [];
+
+        // Historical 1945 mode: same modern land geometry + 1945 boundaries/labels.
+        this._historical1945Group = L.layerGroup();
+        this._historical1945MinorIslandsGroup = L.layerGroup();
+        this._historical1945LabelsGroup = L.layerGroup();
+        this._historical1945LabelEntries = [];
 
         // Modern CARTO tile — created now but not added until toggled
         this._modernTile = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
@@ -537,8 +543,9 @@ class PacificWingsApp {
         this._basemapMode = 'historical';
 
         try {
-            const [hist, modern, modernMinorIslands] = await Promise.all([
+            const [hist, hist1945, modern, modernMinorIslands] = await Promise.all([
                 fetch('https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1938.geojson').then(r => r.json()),
+                fetch('world_1945.geojson').then(r => r.json()),
                 fetch('https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_admin_0_map_units.geojson').then(r => r.json()),
                 fetch('https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_admin_0_scale_rank_minor_islands.geojson').then(r => r.json())
             ]);
@@ -553,11 +560,17 @@ class PacificWingsApp {
                 features: hist.features.filter(f => f.geometry && f.properties && f.properties.NAME)
             };
 
+            const hist1945Named = {
+                type: 'FeatureCollection',
+                features: hist1945.features.filter(f => f.geometry && f.properties && f.properties.NAME)
+            };
+
             const modernMinor = {
                 type: 'FeatureCollection',
                 features: modernMinorIslands.features.filter(f => f.geometry)
             };
 
+            // 1938 basemap layers
             this._addRepeatableGeoJSON(modernLand, MODERN_FILL_STYLE, null, this._historicalGroup);
             this._addRepeatableGeoJSON(modernMinor, MODERN_FILL_STYLE, null, this._historicalMinorIslandsGroup);
             this._addRepeatableGeoJSON(
@@ -568,6 +581,19 @@ class PacificWingsApp {
                 this._historicalLabelsGroup,
                 this._historicalLabelEntries
             );
+
+            // 1945 basemap layers
+            this._addRepeatableGeoJSON(modernLand, MODERN_FILL_STYLE, null, this._historical1945Group);
+            this._addRepeatableGeoJSON(modernMinor, MODERN_FILL_STYLE, null, this._historical1945MinorIslandsGroup);
+            this._addRepeatableGeoJSON(
+                hist1945Named,
+                HIST_BOUNDARY_STYLE,
+                'NAME',
+                this._historical1945Group,
+                this._historical1945LabelsGroup,
+                this._historical1945LabelEntries
+            );
+
             this._updateIslandsVisibility();
         } catch {
             // Silent fallback — ocean background from CSS remains visible
@@ -575,13 +601,17 @@ class PacificWingsApp {
     }
 
     _updateHistoricalLabelVisibility() {
-        if (!this.map || !this._historicalLabelEntries) return;
+        if (!this.map) return;
 
-        // Pixel-space threshold: show labels only when their feature is large enough
-        // on screen (dynamic behavior instead of fixed zoom).
         const minLabelPixelSpan = 28;
 
-        for (const entry of this._historicalLabelEntries) {
+        const activeEntries = this._basemapMode === 'historical-1945'
+            ? this._historical1945LabelEntries
+            : this._historicalLabelEntries;
+
+        if (!activeEntries) return;
+
+        for (const entry of activeEntries) {
             const { marker, bounds } = entry;
             const sw = this.map.latLngToLayerPoint(bounds.getSouthWest());
             const ne = this.map.latLngToLayerPoint(bounds.getNorthEast());
@@ -593,41 +623,58 @@ class PacificWingsApp {
     }
 
     _updateIslandsVisibility() {
-        if (!this._historicalMinorIslandsGroup || !this._historicalLabelsGroup) return;
-        if (this._basemapMode !== 'historical') return;
+        const isHist38 = this._basemapMode === 'historical';
+        const isHist45 = this._basemapMode === 'historical-1945';
 
-        // Extra tiny-island detail appears only when zooming in.
-        if (this.map.getZoom() >= 5) {
-            if (!this.map.hasLayer(this._historicalMinorIslandsGroup)) {
-                this._historicalMinorIslandsGroup.addTo(this.map);
-            }
-            if (!this.map.hasLayer(this._historicalLabelsGroup)) {
-                this._historicalLabelsGroup.addTo(this.map);
-            }
-        } else if (this.map.hasLayer(this._historicalMinorIslandsGroup)) {
-            this._historicalMinorIslandsGroup.remove();
-        }
+        if (isHist38 || isHist45) {
+            const minorGroup = isHist45 ? this._historical1945MinorIslandsGroup : this._historicalMinorIslandsGroup;
+            const labelsGroup = isHist45 ? this._historical1945LabelsGroup : this._historicalLabelsGroup;
 
-        // Labels are always mounted in historical mode, then filtered dynamically
-        // by rendered feature size.
-        if (!this.map.hasLayer(this._historicalLabelsGroup)) {
-            this._historicalLabelsGroup.addTo(this.map);
+            if (!minorGroup || !labelsGroup) return;
+
+            if (this.map.getZoom() >= 5) {
+                if (!this.map.hasLayer(minorGroup)) minorGroup.addTo(this.map);
+                if (!this.map.hasLayer(labelsGroup)) labelsGroup.addTo(this.map);
+            } else if (this.map.hasLayer(minorGroup)) {
+                minorGroup.remove();
+            }
+
+            if (!this.map.hasLayer(labelsGroup)) labelsGroup.addTo(this.map);
+            this._updateHistoricalLabelVisibility();
         }
-        this._updateHistoricalLabelVisibility();
     }
 
     _toggleBasemap() {
         const btn = document.getElementById('basemap-toggle-btn');
-        if (this._basemapMode === 'historical') {
+
+        const removeAll = () => {
             this._historicalGroup.remove();
             if (this._historicalMinorIslandsGroup) this._historicalMinorIslandsGroup.remove();
             if (this._historicalLabelsGroup) this._historicalLabelsGroup.remove();
+            this._historical1945Group.remove();
+            if (this._historical1945MinorIslandsGroup) this._historical1945MinorIslandsGroup.remove();
+            if (this._historical1945LabelsGroup) this._historical1945LabelsGroup.remove();
+            this._modernTile.remove();
+        };
+
+        if (this._basemapMode === 'historical') {
+            // 1938 → 1945
+            removeAll();
+            this._historical1945Group.addTo(this.map);
+            this._basemapMode = 'historical-1945';
+            btn.textContent = '1945 map';
+            btn.classList.remove('active');
+            this._updateIslandsVisibility();
+        } else if (this._basemapMode === 'historical-1945') {
+            // 1945 → Modern
+            removeAll();
             this._modernTile.addTo(this.map);
             this._basemapMode = 'modern';
             btn.textContent = 'Modern map';
             btn.classList.add('active');
         } else {
-            this._modernTile.remove();
+            // Modern → 1938
+            removeAll();
             this._historicalGroup.addTo(this.map);
             this._basemapMode = 'historical';
             btn.textContent = '1938 map';

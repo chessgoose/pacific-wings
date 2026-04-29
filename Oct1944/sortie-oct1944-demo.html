@@ -766,6 +766,10 @@
             box-shadow: none !important;
             padding: 0 !important;
             pointer-events: none;
+        }
+
+        .basemap-label span {
+            display: block;
             font-family: var(--font-main);
             font-size: 0.62rem;
             font-weight: 600;
@@ -778,6 +782,34 @@
                 1px 1px 0 #0e1214,
                 -1px -1px 0 #0e1214;
             white-space: nowrap;
+        }
+
+        .basemap-label.country-label span {
+            padding: 4px 8px;
+            border-radius: 999px;
+            font-size: 0.74rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            color: #f6f8fb;
+            background: rgba(9, 16, 24, 0.56);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow:
+                0 0 0 1px rgba(6, 10, 14, 0.34) inset,
+                0 10px 24px rgba(0, 0, 0, 0.22);
+        }
+
+        .basemap-label.country-label.is-major span {
+            font-size: 0.82rem;
+            color: #fff4d9;
+            background: rgba(17, 24, 33, 0.68);
+            border-color: rgba(255, 191, 111, 0.18);
+        }
+
+        .basemap-label.country-label.is-minor span {
+            font-size: 0.66rem;
+            letter-spacing: 0.1em;
+            color: rgba(232, 238, 245, 0.92);
+            background: rgba(10, 14, 20, 0.42);
         }
 
         #map-shell {
@@ -1573,7 +1605,7 @@
                     <strong>Source material</strong>
                     <p>The October 1944 sortie dataset in this project is based on photographs taken during an in-person visit to the National Archives at College Park, Maryland. The working dataset was then normalized from those archival sortie forms into a local player-ready CSV and JavaScript file for this demo.</p>
                     <p>The archival catalog anchor for the material is the following National Archives record: <a href="https://catalog.archives.gov/id/596339" target="_blank" rel="noreferrer">catalog.archives.gov/id/596339</a></p>
-                    <p>The historical country-boundary basemap used in the player is also derived from the following GeoJSON file: <a href="https://github.com/aourednik/historical-basemaps/blob/master/geojson/world_1938.geojson" target="_blank" rel="noreferrer">github.com/aourednik/historical-basemaps/blob/master/geojson/world_1938.geojson</a></p>
+                    <p>The historical country-boundary basemap used in the player is derived from a 1945 world boundaries GeoJSON dataset bundled with this project (<code>world_1945.geojson</code>), sourced from <a href="https://github.com/aourednik/historical-basemaps" target="_blank" rel="noreferrer">github.com/aourednik/historical-basemaps</a>.</p>
                 </div>
                 <div class="citation-item">
                     <strong>Data notes</strong>
@@ -1835,7 +1867,7 @@
                     aircraftCount: row.aircraft_count,
                     base: row.base,
                     sourceFront: row.source_front_image || "",
-                    sourceBack: row.paired_back_candidate_by_rule || "",
+                    sourceBack: row.paired_back_reviewed === "yes" ? (row.paired_back_candidate_by_rule || "") : "",
                     scanFrontPath: "",
                     scanBackPath: "",
                     confidence: String(row.confidence || "").split(";")[0] || "",
@@ -2342,7 +2374,7 @@
         map.createPane("historicalBorderPane");
         map.getPane("historicalBorderPane").style.zIndex = "360";
         map.createPane("historicalLabelPane");
-        map.getPane("historicalLabelPane").style.zIndex = "370";
+        map.getPane("historicalLabelPane").style.zIndex = "440";
         map.getPane("historicalLabelPane").style.pointerEvents = "none";
         map.createPane("routePane");
         map.getPane("routePane").style.zIndex = "450";
@@ -2388,6 +2420,49 @@
             };
         }
 
+        // Area-weighted centroid across all polygons in a MultiPolygon [lng,lat] ring set.
+        // Normalises longitudes around the feature's mean to handle antimeridian-crossing features.
+        function multipolygonCenter(coordinates) {
+            const allLngs = [];
+            for (const polygon of coordinates) {
+                for (const pt of polygon[0]) allLngs.push(pt[0]);
+            }
+            const refLng = allLngs.reduce((a, b) => a + b, 0) / allLngs.length;
+            function normLng(lng) {
+                let d = lng - refLng;
+                while (d > 180) d -= 360;
+                while (d < -180) d += 360;
+                return refLng + d;
+            }
+            let totalArea = 0, sumCx = 0, sumCy = 0;
+            for (const polygon of coordinates) {
+                const ring = polygon[0];
+                let area = 0, cx = 0, cy = 0;
+                for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+                    const xi = normLng(ring[i][0]), yi = ring[i][1];
+                    const xj = normLng(ring[j][0]), yj = ring[j][1];
+                    const cross = xi * yj - xj * yi;
+                    area += cross;
+                    cx += (xi + xj) * cross;
+                    cy += (yi + yj) * cross;
+                }
+                area = Math.abs(area) / 2;
+                if (area > 0) { sumCx += cx / 6; sumCy += cy / 6; totalArea += area; }
+            }
+            if (totalArea === 0) return [0, 0];
+            let lng = sumCx / totalArea;
+            while (lng > 180) lng -= 360;
+            while (lng < -180) lng += 360;
+            return [sumCy / totalArea, lng]; // [lat, lng]
+        }
+
+        function featureCenter(feature) {
+            const geom = feature.geometry;
+            if (!geom) return null;
+            const polys = geom.type === "Polygon" ? [geom.coordinates] : geom.coordinates;
+            return multipolygonCenter(polys);
+        }
+
         function addRepeatableGeoJSON(geojson, options, nameProp, group, labelsGroup, labelCollector) {
             const target = group || map;
             const labelsTarget = labelsGroup || target;
@@ -2401,15 +2476,24 @@
                             || feature.properties?.NAME
                             || feature.properties?.name;
                         if (!name) return;
-                        layer.bindTooltip(name, {
-                            permanent: true,
-                            direction: "center",
-                            className: "basemap-label",
+                        if (curatedHistoricalCountryNames.has(name)) return;
+                        const center = featureCenter(feature);
+                        if (!center) return;
+                        const [lat, lng] = center;
+                        const marker = L.marker([lat, lng + offset], {
+                            icon: L.divIcon({
+                                className: "basemap-label",
+                                html: `<span>${name}</span>`,
+                                iconSize: null,
+                                iconAnchor: [0, 0]
+                            }),
+                            interactive: false,
+                            zIndexOffset: -9999,
                             pane: "historicalLabelPane"
-                        });
+                        }).addTo(labelsTarget);
                         if (labelCollector) {
                             labelCollector.push({
-                                layer,
+                                marker,
                                 bounds: layer.getBounds()
                             });
                         }
@@ -2424,6 +2508,21 @@
         const historicalMinorIslandsGroup = L.layerGroup();
         const historicalLabelsGroup = L.layerGroup();
         const historicalLabelEntries = [];
+        const curatedHistoricalCountryLabels = [
+            { name: "India", lat: 24.1, lng: 89.8, minZoom: 3, importance: "major" },
+            { name: "Burma", lat: 21.6, lng: 96.1, minZoom: 3, importance: "major" },
+            { name: "China", lat: 26.1, lng: 100.3, minZoom: 3, importance: "major" },
+            { name: "Thailand", lat: 17.8, lng: 99.5, minZoom: 4.25, importance: "major" },
+            { name: "Tibet", lat: 29.0, lng: 92.8, minZoom: 4.5, importance: "minor" },
+            { name: "Nepal", lat: 27.7, lng: 86.6, minZoom: 5.5, importance: "minor" },
+            { name: "Bhutan", lat: 27.3, lng: 90.6, minZoom: 5.75, importance: "minor" },
+            { name: "Laos", lat: 18.9, lng: 102.2, minZoom: 5.25, importance: "minor" },
+            { name: "Cambodia", lat: 13.7, lng: 104.8, minZoom: 6.25, importance: "minor" },
+            { name: "Tonkin", lat: 21.5, lng: 105.3, minZoom: 5.75, importance: "minor" },
+            { name: "Annam", lat: 16.4, lng: 107.0, minZoom: 6.2, importance: "minor" },
+            { name: "Cochin China", lat: 10.7, lng: 106.2, minZoom: 7.2, importance: "minor" }
+        ];
+        const curatedHistoricalCountryNames = new Set(curatedHistoricalCountryLabels.map((entry) => entry.name));
         const modernLandStyle = {
             pane: "historicalBasePane",
             style: {
@@ -2463,13 +2562,43 @@
 
         function updateHistoricalLabelVisibility() {
             const minLabelPixelSpan = 28;
-            historicalLabelEntries.forEach(({ layer, bounds }) => {
+            const zoom = map.getZoom();
+            historicalLabelEntries.forEach(({ marker, bounds, minZoom = 0, important = false }) => {
+                if (zoom < minZoom) {
+                    marker.setOpacity(0);
+                    return;
+                }
+                if (important || !bounds) {
+                    marker.setOpacity(1);
+                    return;
+                }
                 const sw = map.latLngToLayerPoint(bounds.getSouthWest());
                 const ne = map.latLngToLayerPoint(bounds.getNorthEast());
                 const width = Math.abs(ne.x - sw.x);
                 const height = Math.abs(sw.y - ne.y);
-                const tooltip = layer.getTooltip();
-                if (tooltip) tooltip.setOpacity(Math.max(width, height) >= minLabelPixelSpan ? 1 : 0);
+                marker.setOpacity(Math.max(width, height) >= minLabelPixelSpan ? 1 : 0);
+            });
+        }
+
+        function addCuratedHistoricalLabels() {
+            curatedHistoricalCountryLabels.forEach((entry) => {
+                const marker = L.marker([entry.lat, entry.lng], {
+                    icon: L.divIcon({
+                        className: `basemap-label country-label ${entry.importance === "major" ? "is-major" : "is-minor"}`,
+                        html: `<span>${entry.name}</span>`,
+                        iconSize: null,
+                        iconAnchor: [0, 0]
+                    }),
+                    interactive: false,
+                    zIndexOffset: -9000,
+                    pane: "historicalLabelPane"
+                }).addTo(historicalLabelsGroup);
+                historicalLabelEntries.push({
+                    marker,
+                    bounds: null,
+                    minZoom: entry.minZoom,
+                    important: true
+                });
             });
         }
 
@@ -2547,6 +2676,7 @@
                     historicalLabelsGroup,
                     historicalLabelEntries
                 );
+                addCuratedHistoricalLabels();
                 historicalBasemapLoaded = true;
                 showHistoricalBasemap();
             }).catch(() => {

@@ -610,6 +610,7 @@ def build_player_missions(rows):
 
         confidence = row["confidence"].split(";")[0]
         event_points = build_event_points(row, points)
+        has_reviewed_back = row["paired_back_reviewed"] == "yes"
 
         missions.append({
             "id": row["sortie_id"],
@@ -620,12 +621,12 @@ def build_player_missions(rows):
             "aircraftCount": row["aircraft_count"],
             "base": row["base"],
             "sourceFront": row["source_front_image"],
-            "sourceBack": row["paired_back_candidate_by_rule"],
+            "sourceBack": row["paired_back_candidate_by_rule"] if has_reviewed_back else "",
             "scanFrontPath": build_scan_path(row["sortie_id"], row["source_front_image"], "front"),
             "scanBackPath": build_scan_path(
                 row["sortie_id"],
-                row["paired_back_candidate_by_rule"],
-                "back_reviewed" if row["paired_back_reviewed"] == "yes" else "back_candidate",
+                row["paired_back_candidate_by_rule"] if has_reviewed_back else "",
+                "back_reviewed",
             ),
             "confidence": confidence,
             "primaryTarget": row["primary_target"],
