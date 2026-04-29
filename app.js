@@ -555,9 +555,9 @@ class PacificWingsApp {
                 features: modern.features.filter(f => f.geometry)
             };
 
-            const hist1938Named = {
+            const hist1945Named = {
                 type: 'FeatureCollection',
-                features: hist.features.filter(f => f.geometry && f.properties && f.properties.NAME)
+                features: window.WORLD_1945_GEOJSON.features.filter(f => f.geometry && f.properties && f.properties.NAME)
             };
 
             const hist1945Named = {
@@ -574,7 +574,7 @@ class PacificWingsApp {
             this._addRepeatableGeoJSON(modernLand, MODERN_FILL_STYLE, null, this._historicalGroup);
             this._addRepeatableGeoJSON(modernMinor, MODERN_FILL_STYLE, null, this._historicalMinorIslandsGroup);
             this._addRepeatableGeoJSON(
-                hist1938Named,
+                hist1945Named,
                 HIST_BOUNDARY_STYLE,
                 'NAME',
                 this._historicalGroup,
@@ -693,24 +693,7 @@ class PacificWingsApp {
             worldCopyJump: true
         }).setView([20.0, 170.0], 3); // Pacific Theater (India/Philippines left, Hawaii center, US West Coast right)
 
-        // Load basemap layers (historical = modern geometry + 1938 boundaries/names)
         this._loadBasemap();
-
-
-        // Basemap toggle control (top-right, above zoom)
-        const BasemapToggle = L.Control.extend({
-            options: { position: 'topright' },
-            onAdd: () => {
-                const div = L.DomUtil.create('div', 'basemap-toggle-wrap leaflet-bar');
-                div.innerHTML = '<button id="basemap-toggle-btn" class="basemap-toggle-btn">1938 map</button>';
-                L.DomEvent.disableClickPropagation(div);
-                return div;
-            }
-        });
-        new BasemapToggle().addTo(this.map);
-        document.addEventListener('click', e => {
-            if (e.target.id === 'basemap-toggle-btn') this._toggleBasemap();
-        });
 
         // Move zoom control to top-right
         L.control.zoom({ position: 'topright' }).addTo(this.map);

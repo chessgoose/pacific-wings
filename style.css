@@ -1310,38 +1310,6 @@ body {
     color: var(--text-secondary);
 }
 
-/* Basemap toggle control */
-.basemap-toggle-wrap {
-    border: 1px solid var(--panel-border) !important;
-    border-radius: 8px !important;
-    overflow: hidden;
-}
-
-.basemap-toggle-btn {
-    display: block;
-    background: var(--panel-bg);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: none;
-    color: var(--text-secondary);
-    font-family: var(--font-main);
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    padding: 7px 12px;
-    cursor: pointer;
-    white-space: nowrap;
-    transition: color 0.15s, background 0.15s;
-}
-
-.basemap-toggle-btn:hover {
-    color: var(--text-primary);
-    background: rgba(255, 255, 255, 0.08);
-}
-
-.basemap-toggle-btn.active {
-    color: var(--accent-color);
-}
 
 /* Historical basemap country/territory labels */
 .basemap-label {
