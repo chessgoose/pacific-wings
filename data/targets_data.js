@@ -93,6 +93,7 @@ window.TARGETS_DATA = [
   {name:"Wewak",aliases:["Wewak A/F"],lat:-3.55,lng:143.63,country:"New Guinea",type:"port/airfield"},
   {name:"Mushu Island",aliases:["Mushu I."],lat:-3.47,lng:143.83,country:"New Guinea",type:"island"},
   {name:"Matsuyama",aliases:["Matsuyama A/F", "Taihoku Matsuyama", "Songshan"],lat:25.07,lng:121.55,country:"Formosa",type:"airfield"},
+  {name:"Matsuyama Japan",aliases:["Matsuyama Shikoku"],lat:33.84,lng:132.77,country:"Japan",type:"city/airfield"},
   {name:"Toshien",aliases:["Toshien Harbor", "Zuoying Harbor", "Takao Harbor"],lat:22.69,lng:120.26,country:"Formosa",type:"harbor"},
   {name:"Toko",aliases:["Toko Seaplane Base", "Dapeng Bay"],lat:22.45,lng:120.48,country:"Formosa",type:"seaplane base"},
   {name:"Kiirun",aliases:["Keelung", "Kiirun Naval Port"],lat:25.15,lng:121.76,country:"Formosa",type:"port/naval base"},
@@ -179,5 +180,7 @@ window.TARGETS_DATA = [
   {name:"Vella Lavella",aliases:["Vella Lavella Island", "W Vella Lavella"],lat:-7.77,lng:156.65,country:"Solomon Islands",type:"island"},
   {name:"Ganongga",aliases:["Ganongga Island", "Ganonga"],lat:-8.32,lng:156.55,country:"Solomon Islands",type:"island"},
   {name:"Kakasa",aliases:["Kakasa anchorage"],lat:-8.1,lng:157.2,country:"Solomon Islands",type:"anchorage"},
-  {name:"Bakli Bay",aliases:["Bakli", "Beili", "Pei-li", "Pei-li-chen", "Pei-li-shih"],lat:19.14,lng:108.69,country:"China",type:"bay/harbor"}
+  {name:"Bakli Bay",aliases:["Bakli", "Beili", "Pei-li", "Pei-li-chen", "Pei-li-shih"],lat:19.14,lng:108.69,country:"China",type:"bay/harbor"},
+  {name:"Gona",aliases:["Gona Beach", "Gona Mission"],lat:-8.67,lng:148.52,country:"New Guinea",type:"battle area/beach"},
+  {name:"Nassau Bay",aliases:["Nassau Bay anchorage"],lat:-7.48,lng:147.35,country:"New Guinea",type:"bay/landing site"}
 ];

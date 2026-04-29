@@ -92,6 +92,7 @@ Amahai,Amahai A/F,-3.33,128.92,Seram Island,airfield
 Wewak,Wewak A/F,-3.55,143.63,New Guinea,port/airfield
 Mushu Island,Mushu I.,-3.47,143.83,New Guinea,island
 Matsuyama,"Matsuyama A/F,Taihoku Matsuyama,Songshan",25.07,121.55,Formosa,airfield
+Matsuyama Japan,Matsuyama Shikoku,33.84,132.77,Japan,city/airfield
 Toshien,"Toshien Harbor,Zuoying Harbor,Takao Harbor",22.69,120.26,Formosa,harbor
 Toko,"Toko Seaplane Base,Dapeng Bay",22.45,120.48,Formosa,seaplane base
 Kiirun,"Keelung,Kiirun Naval Port",25.15,121.76,Formosa,port/naval base
@@ -179,3 +180,5 @@ Vella Lavella,"Vella Lavella Island,W Vella Lavella",-7.77,156.65,Solomon Island
 Ganongga,"Ganongga Island,Ganonga",-8.32,156.55,Solomon Islands,island
 Kakasa,Kakasa anchorage,-8.10,157.20,Solomon Islands,anchorage
 Bakli Bay,"Bakli,Beili,Pei-li,Pei-li-chen,Pei-li-shih",19.14,108.69,China,bay/harbor
+Gona,"Gona Beach,Gona Mission",-8.67,148.52,New Guinea,battle area/beach
+Nassau Bay,Nassau Bay anchorage,-7.48,147.35,New Guinea,bay/landing site
