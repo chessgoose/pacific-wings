@@ -40,11 +40,10 @@ PLACE_POINTS = {
     "Myittha": (20.85, 96.37),
     "Indainggyi": (22.93, 95.33),
     "Namsang": (20.8878, 97.7356),
+    "Silchar": (24.8333, 92.7789),
 }
 
-APPROXIMATE_TARGET_POINTS = {
-    "UNK_1944-10-29_AIRRADAR": (21.9162, 95.9560, "Burma target area (approx.)"),
-}
+APPROXIMATE_TARGET_POINTS = {}
 
 
 def clean(text: str) -> str:
@@ -292,6 +291,7 @@ def build_event_points(row, points):
     base = next((point for point in points if point["kind"] == "base"), None)
     base_return = next((point for point in reversed(points) if point["kind"] == "base_return"), base)
     targeted_place_labels = {point["label"] for point in extract_place_points(row["primary_target"], row["alternate_target"])}
+    is_recovery_supplement = row["sortie_id"] == "81BS_1944-10-17_SUPP"
 
     if base:
         events.append({
@@ -309,7 +309,7 @@ def build_event_points(row, points):
     if not target_point:
         target_point = next((point for point in points if point["kind"] in {"coordinate", "approximate_target"}), None)
     bombing_time_text = parse_first_time_value(row["time_over_target"])
-    if target_point:
+    if target_point and not is_recovery_supplement:
         events.append({
             "kind": "bomb",
             "label": "Target strike",
@@ -350,6 +350,16 @@ def build_event_points(row, points):
         if point["kind"] == "coordinate" and label in targeted_place_labels:
             continue
         snippet = snippet_for_label(label, row["special_remarks"], row["observation_points_raw"], row["route_summary"])
+        if row["sortie_id"] == "81BS_1944-10-16" and label == "21 10 N 93 30 E":
+            snippet = (
+                "Aircraft #23 left the formation near 21 10 N 93 30 E because of weather, "
+                "diverted to Silchar, and landed there at 1750"
+            )
+        if is_recovery_supplement and label == "21 10N, 93 30E":
+            snippet = (
+                "Aircraft #23 left the formation near 21 10N, 93 30E on 16 October because of weather, "
+                "diverted to Silchar for the night, then took off from Silchar at 0745 and landed back at Feni at 0845 on 17 October"
+            )
         time_value = parse_context_time(snippet)
         kind = classify_event_text(snippet)
         events.append({
@@ -410,6 +420,25 @@ def derive_base_point(base: str):
     if "tiddim" in base:
         return 23.3787, 93.6580
     return None
+
+
+def derive_start_and_return_base_points(row, route_summary: str, observations: str):
+    sortie_id = clean(row["sortie_id"])
+    base_label = clean(row["base"])
+    default_base = derive_base_point(base_label)
+    if sortie_id == "81BS_1944-10-17_SUPP":
+        start_point = PLACE_POINTS.get("Silchar")
+        return_point = derive_base_point("Feni")
+        return (
+            (start_point[0], start_point[1], "Silchar") if start_point else None,
+            (return_point[0], return_point[1], "Feni") if return_point else None,
+        )
+    if default_base:
+        return (
+            (default_base[0], default_base[1], base_label),
+            (default_base[0], default_base[1], base_label),
+        )
+    return None, None
 
 
 def extract_rows():
@@ -476,7 +505,7 @@ def normalize_row(row):
 
     speed_source = clip_before(route_note + " " + special, ["Opposition:", "Casualties:", "Photos:", "Photographs", "Observations:", "Leaflets dropped:"])
     bombing_speed = all_matches(r"(\d{2,3}\s*(?:IAS|MPH))", speed_source)
-    bombing_altitude = all_matches(r"(\d{3,5}\s*feet(?: indicated)?|\d{3,5}'\s*Ind\.?)", speed_source)
+    bombing_altitude = all_matches(r"(\d{3,5}\s*feet(?: indicated)?(?!\s*interval)|\d{3,5}'\s*Ind\.?)", speed_source)
     interval_setting = first_match(r"interval(?:ometer)?(?: setting)?(?: was| were)?\s*([0-9 -]+(?:feet|ft))", route_note + " " + special)
     if not interval_setting:
         interval_setting = first_match(r"with\s*([0-9 -]+(?:feet|ft))\s*interval", route_note + " " + special)
@@ -505,10 +534,10 @@ def normalize_row(row):
     elif "direct to target" in route_note.lower():
         target_status = "primary attacked"
 
-    base_point = derive_base_point(row["base"])
+    start_base_point, return_base_point = derive_start_and_return_base_points(row, route_note, observations)
     map_points = []
-    if base_point:
-        map_points.append({"kind": "base", "lat": base_point[0], "lon": base_point[1], "label": clean(row["base"])})
+    if start_base_point:
+        map_points.append({"kind": "base", "lat": start_base_point[0], "lon": start_base_point[1], "label": start_base_point[2]})
     if not coords:
         inferred_target = infer_place_point(primary_target, alternate_target, route_note, observations, special)
         if inferred_target:
@@ -520,8 +549,8 @@ def normalize_row(row):
         map_points.append({"kind": "coordinate", **coord})
     for coord in event_coords:
         map_points.append({"kind": "event_coordinate", **coord})
-    if base_point and any(point["kind"] != "base" for point in map_points):
-        map_points.append({"kind": "base_return", "lat": base_point[0], "lon": base_point[1], "label": clean(row["base"])})
+    if return_base_point and any(point["kind"] != "base" for point in map_points):
+        map_points.append({"kind": "base_return", "lat": return_base_point[0], "lon": return_base_point[1], "label": return_base_point[2]})
 
     return {
         "sortie_id": row["sortie_id"],

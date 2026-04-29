@@ -3731,8 +3731,12 @@
         "type": "LineString",
         "coordinates": [
           [
-            91.397,
-            23.014
+            92.7789,
+            24.8333
+          ],
+          [
+            92.7789,
+            24.8333
           ],
           [
             93.5,
@@ -3748,7 +3752,7 @@
         "sortie_id": "81BS_1944-10-17_SUPP",
         "report_date": "1944-10-17",
         "squadron": "81st Squadron",
-        "primary_target": "Supplement to OpRep 130 (16 Oct 1944): aircraft #23 rejoined mission and completed bomb run with formation before recovering to base next morning",
+        "primary_target": "Supplement to OpRep 130 (16 Oct 1944): aircraft #23 recovery to home base after overnight Silchar diversion",
         "alternate_target": "",
         "target_status": "",
         "confidence": "medium; supplement front rather than standard complete sortie form"
@@ -3759,8 +3763,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          91.397,
-          23.014
+          92.7789,
+          24.8333
         ]
       },
       "properties": {
@@ -3768,7 +3772,25 @@
         "report_date": "1944-10-17",
         "squadron": "81st Squadron",
         "kind": "base",
-        "label": "Feni / home base recovery from Silchar stopover",
+        "label": "Silchar",
+        "confidence": "medium; supplement front rather than standard complete sortie form"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.7789,
+          24.8333
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-17_SUPP",
+        "report_date": "1944-10-17",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "Silchar",
         "confidence": "medium; supplement front rather than standard complete sortie form"
       }
     },
@@ -3804,7 +3826,7 @@
         "report_date": "1944-10-17",
         "squadron": "81st Squadron",
         "kind": "base_return",
-        "label": "Feni / home base recovery from Silchar stopover",
+        "label": "Feni",
         "confidence": "medium; supplement front rather than standard complete sortie form"
       }
     },
@@ -7152,8 +7174,8 @@
         ]
       },
       "properties": {
-        "sortie_id": "82BS_1944-10-25",
-        "report_date": "1944-10-25",
+        "sortie_id": "82BS_1944-10-30_MU_RIVER_BYPASS",
+        "report_date": "1944-10-30",
         "squadron": "82nd Squadron",
         "primary_target": "Me River by-pass bridge, Burma (21 59N 96 40E",
         "alternate_target": "",
@@ -7171,8 +7193,8 @@
         ]
       },
       "properties": {
-        "sortie_id": "82BS_1944-10-25",
-        "report_date": "1944-10-25",
+        "sortie_id": "82BS_1944-10-30_MU_RIVER_BYPASS",
+        "report_date": "1944-10-30",
         "squadron": "82nd Squadron",
         "kind": "base",
         "label": "Fenny",
@@ -7189,8 +7211,8 @@
         ]
       },
       "properties": {
-        "sortie_id": "82BS_1944-10-25",
-        "report_date": "1944-10-25",
+        "sortie_id": "82BS_1944-10-30_MU_RIVER_BYPASS",
+        "report_date": "1944-10-30",
         "squadron": "82nd Squadron",
         "kind": "coordinate",
         "label": "21 59N 96 40E",
@@ -7207,8 +7229,8 @@
         ]
       },
       "properties": {
-        "sortie_id": "82BS_1944-10-25",
-        "report_date": "1944-10-25",
+        "sortie_id": "82BS_1944-10-30_MU_RIVER_BYPASS",
+        "report_date": "1944-10-30",
         "squadron": "82nd Squadron",
         "kind": "base_return",
         "label": "Fenny",
@@ -7308,8 +7330,8 @@
             23.4607
           ],
           [
-            95.956,
-            21.9162
+            97.7356,
+            20.8878
           ],
           [
             91.1809,
@@ -7318,13 +7340,13 @@
         ]
       },
       "properties": {
-        "sortie_id": "UNK_1944-10-29_AIRRADAR",
-        "report_date": "1944-10-29",
-        "squadron": "Squadron unread on late-month scan",
-        "primary_target": "erase Japanese air radar, Burma",
+        "sortie_id": "434BS_1944-10-28_NAMSANG",
+        "report_date": "1944-10-28",
+        "squadron": "434th Squadron",
+        "primary_target": "Namsang Air Field, Burma",
         "alternate_target": "",
         "target_status": "",
-        "confidence": "low-medium; date, base, target type, timing window, and backside linkage are clear, but some top-line identifiers are too faint"
+        "confidence": "medium-high; front and reviewed reverse clearly identify the 28 Oct 1944 434th Squadron Namsang/Kunlon strike, though some fuse wording and a few narrative fragments remain faint"
       }
     },
     {
@@ -7337,12 +7359,12 @@
         ]
       },
       "properties": {
-        "sortie_id": "UNK_1944-10-29_AIRRADAR",
-        "report_date": "1944-10-29",
-        "squadron": "Squadron unread on late-month scan",
+        "sortie_id": "434BS_1944-10-28_NAMSANG",
+        "report_date": "1944-10-28",
+        "squadron": "434th Squadron",
         "kind": "base",
         "label": "Comilla",
-        "confidence": "low-medium; date, base, target type, timing window, and backside linkage are clear, but some top-line identifiers are too faint"
+        "confidence": "medium-high; front and reviewed reverse clearly identify the 28 Oct 1944 434th Squadron Namsang/Kunlon strike, though some fuse wording and a few narrative fragments remain faint"
       }
     },
     {
@@ -7350,17 +7372,17 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          95.956,
-          21.9162
+          97.7356,
+          20.8878
         ]
       },
       "properties": {
-        "sortie_id": "UNK_1944-10-29_AIRRADAR",
-        "report_date": "1944-10-29",
-        "squadron": "Squadron unread on late-month scan",
-        "kind": "approximate_target",
-        "label": "Burma target area (approx.)",
-        "confidence": "low-medium; date, base, target type, timing window, and backside linkage are clear, but some top-line identifiers are too faint"
+        "sortie_id": "434BS_1944-10-28_NAMSANG",
+        "report_date": "1944-10-28",
+        "squadron": "434th Squadron",
+        "kind": "coordinate",
+        "label": "Namsang",
+        "confidence": "medium-high; front and reviewed reverse clearly identify the 28 Oct 1944 434th Squadron Namsang/Kunlon strike, though some fuse wording and a few narrative fragments remain faint"
       }
     },
     {
@@ -7373,12 +7395,12 @@
         ]
       },
       "properties": {
-        "sortie_id": "UNK_1944-10-29_AIRRADAR",
-        "report_date": "1944-10-29",
-        "squadron": "Squadron unread on late-month scan",
+        "sortie_id": "434BS_1944-10-28_NAMSANG",
+        "report_date": "1944-10-28",
+        "squadron": "434th Squadron",
         "kind": "base_return",
         "label": "Comilla",
-        "confidence": "low-medium; date, base, target type, timing window, and backside linkage are clear, but some top-line identifiers are too faint"
+        "confidence": "medium-high; front and reviewed reverse clearly identify the 28 Oct 1944 434th Squadron Namsang/Kunlon strike, though some fuse wording and a few narrative fragments remain faint"
       }
     },
     {
@@ -7391,12 +7413,16 @@
             23.014
           ],
           [
-            95.516667,
-            22.483333
+            95.083333,
+            21.333333
           ],
           [
-            96.95,
-            22.483333
+            95.133333,
+            22.1
+          ],
+          [
+            93.416667,
+            22.15
           ],
           [
             91.397,
@@ -7405,13 +7431,13 @@
         ]
       },
       "properties": {
-        "sortie_id": "UNK_1944-10-29_BR201",
-        "report_date": "1944-10-29",
-        "squadron": "Squadron unread on late-month scan",
-        "primary_target": "Rail bridge #201, LV-9205, Paukton, Burma",
-        "alternate_target": "",
-        "target_status": "",
-        "confidence": "medium; target, date, timing, bridge result, and backside linkage are clear, but some labels and coordinates remain approximate"
+        "sortie_id": "81BS_1944-10-27_PAKOKKU",
+        "report_date": "1944-10-27",
+        "squadron": "81st Squadron",
+        "primary_target": "Pakokku military area, Burma (21 20N, 95 05E)",
+        "alternate_target": "Monywa, Burma (22 06N, 95 08E)",
+        "target_status": "alternate attacked",
+        "confidence": "high for front-page extraction; manually reclassified from a false front/back pairing after signed-page review"
       }
     },
     {
@@ -7424,12 +7450,12 @@
         ]
       },
       "properties": {
-        "sortie_id": "UNK_1944-10-29_BR201",
-        "report_date": "1944-10-29",
-        "squadron": "Squadron unread on late-month scan",
+        "sortie_id": "81BS_1944-10-27_PAKOKKU",
+        "report_date": "1944-10-27",
+        "squadron": "81st Squadron",
         "kind": "base",
-        "label": "Fenny",
-        "confidence": "medium; target, date, timing, bridge result, and backside linkage are clear, but some labels and coordinates remain approximate"
+        "label": "Feni",
+        "confidence": "high for front-page extraction; manually reclassified from a false front/back pairing after signed-page review"
       }
     },
     {
@@ -7437,17 +7463,17 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          95.516667,
-          22.483333
+          95.083333,
+          21.333333
         ]
       },
       "properties": {
-        "sortie_id": "UNK_1944-10-29_BR201",
-        "report_date": "1944-10-29",
-        "squadron": "Squadron unread on late-month scan",
+        "sortie_id": "81BS_1944-10-27_PAKOKKU",
+        "report_date": "1944-10-27",
+        "squadron": "81st Squadron",
         "kind": "coordinate",
-        "label": "22 29N 95 31E",
-        "confidence": "medium; target, date, timing, bridge result, and backside linkage are clear, but some labels and coordinates remain approximate"
+        "label": "21 20N 95 05E",
+        "confidence": "high for front-page extraction; manually reclassified from a false front/back pairing after signed-page review"
       }
     },
     {
@@ -7455,17 +7481,35 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          96.95,
-          22.483333
+          95.133333,
+          22.1
         ]
       },
       "properties": {
-        "sortie_id": "UNK_1944-10-29_BR201",
-        "report_date": "1944-10-29",
-        "squadron": "Squadron unread on late-month scan",
+        "sortie_id": "81BS_1944-10-27_PAKOKKU",
+        "report_date": "1944-10-27",
+        "squadron": "81st Squadron",
         "kind": "coordinate",
-        "label": "22 29N 96 57E",
-        "confidence": "medium; target, date, timing, bridge result, and backside linkage are clear, but some labels and coordinates remain approximate"
+        "label": "22 06N 95 08E",
+        "confidence": "high for front-page extraction; manually reclassified from a false front/back pairing after signed-page review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.416667,
+          22.15
+        ]
+      },
+      "properties": {
+        "sortie_id": "81BS_1944-10-27_PAKOKKU",
+        "report_date": "1944-10-27",
+        "squadron": "81st Squadron",
+        "kind": "coordinate",
+        "label": "22 09N 93 25E",
+        "confidence": "high for front-page extraction; manually reclassified from a false front/back pairing after signed-page review"
       }
     },
     {
@@ -7478,12 +7522,117 @@
         ]
       },
       "properties": {
-        "sortie_id": "UNK_1944-10-29_BR201",
-        "report_date": "1944-10-29",
-        "squadron": "Squadron unread on late-month scan",
+        "sortie_id": "81BS_1944-10-27_PAKOKKU",
+        "report_date": "1944-10-27",
+        "squadron": "81st Squadron",
         "kind": "base_return",
-        "label": "Fenny",
-        "confidence": "medium; target, date, timing, bridge result, and backside linkage are clear, but some labels and coordinates remain approximate"
+        "label": "Feni",
+        "confidence": "high for front-page extraction; manually reclassified from a false front/back pairing after signed-page review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            91.397,
+            23.014
+          ],
+          [
+            95.133333,
+            21.4
+          ],
+          [
+            92.6,
+            22.533333
+          ],
+          [
+            91.397,
+            23.014
+          ]
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-27_PAKOKKU",
+        "report_date": "1944-10-27",
+        "squadron": "83rd Bomb Squadron",
+        "primary_target": "Bomb military area at Pakokku, Burma",
+        "alternate_target": "",
+        "target_status": "primary attacked",
+        "confidence": "high for front-page extraction; manually split from a false front/back pairing after signed-page review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-27_PAKOKKU",
+        "report_date": "1944-10-27",
+        "squadron": "83rd Bomb Squadron",
+        "kind": "base",
+        "label": "Fenny A/D, India",
+        "confidence": "high for front-page extraction; manually split from a false front/back pairing after signed-page review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.133333,
+          21.4
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-27_PAKOKKU",
+        "report_date": "1944-10-27",
+        "squadron": "83rd Bomb Squadron",
+        "kind": "coordinate",
+        "label": "21 24N 95 08E",
+        "confidence": "high for front-page extraction; manually split from a false front/back pairing after signed-page review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.6,
+          22.533333
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-27_PAKOKKU",
+        "report_date": "1944-10-27",
+        "squadron": "83rd Bomb Squadron",
+        "kind": "event_coordinate",
+        "label": "22 32N 92 36E",
+        "confidence": "high for front-page extraction; manually split from a false front/back pairing after signed-page review"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.397,
+          23.014
+        ]
+      },
+      "properties": {
+        "sortie_id": "83BS_1944-10-27_PAKOKKU",
+        "report_date": "1944-10-27",
+        "squadron": "83rd Bomb Squadron",
+        "kind": "base_return",
+        "label": "Fenny A/D, India",
+        "confidence": "high for front-page extraction; manually split from a false front/back pairing after signed-page review"
       }
     },
     {
@@ -7510,13 +7659,13 @@
         ]
       },
       "properties": {
-        "sortie_id": "UNK_1944-10-30_BR433",
+        "sortie_id": "81BS_1944-10-30_BR433",
         "report_date": "1944-10-30",
-        "squadron": "Squadron unread on late-month scan",
+        "squadron": "81st Squadron",
         "primary_target": "Railroad bridge #433, JU-6505, Pyinmana, Burma",
         "alternate_target": "",
         "target_status": "alternate attacked",
-        "confidence": "medium; date, target, bomb totals, and result are legible, while squadron line and some wording remain unread"
+        "confidence": "medium; date, target, bomb totals, result, and squadron assignment from labeled scan sequence are clear, while some wording remains unread and the paired reverse is unconfirmed"
       }
     },
     {
@@ -7529,12 +7678,12 @@
         ]
       },
       "properties": {
-        "sortie_id": "UNK_1944-10-30_BR433",
+        "sortie_id": "81BS_1944-10-30_BR433",
         "report_date": "1944-10-30",
-        "squadron": "Squadron unread on late-month scan",
+        "squadron": "81st Squadron",
         "kind": "base",
         "label": "Fenny",
-        "confidence": "medium; date, target, bomb totals, and result are legible, while squadron line and some wording remain unread"
+        "confidence": "medium; date, target, bomb totals, result, and squadron assignment from labeled scan sequence are clear, while some wording remains unread and the paired reverse is unconfirmed"
       }
     },
     {
@@ -7547,12 +7696,12 @@
         ]
       },
       "properties": {
-        "sortie_id": "UNK_1944-10-30_BR433",
+        "sortie_id": "81BS_1944-10-30_BR433",
         "report_date": "1944-10-30",
-        "squadron": "Squadron unread on late-month scan",
+        "squadron": "81st Squadron",
         "kind": "coordinate",
         "label": "21 20N 95 47E",
-        "confidence": "medium; date, target, bomb totals, and result are legible, while squadron line and some wording remain unread"
+        "confidence": "medium; date, target, bomb totals, result, and squadron assignment from labeled scan sequence are clear, while some wording remains unread and the paired reverse is unconfirmed"
       }
     },
     {
@@ -7565,12 +7714,12 @@
         ]
       },
       "properties": {
-        "sortie_id": "UNK_1944-10-30_BR433",
+        "sortie_id": "81BS_1944-10-30_BR433",
         "report_date": "1944-10-30",
-        "squadron": "Squadron unread on late-month scan",
+        "squadron": "81st Squadron",
         "kind": "coordinate",
         "label": "Pyinmana",
-        "confidence": "medium; date, target, bomb totals, and result are legible, while squadron line and some wording remain unread"
+        "confidence": "medium; date, target, bomb totals, result, and squadron assignment from labeled scan sequence are clear, while some wording remains unread and the paired reverse is unconfirmed"
       }
     },
     {
@@ -7583,12 +7732,12 @@
         ]
       },
       "properties": {
-        "sortie_id": "UNK_1944-10-30_BR433",
+        "sortie_id": "81BS_1944-10-30_BR433",
         "report_date": "1944-10-30",
-        "squadron": "Squadron unread on late-month scan",
+        "squadron": "81st Squadron",
         "kind": "base_return",
         "label": "Fenny",
-        "confidence": "medium; date, target, bomb totals, and result are legible, while squadron line and some wording remain unread"
+        "confidence": "medium; date, target, bomb totals, result, and squadron assignment from labeled scan sequence are clear, while some wording remains unread and the paired reverse is unconfirmed"
       }
     },
     {
@@ -7611,13 +7760,13 @@
         ]
       },
       "properties": {
-        "sortie_id": "UNK_1944-10-30_BR44",
+        "sortie_id": "82BS_1944-10-30_BR44",
         "report_date": "1944-10-30",
-        "squadron": "Squadron unread on late-month scan",
+        "squadron": "82nd Squadron",
         "primary_target": "Railroad bridge #44, ES-5279, Kyun, Burma",
         "alternate_target": "",
         "target_status": "",
-        "confidence": "medium; target, timing, bomb load, and bridge result are readable, though some top-line identifiers are faint"
+        "confidence": "medium; target, timing, bomb load, bridge result, and squadron assignment from labeled scan sequence are clear, though some top-line identifiers remain faint and the paired reverse is unconfirmed"
       }
     },
     {
@@ -7630,12 +7779,12 @@
         ]
       },
       "properties": {
-        "sortie_id": "UNK_1944-10-30_BR44",
+        "sortie_id": "82BS_1944-10-30_BR44",
         "report_date": "1944-10-30",
-        "squadron": "Squadron unread on late-month scan",
+        "squadron": "82nd Squadron",
         "kind": "base",
         "label": "Fenny",
-        "confidence": "medium; target, timing, bomb load, and bridge result are readable, though some top-line identifiers are faint"
+        "confidence": "medium; target, timing, bomb load, bridge result, and squadron assignment from labeled scan sequence are clear, though some top-line identifiers remain faint and the paired reverse is unconfirmed"
       }
     },
     {
@@ -7648,12 +7797,12 @@
         ]
       },
       "properties": {
-        "sortie_id": "UNK_1944-10-30_BR44",
+        "sortie_id": "82BS_1944-10-30_BR44",
         "report_date": "1944-10-30",
-        "squadron": "Squadron unread on late-month scan",
+        "squadron": "82nd Squadron",
         "kind": "coordinate",
         "label": "19 37N 97 17E",
-        "confidence": "medium; target, timing, bomb load, and bridge result are readable, though some top-line identifiers are faint"
+        "confidence": "medium; target, timing, bomb load, bridge result, and squadron assignment from labeled scan sequence are clear, though some top-line identifiers remain faint and the paired reverse is unconfirmed"
       }
     },
     {
@@ -7666,12 +7815,12 @@
         ]
       },
       "properties": {
-        "sortie_id": "UNK_1944-10-30_BR44",
+        "sortie_id": "82BS_1944-10-30_BR44",
         "report_date": "1944-10-30",
-        "squadron": "Squadron unread on late-month scan",
+        "squadron": "82nd Squadron",
         "kind": "base_return",
         "label": "Fenny",
-        "confidence": "medium; target, timing, bomb load, and bridge result are readable, though some top-line identifiers are faint"
+        "confidence": "medium; target, timing, bomb load, bridge result, and squadron assignment from labeled scan sequence are clear, though some top-line identifiers remain faint and the paired reverse is unconfirmed"
       }
     },
     {

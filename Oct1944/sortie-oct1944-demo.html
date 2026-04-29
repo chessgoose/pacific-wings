@@ -1691,6 +1691,7 @@
     <script src="../data/indiaburma1944-12th-bombardment-group-sortie-player-data.js"></script>
     <script>
         const IMPORTED_SORTIE_DATA_KEY = "pacific-wings-oct1944-imported-data";
+        loadLabeledSortieManifest();
 
         function splitCsvLine(line) {
             const cols = [];
@@ -1735,6 +1736,68 @@
                 });
                 return row;
             });
+        }
+
+        const labeledSortieManifest = {
+            bySortieId: new Map(),
+            byFrontImage: new Map(),
+            byBackImage: new Map(),
+            loaded: false
+        };
+
+        function normalizeManifestPath(path) {
+            const value = String(path || "").trim();
+            return value ? `./LabeledSorties/${value.replace(/^\.?\//, "")}` : "";
+        }
+
+        function registerManifestEntry(row) {
+            const sortieId = String(row.sortie_id || "").trim();
+            const frontImage = String(row.front_image || "").trim();
+            const backImage = String(row.back_image || "").trim();
+            const frontLink = normalizeManifestPath(row.front_link);
+            const backLink = normalizeManifestPath(row.back_link);
+            const backReviewed = String(row.back_reviewed || "").trim().toLowerCase() === "yes";
+            const entry = {
+                sortieId,
+                frontImage,
+                frontPath: frontLink,
+                backImage,
+                backPath: backLink,
+                backReviewed
+            };
+
+            if (sortieId) {
+                labeledSortieManifest.bySortieId.set(sortieId, entry);
+            }
+
+            if (frontImage && frontLink) {
+                labeledSortieManifest.byFrontImage.set(frontImage, {
+                    sortieId,
+                    path: frontLink
+                });
+            }
+            if (backImage && backLink) {
+                labeledSortieManifest.byBackImage.set(backImage, {
+                    sortieId,
+                    path: backLink,
+                    reviewed: backReviewed
+                });
+            }
+        }
+
+        async function loadLabeledSortieManifest() {
+            try {
+                const response = await fetch("./LabeledSorties/manifest.csv");
+                if (!response.ok) return;
+                parseCsvRows(await response.text()).forEach(registerManifestEntry);
+                labeledSortieManifest.loaded = true;
+                if (typeof updateScanAction === "function") {
+                    updateScanAction(getSelectedMission());
+                }
+                if (typeof renderMissionBrowser === "function") {
+                    renderMissionBrowser();
+                }
+            } catch (_) {}
         }
 
         function parseFirstImportTime(text) {
@@ -2971,11 +3034,18 @@
         }
 
         function displayMissionTitle(mission) {
-            if (!mission.id.startsWith("UNK_")) return mission.id;
+            const rawId = String(mission?.id || "");
+            if (rawId && !rawId.startsWith("UNK_")) {
+                const patchedId = mission?.date
+                    ? rawId.replace(/_(\d{4}-\d{2}-\d{2})(?=_|$)/, `_${mission.date}`)
+                    : rawId;
+                return patchedId;
+            }
             return `${shortDateLabel(mission.date)} • ${cleanTargetLabel(mission.primaryTarget || mission.alternateTarget || "Unidentified target")}`;
         }
 
         function collectMissionDutyTags(mission) {
+            const isRecoverySupplement = /_supp$/i.test(mission.id || "") || /\bsupplement to oprep\b/i.test(mission.primaryTarget || "");
             const text = [
                 mission.primaryTarget,
                 mission.alternateTarget,
@@ -2984,6 +3054,9 @@
                 mission.observations
             ].join(" ").toLowerCase();
             const tags = [];
+            if (isRecoverySupplement && /\bsupplement\b|\brecovery\b|\bovernight(?:ing)?\b|\bdiversion\b|\bsilchar\b|\bhome base recovery\b/.test(text)) {
+                tags.push("Recovery / supplement");
+            }
             if (/\bbridge\b|\brail bridge\b|\bby-pass bridge\b|\brailroad bridge\b|\brail\b|\brailway\b/.test(text)) tags.push("Bridge / rail interdiction");
             if (/\bstores?\b|\bsupply\b|\bdump\b|\byards?\b|\bbarracks\b|\bmilitary area\b/.test(text)) tags.push("Stores / supply / dumps");
             if (/\btroop\b|\bconcentration\b|\btactical\b|\broad\b|\bconvoy\b|\bcorner\b|\bpeak\b/.test(text)) tags.push("Troops / tactical concentrations");
@@ -2993,6 +3066,9 @@
 
         function classifyMissionDuty(mission) {
             const tags = collectMissionDutyTags(mission);
+            if (tags.includes("Recovery / supplement")) {
+                return { key: "recovery", label: "Recovery / supplement", color: "#8c6bb1" };
+            }
             if (tags.includes("Bridge / rail interdiction")) {
                 return { key: "bridge", label: "Bridge / rail interdiction", color: "#e69f00" };
             }
@@ -3360,21 +3436,62 @@
             return value ? `./IndiaBurma1944Photos/${value}` : "";
         }
 
+        function resolveMissionScanInfo(mission, kind) {
+            if (!mission) return null;
+            const embeddedPath = kind === "front" ? mission.scanFrontPath : mission.scanBackPath;
+            const embeddedFilename = String(kind === "front" ? mission.sourceFront : mission.sourceBack || "").trim();
+            if (embeddedPath) {
+                return {
+                    path: embeddedPath,
+                    filename: embeddedFilename,
+                    reviewed: true
+                };
+            }
+
+            const sortieEntry = labeledSortieManifest.bySortieId.get(mission.id);
+            if (sortieEntry) {
+                const sortiePath = kind === "front" ? sortieEntry.frontPath : sortieEntry.backPath;
+                const sortieFilename = kind === "front" ? sortieEntry.frontImage : sortieEntry.backImage;
+                if (sortiePath) {
+                    return {
+                        path: sortiePath,
+                        filename: sortieFilename,
+                        reviewed: kind === "front" ? true : sortieEntry.backReviewed
+                    };
+                }
+            }
+
+            const imageName = embeddedFilename;
+            if (!imageName) return null;
+
+            const entry = kind === "front"
+                ? labeledSortieManifest.byFrontImage.get(imageName)
+                : labeledSortieManifest.byBackImage.get(imageName);
+            if (!entry) return null;
+            return {
+                path: entry.path || "",
+                filename: imageName,
+                reviewed: kind === "front" ? true : !!entry.reviewed
+            };
+        }
+
         function getMissionScanEntries(mission) {
             if (!mission) return [];
             const entries = [];
-            if (mission.scanFrontPath) {
+            const frontInfo = resolveMissionScanInfo(mission, "front");
+            const backInfo = resolveMissionScanInfo(mission, "back");
+            if (frontInfo?.path) {
                 entries.push({
                     label: "Front Scan",
-                    filename: mission.sourceFront,
-                    path: mission.scanFrontPath
+                    filename: frontInfo.filename || mission.sourceFront,
+                    path: frontInfo.path
                 });
             }
-            if (mission.scanBackPath && mission.sourceBack) {
+            if (backInfo?.path) {
                 entries.push({
-                    label: "Back Scan",
-                    filename: mission.sourceBack,
-                    path: mission.scanBackPath
+                    label: backInfo.reviewed ? "Back Scan" : "Back Candidate",
+                    filename: backInfo.filename || mission.sourceBack,
+                    path: backInfo.path
                 });
             }
             return entries.filter((entry) => entry.path);
@@ -3392,7 +3509,8 @@
             scanViewerPages.innerHTML = "";
             scanViewerTitle.textContent = mission ? `${displayMissionTitle(mission)} Scans` : "Sortie Scans";
             if (!entries.length) {
-                scanViewerPages.innerHTML = `<div class="detail-row"><div class="label">No scans</div><div>No linked front or confirmed reverse scan is available for this sortie yet.</div></div>`;
+                const knownSources = [mission?.sourceFront, mission?.sourceBack].filter(Boolean).join(" / ");
+                scanViewerPages.innerHTML = `<div class="detail-row"><div class="label">No scans</div><div>${knownSources ? `Source images are recorded as ${knownSources}, but no local labeled scan link is available yet.` : "No linked front or confirmed reverse scan is available for this sortie yet."}</div></div>`;
                 return;
             }
             entries.forEach((entry) => {
@@ -3404,7 +3522,7 @@
                 page.innerHTML = `
                     <strong>${entry.label}</strong>
                     <img src="${entry.path}" alt="${entry.label} for ${displayMissionTitle(mission)}">
-                    <span>${entry.label === "Front Scan" ? "Linked archival front page" : "Linked archival reverse page"}</span>
+                    <span>${entry.label === "Front Scan" ? "Linked archival front page" : entry.label === "Back Scan" ? "Linked archival reverse page" : "Linked archival reverse-page candidate"}</span>
                 `;
                 scanViewerPages.appendChild(page);
             });
@@ -3795,7 +3913,7 @@
         }
 
         function buildEventFilter() {
-            const preferredOrder = ["bridge", "supply", "troops", "area", "other"];
+            const preferredOrder = ["recovery", "bridge", "supply", "troops", "area", "other"];
             const seenDutyKeys = new Set(missions.map((mission) => mission.duty.key));
             const options = [
                 { value: "all", label: "All Events" },
