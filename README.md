@@ -2,6 +2,10 @@
 
 A historical flight visualization and tracking tool focused on the Pacific Theater (1944-1945).
 
+## License
+
+This project is licensed under the MIT License. See [LICENSE](./LICENSE).
+
 ## Features
 
 - **Historical Accuracy**: Precise coordinates and timing for major operations including Hiroshima and Nagasaki.
@@ -10,11 +14,27 @@ A historical flight visualization and tracking tool focused on the Pacific Theat
 - **Jump Points**: Instantly skip to major historical events across the Pacific front.
 - **Blue-Themed Dark Mode**: A premium, nocturnal aesthetic designed for clarity and modern tracking visuals.
 
-## How to Run
+## Setup
+
+### Requirements
+
+- A modern web browser
+- Python 3.9+ (only needed for data-generation utilities)
+
+### Local Run
 
 1. Clone this repository.
-2. Open `index.html` in any modern web browser.
-3. Use the sidebar to explore missions or import your own!
+2. Open `index.html` directly in a browser, or serve the folder locally:
+   - `python3 -m http.server 8000`
+3. If serving locally, open `http://localhost:8000`.
+
+### Data Update Workflow
+
+If you edit CSV source files in `data/`, regenerate the JS data files before committing:
+
+- Missions: `python3 scripts/generate-missions-data.py`
+- Bases: `python3 scripts/generate-bases-data.py`
+- Targets: `python3 scripts/generate-targets-data.py`
 
 ## Deployment
 
